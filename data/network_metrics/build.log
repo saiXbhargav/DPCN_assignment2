@@ -1,0 +1,39 @@
+{
+  "corpus_papers": 22416,
+  "citation_network": {
+    "edges_total": 220027,
+    "edges_by_type": {
+      "out_indian": 103252,
+      "in_indian": 89095,
+      "internal": 27680
+    },
+    "internal_graph_nodes": 22416,
+    "internal_graph_edges": 27680,
+    "papers_with_internal_citations": 8793,
+    "dropped_ref_own_nit_outside_corpus": 5379,
+    "dropped_citer_own_nit_outside_corpus": 1092
+  },
+  "authorship_network": {
+    "edges_total": 79338,
+    "edges_by_category": {
+      "same_nit": 37572,
+      "nit_indian": 22418,
+      "nit_foreign": 12080,
+      "nit_unknown": 7111,
+      "nit_nit": 157
+    },
+    "nit_graph_nodes": 11373,
+    "nit_graph_edges": 20584,
+    "nit_graph_components": 1464,
+    "largest_component": 8909,
+    "louvain_communities": 1531,
+    "communities_size_ge_10": 87,
+    "modularity": 0.934,
+    "papers_skipped_over_50_authors": 3,
+    "authorships_without_id": 5230
+  },
+  "indian_connections": {
+    "rows": 4452,
+    "partners_with_shared_papers": 1213
+  }
+}
