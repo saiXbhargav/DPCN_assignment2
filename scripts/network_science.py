@@ -314,47 +314,56 @@ def institute_network(report):
     top_pr = pd.DataFrame([{"institute": k, "cluster": cluster.get(k, ""), "pagerank": v}
                            for k, v in sorted(pr.items(), key=lambda kv: -kv[1])[:15]])
 
-    # drawing: both NITs and their 30 biggest exchange partners; colour = direction of the flow
-    keep = set(t.assign(ex=t.they_cite_us + t.we_cite_them).nlargest(30, "ex").partner) | set(INSTS)
-    H = W.subgraph(keep).copy()
-    pos = nx.spring_layout(H.to_undirected(), weight=None, seed=7, k=1.2)
-    pos[INSTS[0]], pos[INSTS[1]] = np.array([-0.35, 0]), np.array([0.35, 0])
-    pos = nx.spring_layout(H.to_undirected(), pos=pos, fixed=INSTS, weight=None, seed=7, k=0.9)
-    vin = {n: sum(H[n][m]["weight"] for m in H.successors(n) if m in INSTS) for n in H}
-    vout = {n: sum(H[m][n]["weight"] for m in H.predecessors(n) if m in INSTS) for n in H}
-    from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
+    # figure: one ego panel per NIT. Partners on a circle, sorted by the direction of the flow, one straight
+    # line per partner (width = citations exchanged, colour = direction), so nothing overlaps.
+    from matplotlib.colors import LinearSegmentedColormap
     div = LinearSegmentedColormap.from_list("div", [ORANGE, NEUTRAL, BLUE])
-    ratio = {n: np.log2((vin[n] + 1) / (vout[n] + 1)) for n in H if n not in INSTS}
-    fig, ax = plt.subplots(figsize=(11, 8), facecolor=SURFACE)
-    ax.set_facecolor(SURFACE)
-    ax.axis("off")
-    wmax = max(d["weight"] for _, _, d in H.edges(data=True))
-    nx.draw_networkx_edges(H, pos, ax=ax, width=[0.4 + 5 * d["weight"] / wmax for _, _, d in H.edges(data=True)],
-                           edge_color=AXIS, alpha=0.7, arrows=True, arrowsize=8, connectionstyle="arc3,rad=0.08")
-    others = [n for n in H if n not in INSTS]
-    nx.draw_networkx_nodes(H, pos, nodelist=others, ax=ax, node_size=[60 + 0.25 * (vin[n] + vout[n]) for n in others],
-                           node_color=[float(np.clip(ratio[n], -3, 3)) for n in others], cmap=div, vmin=-3, vmax=3,
-                           edgecolors=SURFACE, linewidths=1)
-    nx.draw_networkx_nodes(H, pos, nodelist=INSTS, ax=ax, node_size=3000, node_color=INK, edgecolors=SURFACE)
     names = {"Vellore Institute of Technology University": "VIT", "Council of Scientific and Industrial Research": "CSIR",
              "Manipal Academy of Higher Education": "Manipal (MAHE)", "Visvesvaraya Technological University": "VTU",
              "SRM Institute of Science and Technology": "SRM IST", "Indian Institute of Science Bangalore": "IISc",
-             "Anna University, Chennai": "Anna Univ."}
+             "Anna University, Chennai": "Anna Univ.", "Amrita Vishwa Vidyapeetham": "Amrita",
+             "Academy of Scientific and Innovative Research": "AcSIR", "Banaras Hindu University": "BHU",
+             "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology": "Vel Tech",
+             "Thapar Institute of Engineering & Technology": "Thapar", "Lovely Professional University": "LPU",
+             "Indian Institute of Technology Dhanbad": "IIT (ISM) Dhanbad"}
     short = lambda s: names.get(s, s.replace("Indian Institute of Technology", "IIT")
                                  .replace("National Institute of Technology", "NIT").replace("University", "Univ.")
-                                 .replace("Institute of Science and Technology", "IST")[:28])
-    nx.draw_networkx_labels(H, {n: p + np.array([0, -0.075]) for n, p in pos.items() if n not in INSTS},
-                            labels={n: short(n) for n in others}, font_size=7.5, font_color=INK, ax=ax)
-    nx.draw_networkx_labels(H, pos, labels={i: i.replace("NIT ", "NIT\n") for i in INSTS}, font_size=7.5,
-                            font_color=SURFACE, font_weight="bold", ax=ax)
-    sm = plt.cm.ScalarMappable(cmap=div, norm=TwoSlopeNorm(0, -3, 3))
-    cb = fig.colorbar(sm, ax=ax, fraction=0.02, pad=0.01)
-    cb.set_label("log2(citations they give us / citations we give them)\nblue: they cite us more · "
-                 "orange: we cite them more", fontsize=8, color=INK)
+                                 .replace("Institute of Science and Technology", "IST")[:26])
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6.8), facecolor=SURFACE)
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.88, bottom=0.14, wspace=0.05)
+    for ax, inst in zip(axes, INSTS):
+        d = t[t.institution == inst].assign(ex=lambda x: x.they_cite_us + x.we_cite_them).nlargest(25, "ex")
+        d = d.assign(lr=np.log2(d.they_cite_us / d.we_cite_them).clip(-3, 3)).sort_values("lr")
+        ang = np.linspace(np.pi * 0.95, -np.pi * 0.95, len(d))  # left (orange) to right (blue), round the circle
+        ax.set_facecolor(SURFACE)
+        ax.set_aspect("equal")
+        ax.axis("off")
+        exmax = d.ex.max()
+        for (_, r), a in zip(d.iterrows(), ang):
+            x, y = np.cos(a), np.sin(a)
+            c = div((r.lr + 3) / 6)
+            ax.plot([0, x * 0.92], [0, y * 0.92], color=c, linewidth=0.8 + 9 * r.ex / exmax, solid_capstyle="round",
+                    zorder=1)
+            ax.scatter([x], [y], s=40 + 260 * r.ex / exmax, color=c, edgecolors=SURFACE, linewidths=1.5, zorder=2)
+            ha = "left" if x > 0.15 else ("right" if x < -0.15 else "center")
+            ax.text(x * 1.12, y * 1.12, short(r.partner), fontsize=7.5, color=INK, ha=ha, va="center")
+        ax.scatter([0], [0], s=2600, color=INK, zorder=3)
+        ax.text(0, 0, inst.replace("NIT ", "NIT\n"), color=SURFACE, fontsize=9, ha="center", va="center",
+                fontweight="bold", zorder=4)
+        ax.set_xlim(-1.8, 1.8)
+        ax.set_ylim(-1.25, 1.25)
+        ax.set_title(f"{inst}: 25 largest citation-exchange partners", color=INK, fontsize=10, loc="left")
+    sm = plt.cm.ScalarMappable(cmap=div, norm=plt.Normalize(-3, 3))
+    cax = fig.add_axes([0.35, 0.07, 0.3, 0.025])
+    cb = fig.colorbar(sm, cax=cax, orientation="horizontal")
+    cb.set_label("log2(citations they give us / citations we give them):  orange = we cite them more,  "
+                 "blue = they cite us more", fontsize=8, color=INK)
     cb.ax.tick_params(labelsize=8, colors=MUTED)
-    ax.set_title("Citation flow between our NITs and their 30 largest Indian exchange partners\n(node size = "
-                 "citations exchanged; arrow = 'cites')", color=INK, fontsize=10, loc="left")
-    save(fig, "ns_institute_flow_network.png")
+    fig.suptitle("Who learns from whom: line width = citations exchanged, colour = direction of the flow",
+                 color=INK, fontsize=11, x=0.01, y=0.97, ha="left")
+    fig.savefig(os.path.join(OUT, "ns_institute_flow_network.png"), dpi=160, facecolor=SURFACE)
+    plt.close(fig)
+
 
     report.append("## 4. The institute-level citation-flow network\n")
     report.append("Nodes are institutes. An arrow A → B weighted w means A's papers cite B's papers w times (with the "
@@ -402,7 +411,9 @@ def fair_comparison(report):
                            "approx_%_difference": 100 * (np.exp(m2.params[v]) - 1)}
                           for v in ("foreign", "indian_collab", "conference", "log_authors")])
     with open(os.path.join(OUT, "ns_regression_full.txt"), "w") as f:
-        f.write(m2.summary().as_text())
+        # drop the date and time lines statsmodels adds, so reruns give the same file
+        lines = m2.summary().as_text().splitlines()
+        f.write("\n".join(l for l in lines if not l.startswith(("Date:", "Time:"))) + "\n")
 
     # bootstrap the NIT Trichy - NIT Surathkal FWCI difference within every shared branch
     rows = []
