@@ -589,8 +589,8 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
 - **Geography:**
   - 37% of joint papers are with institutes within 300 km, but only 16% of citations;
   - doubling the distance cuts joint papers by about 38% but citations by only about 11% (gravity model; distance elasticity −0.70 vs −0.17).
-- **Link prediction** (train to 2022, test 2023–2026, 160,367 candidate pairs, 243 real new links):
-  - Adamic–Adar and resource allocation reach **6% precision@100**, 40 times better than random;
+- **Link prediction** (train to 2022, test 2023–2026, 156,424 candidate pairs, 242 real new links):
+  - Adamic–Adar and resource allocation reach **7% precision@100**, 45 times better than random;
   - a logistic model using the network scores plus same department and same institute reaches **AUC 0.90**;
   - `link_prediction_top50_future_pairs.csv` lists the 50 most likely future faculty pairs.
 - **Faculty ranking:**
@@ -598,18 +598,18 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
   - files: `faculty_ranking_overall.csv` and `faculty_ranking_by_department.csv`;
   - the top 3 are Ramesh M R (Su, Mechanical), S Suresh (Tr, Mechanical) and Denthaje Krishna Bhat (Su, Chemistry);
   - it measures research output only, not teaching or other contributions.
-- **Roster issue found:** *Ch Suryanarayana Murthy* (S0412) and *Chivukula Suryanarayana Murthy* (S0405) are the same person; two more likely duplicates are listed in INSIGHTS.md, section 6.
+- **Roster duplicates found and fixed:** *Ch Suryanarayana Murthy* = *Chivukula Suryanarayana Murthy* and two more cases (INSIGHTS.md, section 6) are now merged in the roster (Step 7), together with about 50 similar NIT Surathkal cases; these insights were re-run on the fixed roster.
 - **Extra data:**
   - `data/raw/ref_years.jsonl`: the years of 437,866 cited works, about 4,100 requests;
   - `data/raw/institutions_geo.jsonl`: the coordinates of 2,350 institutes, 24 requests.
 - **Growth, 2016–2026:**
-  - the network **densifies** (links ∝ faculty^1.6–2.5, R² ≈ 0.997);
-  - a large connected group **suddenly forms in 2018** (8% → 41% of faculty);
+  - the network **densifies** (links ∝ faculty^1.7–2.5, R² ≈ 0.997);
+  - a large connected group **suddenly forms in 2018** (8% → 42% of faculty);
   - the **diameter then shrinks** (effective diameter 19 → 9);
   - departments slowly mix (modularity 0.95 → 0.85).
 - **Triadic closure:**
-  - a pair with one common co-author is **about 20 times** more likely to start collaborating the next year, and with two or more about **30–36 times**;
-  - across departments the effect is about **27 times**;
+  - a pair with one common co-author is **about 19 times** more likely to start collaborating the next year, and with two or more about **32–36 times**;
+  - across departments the effect is about **26 times**;
   - but only **13%** of new links close a triangle.
 
 ### 7. Network science (`scripts/network_science.py` → [NETWORK_SCIENCE.md](data/analysis/NETWORK_SCIENCE.md))

@@ -11,6 +11,6 @@
   },
   "share_joint_papers_within_300km_pct": 37.357392316647264,
   "share_citations_within_300km_pct": 15.812387733177918,
-  "distance_elasticity_joint_papers": -0.70111164793447,
-  "distance_elasticity_citations": -0.167722035177978
+  "distance_elasticity_joint_papers": -0.7011116479344707,
+  "distance_elasticity_citations": -0.1677220351779775
 }

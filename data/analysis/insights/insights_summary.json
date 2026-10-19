@@ -1,35 +1,35 @@
 {
   "network": "faculty-only co-authorship (NIT Trichy + NIT Surathkal), cumulative from 2016",
-  "faculty": 663,
-  "links_2026": 967,
+  "faculty": 656,
+  "links_2026": 961,
   "densification": {
     "all_faculty_2016_2026": {
-      "exponent_a": 2.542825805332809,
-      "r_squared": 0.9971566285536326,
+      "exponent_a": 2.54866765040169,
+      "r_squared": 0.9968441994721904,
       "years": "2016-2026",
       "x": "faculty_nodes"
     },
     "all_faculty_2016_2025": {
-      "exponent_a": 2.549444657133358,
-      "r_squared": 0.9968078840429306,
+      "exponent_a": 2.557037744107883,
+      "r_squared": 0.9964767405549659,
       "years": "2016-2025",
       "x": "faculty_nodes"
     },
     "connected_faculty_2016_2026": {
-      "exponent_a": 1.6572518243976933,
-      "r_squared": 0.9976828426155651,
+      "exponent_a": 1.6576330978806506,
+      "r_squared": 0.9975323104542756,
       "years": "2016-2026",
       "x": "connected_faculty"
     },
     "all_faculty_2019_2025": {
-      "exponent_a": 2.2931687217827097,
-      "r_squared": 0.994845621144567,
+      "exponent_a": 2.286314343354816,
+      "r_squared": 0.9948906289423258,
       "years": "2019-2025",
       "x": "faculty_nodes"
     },
     "connected_faculty_2019_2025": {
-      "exponent_a": 1.5727710873152374,
-      "r_squared": 0.998289462669187,
+      "exponent_a": 1.5723878984252984,
+      "r_squared": 0.9984095437779421,
       "years": "2019-2025",
       "x": "connected_faculty"
     }
@@ -38,113 +38,113 @@
     {
       "year": 2016,
       "partial_year": false,
-      "faculty_nodes": 309,
+      "faculty_nodes": 308,
       "connected_faculty": 162,
-      "links": 134,
-      "new_links_this_year": 134,
-      "avg_degree": 0.8673139158576052,
-      "density": 0.0028159542722649518,
-      "components": 194,
+      "links": 135,
+      "new_links_this_year": 135,
+      "avg_degree": 0.8766233766233766,
+      "density": 0.0028554507381868947,
+      "components": 192,
       "largest_component": 14,
-      "largest_component_share": 0.045307443365695796,
+      "largest_component_share": 0.045454545454545456,
       "diameter_largest_component": 5,
       "avg_path_largest_component": 2.7252747252747254,
       "effective_diameter_90pct": 4.0,
-      "avg_clustering": 0.11553398058252429,
-      "transitivity": 0.375,
-      "modularity_louvain": 0.951625118414871,
+      "avg_clustering": 0.11590909090909092,
+      "transitivity": 0.36585365853658536,
+      "modularity_louvain": 0.9488035419820502,
       "cross_nit_links": 4,
-      "cross_department_link_share": 0.23880597014925373
+      "cross_department_link_share": 0.23703703703703705
     },
     {
       "year": 2025,
       "partial_year": false,
-      "faculty_nodes": 650,
-      "connected_faculty": 533,
-      "links": 928,
+      "faculty_nodes": 643,
+      "connected_faculty": 529,
+      "links": 923,
       "new_links_this_year": 84,
-      "avg_degree": 2.855384615384615,
-      "density": 0.004399668128481688,
-      "components": 136,
-      "largest_component": 485,
-      "largest_component_share": 0.7461538461538462,
+      "avg_degree": 2.8709175738724726,
+      "density": 0.00447183422721569,
+      "components": 133,
+      "largest_component": 481,
+      "largest_component_share": 0.7480559875583204,
       "diameter_largest_component": 16,
-      "avg_path_largest_component": 6.164122007327256,
+      "avg_path_largest_component": 6.153872141372141,
       "effective_diameter_90pct": 9.0,
-      "avg_clustering": 0.15688034188034186,
-      "transitivity": 0.20298646756882874,
-      "modularity_louvain": 0.8469982773471145,
+      "avg_clustering": 0.1589510972870226,
+      "transitivity": 0.2039381153305204,
+      "modularity_louvain": 0.850265007886671,
       "cross_nit_links": 25,
-      "cross_department_link_share": 0.3081896551724138
+      "cross_department_link_share": 0.3087757313109426
     },
     {
       "year": 2026,
       "partial_year": true,
-      "faculty_nodes": 663,
-      "connected_faculty": 543,
-      "links": 967,
-      "new_links_this_year": 39,
-      "avg_degree": 2.917043740573152,
-      "density": 0.004406410484249475,
-      "components": 139,
-      "largest_component": 496,
-      "largest_component_share": 0.7481146304675717,
+      "faculty_nodes": 656,
+      "connected_faculty": 539,
+      "links": 961,
+      "new_links_this_year": 38,
+      "avg_degree": 2.9298780487804876,
+      "density": 0.004473096257680134,
+      "components": 136,
+      "largest_component": 492,
+      "largest_component_share": 0.75,
       "diameter_largest_component": 16,
-      "avg_path_largest_component": 6.111722059302704,
+      "avg_path_largest_component": 6.100061265378438,
       "effective_diameter_90pct": 9.0,
-      "avg_clustering": 0.1619162469841203,
-      "transitivity": 0.20463404071026417,
-      "modularity_louvain": 0.8428475579091462,
+      "avg_clustering": 0.16381943767614499,
+      "transitivity": 0.20554222125245472,
+      "modularity_louvain": 0.8450888225809363,
       "cross_nit_links": 28,
-      "cross_department_link_share": 0.30920372285418823
+      "cross_department_link_share": 0.3100936524453694
     }
   ],
   "triadic_closure_next_year": [
     {
       "bucket": "3+ common co-authors",
-      "pairs": 228,
+      "pairs": 233,
       "linked_next_year": 3,
-      "p_next_year_pct": 1.3157894736842106,
-      "p_within_3_years_pct": 5.633802816901408,
-      "times_more_likely_than_far_pairs": 33.39076367389061
+      "p_next_year_pct": 1.2875536480686696,
+      "p_within_3_years_pct": 5.47945205479452,
+      "times_more_likely_than_far_pairs": 32.067334662566324
     },
     {
       "bucket": "2 common co-authors",
-      "pairs": 1401,
+      "pairs": 1393,
       "linked_next_year": 20,
-      "p_next_year_pct": 1.4275517487508922,
-      "p_within_3_years_pct": 4.562043795620438,
-      "times_more_likely_than_far_pairs": 36.22695273684064
+      "p_next_year_pct": 1.4357501794687724,
+      "p_within_3_years_pct": 4.5787545787545785,
+      "times_more_likely_than_far_pairs": 35.758262629231645
     },
     {
       "bucket": "1 common co-author",
-      "pairs": 12224,
-      "linked_next_year": 95,
-      "p_next_year_pct": 0.7771596858638743,
-      "p_within_3_years_pct": 2.673699527100764,
-      "times_more_likely_than_far_pairs": 19.721966109742326
+      "pairs": 12141,
+      "linked_next_year": 94,
+      "p_next_year_pct": 0.7742360596326497,
+      "p_within_3_years_pct": 2.68689453481996,
+      "times_more_likely_than_far_pairs": 19.28283677290524
     },
     {
       "bucket": "distance 3 (friend of a friend of a friend)",
-      "pairs": 29440,
+      "pairs": 29226,
       "linked_next_year": 64,
-      "p_next_year_pct": 0.21739130434782608,
-      "p_within_3_years_pct": 0.8805723720418271,
-      "times_more_likely_than_far_pairs": 5.516734867860188
+      "p_next_year_pct": 0.21898309724218162,
+      "p_within_3_years_pct": 0.8945038731095537,
+      "times_more_likely_than_far_pairs": 5.453911978925032
     },
     {
       "bucket": "farther apart / not connected",
-      "pairs": 1294226,
-      "linked_next_year": 510,
-      "p_next_year_pct": 0.03940579156963312,
-      "p_within_3_years_pct": 0.14607696575321874,
+      "pairs": 1265206,
+      "linked_next_year": 508,
+      "p_next_year_pct": 0.040151564251197036,
+      "p_within_3_years_pct": 0.1489534136321717,
       "times_more_likely_than_far_pairs": 1.0
     }
   ],
   "new_links_2017_2025_by_source": {
     "closed a triangle (had a common co-author)": 104,
-    "existing faculty, no common co-author": 551,
-    "involves faculty new to the network": 139
+    "existing faculty, no common co-author": 549,
+    "involves faculty new to the network": 135
   },
-  "new_links_2017_2025_closing_triangle_pct": 13.09823677581864
+  "new_links_2017_2025_closing_triangle_pct": 13.197969543147208
 }

@@ -2,165 +2,165 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2016,1 common co-author,False,False,True,5,0,0
 2016,1 common co-author,False,True,True,42,0,3
 2016,1 common co-author,True,False,True,3,0,0
-2016,1 common co-author,True,True,True,40,3,6
+2016,1 common co-author,True,True,True,44,3,6
 2016,2 common co-authors,True,True,True,5,0,0
 2016,distance 3 (friend of a friend of a friend),False,False,True,8,0,0
 2016,distance 3 (friend of a friend of a friend),False,True,True,36,0,0
 2016,distance 3 (friend of a friend of a friend),True,False,True,1,0,0
-2016,distance 3 (friend of a friend of a friend),True,True,True,22,1,3
-2016,farther apart / not connected,False,False,True,22401,0,0
-2016,farther apart / not connected,False,True,True,21672,23,56
+2016,distance 3 (friend of a friend of a friend),True,True,True,27,1,3
+2016,farther apart / not connected,False,False,True,22245,0,0
+2016,farther apart / not connected,False,True,True,21533,23,56
 2016,farther apart / not connected,True,False,True,1446,0,2
-2016,farther apart / not connected,True,True,True,1771,36,89
+2016,farther apart / not connected,True,True,True,1748,36,88
 2017,1 common co-author,False,False,True,9,0,0
 2017,1 common co-author,False,True,True,128,4,6
 2017,1 common co-author,True,False,True,7,0,0
-2017,1 common co-author,True,True,True,104,3,12
+2017,1 common co-author,True,True,True,110,3,12
 2017,2 common co-authors,False,True,True,1,0,0
 2017,2 common co-authors,True,True,True,14,0,2
 2017,3+ common co-authors,True,True,True,1,0,0
 2017,distance 3 (friend of a friend of a friend),False,False,True,22,0,0
-2017,distance 3 (friend of a friend of a friend),False,True,True,133,0,2
+2017,distance 3 (friend of a friend of a friend),False,True,True,134,0,2
 2017,distance 3 (friend of a friend of a friend),True,False,True,6,0,0
-2017,distance 3 (friend of a friend of a friend),True,True,True,70,1,3
-2017,farther apart / not connected,False,False,True,32937,0,1
-2017,farther apart / not connected,False,True,True,31987,18,59
-2017,farther apart / not connected,True,False,True,2310,2,5
-2017,farther apart / not connected,True,True,True,2536,35,109
+2017,distance 3 (friend of a friend of a friend),True,True,True,86,1,3
+2017,farther apart / not connected,False,False,True,32589,0,1
+2017,farther apart / not connected,False,True,True,31646,18,60
+2017,farther apart / not connected,True,False,True,2296,2,5
+2017,farther apart / not connected,True,True,True,2466,35,108
 2018,1 common co-author,False,False,True,17,0,0
 2018,1 common co-author,False,True,True,263,3,4
 2018,1 common co-author,True,False,True,19,0,0
-2018,1 common co-author,True,True,True,210,9,17
+2018,1 common co-author,True,True,True,214,9,17
 2018,2 common co-authors,False,True,True,7,0,0
 2018,2 common co-authors,True,True,True,23,4,6
 2018,3+ common co-authors,True,True,True,1,0,0
 2018,distance 3 (friend of a friend of a friend),False,False,True,44,0,0
-2018,distance 3 (friend of a friend of a friend),False,True,True,449,2,5
+2018,distance 3 (friend of a friend of a friend),False,True,True,452,2,5
 2018,distance 3 (friend of a friend of a friend),True,False,True,34,0,0
-2018,distance 3 (friend of a friend of a friend),True,True,True,166,7,13
-2018,farther apart / not connected,False,False,True,42111,0,1
-2018,farther apart / not connected,False,True,True,40487,23,62
-2018,farther apart / not connected,True,False,True,2905,0,4
-2018,farther apart / not connected,True,True,True,3051,39,95
+2018,distance 3 (friend of a friend of a friend),True,True,True,184,7,14
+2018,farther apart / not connected,False,False,True,41315,0,1
+2018,farther apart / not connected,False,True,True,39724,23,63
+2018,farther apart / not connected,True,False,True,2869,0,4
+2018,farther apart / not connected,True,True,True,2931,38,93
 2019,1 common co-author,False,False,True,18,0,0
 2019,1 common co-author,False,True,True,408,3,9
 2019,1 common co-author,True,False,True,24,0,0
-2019,1 common co-author,True,True,True,309,11,17
+2019,1 common co-author,True,True,True,301,11,17
 2019,2 common co-authors,False,True,True,29,0,0
 2019,2 common co-authors,True,True,True,35,2,2
 2019,3+ common co-authors,False,True,True,1,0,0
 2019,3+ common co-authors,True,True,True,8,1,1
 2019,distance 3 (friend of a friend of a friend),False,False,True,53,0,0
-2019,distance 3 (friend of a friend of a friend),False,True,True,870,2,6
+2019,distance 3 (friend of a friend of a friend),False,True,True,864,3,7
 2019,distance 3 (friend of a friend of a friend),True,False,True,47,0,0
-2019,distance 3 (friend of a friend of a friend),True,True,True,300,6,11
-2019,farther apart / not connected,False,False,True,49549,1,2
-2019,farther apart / not connected,False,True,True,47119,23,46
-2019,farther apart / not connected,True,False,True,3403,4,7
-2019,farther apart / not connected,True,True,True,3438,36,79
+2019,distance 3 (friend of a friend of a friend),True,True,True,290,5,10
+2019,farther apart / not connected,False,False,True,48237,1,2
+2019,farther apart / not connected,False,True,True,45856,22,45
+2019,farther apart / not connected,True,False,True,3365,4,7
+2019,farther apart / not connected,True,True,True,3333,36,79
 2020,1 common co-author,False,False,True,46,0,0
-2020,1 common co-author,False,True,True,585,3,11
+2020,1 common co-author,False,True,True,584,3,11
 2020,1 common co-author,True,False,True,59,0,0
-2020,1 common co-author,True,True,True,393,4,10
-2020,2 common co-authors,False,True,True,55,0,2
+2020,1 common co-author,True,True,True,386,4,10
+2020,2 common co-authors,False,True,True,57,0,2
 2020,2 common co-authors,True,False,True,1,0,0
-2020,2 common co-authors,True,True,True,53,0,3
+2020,2 common co-authors,True,True,True,51,0,3
 2020,3+ common co-authors,False,True,True,2,0,1
 2020,3+ common co-authors,True,True,True,13,0,0
-2020,distance 3 (friend of a friend of a friend),False,False,True,245,0,0
-2020,distance 3 (friend of a friend of a friend),False,True,True,1361,2,6
+2020,distance 3 (friend of a friend of a friend),False,False,True,251,0,0
+2020,distance 3 (friend of a friend of a friend),False,True,True,1352,2,6
 2020,distance 3 (friend of a friend of a friend),True,False,True,115,0,0
-2020,distance 3 (friend of a friend of a friend),True,True,True,426,3,10
-2020,farther apart / not connected,False,False,True,60070,1,1
-2020,farther apart / not connected,False,True,True,56988,13,40
-2020,farther apart / not connected,True,False,True,4181,2,4
-2020,farther apart / not connected,True,True,True,4174,17,85
+2020,distance 3 (friend of a friend of a friend),True,True,True,414,3,10
+2020,farther apart / not connected,False,False,True,58622,1,1
+2020,farther apart / not connected,False,True,True,55590,13,40
+2020,farther apart / not connected,True,False,True,4135,2,4
+2020,farther apart / not connected,True,True,True,4060,17,85
 2021,1 common co-author,False,False,True,51,0,0
-2021,1 common co-author,False,True,True,707,4,10
+2021,1 common co-author,False,True,True,705,4,10
 2021,1 common co-author,True,False,True,67,0,0
-2021,1 common co-author,True,True,True,451,2,12
-2021,2 common co-authors,False,True,True,67,1,2
+2021,1 common co-author,True,True,True,442,2,12
+2021,2 common co-authors,False,True,True,68,1,2
 2021,2 common co-authors,True,False,True,3,0,0
-2021,2 common co-authors,True,True,True,73,1,4
-2021,3+ common co-authors,False,True,True,6,0,1
+2021,2 common co-authors,True,True,True,71,1,4
+2021,3+ common co-authors,False,True,True,7,0,1
 2021,3+ common co-authors,True,True,True,14,0,0
-2021,distance 3 (friend of a friend of a friend),False,False,True,299,0,0
-2021,distance 3 (friend of a friend of a friend),False,True,True,1854,3,7
+2021,distance 3 (friend of a friend of a friend),False,False,True,302,0,0
+2021,distance 3 (friend of a friend of a friend),False,True,True,1834,3,7
 2021,distance 3 (friend of a friend of a friend),True,False,True,158,0,0
-2021,distance 3 (friend of a friend of a friend),True,True,True,555,7,12
-2021,farther apart / not connected,False,False,True,68271,0,3
-2021,farther apart / not connected,False,True,True,64523,11,56
-2021,farther apart / not connected,True,False,True,4829,2,2
-2021,farther apart / not connected,True,True,True,4648,39,100
+2021,distance 3 (friend of a friend of a friend),True,True,True,538,7,12
+2021,farther apart / not connected,False,False,True,66473,0,3
+2021,farther apart / not connected,False,True,True,62811,11,56
+2021,farther apart / not connected,True,False,True,4755,2,2
+2021,farther apart / not connected,True,True,True,4509,39,100
 2022,1 common co-author,False,False,True,57,0,0
-2022,1 common co-author,False,True,True,833,5,9
+2022,1 common co-author,False,True,True,831,5,9
 2022,1 common co-author,True,False,True,74,0,0
-2022,1 common co-author,True,True,True,569,7,21
-2022,2 common co-authors,False,True,True,86,1,1
+2022,1 common co-author,True,True,True,557,7,21
+2022,2 common co-authors,False,True,True,87,1,1
 2022,2 common co-authors,True,False,True,3,0,0
-2022,2 common co-authors,True,True,True,93,2,3
-2022,3+ common co-authors,False,True,True,7,1,1
+2022,2 common co-authors,True,True,True,91,2,3
+2022,3+ common co-authors,False,True,True,8,1,1
 2022,3+ common co-authors,True,True,True,18,0,0
-2022,distance 3 (friend of a friend of a friend),False,False,True,340,0,0
-2022,distance 3 (friend of a friend of a friend),False,True,True,2377,3,8
-2022,distance 3 (friend of a friend of a friend),True,False,True,185,0,0
-2022,distance 3 (friend of a friend of a friend),True,True,True,726,5,10
-2022,farther apart / not connected,False,False,True,74744,2,6
-2022,farther apart / not connected,False,True,True,70235,24,57
-2022,farther apart / not connected,True,False,True,5233,0,1
-2022,farther apart / not connected,True,True,True,4787,35,97
+2022,distance 3 (friend of a friend of a friend),False,False,True,343,0,0
+2022,distance 3 (friend of a friend of a friend),False,True,True,2357,3,8
+2022,distance 3 (friend of a friend of a friend),True,False,True,184,0,0
+2022,distance 3 (friend of a friend of a friend),True,True,True,708,5,10
+2022,farther apart / not connected,False,False,True,72817,2,6
+2022,farther apart / not connected,False,True,True,68485,24,57
+2022,farther apart / not connected,True,False,True,5156,0,1
+2022,farther apart / not connected,True,True,True,4648,35,97
 2023,1 common co-author,False,False,False,83,0,0
-2023,1 common co-author,False,True,False,1079,5,7
+2023,1 common co-author,False,True,False,1076,5,7
 2023,1 common co-author,True,False,False,87,0,1
-2023,1 common co-author,True,True,False,682,10,23
+2023,1 common co-author,True,True,False,669,10,22
 2023,2 common co-authors,False,False,False,1,0,0
-2023,2 common co-authors,False,True,False,112,0,1
+2023,2 common co-authors,False,True,False,111,0,1
 2023,2 common co-authors,True,False,False,4,0,0
-2023,2 common co-authors,True,True,False,119,2,5
-2023,3+ common co-authors,False,True,False,14,0,0
-2023,3+ common co-authors,True,True,False,24,0,1
+2023,2 common co-authors,True,True,False,118,2,5
+2023,3+ common co-authors,False,True,False,16,0,0
+2023,3+ common co-authors,True,True,False,23,0,1
 2023,distance 3 (friend of a friend of a friend),False,False,False,519,0,0
-2023,distance 3 (friend of a friend of a friend),False,True,False,3401,4,6
-2023,distance 3 (friend of a friend of a friend),True,False,False,255,0,0
-2023,distance 3 (friend of a friend of a friend),True,True,False,928,3,10
-2023,farther apart / not connected,False,False,False,83761,3,4
-2023,farther apart / not connected,False,True,False,78315,19,41
-2023,farther apart / not connected,True,False,False,5647,0,1
-2023,farther apart / not connected,True,True,False,5114,29,78
+2023,distance 3 (friend of a friend of a friend),False,True,False,3377,4,6
+2023,distance 3 (friend of a friend of a friend),True,False,False,254,0,0
+2023,distance 3 (friend of a friend of a friend),True,True,False,909,3,10
+2023,farther apart / not connected,False,False,False,81630,3,4
+2023,farther apart / not connected,False,True,False,76547,19,41
+2023,farther apart / not connected,True,False,False,5567,0,1
+2023,farther apart / not connected,True,True,False,4973,29,78
 2024,1 common co-author,False,False,False,107,0,0
-2024,1 common co-author,False,True,False,1271,1,4
+2024,1 common co-author,False,True,False,1266,1,4
 2024,1 common co-author,True,False,False,97,0,1
-2024,1 common co-author,True,True,False,785,10,16
+2024,1 common co-author,True,True,False,771,10,15
 2024,2 common co-authors,False,False,False,4,0,0
-2024,2 common co-authors,False,True,False,140,0,1
+2024,2 common co-authors,False,True,False,139,0,1
 2024,2 common co-authors,True,False,False,5,0,0
-2024,2 common co-authors,True,True,False,135,2,4
-2024,3+ common co-authors,False,True,False,21,0,0
-2024,3+ common co-authors,True,True,False,30,0,1
+2024,2 common co-authors,True,True,False,134,2,4
+2024,3+ common co-authors,False,True,False,23,0,0
+2024,3+ common co-authors,True,True,False,29,0,1
 2024,distance 3 (friend of a friend of a friend),False,False,False,678,0,0
-2024,distance 3 (friend of a friend of a friend),False,True,False,4176,2,2
-2024,distance 3 (friend of a friend of a friend),True,False,False,300,0,0
-2024,distance 3 (friend of a friend of a friend),True,True,False,1081,9,11
-2024,farther apart / not connected,False,False,False,92211,1,2
-2024,farther apart / not connected,False,True,False,85873,13,21
-2024,farther apart / not connected,True,False,False,6142,1,1
-2024,farther apart / not connected,True,True,False,5496,39,50
+2024,distance 3 (friend of a friend of a friend),False,True,False,4143,2,2
+2024,distance 3 (friend of a friend of a friend),True,False,False,299,0,0
+2024,distance 3 (friend of a friend of a friend),True,True,False,1058,9,11
+2024,farther apart / not connected,False,False,False,89963,1,2
+2024,farther apart / not connected,False,True,False,84036,13,21
+2024,farther apart / not connected,True,False,False,6060,1,1
+2024,farther apart / not connected,True,True,False,5349,39,50
 2025,1 common co-author,False,False,False,115,0,0
-2025,1 common co-author,False,True,False,1405,2,2
+2025,1 common co-author,False,True,False,1400,2,2
 2025,1 common co-author,True,False,False,109,1,1
-2025,1 common co-author,True,True,False,906,5,5
+2025,1 common co-author,True,True,False,890,4,4
 2025,2 common co-authors,False,False,False,5,0,0
-2025,2 common co-authors,False,True,False,162,2,2
+2025,2 common co-authors,False,True,False,161,2,2
 2025,2 common co-authors,True,False,False,4,0,0
-2025,2 common co-authors,True,True,False,162,3,3
-2025,3+ common co-authors,False,True,False,24,0,0
+2025,2 common co-authors,True,True,False,161,3,3
+2025,3+ common co-authors,False,True,False,26,0,0
 2025,3+ common co-authors,True,False,False,1,0,0
-2025,3+ common co-authors,True,True,False,43,1,1
-2025,distance 3 (friend of a friend of a friend),False,False,False,732,0,0
-2025,distance 3 (friend of a friend of a friend),False,True,False,4840,1,1
-2025,distance 3 (friend of a friend of a friend),True,False,False,371,0,0
-2025,distance 3 (friend of a friend of a friend),True,True,False,1257,3,3
-2025,farther apart / not connected,False,False,False,97327,1,1
-2025,farther apart / not connected,False,True,False,90490,7,7
-2025,farther apart / not connected,True,False,False,6495,0,0
-2025,farther apart / not connected,True,True,False,5549,11,11
+2025,3+ common co-authors,True,True,False,42,1,1
+2025,distance 3 (friend of a friend of a friend),False,False,False,735,0,0
+2025,distance 3 (friend of a friend of a friend),False,True,False,4807,1,1
+2025,distance 3 (friend of a friend of a friend),True,False,False,370,0,0
+2025,distance 3 (friend of a friend of a friend),True,True,False,1233,3,3
+2025,farther apart / not connected,False,False,False,94991,1,1
+2025,farther apart / not connected,False,True,False,88620,7,7
+2025,farther apart / not connected,True,False,False,6407,0,0
+2025,farther apart / not connected,True,True,False,5403,11,11

@@ -1,51 +1,51 @@
 rank,faculty_a,department_a,institute_a,faculty_b,department_b,institute_b,n_common_coauthors,common_coauthors,adamic_adar,model_score,faculty_id_a,faculty_id_b
-1,R B Anand,Mechanical,NIT Trichy,S Suresh,Mechanical,NIT Trichy,3.0,"Jaganathan Vm, N Anantharaman, T Suthakar",2.7221531878846923,0.6156164907476773,T0842,T0845
-2,Bijay Mihir Kunar,Mining,NIT Surathkal,Harsha Vardhan,Mining,NIT Surathkal,5.0,"Akhil Avchar, Amrites Senapati, Ch Suryanarayana Murthy, Chivukula Suryanarayana Murthy",2.831723815349338,0.5145046178741784,S0410,S0417
-3,Jeyaraj P,Mechanical,NIT Surathkal,Sharnappa Joladarashi,Mechanical,NIT Surathkal,5.0,"G C Mohan Kumar, Gangadharan K V, Ramesh M R, Satyabodh M Kulkarni",2.2295672170730403,0.4869082946598174,S0385,S0393
-4,Hemantha Kumar,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,4.0,"Mohammad Rizwanur Rahman, Narendranath S, Sharnappa Joladarashi, Vijay Desai",1.7738771644468587,0.3667652864623726,S0384,S0388
-5,Narendranath S,Mechanical,NIT Surathkal,Sharnappa Joladarashi,Mechanical,NIT Surathkal,4.0,"Hemantha Kumar, Ramesh M R, Ravikiran Kadoli, Vijay Desai",1.8611783344598798,0.3604444683713278,S0387,S0393
-6,Prasad Krishna,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,4.0,"A S S Balan, G C Mohan Kumar, Shivananda Nayaka H, Srikanth Bontha",1.992782494624626,0.3531889326586024,S0379,S0388
-7,B Janet,Computer Applications,NIT Trichy,S Nickolas,Computer Applications,NIT Trichy,2.0,"R Eswari, Venkataswamy Reddy",2.164042561333445,0.3376730140846794,T0618,T0626
-8,G C Mohan Kumar,Mechanical,NIT Surathkal,Gangadharan K V,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, Khyati Verma, Sharnappa Joladarashi",1.7677884443221008,0.2959019144445305,S0382,S0383
-9,Kumar G N,Mechanical,NIT Surathkal,Veershetty Gumtapure,Mechanical,NIT Surathkal,4.0,"Gangadharan K V, Saikat Dutta, Vasudeva Madav, Vijaykumar H",2.172279671055431,0.28667124728433413,S0386,S0398
-10,Gangadharan K V,Mechanical,NIT Surathkal,Subhaschandra Kattimani,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, S M Murigendrappa, Sharnappa Joladarashi",1.5788967381397452,0.27339766239443786,S0383,S0397
-11,B Naresh Kumar Reddy,ECE,NIT Trichy,Varun P Gopi,ECE,NIT Trichy,2.0,"Bukke Chandrababu Naik, G Lakshmi Narayanan",1.9565933832587141,0.2722146917998818,T0644,T0663
-12,Ramesh M R,Mechanical,NIT Surathkal,Satyabodh M Kulkarni,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, Sharnappa Joladarashi, Vijay Desai",1.371447560065014,0.24552305772698185,S0388,S0392
-13,S Arul Daniel,EEE,NIT Trichy,S Moorthi,EEE,NIT Trichy,4.0,"M Venkata Kirthiga, N Ammmasai Goundan, P Raja, S Mageshwari",2.1484635167940285,0.24407180781412077,T0697,T0699
-14,B Rajasekaran,MME,NIT Surathkal,Shashi Bhushan Arya,MME,NIT Surathkal,3.0,"Preetham Kumar G V, Srikanth Bontha, Sumanth Govindarajan",1.8707794575599292,0.23980567063227082,S0257,S0265
-15,Chandrasekaran K,CSE,NIT Surathkal,Shasidhar G Koolagudi,CSE,NIT Surathkal,2.0,"Jeny Rajan, Sourav Kanti Addya",1.344533708530089,0.2290570096356483,S0048,S0050
-16,Ajay Kumar Yadav,Mechanical,NIT Surathkal,Hemantha Kumar,Mechanical,NIT Surathkal,3.0,"Arun M, Kumar G N, Mohammad Rizwanur Rahman",1.6046754717893141,0.2281200762583419,S0349,S0384
-17,Dharavath Kishan,EEE,NIT Surathkal,Manjunatha Sharma K,EEE,NIT Surathkal,2.0,"Prajof P, Yellasiri Suresh",1.631586747071319,0.22696045131921025,S0197,S0221
-18,P Palanisamy,ECE,NIT Trichy,G Lakshmi Narayanan,ECE,NIT Trichy,2.0,"Bibin Francis, Varun P Gopi",1.424137568996588,0.22686531626322448,T0654,T0667
-19,B Ravisankar,MME,NIT Trichy,S Muthukumaran,MME,NIT Trichy,3.0,"C Sathiya Narayanan, S Kumaran, S P Kumaresh Babu",1.7161442097772202,0.20724274116552793,T0759,T0767
-20,Arumuga Perumal D,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,3.0,"A S S Balan, Ajay Kumar Yadav, Srikanth Bontha",1.312668831008682,0.2039980548677451,S0355,S0388
-21,Prasad Krishna,Mechanical,NIT Surathkal,Narendranath S,Mechanical,NIT Surathkal,3.0,"A S S Balan, Mervin Arunaraj Herbert, Ranjeet Kumar Sahu",1.6573654807208884,0.20326152844988948,S0379,S0387
-22,Aneesh Mathew,Civil,NIT Trichy,S Saravanan,Civil,NIT Trichy,3.0,"R Gandhimathi, S Deivalakshmi, S T Ramesh",1.6301195954722452,0.19861889784570333,T0569,T0600
-23,Arun Kumar Shettigar,Mechanical,NIT Surathkal,Prasad Krishna,Mechanical,NIT Surathkal,2.0,"Mervin Arunaraj Herbert, Sudhakar C Jambagi",1.9235933878519513,0.1958757440784063,S0356,S0379
-24,Mangalpady Aruna,Mining,NIT Surathkal,Karra Ram Chandar,Mining,NIT Surathkal,3.0,"Akhil Avchar, Amrites Senapati, Bijay Mihir Kunar",1.69334390348061,0.19193338380725208,S0407,S0418
-25,G C Mohan Kumar,Mechanical,NIT Surathkal,Shivananda Nayaka H,Mechanical,NIT Surathkal,3.0,"Khyati Verma, Prasad Krishna, Ramesh M R",1.7146530267384974,0.19141014876598175,S0382,S0394
-26,P Kalaichelvi,Chemical,NIT Trichy,Muthukumar K,Chemical,NIT Trichy,4.0,"A Arunagiri, M Matheswaran, N Samsudeen, T K Radhakrishnan",1.9916473767392704,0.18807448004611627,T0529,T0541
-27,Kartick Tarafder,Physics,NIT Surathkal,Partha Pratim Das,Physics,NIT Surathkal,3.0,"Govinda Rao Umesh, M Nagarajan Satyanarayan, Sib Sankar Mal",1.5903528902427813,0.18610159008038363,S0424,S0425
-28,G C Mohan Kumar,Mechanical,NIT Surathkal,Srikanth Bontha,Mechanical,NIT Surathkal,3.0,"Mrityunjay R Doddamani, Prasad Krishna, Ramesh M R",1.4257487346712723,0.18607576602337234,S0382,S0396
-29,N Gnanasekaran,Mechanical,NIT Surathkal,Hemantha Kumar,Mechanical,NIT Surathkal,2.0,"Arun M, Vijay Desai",1.2352458628142324,0.17743740116835213,S0376,S0384
-30,Kalpana R,EEE,NIT Surathkal,Debashisha Jena,EEE,NIT Surathkal,1.0,P Parthiban,1.4426950408889634,0.1760461565474896,S0199,S0219
-31,Hemantha Kumar,Mechanical,NIT Surathkal,Jeyaraj P,Mechanical,NIT Surathkal,2.0,"Gangadharan K V, S M Murigendrappa",1.100270702134433,0.1676791654630913,S0384,S0385
-32,Ajay Kumar Yadav,Mechanical,NIT Surathkal,Sharnappa Joladarashi,Mechanical,NIT Surathkal,3.0,"Mohammad Rizwanur Rahman, Ramesh M R, Ravikiran Kadoli",1.347279992090129,0.16675085281554008,S0349,S0393
-33,S Kumaran,MME,NIT Trichy,S P Kumaresh Babu,MME,NIT Trichy,2.0,"B Ravisankar, S Muthukumaran",1.2022458674074694,0.1651864107409986,T0766,T0769
-34,M Venkata Kirthiga,EEE,NIT Trichy,N Kumaresan,EEE,NIT Trichy,3.0,"C Nagamani, M P Selvan, S Moorthi",1.48291629805292,0.16239311838005902,T0691,T0693
-35,Hemantha Kumar,Mechanical,NIT Surathkal,Subhaschandra Kattimani,Mechanical,NIT Surathkal,2.0,"S M Murigendrappa, Sharnappa Joladarashi",1.1237771248263264,0.1606996912142663,S0384,S0397
-36,Dharavath Kishan,EEE,NIT Surathkal,P Parthiban,EEE,NIT Surathkal,1.0,Kalpana R,1.4426950408889634,0.15746318026273926,S0197,S0203
-37,Debabrata Karmakar,Water Resources & Ocean,NIT Surathkal,Ramesh H,Water Resources & Ocean,NIT Surathkal,1.0,Nasar T,1.4426950408889634,0.15666295200597025,S0439,S0455
-38,Vasudeva Madav,Mechanical,NIT Surathkal,Satyabodh M Kulkarni,Mechanical,NIT Surathkal,1.0,Ravishankar K S,1.4426950408889634,0.15081362035894794,S0368,S0392
-39,Sandi Kumar Reddy,Mining,NIT Surathkal,Harsha Vardhan,Mining,NIT Surathkal,3.0,"Ch Suryanarayana Murthy, Mandela Govinda Raj, Mangalpady Aruna",1.552265668353609,0.14986115488426985,S0415,S0417
-40,Rajasekaran C,Civil,NIT Surathkal,B R Jayalekshmi,Civil,NIT Surathkal,1.0,Katta Venkataramana,1.4426950408889634,0.148791671544409,S0122,S0134
-41,N Siva Shanmugam,Mechanical,NIT Trichy,S P Sivapirakasam,Mechanical,NIT Trichy,2.0,"K Sankaranarayanasamy, Sreejith Mohan",1.072008968920998,0.148667719492617,T0838,T0847
-42,Pathipati Srihari,ECE,NIT Surathkal,Shyam Lal,ECE,NIT Surathkal,2.0,"Raghavendra B S, U Shripathi Acharya",1.1022332815225997,0.14806012264177856,S0162,S0170
-43,S Velmathi,Chemistry,NIT Trichy,R Karvembu,Chemistry,NIT Trichy,1.0,Sunandan Sarkar,0.9102392266268373,0.1446354453001648,T0552,T0561
-44,Mandela Govinda Raj,Mining,NIT Surathkal,Bijay Mihir Kunar,Mining,NIT Surathkal,3.0,"Ch Suryanarayana Murthy, Chivukula Suryanarayana Murthy, Mangalpady Aruna",1.6522782542384788,0.14350807328625367,S0406,S0410
-45,S Velmathi,Chemistry,NIT Trichy,V M Biju,Chemistry,NIT Trichy,2.0,"S T Ramesh, Sunandan Sarkar",1.4683498531780845,0.14316853487197606,T0552,T0566
-46,Pathipati Srihari,ECE,NIT Surathkal,Prabu K,ECE,NIT Surathkal,2.0,"Krishnamoorthy K, U Shripathi Acharya",1.1352332769293625,0.14273790835367256,S0162,S0163
-47,S Mageshwari,EEE,NIT Trichy,M Venkata Kirthiga,EEE,NIT Trichy,3.0,"C Nagamani, S Arul Daniel, S Moorthi",1.5271285822344165,0.14211421713773148,T0680,T0691
-48,M P Selvan,EEE,NIT Trichy,S Arul Daniel,EEE,NIT Trichy,3.0,"M Venkata Kirthiga, N Ammmasai Goundan, P Raja",1.5271285822344167,0.14167187213734564,T0690,T0697
-49,S Suresh,Mechanical,NIT Trichy,S P Sivapirakasam,Mechanical,NIT Trichy,2.0,"K R Balasubramanian, V Senthilkumar",1.013230239864666,0.14154353413546863,T0845,T0847
-50,Anish S,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,2.0,"Ajay Kumar Yadav, Ravikiran Kadoli",1.0764545478730305,0.14075261980229076,S0380,S0388
+1,R B Anand,Mechanical,NIT Trichy,S Suresh,Mechanical,NIT Trichy,3.0,"Jaganathan Vm, N Anantharaman, T Suthakar",2.7221531878846923,0.6412583976111096,T0790,T0793
+2,B Janet,Computer Applications,NIT Trichy,S Nickolas,Computer Applications,NIT Trichy,2.0,"R Eswari, Venkataswamy Reddy",2.164042561333445,0.3841674595630776,T0567,T0575
+3,Jeyaraj P,Mechanical,NIT Surathkal,Sharnappa Joladarashi,Mechanical,NIT Surathkal,5.0,"G C Mohan Kumar, Gangadharan K V, Ramesh M R, Satyabodh M Kulkarni",2.2295672170730403,0.36850883350267594,S0348,S0356
+4,B Naresh Kumar Reddy,ECE,NIT Trichy,Varun P Gopi,ECE,NIT Trichy,2.0,"Bukke Chandrababu Naik, G Lakshmi Narayanan",1.9565933832587141,0.29909733971693403,T0592,T0611
+5,Narendranath S,Mechanical,NIT Surathkal,Sharnappa Joladarashi,Mechanical,NIT Surathkal,4.0,"Hemantha Kumar, Ramesh M R, Ravikiran Kadoli, Vijay Desai",1.8611783344598798,0.2815849586984455,S0350,S0356
+6,Prasad Krishna,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,4.0,"A S S Balan, G C Mohan Kumar, Shivananda Nayaka H, Srikanth Bontha",1.992782494624626,0.28013230959777596,S0342,S0351
+7,Hemantha Kumar,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,4.0,"Mohammad Rizwanur Rahman, Narendranath S, Sharnappa Joladarashi, Vijay Desai",1.7738771644468587,0.2712789574355865,S0347,S0351
+8,G C Mohan Kumar,Mechanical,NIT Surathkal,Gangadharan K V,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, Khyati Verma, Sharnappa Joladarashi",1.7677884443221008,0.26401869785818954,S0345,S0346
+9,Kumar G N,Mechanical,NIT Surathkal,Veershetty Gumtapure,Mechanical,NIT Surathkal,4.0,"Gangadharan K V, Saikat Dutta, Vasudeva Madav, Vijaykumar H",2.172279671055431,0.2533619980192437,S0349,S0361
+10,Dharavath Kishan,EEE,NIT Surathkal,Manjunatha Sharma K,EEE,NIT Surathkal,2.0,"Prajof P, Yellasiri Suresh",1.631586747071319,0.23577141117764597,S0186,S0209
+11,Gangadharan K V,Mechanical,NIT Surathkal,Subhaschandra Kattimani,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, S M Murigendrappa, Sharnappa Joladarashi",1.5788967381397452,0.23086641216731454,S0346,S0360
+12,Chandrasekaran K,CSE,NIT Surathkal,Shasidhar G Koolagudi,CSE,NIT Surathkal,2.0,"Jeny Rajan, Sourav Kanti Addya",1.344533708530089,0.2263443683946775,S0048,S0050
+13,Arun Kumar Shettigar,Mechanical,NIT Surathkal,Prasad Krishna,Mechanical,NIT Surathkal,2.0,"Mervin Arunaraj Herbert, Sudhakar C Jambagi",1.9565933832587141,0.22618296572353258,S0322,S0342
+14,P Palanisamy,ECE,NIT Trichy,G Lakshmi Narayanan,ECE,NIT Trichy,2.0,"Bibin Francis, Varun P Gopi",1.424137568996588,0.22490834516557157,T0602,T0615
+15,B Rajasekaran,MME,NIT Surathkal,Shashi Bhushan Arya,MME,NIT Surathkal,3.0,"Preetham Kumar G V, Srikanth Bontha, Sumanth Govindarajan",1.8707794575599292,0.22077499029051245,S0237,S0245
+16,Kalpana R,EEE,NIT Surathkal,Debashisha Jena,EEE,NIT Surathkal,1.0,P Parthiban,1.4426950408889634,0.2139042257953993,S0188,S0207
+17,S Arul Daniel,EEE,NIT Trichy,S Moorthi,EEE,NIT Trichy,4.0,"M Venkata Kirthiga, N Ammmasai Goundan, P Raja, S Mageshwari",2.1484635167940285,0.21231592919466,T0645,T0647
+18,Bijay Mihir Kunar,Mining,NIT Surathkal,Harsha Vardhan,Mining,NIT Surathkal,4.0,"Akhil Avchar, Amrites Senapati, Chivukula Suryanarayana Murthy, Mangalpady Aruna",2.077376299498093,0.20708247316474102,S0371,S0377
+19,Ajay Kumar Yadav,Mechanical,NIT Surathkal,Hemantha Kumar,Mechanical,NIT Surathkal,3.0,"Arun M, Kumar G N, Mohammad Rizwanur Rahman",1.6046754717893141,0.19380493859685136,S0315,S0347
+20,Ramesh M R,Mechanical,NIT Surathkal,Satyabodh M Kulkarni,Mechanical,NIT Surathkal,3.0,"Jeyaraj P, Sharnappa Joladarashi, Vijay Desai",1.371447560065014,0.1935576456083558,S0351,S0355
+21,B Ravisankar,MME,NIT Trichy,S Muthukumaran,MME,NIT Trichy,3.0,"C Sathiya Narayanan, S Kumaran, S P Kumaresh Babu",1.7161442097772202,0.19160773713955243,T0707,T0715
+22,Prasad Krishna,Mechanical,NIT Surathkal,Narendranath S,Mechanical,NIT Surathkal,3.0,"A S S Balan, Mervin Arunaraj Herbert, Ranjeet Kumar Sahu",1.6903654761276512,0.189397318003262,S0342,S0350
+23,Mangalpady Aruna,Mining,NIT Surathkal,Karra Ram Chandar,Mining,NIT Surathkal,3.0,"Akhil Avchar, Amrites Senapati, Bijay Mihir Kunar",1.7375561876621064,0.1848880125824732,S0368,S0378
+24,Debabrata Karmakar,Water Resources & Ocean,NIT Surathkal,Ramesh H,Water Resources & Ocean,NIT Surathkal,1.0,Nasar T,1.4426950408889634,0.18422833655098944,S0398,S0413
+25,Dharavath Kishan,EEE,NIT Surathkal,P Parthiban,EEE,NIT Surathkal,1.0,Kalpana R,1.4426950408889634,0.1840091132501863,S0186,S0192
+26,Aneesh Mathew,Civil,NIT Trichy,S Saravanan,Civil,NIT Trichy,3.0,"R Gandhimathi, S Deivalakshmi, S T Ramesh",1.6301195954722452,0.18233799484495083,T0519,T0549
+27,Rajasekaran C,Civil,NIT Surathkal,B R Jayalekshmi,Civil,NIT Surathkal,1.0,Katta Venkataramana,1.4426950408889634,0.17766355272407824,S0118,S0130
+28,Vasudeva Madav,Mechanical,NIT Surathkal,Satyabodh M Kulkarni,Mechanical,NIT Surathkal,1.0,Ravishankar K S,1.4426950408889634,0.17662370218288992,S0334,S0355
+29,G C Mohan Kumar,Mechanical,NIT Surathkal,Shivananda Nayaka H,Mechanical,NIT Surathkal,3.0,"Khyati Verma, Prasad Krishna, Ramesh M R",1.7146530267384974,0.17506968569602016,S0345,S0357
+30,Alwyn Roshan Pais,CSE,NIT Surathkal,Annappa,CSE,NIT Surathkal,1.0,P Santhi Thilagam,1.4426950408889634,0.1732499522948172,S0046,S0047
+31,Pathipati Srihari,ECE,NIT Surathkal,Ashvini Chaturvedi,ECE,NIT Surathkal,1.0,John D Souza,1.4426950408889634,0.16751187060199277,S0155,S0170
+32,N Gnanasekaran,Mechanical,NIT Surathkal,Hemantha Kumar,Mechanical,NIT Surathkal,2.0,"Arun M, Vijay Desai",1.2352458628142324,0.16561047141778576,S0340,S0347
+33,Kartick Tarafder,Physics,NIT Surathkal,Partha Pratim Das,Physics,NIT Surathkal,3.0,"Govinda Rao Umesh, M Nagarajan Satyanarayan, Sib Sankar Mal",1.5903528902427813,0.15988584045611537,S0384,S0385
+34,S Kumaran,MME,NIT Trichy,S P Kumaresh Babu,MME,NIT Trichy,2.0,"B Ravisankar, S Muthukumaran",1.2022458674074694,0.15818653014945003,T0714,T0717
+35,Arumuga Perumal D,Mechanical,NIT Surathkal,Ramesh M R,Mechanical,NIT Surathkal,3.0,"A S S Balan, Ajay Kumar Yadav, Srikanth Bontha",1.312668831008682,0.15604573241683625,S0321,S0351
+36,S Velmathi,Chemistry,NIT Trichy,R Karvembu,Chemistry,NIT Trichy,1.0,Sunandan Sarkar,0.9102392266268373,0.1550086314802765,T0502,T0511
+37,P Kalaichelvi,Chemical,NIT Trichy,Muthukumar K,Chemical,NIT Trichy,4.0,"A Arunagiri, M Matheswaran, N Samsudeen, T K Radhakrishnan",1.9916473767392704,0.15388985962628768,T0479,T0491
+38,S Velmathi,Chemistry,NIT Trichy,V M Biju,Chemistry,NIT Trichy,2.0,"S T Ramesh, Sunandan Sarkar",1.4683498531780845,0.1535748537583872,T0502,T0516
+39,S Suresh,Mechanical,NIT Trichy,Vedharaj Sivasankaralingam,Mechanical,NIT Trichy,1.0,M Udayakumar,1.4426950408889634,0.1522100479219011,T0793,T0804
+40,Keyur Raval,Chemical,NIT Surathkal,Vidya Shetty K,Chemical,NIT Surathkal,1.0,G Srinikethan,1.4426950408889634,0.15189094213296522,S0079,S0084
+41,Hemantha Kumar,Mechanical,NIT Surathkal,Jeyaraj P,Mechanical,NIT Surathkal,2.0,"Gangadharan K V, S M Murigendrappa",1.100270702134433,0.15033111811917965,S0347,S0348
+42,G C Mohan Kumar,Mechanical,NIT Surathkal,Srikanth Bontha,Mechanical,NIT Surathkal,3.0,"Mrityunjay R Doddamani, Prasad Krishna, Ramesh M R",1.4257487346712723,0.14932154657860974,S0345,S0359
+43,Hemantha Kumar,Mechanical,NIT Surathkal,Subhaschandra Kattimani,Mechanical,NIT Surathkal,2.0,"S M Murigendrappa, Sharnappa Joladarashi",1.1237771248263264,0.14455590555807718,S0347,S0360
+44,Pavan G S,Civil,NIT Surathkal,Subhash C Yaragal,Civil,NIT Surathkal,2.0,"K Swaminathan, Prashanth M H",1.531574161186449,0.14110100415977408,S0116,S0138
+45,Sandi Kumar Reddy,Mining,NIT Surathkal,Harsha Vardhan,Mining,NIT Surathkal,3.0,"Chivukula Suryanarayana Murthy, Mandela Govinda Raj, Mangalpady Aruna",1.6192782588317156,0.13654151205526746,S0375,S0377
+46,N Siva Shanmugam,Mechanical,NIT Trichy,S P Sivapirakasam,Mechanical,NIT Trichy,2.0,"K Sankaranarayanasamy, Sreejith Mohan",1.072008968920998,0.134651800003401,T0786,T0795
+47,Pathipati Srihari,ECE,NIT Surathkal,Shyam Lal,ECE,NIT Surathkal,2.0,"Raghavendra B S, U Shripathi Acharya",1.1022332815225997,0.13361304249990302,S0155,S0163
+48,M Venkata Kirthiga,EEE,NIT Trichy,N Kumaresan,EEE,NIT Trichy,3.0,"C Nagamani, M P Selvan, S Moorthi",1.48291629805292,0.1332985362935174,T0639,T0641
+49,P Santhi Thilagam,CSE,NIT Surathkal,Shasidhar G Koolagudi,CSE,NIT Surathkal,1.0,Annappa,0.9102392266268373,0.1331592540231141,S0049,S0050
+50,Pathipati Srihari,ECE,NIT Surathkal,Prabu K,ECE,NIT Surathkal,2.0,"Krishnamoorthy K, U Shripathi Acharya",1.1352332769293625,0.13299288800936626,S0155,S0156

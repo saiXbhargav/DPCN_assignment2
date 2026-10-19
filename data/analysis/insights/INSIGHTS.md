@@ -20,8 +20,8 @@ Every number below is in the CSV/JSON files in this folder.
 
 # Sections 1–2: the faculty co-authorship network
 **Network:** the **faculty-only** co-authorship network (as agreed by the team):
-- 663 NIT Trichy and NIT Surathkal faculty;
-- a link means the two faculty members have written at least one paper together (967 links in total).
+- 656 NIT Trichy and NIT Surathkal faculty;
+- a link means the two faculty members have written at least one paper together (961 links in total).
 
 **Years:** 2016–2026. **2026 is a partial year** (data collected in October 2026), so it's shaded in the charts and left out of year-on-year comparisons.
 
@@ -38,25 +38,25 @@ Every number below is in the CSV/JSON files in this folder.
 
 | | 2016 | 2018 | 2020 | 2022 | 2025 | 2026 (partial) |
 |---|---|---|---|---|---|---|
-| Faculty in the network | 309 | 425 | 509 | 568 | 650 | 663 |
-| Co-author links | 134 | 313 | 519 | 661 | 928 | 967 |
-| Average faculty co-authors per person | 0.87 | 1.47 | 2.04 | 2.33 | 2.86 | 2.92 |
-| Faculty with at least one faculty co-author | 52% | 67% | 72% | 76% | 82% | 82% |
-| Largest connected group (% of faculty) | 4.5% | **41%** | 57% | 64% | 75% | 75% |
+| Faculty in the network | 308 | 421 | 503 | 561 | 643 | 656 |
+| Co-author links | 135 | 313 | 515 | 656 | 923 | 961 |
+| Average faculty co-authors per person | 0.88 | 1.49 | 2.05 | 2.34 | 2.87 | 2.93 |
+| Faculty with at least one faculty co-author | 53% | 67% | 72% | 77% | 82% | 82% |
+| Largest connected group (% of faculty) | 4.5% | **42%** | 57% | 65% | 75% | 75% |
 | Effective diameter (90% of pairs within) | 4 | **19** | 10 | 10 | 9 | 9 |
-| Modularity (Louvain) | 0.95 | 0.92 | 0.88 | 0.87 | 0.85 | 0.84 |
+| Modularity (Louvain) | 0.95 | 0.92 | 0.89 | 0.87 | 0.85 | 0.85 |
 | Links between departments | 24% | 28% | 30% | 30% | 31% | 31% |
 | Links between the two NITs | 4 | 6 | 11 | 16 | 25 | 28 |
 
 ### Findings
 
 1. **The network densifies.** Links grow much faster than people.
-   - The average number of faculty co-authors more than tripled, from 0.87 to 2.86.
+   - The average number of faculty co-authors more than tripled, from 0.88 to 2.87.
    - The **densification law** (Leskovec, Kleinberg & Faloutsos 2005) holds very well. On a log–log plot, links against faculty form a straight line with slope above 1:
 
    | Fit | Exponent *a* in E ∝ N^a | R² |
    |---|---|---|
-   | All faculty, 2016–2026 | **2.54** | 0.997 |
+   | All faculty, 2016–2026 | **2.55** | 0.997 |
    | Faculty with at least one faculty co-author, 2016–2026 | **1.66** | 0.998 |
    | All faculty, 2019–2025 (start-up years dropped) | 2.29 | 0.995 |
    | Connected faculty, 2019–2025 | 1.57 | 0.998 |
@@ -68,12 +68,12 @@ Every number below is in the CSV/JSON files in this folder.
    - Counted over connected faculty, the exponent (about 1.6) is in the usual range.
 
 2. **A large connected group suddenly formed in 2018.**
-   - The largest group jumped from **8% to 41%** of faculty in one year.
+   - The largest group jumped from **8% to 42%** of faculty in one year.
    - This happened when the average number of co-authors passed about 1.3–1.5, the kind of sudden transition percolation theory predicts. In a random network, a giant component appears once the average degree passes 1.
    - Part of the jump is also a start-up effect: collaborations from before 2016 can't be seen, so 2016–2017 look more fragmented than they really were.
 
 3. **The diameter shrinks.**
-   - When the large group first formed in 2018, it was made of long chains: diameter 30, effective diameter 19 and average path 11.3 steps.
+   - When the large group first formed in 2018, it was made of long chains: diameter 28, effective diameter 19 and average path 11.2 steps.
    - As links filled in, distances shrank: effective diameter 9 and average path 6.2 by 2025.
    - This is the **"shrinking diameter"** pattern that Leskovec et al. found in growing real-world networks.
 
@@ -81,14 +81,14 @@ Every number below is in the CSV/JSON files in this folder.
    - Modularity fell from 0.95 to 0.85, and the share of links between departments rose from 24% to 31%.
    - Links between NIT Trichy and NIT Surathkal grew from 4 to 25, but that is still under 3% of all links.
 
-5. **COVID dip.** 2021 had the fewest new faculty–faculty links of any full year (58, against 78–106 in other years). Joint papers also fell from 459 pair-rows in 2020 to 350 in 2021.
+5. **COVID dip.** 2021 had the fewest new faculty–faculty links of any full year (57, against 77–103 in other years). Joint papers also fell from 459 pair-rows in 2020 to 350 in 2021.
 
 ---
 
 ## 2. Do friends of friends become co-authors? (triadic closure)
 
 **Method:**
-- For every year *t* from 2016 to 2025, take every pair of faculty who were both already in the network and **had not yet written a paper together**. That's 1.34 million pair-years in total.
+- For every year *t* from 2016 to 2025, take every pair of faculty who were both already in the network and **had not yet written a paper together**. That's 1.31 million pair-years in total.
 - Count how many common faculty co-authors each pair had at that point.
 - Check whether the pair wrote their **first joint paper in year t+1**.
 - Pool the results over all years. This is the method of Kossinets & Watts (2006) and Newman (2001).
@@ -97,17 +97,17 @@ Every number below is in the CSV/JSON files in this folder.
 
 | Pair's position in the network | Pair-years | Got a first joint paper next year | Chance next year | Chance within 3 years* | Compared with far-apart pairs |
 |---|---|---|---|---|---|
-| 3+ common co-authors | 228 | 3 | 1.32% | **5.6%** | 33× |
-| 2 common co-authors | 1,401 | 20 | 1.43% | **4.6%** | 36× |
-| 1 common co-author | 12,224 | 95 | 0.78% | **2.7%** | 20× |
-| Distance 3 (friend of a friend of a friend) | 29,440 | 64 | 0.22% | 0.88% | 5.5× |
-| Farther apart / not connected | 1,294,226 | 510 | 0.039% | 0.15% | 1× |
+| 3+ common co-authors | 233 | 3 | 1.29% | **5.5%** | 32× |
+| 2 common co-authors | 1,393 | 20 | 1.44% | **4.6%** | 36× |
+| 1 common co-author | 12,141 | 94 | 0.77% | **2.7%** | 19× |
+| Distance 3 (friend of a friend of a friend) | 29,226 | 64 | 0.22% | 0.89% | 5.5× |
+| Farther apart / not connected | 1,265,206 | 508 | 0.040% | 0.15% | 1× |
 
 \* The 3-year column only uses years with a complete 3-year window (t ≤ 2022), because 2026 is partial.
 
 ### Findings
 
-1. **Yes, strongly.** A faculty pair with **one common co-author is about 20 times more likely** to start collaborating the next year than a pair far apart. With two or more common co-authors it's **30–36 times** more likely.
+1. **Yes, strongly.** A faculty pair with **one common co-author is about 19 times more likely** to start collaborating the next year than a pair far apart. With two or more common co-authors it's **32–36 times** more likely.
    - The chance falls steadily with distance: 3+ common co-authors > 2 > 1 > distance 3 > farther.
    - The 3-year column shows this order most clearly. The "3+" next-year figure rests on only 3 events, so read it together with the 3-year column.
 
@@ -115,22 +115,22 @@ Every number below is in the CSV/JSON files in this folder.
 
    | | Friend of a friend | Not a friend of a friend | Ratio |
    |---|---|---|---|
-   | Same department | 1.41% | 0.41% | 3.4× |
-   | **Different departments** | **0.44%** | 0.016% | **27×** |
+   | Same department | 1.41% | 0.42% | 3.4× |
+   | **Different departments** | **0.44%** | 0.017% | **26×** |
 
-   A mutual co-author makes a **cross-department** collaboration about **27 times** more likely. That's as likely as two same-department colleagues with no mutual co-author (0.44% vs 0.41%). **Mutual co-authors are how departments get connected.**
+   A mutual co-author makes a **cross-department** collaboration about **26 times** more likely. That's as likely as two same-department colleagues with no mutual co-author (0.44% vs 0.42%). **Mutual co-authors are how departments get connected.**
 
 3. **But most new links do not close a triangle.**
 
    | New faculty–faculty links, 2017–2025 | Links | Share |
    |---|---|---|
    | Closed a triangle (the pair already had a common faculty co-author) | 104 | 13% |
-   | Existing faculty with no common faculty co-author | 551 | 69% |
-   | Involve someone newly arrived in the network | 139 | 18% |
+   | Existing faculty with no common faculty co-author | 549 | 70% |
+   | Involve someone newly arrived in the network | 135 | 17% |
 
    Triadic closure is a strong pull for each individual pair, but there are very few such pairs: about 14,000 friend-of-friend pair-years against 1.3 million others. So only about 1 in 8 new links comes this way. Most new collaborations start between colleagues with no shared **faculty** co-author. The real connection is often a **PhD student or an outside co-author**, who are not nodes in this faculty-only network. The closure we measure is therefore a **lower bound**.
 
-4. **Between the two NITs there's too little data to say.** Only 21 Trichy–Surathkal first links formed among about 671,000 cross-NIT pair-years, and only one of them was a friend-of-friend pair (`triadic_closure_by_institute.csv`).
+4. **Between the two NITs there's too little data to say.** Only 21 Trichy–Surathkal first links formed among about 656,000 cross-NIT pair-years, and only one of them was a friend-of-friend pair (`triadic_closure_by_institute.csv`).
 
 ---
 
@@ -139,7 +139,7 @@ Every number below is in the CSV/JSON files in this folder.
 - **Joining year.** A person's first paper in 2016–2026 is used as the year they join, which approximates when they joined or became active.
 - **Faculty-only.** Students and outside co-authors are not nodes, so common contacts through them are invisible (see Finding 3 of section 2).
 - **2026 is partial** (until October 2026).
-- **The faculty roster is fixed**, so the network can't grow beyond 663 people. This inflates the densification exponent counted over all faculty.
+- **The faculty roster is fixed**, so the network can't grow beyond 656 people. This inflates the densification exponent counted over all faculty.
 
 ## Files for sections 1–2
 
@@ -415,7 +415,7 @@ The last two columns are the share of **all** joint papers and of **all** citati
 **Network:** the faculty-only co-authorship network. It runs in about 15 seconds on a CPU.
 
 **Set-up (team decisions):**
-- **Test.** Take the network as it was at the end of **2022**. Rank **every** pair of faculty who were active by 2022 and had not yet written together: 160,367 pairs. Check which of them really wrote their first joint paper in **2023–2026**: 243 pairs, so a random guess is right **0.15%** of the time.
+- **Test.** Take the network as it was at the end of **2022**. Rank **every** pair of faculty who were active by 2022 and had not yet written together: 156,424 pairs. Check which of them really wrote their first joint paper in **2023–2026**: 242 pairs, so a random guess is right **0.15%** of the time.
 - **Methods compared:**
 
   | Method | Score for a pair (A, B) |
@@ -433,20 +433,20 @@ The last two columns are the share of **all** joint papers and of **all** citati
 
 ![link prediction](link_prediction.png)
 
-| Method | AUC | Precision@50 | Precision@100 | Precision@243 | Better than random (@100) | True new links it can score at all |
+| Method | AUC | Precision@50 | Precision@100 | Precision@242 | Better than random (@100) | True new links it can score at all |
 |---|---|---|---|---|---|---|
-| Adamic–Adar | 0.58 | **6.3%** | **6.0%** | 4.3% | **40×** | 17% |
-| Resource allocation | 0.58 | 6.2% | **6.0%** | **4.5%** | **40×** | 17% |
-| Common neighbours | 0.58 | 5.4% | 4.1% | 3.2% | 27× | 17% |
-| Jaccard | 0.58 | 0.2% | 0.8% | 1.6% | 6× | 17% |
-| Preferential attachment | 0.54 | 2.0% | 1.8% | 1.7% | 12× | 57% |
+| Adamic–Adar | 0.58 | **6.7%** | **7.0%** | 4.3% | **45×** | 17% |
+| Resource allocation | 0.58 | 6.6% | **7.0%** | **4.5%** | **45×** | 17% |
+| Common neighbours | 0.58 | 5.3% | 4.0% | 3.2% | 26× | 17% |
+| Jaccard | 0.58 | 0.1% | 0.8% | 1.7% | 5× | 17% |
+| Preferential attachment | 0.54 | 2.0% | 1.9% | 1.7% | 12× | 57% |
 | **Learned model** | **0.90** | 4.0% | 4.0% | **4.5%** | 26× | 100% |
-| Random | 0.50 | 0% | 1.0% | 0.4% | 1× | 100% |
+| Random | 0.51 | 0% | 0% | 0% | – | 100% |
 
 ### Findings
 
 1. **Yes, collaborations are predictable, far better than chance.**
-   - Among the 100 pairs Adamic–Adar or resource allocation rank highest, **6% really started collaborating** within the next four years. That's **40 times** better than random (0.15%).
+   - Among the 100 pairs Adamic–Adar or resource allocation rank highest, **7% really started collaborating** within the next four years. That's **45 times** better than random (0.15%).
    - Predicting the *exact* pair is still hard: most of the top-100 pairs did not collaborate (yet).
 2. **Neighbour-based scores are good at the very top but blind to most new links.**
    - Only **17%** of the 2023–2026 links were between pairs who already shared a faculty co-author, which matches the triadic-closure finding in section 2. For the other 83%, these scores are 0.
@@ -455,11 +455,11 @@ The last two columns are the share of **all** joint papers and of **all** citati
 
    | Feature | Coefficient |
    |---|---|
-   | Same institute | **+1.35** |
+   | Same institute | **+1.37** |
    | Same department | **+0.78** |
    | Combined paper count | +0.26 |
-   | Smaller of the two paper counts | +0.15 |
-   | Network scores (common neighbours, Adamic–Adar, …) | under 0.1 each, once the above are known |
+   | Smaller of the two paper counts | +0.14 |
+   | Network scores (common neighbours, Adamic–Adar, …) | 0.1 or less each, once the above are known |
 
    In plain words: **who you will collaborate with next is mostly decided by being in the same institute and department and being active**. The network adds detail at the very top of the list.
 4. **Weighting matters.** Adamic–Adar and resource allocation beat plain common neighbours, because a shared co-author who works with everyone is a weaker signal than one with few collaborators. Jaccard does worst, because it rewards pairs of newcomers who share their only co-author.
@@ -475,17 +475,17 @@ The top 10:
 | # | Faculty A | Faculty B | Department, institute | Shared co-authors |
 |---|---|---|---|---|
 | 1 | R B Anand | S Suresh | Mechanical, NIT Trichy | 3 |
-| 2 | Bijay Mihir Kunar | Harsha Vardhan | Mining, NIT Surathkal | 5* |
+| 2 | B Janet | S Nickolas | Computer Applications, NIT Trichy | 2 |
 | 3 | Jeyaraj P | Sharnappa Joladarashi | Mechanical, NIT Surathkal | 5 |
-| 4 | Hemantha Kumar | Ramesh M R | Mechanical, NIT Surathkal | 4 |
+| 4 | B Naresh Kumar Reddy | Varun P Gopi | ECE, NIT Trichy | 2 |
 | 5 | Narendranath S | Sharnappa Joladarashi | Mechanical, NIT Surathkal | 4 |
 | 6 | Prasad Krishna | Ramesh M R | Mechanical, NIT Surathkal | 4 |
-| 7 | B Janet | S Nickolas | Computer Applications, NIT Trichy | 2 |
+| 7 | Hemantha Kumar | Ramesh M R | Mechanical, NIT Surathkal | 4 |
 | 8 | G C Mohan Kumar | Gangadharan K V | Mechanical, NIT Surathkal | 3 |
 | 9 | Kumar G N | Veershetty Gumtapure | Mechanical, NIT Surathkal | 4 |
-| 10 | Gangadharan K V | Subhaschandra Kattimani | Mechanical, NIT Surathkal | 3 |
+| 10 | Dharavath Kishan | Manjunatha Sharma K | EEE, NIT Surathkal | 2 |
 
-\* Two of the five are the same person, listed twice in the roster (see the caveats).
+(Before the roster fix, a Mining pair ranked #2 because one shared co-author was counted twice; it has dropped out.)
 
 **How to read the list.** These are pairs whose network position and department look like those of pairs that went on to collaborate. They are **suggestions, not certainties**: in the test, about 1 in 20 of the top predictions came true within four years. The model favours same-department pairs, because that is what predicts collaboration best. For less obvious ideas, the scores can be filtered to pairs from different departments.
 
@@ -503,18 +503,14 @@ The top 10:
 **Caveats:**
 - The test window includes 2026, which is partial, so a few real 2026 collaborations aren't counted yet. Precision is slightly underestimated.
 - Faculty who left after 2022 are kept in the test, because in 2022 we couldn't know they would leave. The recommendation list uses current faculty only.
-- **A roster issue to fix.** *Ch Suryanarayana Murthy* (S0412, 2016–2018) and *Chivukula Suryanarayana Murthy* (S0405, 2019–2023) are the **same Mining professor** at NIT Surathkal, split into two faculty IDs. A quick scan finds two more likely cases:
-  - *Shrikantha S Rao* (S0395) and *Shrikantha* (S0400), Mechanical, NIT Surathkal;
-  - possibly *Krishnan P A* (T0607) and *Krishnan* (T0582), Civil, NIT Trichy.
-
-  These should be merged in the roster step (`build_roster.py` / `faculty_match_overrides.csv`). The effect on these results is small.
+- **Roster duplicates (fixed).** This section first found *Ch Suryanarayana Murthy* / *Chivukula Suryanarayana Murthy* (Mining), *Shrikantha S Rao* / *Shrikantha* (Mechanical) and *Krishnan P A* / *Krishnan* (Civil) listed twice. The roster step (`build_roster.py`) now merges these and about 50 similar NIT Surathkal cases (old directory names printed without spaces), and all results here were re-run on the fixed roster.
 
 ---
 
 # Section 7: Which faculty are doing best? (ranking)
 
 **Who is ranked** (team decision): **438 current faculty with at least 10 papers** in 2016–2026, from both NITs together.
-- 119 current faculty with fewer papers and 106 former faculty are listed in `faculty_not_ranked.csv` but not ranked.
+- 119 current faculty with fewer papers and 99 former faculty are listed in `faculty_not_ranked.csv` but not ranked.
 - Each paper counts once per faculty member.
 
 **The 7 measures**, all for 2016–2026:
@@ -537,15 +533,15 @@ The top 10:
 
 | # | Faculty | Institute, department | Score | Papers | Citations | h | Mean FWCI | Top-10% | Top-venue |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Ramesh M R | Surathkal, Mechanical | 98.5 | 179 | 4,126 | 39 | 2.43 | 49 | 45 |
+| 1 | Ramesh M R | Surathkal, Mechanical | 98.5 | 180 | 4,129 | 39 | 2.41 | 49 | 45 |
 | 2 | S Suresh | Trichy, Mechanical | 98.0 | 156 | 4,579 | 39 | 2.13 | 40 | 96 |
 | 3 | Denthaje Krishna Bhat | Surathkal, Chemistry | 97.8 | 98 | 4,904 | 48 | 2.33 | 44 | 59 |
 | 4 | Bibhuti Bhusan Das | Surathkal, Civil | 97.3 | 123 | 2,398 | 26 | 3.68 | 63 | 45 |
 | 5 | Arun Mohan Isloor | Surathkal, Chemistry | 96.6 | 87 | 2,744 | 30 | 2.36 | 24 | 52 |
 | 6 | A Chandra Bose | Trichy, Physics | 96.1 | 98 | 3,132 | 31 | 2.21 | 23 | 38 |
-| 7 | P Sivashanmugam | Trichy, Chemical | 95.7 | 77 | 3,298 | 31 | 2.42 | 21 | 45 |
+| 7 | P Sivashanmugam | Trichy, Chemical | 95.8 | 77 | 3,298 | 31 | 2.42 | 21 | 45 |
 | 8 | Jeyaraj P | Surathkal, Mechanical | 95.6 | 130 | 2,448 | 27 | 1.86 | 23 | 49 |
-| 9 | R Karvembu | Trichy, Chemistry | 95.5 | 145 | 4,126 | 38 | 1.67 | 42 | 41 |
+| 9 | R Karvembu | Trichy, Chemistry | 95.4 | 145 | 4,126 | 38 | 1.67 | 42 | 41 |
 | 10 | G Arthanareeswaran | Trichy, Chemical | 95.0 | 171 | 4,194 | 35 | 1.52 | 28 | 99 |
 | 10 | S Saravanan | Trichy, Civil | 95.0 | 94 | 2,455 | 28 | 2.92 | 29 | 35 |
 | 12 | Badekai Ramachandra Bhat | Surathkal, Chemistry | 94.2 | 82 | 1,843 | 24 | 2.34 | 22 | 36 |
@@ -555,7 +551,7 @@ The top 10:
 | 16 | Jeny Rajan | Surathkal, CSE | 93.2 | 71 | 1,945 | 26 | 2.34 | 26 | 31 |
 | 17 | N Samsudeen | Trichy, Chemical | 93.0 | 63 | 2,108 | 30 | 2.62 | 18 | 37 |
 | 18 | N Siva Shanmugam | Trichy, Mechanical | 93.0 | 153 | 2,560 | 25 | 1.52 | 23 | 36 |
-| 19 | Shyam Lal | Surathkal, ECE | 92.2 | 83 | 1,895 | 23 | 1.75 | 19 | 44 |
+| 19 | Shyam Lal | Surathkal, ECE | 92.1 | 83 | 1,895 | 23 | 1.75 | 19 | 44 |
 | 20 | Sharnappa Joladarashi | Surathkal, Mechanical | 92.1 | 122 | 2,418 | 28 | 1.80 | 25 | 17 |
 
 **Top-ranked person in each department** (department score, with the number of people ranked in that department):
@@ -596,7 +592,7 @@ The full list for each department is in `faculty_ranking_by_department.csv`.
 
 ### Caveats (please read before sharing this list)
 - **This measures research output only**, from public bibliometric data. It says nothing about teaching, mentoring, administration, patents or industry work, and it is **not an evaluation of anyone as a person or as a teacher**.
-- **Name matching is about 95% accurate.** A few papers may be missing or wrongly assigned. The roster duplicates noted in section 6 (e.g. *Shrikantha S Rao* / *Shrikantha*) split one person's papers across two IDs.
+- **Name matching is about 95% accurate.** A few papers may be missing or wrongly assigned. The roster duplicates noted in section 6 have been merged, so each person's papers are now counted together.
 - **Mean FWCI is sensitive to one very highly cited paper**, so the median FWCI is shown alongside it.
 - **Citation habits differ by field.** Use the department ranking to compare people fairly; the overall list mixes fields.
 - **Conference quality is thin.** CORE ranks cover few of our conferences, so "top venue" mainly reflects Q1 journals.
