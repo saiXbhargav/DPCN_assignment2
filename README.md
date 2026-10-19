@@ -484,7 +484,7 @@ Per faculty member (Mann–Whitney test):
 - NIT Surathkal faculty publish more (median 31 vs 19 papers), get more citations and have a higher h-index. All three differences are **significant**.
 - The FWCI difference is **not** significant (p = 0.16).
 
-In short: similar quality, higher output per person at NIT Surathkal, and more citations per paper at NIT Trichy.
+In short: higher output per person at NIT Surathkal and more citations per paper at NIT Trichy. On field-normalised impact, the two institutes are **statistically the same** once branch, year and collaboration are taken into account (section 7.5).
 
 ### 2b. Measures asked for in class
 
@@ -505,25 +505,28 @@ Ranked by mean FWCI, so branches with different citation habits can be compared:
 - **Top:** NIT Surathkal Civil (1.92), NIT Surathkal Mechanical (1.67), NIT Trichy Computer Applications and Civil (1.66).
 - **Weakest regular-size branches:** NIT Surathkal Mathematics (0.60), NIT Trichy EEE (0.97), Architecture (0.99) and CSE (1.00).
 
-Head to head:
+Head to head, with a 95% bootstrap interval for the difference (section 7.5):
 
-| Branch | NIT Trichy FWCI | NIT Surathkal FWCI | Stronger |
+| Branch | NIT Trichy FWCI | NIT Surathkal FWCI | Stronger (95% bootstrap) |
 |---|---|---|---|
 | CSE | 1.00 | 1.54 | NIT Surathkal |
-| Civil | 1.66 | 1.92 | NIT Surathkal |
-| Mechanical | 1.42 | 1.67 | NIT Surathkal |
-| EEE | 0.97 | 1.22 | NIT Surathkal |
-| Chemistry | 1.34 | 1.53 | NIT Surathkal |
-| Physics | 1.04 | 1.05 | about equal |
-| Mathematics | 1.47 | 0.60 | NIT Trichy |
-| Chemical | 1.59 | 1.26 | NIT Trichy |
-| ECE | 1.18 | 1.00 | NIT Trichy |
-| MME | 1.13 | 1.01 | NIT Trichy |
+| EEE | 0.97 | 1.23 | NIT Surathkal |
+| Mechanical | 1.43 | 1.63 | NIT Surathkal |
+| Civil | 1.69 | 1.92 | no clear difference |
+| Chemistry | 1.33 | 1.51 | no clear difference |
+| Physics | 1.03 | 1.07 | no clear difference |
+| MME | 1.13 | 0.98 | no clear difference |
+| ECE | 1.18 | 0.98 | NIT Trichy |
+| Chemical | 1.59 | 1.27 | NIT Trichy |
+| Mathematics | 1.48 | 0.56 | NIT Trichy |
+
+(These FWCI values give each paper the branch of most of its faculty authors, so they differ slightly from the
+branch table above, where a paper counts for every branch on it.)
 
 ### 4. Collaborate with whom, and what to improve
 - **Between our two NITs:** only **47 papers** have faculty from both. The head-to-head table shows where each can learn from the other:
-  - NIT Trichy from NIT Surathkal in CSE, Civil and Mechanical;
-  - NIT Surathkal from NIT Trichy in Mathematics and Chemical.
+  - NIT Trichy from NIT Surathkal in CSE, EEE and Mechanical;
+  - NIT Surathkal from NIT Trichy in Mathematics, Chemical and ECE.
 - **Current partners:** for each partner, the tables give joint papers and whether those joint papers have higher impact than the NIT's other papers.
 - **Partners worth approaching:** institutes with similar research topics (weighted Jaccard similarity of subfields) and heavy citation exchange, but at most 5 joint papers.
   - NIT Trichy: NSUT Delhi, GLA University, New Horizon College of Engineering, Savitribai Phule Pune University, SLIET Longowal.
@@ -604,6 +607,56 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
   - across departments the effect is about **27 times**;
   - but only **13%** of new links close a triangle.
 
+### 7. Network science (`scripts/network_science.py` → [NETWORK_SCIENCE.md](data/analysis/NETWORK_SCIENCE.md))
+Tables are `data/analysis/ns_*.csv` and figures `ns_*.png`. All random steps use fixed seeds, so the results are
+the same on every run.
+
+**7.1 Degree distributions.** Fitted with the `powerlaw` package (maximum likelihood, xmin by the KS distance) for:
+- faculty co-authorship degree;
+- all co-authors per faculty member;
+- citation in-degree within our corpus;
+- total citations per paper.
+
+All four are heavy-tailed (power-law exponent α ≈ 2.5–2.9 in the tail), but a **log-normal fits significantly
+better than a pure power law** in every case (likelihood-ratio test, p < 0.02). This is typical of collaboration and
+citation data, where growth is limited by time and team size.
+
+**7.2 Small world, rich club, assortativity, cores.** These use the faculty network's largest component: 496 faculty and 936 links.
+- **Small world.** Compared with 20 degree-preserving random graphs:
+  - clustering is **0.21 vs 0.008**, about 25× higher;
+  - paths are only 1.36× longer (6.1 vs 4.5);
+  - small-world index **σ = 18.2**.
+- **Rich club.** The best-connected faculty co-author with each other up to **3.1×** more than chance (ρ(k) peaks at k > 11).
+- **Assortativity:**
+  - **by branch r = 0.66** (z ≈ 76 against random labels), and 69% of faculty–faculty links stay within one branch;
+  - by institute r = 0.94;
+  - by rank only r = 0.08: senior and junior faculty mix freely;
+  - by degree r = 0.20.
+- **k-cores:** the innermost 4-core has 38 faculty.
+
+**7.3 Communities vs departments.**
+- Louvain communities against departments: **NMI = 0.69**, against 0.23 for random labels; ARI = 0.36.
+- So collaboration groups are mostly departments, but 8 of the 19 communities with 8+ members are clearly
+  cross-department. These are the interdisciplinary groups worth naming in the report.
+
+**7.4 Institute-level citation-flow network.** Institutes as nodes, weighted arrows for "cites", using the co-authorship rule.
+- Weighted reciprocity is **0.64**.
+- The picture shows a clear **knowledge hierarchy**. Our NITs cite the premier and national-lab clusters about 2.5–3× more than those clusters cite them:
+  - IITs: they give us 0.40 citations for each one we give them;
+  - IISER/IISc: 0.34;
+  - CSIR: 0.33;
+  - DAE: 0.32;
+  - DRDO: 0.27.
+- The exchange with other NITs is balanced (1.01).
+- Universities and colleges draw on NIT work more than NITs draw on theirs (1.32).
+
+**7.5 A fair institute comparison.** We regress log(1 + FWCI) of each paper on an institute indicator, adding year, branch, then foreign and Indian collaboration, conference/journal and team size (OLS with robust errors).
+- The NIT Surathkal effect is **+0.6% (p = 0.49) with year only, −0.6% (p = 0.56) with branch, and +1.2% (p = 0.23)
+  with everything**: never significant.
+- The raw gap in mean FWCI (1.31 vs 1.39) comes from a few highly cited papers and from branch mix, not from a
+  real institute-wide difference.
+- Branch by branch, the bootstrap intervals give the table in section 3: three clear wins for each NIT, and four branches with no clear difference.
+
 ---
 
 ## Folder layout
@@ -627,6 +680,7 @@ DPCN_assignment2/
 │   ├── build_networks.py    ← Task 2: three network CSVs + metrics
 │   ├── verify_networks.py   ← 44 independent checks
 │   ├── analysis.py          ← analyses → data/analysis/
+│   ├── network_science.py   ← degree fits, null models, communities, institute network, regression
 │   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates (resumable)
 │   └── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
 └── data/
@@ -677,11 +731,14 @@ python fetch_impact.py citers       # details of the papers that cite us (uses c
 python build_networks.py            # again, so indian_connections.csv gets the cluster columns
 python fetch_impact.py partners     # partner research topics (uses indian_connections.csv)
 python analysis.py                  # data/analysis/
+python network_science.py           # data/analysis/ns_* and NETWORK_SCIENCE.md
+python fetch_insights.py            # reference years and institute coordinates (resumable)
+python insights.py                  # data/analysis/insights/
 ```
 
 - Each download step skips anything already saved in `data/raw/`. To download fresh data, delete those files first.
 - If `match_faculty.py` lists new uncertain links, a team member adds their decisions to `faculty_match_overrides.csv` and re-runs it.
-- It needs Python 3 with `requests`, `pandas`, `networkx` and `scipy`.
+- It needs Python 3 with `requests`, `pandas`, `networkx`, `scipy`, `matplotlib`, `scikit-learn`, `powerlaw` and `statsmodels`.
 
 ---
 
