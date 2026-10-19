@@ -1,6 +1,6 @@
 """Extra insights (team agreed: faculty-only network; faculty science / engineering papers).
 
-  python insights.py [network] [ai] [recency] [geo] [links]      (no argument = all five)
+  python insights.py [network] [ai] [recency] [geo] [links] [ranking]      (no argument = all six)
 
   network  1. Growth over time - cumulative network 2016..t for every year t: size, degree, components,
               clustering, diameter; densification law E(t) ~ N(t)^a (Leskovec et al. 2005).
@@ -15,6 +15,9 @@
   links    6. Link prediction - rank all not-yet-linked faculty pairs with network scores (common neighbours,
               Adamic-Adar, Jaccard, resource allocation, preferential attachment) and a logistic model; test on
               2022 -> 2023-2026, then list the 50 most likely future pairs among current faculty.
+  ranking  7. Faculty ranking - current faculty with >= 10 papers, scored by the mean percentile of 7 measures
+              (papers, citations, h-index, mean FWCI, top-10% papers, Q1 / CORE A*/A papers, IF > 5 papers),
+              overall and within each department.
 
 Uses data/authorship_network.csv, group12_data.csv, faculty.csv, indian_connections.csv and data/raw/.
 Outputs go to data/analysis/insights/.
@@ -915,7 +918,119 @@ def links_part():
     print(top.head(15).drop(columns=["faculty_id_a", "faculty_id_b"]).round(3).to_string(index=False))
 
 
-PARTS = {"network": network_part, "ai": ai_part, "recency": recency_part, "geo": geo_part, "links": links_part}
+# ---------------------------------------------------------------- 7. faculty ranking
+MIN_PAPERS = 10
+MEASURES = {   # column -> label; all 2016-2026, faculty's own papers (each paper once per person)
+    "papers": "papers",
+    "citations": "citations",
+    "h_index": "h-index (2016-2026)",
+    "mean_fwci": "mean FWCI",
+    "top10_papers": "top-10%-cited papers",
+    "top_venue_papers": "Q1 journal or CORE A*/A papers",
+    "if5_papers": "papers in journals with IF > 5",
+}
+
+
+def h_index(cites):
+    c = np.sort(np.asarray(cites))[::-1]
+    return int((c >= np.arange(1, len(c) + 1)).sum())
+
+
+def ranking_part():
+    g = pd.read_csv(os.path.join(DATA, "group12_data.csv"), low_memory=False)
+    info = pd.read_csv(os.path.join(DATA, "faculty.csv")).drop_duplicates("faculty_id").set_index("faculty_id")
+    p = g.drop_duplicates(["faculty_id", "openalex_id"]).copy()
+    p["top_venue"] = p.quartile.isin(["Q1", "CORE A*", "CORE A"])
+    p["if5"] = p.journal_if_2yr > 5
+    p["top10"] = p.top10pct == True  # noqa: E712  (column holds True / False / missing)
+    m = p.groupby("faculty_id").agg(
+        papers=("openalex_id", "size"), citations=("citations", "sum"), h_index=("citations", h_index),
+        mean_fwci=("fwci", "mean"), median_fwci=("fwci", "median"), top10_papers=("top10", "sum"),
+        top_venue_papers=("top_venue", "sum"), if5_papers=("if5", "sum"),
+        q1_papers=("quartile", lambda s: (s == "Q1").sum()),
+        core_astar_a_papers=("quartile", lambda s: s.isin(["CORE A*", "CORE A"]).sum()),
+        first_year=("year", "min"), last_year=("year", "max"))
+    m = m.join(info[["author", "institution", "department", "designation", "status", "h_index"]]
+               .rename(columns={"h_index": "career_h_index_openalex"}))
+    # cross-check with faculty.csv's own 2016-2026 h-index
+    hi = info.h_index_2016_2026.reindex(m.index)
+    assert (hi.isna() | (hi == m.h_index)).mean() > 0.99, "h-index differs from faculty.csv"
+
+    ranked = m[(m.status == "current") & (m.papers >= MIN_PAPERS)].copy()
+    not_ranked = m.drop(ranked.index).assign(
+        reason=lambda d: np.where(d.status != "current", "former faculty", f"fewer than {MIN_PAPERS} papers"))
+
+    def score(d):
+        pct = pd.DataFrame({c: 100 * d[c].rank(pct=True, method="average") for c in MEASURES}, index=d.index)
+        return pct.mean(axis=1), pct
+
+    ranked["overall_score"], pct = score(ranked)
+    for c in MEASURES:
+        ranked[f"pct_{c}"] = pct[c]
+    ranked["overall_rank"] = ranked.overall_score.rank(ascending=False, method="min").astype(int)
+    dep_score = pd.Series(index=ranked.index, dtype=float)
+    for _, d in ranked.groupby("department"):
+        dep_score.loc[d.index] = score(d)[0]
+    ranked["department_score"] = dep_score
+    ranked["department_rank"] = ranked.groupby("department").department_score.rank(ascending=False, method="min") \
+        .astype(int)
+    ranked["department_size_ranked"] = ranked.groupby("department").department_score.transform("size")
+
+    cols = ["overall_rank", "author", "institution", "department", "designation", "overall_score",
+            "department_rank", "department_size_ranked", "department_score", *MEASURES, "median_fwci", "q1_papers",
+            "core_astar_a_papers", "career_h_index_openalex", "first_year", "last_year",
+            *[f"pct_{c}" for c in MEASURES]]
+    out = ranked.reset_index()[["faculty_id", *cols]].sort_values("overall_rank")
+    save(out.round(2), "faculty_ranking_overall.csv")
+    save(out.sort_values(["department", "department_rank"]).round(2), "faculty_ranking_by_department.csv")
+    save(not_ranked.reset_index()[["faculty_id", "author", "institution", "department", "status", "reason",
+                                   *MEASURES]].round(2), "faculty_not_ranked.csv")
+
+    # how much do the measures agree? (Spearman between measures, ranked faculty)
+    corr = ranked[list(MEASURES)].corr(method="spearman")
+    save(corr.round(3).reset_index().rename(columns={"index": "measure"}), "faculty_ranking_measure_correlation.csv")
+    # robustness: does the top 20 change with quality-weighted scoring?
+    w = {c: (2 if c in ("mean_fwci", "top10_papers", "top_venue_papers") else 1) for c in MEASURES}
+    wscore = sum(w[c] * pct[c] for c in MEASURES) / sum(w.values())
+    top20 = set(ranked.overall_score.nlargest(20).index)
+    overlap_w = len(top20 & set(wscore.nlargest(20).index))
+    rho_w = stats.spearmanr(ranked.overall_score, wscore).statistic
+
+    # chart: top 20 overall, stacked percentile contributions
+    t = ranked.nlargest(20, "overall_score").iloc[::-1]
+    fig, ax = plt.subplots(figsize=(11, 8))
+    left = np.zeros(len(t))
+    for i, c in enumerate(MEASURES):
+        v = t[f"pct_{c}"] / len(MEASURES)
+        ax.barh([f"{a} ({d}, {'Tr' if i_ == 'NIT Trichy' else 'Su'})" for a, d, i_ in
+                 zip(t.author, t.department, t.institution)], v, left=left, label=MEASURES[c], color=f"C{i}")
+        left += v
+    ax.set_xlabel("overall score (mean percentile of the 7 measures, 0-100)")
+    ax.set_title(f"Top 20 current faculty, both NITs ({len(ranked)} ranked, ≥{MIN_PAPERS} papers 2016-2026)")
+    ax.legend(fontsize=8, loc="upper center", bbox_to_anchor=(0.4, -0.07), ncol=4)
+    ax.set_xlim(0, 100); ax.grid(alpha=0.3, axis="x")
+    fig.tight_layout(); fig.savefig(os.path.join(OUT, "faculty_ranking_top20.png"), dpi=150); plt.close(fig)
+
+    summary = {"ranked_faculty": len(ranked), "not_ranked": len(not_ranked),
+               "not_ranked_reasons": not_ranked.reason.value_counts().to_dict(),
+               "measures": MEASURES, "min_papers": MIN_PAPERS,
+               "robustness_quality_weighted": {"spearman_with_equal_weights": rho_w,
+                                               "top20_overlap": overlap_w}}
+    with open(os.path.join(OUT, "faculty_ranking_summary.json"), "w") as f:
+        json.dump(summary, f, indent=2, default=float)
+    pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
+    print(json.dumps(summary, indent=2))
+    show = ["overall_rank", "author", "institution", "department", "designation", "overall_score", *MEASURES,
+            "median_fwci"]
+    print(out[show].head(25).round(2).to_string(index=False))
+    print(corr.round(2).to_string())
+    print(out[out.department_rank == 1].sort_values("department")[
+        ["department", "institution", "author", "department_score", "department_size_ranked", "papers",
+         "h_index", "mean_fwci"]].round(2).to_string(index=False))
+
+
+PARTS = {"network": network_part, "ai": ai_part, "recency": recency_part, "geo": geo_part, "links": links_part,
+         "ranking": ranking_part}
 
 
 def main():

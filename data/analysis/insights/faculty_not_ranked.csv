@@ -1,0 +1,226 @@
+faculty_id,author,institution,department,status,reason,papers,citations,h_index,mean_fwci,top10_papers,top_venue_papers,if5_papers
+S0001,B Ravi,NIT Surathkal,,current,fewer than 10 papers,3,8,1,1.04,0,3,3
+S0025,Manjanna B,NIT Surathkal,CSE,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+S0039,M Venkatesan,NIT Surathkal,CSE,former,former faculty,19,254,8,1.25,4,2,3
+S0042,Vani M,NIT Surathkal,CSE,current,fewer than 10 papers,7,109,3,2.15,1,0,0
+S0066,D V R Murthy,NIT Surathkal,Chemical,former,former faculty,3,32,2,0.97,0,0,0
+S0071,M Rajasekaran,NIT Surathkal,Chemical,current,fewer than 10 papers,1,3,1,0.75,0,0,1
+S0072,Maneesh Kumar Poddar,NIT Surathkal,Chemical,current,fewer than 10 papers,9,199,6,1.24,1,3,3
+S0073,Mohan Lal Meena,NIT Surathkal,Chemical,current,fewer than 10 papers,6,59,3,0.81,1,4,3
+S0074,S Jitendra Pal,NIT Surathkal,Chemical,current,fewer than 10 papers,2,2,1,0.22,0,1,1
+S0076,G Srinikethan,NIT Surathkal,Chemical,former,former faculty,15,336,10,0.93,1,4,7
+S0088,Ruben Sudhakar,NIT Surathkal,Chemical,former,former faculty,4,37,4,0.44,0,4,4
+S0091,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,former,former faculty,55,1510,25,1.04,3,26,24
+S0098,Vijayendra S Shetti,NIT Surathkal,Chemistry,current,fewer than 10 papers,9,61,4,0.44,0,3,2
+S0106,A Gowri,NIT Surathkal,Civil,former,former faculty,11,449,10,2.74,4,0,1
+S0107,A U Ravi Shankar,NIT Surathkal,Civil,former,former faculty,54,792,16,1.33,3,17,9
+S0110,D Venkat Reddy,NIT Surathkal,Civil,former,former faculty,4,8,1,0.68,0,0,0
+S0124,Saranya P,NIT Surathkal,Civil,current,fewer than 10 papers,3,14,2,2.67,1,0,0
+S0125,Sreekumar M,NIT Surathkal,Civil,current,fewer than 10 papers,9,44,3,0.4,0,4,1
+S0129,K S Babu Narayan,NIT Surathkal,Civil,former,former faculty,12,10,2,0.11,0,1,0
+S0130,K Swaminathan,NIT Surathkal,Civil,former,former faculty,18,479,9,2.68,4,3,6
+S0131,K N Lokesh,NIT Surathkal,Civil,former,former faculty,5,176,4,2.09,1,3,0
+S0132,K S Babunarayana,NIT Surathkal,Civil,former,former faculty,2,62,2,2.91,1,2,1
+S0144,Varghese George,NIT Surathkal,Civil,current,fewer than 10 papers,8,99,5,2.24,1,1,0
+S0145,R Shivashankar,NIT Surathkal,Civil,former,former faculty,40,142,7,0.52,0,7,3
+S0155,Bini A A,NIT Surathkal,ECE,current,fewer than 10 papers,5,5,1,0.14,0,3,3
+S0157,Kalpana G Bhat,NIT Surathkal,ECE,current,fewer than 10 papers,5,12,2,0.97,0,0,0
+S0160,Muralidhar Kulkarni,NIT Surathkal,ECE,former,former faculty,35,147,7,0.59,1,2,2
+S0168,Sandeep Kumar,NIT Surathkal,ECE,former,former faculty,48,243,8,0.46,1,5,7
+S0169,Shikha Baghel,NIT Surathkal,ECE,former,former faculty,1,4,1,0.59,0,0,0
+S0180,John D Souza,NIT Surathkal,ECE,former,former faculty,4,17,3,0.98,0,0,0
+S0186,Raghavendrab S,NIT Surathkal,ECE,former,former faculty,2,45,2,1.5,1,1,2
+S0189,B Nagavel,NIT Surathkal,ECE,current,fewer than 10 papers,2,26,2,1.44,0,0,2
+S0190,U Sripathi,NIT Surathkal,ECE,former,former faculty,5,22,2,0.33,0,0,0
+S0198,Jora M Gonda,NIT Surathkal,EEE,current,fewer than 10 papers,4,4,1,0.33,0,0,0
+S0200,Krishnan C M C,NIT Surathkal,EEE,current,fewer than 10 papers,2,22,2,1.29,0,1,0
+S0208,Vignesh Kumar V,NIT Surathkal,EEE,current,fewer than 10 papers,5,38,4,2.37,2,2,0
+S0210,I Raghavendra Rao,NIT Surathkal,EEE,current,fewer than 10 papers,5,5,1,0.26,0,0,0
+S0213,L Padmavathi,NIT Surathkal,EEE,former,former faculty,3,1,1,0.14,0,0,0
+S0214,H Girisha Navada,NIT Surathkal,EEE,current,fewer than 10 papers,6,20,3,0.74,0,0,0
+S0215,K Rajagopala,NIT Surathkal,EEE,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+S0226,Sheron Figarado,NIT Surathkal,EEE,former,former faculty,3,36,2,0.63,0,1,1
+S0230,Ananthanarayanav S,NIT Surathkal,Information Technology,former,former faculty,1,2,1,0.1,0,0,0
+S0245,Jaidharc D,NIT Surathkal,Information Technology,former,former faculty,2,18,2,1.85,1,0,0
+S0256,A O Surendranathan,NIT Surathkal,MME,former,former faculty,13,89,4,0.71,2,1,3
+S0258,Kumkum Banerjee,NIT Surathkal,MME,current,fewer than 10 papers,8,73,4,1.19,0,5,2
+S0259,Lipak Kumar Sahoo,NIT Surathkal,MME,current,fewer than 10 papers,3,3,1,0.18,0,0,0
+S0267,K Rajendra Udupa,NIT Surathkal,MME,former,former faculty,24,324,10,0.93,1,4,7
+S0308,A Senthil Thilak,NIT Surathkal,Mathematics,current,fewer than 10 papers,7,17,3,0.68,1,0,0
+S0311,Falguni Roy,NIT Surathkal,Mathematics,current,fewer than 10 papers,8,12,2,0.29,0,3,0
+S0312,Gayathri P,NIT Surathkal,Mathematics,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+S0314,Jothi Ramalingam,NIT Surathkal,Mathematics,current,fewer than 10 papers,9,27,3,0.95,1,6,4
+S0318,Pushpajit Khaire,NIT Surathkal,Mathematics,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+S0321,Vidyadhar Upadhya,NIT Surathkal,Mathematics,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+S0322,Vishwanath K P,NIT Surathkal,Mathematics,current,fewer than 10 papers,6,27,2,0.42,0,3,1
+S0324,I Jeyaraman,NIT Surathkal,Mathematics,former,former faculty,2,9,1,0.45,0,1,0
+S0333,Murulidhar N N,NIT Surathkal,Mathematics,current,fewer than 10 papers,2,5,1,0.0,0,0,0
+S0337,Shyam S Kamath,NIT Surathkal,Mathematics,current,fewer than 10 papers,9,18,3,0.36,0,0,0
+S0343,Suresh Manjanathhegde,NIT Surathkal,Mathematics,former,former faculty,18,22,3,0.07,0,2,0
+S0344,Satyanarayana Engu,NIT Surathkal,Mathematics,former,former faculty,3,7,1,0.0,0,0,0
+S0350,D Chakradhar,NIT Surathkal,Mechanical,former,former faculty,15,566,13,2.54,6,5,6
+S0351,Abhilash Singh,NIT Surathkal,Mechanical,current,fewer than 10 papers,1,6,1,1.42,0,1,0
+S0357,Deepak Kumar,NIT Surathkal,Mechanical,current,fewer than 10 papers,4,23,2,3.35,1,0,1
+S0360,Mruthyunjaya Swamy K B,NIT Surathkal,Mechanical,current,fewer than 10 papers,8,54,2,0.44,1,0,0
+S0371,Guruprasad K R,NIT Surathkal,Mechanical,former,former faculty,11,148,6,0.57,0,2,2
+S0372,H Suresh Hebbar,NIT Surathkal,Mechanical,former,former faculty,5,36,3,0.48,0,1,0
+S0375,Mrityunjay R Doddamani,NIT Surathkal,Mechanical,former,former faculty,85,3121,36,2.88,30,39,36
+S0378,P Mohanan,NIT Surathkal,Mechanical,former,former faculty,7,53,4,0.37,0,0,0
+S0399,Rameshm R,NIT Surathkal,Mechanical,former,former faculty,1,3,1,0.0,0,0,0
+S0400,Shrikantha,NIT Surathkal,Mechanical,former,former faculty,4,36,3,4.24,2,0,0
+S0401,T P Ashok Babu,NIT Surathkal,Mechanical,former,former faculty,35,547,15,1.86,6,5,10
+S0402,Vijay Desai,NIT Surathkal,Mechanical,former,former faculty,33,782,15,1.38,2,7,7
+S0403,Vijaykumar H,NIT Surathkal,Mechanical,former,former faculty,8,202,6,1.99,2,7,6
+S0404,Y Suresh Kumar,NIT Surathkal,Mechanical,former,former faculty,1,7,1,0.5,0,0,0
+S0405,Chivukula Suryanarayana Murthy,NIT Surathkal,Mining,former,former faculty,9,184,5,2.23,1,3,1
+S0408,Ram Prasad Choudhary,NIT Surathkal,Mining,former,former faculty,5,30,4,1.35,0,0,0
+S0412,Ch Suryanarayana Murthy,NIT Surathkal,Mining,former,former faculty,32,418,13,1.54,5,3,3
+S0414,Amrites Senapati,NIT Surathkal,Mining,current,fewer than 10 papers,5,4,1,0.28,0,0,1
+S0420,Rajib Pal,NIT Surathkal,Mining,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+S0421,Vedala Rama Sastry,NIT Surathkal,Mining,former,former faculty,15,95,5,0.76,1,1,1
+S0423,Deepak Vaid,NIT Surathkal,Physics,former,former faculty,14,166,6,0.81,1,7,2
+S0427,Govinda Rao Umesh,NIT Surathkal,Physics,former,former faculty,19,289,10,0.89,1,5,6
+S0428,H D Shashikala,NIT Surathkal,Physics,former,former faculty,44,648,12,1.22,7,12,26
+S0429,Kasturi V Bangera,NIT Surathkal,Physics,former,former faculty,33,410,12,0.58,0,11,15
+S0435,Arkal Vittal Hegde,NIT Surathkal,Water Resources & Ocean,former,former faculty,14,262,7,1.84,4,0,1
+S0436,Dwarakishg S,NIT Surathkal,Water Resources & Ocean,former,former faculty,1,16,1,0.2,0,0,0
+S0444,Nagaraj M K,NIT Surathkal,Water Resources & Ocean,former,former faculty,10,58,4,0.52,0,0,1
+S0446,Paresh Chandra Deka,NIT Surathkal,Water Resources & Ocean,former,former faculty,31,1294,17,2.52,11,9,8
+S0458,S Ganapathi Mayya,NIT Surathkal,Water Resources & Ocean,former,former faculty,1,3,1,0.36,0,0,0
+S0460,Subba Rao,NIT Surathkal,Water Resources & Ocean,former,former faculty,35,192,7,1.13,4,5,6
+T0462,Mini Shaji Thomas,NIT Trichy,,former,former faculty,10,203,6,1.45,1,7,4
+T0463,A Meenatchi Sundaram,NIT Trichy,Architecture,current,fewer than 10 papers,6,6,2,0.58,0,1,1
+T0469,L Saikala,NIT Trichy,Architecture,current,fewer than 10 papers,3,0,0,0.0,0,0,0
+T0471,S Monika,NIT Trichy,Architecture,current,fewer than 10 papers,1,1,1,0.29,0,0,0
+T0473,T Srinivas,NIT Trichy,Architecture,former,former faculty,12,163,7,2.0,1,7,7
+T0475,Keerti Manisha,NIT Trichy,Architecture,current,fewer than 10 papers,4,23,2,2.51,3,1,1
+T0479,G Sangeetha,NIT Trichy,Architecture,current,fewer than 10 papers,2,7,2,0.27,0,0,2
+T0480,K Bhagyasri,NIT Trichy,Architecture,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+T0484,Saurabh Kumar,NIT Trichy,Architecture,current,fewer than 10 papers,1,3,1,1.94,0,0,0
+T0488,Ramprasad V,NIT Trichy,Architecture,former,former faculty,1,5,1,,0,0,0
+T0499,Aghila G,NIT Trichy,CSE,current,fewer than 10 papers,5,6,2,0.24,0,3,4
+T0502,C Oswald,NIT Trichy,CSE,current,fewer than 10 papers,3,3,1,0.22,0,1,1
+T0503,Chandra Priya J,NIT Trichy,CSE,current,fewer than 10 papers,3,1,1,1.39,0,1,1
+T0504,Chandramani Chaudhary,NIT Trichy,CSE,former,former faculty,1,1,1,0.18,0,0,0
+T0506,K Viswanathan Iyer,NIT Trichy,CSE,former,former faculty,4,11,3,0.67,0,1,1
+T0508,Karthick S,NIT Trichy,CSE,current,fewer than 10 papers,4,28,1,0.52,0,2,1
+T0509,Madhukrishna Priyadarsini,NIT Trichy,CSE,former,former faculty,2,11,1,2.06,1,1,1
+T0510,R Bala Krishnan,NIT Trichy,CSE,current,fewer than 10 papers,3,5,2,0.43,0,3,3
+T0516,Sitara K,NIT Trichy,CSE,current,fewer than 10 papers,7,26,2,0.37,0,2,0
+T0519,Jakkepalli Pavan Kumar,NIT Trichy,CSE,current,fewer than 10 papers,2,1,1,0.1,0,0,0
+T0520,Priyanka Panigrahi,NIT Trichy,CSE,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+T0525,M Sridevi,NIT Trichy,CSE,current,fewer than 10 papers,4,11,1,0.02,0,0,0
+T0534,Jyoti Sahu,NIT Trichy,Chemical,current,fewer than 10 papers,7,6,2,0.36,0,1,1
+T0535,K Sankar,NIT Trichy,Chemical,current,fewer than 10 papers,6,21,1,0.23,0,0,1
+T0542,N Anantharaman,NIT Trichy,Chemical,former,former faculty,44,1233,21,1.8,8,14,16
+T0544,Nandlal Pingua,NIT Trichy,Chemical,current,fewer than 10 papers,6,3,1,0.07,0,3,0
+T0546,Rupam Sinha,NIT Trichy,Chemical,current,fewer than 10 papers,5,23,2,0.98,0,4,4
+T0547,S Saravanan,NIT Trichy,Chemical,current,fewer than 10 papers,9,104,6,0.77,0,1,1
+T0555,Arivazhagan C,NIT Trichy,Chemistry,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+T0556,Baby Viswambharan,NIT Trichy,Chemistry,current,fewer than 10 papers,5,21,2,0.58,0,0,0
+T0557,G Venkatesa Prabhu,NIT Trichy,Chemistry,former,former faculty,8,157,7,0.72,0,2,3
+T0560,Projesh Kumar Roy,NIT Trichy,Chemistry,current,fewer than 10 papers,2,0,0,0.0,0,1,0
+T0564,Somenath Garai,NIT Trichy,Chemistry,former,former faculty,7,241,6,1.14,1,6,4
+T0570,C Natarajan,NIT Trichy,Civil,former,former faculty,21,231,9,1.01,1,3,6
+T0571,Chandaluri Vinaykumar,NIT Trichy,Civil,current,fewer than 10 papers,3,8,1,0.31,0,0,0
+T0577,J Karthikeyan,NIT Trichy,Civil,former,former faculty,28,556,15,1.61,3,9,10
+T0578,Jeevan Joseph,NIT Trichy,Civil,current,fewer than 10 papers,8,31,3,0.59,0,1,1
+T0583,Laiju A R,NIT Trichy,Civil,current,fewer than 10 papers,3,27,2,4.2,2,1,1
+T0585,Lekshmi Mohan V,NIT Trichy,Civil,current,fewer than 10 papers,2,1,1,0.11,0,0,0
+T0586,Moses Santhakumar,NIT Trichy,Civil,former,former faculty,28,245,10,2.21,7,1,1
+T0588,Manthiram Karthik R,NIT Trichy,Civil,current,fewer than 10 papers,3,39,2,4.29,1,0,2
+T0589,Mashudha Sulthana U,NIT Trichy,Civil,current,fewer than 10 papers,5,22,3,0.53,0,2,0
+T0591,Prabha Mohandoss,NIT Trichy,Civil,current,fewer than 10 papers,5,37,3,1.27,0,3,3
+T0597,Raghavan Ramalingam,NIT Trichy,Civil,current,fewer than 10 papers,8,13,2,0.27,0,1,1
+T0602,Santhosh L,NIT Trichy,Civil,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+T0603,Sevugan Rajkannu J,NIT Trichy,Civil,current,fewer than 10 papers,1,1,1,1.94,0,0,0
+T0605,Vanama Raghava Kumar,NIT Trichy,Civil,current,fewer than 10 papers,3,6,2,0.48,0,3,3
+T0606,Jayabalan P,NIT Trichy,Civil,former,former faculty,16,186,7,0.89,1,3,3
+T0607,Krishnan P A,NIT Trichy,Civil,former,former faculty,6,60,4,1.52,2,1,3
+T0613,Anjuna,NIT Trichy,Civil,former,former faculty,4,4,2,0.38,0,0,0
+T0617,R Jayasankar,NIT Trichy,Civil,former,former faculty,2,12,2,2.5,1,0,0
+T0619,Ashwinth Janarthanan,NIT Trichy,Computer Applications,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+T0620,Aswani Devi Aguru,NIT Trichy,Computer Applications,current,fewer than 10 papers,1,0,0,0.0,0,1,1
+T0630,Vishnu Priya R,NIT Trichy,Computer Applications,current,fewer than 10 papers,8,40,4,0.85,1,3,3
+T0632,B Ramadoss,NIT Trichy,Computer Applications,former,former faculty,30,246,9,0.84,3,4,5
+T0635,Gopalan N P,NIT Trichy,Computer Applications,former,former faculty,46,310,10,0.83,3,5,4
+T0636,Jitendra Kumar,NIT Trichy,Computer Applications,former,former faculty,15,638,10,7.3,8,7,4
+T0637,Saroja S,NIT Trichy,Computer Applications,current,fewer than 10 papers,6,51,3,0.67,0,2,1
+T0638,Sindhia Lingaswamy,NIT Trichy,Computer Applications,current,fewer than 10 papers,3,84,3,5.75,3,2,2
+T0639,Vadivel A,NIT Trichy,Computer Applications,former,former faculty,2,38,2,1.05,0,0,1
+T0640,Venkataswamy Reddy,NIT Trichy,Computer Applications,former,former faculty,12,67,6,0.45,0,3,2
+T0645,B Venkataramani,NIT Trichy,ECE,former,former faculty,26,222,9,0.6,1,1,2
+T0653,Maheswaran P,NIT Trichy,ECE,current,fewer than 10 papers,8,13,2,0.59,0,3,0
+T0659,S Raghavan,NIT Trichy,ECE,former,former faculty,119,2073,29,1.56,25,12,1
+T0660,Sovanjyoti Giri,NIT Trichy,ECE,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+T0665,Bibin Francis,NIT Trichy,ECE,current,fewer than 10 papers,8,1,1,0.02,0,4,3
+T0669,Murali Krishna Rajendran,NIT Trichy,ECE,current,fewer than 10 papers,3,19,1,0.68,0,1,0
+T0671,Padala Surya Teja Naga Srinivas,NIT Trichy,ECE,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+T0672,R R Manikandan,NIT Trichy,ECE,current,fewer than 10 papers,1,1,1,2.84,1,0,0
+T0683,Dipanshu Naware,NIT Trichy,EEE,current,fewer than 10 papers,4,10,1,0.98,0,1,1
+T0685,Jose Thankachan,NIT Trichy,EEE,current,fewer than 10 papers,6,4,1,0.53,1,0,0
+T0696,Rakesh Kumar Panda,NIT Trichy,EEE,current,fewer than 10 papers,3,0,0,0.76,1,0,0
+T0706,Suryanarayana Gangolu,NIT Trichy,EEE,current,fewer than 10 papers,7,63,2,1.22,1,2,1
+T0707,V Vignesh Kumar,NIT Trichy,EEE,current,fewer than 10 papers,7,22,3,1.85,1,2,1
+T0709,Ashokkumar,NIT Trichy,EEE,former,former faculty,2,10,2,0.54,0,0,0
+T0710,C Nagamani,NIT Trichy,EEE,former,former faculty,60,1209,16,1.17,7,22,11
+T0711,Manoranjan Sahoo,NIT Trichy,EEE,former,former faculty,10,52,4,0.4,0,2,2
+T0712,N Ammmasai Goundan,NIT Trichy,EEE,former,former faculty,21,309,10,1.02,2,8,2
+T0713,Naveenyalla,NIT Trichy,EEE,former,former faculty,3,12,2,0.71,0,1,0
+T0716,Vivek Mohan,NIT Trichy,EEE,former,former faculty,13,118,6,0.6,0,4,6
+T0748,Rahul Kumar Sharma,NIT Trichy,ICE,current,fewer than 10 papers,7,5,2,0.49,0,1,1
+T0752,Ram Shankar Rajadurai,NIT Trichy,ICE,current,fewer than 10 papers,2,0,0,0.0,0,0,0
+T0754,V Sridevi,NIT Trichy,ICE,current,fewer than 10 papers,9,74,3,1.99,3,1,1
+T0758,Anand S,NIT Trichy,MME,current,fewer than 10 papers,2,35,2,0.88,0,1,0
+T0761,Illa Mani Pujitha,NIT Trichy,MME,current,fewer than 10 papers,4,28,2,2.63,2,4,2
+T0764,Nimu Chand Reger,NIT Trichy,MME,current,fewer than 10 papers,5,28,3,0.61,0,0,1
+T0765,P Anbarasi,NIT Trichy,MME,current,fewer than 10 papers,1,0,0,0.0,0,1,1
+T0768,S Natarajan,NIT Trichy,MME,former,former faculty,39,588,13,1.22,6,16,24
+T0773,V Muthupandi,NIT Trichy,MME,former,former faculty,43,880,17,2.44,12,9,10
+T0775,Puppala Laxman Mani Kanta,NIT Trichy,MME,current,fewer than 10 papers,1,23,1,1.75,0,0,1
+T0777,T Srinivasa Rao,NIT Trichy,MME,former,former faculty,12,124,8,0.67,0,3,2
+T0778,Vinothkumar Govindaraj,NIT Trichy,MME,current,fewer than 10 papers,1,1,1,1.94,0,0,0
+T0800,Atul Kumar Verma,NIT Trichy,Mathematics,former,former faculty,9,62,5,1.53,1,7,3
+T0801,Balasubramani N,NIT Trichy,Mathematics,current,fewer than 10 papers,7,14,2,0.61,0,4,3
+T0802,Gautam Singh,NIT Trichy,Mathematics,current,fewer than 10 papers,4,3,1,0.56,0,0,0
+T0803,I Jeyaraman,NIT Trichy,Mathematics,current,fewer than 10 papers,7,12,2,0.85,1,2,0
+T0807,M Sivanesan,NIT Trichy,Mathematics,former,former faculty,2,2,1,0.89,0,0,0
+T0808,N Prakash,NIT Trichy,Mathematics,current,fewer than 10 papers,4,0,0,0.0,0,0,0
+T0809,N Shivaranjani,NIT Trichy,Mathematics,current,fewer than 10 papers,1,11,1,1.95,0,1,0
+T0813,R Ponalagusamy,NIT Trichy,Mathematics,former,former faculty,45,742,18,1.14,2,7,5
+T0814,R Ravindran,NIT Trichy,Mathematics,former,former faculty,5,15,3,0.56,0,0,1
+T0815,Somya,NIT Trichy,Mathematics,current,fewer than 10 papers,4,5,2,0.38,0,0,0
+T0816,T N Janakiraman,NIT Trichy,Mathematics,former,former faculty,7,36,4,0.62,0,0,0
+T0824,V Kumaran,NIT Trichy,Mathematics,current,fewer than 10 papers,7,11,2,0.24,0,0,0
+T0829,Bishweshwar Babu,NIT Trichy,Mechanical,current,fewer than 10 papers,1,2,1,0.42,0,0,0
+T0830,Dudul Das,NIT Trichy,Mechanical,current,fewer than 10 papers,1,1,1,2.7,0,1,1
+T0831,G Rajasekaran,NIT Trichy,Mechanical,current,fewer than 10 papers,5,17,2,0.37,0,0,2
+T0833,J Sarangan,NIT Trichy,Mechanical,former,former faculty,4,42,3,0.56,0,0,0
+T0834,K Sankaranarayanasamy,NIT Trichy,Mechanical,former,former faculty,25,546,12,1.04,2,3,5
+T0836,Kaushik P,NIT Trichy,Mechanical,former,former faculty,16,248,10,1.41,3,7,1
+T0837,M Udayakumar,NIT Trichy,Mechanical,former,former faculty,15,272,8,0.77,0,5,10
+T0839,Nivish George,NIT Trichy,Mechanical,former,former faculty,8,59,5,0.56,0,1,3
+T0843,Raghu Ram Karthik Desu,NIT Trichy,Mechanical,current,fewer than 10 papers,9,34,2,1.05,3,3,1
+T0849,Saurav Kumar Dutta,NIT Trichy,Mechanical,current,fewer than 10 papers,1,8,1,1.89,0,1,1
+T0853,T Suthakar,NIT Trichy,Mechanical,former,former faculty,7,154,6,1.06,1,2,2
+T0856,Vedharaj Sivasankaralingam,NIT Trichy,Mechanical,current,fewer than 10 papers,8,124,5,2.05,3,7,7
+T0859,K Pannir Selvam,NIT Trichy,Mechanical,current,fewer than 10 papers,3,40,1,0.45,0,0,2
+T0862,M Shahul Hameed,NIT Trichy,Mechanical,current,fewer than 10 papers,3,55,2,1.21,0,2,2
+T0879,Somnath Mukhopadhyay,NIT Trichy,Physics,current,fewer than 10 papers,6,8,2,0.14,0,1,0
+T0881,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,current,fewer than 10 papers,3,42,2,0.71,0,2,1
+T0886,Takhellambam Sonamani Singh,NIT Trichy,Physics,current,fewer than 10 papers,9,20,3,0.86,1,1,0
+T0888,A Noorul Haq,NIT Trichy,Production,former,former faculty,18,229,8,0.98,1,4,2
+T0889,Alwin Varghese,NIT Trichy,Production,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+T0893,Dinesh S,NIT Trichy,Production,former,former faculty,9,374,8,1.93,3,2,6
+T0899,N S Balaji,NIT Trichy,Production,former,former faculty,7,72,5,0.73,0,0,3
+T0904,Pintu Kumar,NIT Trichy,Production,current,fewer than 10 papers,1,0,0,0.0,0,0,0
+T0907,R Narayanasamy,NIT Trichy,Production,former,former faculty,21,414,11,1.41,4,9,8
+T0910,Santosh Kumar Mishra,NIT Trichy,Production,current,fewer than 10 papers,3,33,3,2.65,1,1,2
+T0912,T Selvaraj,NIT Trichy,Production,former,former faculty,18,339,10,1.16,1,1,3
+T0915,Vasu M,NIT Trichy,Production,current,fewer than 10 papers,9,85,4,1.52,1,0,1
+T0917,Vineet Kumar Yadav,NIT Trichy,Production,current,fewer than 10 papers,8,259,6,2.98,3,3,2
+T0922,Justus Panicker C T,NIT Trichy,Production,former,former faculty,13,173,10,1.44,1,1,6
+T0924,Murugabalaji V,NIT Trichy,Production,former,former faculty,7,48,4,0.7,0,3,3
+T0925,Rajesh R,NIT Trichy,Production,former,former faculty,1,0,0,0.0,0,0,0
+T0926,S John Vincent Jesuraj,NIT Trichy,Production,former,former faculty,1,0,0,0.0,0,0,0
+T0927,Simson D,NIT Trichy,Production,former,former faculty,1,15,1,0.83,0,0,1

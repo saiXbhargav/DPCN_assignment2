@@ -14,6 +14,7 @@ Every number below is in the CSV/JSON files in this folder.
 | 4 | How recent is the work each department cites? |
 | 5 | Does geography limit collaboration? |
 | 6 | Can we predict future collaborations? (link prediction) |
+| 7 | Which faculty are doing best? (ranking) |
 
 ---
 
@@ -507,3 +508,106 @@ The top 10:
   - possibly *Krishnan P A* (T0607) and *Krishnan* (T0582), Civil, NIT Trichy.
 
   These should be merged in the roster step (`build_roster.py` / `faculty_match_overrides.csv`). The effect on these results is small.
+
+---
+
+# Section 7: Which faculty are doing best? (ranking)
+
+**Who is ranked** (team decision): **438 current faculty with at least 10 papers** in 2016–2026, from both NITs together.
+- 119 current faculty with fewer papers and 106 former faculty are listed in `faculty_not_ranked.csv` but not ranked.
+- Each paper counts once per faculty member.
+
+**The 7 measures**, all for 2016–2026:
+
+| Measure | What it shows |
+|---|---|
+| Papers | Output |
+| Citations | Total attention |
+| h-index (2016–2026) | Steady impact. Computed from our papers; it matches `faculty.csv` for over 99% of faculty |
+| Mean FWCI | Citations relative to the world average for the same field and year: **quality, fair across fields** |
+| Top-10%-cited papers | Papers among the world's most cited in their field and year |
+| Q1 journal or CORE A\*/A papers | **Top venues**. Conference ranks are thin: only 9 CORE A\*/A papers exist in the whole dataset |
+| Papers in journals with IF > 5 | High-impact journals (OpenAlex 2-year mean citedness) |
+
+**Score:** each measure becomes a percentile (0–100) among the ranked faculty, and the **overall score is the average of the 7 percentiles**, with equal weights. The **department ranking** does the same within each branch (both NITs together), so people are only compared with colleagues in the same field.
+
+![top 20](faculty_ranking_top20.png)
+
+### Top 20, both NITs
+
+| # | Faculty | Institute, department | Score | Papers | Citations | h | Mean FWCI | Top-10% | Top-venue |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Ramesh M R | Surathkal, Mechanical | 98.5 | 179 | 4,126 | 39 | 2.43 | 49 | 45 |
+| 2 | S Suresh | Trichy, Mechanical | 98.0 | 156 | 4,579 | 39 | 2.13 | 40 | 96 |
+| 3 | Denthaje Krishna Bhat | Surathkal, Chemistry | 97.8 | 98 | 4,904 | 48 | 2.33 | 44 | 59 |
+| 4 | Bibhuti Bhusan Das | Surathkal, Civil | 97.3 | 123 | 2,398 | 26 | 3.68 | 63 | 45 |
+| 5 | Arun Mohan Isloor | Surathkal, Chemistry | 96.6 | 87 | 2,744 | 30 | 2.36 | 24 | 52 |
+| 6 | A Chandra Bose | Trichy, Physics | 96.1 | 98 | 3,132 | 31 | 2.21 | 23 | 38 |
+| 7 | P Sivashanmugam | Trichy, Chemical | 95.7 | 77 | 3,298 | 31 | 2.42 | 21 | 45 |
+| 8 | Jeyaraj P | Surathkal, Mechanical | 95.6 | 130 | 2,448 | 27 | 1.86 | 23 | 49 |
+| 9 | R Karvembu | Trichy, Chemistry | 95.5 | 145 | 4,126 | 38 | 1.67 | 42 | 41 |
+| 10 | G Arthanareeswaran | Trichy, Chemical | 95.0 | 171 | 4,194 | 35 | 1.52 | 28 | 99 |
+| 10 | S Saravanan | Trichy, Civil | 95.0 | 94 | 2,455 | 28 | 2.92 | 29 | 35 |
+| 12 | Badekai Ramachandra Bhat | Surathkal, Chemistry | 94.2 | 82 | 1,843 | 24 | 2.34 | 22 | 36 |
+| 13 | S Anandan | Trichy, Chemistry | 93.8 | 267 | 7,324 | 47 | 1.26 | 31 | 129 |
+| 14 | Kumar G N | Surathkal, Mechanical | 93.8 | 77 | 1,913 | 25 | 2.37 | 22 | 36 |
+| 15 | Aneesh Mathew | Trichy, Civil | 93.4 | 72 | 1,757 | 26 | 3.22 | 35 | 37 |
+| 16 | Jeny Rajan | Surathkal, CSE | 93.2 | 71 | 1,945 | 26 | 2.34 | 26 | 31 |
+| 17 | N Samsudeen | Trichy, Chemical | 93.0 | 63 | 2,108 | 30 | 2.62 | 18 | 37 |
+| 18 | N Siva Shanmugam | Trichy, Mechanical | 93.0 | 153 | 2,560 | 25 | 1.52 | 23 | 36 |
+| 19 | Shyam Lal | Surathkal, ECE | 92.2 | 83 | 1,895 | 23 | 1.75 | 19 | 44 |
+| 20 | Sharnappa Joladarashi | Surathkal, Mechanical | 92.1 | 122 | 2,418 | 28 | 1.80 | 25 | 17 |
+
+**Top-ranked person in each department** (department score, with the number of people ranked in that department):
+
+| Department | Faculty |
+|---|---|
+| Mechanical | Ramesh M R (Su), 53 ranked |
+| Civil | Bibhuti Bhusan Das (Su), 46 |
+| ECE | P Palanisamy (Tr), 47 |
+| EEE | Debashisha Jena (Su), 47 |
+| CSE | Jeny Rajan (Su), 31 |
+| Chemical | P Sivashanmugam (Tr), 29 |
+| Chemistry | Denthaje Krishna Bhat (Su), 23 |
+| Physics | A Chandra Bose (Tr), 22 |
+| Production | D Lenin Singaravelu (Tr), 21 |
+| Mathematics | K Murugesan (Tr), 20 |
+| MME | Udaya Bhat K (Su), 25 |
+| Water Resources & Ocean | Debabrata Karmakar / Amba Shetty (Su, tied), 15 |
+| Information Technology | Sowmya Kamath S / Jaidhar C D (Su, tied), 14 |
+| Computer Applications | S Sangeetha (Tr), 14 |
+| ICE | G Uma (Tr), 13 |
+| Mining | Mangalpady Aruna (Su), 8 |
+| Energy & Environment | M Premalatha (Tr), 5 |
+| Architecture | P Gopalakrishnan (Tr), 5 |
+
+The full list for each department is in `faculty_ranking_by_department.csv`.
+
+### Findings
+- **The top 50** are 28 NIT Surathkal and 22 NIT Trichy faculty. By department: Mechanical (10), Chemistry (9), Chemical (6), Civil (5), CSE (4) and ECE (3). By rank: 38 Professors or Professors (HAG), 9 Associate Professors and 2 Assistant Professors.
+- **Junior faculty can reach the top on quality.** Aneesh Mathew (Assistant Professor, Civil, #15) and S Saravanan (Associate Professor, Civil, #10) have fewer papers than the senior leaders but very high FWCI (3.2 and 2.9).
+- **Volume vs quality are different stories.** S Anandan has the most papers (267) and citations (7,324) but a mean FWCI of 1.26, so he ranks #13. Bibhuti Bhusan Das has fewer papers but the highest FWCI in the top group (3.68) and 63 top-10% papers, so he ranks #4.
+- **The measures fall into two groups** (`faculty_ranking_measure_correlation.csv`):
+  - **volume-type:** papers, citations, h-index, top-venue papers and IF > 5 papers, which correlate at 0.7–0.97 with each other;
+  - **quality:** mean FWCI, which correlates only 0.27 with papers.
+
+  Using several measures stops either kind of profile from dominating.
+- **Robust to weighting.** Counting the three quality measures twice changes the order very little: rank correlation 0.99, and 19 of the top 20 stay the same.
+
+### Caveats (please read before sharing this list)
+- **This measures research output only**, from public bibliometric data. It says nothing about teaching, mentoring, administration, patents or industry work, and it is **not an evaluation of anyone as a person or as a teacher**.
+- **Name matching is about 95% accurate.** A few papers may be missing or wrongly assigned. The roster duplicates noted in section 6 (e.g. *Shrikantha S Rao* / *Shrikantha*) split one person's papers across two IDs.
+- **Mean FWCI is sensitive to one very highly cited paper**, so the median FWCI is shown alongside it.
+- **Citation habits differ by field.** Use the department ranking to compare people fairly; the overall list mixes fields.
+- **Conference quality is thin.** CORE ranks cover few of our conferences, so "top venue" mainly reflects Q1 journals.
+
+**Files:**
+
+| File | Contents |
+|---|---|
+| `faculty_ranking_overall.csv` | All 438 in overall order, with every measure, its percentile and the department rank |
+| `faculty_ranking_by_department.csv` | The same, sorted by department and department rank |
+| `faculty_not_ranked.csv` | Former faculty and faculty with fewer than 10 papers, with their measures |
+| `faculty_ranking_measure_correlation.csv` | How the measures relate to each other |
+| `faculty_ranking_summary.json` | Settings and robustness check |
+| `faculty_ranking_top20.png` | Chart |

@@ -1,0 +1,22 @@
+{
+  "ranked_faculty": 438,
+  "not_ranked": 225,
+  "not_ranked_reasons": {
+    "fewer than 10 papers": 119,
+    "former faculty": 106
+  },
+  "measures": {
+    "papers": "papers",
+    "citations": "citations",
+    "h_index": "h-index (2016-2026)",
+    "mean_fwci": "mean FWCI",
+    "top10_papers": "top-10%-cited papers",
+    "top_venue_papers": "Q1 journal or CORE A*/A papers",
+    "if5_papers": "papers in journals with IF > 5"
+  },
+  "min_papers": 10,
+  "robustness_quality_weighted": {
+    "spearman_with_equal_weights": 0.9929770231871179,
+    "top20_overlap": 19
+  }
+}

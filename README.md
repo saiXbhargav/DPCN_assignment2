@@ -585,6 +585,11 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
   - Adamic–Adar and resource allocation reach **6% precision@100**, 40 times better than random;
   - a logistic model using the network scores plus same department and same institute reaches **AUC 0.90**;
   - `link_prediction_top50_future_pairs.csv` lists the 50 most likely future faculty pairs.
+- **Faculty ranking:**
+  - 438 current faculty with at least 10 papers, scored by the equal-weight mean percentile of 7 measures: papers, citations, h-index 2016–2026, mean FWCI, top-10% papers, Q1 / CORE A\*/A papers, IF > 5 papers;
+  - files: `faculty_ranking_overall.csv` and `faculty_ranking_by_department.csv`;
+  - the top 3 are Ramesh M R (Su, Mechanical), S Suresh (Tr, Mechanical) and Denthaje Krishna Bhat (Su, Chemistry);
+  - it measures research output only, not teaching or other contributions.
 - **Roster issue found:** *Ch Suryanarayana Murthy* (S0412) and *Chivukula Suryanarayana Murthy* (S0405) are the same person; two more likely duplicates are listed in INSIGHTS.md, section 6.
 - **Extra data:**
   - `data/raw/ref_years.jsonl`: the years of 437,866 cited works, about 4,100 requests;
