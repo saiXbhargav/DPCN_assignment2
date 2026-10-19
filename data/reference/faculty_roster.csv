@@ -1,0 +1,929 @@
+faculty_id,name,institution,branch,department_raw,designation,regular,science_engineering,email,orcid,scopus_id,first_seen,last_seen,status,name_variants,sources
+S0001,B Ravi,NIT Surathkal,,Director,Director,True,True,,,,2024,2026,current,Prof. B. Ravi,nitk_telephone
+S0002,Subraya R Hegde,NIT Surathkal,,Science & Technology Entrepreneurs' Park (STEP),Professor,True,True,,,,2024,2026,current,Prof. Subraya R Hegde,nitk_telephone
+S0003,S,NIT Surathkal,,www,Non-regular,False,True,,0000-0002-0888-7238,58309365000,2019,2019,former,S,nitk_infotech
+S0004,Akhila P,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Akhila P,nitk_cse
+S0005,Alaka Ananth,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Alaka Ananth,nitk_cse
+S0006,Anjali Jose,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2023,former,Anjali Jose;Anjali Jose(Former Faculty),nitk_cse
+S0007,Ankit Gupta,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2023,former,Ankit Gupta;Ankit Gupta (Former),nitk_cse
+S0008,Ankit R Kurup,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2021,former,Ankit R Kurup,nitk_cse
+S0009,Anushree G,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Anushree G,nitk_cse
+S0010,Arpitha J,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Arpitha J,nitk_cse
+S0011,Arun Prabhakar,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2024,former,Arun Prabhakar,nitk_cse
+S0012,Ashoke Talukder,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2026,current,Ashoke Talukder (Former),nitk_cse
+S0013,Aurea Fernandes,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2019,former,Aurea Fernandes,nitk_cse
+S0014,Beerappar Chandavarkar,NIT Surathkal,CSE,cse,Associate Professor,True,True,,0000-0001-6944-875X,36617074200,2016,2026,current,B. R. Chandavarkar;BEERAPPAR.CHANDAVARKAR;Dr. B. R. Chandavarkar,nitk_cse;nitk_directory;nitk_telephone
+S0015,C Aishwarya,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2021,former,C Aishwarya,nitk_cse
+S0016,Chaithanya Lakshmi M,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2023,former,Chaithanya Lakshmi M;Chaithanya Lakshmi M (Former),nitk_cse
+S0017,Chetan Naik,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2024,former,Chetan Naik,nitk_cse
+S0018,Chidananda T,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2019,former,Chidananda T,nitk_cse
+S0019,Deepthi,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2024,2026,current,Deepthi,nitk_cse
+S0020,Abhilash M H,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,,2025,2026,current,Abhilash M H;Dr. Abhilash M H,nitk_cse;nitk_telephone
+S0021,Basavaraj Talawar,NIT Surathkal,CSE,Dept. of Computer Science and Engineering,Associate Professor,True,True,,,,2016,2026,current,BASAVARAJTALAWAR;Dr. Basavaraj Talawar,nitk_directory;nitk_telephone
+S0022,Biswajit R Bhowmik,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,0000-0001-7923-9767,56825426700,2020,2026,current,Biswajit R Bhowmik;Dr. Biswajit R Bhowmik,nitk_cse;nitk_telephone
+S0023,Jeny Rajan,NIT Surathkal,CSE,cse,Associate Professor,True,True,,0000-0001-8045-6005,23470813600,2016,2026,current,Dr. Jeny Rajan;JENYRAJAN;Jeny Rajan,nitk_cse;nitk_directory;nitk_telephone
+S0024,Mahendra Pratap Singh,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,0000-0002-6251-8097,57026713500,2016,2026,current,Dr. Mahendra Pratap Singh;MAHENDRAPRATAPSINGH;Mahendra Pratap Singh,nitk_cse;nitk_directory;nitk_telephone
+S0025,Manjanna B,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,55803706100,2024,2026,current,Dr. Manjanna B;Manjanna B,nitk_cse;nitk_telephone
+S0026,Manu Basavaraju,NIT Surathkal,CSE,cse,Associate Professor,True,True,,,,2016,2026,current,Dr. Manu Basavaraju;MANU BASAVARAJU;Manu Basavaraju,nitk_cse;nitk_directory;nitk_telephone
+S0027,Mohit P Tahiliani,NIT Surathkal,CSE,cse,Professor,True,True,,,36700386300,2016,2026,current,Dr. Mohit P Tahiliani;Mohit P. Tahiliani,nitk_cse;nitk_telephone
+S0028,Radhika B S,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,,2024,2026,current,Dr. Radhika B S;Radhika B S,nitk_cse;nitk_telephone
+S0029,S Kumar Tripathi,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Dr. S Kumar Tripathi (Former),nitk_cse
+S0030,Saumya Hegde,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,,2016,2026,current,Dr. Saumya Hegde;SAUMYAA HEGDE;Saumya Hegde,nitk_cse;nitk_directory;nitk_telephone
+S0031,Shridhar Sanshi,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,,2024,2026,current,Dr. Shridhar Sanshi;Shridhar Sanshi,nitk_cse;nitk_telephone
+S0032,Sourav Kanti Addya,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,0000-0001-8166-2847,56538204500,2020,2026,current,Dr. Sourav Kanti Addya;Sourav Kanti Addya,nitk_cse;nitk_telephone
+S0033,Yogananda Jeppu,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2026,current,Dr. Yogananda Jeppu;Dr. Yogananda Jeppu (Former),nitk_cse
+S0034,Ganavi C N,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2024,2024,former,Ganavi C N,nitk_cse
+S0035,Gautam Amiya,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2019,former,Gautam Amiya,nitk_cse
+S0036,Girish G N,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2019,former,Girish G N,nitk_cse
+S0037,K Vinay Kumar,NIT Surathkal,CSE,COMP. SC. & ENGG .,Associate Professor,True,True,,,,2016,2018,former,K. Vinay Kumar;K.VINAYA KUMAR,nitk_cse;nitk_directory
+S0038,Luibaiba Muhammad Kunhi,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Luibaiba Muhammad Kunhi,nitk_cse
+S0039,M Venkatesan,NIT Surathkal,CSE,cse,Assistant Professor,True,True,,,,2018,2023,former,M. Venkatesan,nitk_cse
+S0040,Manjula Poojari,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Manjula Poojari,nitk_cse
+S0041,Marwa Mohiddin,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2024,former,Marwa Mohiddin;Marwa Mohiddin (Former),nitk_cse
+S0042,Vani M,NIT Surathkal,CSE,cse,Associate Professor,True,True,,,,2016,2026,current,Mrs. Vani M;Vani M,nitk_cse;nitk_telephone
+S0043,Nevil Anto,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Nevil Anto,nitk_cse
+S0044,Nidhin Saji,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2024,2024,former,Nidhin Saji,nitk_cse
+S0045,Nithya S,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Nithya S,nitk_cse
+S0046,Alwyn Roshan Pais,NIT Surathkal,CSE,cse,Professor,True,True,,0000-0003-4571-4608,23985907200,2016,2026,current,ALWYNROSHANPAIS;Alwyn Roshan Pais;Prof. Alwyn Roshan Pais,nitk_cse;nitk_directory;nitk_telephone
+S0047,Annappa,NIT Surathkal,CSE,cse,Professor,True,True,,0000-0002-4049-3677,35179174200,2016,2026,current,ANNAPPA;Annappa;Prof. Annappa,nitk_cse;nitk_directory;nitk_telephone
+S0048,Chandrasekaran K,NIT Surathkal,CSE,cse,Professor (HAG),True,True,,0000-0002-8855-3472,35752845600,2016,2026,current,Chandrasekaran K;K. Chandrasekaran;K.CHANDRASEKARAN;Prof. Chandrasekaran K,nitk_cse;nitk_directory;nitk_telephone
+S0049,P Santhi Thilagam,NIT Surathkal,CSE,cse,Professor,True,True,,0000-0002-8359-1330,55666234500,2016,2026,current,P. Santhi Thilagam;P.SANTHI THILAGAM;Prof. P Santhi Thilagam,nitk_cse;nitk_directory;nitk_telephone
+S0050,Shasidhar G Koolagudi,NIT Surathkal,CSE,cse,Professor,True,True,,,23397105900,2016,2026,current,Prof. Shasidhar G. Koolagudi;Shashidhar G Koolagudi,nitk_cse;nitk_telephone
+S0051,Rakshitha,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2019,former,Rakshitha,nitk_cse
+S0052,Ramyashree Bhat,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Ramyashree Bhat (Former),nitk_cse
+S0053,Roja R,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Roja R,nitk_cse
+S0054,Shashidharg Koolagudi,NIT Surathkal,CSE,COMP. SC. & ENGG .,Assistant Professor,True,True,,,,2016,2018,former,SHASHIDHARG.KOOLAGUDI,nitk_directory
+S0055,Sharath Yaji,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2021,former,Sharath Yaji,nitk_cse
+S0056,Sivakumar Kaliappan,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Sivakumar Kaliappan,nitk_cse
+S0057,Suraj B Madagaonkar,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Suraj B Madagaonkar (Former),nitk_cse
+S0058,Sushmitha G Kamble,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2018,former,Sushmitha G Kamble,nitk_cse
+S0059,Swapan Bhattacharya,NIT Surathkal,CSE,COMP. SC. & ENGG .,Director,True,True,,,,2016,2018,former,SWAPANBHATTACHARYA;Swapan Bhattacharya,nitk_cse;nitk_directory
+S0060,Tahilianimohitprakash,NIT Surathkal,CSE,COMP. SC. & ENGG .,Assistant Professor,True,True,,,,2016,2018,former,TAHILIANIMOHITPRAKASH,nitk_directory
+S0061,Udaya Prasad P K,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2023,2023,former,Udaya Prasad P K (Former),nitk_cse
+S0062,Vanim,NIT Surathkal,CSE,COMP. SC. & ENGG .,Associate Professor,True,True,,,,2016,2018,former,VANIM .;VANIM.,nitk_directory
+S0063,Vaishnavi T,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2020,2023,former,Vaishnavi T;Vaishnavi T (Former),nitk_cse
+S0064,Vidya Myageri,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2018,2019,former,Vidya Myageri,nitk_cse
+S0065,Y V Srinivasa Murthy,NIT Surathkal,CSE,cse,Non-regular,False,True,,,,2019,2019,former,Y V Srinivasa Murthy,nitk_cse
+S0066,D V R Murthy,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2019,former,D V R Murthy;D.V.R.MURTHY,nitk_chemical;nitk_directory
+S0067,B Ashraf Ali,NIT Surathkal,Chemical,chemical,Associate Professor,True,True,,,24554145300,2016,2026,current,B. Ashraf Ali;B.ASHRAF ALI;Dr. B. Ashraf Ali,nitk_chemical;nitk_directory;nitk_telephone
+S0068,Chinta Sankar Rao,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Chinta Sankar Rao,nitk_telephone
+S0069,Gangamma S,NIT Surathkal,Chemical,chemical,Associate Professor,True,True,,,,2016,2026,current,Dr. Gangamma S;Gangamma S;S.GANGAMMA,nitk_chemical;nitk_directory;nitk_telephone
+S0070,Jagannathan T K,NIT Surathkal,Chemical,chemical,Associate Professor,True,True,,0000-0002-6460-575X,55481322900,2016,2026,current,Dr. Jagannathan T K;Jagannathan T K,nitk_chemical;nitk_telephone
+S0071,M Rajasekaran,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. M. Rajasekaran,nitk_telephone
+S0072,Maneesh Kumar Poddar,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Maneesh Kumar Poddar,nitk_telephone
+S0073,Mohan Lal Meena,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Mohan Lal Meena,nitk_telephone
+S0074,S Jitendra Pal,NIT Surathkal,Chemical,chemical,Assistant Professor,True,True,,,,2016,2026,current,Dr. S Jitendra Pal;JITENDRAPAL S.;S Jitendra Pal,nitk_chemical;nitk_directory;nitk_telephone
+S0075,Vaishakh Nair,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Vaishakh Nair,nitk_telephone
+S0076,G Srinikethan,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2019,former,G Srinikethan;G.SRINIKETHAN,nitk_chemical;nitk_directory
+S0077,Gopal Mugeraya,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2023,former,GOPALMUGERAYA;Gopal Mugeraya,nitk_chemical;nitk_directory
+S0078,Jagannathant K,NIT Surathkal,Chemical,CHEMICAL,Assistant Professor,True,True,,,,2016,2018,former,JAGANNATHANT.K.,nitk_directory
+S0079,Hari Mahalingam,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Professor,True,True,,,,2016,2026,current,HARI MAHALINGAM;Prof. Hari Mahalingam,nitk_directory;nitk_telephone
+S0080,Hari Prasad Dasari,NIT Surathkal,Chemical,Dept. of Chemical Engineering,Professor,True,True,,,,2016,2026,current,HARI PRASAD DASARI;Prof. Hari Prasad Dasari,nitk_directory;nitk_telephone
+S0081,I Regupathi,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2026,current,I. Regupathi;I.REGUPATHI;Prof. I. Regupathi,nitk_chemical;nitk_directory;nitk_telephone
+S0082,Keyur Raval,NIT Surathkal,Chemical,chemical,Professor,True,True,,0000-0003-3416-8920,,2016,2026,current,KEYURRAVAL;Keyur Raval;Prof. Keyur Raval,nitk_chemical;nitk_directory;nitk_telephone
+S0083,M B Saidutta,NIT Surathkal,Chemical,chemical,Professor (HAG),True,True,,,,2016,2026,current,M B Saidutta;M.B.SAIDUTTA;Prof. M B Saidutta,nitk_chemical;nitk_directory;nitk_telephone
+S0084,P E Jagadeeshbabu,NIT Surathkal,Chemical,chemical,Professor,True,True,,0000-0002-7551-4423,25951596200,2016,2026,current,P E JagadeeshBabu;P E Jagadeeshbabu;P.E. JAGADEESHBABU;Prof. P E JagadeeshBabu,nitk_chemical;nitk_directory;nitk_telephone
+S0085,Prasanna Belur D,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2026,current,PRASANNABELURD .;Prasanna B D;Prasanna Belur. D;Prof. Prasanna Belur. D,nitk_chemical;nitk_directory;nitk_telephone
+S0086,Raj Mohan B,NIT Surathkal,Chemical,chemical,Professor,True,True,,,,2016,2026,current,Prof. Raj Mohan B;RAJMOHANB .;Raj Mohan B,nitk_chemical;nitk_directory;nitk_telephone
+S0087,Vidya Shetty K,NIT Surathkal,Chemical,chemical,Professor (HAG),True,True,,,,2016,2026,current,Prof. Vidya Shetty K;VIDYASHETTYK .;Vidya Shetty K,nitk_chemical;nitk_directory;nitk_telephone
+S0088,Ruben Sudhakar,NIT Surathkal,Chemical,CHEMICAL,Assistant Professor,True,True,,,,2016,2018,former,RUBEN SUDHAKAR,nitk_directory
+S0089,Https Chemical Nitk Ac In Faculty I Regupathi,NIT Surathkal,Chemical,chemical,Non-regular,False,True,,,,2023,2026,current,https://chemical.nitk.ac.in/faculty/I-Regupathi,nitk_chemical
+S0090,Airodyvasudevadhikari,NIT Surathkal,Chemistry,CHEMISTRY,Professor,True,True,,,,2016,2018,former,AIRODYVASUDEVADHIKARI,nitk_directory
+S0091,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,chemistry,Professor,True,True,,,,2016,2019,former,Airody Vasudeva Adhikari,nitk_chemistry
+S0092,Darshakr Trivedi,NIT Surathkal,Chemistry,CHEMISTRY,Assistant Professor,True,True,,,,2016,2018,former,DARSHAKR.TRIVEDI,nitk_directory
+S0093,Beneesh P B,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,0000-0001-5150-0134,23479174300,2016,2026,current,BENEESH P.B.;Beneesh P. B.;Dr. Beneesh P. B.,nitk_chemistry;nitk_directory;nitk_telephone
+S0094,Debashree Chakraborty,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,0000-0002-0142-7941,,2016,2026,current,DEBASHREE CHKRABORTY;Debashree Chakraborty;Dr. Debashree Chakraborty,nitk_chemistry;nitk_directory;nitk_telephone
+S0095,Lakshmi Vellanki,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,,,2020,2026,current,Dr. Lakshmi Vellanki;Lakshmi Vellanki,nitk_chemistry;nitk_telephone
+S0096,Saikat Dutta,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,0000-0003-3310-348X,57194562837,2016,2026,current,Dr. Saikat Dutta;SAIKAT DUTTA;Saikat Dutta,nitk_chemistry;nitk_directory;nitk_telephone
+S0097,Sib Sankar Mal,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,0000-0002-2520-4371,8624485200,2016,2026,current,Dr. Sib Sankar Mal;SIB SANKAR MAL;SIB SANKARMAL;Sib Sankar Mal,nitk_chemistry;nitk_directory;nitk_telephone
+S0098,Vijayendra S Shetti,NIT Surathkal,Chemistry,chemistry,Associate Professor,True,True,,0000-0002-7656-5652,,2020,2026,current,Dr. Vijayendra S. Shetti;Vijayendra S. Shetti,nitk_chemistry;nitk_telephone
+S0099,Adka Nityananda Shetty,NIT Surathkal,Chemistry,chemistry,Professor,True,True,,,,2016,2026,current,A.NITYANANDA SHETTY;Adka Nityananda Shetty;Prof. Adka Nityananda Shetty,nitk_chemistry;nitk_directory;nitk_telephone
+S0100,Ampar Chitharanjan Hegde,NIT Surathkal,Chemistry,chemistry,Professor (HAG),True,True,,,,2016,2026,current,A.CHITHARANJAN HEGDE;Ampar Chitharanjan Hegde;Prof. Ampar Chitharanjan Hegde,nitk_chemistry;nitk_directory;nitk_telephone
+S0101,Arun Mohan Isloor,NIT Surathkal,Chemistry,chemistry,Professor (HAG),True,True,,,,2016,2026,current,ARUNMOHANISLOOR;Arun Mohan Isloor;Prof. Arun Mohan Isloor,nitk_chemistry;nitk_directory;nitk_telephone
+S0102,Badekai Ramachandra Bhat,NIT Surathkal,Chemistry,chemistry,Professor (HAG),True,True,,0000-0002-8169-1055,21734527900,2016,2026,current,B.RAMACHANDRA BHAT;Badekai Ramachandra Bhat;Prof. Badekai Ramachandra Bhat,nitk_chemistry;nitk_directory;nitk_telephone
+S0103,Darshak R Trivedi,NIT Surathkal,Chemistry,chemistry,Professor,True,True,,0000-0001-6467-2875,7005754124,2016,2026,current,Darshak R. Trivedi;Prof. Darshak R. Trivedi,nitk_chemistry;nitk_telephone
+S0104,Denthaje Krishna Bhat,NIT Surathkal,Chemistry,chemistry,Professor (HAG),True,True,,0000-0003-0383-6017,15130527000,2016,2026,current,D.KRISHNA BHAT;Denthaje Krishna Bhat;Prof. Denthaje Krishna Bhat,nitk_chemistry;nitk_directory;nitk_telephone
+S0105,Udaya Kumar Dalimba,NIT Surathkal,Chemistry,chemistry,Professor,True,True,,,,2016,2026,current,Prof. Udaya Kumar Dalimba;UDAYAKUMARDALIMBA;Udaya Kumar Dalimba,nitk_chemistry;nitk_directory;nitk_telephone
+S0106,A Gowri,NIT Surathkal,Civil,civil,Assistant Professor,True,True,,,,2016,2018,former,A Gowri;A.GOWRI,nitk_civil;nitk_directory
+S0107,A U Ravi Shankar,NIT Surathkal,Civil,civil,Professor (HAG),True,True,,,,2016,2023,former,A U Ravi Shankar;A. U. Ravi Shankar;A.U.RAVISHANKAR,nitk_civil;nitk_directory
+S0108,Anjana Bhasi,NIT Surathkal,Civil,CIVIL,Assistant Professor,True,True,,,,2017,2018,former,ANJANA BHASI,nitk_directory
+S0109,Bibhuti Bhusan Das,NIT Surathkal,Civil,Dept of Civil Engineering,Professor,True,True,,,,2017,2026,current,BIBHUTI BHUSAN DAS;Prof. B. B. Das,nitk_directory;nitk_telephone
+S0110,D Venkat Reddy,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2019,former,D. Venkat Reddy;D.VENKAT REDDY,nitk_civil;nitk_directory
+S0111,Vinoth S,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr Vinoth S.,nitk_telephone
+S0112,A S Balu,NIT Surathkal,Civil,civil,Associate Professor,True,True,,,,2016,2026,current,A S Balu;A. S. Balu;A.S. Balu;A.S.BALU;Dr. A. S. Balu;Dr. A.S. Balu,nitk_civil;nitk_directory;nitk_telephone
+S0113,Anupama Surenjan,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Anupama Surenjan,nitk_telephone
+S0114,Babloo Chaudhary,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Babloo Chaudhary,nitk_telephone
+S0115,J Vijaya Vengadesh Kumar,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. J Vijaya Vengadesh Kumar,nitk_telephone
+S0116,Jacklin Jeke Nilling,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Jacklin Jeke Nilling,nitk_telephone
+S0117,Lohitkumar Nainegali,NIT Surathkal,Civil,Dept of Civil Engineering,Associate Professor,True,True,,,,2025,2026,current,Dr. Lohitkumar Nainegali,nitk_telephone
+S0118,Mithun Mohan,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Mithun Mohan,nitk_telephone
+S0119,Palanisamy T,NIT Surathkal,Civil,Dept of Civil Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Palanisamy T,nitk_telephone
+S0120,Pavan G S,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Pavan G S,nitk_telephone
+S0121,Prashanth M H,NIT Surathkal,Civil,CIVIL,Assistant Professor,True,True,,,,2016,2026,current,Dr. Prashanth M H;PRASHANTH M.H.,nitk_directory;nitk_telephone
+S0122,Rajasekaran C,NIT Surathkal,Civil,civil,Associate Professor,True,True,,,,2016,2026,current,Dr. Rajasekaran C;Rajasekaran C,nitk_civil;nitk_telephone
+S0123,Raviraj H M,NIT Surathkal,Civil,Dept of Civil Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Raviraj H.M,nitk_telephone
+S0124,Saranya P,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Saranya P,nitk_telephone
+S0125,Sreekumar M,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Sreekumar M,nitk_telephone
+S0126,Sreevalsa Kolathayar,NIT Surathkal,Civil,Dept of Civil Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Sreevalsa Kolathayar,nitk_telephone
+S0127,Sridhar G,NIT Surathkal,Civil,Dept of Civil Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Sridhar G,nitk_telephone
+S0128,Jayalekshmib R,NIT Surathkal,Civil,CIVIL,Associate Professor,True,True,,,,2016,2018,former,JAYALEKSHMIB.R.,nitk_directory
+S0129,K S Babu Narayan,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2023,former,K S Babu Narayan,nitk_civil
+S0130,K Swaminathan,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2023,former,K Swaminathan;K.SWAMINATHAN,nitk_civil;nitk_directory
+S0131,K N Lokesh,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2022,former,K. N. Lokesh;K.N.LOKESH,nitk_civil;nitk_directory
+S0132,K S Babunarayana,NIT Surathkal,Civil,CIVIL,Professor,True,True,,,,2016,2018,former,K.S.BABUNARAYANA,nitk_directory
+S0133,Arun Kumar Thalla,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,ARUNKUMAR THALLA;Arun Kumar Thalla;Prof. Arun Kumar Thalla,nitk_civil;nitk_directory;nitk_telephone
+S0134,B R Jayalekshmi,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,B R Jayalekshmi;Prof. B R Jayalekshmi,nitk_civil;nitk_telephone
+S0135,Basavaraju Manu,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,BASAVARAJU MANU;BASAVARAJUMANU;Basavaraju Manu;Manu Basavaraju;Prof. Basavaraju Manu,nitk_civil;nitk_cse;nitk_directory;nitk_telephone
+S0136,Devatha C P,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,C.P.DEVATHA;Devatha C P;Prof. Devatha C P,nitk_civil;nitk_directory;nitk_telephone
+S0137,Gangadhar Mahesh,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,GANGADHARMAHESH;Gangadhar Mahesh;Prof. Gangadhar Mahesh,nitk_civil;nitk_directory;nitk_telephone
+S0138,Katta Venkataramana,NIT Surathkal,Civil,civil,Professor (HAG),True,True,,,,2016,2026,current,KATTAVENKATARAMANA;Katta Venkataramana;Prof. Katta Venkataramana,nitk_civil;nitk_directory;nitk_telephone
+S0139,Mattur C Narasimhan,NIT Surathkal,Civil,civil,Professor (HAG),True,True,,,,2016,2026,current,M.C.NARASIMHAN;Mattur C Narasimhan;Prof. Mattur C Narasimhan,nitk_civil;nitk_directory;nitk_telephone
+S0140,S Shrihari,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,Prof. S. Shrihari;S. Shrihari;S.SHRIHARI,nitk_civil;nitk_directory;nitk_telephone
+S0141,Sitaram Nayak,NIT Surathkal,Civil,civil,Professor (HAG),True,True,,,,2016,2026,current,Prof. Sitaram Nayak;Sitaram Nayak,nitk_civil;nitk_telephone
+S0142,Subhash C Yaragal,NIT Surathkal,Civil,civil,Professor (HAG),True,True,,,,2016,2026,current,Prof. Subhash C. Yaragal;Subash C. Yaragal;Subhash C. Yaragal,nitk_civil;nitk_telephone
+S0143,Suresha S N,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,Prof. Suresha S N;Suresha S N,nitk_civil;nitk_telephone
+S0144,Varghese George,NIT Surathkal,Civil,CIVIL,Professor,True,True,,,,2016,2026,current,Prof. Varghese George;VARGHESEGEORGE,nitk_directory;nitk_telephone
+S0145,R Shivashankar,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2022,former,R Shivashankar;R.SHIVASHANKAR,nitk_civil;nitk_directory
+S0146,Rajasekaranc,NIT Surathkal,Civil,CIVIL,Assistant Professor,True,True,,,,2016,2018,former,RAJASEKARANC .,nitk_directory
+S0147,Ravirajh Mulangi,NIT Surathkal,Civil,CIVIL,Assistant Professor,True,True,,,,2016,2018,former,RAVIRAJH.MULANGI,nitk_directory
+S0148,Sitharamanayak,NIT Surathkal,Civil,CIVIL,Professor,True,True,,,,2016,2018,former,SITHARAMANAYAK,nitk_directory
+S0149,Subhasc Yaragal,NIT Surathkal,Civil,CIVIL,Professor,True,True,,,,2016,2018,former,SUBHASC.YARAGAL,nitk_directory
+S0150,Sunil B Malegole,NIT Surathkal,Civil,civil,Professor,True,True,,,,2016,2026,current,B M Sunil;Prof. Sunil B. M.;Prof. Sunil B.M.;SUNIL B. MALEGOLE;Sunil B.M.,nitk_civil;nitk_directory;nitk_telephone
+S0151,Sureshas N,NIT Surathkal,Civil,CIVIL,Assistant Professor,True,True,,,,2016,2018,former,SURESHAS.N.,nitk_directory
+S0152,A Venkata Narasimhadhan,NIT Surathkal,ECE,ece,Associate Professor,True,True,,,35810954100,2016,2026,current,A. V. Narasimhadhan;A.VENKATA NARASIMHADHAN;Dr. A. V. Narasimhadhan,nitk_directory;nitk_ece;nitk_telephone
+S0153,Aparnap,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2018,former,APARNAP .;APARNAP.,nitk_directory
+S0154,Aparna P,NIT Surathkal,ECE,ece,Associate Professor,True,True,,0000-0002-5096-0582,24472941900,2016,2026,current,Aparna P.;Dr. Aparna P.,nitk_ece;nitk_telephone
+S0155,Bini A A,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Bini A A,nitk_telephone
+S0156,Deepu Vijayasenan,NIT Surathkal,ECE,ece,Associate Professor,True,True,,,,2016,2026,current,DEEPUVIJAYASENAN;Deepu Vijayasenan;Dr. Deepu Vijayasenan,nitk_directory;nitk_ece;nitk_telephone
+S0157,Kalpana G Bhat,NIT Surathkal,ECE,ece,Assistant Professor,True,True,,,,2016,2026,current,Dr. Kalpana G. Bhat;Kalpana G. Bhat,nitk_ece;nitk_telephone
+S0158,Krishnamoorthy K,NIT Surathkal,ECE,ece,Associate Professor,True,True,,,,2016,2026,current,Dr. Krishnamoorthy K.;Krishnamoorthy K.,nitk_ece;nitk_telephone
+S0159,Mandeep Singh,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Mandeep Singh,nitk_telephone
+S0160,Muralidhar Kulkarni,NIT Surathkal,ECE,ece,Professor (HAG),True,True,,,,2016,2022,former,Dr. Muralidhar Kulkarni;MURALIDHARKULKARNI;Muralidhar Kulkarni,nitk_directory;nitk_ece
+S0161,Nikhil K S,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Nikhil K S,nitk_telephone
+S0162,Pathipati Srihari,NIT Surathkal,ECE,ece,Associate Professor,True,True,,0000-0001-9168-2753,57196078093,2016,2026,current,Dr. Pathipati Srihari;PATHIPATISRIHARI;Pathipati Srihari,nitk_directory;nitk_ece;nitk_telephone
+S0163,Prabu K,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Prabu K,nitk_telephone
+S0164,Prashantha Kumar H,NIT Surathkal,ECE,ece,Associate Professor,True,True,,,,2016,2026,current,Dr. Prashantha Kumar H.;PRASHANTHAKUMAR H.;Prashantha Kumar H.,nitk_directory;nitk_ece;nitk_telephone
+S0165,Raghavendra B S,NIT Surathkal,ECE,ece,Associate Professor,True,True,,0000-0001-9423-4665,,2016,2026,current,Dr. Raghavendra B.S.;RAGHAVENDRA B.S.;Raghavendra B.S.,nitk_directory;nitk_ece;nitk_telephone
+S0166,Rathnamala Rao,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Rathnamala Rao;RATHNAMALA RAO,nitk_directory;nitk_telephone
+S0167,Rekha S,NIT Surathkal,ECE,ece,Associate Professor,True,True,,0000-0002-9166-1466,55316012200,2016,2026,current,Dr. Rekha S.;Rekha S.,nitk_ece;nitk_telephone
+S0168,Sandeep Kumar,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2025,former,Dr. Sandeep Kumar,nitk_telephone
+S0169,Shikha Baghel,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2025,former,Dr. Shikha Baghel,nitk_telephone
+S0170,Shyam Lal,NIT Surathkal,ECE,ece,Associate Professor,True,True,,0000-0002-4355-6354,35737283800,2016,2026,current,Dr. Shyam Lal;SHYAMLAL;Shyam Lal,nitk_directory;nitk_ece;nitk_telephone
+S0171,Sushil Kumar Pandey,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Sushil Kumar Pandey,nitk_telephone
+S0172,Joseph Antony A,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2018,former,A. Joseph Antony;JOSEPH ANTONY A.,nitk_directory;nitk_ece
+S0173,Kalpanag Bhat,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2018,former,KALPANAG.BHAT,nitk_directory
+S0174,Krishnamoorthyk,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2018,former,KRISHNAMOORTHYK,nitk_directory
+S0175,Laxminidhit,NIT Surathkal,ECE,E&C,Associate Professor,True,True,,,,2016,2018,former,LAXMINIDHIT .;LAXMINIDHIT.,nitk_directory
+S0176,M R Arulalan,NIT Surathkal,ECE,ece,Assistant Professor,True,True,,,,2016,2019,former,M. R. Arulalan;M.R.ARULALAN,nitk_directory;nitk_ece
+S0177,M Shankaranarayana Bhat,NIT Surathkal,ECE,ece,Professor (HAG),True,True,,0000-0002-6162-7187,55584303700,2016,2026,current,M. S. Bhat;M. Shankaranarayana Bhat;Prof. M. S. Bhat,nitk_ece;nitk_telephone
+S0178,Neelavarshekarv Shet,NIT Surathkal,ECE,E&C,Associate Professor,True,True,,,,2016,2018,former,NEELAVARSHEKARV.SHET,nitk_directory
+S0179,Ashvini Chaturvedi,NIT Surathkal,ECE,Dept. of Electronics and Communication Engineering,Professor,True,True,,,,2024,2026,current,Prof. Ashvini Chaturvedi,nitk_telephone
+S0180,John D Souza,NIT Surathkal,ECE,ece,Professor,True,True,,,,2016,2025,former,JOHN D'SOUZA;John D'Souza;Prof. John D'Souza,nitk_directory;nitk_ece;nitk_telephone
+S0181,Neelawar Shekar Vittal Shet,NIT Surathkal,ECE,ece,Professor,True,True,,0000-0002-6940-982X,57140730600,2016,2026,current,Neelawar Shekar Vittal Shet;Prof. Neelawar Shekar Vittal Shet,nitk_ece;nitk_telephone
+S0182,Ramesh Kini M,NIT Surathkal,ECE,ece,Professor,True,True,,0000-0003-2632-5914,55605275600,2016,2026,current,Prof. Ramesh Kini M.;RAMESHKINIM;Ramesh Kini M.,nitk_directory;nitk_ece;nitk_telephone
+S0183,Sumam David S,NIT Surathkal,ECE,ece,Professor (HAG),True,True,,0000-0001-6503-2837,57204637506,2016,2026,current,Prof. Sumam David S.;SUMAMDAVID S.;Sumam David S.,nitk_directory;nitk_ece;nitk_telephone
+S0184,T Laxminidhi,NIT Surathkal,ECE,ece,Professor,True,True,,,17344181700,2016,2026,current,Prof. T. Laxminidhi;T. Laxminidhi,nitk_ece;nitk_telephone
+S0185,U Shripathi Acharya,NIT Surathkal,ECE,ece,Professor (HAG),True,True,,,,2017,2026,current,Prof. U. Shripathi Acharya;U. Shripathi Acharya,nitk_ece;nitk_telephone
+S0186,Raghavendrab S,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2016,former,RAGHAVENDRAB.S.,nitk_directory
+S0187,Rekhas,NIT Surathkal,ECE,E&C,Assistant Professor,True,True,,,,2016,2018,former,REKHAS .;REKHAS.,nitk_directory
+S0188,Shankaranarayanbhatm,NIT Surathkal,ECE,E&C,Professor,True,True,,,,2016,2018,former,SHANKARANARAYANBHATM,nitk_directory
+S0189,B Nagavel,NIT Surathkal,ECE,ece,Assistant Professor,True,True,,,,2016,2026,current,B. NAGAVEL;B. Nagavel;Shri B. Nagavel,nitk_directory;nitk_ece;nitk_telephone
+S0190,U Sripathi,NIT Surathkal,ECE,E&C,Professor,True,True,,,,2016,2018,former,U. Sripati;U.SRIPATHI,nitk_directory;nitk_ece
+S0191,Ashvini Chaturvedi,NIT Surathkal,EEE,E&E,Associate Professor,True,True,,,,2016,2018,former,ASHVINI CHATURVEDI;ASHVINICHATURVEDI,nitk_directory
+S0192,Ashoka K S Bhat,NIT Surathkal,EEE,eee,Non-regular,False,True,,,,2020,2022,former,Ashoka K. S. Bhat,nitk_eee
+S0193,Dattatrayan Gaonkar,NIT Surathkal,EEE,E&E,Assistant Professor,True,True,,,,2016,2018,former,DATTATRAYAN.GAONKAR,nitk_directory
+S0194,A Karthikeyan,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. A. Karthikeyan,nitk_telephone
+S0195,Arun Dominic,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Arun Dominic;Dr. Arun Dominic,nitk_eee;nitk_telephone
+S0196,B Dastagiri Reddy,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,57999524700,2020,2026,current,B Dastagiri Reddy;Dr. B. Dastagiri Reddy,nitk_eee;nitk_telephone
+S0197,Dharavath Kishan,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Dharavath Kishan;Dr. Dharavath Kishan,nitk_eee;nitk_telephone
+S0198,Jora M Gonda,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Jora M. Gonda,nitk_telephone
+S0199,Kalpana R,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Kalpana R.;R.KALPANA,nitk_directory;nitk_telephone
+S0200,Krishnan C M C,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Krishnan C M C;KRISHNAN C M C,nitk_directory;nitk_telephone
+S0201,Md Waseem Ahmad,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Dr. Md Waseem Ahmad;Md Waseem Ahmad,nitk_eee;nitk_telephone
+S0202,Nagendrappa H,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Nagendrappa H.,nitk_telephone
+S0203,P Parthiban,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. P. Parthiban;P. PARTHIBAN,nitk_directory;nitk_telephone
+S0204,Prajof P,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Dr. Prajof P.;Prajof P;Prajof P.,nitk_eee;nitk_telephone
+S0205,Ravi Raushan,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Dr. Ravi Raushan;Ravi Raushan,nitk_eee;nitk_telephone
+S0206,Shashidhara Mecha Kotian,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2020,2026,current,Dr. Shashidhara Mecha Kotian;Shashidhara Mecha Kotian,nitk_eee;nitk_telephone
+S0207,Tukaram Moger,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Tukaram Moger;TUKARAM MOGER;TUKARAMMOGER,nitk_directory;nitk_telephone
+S0208,Vignesh Kumar V,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Assistant Professor,True,True,,,,2020,2026,current,Dr. Vignesh Kumar V.;Vignesh Kumar V,nitk_eee;nitk_telephone
+S0209,Yashwant Kashyap,NIT Surathkal,EEE,eee,Assistant Professor,True,True,,,,2019,2026,current,Dr. Yashwant Kashyap;Yashwant Kashyap,nitk_eee;nitk_telephone
+S0210,I Raghavendra Rao,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Assistant Professor,True,True,,,,2016,2026,current,I.RAGHAVENDRA RAO;Mr. I R Rao,nitk_directory;nitk_telephone
+S0211,Joramangalagonda,NIT Surathkal,EEE,E&E,Associate Professor,True,True,,,,2016,2018,former,JORAMANGALAGONDA,nitk_directory
+S0212,Karthikeyana,NIT Surathkal,EEE,E&E,Assistant Professor,True,True,,,,2016,2018,former,KARTHIKEYANA .;KARTHIKEYANA.,nitk_directory
+S0213,L Padmavathi,NIT Surathkal,EEE,eee,Associate Professor,True,True,,,,2020,2021,former,L Padmavathi,nitk_eee
+S0214,H Girisha Navada,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Assistant Professor,True,True,,,,2016,2026,current,GIRISHANAVADAH .;GIRISHANAVADAH.;Mr. H. Girisha Navada,nitk_directory;nitk_telephone
+S0215,K Rajagopala,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2016,2026,current,K.RAJAGOPALA;Mr. K. Rajagopala,nitk_directory;nitk_telephone
+S0216,Nagendrappah,NIT Surathkal,EEE,E&E,Assistant Professor,True,True,,,,2016,2018,former,NAGENDRAPPAH .;NAGENDRAPPAH.,nitk_directory
+S0217,B Venkatesa Perumal,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2017,2026,current,B. VENKATESH PERUMAL;Prof. B. Venkatesa Perumal,nitk_directory;nitk_telephone
+S0218,Dattatraya Narayan Gaonkar,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2024,2026,current,Prof. Dattatraya Narayan Gaonkar,nitk_telephone
+S0219,Debashisha Jena,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2016,2026,current,DEBASHISHAJENA;Prof. Debashisha Jena,nitk_directory;nitk_telephone
+S0220,Gururaj S Punekar,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2016,2026,current,PUNEKARGURURAJS .;PUNEKARGURURAJS.;Prof. Gururaj S. Punekar,nitk_directory;nitk_telephone
+S0221,Manjunatha Sharma K,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2016,2026,current,Dr. Manjunatha Sharma K.;K.MANJUNATHA SHARMAN;Prof. Manjunatha Sharma K.,nitk_directory;nitk_telephone
+S0222,Panduranga Vittal K,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor (HAG),True,True,,,,2016,2026,current,PANDURANGAVITTALK;Prof. Panduranga Vittal K.,nitk_directory;nitk_telephone
+S0223,Shubhanga K N,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2024,2026,current,Prof. Shubhanga K. N.,nitk_telephone
+S0224,Udaykumar R Yaragatti,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor (HAG),True,True,,,,2016,2026,current,Prof. Udaykumar R. Yaragatti;UDAYAKUMAR R.Y,nitk_directory;nitk_telephone
+S0225,Vinatha U,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Professor,True,True,,,,2024,2026,current,Prof. Vinatha U.,nitk_telephone
+S0226,Sheron Figarado,NIT Surathkal,EEE,E&E,Assistant Professor,True,True,,,,2017,2018,former,SHERON FIGARADO,nitk_directory
+S0227,Shubhangak N,NIT Surathkal,EEE,E&E,Associate Professor,True,True,,,,2016,2018,former,SHUBHANGAK.N.,nitk_directory
+S0228,Vinathau,NIT Surathkal,EEE,E&E,Associate Professor,True,True,,,,2016,2018,former,VINATHAU,nitk_directory
+S0229,Yellasiri Suresh,NIT Surathkal,EEE,Dept. of Electrical and Electronics Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Y. Suresh;YELLASIRI SURESH,nitk_directory;nitk_telephone
+S0230,Ananthanarayanav S,NIT Surathkal,Information Technology,I.T.,Professor,True,True,,,,2016,2018,former,ANANTHANARAYANAV.S.,nitk_directory
+S0231,Bijur Mohan,NIT Surathkal,Information Technology,I.T.,Assistant Professor,True,True,,,,2016,2018,former,BIJUR . MOHAN;BIJUR. MOHAN,nitk_directory
+S0232,Anand Kumar M,NIT Surathkal,Information Technology,infotech,Associate Professor,True,True,,,,2019,2026,current,Anand Kumar M;Dr. Anand Kumar M;Dr. Anand Kumar M.,nitk_infotech;nitk_telephone
+S0233,Bhawana Rudra,NIT Surathkal,Information Technology,infotech,Assistant Professor,True,True,,,,2019,2026,current,Bhawana Rudra;Dr. Bhawana Rudra,nitk_infotech;nitk_telephone
+S0234,Biju R Mohan,NIT Surathkal,Information Technology,infotech,Associate Professor,True,True,,,,2016,2026,current,Biju R Mohan;Biju R. Mohan;Dr. Biju R Mohan,nitk_infotech;nitk_telephone
+S0235,Dinesh Naik,NIT Surathkal,Information Technology,infotech,Assistant Professor,True,True,,,,2016,2026,current,DINESHNAIK;Dinesh Naik;Dr. Dinesh Naik,nitk_directory;nitk_infotech;nitk_telephone
+S0236,Geetha V,NIT Surathkal,Information Technology,infotech,Associate Professor,True,True,,,,2016,2026,current,Dr. Geetha V;Geetha V.,nitk_infotech;nitk_telephone
+S0237,Janani T,NIT Surathkal,Information Technology,Dept. of Information Technology,Assistant Professor,True,True,,,,2024,2026,current,Dr. Janani T,nitk_telephone
+S0238,Kiran M,NIT Surathkal,Information Technology,infotech,Assistant Professor,True,True,,0000-0003-4951-6668,,2019,2026,current,Dr. Kiran M;Kiran M,nitk_infotech;nitk_telephone
+S0239,Nagamma Patil,NIT Surathkal,Information Technology,infotech,Associate Professor,True,True,,,,2016,2026,current,Dr. Nagamma Patil;NAGAMMAPATIL;Nagamma Patil,nitk_directory;nitk_infotech;nitk_telephone
+S0240,Purushothama B R,NIT Surathkal,Information Technology,Dept. of Information Technology,Associate Professor,True,True,,,,2024,2026,current,Dr. Purushothama B R,nitk_telephone
+S0241,Shrutilipi Bhattacharjee,NIT Surathkal,Information Technology,infotech,Assistant Professor,True,True,,,,2020,2026,current,Dr. Shrutilipi Bhattacharjee;Shrutilipi Bhattacharjee,nitk_infotech;nitk_telephone
+S0242,Sowmya Kamath S,NIT Surathkal,Information Technology,infotech,Associate Professor,True,True,,0000-0002-0888-7238,58309365000,2016,2026,current,Dr. Sowmya Kamath S;Dr. Sowmya Kamath S.;SOWMYA KAMATH S;Sowmya Kamath;Sowmya Kamath S;Sowmya Kamath S.,nitk_directory;nitk_infotech;nitk_telephone
+S0243,Vamshi Adouth,NIT Surathkal,Information Technology,Dept. of Information Technology,Assistant Professor,True,True,,,,2026,2026,current,Dr. Vamshi Adouth,nitk_telephone
+S0244,Geethav,NIT Surathkal,Information Technology,I.T.,Assistant Professor,True,True,,,,2016,2018,former,GEETHAV .;GEETHAV.,nitk_directory
+S0245,Jaidharc D,NIT Surathkal,Information Technology,I.T.,Assistant Professor,True,True,,,,2016,2018,former,JAIDHARC.D.,nitk_directory
+S0246,Kalapriya Kannan,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,,,2022,2022,former,Kalapriya Kannan,nitk_infotech
+S0247,Prakash S Raghavendra,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,,,2019,2021,former,Prakash S Raghavendra,nitk_infotech
+S0248,Ananthanarayana V S,NIT Surathkal,Information Technology,infotech,Professor (HAG),True,True,,0000-0001-6593-8938,23396223700,2016,2026,current,Ananthanarayana V. S.;Prof. Ananthanarayana V S,nitk_infotech;nitk_telephone
+S0249,Jaidhar C D,NIT Surathkal,Information Technology,infotech,Professor,True,True,,,,2016,2026,current,Dr. Jaidhar C D;Jaidhar C D;Jaidhar C. D.;Prof. Jaidhar C D,nitk_infotech;nitk_telephone
+S0250,Ram Mohana Reddy Guddeti,NIT Surathkal,Information Technology,infotech,Professor (HAG),True,True,,0000-0003-1361-3837,57196319462,2016,2026,current,G Ram Mohana Reddy;G. Ram Mohana Reddy;G.RAM MOHANAREDDY;Prof. Ram Mohana Reddy Guddeti;Ram Mohana Reddy Guddeti,nitk_directory;nitk_infotech;nitk_telephone
+S0251,S,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,0000-0002-0888-7238,58309365000,2018,2018,former,S,nitk_infotech
+S0252,S,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,0000-0002-0888-7238,58309365000,2020,2020,former,S,nitk_infotech
+S0253,S,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,0000-0002-0888-7238,58309365000,2021,2021,former,S,nitk_infotech
+S0254,Sowmyakamathshevgoor,NIT Surathkal,Information Technology,I.T.,Assistant Professor,True,True,,,,2016,2017,former,SOWMYAKAMATHSHEVGOOR,nitk_directory
+S0255,Sidney David Rosario,NIT Surathkal,Information Technology,infotech,Non-regular,False,True,,,,2019,2022,former,Sidney David Rosario,nitk_infotech
+S0256,A O Surendranathan,NIT Surathkal,MME,mme,Professor (HAG),True,True,,,,2016,2019,former,A. O. Surendranathan;A.O.SURENDRANATHAN,nitk_directory;nitk_mme
+S0257,B Rajasekaran,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. B Rajasekaran,nitk_telephone
+S0258,Kumkum Banerjee,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Kumkum Banerjee;KUMKUM BANERJEE,nitk_directory;nitk_telephone
+S0259,Lipak Kumar Sahoo,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Lipak Kumar Sahoo,nitk_telephone
+S0260,Mohammad Rizwanur Rahman,NIT Surathkal,MME,mme,Professor,True,True,,,,2016,2026,current,Dr. Mohammad Rizwanur Rahman;MOHAMMAD RIZWANUR RAHMAN;Mohammad Rizwanur Rahman,nitk_directory;nitk_mme;nitk_telephone
+S0261,Preetham Kumar G V,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Preetham Kumar G V;PREETHAM KUMAR G.V.,nitk_directory;nitk_telephone
+S0262,Ravishankar K S,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Ravishankar K S;RAVISHANKAR K.S.,nitk_directory;nitk_telephone
+S0263,Saumen Mandal,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Saumen Mandal;SAUMEN MANDAL,nitk_directory;nitk_telephone
+S0264,Selvakumar Murugesan,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Selvakumar Murugesan,nitk_telephone
+S0265,Shashi Bhushan Arya,NIT Surathkal,MME,mme,Associate Professor,True,True,,,,2016,2026,current,Dr. Shashi Bhushan Arya;SHASHI BHUSHAN ARYA;Shashi Bhushan Arya,nitk_directory;nitk_mme;nitk_telephone
+S0266,Sumanth Govindarajan,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Sumanth Govindarajan,nitk_telephone
+S0267,K Rajendra Udupa,NIT Surathkal,MME,METALLURGY,Professor,True,True,,,,2016,2018,former,K Rajendra Udupa;K.RAJENDRA UDUPA,nitk_directory;nitk_mme
+S0268,P L N Reddy,NIT Surathkal,MME,METALLURGY,Associate Professor,True,True,,,,2016,2018,former,P.L.N.REDDY,nitk_directory
+S0269,Anandhan Srinivasan,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Professor,True,True,,,,2016,2026,current,ANANDHAN SRINIVASAN;Prof. Anandhan Srinivasan,nitk_directory;nitk_telephone
+S0270,Jagannath Nayak,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Professor,True,True,,,,2016,2026,current,JAGANNATHA NAYAK;Prof. Jagannath Nayak,nitk_directory;nitk_telephone
+S0271,K Narayan Prabhu,NIT Surathkal,MME,mme,Professor (HAG),True,True,,,,2016,2026,current,K Narayan Prabhu;K.NARAYANA PRABHU;Prof. K Narayan Prabhu,nitk_directory;nitk_mme;nitk_telephone
+S0272,Udaya Bhat K,NIT Surathkal,MME,Dept. of Metallurgical and Materials Engineering,Professor,True,True,,,,2016,2026,current,Prof. Udaya Bhat K;UDAYA BHAT K,nitk_directory;nitk_telephone
+S0273,Sreeram K Kalpathy,NIT Surathkal,MME,METALLURGY,Assistant Professor,True,True,,,,2016,2016,former,SREERAM K.KALPATHY,nitk_directory
+S0274,Subray Ramachandra Hegde,NIT Surathkal,MME,mme,Professor,True,True,,,,2016,2026,current,Prof. Subray R Hegde;SUBRAY RAMACHANDRA HEGDE;Subray R. Hegde,nitk_directory;nitk_mme;nitk_telephone
+S0275,Aloysius Henry Sequeira,NIT Surathkal,Management,som,Professor (HAG),True,False,,,,2016,2023,former,A.H.SEQUEIRA;Aloysius Henry Sequeira,nitk_directory;nitk_som
+S0276,Bijunac Mohan,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,BIJUNAC.MOHAN,nitk_directory
+S0277,Dhishnap,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,DHISHNAP .;DHISHNAP.,nitk_directory
+S0278,Abhilasha Gusain,NIT Surathkal,Management,som,Assistant Professor,True,False,,0000-0003-3810-6604,57218600347,2025,2026,current,Abhilasha Gusain;Dr. Abhilasha Gusain,nitk_som;nitk_telephone
+S0279,Anupriya,NIT Surathkal,Management,som,Assistant Professor,True,False,,,,2026,2026,current,Anupriya;Dr. Anupriya,nitk_som;nitk_telephone
+S0280,Bijuna C Mohan,NIT Surathkal,Management,som,Associate Professor,True,False,,0000-0001-5022-8650,55747046100,2016,2026,current,Bijuna C Mohan;Dr. Bijuna C Mohan,nitk_som;nitk_telephone
+S0281,Chaitra Nagammanavar,NIT Surathkal,Management,som,Assistant Professor,True,False,,,,2026,2026,current,Chaitra Nagammanavar;Dr. Chaitra Nagammanavar,nitk_som;nitk_telephone
+S0282,Dhishna P,NIT Surathkal,Management,som,Associate Professor,True,False,,0000-0002-4772-7368,57204465014,2016,2026,current,Dhishna P;Dr. Dhishna P,nitk_som;nitk_telephone
+S0283,Gopalakrishna B V,NIT Surathkal,Management,som,Associate Professor,True,False,,,,2016,2026,current,Dr. Gopalakrishna B V;Gopalakrishna B V,nitk_som;nitk_telephone
+S0284,Rahul Sivarajan,NIT Surathkal,Management,som,Assistant Professor,True,False,,0000-0003-0220-1335,57222553961,2024,2026,current,Dr. Rahul Sivarajan;Rahul Sivarajan,nitk_som;nitk_telephone
+S0285,Rajesh Acharya H,NIT Surathkal,Management,som,Professor,True,False,,0000-0002-9893-0788,56600002300,2016,2026,current,Dr. Rajesh Acharya H;Rajesh Acharya H,nitk_som;nitk_telephone
+S0286,Rashmi Uchil,NIT Surathkal,Management,som,Associate Professor,True,False,,0000-0002-7422-8337,57200281595,2016,2026,current,Dr. Rashmi Uchil;RASHMIUCHIL;Rashmi Uchil,nitk_directory;nitk_som;nitk_telephone
+S0287,Sabiha Alam Choudhury,NIT Surathkal,Management,som,Assistant Professor,True,False,,0000-0003-3316-9120,57782843800,2026,2026,current,Dr. Sabiha Alam Choudhury;Sabiha Alam Choudhury,nitk_som;nitk_telephone
+S0288,Savita Bhat,NIT Surathkal,Management,som,Associate Professor,True,False,,0000-0002-0426-4279,26029735500,2016,2026,current,Dr. Savita Bhat;SAVITABHAT;Savita Bhat,nitk_directory;nitk_som;nitk_telephone
+S0289,Sheena,NIT Surathkal,Management,som,Professor,True,False,,0000-0001-9731-2374,57204890194,2016,2026,current,Dr. Sheena;SHEENA;Sheena,nitk_directory;nitk_som;nitk_telephone
+S0290,Suprabha K R,NIT Surathkal,Management,som,Professor,True,False,,,,2016,2026,current,Dr. Suprabha K R;Dr. Suprabha K. R;Dr. Suprabha K. R.;Suprabha K. R,nitk_som;nitk_telephone
+S0291,Gopalakrishnab V,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,GOPALAKRISHNAB.V.,nitk_directory
+S0292,Kirank B,NIT Surathkal,Management,SoM,Professor,True,False,,,,2016,2018,former,KIRANK.B.,nitk_directory
+S0293,Naganna Chetty,NIT Surathkal,Management,som,Non-regular,False,False,,,,2022,2022,former,Naganna Chetty,nitk_som
+S0294,K B Kiran,NIT Surathkal,Management,som,Professor (HAG),True,False,,,,2016,2026,current,K B Kiran;Kiran K B;Prof. K B Kiran,nitk_som;nitk_telephone
+S0295,Pradyot Ranjan Jena,NIT Surathkal,Management,som,Professor,True,False,,0000-0002-0674-3441,23568135000,2016,2026,current,PRADYOT RANJAN JENA;Pradyot Ranjan Jena;Prof. Pradyot Ranjan Jena,nitk_directory;nitk_som;nitk_telephone
+S0296,Ritanjali Majhi,NIT Surathkal,Management,som,Professor,True,False,,0000-0001-6610-4732,24802610800,2021,2026,current,Prof. Ritanjali Majhi;Ritanjali Majhi,nitk_som;nitk_telephone
+S0297,S Pavan Kumar,NIT Surathkal,Management,som,Professor,True,False,,0000-0001-7973-1655,57337220400,2016,2026,current,Prof. S Pavan Kumar;S Pavan Kumar;S.PAVAN KUMAR,nitk_directory;nitk_som;nitk_telephone
+S0298,Shashikantha Koudur,NIT Surathkal,Management,som,Professor,True,False,,0000-0002-3231-4149,55796178700,2016,2026,current,Prof. Shashikantha Koudur;Shashikantha Koudur,nitk_som;nitk_telephone
+S0299,Rajesh Acharyah,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,RAJESH ACHARYAH .;RAJESH ACHARYAH.,nitk_directory
+S0300,Rofin T M,NIT Surathkal,Management,som,Assistant Professor,True,False,,,,2021,2021,former,Rofin T M,nitk_som
+S0301,Shashikanthak,NIT Surathkal,Management,SoM,Associate Professor,True,False,,,,2016,2018,former,SHASHIKANTHAK .;SHASHIKANTHAK.,nitk_directory
+S0302,Sreejitha,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,SREEJITHA .;SREEJITHA.,nitk_directory
+S0303,Sunil Cypriand Souza,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,SUNIL CYPRIAND'SOUZA,nitk_directory
+S0304,Suprabhak R,NIT Surathkal,Management,SoM,Assistant Professor,True,False,,,,2016,2018,former,SUPRABHAK.R.,nitk_directory
+S0305,Sreejith Alathur,NIT Surathkal,Management,som,Assistant Professor,True,False,,,,2016,2023,former,Sreejith A;Sreejith Alathur,nitk_som
+S0306,Sunil D Souza,NIT Surathkal,Management,som,Assistant Professor,True,False,,,,2016,2016,former,Sunil D'Souza,nitk_som
+S0307,Chandhinig,NIT Surathkal,Mathematics,MACS,Assistant Professor,True,True,,,,2016,2018,former,CHANDHINIG .;CHANDHINIG.,nitk_directory
+S0308,A Senthil Thilak,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2016,2026,current,A Senthil Thilak;Dr. A Senthil Thilak;SENTHILTHILAKA .;SENTHILTHILAKA.,nitk_directory;nitk_macs;nitk_telephone
+S0309,Amit Kumar,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,0000-0001-9903-2392,57212585002,2025,2026,current,Amit Kumar;Dr. Amit Kumar,nitk_macs;nitk_telephone
+S0310,Chandhini G,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2016,2026,current,Chandhini G;Dr. Chandhini G,nitk_macs;nitk_telephone
+S0311,Falguni Roy,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2020,2026,current,Dr. Falguni Roy;Falguni Roy,nitk_macs;nitk_telephone
+S0312,Gayathri P,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,0000-0003-3719-5932,,2025,2026,current,Dr. Gayathri P;Gayathri P,nitk_macs;nitk_telephone
+S0313,Jisna V A,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,0000-0001-5210-9583,,2025,2026,current,Dr. Jisna V. A.;Jisna V. A.,nitk_macs;nitk_telephone
+S0314,Jothi Ramalingam,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2020,2026,current,Dr. Jothi Ramalingam;Jothi Ramalingam,nitk_macs;nitk_telephone
+S0315,Kedarnath Senapathi,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2017,2026,current,Dr. Kedarnath Senapathi;Kedarnath Senapati,nitk_macs;nitk_telephone
+S0316,Mahima,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,57217136832,2025,2026,current,Dr. Mahima;Mahima,nitk_macs;nitk_telephone
+S0317,Manisha Aggarwal,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2025,2026,current,Dr. Manisha Aggarwal;Manisha Aggarwal,nitk_macs;nitk_telephone
+S0318,Pushpajit Khaire,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2024,2026,current,Dr. Pushpajit Khaire;Pushpajit Khaire,nitk_macs;nitk_telephone
+S0319,Samadrita Bera,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2024,2026,current,Dr. Samadrita Bera;Samadrita Bera,nitk_macs;nitk_telephone
+S0320,Srinivasa Rao Kola,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2016,2026,current,Dr. Srinivasa Rao Kola;SRINIVASARAOKOLA;Srinivasa Rao Kola,nitk_directory;nitk_macs;nitk_telephone
+S0321,Vidyadhar Upadhya,NIT Surathkal,Mathematics,Dept. of Mathematical and Computational Sciences,Assistant Professor,True,True,,,,2024,2026,current,Dr. Vidyadhar Upadhya;Vidyadhar Upadhya,nitk_macs;nitk_telephone
+S0322,Vishwanath K P,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2016,2026,current,Dr. Vishwanath K P;Vishwanath K. P,nitk_macs;nitk_telephone
+S0323,Vivek Sinha,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,,,2016,2026,current,Dr. Vivek Sinha;VIVEKSINHA;Vivek Sinha,nitk_directory;nitk_macs;nitk_telephone
+S0324,I Jeyaraman,NIT Surathkal,Mathematics,MACS,Assistant Professor,True,True,,,,2016,2018,former,I. Jeyaraman;I.JEYARAMAN,nitk_directory;nitk_macs
+S0325,Jideshp,NIT Surathkal,Mathematics,MACS,Assistant Professor,True,True,,,,2016,2018,former,JIDESHP .;JIDESHP.,nitk_directory
+S0326,Jerry W Sangma,NIT Surathkal,Mathematics,macs,Assistant Professor,True,True,,0000-0003-4739-6818,,2026,2026,current,Jerry W. Sangma,nitk_macs
+S0327,Jidesh P,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2016,2026,current,Dr. Jidesh P;Jidesh P;Jidesh P (On Lien),nitk_macs;nitk_telephone
+S0328,Keshava Prasad Halemane,NIT Surathkal,Mathematics,MACS,Professor,True,True,,,,2016,2018,former,KESHAVAPRASAD HALEMANE;Keshava Prasad Halemane,nitk_directory;nitk_macs
+S0329,Murulidharn N,NIT Surathkal,Mathematics,MACS,Professor,True,True,,,,2016,2018,former,MURULIDHARN.N.,nitk_directory
+S0330,A Kandasamy,NIT Surathkal,Mathematics,macs,Professor (HAG),True,True,,,,2016,2026,current,A Kandasamy;A.KANDASAMY;Prof. A Kandasamy,nitk_directory;nitk_macs;nitk_telephone
+S0331,B R Shankar,NIT Surathkal,Mathematics,macs,Professor,True,True,,,,2016,2026,current,B R Shankar;Prof. B R Shankar,nitk_macs;nitk_telephone
+S0332,Madhusudhan R,NIT Surathkal,Mathematics,macs,Professor,True,True,,,,2016,2026,current,Prof. Madhusudhan R;R. Madhusudhan;R.MADHUSUDHANA,nitk_directory;nitk_macs;nitk_telephone
+S0333,Murulidhar N N,NIT Surathkal,Mathematics,macs,Professor,True,True,,,,2016,2026,current,Murulidhar N N;Prof. Murulidhar N N,nitk_macs;nitk_telephone
+S0334,P Sam Johnson,NIT Surathkal,Mathematics,macs,Professor,True,True,,,57226629182,2016,2026,current,Dr. P. Sam Johnson;P Sam Johnson;P. Sam Johnson;P.SAM JOHNSON;Prof. P Sam Johnson,nitk_directory;nitk_macs;nitk_telephone
+S0335,Pushparaj Shetty D,NIT Surathkal,Mathematics,macs,Professor,True,True,,0000-0001-5246-8631,57211499753,2016,2026,current,Dr. Pushparaj Shetty D;PUSHPARAJSHETTYD .;PUSHPARAJSHETTYD.;Prof. Pushparaj Shetty D;Pushparaj Shetty D,nitk_directory;nitk_macs;nitk_telephone
+S0336,Santhosh George,NIT Surathkal,Mathematics,macs,Professor (HAG),True,True,,,,2016,2026,current,Prof. Santhosh George;SANTHOSHGEORGE;Santhosh George,nitk_directory;nitk_macs;nitk_telephone
+S0337,Shyam S Kamath,NIT Surathkal,Mathematics,macs,Professor,True,True,,,,2016,2026,current,Prof. Shyam S Kamath;Shyam S. Kamath,nitk_macs;nitk_telephone
+S0338,V Murugan,NIT Surathkal,Mathematics,macs,Professor,True,True,,0000-0002-0267-3482,15839886400,2016,2026,current,Prof. V Murugan;V. Murugan;V.MURUGAN,nitk_directory;nitk_macs;nitk_telephone
+S0339,R J D Souza,NIT Surathkal,Mathematics,MACS,Professor,True,True,,,,2016,2016,former,R.J.D'SOUZA,nitk_directory
+S0340,Shankarb Ramesh,NIT Surathkal,Mathematics,MACS,Associate Professor,True,True,,,,2016,2018,former,SHANKARB . RAMESH;SHANKARB. RAMESH,nitk_directory
+S0341,Shyamshreenivasakamath,NIT Surathkal,Mathematics,MACS,Associate Professor,True,True,,,,2016,2018,former,SHYAMSHREENIVASAKAMATH,nitk_directory
+S0342,Sujathad Achar,NIT Surathkal,Mathematics,MACS,Associate Professor,True,True,,,,2016,2018,former,SUJATHAD.ACHAR,nitk_directory
+S0343,Suresh Manjanathhegde,NIT Surathkal,Mathematics,macs,Professor (HAG),True,True,,,,2016,2023,former,SURESH MANJANATHHEGDE;Suresh M Hegde,nitk_directory;nitk_macs
+S0344,Satyanarayana Engu,NIT Surathkal,Mathematics,MACS,Assistant Professor,True,True,,,,2016,2018,former,"SATYANARAYANAENGU;Satyanarayana Engu;Satyanarayana, Engu",nitk_directory;nitk_macs
+S0345,Sujatha D Achar,NIT Surathkal,Mathematics,macs,Associate Professor,True,True,,,,2016,2019,former,Sujatha D. Achar,nitk_macs
+S0346,Vishwanathk P,NIT Surathkal,Mathematics,MACS,Assistant Professor,True,True,,,,2016,2018,former,VISHWANATHK.P.,nitk_directory
+S0347,Anishs,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2016,former,ANISHS .,nitk_directory
+S0348,Arunm,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2016,former,ARUNM .,nitk_directory
+S0349,Ajay Kumar Yadav,NIT Surathkal,Mechanical,mech,Assistant Professor,True,True,,,,2016,2026,current,AJAY KUMAR YADAV;Ajay Kumar Yadav;Ajay Kumar Yadav (On-Lien to IIT Patna);Dr. Ajay Kumar Yadav,nitk_directory;nitk_mech;nitk_telephone
+S0350,D Chakradhar,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2018,former,Chakradhar D;D.CHAKRADHAR,nitk_directory;nitk_mech
+S0351,Abhilash Singh,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr Abhilash Singh,nitk_telephone
+S0352,Parthasarathy P,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr Parthasarathy P,nitk_telephone
+S0353,Somasekhara Rao Todeti,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2017,2026,current,Dr Somasekhara Rao Todeti;SOMASEKHARA RAO TODETI,nitk_directory;nitk_telephone
+S0354,A S S Balan,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. A. S. S. Balan,nitk_telephone
+S0355,Arumuga Perumal D,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Associate Professor,True,True,,,,2017,2026,current,ARUMUGA PERUMAL D;Dr. Arumuga Perumal D,nitk_directory;nitk_telephone
+S0356,Arun Kumar Shettigar,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Arun Kumar Shettigar,nitk_telephone
+S0357,Deepak Kumar,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Deepak Kumar,nitk_telephone
+S0358,Khyati Verma,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Khyati Verma,nitk_telephone
+S0359,Mervin Joe Thomas,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Mervin Joe Thomas,nitk_telephone
+S0360,Mruthyunjaya Swamy K B,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Mruthyunjaya Swamy K B,nitk_telephone
+S0361,Navin Karanth P,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,Dr. Navin Karanth P.;NAVINKARANTHP .;NAVINKARANTHP.;Navin Karanth P;Navin Karanth P.,nitk_directory;nitk_mech;nitk_telephone
+S0362,P S Suvin,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. P. S. Suvin,nitk_telephone
+S0363,Poornesh Kumar Koorata,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Associate Professor,True,True,,,,2024,2026,current,Dr. Poornesh Kumar Koorata,nitk_telephone
+S0364,Ranjeet Kumar Sahu,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Ranjeet Kumar Sahu,nitk_telephone
+S0365,Ranjith M,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Associate Professor,True,True,,,,2017,2026,current,Dr. Ranjith M;RANJITH M.,nitk_directory;nitk_telephone
+S0366,Saurabh Chandraker,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Assistant Professor,True,True,,,,2024,2026,current,Dr. Saurabh Chandraker,nitk_telephone
+S0367,Sudhakar C Jambagi,NIT Surathkal,Mechanical,mech,Associate Professor,True,True,,,56968125800,2016,2026,current,Dr. Sudhakar C Jambagi;SUDHAKAR C.JAMBAGI;Sudhakar C Jambagi,nitk_directory;nitk_mech;nitk_telephone
+S0368,Vasudeva Madav,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Vasudeva Madav;VASUDEVA M.,nitk_directory;nitk_telephone
+S0369,Gangadharank V,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,GANGADHARANK.V.,nitk_directory
+S0370,Guruprasadk R,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2018,former,GURUPRASADK.R.,nitk_directory
+S0371,Guruprasad K R,NIT Surathkal,Mechanical,mech,Associate Professor,True,True,,,,2016,2023,former,Guruprasad K R;Guruprasad K R (On-Lien to IIT Kanpur),nitk_mech
+S0372,H Suresh Hebbar,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2023,former,H.SURESH HEBBAR;Suresh Hebbar H,nitk_directory;nitk_mech
+S0373,K K Appukuttan,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,K.K.APPUKUTTAN,nitk_directory
+S0374,Mervin Arunaraj Herbert,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Associate Professor,True,True,,,,2016,2026,current,Dr. Mervin A Herbert;MERVIN ARUNARAJ HERBERT;MERVINARUNARAJHERBERT,nitk_directory;nitk_telephone
+S0375,Mrityunjay R Doddamani,NIT Surathkal,Mechanical,MECHANICAL,Associate Professor,True,True,,,,2016,2023,former,MRITYUNJAY R.DODDAMANI;MRITYUNJAYR.DODDAMANI;Mrityunjay Doddamani,nitk_directory;nitk_mech
+S0376,N Gnanasekaran,NIT Surathkal,Mechanical,mech,Associate Professor,True,True,,,,2016,2026,current,Dr. N. Gnanasekaran;Gnanasekaran;N. Gnanasekaran;N. Gnanasekaran (On-Lien to IIT Tirupati);N.GNANASEKARAN,nitk_directory;nitk_mech;nitk_telephone
+S0377,Narendranaths,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,NARENDRANATHS .;NARENDRANATHS.,nitk_directory
+S0378,P Mohanan,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,Mohanan P;P.MOHANAN,nitk_directory;nitk_mech
+S0379,Prasad Krishna,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,"PRASAD KRISHNA;Prasad Krishna;Prasad Krishna (On Deputation as Director, NIT Calicut);Prof. Prasad Krishna",nitk_directory;nitk_mech;nitk_telephone
+S0380,Anish S,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,ANISH S.;Anish S.;Prof. Anish S.,nitk_directory;nitk_mech;nitk_telephone
+S0381,Arun M,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,ARUN M.;Arun M.;Prof. Arun M.,nitk_directory;nitk_mech;nitk_telephone
+S0382,G C Mohan Kumar,NIT Surathkal,Mechanical,mech,Professor (HAG),True,True,,,,2016,2026,current,G. C. MOHAN KUMAR;G.C. MOHANKUMAR;Mohan Kumar G C;Prof. G. C. Mohan Kumar,nitk_directory;nitk_mech;nitk_telephone
+S0383,Gangadharan K V,NIT Surathkal,Mechanical,mech,Professor (HAG),True,True,,0000-0002-0606-8677,,2016,2026,current,Gangadharan K V;Prof. Gangadharan K V,nitk_mech;nitk_telephone
+S0384,Hemantha Kumar,NIT Surathkal,Mechanical,mech,Professor,True,True,,0000-0003-1372-3382,57202657376,2016,2026,current,HEMANTHAKUMAR;Hemantha Kumar;Hemantha kumar;Prof. Hemantha Kumar,nitk_directory;nitk_mech;nitk_telephone
+S0385,Jeyaraj P,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,Jeyaraj P;P.JEYARAJ;Prof. Jeyaraj P,nitk_directory;nitk_mech;nitk_telephone
+S0386,Kumar G N,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,KUMAR G.N.;Kumar G N;Prof. Kumar G N,nitk_directory;nitk_mech;nitk_telephone
+S0387,Narendranath S,NIT Surathkal,Mechanical,mech,Director,True,True,,,,2016,2026,current,Narendranath S;Prof. Narendranath S,nitk_mech;nitk_telephone
+S0388,Ramesh M R,NIT Surathkal,Mechanical,mech,Professor,True,True,,,57724394900,2016,2026,current,Dr. Ramesh M. R;Prof. Ramesh M R;Prof. Ramesh M. R.;Ramesh M R,nitk_mech;nitk_telephone
+S0389,Ravikiran Kadoli,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2016,2026,current,Prof. Ravikiran Kadoli;RAVIKIRAN KADOLI,nitk_directory;nitk_telephone
+S0390,S M Murigendrappa,NIT Surathkal,Mechanical,mech,Professor,True,True,,,7801636969,2016,2026,current,Murigendrappa S M;Prof. S. M. Murigendrappa;S. M. Murigendrappa;S.M.MURIGENDRAPPA,nitk_directory;nitk_mech;nitk_telephone
+S0391,Sathyabhama A,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,Prof. Sathyabhama A;SATHYABHAMA A.;Sathyabhama A,nitk_directory;nitk_mech;nitk_telephone
+S0392,Satyabodh M Kulkarni,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,Kulkarni S M;Kulkarni Satyabodh M;Prof. S M Kulkarni;Prof. Satyabodh M Kulkarni;SATYABODH M KULKARNI,nitk_directory;nitk_mech;nitk_telephone
+S0393,Sharnappa Joladarashi,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2017,2026,current,Prof. Sharnappa Joladarashi;SHARNAPPA,nitk_directory;nitk_telephone
+S0394,Shivananda Nayaka H,NIT Surathkal,Mechanical,mech,Professor,True,True,,,,2016,2026,current,Prof. Shivananda Nayaka H;SHIVANANDA NAYAK H.;Shivananda Nayaka H,nitk_directory;nitk_mech;nitk_telephone
+S0395,Shrikantha S Rao,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2024,2026,current,Prof. Shrikantha S Rao,nitk_telephone
+S0396,Srikanth Bontha,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2016,2026,current,Prof. Srikanth Bontha;SRIKANTH BONTHA,nitk_directory;nitk_telephone
+S0397,Subhaschandra Kattimani,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2016,2026,current,Prof. Subhaschandra Kattimani;SUBHASCHANDRA KATTIMANI,nitk_directory;nitk_telephone
+S0398,Veershetty Gumtapure,NIT Surathkal,Mechanical,Dept. of Mechanical Engineering,Professor,True,True,,,,2016,2026,current,Prof. Veershetty Gumtapure;VEERSHETTY GUMTAPURE,nitk_directory;nitk_telephone
+S0399,Rameshm R,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2018,former,RAMESHM.R.,nitk_directory
+S0400,Shrikantha,NIT Surathkal,Mechanical,MECHANICAL,Associate Professor,True,True,,,,2016,2018,former,SHRIKANTHA,nitk_directory
+S0401,T P Ashok Babu,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,Ashok Babu T P;T.P.ASHOK BABU,nitk_directory;nitk_mech
+S0402,Vijay Desai,NIT Surathkal,Mechanical,MECHANICAL,Professor,True,True,,,,2016,2018,former,VIJAY DESAI,nitk_directory
+S0403,Vijaykumar H,NIT Surathkal,Mechanical,MECHANICAL,Assistant Professor,True,True,,,,2016,2017,former,VIJAYKUMAR H.,nitk_directory
+S0404,Y Suresh Kumar,NIT Surathkal,Mechanical,MECHANICAL,Associate Professor,True,True,,,,2016,2018,former,Y.SURESH KUMAR,nitk_directory
+S0405,Chivukula Suryanarayana Murthy,NIT Surathkal,Mining,mining,Professor (HAG),True,True,,,,2019,2023,former,2. DR. CHIVUKULA SURYANARAYANA MURTHY;CHIVUKULA SURYANARAYANA MURTHY,nitk_mining
+S0406,Mandela Govinda Raj,NIT Surathkal,Mining,mining,Professor (HAG),True,True,,,,2016,2026,current,3. DR. MANDELA GOVINDA RAJ;M. Govinda Raj;M.GOVINDARAJ;MANDELA GOVINDA RAJ;Prof. Mandela Govinda Raj,nitk_directory;nitk_mining;nitk_telephone
+S0407,Mangalpady Aruna,NIT Surathkal,Mining,mining,Professor,True,True,,0000-0002-0415-116X,56997614800,2016,2026,current,5. DR. MANGALPADY ARUNA;Late MANGALPADY ARUNA;M. Aruna;MANGALPADY ARUNA;Prof. Mangalpady Aruna,nitk_directory;nitk_mining;nitk_telephone
+S0408,Ram Prasad Choudhary,NIT Surathkal,Mining,MINING,Assistant Professor,True,True,,,,2016,2019,former,7. DR. RAM PRASAD CHOUDHARY (On Lien);R.P.Choudhary;RAM PRASAD CHOUDHARY,nitk_directory;nitk_mining
+S0409,Anup Kumar Tripathi,NIT Surathkal,Mining,mining,Associate Professor,True,True,,,,2016,2026,current,8. DR. ANUP KUMAR TRIPATHI;A. K Tripathi;ANUP KUMAR TRIPATHI;Dr. Anup Kumar Tripati,nitk_directory;nitk_mining;nitk_telephone
+S0410,Bijay Mihir Kunar,NIT Surathkal,Mining,mining,Associate Professor,True,True,,0000-0001-8552-509X,16425697000,2016,2026,current,9. DR. BIJAY MIHIR KUNAR;B.M.Kunar;BIJAY MIHIR KUNAR;Dr . Bijay Mihir Kunar,nitk_directory;nitk_mining;nitk_telephone
+S0411,Amit Sharma,NIT Surathkal,Mining,mining,Non-regular,False,True,,,,2025,2025,former,AMIT SHARMA,nitk_mining
+S0412,Ch Suryanarayana Murthy,NIT Surathkal,Mining,MINING,Professor,True,True,,,,2016,2018,former,Ch.S.N.Murthy;Ch.SURYANARAYANA MURTHY,nitk_directory;nitk_mining
+S0413,Akhil Avchar,NIT Surathkal,Mining,mining,Assistant Professor,True,True,,,57202689937,2023,2026,current,AKHIL AVCHAR;Dr. Akhil Avchar,nitk_mining;nitk_telephone
+S0414,Amrites Senapati,NIT Surathkal,Mining,mining,Assistant Professor,True,True,,,,2024,2026,current,AMRITES SENAPATI;Dr. Amrites Senapati,nitk_mining;nitk_telephone
+S0415,Sandi Kumar Reddy,NIT Surathkal,Mining,mining,Associate Professor,True,True,,0000-0002-7978-309X,55538813900,2020,2026,current,Dr. Sandi Kumar Reddy;SANDI KUMAR REDDY,nitk_mining;nitk_telephone
+S0416,Gurram Dileep,NIT Surathkal,Mining,mining,Non-regular,False,True,,,,2026,2026,current,GURRAM DILEEP,nitk_mining
+S0417,Harsha Vardhan,NIT Surathkal,Mining,mining,Professor,True,True,,,,2016,2026,current,4. DR. HARSHA VARDHAN;HARSHA VARDHAN;HARSHA VARDHAN (P. Eng);Harsha Vardhan;Prof. Harsha Vardhan,nitk_directory;nitk_mining;nitk_telephone
+S0418,Karra Ram Chandar,NIT Surathkal,Mining,mining,Professor,True,True,,,,2016,2026,current,6. DR. KARRA RAM CHANDAR;K. Ram Chandar;KARRA RAM CHANDAR;KARRA RAM CHANDAR (P.Eng);KARRA RAM CHANDER;Prof. Karra Ram Chandar,nitk_directory;nitk_mining;nitk_telephone
+S0419,Mohammed Asif,NIT Surathkal,Mining,mining,Non-regular,False,True,,0009-0003-2195-2166,,2026,2026,current,MOHAMMED ASIF,nitk_mining
+S0420,Rajib Pal,NIT Surathkal,Mining,mining,Professor,True,True,,,,2026,2026,current,RAJIB PAL,nitk_mining
+S0421,Vedala Rama Sastry,NIT Surathkal,Mining,mining,Professor (HAG),True,True,,,,2016,2023,former,1. DR. VEDALA RAMA SASTRY;RAMA SASTRY VEDALA;V.R. SASTRY;V.RAMA SASTRY;VEDALA RAMA SASTRY (On Lien),nitk_directory;nitk_mining
+S0422,Ajith Kulangara Madam,NIT Surathkal,Physics,physics,Professor,True,True,,,,2016,2026,current,AJITH KULANGARA MADAM;Ajith K M;Prof. Ajith K M,nitk_directory;nitk_physics;nitk_telephone
+S0423,Deepak Vaid,NIT Surathkal,Physics,physics,Assistant Professor,True,True,,,,2016,2023,former,DEEPAK VAID;Deepak Vaid,nitk_directory;nitk_physics
+S0424,Kartick Tarafder,NIT Surathkal,Physics,Dept. of Physics,Associate Professor,True,True,,,,2017,2026,current,Dr. Kartick Tarafder;KARTIK TARAFDER,nitk_directory;nitk_telephone
+S0425,Partha Pratim Das,NIT Surathkal,Physics,physics,Associate Professor,True,True,,0000-0002-4599-3945,,2016,2026,current,Dr. Partha Pratim Das;PARTHA PRATIM DAS;Partha Pratim Das,nitk_directory;nitk_physics;nitk_telephone
+S0426,V Sreenath,NIT Surathkal,Physics,Dept. of Physics,Assistant Professor,True,True,,,,2024,2026,current,Dr. V Sreenath,nitk_telephone
+S0427,Govinda Rao Umesh,NIT Surathkal,Physics,PHYSICS,Professor,True,True,,,,2016,2018,former,GOVINDA RAO UMESH,nitk_directory
+S0428,H D Shashikala,NIT Surathkal,Physics,physics,Assistant Professor,True,True,,,,2016,2023,former,H.D.SHASHIKALA;H.D.Shashikala,nitk_directory;nitk_physics
+S0429,Kasturi V Bangera,NIT Surathkal,Physics,physics,Professor,True,True,,,,2016,2020,former,KASTURI.V.BANGERA;Kasturi V. Bangera;Kasturi. V. Bangera,nitk_directory;nitk_physics
+S0430,M Nagarajan Satyanarayan,NIT Surathkal,Physics,Dept. of Physics,Professor,True,True,,,,2016,2026,current,M.NAGARAJAN SATYANARAYAN;Prof. M N Satyanarayan,nitk_directory;nitk_telephone
+S0431,N K Udayashankar,NIT Surathkal,Physics,physics,Professor,True,True,,,,2016,2026,current,N.K. Udayashankar;Prof. N K Udayashankar;UDAYASHANKAR N.K.,nitk_directory;nitk_physics;nitk_telephone
+S0432,Nagaraja H S,NIT Surathkal,Physics,physics,Professor,True,True,,,,2016,2026,current,NAGARAJA H.S.;Nagaraja H.S.;Prof. Nagaraja H S,nitk_directory;nitk_physics;nitk_telephone
+S0433,Shajahan Thamara Kunnathu,NIT Surathkal,Physics,Dept. of Physics,Assistant Professor,True,True,,,,2017,2026,current,Dr. T K Shajahan;SHAJAHAN THAMARA KUNNATHU,nitk_directory;nitk_telephone
+S0434,Amaimahesha,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Professor,True,True,,,,2016,2018,former,AMAIMAHESHA,nitk_directory
+S0435,Arkal Vittal Hegde,NIT Surathkal,Water Resources & Ocean,appmech,Assistant Professor,True,True,,,,2016,2019,former,A.VITTAL HEGDE;Arkal Vittal Hegde,nitk_appmech;nitk_appmech_faculty;nitk_directory
+S0436,Dwarakishg S,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Professor,True,True,,,,2016,2018,former,DWARAKISHG.S.,nitk_directory
+S0437,Chandan M C,NIT Surathkal,Water Resources & Ocean,Dept. of Water Resources & Ocean Engg,Assistant Professor,True,True,,,,2026,2026,current,Dr. Chandan M. C.,nitk_telephone
+S0438,Chandan Pradhan,NIT Surathkal,Water Resources & Ocean,Dept. of Water Resources & Ocean Engg,Assistant Professor,True,True,,,,2024,2026,current,Dr. Chandan Pradhan,nitk_telephone
+S0439,Debabrata Karmakar,NIT Surathkal,Water Resources & Ocean,Dept. of Water Resources & Ocean Engg,Associate Professor,True,True,,,,2017,2026,current,DEBABRATA KARMAKAR;Dr. Debabrata Karmakar,nitk_directory;nitk_telephone
+S0440,Pruthviraj U,NIT Surathkal,Water Resources & Ocean,appmech,Associate Professor,True,True,,,,2016,2026,current,Dr. Pruthviraj U.;Pruthviraj U.,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0441,Shwetha H R,NIT Surathkal,Water Resources & Ocean,Dept. of Water Resources & Ocean Engg,Assistant Professor,True,True,,,,2024,2026,current,Dr. Shwetha H.R.,nitk_telephone
+S0442,Subrahmanya K,NIT Surathkal,Water Resources & Ocean,appmech,Associate Professor,True,True,,,,2016,2026,current,Dr. Subrahmanya K.;Subrahmanya K.,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0443,Vadivuchezhian Kaliveeran,NIT Surathkal,Water Resources & Ocean,appmech,Associate Professor,True,True,,,,2016,2026,current,Dr. Vadivuchezhian Kaliveeran;Vadivuchezhian Kaliveeran,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0444,Nagaraj M K,NIT Surathkal,Water Resources & Ocean,appmech,Assistant Professor,True,True,,,,2016,2019,former,M.K.NAGARAJ;Nagaraj M.K.,nitk_appmech;nitk_appmech_faculty;nitk_directory
+S0445,Pruthviraju,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Assistant Professor,True,True,,,,2016,2018,former,PRUTHVIRAJU .,nitk_directory
+S0446,Paresh Chandra Deka,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2021,former,PARESHCHANDRA DEKA;Paresh Chandra Deka,nitk_appmech;nitk_appmech_faculty;nitk_directory
+S0447,Amba Shetty,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2026,current,AMBASHETTY;Amba Shetty;Prof. Amba Shetty,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0448,Dodamani B M,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2026,current,B.M.DODDAMANI;Dodamani B M;Prof. Dodamani B M,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0449,Dwarakish G S,NIT Surathkal,Water Resources & Ocean,appmech,Professor (HAG),True,True,,,,2016,2026,current,Dwarakish G S;Prof. Dwarakish G S,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0450,Kiran G Shirlal,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2026,current,KIRAN.G.SHIRLAL;Kiran G Shirlal;Prof. Kiran G Shirlal,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0451,Lakshman Nandagiri,NIT Surathkal,Water Resources & Ocean,appmech,Professor (HAG),True,True,,,,2016,2026,current,Lakshman Nandagiri;N.LAKSHMAN;Prof. Lakshman Nandagiri,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0452,Mahesha A,NIT Surathkal,Water Resources & Ocean,appmech,Professor (HAG),True,True,,,,2016,2026,current,Mahesha A.;Prof. Mahesha A.,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0453,Manu,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,0000-0002-9993-190X,,2016,2026,current,MANU;Manu;Prof. Manu,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0454,Nasar T,NIT Surathkal,Water Resources & Ocean,Dept. of Water Resources & Ocean Engg,Professor,True,True,,,,2017,2026,current,NASAR T;Prof. Nasar T,nitk_directory;nitk_telephone
+S0455,Ramesh H,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2026,current,Prof. Ramesh H;Ramesh H.,nitk_appmech;nitk_appmech_faculty;nitk_telephone
+S0456,Varija K,NIT Surathkal,Water Resources & Ocean,appmech,Professor,True,True,,,,2016,2026,current,Dr. K. Varija;K.VARIJA;Prof. Varija K.;Varija K.,nitk_appmech;nitk_appmech_faculty;nitk_directory;nitk_telephone
+S0457,Rameshh,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Assistant Professor,True,True,,,,2016,2018,former,RAMESHH .,nitk_directory
+S0458,S Ganapathi Mayya,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Professor,True,True,,,,2016,2016,former,S.GANAPATHI MAYYA,nitk_directory
+S0459,Subramanyak,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Assistant Professor,True,True,,,,2016,2018,former,SUBRAMANYAK .,nitk_directory
+S0460,Subba Rao,NIT Surathkal,Water Resources & Ocean,appmech,Professor (HAG),True,True,,,,2016,2023,former,SUBBARAO;Subba Rao,nitk_appmech;nitk_appmech_faculty;nitk_directory
+S0461,Vadivuchezhiank,NIT Surathkal,Water Resources & Ocean,APPLIED MECHANICS,Assistant Professor,True,True,,,,2016,2018,former,VADIVUCHEZHIANK .,nitk_directory
+T0462,Mini Shaji Thomas,NIT Trichy,,Director Office,Director,True,True,mini,,,2016,2021,former,Dr. (Mrs.) Mini Shaji Thomas;Dr.(Mrs.) MINI SHAJI THOMAS,nitt_table2
+T0463,A Meenatchi Sundaram,NIT Trichy,Architecture,ARCHITECTURE,Professor,True,True,meenatchi,,,2016,2026,current,Dr. A. Meenatchi Sundaram;Dr.A.MEENATCHI SUNDRAM;MEENATCHI SUNDARAM A,nitt_table;nitt_table2;nittdept_architecture
+T0464,Arvind Kumar,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,arvind,,,2025,2026,current,Dr. Arvind Kumar;Dr.ARVIND KUMAR,nitt_table;nitt_table2;nittdept_architecture
+T0465,D Kannamma,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,kanama,,,2016,2026,current,D.KANNAMMA;Dr. D. Kannamma;Dr.D.KANNAMMA;KANNAMMA D,nitt_table;nitt_table2;nittdept_architecture
+T0466,G Subbaiyan,NIT Trichy,Architecture,ARCHITECTURE,Professor (HAG),True,True,subbaiah,,,2016,2026,current,Dr. G. Subbaiyan;Dr.G.SUBBAIYAN;SUBBAIYAN G.,nitt_table;nitt_table2;nittdept_architecture
+T0467,K Premkumar,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,prem,,,2016,2026,current,Dr. K. Premkumar;K.PREMKUMAR;PREMKUMAR K.,nitt_table;nitt_table2;nittdept_architecture
+T0468,K Thirumaran,NIT Trichy,Architecture,ARCHITECTURE,Professor,True,True,ktm,,,2016,2026,current,Dr. K. Thirumaran;Dr.K.THIRUMARAN;THIRUMARAN K,nitt_table;nitt_table2;nittdept_architecture
+T0469,L Saikala,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,saikala,,,2016,2026,current,Dr. L. Saikala;Dr.L.SAIKALA;Dr.SAIKALA L.;L.SAIKALA;SAIKALA L,nitt_table;nitt_table2;nittdept_architecture
+T0470,P Gopalakrishnan,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,gopal,,,2016,2026,current,Dr. P. Gopalakrishnan;Dr.P.GOPALAKRISHNAN;GOPALAKRISHNAN P;P.GOPALAKRISHNAN,nitt_table;nitt_table2;nittdept_architecture
+T0471,S Monika,NIT Trichy,Architecture,architecture,Assistant Professor,True,True,,,,2026,2026,current,Dr. S. Monika,nittdept_architecture
+T0472,Tony Marcel Nisha,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,tmnisha,,,2023,2026,current,Dr. Tony Marcel Nisha;Dr.TONY MARCEL NISHA,nitt_table;nitt_table2;nittdept_architecture
+T0473,T Srinivas,NIT Trichy,Architecture,ARCHITECTURE,Professor,True,True,srivas,,,2016,2022,former,Dr.T.SRINIVAS;SRINIVAS T.,nitt_table;nitt_table2
+T0474,Manickavasagam P,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,mani,,,2016,2022,former,MANICKAVASAGAM P.,nitt_table
+T0475,Keerti Manisha,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,keerti,,,2025,2026,current,Dr. Keerti Manisha;Ms. KEERTI MANISHA,nitt_table;nitt_table2;nittdept_architecture
+T0476,Shiv Dayal Singh,NIT Trichy,Architecture,architecture,Assistant Professor,True,True,,,,2026,2026,current,Prof Shiv Dayal Singh,nittdept_architecture
+T0477,Amalan Sigmund Kaushik,NIT Trichy,Architecture,ARCHITECTURE,Assistant Professor,True,True,kaushik,,,2019,2026,current,Mr.AMALAN SIGMUND KAUSHIK S;Prof. Amalan Sigmund Kaushik,nitt_table;nitt_table2;nittdept_architecture
+T0478,Bellatrix Valdaris,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,bella,,,2016,2026,current,BELLATRIX VALDARIS;Dr .BELLATRIX VALDARIS;Prof. Bellatrix Valdaris,nitt_table;nitt_table2;nittdept_architecture
+T0479,G Sangeetha,NIT Trichy,Architecture,ARCHITECTURE,Assistant Professor,True,True,gsangs,,,2016,2026,current,G.SANGEETHA;Prof. G. Sangeetha;SANGEETHA G,nitt_table;nitt_table2;nittdept_architecture
+T0480,K Bhagyasri,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,bhagyasri;bhagyasri@nitt.edu,,,2021,2026,current,BHAGYASRI K;Dr.BHAGYASRIK;Prof. K. Bhagyasri,nitt_table;nitt_table2;nittdept_architecture
+T0481,Lakshya Satija,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,lakshyasatija,,,2023,2026,current,Dr.LAKSHYA SATIJA;Prof. Lakshya Satija,nitt_table;nitt_table2;nittdept_architecture
+T0482,Pudhuma Bharathi Karunakaran,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,pudhuma;pudhuma@nitt.edu,,,2021,2026,current,Dr.PUDHUMAK;PUDHUMA BHARATHI K;Prof. Pudhuma Bharathi Karunakaran,nitt_table;nitt_table2;nittdept_architecture
+T0483,S Rajendra Babu,NIT Trichy,Architecture,ARCHITECTURE,Professor,True,True,rajbabu,,,2016,2026,current,Prof. S. Rajendra Babu;RAJENDRA BABU S.;S.RAJENDRA BABU,nitt_table;nitt_table2;nittdept_architecture
+T0484,Saurabh Kumar,NIT Trichy,Architecture,Architecture,Assistant Professor,True,True,saurabhk,,,2021,2026,current,Dr.SaurabhKumar;Prof. Saurabh Kumar;SAURABH KUMAR;Saurabh Kumar,nitt_table;nitt_table2;nittdept_architecture
+T0485,Sobhagya Mittal,NIT Trichy,Architecture,architecture,Assistant Professor,True,True,,,,2026,2026,current,Prof. Sobhagya Mittal,nittdept_architecture
+T0486,T Sudharshini,NIT Trichy,Architecture,architecture,Assistant Professor,True,True,,,,2026,2026,current,Prof. T. Sudharshini,nittdept_architecture
+T0487,Wilson Frederick,NIT Trichy,Architecture,ARCHITECTURE,Associate Professor,True,True,wilson,,,2016,2026,current,Prof. Wilson Frederick;WILSON FREDERICK,nitt_table;nitt_table2;nittdept_architecture
+T0488,Ramprasad V,NIT Trichy,Architecture,ARCHITECTURE,Professor,True,True,rampra,,,2016,2022,former,RAMPRASAD V.;V.RAMPRASAD,nitt_table;nitt_table2
+T0489,,NIT Trichy,CSE,cse,Assistant Professor,True,True,,,,2019,2019,former,Dr,nittdept_cse
+T0490,,NIT Trichy,CSE,cse,Assistant Professor,True,True,,,,2021,2021,former,Dr,nittdept_cse
+T0491,,NIT Trichy,CSE,cse,Assistant Professor,True,True,,,,2022,2022,former,Dr,nittdept_cse
+T0492,,NIT Trichy,CSE,cse,Assistant Professor,True,True,,,,2023,2023,former,Dr,nittdept_cse
+T0493,,NIT Trichy,CSE,cse,Assistant Professor,True,True,,,,2024,2024,former,Dr,nittdept_cse
+T0494,,NIT Trichy,CSE,cse,Associate Professor,True,True,,,,2025,2025,former,Dr,nittdept_cse
+T0495,,NIT Trichy,CSE,cse,Associate Professor,True,True,,,,2026,2026,current,Dr,nittdept_cse
+T0496,,NIT Trichy,CSE,cse,Associate Professor,True,True,,,,2026,2026,current,Dr,nittdept_cse
+T0497,R Leela Velusamy,NIT Trichy,CSE,cse,Professor,True,True,leela,,,2016,2026,current,Dr. (Mrs.) R. Leela Velusamy;Dr.(Mrs.) R. Leela Velusamy;Dr.R.LEELA VELUSAMY;LEELA VELUSAMY R,nitt_table;nitt_table2;nittdept_cse
+T0498,A Santhanavijayan Me Phd,NIT Trichy,CSE,cse,Faculty,True,True,,,,2019,2019,former,"Dr. A. Santhanavijayan ME, PhD (NIT-T)",nittdept_cse
+T0499,Aghila G,NIT Trichy,CSE,Director office & CSE,Director,True,True,director,,,2023,2026,current,Dr. AGHILA G,nitt_table;nitt_table2
+T0500,B Shameedha Begum,NIT Trichy,CSE,cse,Assistant Professor,True,True,shameedha,,,2016,2026,current,B.SHAMEEDHA BEGUM;Dr. B. Shameedha Begum;Dr.B.SHAMEEDHA BEGUM;Ms B. Shameedha Begum;SHAMEEDHA BEGUM B,nitt_table;nitt_table2;nittdept_cse
+T0501,C Mala,NIT Trichy,CSE,cse,Professor (HAG),True,True,mala,,,2016,2026,current,"Dr. C. Mala;Dr. C. Mala, Professor;Dr.MALA.C;MALA C",nitt_table;nitt_table2;nittdept_cse
+T0502,C Oswald,NIT Trichy,CSE,cse,Assistant Professor,True,True,oswald,,,2023,2026,current,Dr. C. Oswald;Dr.OSWALD C;Dr.Oswald C,nitt_table;nitt_table2;nittdept_cse
+T0503,Chandra Priya J,NIT Trichy,CSE,cse,Assistant Professor,True,True,jchandrapriya,,,2026,2026,current,Dr. Chandra Priya J;Dr.Chandra Priya J,nitt_table;nittdept_cse
+T0504,Chandramani Chaudhary,NIT Trichy,CSE,cse,Faculty,True,True,chandramani,,,2021,2024,former,Dr. Chandramani Chaudhary;Dr.CHANDRAMANI CHAUDHARY,nitt_table2;nittdept_cse
+T0505,E Sivasankar,NIT Trichy,CSE,cse,Associate Professor,True,True,sivasankar,,,2016,2026,current,Dr. E. Sivasankar;Dr.E.SIVASANKAR;SIVASANKAR E,nitt_table;nitt_table2;nittdept_cse
+T0506,K Viswanathan Iyer,NIT Trichy,CSE,cse,Professor,True,True,kvi,,,2016,2022,former,Dr. K. Viswanathan Iyer;Dr.K.VISWANATHAN IYER;K. Viswanathan Iyer;VISWANATHAN IYER K,nitt_table;nitt_table2;nittdept_cse
+T0507,Kamalika Bhattacharjee,NIT Trichy,CSE,cse,Assistant Professor,True,True,kamalika,,,2021,2026,current,Dr. Kamalika Bhattacharjee;Dr.KAMALIKA BHATTACHARJEE,nitt_table2;nittdept_cse
+T0508,Karthick S,NIT Trichy,CSE,cse,Assistant Professor,True,True,skarthick,,,2026,2026,current,Dr. Karthick S;Dr.Karthick S,nitt_table;nittdept_cse
+T0509,Madhukrishna Priyadarsini,NIT Trichy,CSE,CSE,Assistant Professor,True,True,priyadarsini,,,2023,2025,former,Dr. Madhukrishna Priyadarsini;Dr.MADHUKRISHNA PRIYADARSINI,nitt_table2;nittdept_cse
+T0510,R Bala Krishnan,NIT Trichy,CSE,cse,Assistant Professor,True,True,balakrishnan;balakrishnan@nitt.edu,,,2021,2026,current,Dr. R. Bala Krishnan;Dr.BALA KRISHNAN R;Dr.BALAKRISHNAN R,nitt_table;nitt_table2;nittdept_cse
+T0511,R Mohan,NIT Trichy,CSE,cse,Associate Professor,True,True,rmohan,,,2016,2026,current,Dr. R. Mohan;Dr.R.MOHAN;MOHAN.R.,nitt_table;nitt_table2;nittdept_cse
+T0512,S Mary Saira Bhanu,NIT Trichy,CSE,cse,Professor,True,True,msb,,,2016,2026,current,Dr. S. Mary Saira Bhanu;Dr.MARY SAIRA BANU.S;MARY SAIRA BHANU S.,nitt_table;nitt_table2;nittdept_cse
+T0513,S Selvakumar,NIT Trichy,CSE,cse,Professor (HAG),True,True,ssk,,,2016,2026,current,Dr. S. Selvakumar;Dr.S.SELVAKUMAR;SELVAKUMAR S,nitt_table;nitt_table2;nittdept_cse
+T0514,Sai Krishna Mothku,NIT Trichy,CSE,cse,Assistant Professor,True,True,saikrishna;saikrishna@nitt.edu,,,2021,2026,current,Dr. Sai Krishna Mothku;Dr.SAI KRISHNA M;Dr.SAIM,nitt_table2;nittdept_cse
+T0515,Sathyanarayanan S,NIT Trichy,CSE,cse,Assistant Professor,True,True,sathyanarayanan,,,2026,2026,current,Dr. SathyaNarayanan;Dr. Sathyanarayanan S;Dr.Sathyanarayanan S,nitt_table;nittdept_cse
+T0516,Sitara K,NIT Trichy,CSE,cse,Assistant Professor,True,True,sitara,,,2021,2026,current,Dr. Sitara K;Dr.SITARA K;Dr.Sitara K;Dr.SitaraK,nitt_table;nitt_table2;nittdept_cse
+T0517,Usha Kiruthika S,NIT Trichy,CSE,cse,Assistant Professor,True,True,usha,,,2023,2026,current,Dr. Usha Kiruthika S;Dr.USHA KIRUTHIKA S,nitt_table;nitt_table2;nittdept_cse
+T0518,Rajeswari Sridhar,NIT Trichy,CSE,cse,Professor,True,True,srajeswari,,,2019,2026,current,Dr.(Ms.) Rajeswari Sridhar;Dr.RAJESWARI SRIDHAR;Dr.Rajeswari Sridhar,nitt_table;nitt_table2;nittdept_cse
+T0519,Jakkepalli Pavan Kumar,NIT Trichy,CSE,cse,Assistant Professor,True,True,pavan,,,2023,2026,current,Dr.JAKKEPALLI PAVAN KUMAR;Dr.Jakkepalli Pavan Kumar,nitt_table;nitt_table2;nittdept_cse
+T0520,Priyanka Panigrahi,NIT Trichy,CSE,CSE,Assistant Professor,True,True,ppriyanka,,,2026,2026,current,Dr.Priyanka Panigrahi,nitt_table
+T0521,A Santhana Vijayan,NIT Trichy,CSE,cse,Assistant Professor,True,True,vijayana,,,2016,2026,current,A.SANTHANA VIJAYAN;Dr. A. Santhana Vijayan;Dr. A. Santhanavijayan;Dr.A.SANTHANA VIJAYAN;Mr. A. Santhana Vijayan;Mr. Santhana Vijayan;SANTHANA VIJAYAN A,nitt_table;nitt_table2;nittdept_cse
+T0522,Kunwar Singh,NIT Trichy,CSE,cse,Professor,True,True,kunwar,,,2016,2026,current,Dr. Kunwar Singh;Dr.KUNWAR SINGH;KUNWAR SINGH;Mr. Kunwar Singh,nitt_table;nitt_table2;nittdept_cse
+T0523,B Nithya,NIT Trichy,CSE,cse,Associate Professor,True,True,nithya,,,2016,2026,current,Dr. B. Nithya;Dr.B.NITHYA;Ms. B. Nithya;NITHYA B,nitt_table;nitt_table2;nittdept_cse
+T0524,M Brindha,NIT Trichy,CSE,cse,Associate Professor,True,True,brindham,,,2016,2026,current,BRINDHA M.;Dr. M. Brindha;Dr.M.BRINDHA;M.BRINDHA;Ms. M. Brindha,nitt_table;nitt_table2;nittdept_cse
+T0525,M Sridevi,NIT Trichy,CSE,cse,Associate Professor,True,True,msridevi,,,2016,2026,current,Dr. M. Sridevi;Dr.M.SRIDEVI;M.SRIDEVI;Ms. M. Sridevi;SRIDEVI M,nitt_table;nitt_table2;nittdept_cse
+T0526,S Jaya Nirmala,NIT Trichy,CSE,cse,Associate Professor,True,True,sjaya,,,2016,2026,current,. S. Jaya Nirmala;Dr. S. Jaya Nirmala;Dr.S.JAYA NIRMALA;JAYA NIRMALA.S.;Ms. S. Jaya Nirmala;S.JAYA NIRMALA,nitt_table;nitt_table2;nittdept_cse
+T0527,Rama Subramanian N,NIT Trichy,CSE,cse,Professor (HAG),True,True,nrs,,,2016,2026,current,Dr. N Ramasubramanian;Dr. N. Ramasubramanian;Dr.N.RAMASUBRAMANIYAN;RAMA SUBRAMANIAN N.,nitt_table;nitt_table2;nittdept_cse
+T0528,S K Pandey,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,shashi,,,2016,2022,former,Dr. (Mrs.) S.K. Pandey (On lien);PANDEY S.K. (On Lien),nitt_table;nittdept_chem
+T0529,P Kalaichelvi,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,kalai,,,2016,2026,current,Dr. (Mrs.)P. Kalaichelvi;Dr. KALAICHELVI;Dr.(Mrs.) P. Kalaichelvi;Dr.KALAICHELVI;KALAICHELVI P,nitt_table;nitt_table2;nittdept_chem
+T0530,A Arunagiri,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,aagiri,,,2016,2026,current,ARUNAGIRI.A.;Dr. A. Arunagiri;Dr.A.ARUNAGIRI,nitt_table;nitt_table2;nittdept_chem
+T0531,A Seshagiri Rao,NIT Trichy,Chemical,chem,Assistant Professor,True,True,,,,2016,2017,former,Dr. A. Seshagiri Rao,nittdept_chem
+T0532,G Arthanareeswaran,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,arthanareeg,,,2016,2026,current,ARTHANAREESWARAN G;Dr. G. Arthanareeswaran;Dr.G.ARTHANAREESWARAN,nitt_table;nitt_table2;nittdept_chem
+T0533,J Sarat Chandra Babu,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,sarat,,,2016,2026,current,Dr. J. Sarat Chandra Babu;Dr.SARAT CHANDRA BABU;SARAT CHANDRA BABU J,nitt_table;nitt_table2;nittdept_chem
+T0534,Jyoti Sahu,NIT Trichy,Chemical,chem,Assistant Professor,True,True,jyoti,,,2021,2026,current,Dr. Jyoti Sahu;Dr.JYOTI SAHU;Dr.Jyoti Sahu;Dr.JyotiSahu,nitt_table;nitt_table2;nittdept_chem
+T0535,K Sankar,NIT Trichy,Chemical,chem,Assistant Professor,True,True,shankark;shankark@nitt.edu,,,2021,2026,current,Dr. K Sankar;Dr.SANKAR K;Dr.SANKARK,nitt_table;nitt_table2;nittdept_chem
+T0536,K M Meera Sheriffa Begum,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,meera,,,2016,2026,current,Dr. K. M. Meera Sheriffa Begum;Dr.(Mrs). K. M. Meera S. Begum;Dr.K.M.MEERA SHERIFFA BEGUM;MEERA SHERIFFA BEGUM K.M.,nitt_table;nitt_table2;nittdept_chem
+T0537,K N Sheeba,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,sheeba,,,2016,2026,current,Dr. K. N. Sheeba;Dr.K.N.SHEEBA;Dr. K. N. Sheeba;SHEEBA.K.N.,nitt_table;nitt_table2;nittdept_chem
+T0538,Kartikeya Shukla,NIT Trichy,Chemical,chem,Assistant Professor,True,True,shukla,,,2021,2026,current,Dr Kartikeya Shukla;Dr. Kartikeya Shukla;Dr.KARTIKEYA SHUKLA;Dr.Kartikeya Shukla,nitt_table;nitt_table2;nittdept_chem
+T0539,M Arivazhagan,NIT Trichy,Chemical,chem,Professor,True,True,ariva,,,2016,2026,current,ARIVAZHAGAN M;Dr. M. Arivazhagan;Dr.M.ARIVAZHAGAN,nitt_table;nitt_table2;nittdept_chem
+T0540,M Perumalsamy,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,mpsamy,,,2016,2026,current,Dr. M. Perumalsamy;Dr.M.PERUMALSAMY;PERUMALSAMY.M.,nitt_table;nitt_table2;nittdept_chem
+T0541,Muthukumar K,NIT Trichy,Chemical,chem,Professor,True,True,kmkumar,,,2019,2026,current,Dr. Muthukumar K;Dr.MUTHUKUMAR K,nitt_table;nitt_table2;nittdept_chem
+T0542,N Anantharaman,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,naraman,,,2016,2022,former,ANANTHARAMAN N.;Dr. N. Anantharaman;Dr.N.ANANTHARAMAN,nitt_table;nitt_table2;nittdept_chem
+T0543,N Samsudeen,NIT Trichy,Chemical,CHEMICAL,Associate Professor,True,True,samsudeen,,,2016,2026,current,Dr. N. Samsudeen;Dr.N.SAMSUDEEN;SAMSUDEEN N,nitt_table;nitt_table2;nittdept_chem
+T0544,Nandlal Pingua,NIT Trichy,Chemical,chem,Assistant Professor,True,True,nandlal,,,2025,2026,current,Dr. Nandlal Pingua;Dr.NANDLAL PINGUA,nitt_table;nitt_table2;nittdept_chem
+T0545,P Sivashanmugam,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,psiva,,,2016,2026,current,Dr. P. Sivashanmugam;Dr.P.SIVASHANMUGAM;SIVASHANMUGAM P,nitt_table;nitt_table2;nittdept_chem
+T0546,Rupam Sinha,NIT Trichy,Chemical,chem,Assistant Professor,True,True,rupam,,,2025,2026,current,Dr. Rupam Sinha;Dr.RUPAM SINHA,nitt_table;nitt_table2;nittdept_chem
+T0547,S Saravanan,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,saravanans,,,2016,2026,current,Dr. S. Saravanan;Dr.S.SARAVANAN;SARAVANAN S,nitt_table;nitt_table2;nittdept_chem
+T0548,T K Radhakrishnan,NIT Trichy,Chemical,CHEMICAL,Professor (HAG),True,True,radha,,,2016,2026,current,Dr. T. K. Radhakrishnan;Dr.T.K.RADHAKRISHNAN;RADHAKRISHNAN T.K,nitt_table;nitt_table2;nittdept_chem
+T0549,T Sivasankar,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,ssankar,,,2016,2026,current,Dr. T. Sivasankar;Dr.T.SIVASANKAR;SIVASANKAR T.,nitt_table;nitt_table2;nittdept_chem
+T0550,Virivinti Nagajyothi,NIT Trichy,Chemical,chem,Assistant Professor,True,True,jyothi,,,2019,2026,current,Dr.(Mrs.) VIRIVINTI Nagajyothi;Dr.NAGAJYOTHI VIRIVINTI,nitt_table;nitt_table2;nittdept_chem
+T0551,M Matheswaran,NIT Trichy,Chemical,CHEMICAL,Professor,True,True,matheswaran,,,2016,2026,current,Dr.M. Matheswaran;Dr.M.MATHESWARAN;MATHESWARAN M.,nitt_table;nitt_table2;nittdept_chem
+T0552,S Velmathi,NIT Trichy,Chemistry,chemistry,Professor (HAG),True,True,velmathis,,,2016,2026,current,Dr. (Mrs).S. Velmathi;Dr.(Mrs).S. Velmathi;Dr.S.VELMATHI;VELMATHI S,nitt_table;nitt_table2;nittdept_chemistry
+T0553,L Cindrella,NIT Trichy,Chemistry,CHEMISTRY,Professor (HAG),True,True,cind,,,2016,2026,current,CINDRELLA L;Dr. (Mrs).L. Cindrella;Dr. (Mrs.) L.Cindrella;Dr.L.CINDRELLA,nitt_table;nitt_table2;nittdept_chemistry
+T0554,A Sreekanth,NIT Trichy,Chemistry,CHEMISTRY,Professor,True,True,sreekanth,,,2016,2026,current,Dr. A. Sreekanth;Dr.A.SREEKANTH;SREEKANTH A,nitt_table;nitt_table2;nittdept_chemistry
+T0555,Arivazhagan C,NIT Trichy,Chemistry,Chemistry,Assistant Professor,True,True,arivazhagan,,,2023,2026,current,Dr. Arivazhagan C;Dr.ARIVAZHAGAN C,nitt_table;nitt_table2;nittdept_chemistry
+T0556,Baby Viswambharan,NIT Trichy,Chemistry,Chemistry,Assistant Professor,True,True,babyv;babyv@nitt.edu,,,2021,2026,current,Dr. Baby Viswambharan;Dr.BABY VISWAMBHARAN;Dr.BABYVISWAMBHARAN,nitt_table;nitt_table2;nittdept_chemistry
+T0557,G Venkatesa Prabhu,NIT Trichy,Chemistry,CHEMISTRY,Professor,True,True,venkates,,,2016,2022,former,Dr. G. Venkatesa Prabhu;Dr.G.VENKATESAPRABHU;VENKATESAPRABHU G.,nitt_table;nitt_table2;nittdept_chemistry
+T0558,Ganesh Chandra Nandi,NIT Trichy,Chemistry,CHEMISTRY,Assistant Professor,True,True,nandi,,,2019,2026,current,Dr. Ganesh Chandra Nandi;Dr.GANESH CHANDRA NANDI,nitt_table;nitt_table2;nittdept_chemistry
+T0559,Jothi Lakshmi Nallasivam,NIT Trichy,Chemistry,Chemistry,Assistant Professor,True,True,jothi;jothi@nitt.edu,,,2021,2026,current,Dr. Jothi Lakshmi Nallasivam;Dr.JOTHI LAKSHMI N;Dr.JothiN,nitt_table;nitt_table2;nittdept_chemistry
+T0560,Projesh Kumar Roy,NIT Trichy,Chemistry,Chemistry,Assistant Professor,True,True,projesh,,,2025,2026,current,Dr. Projesh Kumar Roy;Dr.PROJESH KUMAR ROY,nitt_table;nitt_table2;nittdept_chemistry
+T0561,R Karvembu,NIT Trichy,Chemistry,CHEMISTRY,Professor (HAG),True,True,kar,,,2016,2026,current,Dr. R. Karvembu;Dr.R.KARVEMBU;KARVEMBU.R.,nitt_table;nitt_table2;nittdept_chemistry
+T0562,S Anandan,NIT Trichy,Chemistry,CHEMISTRY,Professor,True,True,sanand,,,2016,2026,current,ANANDAN.S.;Dr. S. Anandan;Dr.S.ANANDAN,nitt_table;nitt_table2;nittdept_chemistry
+T0563,Sarthak Mandal,NIT Trichy,Chemistry,Chemistry,Assistant Professor,True,True,smandal,,,2019,2026,current,Dr. Sarthak Mandal;Dr.SARTHAK MANDAL,nitt_table;nitt_table2;nittdept_chemistry
+T0564,Somenath Garai,NIT Trichy,Chemistry,CHEMISTRY,Assistant Professor,True,True,sgarai,,,2019,2022,former,Dr. Somenath Garai;Dr.SOMENATH GARAI,nitt_table2;nittdept_chemistry
+T0565,Sunandan Sarkar,NIT Trichy,Chemistry,CHEMISTRY,Assistant Professor,True,True,ssarkar,,,2019,2026,current,Dr. Sunandan Sarkar;Dr.SUNANDAN SARKAR,nitt_table;nitt_table2;nittdept_chemistry
+T0566,V M Biju,NIT Trichy,Chemistry,CHEMISTRY,Professor,True,True,vmbiju,,,2016,2026,current,BIJU.V.M.;Dr. V. M. Biju;Dr.V.M.BIJU,nitt_table;nitt_table2;nittdept_chemistry
+T0567,Velmurugan Gunasekaran,NIT Trichy,Chemistry,chemistry,Assistant Professor,True,True,velmurugan,,,2026,2026,current,Dr. Velmurugan Gunasekaran;Dr.Velmurugan G,nitt_table;nittdept_chemistry
+T0568,Vijayakanth T,NIT Trichy,Chemistry,CHEMISTRY,Assistant Professor,True,True,vijayakanth,,,2026,2026,current,Dr. Vijayakanth T;Dr.Vijayakanth T,nitt_table;nittdept_chemistry
+T0569,Aneesh Mathew,NIT Trichy,Civil,civil,Assistant Professor,True,True,aneesh;aneesh@nitt.edu,,,2021,2026,current,Dr. Aneesh Mathew;Dr.ANEES MATHEW;Dr.ANEESH MATHEW;Dr.ANEESMATHEW;Dr.Aneesh Mathew,nitt_table;nitt_table2;nittdept_civil
+T0570,C Natarajan,NIT Trichy,Civil,CIVIL,Professor,True,True,nataraj,,,2016,2022,former,Dr. C. Natarajan;Dr.NATARAJAN .C;NATARAJAN C.,nitt_table;nitt_table2;nittdept_civil
+T0571,Chandaluri Vinaykumar,NIT Trichy,Civil,civil,Assistant Professor,True,True,chandaluri,,,2023,2026,current,Dr. Chandaluri Vinaykumar;Dr.CHANDALURI VINAYKUMAR;Dr.Chandaluri Vinaykumar,nitt_table;nitt_table2;nittdept_civil
+T0572,Chauhan Ritvik Dhanraj,NIT Trichy,Civil,civil,Assistant Professor,True,True,chauhan,,,2025,2026,current,Dr. Chauhan Ritvik Dhanraj;Dr.CHAUHAN RITVIK DHANRAJ,nitt_table;nitt_table2;nittdept_civil
+T0573,Darshana O,NIT Trichy,Civil,civil,Assistant Professor,True,True,darshana;darshana@nitt.edu,,,2021,2026,current,Dr. Darshana O;Dr.DARSHANA O;Dr.Darshana O;Dr.DarshanaO,nitt_table;nitt_table2;nittdept_civil
+T0574,Deendayal Rathod,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,deendayal,,,2016,2026,current,DEENDAYAL;Dr. Deendayal;Dr. Deendayal Rathod;Dr.DEENDAYAL,nitt_table;nitt_table2;nittdept_civil
+T0575,G Swaminathan,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,gs,,,2016,2026,current,Dr. G. Swaminathan;Dr. Swaminathan;Dr.G.SWAMINATHAN;SWAMINATHAN G.,nitt_table;nitt_table2;nittdept_civil
+T0576,Greegar George,NIT Trichy,Civil,civil,Assistant Professor,True,True,greegar;greegar@nitt.edu,,,2021,2026,current,Dr. Greegar George;Dr.GREEGAR GEORGE;Dr.Greegar George;Dr.GreegarGeorge,nitt_table;nitt_table2;nittdept_civil
+T0577,J Karthikeyan,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,jk,,,2016,2023,former,Dr. J. Karthikeyan;Dr. Karthikeyan;Dr.J.KARTHIKEYAN;KARTHIKEYAN J,nitt_table;nitt_table2;nittdept_civil
+T0578,Jeevan Joseph,NIT Trichy,Civil,civil,Assistant Professor,True,True,jeevan,,,2019,2026,current,Dr. Jeevan Joseph;Dr.JEEVAN JOSEPH,nitt_table;nitt_table2;nittdept_civil
+T0579,K Baskar,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,kbaskar,,,2016,2026,current,BASKAR K;Dr K. Baskar;Dr. Baskar;Dr. K. Baskar;Dr.BASKAR K,nitt_table;nitt_table2;nittdept_civil
+T0580,K Muthukkumaran,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,kmk,,,2016,2026,current,Dr. K. Muthukkumaran;Dr. Muthukkumaran;Dr.K.MUTHUKKUMARAN;MUTHUKKUMARAN.K.,nitt_table;nitt_table2;nittdept_civil
+T0581,Kamal Krishna Bera,NIT Trichy,Civil,civil,Assistant Professor,True,True,kamal,,,2021,2026,current,Dr. Kamal Krishna Bera;Dr.KAMAL KRISHNA BERA;Dr.Kamal Krishna Bera;Dr.KamalBera,nitt_table;nitt_table2;nittdept_civil
+T0582,Krishnan,NIT Trichy,Civil,civil,Professor,True,True,,,,2019,2019,former,Dr. Krishnan,nittdept_civil
+T0583,Laiju A R,NIT Trichy,Civil,civil,Assistant Professor,True,True,laiju,,,2023,2026,current,Dr. Laiju A.R.;Dr.LAIJU A.R.,nitt_table;nitt_table2;nittdept_civil
+T0584,Laveti N V Satish,NIT Trichy,Civil,civil,Assistant Professor,True,True,laveti,,,2025,2026,current,Dr. Laveti N V Satish;Dr.LAVETI N V SATISH,nitt_table;nitt_table2;nittdept_civil
+T0585,Lekshmi Mohan V,NIT Trichy,Civil,civil,Assistant Professor,True,True,lekshmi,,,2025,2026,current,Dr. Lekshmi Mohan V;Dr.LEKSHMI MOHAN V,nitt_table;nitt_table2;nittdept_civil
+T0586,Moses Santhakumar,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,moses,,,2016,2023,former,Dr. MOSES SANTHAKUMAR;Dr. Moses Santhakumar;Dr.MOSES SANTHAKUMAR;MOSES SANTHAKUMAR S.,nitt_table;nitt_table2;nittdept_civil
+T0587,Makendran C,NIT Trichy,Civil,civil,Assistant Professor,True,True,makendran,,,2023,2026,current,Dr. Makendran C;Dr.MAKENDRAN C,nitt_table;nitt_table2;nittdept_civil
+T0588,Manthiram Karthik R,NIT Trichy,Civil,civil,Assistant Professor,True,True,rmkarthik,,,2026,2026,current,Dr. Manthiram Karthik R;Dr.Manthiram Karthik,nitt_table;nittdept_civil
+T0589,Mashudha Sulthana U,NIT Trichy,Civil,civil,Assistant Professor,True,True,smash;smash@nitt.edu,,,2021,2026,current,Dr Mashudha Sulthana U;Dr. Mashudha Sulthana U;Dr.MASHUDHA SULTHANA U;Dr.MashudhaU,nitt_table;nitt_table2;nittdept_civil
+T0590,Nisha Radhakrishnan,NIT Trichy,Civil,CIVIL,Professor,True,True,nisha,,,2016,2026,current,Dr. Nisha Radhakrishnan;Dr.NISHA RADHAKRISHNAN;NISHA RADHAKRISHNAN,nitt_table;nitt_table2;nittdept_civil
+T0591,Prabha Mohandoss,NIT Trichy,Civil,civil,Assistant Professor,True,True,prabham;prabham@nitt.edu,,,2021,2026,current,Dr. Prabha M;Dr. Prabha Mohandoss;Dr.PRABHA M;Dr.Prabha M;Dr.PrabhaM,nitt_table;nitt_table2;nittdept_civil
+T0592,Prabhakar,NIT Trichy,Civil,civil,Assistant Professor,True,True,prabhakar,,,2026,2026,current,Dr. Prabhakar;Dr.Prabhakar,nitt_table;nittdept_civil
+T0593,Prabu P,NIT Trichy,Civil,civil,Assistant Professor,True,True,prabu,,,2025,2026,current,Dr. Prabu P;Dr.PRABU P,nitt_table;nitt_table2;nittdept_civil
+T0594,R Gandhimathi,NIT Trichy,Civil,CIVIL,Professor,True,True,rgmathii,,,2016,2026,current,Dr. Gandhimathi;Dr. R. Gandhimathi;Dr.GANDHIMATHI R.;GANDHIMATHI R.,nitt_table;nitt_table2;nittdept_civil
+T0595,R Manjula,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,manju,,,2016,2026,current,Dr. Manjula;Dr. R. Manjula;Dr.R.MANJULA;MANJULA.R.,nitt_table;nitt_table2;nittdept_civil
+T0596,R Senthil Kumar,NIT Trichy,Civil,civil,Assistant Professor,True,True,senthilr,,,2019,2026,current,Dr. R. Senthil Kumar;Dr. Senthil Kumar R;Dr. Senthilkumar;Dr.SENTHIL KUMAR R,nitt_table;nitt_table2;nittdept_civil
+T0597,Raghavan Ramalingam,NIT Trichy,Civil,civil,Assistant Professor,True,True,raghavanr,,,2019,2026,current,Dr. Raghavan;Dr. Raghavan Ramalingam;Dr.RAGHAVAN R,nitt_table;nitt_table2;nittdept_civil
+T0598,S Jayalekshmi,NIT Trichy,Civil,CIVIL,Professor,True,True,jaya,,,2016,2026,current,Dr. Jayalekshmi;Dr. S. Jayalekshmi;Dr.JAYALEKSHMI .S;JAYALEKSHMI S,nitt_table;nitt_table2;nittdept_civil
+T0599,S Marisamynathan,NIT Trichy,Civil,civil,Assistant Professor,True,True,marisamy,,,2019,2026,current,Dr. Marisamynathan;Dr. Marisamynathan S;Dr. S. Marisamynathan;Dr.MARISAMYNATHAN S,nitt_table;nitt_table2;nittdept_civil
+T0600,S Saravanan,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,ssaravanan,,,2016,2026,current,Dr. S. Saravanan;Dr. Saravanan;Dr.S.SARAVANAN;SARAVANAN S,nitt_table;nitt_table2;nittdept_civil
+T0601,S T Ramesh,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,stramesh,,,2016,2026,current,Dr. S. T. Ramesh;Dr. S.T. Ramesh;Dr. S.T.Ramesh;Dr.RAMESH .S.T;RAMESH.S.T.,nitt_table;nitt_table2;nittdept_civil
+T0602,Santhosh L,NIT Trichy,Civil,civil,Assistant Professor,True,True,lsanthosh,,,2025,2026,current,Dr. Santhosh L;Dr.SANTHOSH L,nitt_table;nitt_table2;nittdept_civil
+T0603,Sevugan Rajkannu J,NIT Trichy,Civil,civil,Assistant Professor,True,True,sevugan,,,2023,2026,current,Dr. Sevugan Rajkannu J;Dr.SEVUGAN RAJKANNU J;Dr.Sevugan Rajkannu J,nitt_table;nitt_table2;nittdept_civil
+T0604,V Sunitha,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,sunitha,,,2016,2026,current,Dr. Sunitha;Dr. V. Sunitha;Dr.V.SUNITHA;SUNITHA.V.,nitt_table;nitt_table2;nittdept_civil
+T0605,Vanama Raghava Kumar,NIT Trichy,Civil,civil,Assistant Professor,True,True,vanama,,,2023,2026,current,Dr. Vanama Raghava Kumar;Dr.VANAMA RAGHAVA KUMAR;Dr.Vanama Raghavakumar,nitt_table;nitt_table2;nittdept_civil
+T0606,Jayabalan P,NIT Trichy,Civil,CIVIL,Professor,True,True,pjeya,,,2016,2022,former,Dr. Jayabalan;Dr.JAYABALAN P;JAYABALAN P,nitt_table;nitt_table2;nittdept_civil
+T0607,Krishnan P A,NIT Trichy,Civil,CIVIL,Professor,True,True,pak,,,2016,2022,former,Dr.KRISHNAN P.A;KRISHNAN P.A,nitt_table;nitt_table2
+T0608,Samson Mathew M,NIT Trichy,Civil,CIVIL,Professor (HAG),True,True,sams,,,2016,2026,current,Dr. Samson Mathew;Dr.SAMSON MATHEW.M;SAMSON MATHEW,nitt_table;nitt_table2;nittdept_civil
+T0609,Samjebadurai,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2019,former,Mr. Samjebadurai,nittdept_civil
+T0610,Selvam,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2019,former,Mr. Selvam,nittdept_civil
+T0611,Thattai Sai Vijay Krishna,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2019,former,Mr. Thattai Sai Vijay Krishna,nittdept_civil
+T0612,R Arachelvi,NIT Trichy,Civil,CIVIL,Assistant Professor,True,True,chelvi,,,2016,2026,current,ARACHELVI R;Mrs. R. Arachelvi;Prof. Arachelvi;R.ARACHELVI,nitt_table;nitt_table2;nittdept_civil
+T0613,Anjuna,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2019,former,Ms. Anjuna,nittdept_civil
+T0614,Gayathri,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2022,former,Ms. Gayathri,nittdept_civil
+T0615,Gouri,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2019,former,Ms. Gouri,nittdept_civil
+T0616,Shenbagavalli,NIT Trichy,Civil,civil,Assistant Professor,True,True,,,,2019,2022,former,Ms. Shenbagavalli,nittdept_civil
+T0617,R Jayasankar,NIT Trichy,Civil,CIVIL,Associate Professor,True,True,rj,,,2016,2022,former,JAYASHANKAR R.;JAYASHANKAR.R;Prof. R. Jayasankar;R. Jayasankar,nitt_table;nitt_table2;nittdept_civil
+T0618,B Janet,NIT Trichy,Computer Applications,C.A.,Associate Professor,True,True,janet,,,2016,2026,current,Dr. (Mrs.) B. Janet;Dr.B.JANET;JANET.B.,nitt_table;nitt_table2;nittdept_ca
+T0619,Ashwinth Janarthanan,NIT Trichy,Computer Applications,Computer Applications,Assistant Professor,True,True,ashwinth,,,2025,2026,current,Dr. Ashwinth J;Dr. Ashwinth Janarthanan;Dr.ASHWINTH J,nitt_table;nitt_table2;nittdept_ca
+T0620,Aswani Devi Aguru,NIT Trichy,Computer Applications,ca,Assistant Professor,True,True,aswani,,,2026,2026,current,Dr. Aswani Devi Aguru;Dr.Aguru Aswani Devi,nitt_table;nittdept_ca
+T0621,G R Gangadharan,NIT Trichy,Computer Applications,CA,Professor,True,True,ganga,,,2019,2026,current,Dr. G. R. Gangadharan;Dr. Gangadharan G.R;Dr.GANGADHARAN G.R,nitt_table;nitt_table2;nittdept_ca
+T0622,Michael Arock,NIT Trichy,Computer Applications,C.A.,Professor,True,True,michael,,,2016,2026,current,Dr. Michael Arock;Dr.MICHAEL AROCK;MICHAEL AROCK,nitt_table;nitt_table2;nittdept_ca
+T0623,P J A Alphonse,NIT Trichy,Computer Applications,C.A.,Professor,True,True,alphonse,,,2016,2026,current,ALPHONSE P J A;Dr. P.J.A Alphonse;Dr. P.J.A. Alphonse;Dr.P.J.A.ALPHONSE,nitt_table;nitt_table2;nittdept_ca
+T0624,R Eswari,NIT Trichy,Computer Applications,C.A.,Associate Professor,True,True,eswari,,,2016,2026,current,Dr. R. Eswari;Dr.R.ESWARI;ESWARI R,nitt_table;nitt_table2;nittdept_ca
+T0625,S Domnic,NIT Trichy,Computer Applications,C.A.,Professor,True,True,domnic,,,2016,2026,current,DOMNIC S;Dr S Domnic;Dr. S. Domnic;Dr.S.DOMNIC,nitt_table;nitt_table2;nittdept_ca
+T0626,S Nickolas,NIT Trichy,Computer Applications,C.A.,Professor,True,True,nickolas,,,2016,2026,current,Dr. S. Nickolas;Dr.S.NICKOLAS;NICKOLAS S.,nitt_table;nitt_table2;nittdept_ca
+T0627,S R Balasundaram,NIT Trichy,Computer Applications,C.A.,Professor (HAG),True,True,blsundar,,,2016,2026,current,BALASUNDARAM S.R.;Dr. S. R. Balasundaram;Dr. S.R. Balasundaram;Dr.S.R.BALASUNDARAM,nitt_table;nitt_table2;nittdept_ca
+T0628,Selvakumar K,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,kselvakumar;kselvakumar@nitt.edu,,,2021,2026,current,Dr. Selvakumar K;Dr.SELVAKUMAR K;Dr.SELVAKUMARK,nitt_table;nitt_table2;nittdept_ca
+T0629,U Srinivasulu Reddy,NIT Trichy,Computer Applications,C.A.,Associate Professor,True,True,usreddy,,,2016,2026,current,Dr U Srinivasulu Reddy;Dr. U. Srinivasulu Reddy;Dr.U.SRINIVASULU REDDY;SRINIVASULU REDDY U.,nitt_table;nitt_table2;nittdept_ca
+T0630,Vishnu Priya R,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,vishnupriya,,,2023,2026,current,Dr. Vishnu Priya R;Dr.VISHNU PRIYA R,nitt_table;nitt_table2;nittdept_ca
+T0631,S Sangeetha,NIT Trichy,Computer Applications,C.A.,Associate Professor,True,True,sangeetha,,,2016,2026,current,Dr.(Mrs.) S. Sangeetha;Dr.S.SANGEETHA;SANGEETHA S,nitt_table;nitt_table2;nittdept_ca
+T0632,B Ramadoss,NIT Trichy,Computer Applications,C.A.,Professor,True,True,brama,,,2016,2022,former,Dr.B.RAMADOSS;RAMADOSS B.,nitt_table;nitt_table2
+T0633,Balaji Banothu,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,balaji;balaji@nitt.edu,,,2021,2026,current,Dr. B. Balaji;Dr.B.Balaji;Dr.BALAJI BANOTHU;Dr.BALAJIBANOTHU,nitt_table;nitt_table2;nittdept_ca
+T0634,Bopche Ghanshyam Sitkura,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,bopche,,,2021,2026,current,Dr. Ghanshyam S. Bopche;Dr.BOPCHE GHANSHYAM SITKURA;Dr.BopcheSitkura,nitt_table;nitt_table2;nittdept_ca
+T0635,Gopalan N P,NIT Trichy,Computer Applications,C.A.,Professor,True,True,gopalan;npgopalan,,,2016,2022,former,Dr.GOPALAN N.P;GOPALAN N.P.,nitt_table;nitt_table2
+T0636,Jitendra Kumar,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,jitendra;jitendra@nitt.edu,,,2021,2025,former,Dr.JITENDRA KUMAR;Dr.Jitendra Kumar;Dr.JitendraKumar,nitt_table2
+T0637,Saroja S,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,saroja,,,2023,2026,current,Dr.SAROJA S;Dr.Saroja S,nitt_table;nitt_table2;nittdept_ca
+T0638,Sindhia Lingaswamy,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,sindhia,,,2023,2026,current,Dr.SINDHIA LINGASWAMY;Dr.Sindhia Lingaswamy,nitt_table;nitt_table2;nittdept_ca
+T0639,Vadivel A,NIT Trichy,Computer Applications,C.A.,Associate Professor,True,True,vadi,,,2016,2022,former,Dr.VADIVEL A;VADIVEL A,nitt_table;nitt_table2
+T0640,Venkataswamy Reddy,NIT Trichy,Computer Applications,C.A.,Professor,True,True,reddy,,,2016,2022,former,Dr.VENKATASWAMY REDDY;VENKATASAMY REDDY A.,nitt_table;nitt_table2
+T0641,Vinay Raj,NIT Trichy,Computer Applications,CA,Assistant Professor,True,True,vinayraj,,,2023,2026,current,Dr.VINAY RAJ,nitt_table;nitt_table2
+T0642,,NIT Trichy,ECE,ece,Assistant Professor,True,True,,,,2016,2016,former,Dr,nittdept_ece
+T0643,,NIT Trichy,ECE,ece,Assistant Professor,True,True,,,,2017,2017,former,Dr,nittdept_ece
+T0644,B Naresh Kumar Reddy,NIT Trichy,ECE,ECE,Assistant Professor,True,True,bnkreddy,,,2023,2026,current,Dr. B. Naresh Kumar Reddy;Dr.NARESH KUMAR REDDY B,nitt_table;nitt_table2;nittdept_ece
+T0645,B Venkataramani,NIT Trichy,ECE,E.C.E,Professor (HAG),True,True,bvenki,,,2016,2022,former,Dr. B. Venkataramani;Dr.B.VENKATARAMANI;VENKATARAMANI B.,nitt_table;nitt_table2;nittdept_ece
+T0646,B Malarkodi,NIT Trichy,ECE,E.C.E,Professor,True,True,malark,,,2016,2026,current,Dr. B.Malarkodi;Dr.B.MALARKODI;MALARKODI B,nitt_table;nitt_table2;nittdept_ece
+T0647,D Sriram Kumar,NIT Trichy,ECE,E.C.E,Professor,True,True,srk,,,2016,2026,current,Dr. D. Sriram Kumar;Dr.D.SRIRAM KUMAR;SRIRAM KUMAR D.,nitt_table;nitt_table2;nittdept_ece
+T0648,E S Gopi,NIT Trichy,ECE,E.C.E,Professor,True,True,esgopi,,,2016,2026,current,Dr. E.S. Gopi;Dr.E.S.GOPI;GOPI.E.S.,nitt_table;nitt_table2;nittdept_ece
+T0649,G Thavasi Raja,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,thavasi,,,2016,2026,current,Dr. G. Thavasi Raja;Dr.G.THAVASI RAJA;G.THAVASI RAJA;THAVASI RAJA.G.,nitt_table;nitt_table2;nittdept_ece
+T0650,Hemant Kumar,NIT Trichy,ECE,ece,Assistant Professor,True,True,hemant,,,2020,2026,current,Dr. Hemant Kumar;Dr.HEMANT KUMAR;Dr.Hemant Kumar;Dr.HemantKumar,nitt_table2;nittdept_ece
+T0651,Karthikeyan S S,NIT Trichy,ECE,ECE,Associate Professor,True,True,sskarthikeyan,,,2019,2026,current,Dr. Karthikeyan S.S;Dr.KARTHIKEYAN S.S,nitt_table;nitt_table2;nittdept_ece
+T0652,M Bhaskar,NIT Trichy,ECE,E.C.E,Professor,True,True,bhaskar,,,2016,2026,current,BHASKAR M;Dr. M.Bhaskar;Dr.M.BHASKAR,nitt_table;nitt_table2;nittdept_ece
+T0653,Maheswaran P,NIT Trichy,ECE,ece,Assistant Professor,True,True,mahes;mahes@nitt.edu,,,2020,2026,current,Dr. Maheswaran P;Dr.MAHESWARAN P;Dr.Maheswaran P;Dr.MaheswaranP,nitt_table;nitt_table2;nittdept_ece
+T0654,P Palanisamy,NIT Trichy,ECE,E.C.E,Professor (HAG),True,True,palan,,,2016,2026,current,Dr. P.Palanisamy;Dr.P.PALANISAMY;PALANISAMY.P.,nitt_table;nitt_table2;nittdept_ece
+T0655,Parthasarathy R,NIT Trichy,ECE,ECE,Assistant Professor,True,True,parthasarathy,,,2023,2026,current,Dr. Parthasarathy R;Dr.PARTHASARATHY R,nitt_table;nitt_table2;nittdept_ece
+T0656,R K Jeyachitra,NIT Trichy,ECE,E.C.E,Professor,True,True,jeyachitra,,,2016,2026,current,. R. K. Jeyachitra;Dr. R. K. Jeyachitra;Dr.R.K.JEYACHITRA;JEYACHITRA R K;R.K.JEYACHITRA,nitt_table;nitt_table2;nittdept_ece
+T0657,R Malmathanraj,NIT Trichy,ECE,E.C.E,Assistant Professor,True,True,rmathan,,,2016,2026,current,Dr. R. Malmathanraj;Dr.R.MALMATHANRAJ;MALMATHANRAJ R,nitt_table;nitt_table2;nittdept_ece
+T0658,R Pandeeswari,NIT Trichy,ECE,E.C.E,Professor,True,True,rpands,,,2016,2026,current,Dr. R. Pandeeswari;Dr.R.PANDEESWARI;PANDEESWARI R,nitt_table;nitt_table2;nittdept_ece
+T0659,S Raghavan,NIT Trichy,ECE,E.C.E,Professor,True,True,raghavan,,,2016,2022,former,Dr. S. Raghavan;Dr.S.RAGHAVAN;RAGHAVAN S.,nitt_table;nitt_table2;nittdept_ece
+T0660,Sovanjyoti Giri,NIT Trichy,ECE,ECE,Assistant Professor,True,True,sovanjyoti,,,2025,2026,current,Dr. Sovanjyoti Giri;Dr.SOVANJYOTI GIRI,nitt_table;nitt_table2;nittdept_ece
+T0661,Srinivasulu Jogi,NIT Trichy,ECE,ECE,Assistant Professor,True,True,srinivasulu,,,2023,2026,current,Dr. Srinivasulu Jogi;Dr.SRINIVASULU JOGI,nitt_table;nitt_table2;nittdept_ece
+T0662,Sudharsan P,NIT Trichy,ECE,ece,Assistant Professor,True,True,sudharsan,,,2020,2026,current,Dr. Sudharsan P;Dr.SUDHARSAN P;Dr.Sudharsan P;Dr.SudharsanP,nitt_table;nitt_table2;nittdept_ece
+T0663,Varun P Gopi,NIT Trichy,ECE,ECE,Associate Professor,True,True,varun,,,2019,2026,current,Dr. Varun P. Gopi;Dr.VARUN P. GOPI,nitt_table;nitt_table2;nittdept_ece
+T0664,Avik Hati,NIT Trichy,ECE,ECE,Assistant Professor,True,True,avikhati,,,2023,2026,current,Dr.AVIK HATI,nitt_table;nitt_table2;nittdept_ece
+T0665,Bibin Francis,NIT Trichy,ECE,ECE,Assistant Professor,True,True,bibin,,,2023,2026,current,Dr.BIBIN FRANCIS;Dr.Bibin Francis,nitt_table;nitt_table2;nittdept_ece
+T0666,Bukke Chandrababu Naik,NIT Trichy,ECE,ECE,Assistant Professor,True,True,chandrababu,,,2023,2026,current,Dr.BUKKE CHANDRABABU NAIK;Dr.Bukke Chandrababu Naik,nitt_table;nitt_table2;nittdept_ece
+T0667,G Lakshmi Narayanan,NIT Trichy,ECE,E.C.E,Professor (HAG),True,True,laksh,,,2016,2026,current,Dr.G.LAKSHMI NARAYANAN;Dr.G.Lakshmi Narayanan;Dr.G.Lakshminarayanan;LAKSHMINARAYANAN,nitt_table;nitt_table2;nittdept_ece
+T0668,Menka,NIT Trichy,ECE,ECE,Assistant Professor,True,True,menka,,,2019,2019,former,Dr.MENKA,nitt_table2
+T0669,Murali Krishna Rajendran,NIT Trichy,ECE,ECE,Assistant Professor,True,True,mkr,,,2023,2026,current,Dr.MURALI KRISHNA RAJENDRAN;Dr.Murali krishna,nitt_table;nitt_table2;nittdept_ece
+T0670,P Muthuchidambaranathan,NIT Trichy,ECE,E.C.E,Professor,True,True,muthuc,,,2016,2026,current,Dr.P.MUTHUCHIDAMBARANATHAN;Dr.P.Muthuchidambaranathan;MUTHUCHIDAMBARANATHAN P,nitt_table;nitt_table2;nittdept_ece
+T0671,Padala Surya Teja Naga Srinivas,NIT Trichy,ECE,ECE,Assistant Professor,True,True,suryateja,,,2026,2026,current,Dr.Padala Surya Teja Naga Srinivas;Dr.Surya Teja Naga Srinivas Padala,nitt_table;nittdept_ece
+T0672,R R Manikandan,NIT Trichy,ECE,ECE,Assistant Professor,True,True,manirr,,,2025,2026,current,Dr.R R MANIKANDAN,nitt_table;nitt_table2;nittdept_ece
+T0673,B Rebekka,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,rebekka,,,2016,2026,current,B.REBEKKA;Dr. B.Rebekka;Dr.B.REBEKKA;Ms. B.Rebekka;REBEKKA.B.,nitt_table;nitt_table2;nittdept_ece
+T0674,N Gunavathi,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,gunavathi,,,2016,2026,current,Dr. N. Gunavathi;Dr.N.GUNAVATHI;GUNAVATHI.N.;Ms. N. Gunavathi;N.GUNAVATHI,nitt_table;nitt_table2;nittdept_ece
+T0675,R K Kavitha,NIT Trichy,ECE,E.C.E,Assistant Professor,True,True,rkkavitha,,,2016,2026,current,Dr. R. K. Kavitha;Dr.R.K.KAVITHA;KAVITHA R.K.;Ms. R. K. Kavitha;R.K.KAVITHA,nitt_table;nitt_table2;nittdept_ece
+T0676,R Thilagavathy,NIT Trichy,ECE,E.C.E,Assistant Professor,True,True,thilagavathy,,,2016,2026,current,Dr. R. Thilagavathy;Dr.R.THILAGAVATHY;Ms. R. Thilagavathy;R.THILAGAVATHY;THILAGAVATHY.R.,nitt_table;nitt_table2;nittdept_ece
+T0677,S Deivalakshmi,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,deiva,,,2016,2026,current,DEIVALAKSHMI S;Dr. S .Deivalakshmi;Dr.S.DEIVALAKSHMI;Ms. S .Deivalakshmi;S.DEIVALAKSHMI,nitt_table;nitt_table2;nittdept_ece
+T0678,V Sudha,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,vsudha,,,2016,2026,current,Dr. V. Sudha;Dr.V.SUDHA;Ms. V. Sudha;SUDHA V;V.SUDHA,nitt_table;nitt_table2;nittdept_ece
+T0679,P Somaskandan,NIT Trichy,ECE,E.C.E,Associate Professor,True,True,somas,,,2016,2022,former,Prof. P. Somaskandan;SOMASKANDAN P.,nitt_table;nittdept_ece
+T0680,S Mageshwari,NIT Trichy,EEE,E.E.E,Assistant Professor,True,True,mageshwari,,,2016,2026,current,Dr. (Mrs.) S. Mageshwari;Dr. (Mrs.) S.Mageshwari;Dr.S. MAGESHWARI;MAGESHWARI.S.;S.MAGESHWARI,nitt_table;nitt_table2;nittdept_eee
+T0681,Aneesa Farhan M A,NIT Trichy,EEE,EEE,Assistant Professor,True,True,aneesa;aneesa@nitt.edu,,,2021,2026,current,Dr. Aneesa Farhan M A;Dr.ANEESA FARHAN M A;Dr.ANEESAM A,nitt_table;nitt_table2;nittdept_eee
+T0682,Ankur Singh Rana,NIT Trichy,EEE,EEE,Assistant Professor,True,True,ankur;ankur@nitt.edu,,,2021,2026,current,Dr. Ankur Singh Rana;Dr.ANKUR RANA;Dr.Ankur Rana;Dr.AnkurRana,nitt_table;nitt_table2;nittdept_eee
+T0683,Dipanshu Naware,NIT Trichy,EEE,EEE,Assistant Professor,True,True,dipanshu,,,2025,2026,current,Dr. Dipanshu Naware;Dr.DIPANSHU NAWARE,nitt_table;nitt_table2;nittdept_eee
+T0684,G Saravana Ilango,NIT Trichy,EEE,E.E.E,Professor,True,True,gsilango,,,2016,2026,current,Dr. G. Saravana Ilango;Dr. G.Saravana Ilango;Dr.G.SARAVANA ILANGO;SARAVANA ILANGO.G.,nitt_table;nitt_table2;nittdept_eee
+T0685,Jose Thankachan,NIT Trichy,EEE,EEE,Assistant Professor,True,True,joset,,,2023,2026,current,Dr. Jose Thankachan;Dr.JOSE THANKACHAN,nitt_table;nitt_table2;nittdept_eee
+T0686,Josephine R L,NIT Trichy,EEE,EEE,Assistant Professor,True,True,josephinerl,,,2019,2026,current,Dr. Josephine R. L.;Dr. Josephine.R.L;Dr.JOSEPHINE R L,nitt_table;nitt_table2;nittdept_eee
+T0687,K Sundareswaran,NIT Trichy,EEE,E.E.E,Professor (HAG),True,True,kse,,,2016,2026,current,Dr. K. Sundareswaran;Dr.K.SUNDARESWARAN;SUNDARESWARAN K,nitt_table;nitt_table2;nittdept_eee
+T0688,Karthik Thirumala,NIT Trichy,EEE,EEE,Assistant Professor,True,True,thirumala,,,2019,2026,current,Dr. Karthik Thirumala;Dr.KARTHIK THIRUMALA,nitt_table;nitt_table2;nittdept_eee
+T0689,M Jaya Bharata Reddy,NIT Trichy,EEE,E.E.E,Professor,True,True,jbreddy,,,2016,2026,current,Dr. M. Jaya Bharata Reddy;Dr. M.Jaya Bharata Reddy;Dr.M.JAYA BHARATA REDDY;JAYA BHARATA REDDY M,nitt_table;nitt_table2;nittdept_eee
+T0690,M P Selvan,NIT Trichy,EEE,E.E.E,Professor,True,True,selvanmp,,,2016,2026,current,Dr. M. P. Selvan;Dr. M.P.Selvan;Dr.M.P.SELVAN;SELVAN.M.P.,nitt_table;nitt_table2;nittdept_eee
+T0691,M Venkata Kirthiga,NIT Trichy,EEE,E.E.E,Professor,True,True,mvkirthiga,,,2016,2026,current,Dr. M. Venkata Kirthiga;Dr. M.Venkata Kirthiga;Dr.M.VENKATAKIRTHIGA;VENKATA KIRTHIGA.M.,nitt_table;nitt_table2;nittdept_eee
+T0692,Manas Ranjan Jena,NIT Trichy,EEE,eee,Assistant Professor,True,True,jena,,,2026,2026,current,Dr. Manas Ranjan Jena;Dr.Manas Ranjan Jena,nitt_table;nittdept_eee
+T0693,N Kumaresan,NIT Trichy,EEE,E.E.E,Professor (HAG),True,True,nkumar,,,2016,2026,current,Dr. N. Kumaresan;Dr.N.KUMARESAN;KUMARESAN N,nitt_table;nitt_table2;nittdept_eee
+T0694,P Raja,NIT Trichy,EEE,E.E.E,Professor,True,True,praja,,,2016,2026,current,Dr. P. Raja;Dr. P.Raja;Dr.RAJA .P;RAJA.P.,nitt_table;nitt_table2;nittdept_eee
+T0695,P Srinivasa Rao Nayak,NIT Trichy,EEE,E.E.E,Associate Professor,True,True,psnayak,,,2016,2026,current,Dr. P. Srinivasa Rao Nayak;Dr. P.Srinivasa Rao Nayak;Dr.P. SRINIVASARAO NAYAK;Dr.P.SRINIVASARAO NAYAK;P.SRINIVASARAO NAYAK;SRINIVASARAO NAYAK P,nitt_table;nitt_table2;nittdept_eee
+T0696,Rakesh Kumar Panda,NIT Trichy,EEE,EEE,Assistant Professor,True,True,rakeshp,,,2025,2026,current,Dr. Rakesh Kumar Panda;Dr.RAKESH KUMAR PANDA,nitt_table;nitt_table2;nittdept_eee
+T0697,S Arul Daniel,NIT Trichy,EEE,E.E.E,Professor (HAG),True,True,daniel,,,2016,2026,current,ARUL DANIEL S;Dr. S. Arul Daniel;Dr.S.ARUL DANIEL,nitt_table;nitt_table2;nittdept_eee
+T0698,S Kayalvizhi,NIT Trichy,EEE,EEE,Assistant Professor,True,True,kayalvizhi,,,2021,2026,current,Dr. S. Kayalvizhi;Dr.KAYALVIZHI S;Dr.Kayalvizhi S;Dr.KayalvizhiS,nitt_table;nitt_table2;nittdept_eee
+T0699,S Moorthi,NIT Trichy,EEE,E.E.E,Professor,True,True,srimoorthi,,,2016,2026,current,Dr. S. Moorthi;Dr. S.Moorthi;Dr.S.MOORTHI;MOORTHI S,nitt_table;nitt_table2;nittdept_eee
+T0700,S Sudha,NIT Trichy,EEE,E.E.E,Professor,True,True,sudha,,,2016,2026,current,Dr. S. Sudha;Dr.S.SUDHA;SUDHA S,nitt_table;nitt_table2;nittdept_eee
+T0701,S Senthil Kumar,NIT Trichy,EEE,E.E.E,Professor,True,True,skumar,,,2016,2026,current,Dr. S.Senthil Kumar;Dr.S.SENTHIL KUMAR;S.SENTHIL KUMAR;SENTHIL KUMAR.S.,nitt_table;nitt_table2;nittdept_eee
+T0702,Sateesh Kumar Kuncham,NIT Trichy,EEE,EEE,Assistant Professor,True,True,sateesh,,,2023,2026,current,Dr. Sateesh Kumar Kuncham;Dr.SATEESH KUMAR KUNCHAM;Dr.Sateesh Kumar Kuncham,nitt_table;nitt_table2;nittdept_eee
+T0703,Shelas Sathyan,NIT Trichy,EEE,EEE,Assistant Professor,True,True,shelassathyan,,,2019,2026,current,Dr. Shelas Sathyan;Dr.SHELAS SATHYAN,nitt_table;nitt_table2;nittdept_eee
+T0704,Sishaj P Simon,NIT Trichy,EEE,E.E.E,Professor,True,True,sishajpsimon,,,2016,2026,current,Dr. Sishaj P Simon;Dr.SISHAJ P SIMON;SISHAJ P SIMON,nitt_table;nitt_table2;nittdept_eee
+T0705,Suman M,NIT Trichy,EEE,EEE,Assistant Professor,True,True,sumanm,,,2025,2026,current,Dr. Suman M;Dr.SUMAN M,nitt_table;nitt_table2;nittdept_eee
+T0706,Suryanarayana Gangolu,NIT Trichy,EEE,EEE,Assistant Professor,True,True,suryanarayana,,,2025,2026,current,Dr. Suryanarayana Gangolu;Dr.SURYANARAYANA GANGOLU,nitt_table;nitt_table2;nittdept_eee
+T0707,V Vignesh Kumar,NIT Trichy,EEE,EEE,Assistant Professor,True,True,vvigneshkumar,,,2025,2026,current,Dr. V. Vignesh Kumar;Dr.VIGNESH KUMAR V,nitt_table;nitt_table2;nittdept_eee
+T0708,Venkata Raghavendra I,NIT Trichy,EEE,eee,Assistant Professor,True,True,raghavendra,,,2026,2026,current,Dr. Venkata Raghavendra I;Dr.Venkata Raghavendra I,nitt_table;nittdept_eee
+T0709,Ashokkumar,NIT Trichy,EEE,EEE,Assistant Professor,True,True,krashok,,,2021,2022,former,Dr.AshokKumar,nitt_table2
+T0710,C Nagamani,NIT Trichy,EEE,E.E.E,Professor (HAG),True,True,cnmani,,,2016,2025,former,Dr.C.NAGAMANI;NAGAMANI C,nitt_table;nitt_table2
+T0711,Manoranjan Sahoo,NIT Trichy,EEE,EEE,Assistant Professor,True,True,sahoo,,,2019,2023,former,Dr.MANORANJAN SAHOO,nitt_table2
+T0712,N Ammmasai Goundan,NIT Trichy,EEE,E.E.E.,Professor,True,True,ammas,,,2016,2022,former,AMMASAI GOUNDEN N.;Dr.N.AMMASAI GOUNDEN;Dr.N.AMMMASAI GOUNDAN,nitt_table;nitt_table2
+T0713,Naveenyalla,NIT Trichy,EEE,EEE,Assistant Professor,True,True,naveenyalla,,,2021,2022,former,Dr.NaveenYalla,nitt_table2
+T0714,Pinkymol Kp,NIT Trichy,EEE,EEE,Assistant Professor,True,True,pinkymol;pinkymol@nitt.edu,,,2021,2026,current,Dr. Pinkymol K.P;Dr.PINKYMOL KP;Dr.Pinkymol KP;Dr.PinkymolKP,nitt_table;nitt_table2;nittdept_eee
+T0715,V Sankara Narayanan,NIT Trichy,EEE,E.E.E,Professor,True,True,vsankar,,,2016,2026,current,Dr. V . Sankaranarayanan;Dr. V. Sankaranarayanan;Dr.V.SANKARA NARAYANAN;SANKARANARAYANAN V,nitt_table;nitt_table2;nittdept_eee
+T0716,Vivek Mohan,NIT Trichy,EEE,EEE,Assistant Professor,True,True,vivekmohan,,,2019,2022,former,Dr.VIVEK MOHAN,nitt_table2
+T0717,Aditya Kumar,NIT Trichy,Energy & Environment,Energy and Environment,Assistant Professor,True,True,adityakumar,,,2023,2026,current,Dr. Aditya Kumar;Dr.ADITYA KUMAR,nitt_table;nitt_table2;nittdept_dee
+T0718,Jaganathan Vm,NIT Trichy,Energy & Environment,Energy and Environment,Assistant Professor,True,True,vmjagan;vmjagan@nitt.edu,,,2021,2026,current,Dr. Jaganathan VM;Dr.JAGANATHAN VM;Dr.JAGANATHANVM,nitt_table;nitt_table2;nittdept_dee
+T0719,Kalpana P,NIT Trichy,Energy & Environment,dee,Associate Professor,True,True,kalpana,,,2026,2026,current,Dr. Kalpana P;Dr.Kalpana P,nitt_table;nittdept_dee
+T0720,M Premalatha,NIT Trichy,Energy & Environment,CEESAT,Professor (HAG),True,True,latha,,,2016,2026,current,Dr. M. Premalatha;Dr.M.PREMALATHA;PREMALATHA M,nitt_table;nitt_table2;nittdept_dee
+T0721,Ruben Sudhakar D,NIT Trichy,Energy & Environment,Energy and Environment,Associate Professor,True,True,rubensudhakar,,,2019,2026,current,Dr. Ruben Sudhakar D;Dr.RUBEN SUDHAKAR,nitt_table;nitt_table2;nittdept_dee
+T0722,Damodhar Siva Krishna Rao K,NIT Trichy,Energy & Environment,Energy and Environment,Assistant Professor,True,True,damodharsiva,,,2023,2026,current,Dr. D V Siva Krishna Rao K;Dr.D V SIVA KRISHNA RAO K;Dr.DAMODHAR SIVA KRISHNA RAO K,nitt_table;nitt_table2;nittdept_dee
+T0723,G Nagasubramaniyan,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,nagus,,,2016,2026,current,Dr. G. Nagasubramaniyan;Dr.G.NAGASUBRAMANIYAN;Dr.G.Nagasubramaniyan;G.NAGASUBRAMANIYAN;NAGASUBRAMANIYAN G,nitt_table;nitt_table2;nittdept_humanities
+T0724,N Maneesha,NIT Trichy,Humanities,Humanities & Social Sciences,Assistant Professor,True,False,maneesha,,,2025,2026,current,Dr. N. Maneesha;Dr.MANEESHA N,nitt_table;nitt_table2;nittdept_humanities
+T0725,Nisha Viswanathan,NIT Trichy,Humanities,HUMANITIES,Assistant Professor,True,False,nishav,,,2021,2026,current,Dr. Nisha Viswanathan;Dr.NISHA VISWANATHAN;Dr.Nisha Viswanathan;Dr.NishaViswanathan,nitt_table;nitt_table2;nittdept_humanities
+T0726,Padmaja M,NIT Trichy,Humanities,HUMANITIES,Assistant Professor,True,False,padmaja;padmaja@nitt.edu,,,2021,2026,current,Dr. Padmaja M;Dr.PADMAJA M;Dr.PADMAJAM,nitt_table;nitt_table2;nittdept_humanities
+T0727,R Joseph Ponniah,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,joseph,,,2016,2026,current,Dr. R. Joseph Ponniah;Dr.R.JOSEPH PONNIAH;JOSEPH PONNIAH R,nitt_table;nitt_table2;nittdept_humanities
+T0728,R Murugesan,NIT Trichy,Humanities,HUMANITIES,Professor (HAG),True,False,rmurugan,,,2016,2026,current,Dr. R. Murugesan;Dr.R.MURUGESAN;MURUGESAN R,nitt_table;nitt_table2;nittdept_humanities
+T0729,S Mekala,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,mekala,,,2016,2026,current,Dr. S. Mekala;Dr.S.MEKALA;MEKALA S,nitt_table;nitt_table2;nittdept_humanities
+T0730,S Yogeshwari,NIT Trichy,Humanities,Humanities & Social Sciences,Assistant Professor,True,False,yogeshwari,,,2025,2026,current,Dr. S.Yogeshwari;Dr.YOGESHWARI S,nitt_table;nitt_table2;nittdept_humanities
+T0731,Sathyaraj Venkatesan,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,sathya,,,2016,2026,current,Dr. Sathyaraj Venkatesan;Dr.V.SATHYARAJ;SATHYARAJ V,nitt_table;nitt_table2;nittdept_humanities
+T0732,V Vinod Balakrishnan,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,vinod,,,2016,2026,current,Dr. V. Vinod Balakrishnan;Dr.V.B.VINOD;VINOD V B,nitt_table;nitt_table2;nittdept_humanities
+T0733,Anu Kuriakose,NIT Trichy,Humanities,Humanities & Social Sciences,Assistant Professor,True,False,anuk,,,2023,2026,current,Dr.ANU KURIAKOSE;Dr.Anu Kuriakose,nitt_table;nitt_table2;nittdept_humanities
+T0734,Chintada Umasankar,NIT Trichy,Humanities,HUMANITIES,Assistant Professor,True,False,umasankar,,,2021,2026,current,Dr. Umasankar Patra;Dr.Chintada Umasankar;Dr.Umasankar Patra;Dr.UmasankarPatra,nitt_table;nitt_table2;nittdept_humanities
+T0735,Karthika Vk,NIT Trichy,Humanities,HUMANITIES,Assistant Professor,True,False,vkkarthika;vkkarthika@nitt.edu,,,2021,2026,current,Dr. Karthika V.K.;Dr.KARTHIKA VK;Dr.KARTHIKAVK,nitt_table;nitt_table2;nittdept_humanities
+T0736,Meenakshi Sundaram C,NIT Trichy,Humanities,HUMANITIES,Professor,True,False,cm,,,2016,2022,former,MEENAKSHI SUNDARAM C.,nitt_table
+T0737,R Gururaj,NIT Trichy,Humanities,HUMANITIES,Associate Professor,True,False,guru,,,2016,2026,current,GURURAJ R.;Mr. R.Gururaj;Prof. R. Gururaj;R.GURURAJ,nitt_table;nitt_table2;nittdept_humanities
+T0738,B Vasuki,NIT Trichy,ICE,I.C.E,Professor,True,True,bvas,,,2016,2026,current,Dr. B. Vasuki;Dr.B.VASUKI;VASUKI B.,nitt_table;nitt_table2;nittdept_ice
+T0739,C Geetha,NIT Trichy,ICE,ice,Assistant Professor,True,True,geethac,,,2019,2026,current,Dr. C. Geetha;Dr. Geetha C;Dr.GEETHA C,nitt_table;nitt_table2;nittdept_ice
+T0740,D Ezhilarasi,NIT Trichy,ICE,I.C.E,Professor,True,True,ezhil,,,2016,2026,current,Dr. D. Ezhilarasi;Dr.D.EZHILLARASI;EZHILARASI D,nitt_table;nitt_table2;nittdept_ice
+T0741,G Uma,NIT Trichy,ICE,I.C.E,Professor (HAG),True,True,guma,,,2016,2026,current,Dr. G. Uma;Dr.G.UMA;Dr.G.Uma;UMA G,nitt_table;nitt_table2;nittdept_ice
+T0742,K Dhanalakshmi,NIT Trichy,ICE,I.C.E,Professor,True,True,dhanlak,,,2016,2026,current,DHANALAKSHMI K;Dr. K. Dhanalakshmi;Dr.K.DHANALAKSHMI,nitt_table;nitt_table2;nittdept_ice
+T0743,K Srinivasan,NIT Trichy,ICE,I.C.E,Professor,True,True,srinikkn,,,2016,2026,current,Dr. K. Srinivasan;Dr.K.SRINIVASAN;SRINIVASAN.K.,nitt_table;nitt_table2;nittdept_ice
+T0744,M Umapathy,NIT Trichy,ICE,I.C.E,Professor (HAG),True,True,umapathy,,,2016,2026,current,Dr. M. Umapathy;Dr.UMAPATHY;UMAPATHY M.,nitt_table;nitt_table2;nittdept_ice
+T0745,N Sivakumaran,NIT Trichy,ICE,I.C.E,Professor,True,True,nsk,,,2016,2026,current,Dr. N. Sivakumaran;Dr.N.SIVAKUMARAN;SIVAKUMARAN.N.,nitt_table;nitt_table2;nittdept_ice
+T0746,P A Karthick,NIT Trichy,ICE,ice,Assistant Professor,True,True,pakarthick,,,2019,2026,current,Dr. P. A. Karthick;Dr. P.A. Karthick;Dr.KARTHICK P A,nitt_table;nitt_table2;nittdept_ice
+T0747,R Periyasamy,NIT Trichy,ICE,ice,Assistant Professor,True,True,periyasamyr,,,2019,2026,current,Dr. R. Periyasamy;Dr.PERIYASAMY R;Dr.R.Periyasamy,nitt_table;nitt_table2;nittdept_ice
+T0748,Rahul Kumar Sharma,NIT Trichy,ICE,ice,Assistant Professor,True,True,rahul,,,2023,2026,current,Dr Rahul Kumar Sharma;Dr. Rahul Kumar Sharma;Dr.RAHUL KUMAR SHARMA,nitt_table;nitt_table2;nittdept_ice
+T0749,S Narayanan,NIT Trichy,ICE,I.C.E,Assistant Professor,True,True,narayanan,,,2016,2026,current,Dr. S. Narayanan;Dr.S.NARAYANAN;NARAYANAN S,nitt_table;nitt_table2;nittdept_ice
+T0750,Shiraz Sohail,NIT Trichy,ICE,ice,Assistant Professor,True,True,ssohail,,,2020,2026,current,Dr. Shiraz Sohail;Dr.SHIRAZ SOHAIL;Dr.Shiraz Sohail;Dr.ShirazSohail,nitt_table;nitt_table2;nittdept_ice
+T0751,Jerome Moses M,NIT Trichy,ICE,ice,Assistant Professor,True,True,jeromem,,,2026,2026,current,Dr Jerome Moses;Dr.Jerome Moses M,nitt_table;nittdept_ice
+T0752,Ram Shankar Rajadurai,NIT Trichy,ICE,ice,Assistant Professor,True,True,srir,,,2023,2026,current,Dr. Sri Ram Shankar R;Dr. Sri Ram Shankar R.;Dr.SRI RAM SHANKAR RAJADURAI,nitt_table;nitt_table2;nittdept_ice
+T0753,Goldin Rajeshwar Bennet,NIT Trichy,ICE,I.C.E,Faculty,True,True,bennet,,,2016,2026,current,GOLDIN RAJESHWAR;GOLDIN RAJESHWAR BENNET;Prof. Goldin R Bennet;Prof.Goldin R Bennet,nitt_table;nitt_table2;nittdept_ice
+T0754,V Sridevi,NIT Trichy,ICE,I.C.E,Assistant Professor,True,True,sridevi,,,2016,2026,current,Dr. V. Sridevi;Dr.V.SRIDEVI;Ms. V. Sridevi;SRIDEVI.V.;V.SRIDEVI,nitt_table;nitt_table2;nittdept_ice
+T0755,Rama Kalyan Ayyagari,NIT Trichy,ICE,I.C.E,Professor (HAG),True,True,rkalyn,,,2016,2026,current,Dr. A. Ramakalyan;Dr. Ramakalyan Ayyagari;Dr.RAMAKALYAN;Dr.RAMAKALYAN AYYAGARI;RAMA KALYAN AYYAGARI,nitt_table;nitt_table2;nittdept_ice
+T0756,Prince Gideon Kubendran Amos,NIT Trichy,MME,MME,Assistant Professor,True,True,prince,,,2021,2026,current,Dr. -Ing Prince Gideon Kubendran Amos;Dr. PRINCE GIDEON KUBENDRAN;Dr. Prince Gideon Kubendran,nitt_table;nitt_table2;nittdept_meta
+T0757,A Muthuchamy,NIT Trichy,MME,MME,Assistant Professor,True,True,muthuchamy,,,2021,2026,current,Dr. A. Muthuchamy;Dr.MUTHUCHAMY A;Dr.Muthuchamy A;Dr.MuthuchamyA,nitt_table;nitt_table2;nittdept_meta
+T0758,Anand S,NIT Trichy,MME,MME,Assistant Professor,True,True,anands,,,2023,2026,current,Dr. Anand S;Dr.ANAND S,nitt_table;nitt_table2;nittdept_meta
+T0759,B Ravisankar,NIT Trichy,MME,MME,Professor,True,True,brs,,,2016,2026,current,Dr. B. Ravisankar;Dr.B. Ravisankar;Dr.B.RAVISANKAR;RAVISHANKAR.B.,nitt_table;nitt_table2;nittdept_meta
+T0760,D Nagarajan,NIT Trichy,MME,MME,Assistant Professor,True,True,nagarajand,,,2019,2026,current,Dr. D. Nagarajan;Dr.NAGARAJAN D,nitt_table;nitt_table2;nittdept_meta
+T0761,Illa Mani Pujitha,NIT Trichy,MME,MME,Assistant Professor,True,True,pujitha,,,2023,2026,current,Dr. Illa Mani Pujitha;Dr.ILLA MANI PUJITHA,nitt_table;nitt_table2;nittdept_meta
+T0762,Khilesh Kumar Bhandari,NIT Trichy,MME,meta,Assistant Professor,True,True,khilesh,,,2026,2026,current,Dr. Khilesh Kumar Bhandari;Dr.Khilesh Kumar Bhandari,nitt_table;nittdept_meta
+T0763,N Ramesh Babu,NIT Trichy,MME,meta,Professor,True,True,nrb,,,2016,2026,current,Dr. N. Ramesh Babu;Dr.N.RAMESH BABU;RAMESH BABU.N.,nitt_table;nitt_table2;nittdept_meta
+T0764,Nimu Chand Reger,NIT Trichy,MME,meta,Assistant Professor,True,True,nimu,,,2020,2026,current,Dr. Nimu Chand Reger;Dr.NIMU CHAND REGAR;Dr.Nimu Regar,nitt_table;nitt_table2;nittdept_meta
+T0765,P Anbarasi,NIT Trichy,MME,MME,Assistant Professor,True,True,anbarasi,,,2025,2026,current,Dr. P. Anbarasi;Dr.ANBARASI P,nitt_table;nitt_table2;nittdept_meta
+T0766,S Kumaran,NIT Trichy,MME,meta,Professor,True,True,kumara,,,2016,2026,current,Dr. S. Kumaran;Dr.S.KUMARAN;KUMARAN S,nitt_table;nitt_table2;nittdept_meta
+T0767,S Muthukumaran,NIT Trichy,MME,meta,Professor,True,True,smuthu,,,2016,2026,current,Dr. S. Muthukumaran;Dr.S.MUTHUKUMARAN;MUTHUKUMARAN S,nitt_table;nitt_table2;nittdept_meta
+T0768,S Natarajan,NIT Trichy,MME,M M E,Professor,True,True,sn,,,2016,2022,former,Dr. S. Natarajan;Dr.S. Natarajan;Dr.S.NATARAJAN;NATARAJAN S.,nitt_table;nitt_table2;nittdept_meta
+T0769,S P Kumaresh Babu,NIT Trichy,MME,meta,Professor (HAG),True,True,babu,,,2016,2026,current,Dr. S. P. Kumaresh Babu;Dr. S.P. Kumaresh Babu;Dr.S.P.KUMARESH BABU;KUMARESH BABU S P,nitt_table;nitt_table2;nittdept_meta
+T0770,S Raman Sankaranarayanan,NIT Trichy,MME,MME,Professor (HAG),True,True,raman,,,2016,2026,current,Dr. S. Raman Sankaranarayanan;Dr.S. Raman Sankaranarayanan;Dr.SANKARANARAYANAN;RAMAN SANKARANARAYANAN S,nitt_table;nitt_table2;nittdept_meta
+T0771,Umasankar Chintada,NIT Trichy,MME,meta,Assistant Professor,True,True,,,,2026,2026,current,Dr. Umasankar Chintada,nittdept_meta
+T0772,V Karthik,NIT Trichy,MME,MME,Assistant Professor,True,True,karthikv,,,2019,2026,current,Dr. V. Karthik;Dr.KARTHIK V,nitt_table;nitt_table2;nittdept_meta
+T0773,V Muthupandi,NIT Trichy,MME,M M E,Professor,True,True,vmuthu,,,2016,2022,former,Dr. V. Muthupandi;Dr.V. Muthupandi;Dr.V.MUTHUPANDI;MUTHUPANDI V,nitt_table;nitt_table2;nittdept_meta
+T0774,V Surianarayanan,NIT Trichy,MME,M M E,Associate Professor,True,True,suri,,,2016,2022,former,Dr. V. Surianarayanan;Dr.V. Surianarayanan;Dr.V.SURIANARAYANAN;SURIANARAYANAN V,nitt_table;nitt_table2;nittdept_meta
+T0775,Puppala Laxman Mani Kanta,NIT Trichy,MME,MME,Assistant Professor,True,True,laxmanmanikanta,,,2025,2026,current,Dr. Puppala Laxman ManiKanta;Dr.PUPPALA LAXMAN MANI KANTA,nitt_table;nitt_table2;nittdept_meta
+T0776,Siva Prasad Katakam,NIT Trichy,MME,MME,Professor,True,True,ksp,,,2016,2026,current,Dr. K. Siva Prasad;Dr.K. Siva Prasad;Dr.SIVA PRASAD KATAKAM;SIVAPRASAD K,nitt_table;nitt_table2;nittdept_meta
+T0777,T Srinivasa Rao,NIT Trichy,MME,MME,Professor (HAG),True,True,tsrao,,,2016,2025,former,Dr. T. Srinivasa Rao;Dr.T. Srinivasa Rao (On Lien);Dr.T.SRINIVASA RAO;SRINIVASA RAO T. (On Lien),nitt_table;nitt_table2;nittdept_meta
+T0778,Vinothkumar Govindaraj,NIT Trichy,MME,MME,Assistant Professor,True,True,vinothkumar,,,2023,2026,current,Dr VINOTHKUMAR GOVINDARAJ;Dr. Vinothkumar G;Dr.VINOTHKUMAR GOVINDARAJ,nitt_table;nitt_table2;nittdept_meta
+T0779,S Jerome,NIT Trichy,MME,MME,Associate Professor,True,True,jerome,,,2016,2026,current,Dr. S. Jerome;Dr. S.JEROME;Dr.S.JEROME;JEROME S;Mr. S. Jerome,nitt_table;nitt_table2;nittdept_meta
+T0780,G Muruganantham,NIT Trichy,Management,MANAGEMENT,Professor,True,False,murugan,,,2016,2026,current,Dr. G. Muruganantham;Dr.G.MURUGANANTHAM;MURUGANANTHAM G,nitt_table;nitt_table2;nittdept_management
+T0781,J Kirubakaran,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,kirubakaran,,,2021,2026,current,Dr. J. Kirubakaran;Dr.KIRUBAKARAN J;Dr.Kirubakaran J,nitt_table;nitt_table2;nittdept_management
+T0782,Janarthanan Balakrishnan,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,jana;jana@nitt.edu,,,2021,2026,current,Dr. Janarthanan Balakrishnan;Dr.JANARTHANAN B;Dr.Janarthanan B;Dr.JanarthananB,nitt_table;nitt_table2;nittdept_management
+T0783,M Punniyamoorthy,NIT Trichy,Management,MANAGEMENT,Professor (HAG),True,False,punniya,,,2016,2026,current,Dr. M. Punniyamoorthy;Dr.M.PUNNIYAMOORTHY;PUNNIAMOORTHY M.,nitt_table;nitt_table2;nittdept_management
+T0784,Malolan Sundararaman,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,malolan;malolan@nitt.edu,,,2021,2026,current,Dr. Malolan Sundararaman;Dr.MALOLAN SUNDARARAMAN;Dr.MALOLANSUNDARARAMAN,nitt_table;nitt_table2;nittdept_management
+T0785,P Sridevi,NIT Trichy,Management,MANAGEMENT,Professor,True,False,psridevi,,,2016,2026,current,Dr P Sridevi;Dr. P. Sridevi;Dr.P.SRIDEVI;SRIDEVI.P.,nitt_table;nitt_table2;nittdept_management
+T0786,Shobitha Poulose,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,shobitha;shobitha@nitt.edu,,,2021,2026,current,Dr. Shobitha Poulose.;Dr.SHOBITHA POULOSE;Dr.SHOBITHAPOULOSE,nitt_table;nitt_table2;nittdept_management
+T0787,V J Sivakumar,NIT Trichy,Management,MANAGEMENT,Professor,True,False,vjs,,,2016,2026,current,Dr. V.J.Sivakumar;Dr.V.J.SIVAKUMAR;SIVAKUMAR V J,nitt_table;nitt_table2;nittdept_management
+T0788,Velavan S,NIT Trichy,Management,management,Assistant Professor,True,False,velavan,,,2025,2026,current,Dr. Velavan S;Dr.VELAVAN S,nitt_table;nitt_table2;nittdept_management
+T0789,Yamini S,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,syamini;syamini@nitt.edu,,,2021,2026,current,Dr. Yamini S.;Dr.YAMINI S;Dr.YAMINIS,nitt_table;nitt_table2;nittdept_management
+T0790,B Senthil Arasu,NIT Trichy,Management,MANAGEMENT,Professor,True,False,arasu,,,2016,2026,current,Dr.B.SENTHIL ARASU;Dr.B.Senthil Arasu;SENTHIL ARASU B.,nitt_table;nitt_table2;nittdept_management
+T0791,G K Kannabiran,NIT Trichy,Management,MANAGEMENT,Professor (HAG),True,False,kb,,,2016,2026,current,Dr. G. Kannabiran;Dr.G.K.KANNABIRAN;KANNABIRAN G.,nitt_table;nitt_table2;nittdept_management
+T0792,Manjumahipalan,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,mmanju;mmanju@nitt.edu,,,2021,2022,former,Dr.MANJUMAHIPALAN,nitt_table2
+T0793,N Thamaraiselvan,NIT Trichy,Management,MANAGEMENT,Professor (HAG),True,False,selvan,,,2016,2026,current,Dr.N.THAMARAISELVAN;Dr.N.Thamaraiselvan;THAMARAISELVAN N,nitt_table;nitt_table2;nittdept_management
+T0794,Nivethitha S,NIT Trichy,Management,Management Studies,Assistant Professor,True,False,snive,,,2019,2026,current,Dr.NIVETHITHA S;Dr.S.Nivethitha,nitt_table;nitt_table2;nittdept_management
+T0795,Prince R,NIT Trichy,Management,Management Studies,Assistant Professor,True,False,rprince,,,2025,2026,current,Dr.PRINCE R,nitt_table;nitt_table2;nittdept_management
+T0796,R Murali,NIT Trichy,Management,MANAGEMENT,Associate Professor,True,False,rmurali,,,2016,2022,former,Dr.R.MURALI;MURALI R,nitt_table;nitt_table2
+T0797,Rajeshi,NIT Trichy,Management,MANAGEMENT,Assistant Professor,True,False,irajesh;irajesh@nitt.edu,,,2021,2022,former,Dr.RAJESHI,nitt_table2
+T0798,V Lavanya,NIT Trichy,Management,MANAGEMENT,Associate Professor,True,False,lavanya,,,2016,2026,current,Dr.V. Lavanya;Dr.V.LAVANYA;LAVANYA V.,nitt_table;nitt_table2;nittdept_management
+T0799,Abhijit Das,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,abhijit,,,2021,2026,current,Dr. Abhijit Das;Dr.ABHIJIT DAS;Dr.Abhijit Das;Dr.AbhijitDas,nitt_table;nitt_table2;nittdept_maths
+T0800,Atul Kumar Verma,NIT Trichy,Mathematics,Mathematics,Assistant Professor,True,True,atul,,,2021,2023,former,Dr. Atul Kumar Verma;Dr.ATUL KUMAR VERMA;Dr.Atulverma,nitt_table2;nittdept_maths
+T0801,Balasubramani N,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,balasubramani,,,2023,2026,current,Dr. Balasubramani N;Dr.BALASUBRAMANI N,nitt_table;nitt_table2;nittdept_maths
+T0802,Gautam Singh,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,gautam,,,2023,2026,current,Dr. Gautam Singh;Dr.GAUTAM SINGH;Dr.Gautam Singh,nitt_table;nitt_table2;nittdept_maths
+T0803,I Jeyaraman,NIT Trichy,Mathematics,maths,Associate Professor,True,True,jeyaraman,,,2019,2026,current,Dr. I. Jeyaraman;Dr.JEYARAMAN I,nitt_table;nitt_table2;nittdept_maths
+T0804,Jitraj Saha,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,jitraj,,,2019,2026,current,Dr. Jitraj Saha;Dr. Jitraj Saha (On Lien at NIT Durgapur);Dr.JITRAJ SAHA,nitt_table;nitt_table2;nittdept_maths
+T0805,Joe Christina Mary,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,,,,2026,2026,current,Dr. Joe Christina Mary,nittdept_maths
+T0806,Krishnarjun Krishnamoorthy,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,krishnarjun,,,2026,2026,current,Dr. Krishnarjun Krishnamoorthy;Dr.Krishnarjun K,nitt_table;nittdept_maths
+T0807,M Sivanesan,NIT Trichy,Mathematics,Mathematics,Assistant Professor,True,True,sivanesan,,,2021,2023,former,Dr. M. Sivanesan;Dr.Sivanesan M;Dr.SivanesanM,nitt_table2;nittdept_maths
+T0808,N Prakash,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,prakashn,,,2019,2026,current,Dr. N. Prakash;Dr.PRAKASH N,nitt_table;nitt_table2;nittdept_maths
+T0809,N Shivaranjani,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,ranjani;ranjani@nitt.edu,,,2021,2026,current,Dr. N. Shivaranjani;Dr.SHIVARANJANI N;Dr.Shivaranjani N;Dr.ShivaranjaniN,nitt_table;nitt_table2;nittdept_maths
+T0810,Nishant Rathee,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,nishant,,,2026,2026,current,Dr. Nishant Rathee;Dr.Nishant,nitt_table;nittdept_maths
+T0811,R Gowthami,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,gowthami,,,2023,2026,current,Dr. R. Gowthami;Dr.GOWTHAMI R;Dr.Gowthami R,nitt_table;nitt_table2;nittdept_maths
+T0812,R Nallaswamy,NIT Trichy,Mathematics,maths,Professor,True,True,,,,2016,2017,former,Dr. R. Nallaswamy,nittdept_maths
+T0813,R Ponalagusamy,NIT Trichy,Mathematics,MATHEMATICS,Professor (HAG),True,True,rpalagu,,,2016,2023,former,Dr. R. Ponalagusamy;Dr.PONALAGUSAMY.R;PONALAGUSAMY.R,nitt_table;nitt_table2;nittdept_maths
+T0814,R Ravindran,NIT Trichy,Mathematics,MATHEMATICS,Assistant Professor,True,True,ravir,,,2016,2022,former,Dr. R.Ravindran;RAVINDRAN R,nitt_table;nittdept_maths
+T0815,Somya,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,,,,2026,2026,current,Dr. Somya,nittdept_maths
+T0816,T N Janakiraman,NIT Trichy,Mathematics,MATHEMATICS,Faculty,True,True,janaki,,,2016,2025,former,Dr. T.N. Janakiraman;Dr.JANAKIRAMAN T.N;JANAKIRAMAN. T.N.,nitt_table;nitt_table2;nittdept_maths
+T0817,Vamsinadh Thota,NIT Trichy,Mathematics,maths,Assistant Professor,True,True,vamsinadh,,,2019,2026,current,Dr. Vamsinadh Thota;Dr.VAMSINADH THOTA,nitt_table;nitt_table2;nittdept_maths
+T0818,R Tamil Selvi,NIT Trichy,Mathematics,MATHEMATICS,Associate Professor,True,True,tamil,,,2016,2026,current,Dr. R. Tamil Selvi;Dr. R.TAMILSELVI;Dr.(Mrs.) R. Tamil Selvi;Dr.R. Tamil Selvi;Dr.R.TAMILSELVI;TAMILSELVI R,nitt_table;nitt_table2;nittdept_maths
+T0819,D Deivamoneyselvam,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,selvam,,,2016,2022,former,DEIVAMONEYSELVAM D.;Dr. Deivamoneyselvam;Dr.D.DEIVAMONEYSELVAM,nitt_table;nitt_table2;nittdept_maths
+T0820,Nallusamy R,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,nalla,,,2016,2022,former,Dr.NALLUSAMY R;NALLUSAMY R.,nitt_table;nitt_table2
+T0821,Hemalatha Thiagarajan,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,hema,,,2016,2022,former,HEMALATHA THIAGARAJAN,nitt_table
+T0822,K Murugesan,NIT Trichy,Mathematics,MATHEMATICS,Professor (HAG),True,True,murugu,,,2016,2026,current,Dr. K. Murugesan;Dr.K.MURUGESAN;MURUGESAN K;Prof. K. Murugesan,nitt_table;nitt_table2;nittdept_maths
+T0823,P Saikrishnan,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,psai,,,2016,2026,current,Dr. P. Saikrishnan;Dr.P.SAIKRISHNAN;Prof. P. Saikrishnan;SAIKRISHNAN P,nitt_table;nitt_table2;nittdept_maths
+T0824,V Kumaran,NIT Trichy,Mathematics,MATHEMATICS,Professor (HAG),True,True,kumaran,,,2016,2026,current,Dr. V. Kumaran;Dr.V.KUMARAN;KUMARAN. V.;Prof. V. Kumaran,nitt_table;nitt_table2;nittdept_maths
+T0825,V Lakshmana Gomathi Nayagam,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,velulakshmanan,,,2016,2026,current,Dr. V. Lakshmana Gomathi Nayagam;Dr.A.LAKSHMANA GOMATHINAYAGAM;Dr.V.LAKSHMANA GOMATHINAYAGAM;LAKSHMANA GOMATHI NAYAGAM V.;Prof. V. Lakshmana Gomathi Nayagam,nitt_table;nitt_table2;nittdept_maths
+T0826,V Ravichandran,NIT Trichy,Mathematics,maths,Professor,True,True,ravic,,,2019,2026,current,Dr. V. Ravichandran;Dr.RAVICHANDRAN V;Prof. V. Ravichandran,nitt_table;nitt_table2;nittdept_maths
+T0827,V Shanthi,NIT Trichy,Mathematics,MATHEMATICS,Professor,True,True,vshanthi,,,2016,2026,current,Dr. V. Shanthi;Dr. V.Shanthi;Dr.V.SHANTHI;Prof. V. Shanthi;Prof. V. Shanthi (On Child Care Leave);SHANTHI V,nitt_table;nitt_table2;nittdept_maths
+T0828,Veerappan,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,aveer,,,2016,2026,current,Dr. AR. Veerappan;Dr.A.R.VEERAPPAN;VEERAPPAN. AR.,nitt_table;nitt_table2;nittdept_mech
+T0829,Bishweshwar Babu,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,bishweshwar,,,2021,2026,current,Dr. Bishweshwar Babu;Dr.BISHWESHWAR BABU;Dr.Bishweshwar Babu;Dr.BishweshwarBabu,nitt_table;nitt_table2;nittdept_mech
+T0830,Dudul Das,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,duduldas,,,2026,2026,current,Dr. Dudul Das;Dr.Dudul Das,nitt_table;nittdept_mech
+T0831,G Rajasekaran,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,graja;graja@nitt.edu,,,2021,2026,current,Dr. G. Rajasekaran;Dr.RAJASEKARAN G;Dr.RAJASEKARANG,nitt_table;nitt_table2;nittdept_mech
+T0832,Hemachandran E,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,hemachandran,,,2026,2026,current,Dr. Hemachandran E;Dr.Hemachandran E,nitt_table;nittdept_mech
+T0833,J Sarangan,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,sarangan,,,2016,2022,former,Dr. J. Sarangan;SARANGAN J.,nitt_table;nittdept_mech
+T0834,K Sankaranarayanasamy,NIT Trichy,Mechanical,MECHANICAL,Professor (HAG),True,True,ksnsamy,,,2016,2025,former,Dr. K. Sankaranarayanasamy;Dr.K.SANKARANARAYANASAMY;Dr.SANKARANARAYANASAMY;SANKARANARAYANASAMY.K,nitt_table;nitt_table2;nittdept_mech
+T0835,K R Balasubramanian,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,krbala,,,2016,2026,current,BALASUBRAMANIAN.K.R.;Dr. K.R. Balasubramanian;Dr.K.R.BALASUBRAMANIAN;Dr.K.R.BALASUBRAMANIYAN,nitt_table;nitt_table2;nittdept_mech
+T0836,Kaushik P,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,pkaushik,,,2019,2023,former,Dr. Kaushik P;Dr. P Kaushik;Dr.KAUSHIK P,nitt_table2;nittdept_mech
+T0837,M Udayakumar,NIT Trichy,Mechanical,MECHANICAL,Professor (HAG),True,True,muday,,,2016,2023,former,Dr. M. Udayakumar;Dr.M.UDAYAKUMAR;UDAYAKUMAR M.,nitt_table;nitt_table2;nittdept_mech
+T0838,N Siva Shanmugam,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,nsiva;shunt,,,2016,2026,current,Dr. N. Siva Shanmugam;Dr. S. Shanmugam;Dr.N.SIVA SHANMUGAM;Dr.S.SHANMUGAM;SHANMUGAM S;SIVA SHANMUGAM N.,nitt_table;nitt_table2;nittdept_mech
+T0839,Nivish George,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,nivish;nivish@nitt.edu,,,2021,2022,former,Dr. Nivish George;Dr.NIVISHGEORGE,nitt_table2;nittdept_mech
+T0840,Pradeep N,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,pradeepn,,,2026,2026,current,Dr. Pradeep N;Dr.Pradeep N,nitt_table;nittdept_mech
+T0841,R Prakash,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,rprakash;rprakash@nitt.edu,,,2021,2026,current,Dr. R. Prakash;Dr.PRAKASH R;Dr.PRAKASHR,nitt_table;nitt_table2;nittdept_mech
+T0842,R B Anand,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,anandachu;rbanand,,,2016,2026,current,ANAND R;ANAND R.B.;Dr. R. Anand;Dr. R.B.Anand;Dr.R.ANAND;Dr.R.B.ANAND,nitt_table;nitt_table2;nittdept_mech
+T0843,Raghu Ram Karthik Desu,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,desu,,,2021,2026,current,Dr. Raghu Ram Karthik Desu;Dr.RAGHU RAM KARTHIK DESU;Dr.Raghu Ram KarthikDesu,nitt_table;nitt_table2;nittdept_mech
+T0844,Rahul Roy,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,rahulroy,,,2026,2026,current,Dr. Rahul Roy;Dr.Rahul Roy,nitt_table;nittdept_mech
+T0845,S Suresh,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,ssuresh,,,2016,2026,current,Dr. S. Suresh;Dr.S SURESH;SURESH S,nitt_table;nitt_table2;nittdept_mech
+T0846,S Venkatachalapathy,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,svc,,,2016,2026,current,Dr. S. Venkatachalapathy;Dr.S.VENKATACHALAPATHY;VENKATACHALAPATHY S.,nitt_table;nitt_table2;nittdept_mech
+T0847,S P Sivapirakasam,NIT Trichy,Mechanical,MECHANICAL,Professor (HAG),True,True,spshivam,,,2016,2026,current,Dr. S.P. Sivapirakasam;Dr.S.P.SIVAPIRAKASAM;SIVAPIRAKASAM S P,nitt_table;nitt_table2;nittdept_mech
+T0848,Sarvesh Kashyap,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,skashyap,,,2026,2026,current,Dr. Sarvesh Kashyap;Dr.Sarvesh Kashyap,nitt_table;nittdept_mech
+T0849,Saurav Kumar Dutta,NIT Trichy,Mechanical,Mechanical,Assistant Professor,True,True,sauravkdutta,,,2025,2026,current,Dr. Saurav Kumar Dutta;Dr.SAURAV KUMAR DUTTA,nitt_table;nitt_table2;nittdept_mech
+T0850,Sreejith Mohan,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,sreejith;sreejith@nitt.edu,,,2021,2026,current,Dr. Sreejith Mohan;Dr.SREEJITH MOHAN,nitt_table;nitt_table2;nittdept_mech
+T0851,Suman Dutta,NIT Trichy,Mechanical,Mechanical,Assistant Professor,True,True,suman,,,2025,2026,current,Dr. Suman Dutta;Dr.SUMAN DUTTA,nitt_table;nitt_table2;nittdept_mech
+T0852,T Ramesh,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,tramesh,,,2016,2026,current,Dr. T. Ramesh;Dr.T.RAMESH;RAMESH.T.,nitt_table;nitt_table2;nittdept_mech
+T0853,T Suthakar,NIT Trichy,Mechanical,MECHANICAL,Associate Professor,True,True,suthakar,,,2016,2022,former,Dr. T. Suthakar;Dr.T.SUTHAKAR;SUTHAKAR T.,nitt_table;nitt_table2;nittdept_mech
+T0854,Tara Chand Kumar Maurya,NIT Trichy,Mechanical,mech,Assistant Professor,True,True,tmaruya,,,2026,2026,current,Dr. Tara Chand Kumar Maurya;Dr.Tara Chand Kumar Maurya,nitt_table;nittdept_mech
+T0855,V Arul Mozhi Selvan,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,arulmozhi,,,2016,2026,current,ARUL MOZHI SELVAN.V.;Dr. V. Arul Mozhi Selvan;Dr.V.ARUL MOZHI SELVAN,nitt_table;nitt_table2;nittdept_mech
+T0856,Vedharaj Sivasankaralingam,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,vedha,,,2019,2026,current,Dr. Vedharaj S;Dr. Vedharaj Sivasankaralingam;Dr.VEDHARAJ S,nitt_table;nitt_table2;nittdept_mech
+T0857,Ashok Kumar Nallathambi,NIT Trichy,Mechanical,Mechanical,Assistant Professor,True,True,nashok,,,2019,2026,current,Dr. Ashok Kumar Nallathambi;Dr.-Ing. Ashok Kumar Nallathambi;Dr.ASHOK KUMAR NALLATHAMBI,nitt_table;nitt_table2;nittdept_mech
+T0858,Harish Kruthiventi Ss,NIT Trichy,Mechanical,MECHANICAL,Assistant Professor,True,True,harish,,,2019,2026,current,Dr. Harish SS;Dr. K S S Harish;Dr.HARISH KRUTHIVENTI SS;Dr.HARISH SS,nitt_table;nitt_table2;nittdept_mech
+T0859,K Pannir Selvam,NIT Trichy,Mechanical,MECHANICAL,Associate Professor,True,True,pannir,,,2016,2026,current,Dr. K. Pannirselvam;Dr.K.PANNIR SELVAM;Dr.K.PANNIRSELVAM;PANNIR SELVAM K,nitt_table;nitt_table2;nittdept_mech
+T0860,Nanda Naik Korra,NIT Trichy,Mechanical,MECHANICAL,Associate Professor,True,True,naik,,,2016,2026,current,Dr. Nanda Naik Korra;Dr.NANDA NAIK KORRA;Mr. Nanda Naik Korra;NANDANAIK KORRA,nitt_table;nitt_table2;nittdept_mech
+T0861,V Mariappan,NIT Trichy,Mechanical,MECHANICAL,Professor,True,True,vmari,,,2016,2026,current,Dr. V. Mariappan;Dr.V.MARIAPPAN;MARIAPPAN.V.;Mr. V. Mariappan,nitt_table;nitt_table2;nittdept_mech
+T0862,M Shahul Hameed,NIT Trichy,Mechanical,MECHANICAL,Associate Professor,True,True,hameed,,,2016,2026,current,Dr. M. Shahul Hameed;Dr. M.SHAHUL HAMEED;M.SHAHUL HAMEED;Prof. M. Shahul Hameed;SHAHUL HAMEED M.,nitt_table;nitt_table2;nittdept_mech
+T0863,S S Arulappan,NIT Trichy,Mechanical,MECHANICAL,Associate Professor,True,True,sarul,,,2016,2023,former,ARULAPPAN S.S.;Prof. S.S. Arulappan;S.S.ARULAPPAN,nitt_table;nitt_table2;nittdept_mech
+T0864,Rajendrakumar M,NIT Trichy,Physical Education,PHY. EDU. DEPT.,Director,True,False,mrkumar,,,2016,2022,former,RAJENDRAKUMAR M,nitt_table
+T0865,,NIT Trichy,Physics,physics,Professor,True,True,,,,2016,2016,former,Dr.,nittdept_physics
+T0866,,NIT Trichy,Physics,physics,Professor,True,True,,,,2017,2017,former,Dr.,nittdept_physics
+T0867,A Chandra Bose,NIT Trichy,Physics,PHYSICS,Professor,True,True,acbose,,,2016,2026,current,CHANDRA BOSE A;Dr. A. Chandra Bose;Dr.A.CHANDRA BOSE,nitt_table;nitt_table2;nittdept_physics
+T0868,B Karthikeyan,NIT Trichy,Physics,PHYSICS,Professor,True,True,bkarthik,,,2016,2026,current,Dr. B. Karthikeyan;Dr.B.KARTHIKEYAN;KARTHIKEYAN B,nitt_table;nitt_table2;nittdept_physics
+T0869,J Hemalatha,NIT Trichy,Physics,PHYSICS,Professor (HAG),True,True,hemalatha,,,2016,2026,current,Dr. J. Hemalatha;Dr.J.HEMALATHA;HEMALATHA.J.,nitt_table;nitt_table2;nittdept_physics
+T0870,Joy Prakash Das,NIT Trichy,Physics,physics,Faculty,True,True,joyprakash,,,2023,2026,current,Dr. Joy Prakash Das;Dr.JOY PRAKASH DAS,nitt_table2;nittdept_physics
+T0871,M Ashok,NIT Trichy,Physics,PHYSICS,Professor,True,True,ashokm,,,2016,2026,current,ASHOK.M.;Dr. M. Ashok;Dr.M.ASHOK,nitt_table;nitt_table2;nittdept_physics
+T0872,M C Santhosh Kumar,NIT Trichy,Physics,PHYSICS,Professor,True,True,santhoshmc,,,2016,2026,current,Dr. M. C. Santhoshkumar;Dr. M.C. Santhosh Kumar;Dr.M.C.SANTHOSH KUMAR;SANTHOSH KUMAR.M.C.,nitt_table;nitt_table2;nittdept_physics
+T0873,N Baskaran,NIT Trichy,Physics,PHYSICS,Professor,True,True,nbaski,,,2016,2026,current,BASKARAN N;Dr. N. Baskaran;Dr.N.BASKARAN,nitt_table;nitt_table2;nittdept_physics
+T0874,N V Giridharan,NIT Trichy,Physics,PHYSICS,Professor,True,True,giri,,,2016,2026,current,Dr. N. V. Giridharan;Dr. N.V. Giridharan;Dr.N.V.GIRIDHARAN;GIRIDHARAN N V,nitt_table;nitt_table2;nittdept_physics
+T0875,R Justin Joseyphus,NIT Trichy,Physics,PHYSICS,Professor,True,True,rjustinj,,,2016,2026,current,Dr. R. Justin Joseyphus;Dr.R.JUSTIN JOSEYPHUS;JUSTIN JOSEYPHUS R,nitt_table;nitt_table2;nittdept_physics
+T0876,R Nagalakshmi,NIT Trichy,Physics,PHYSICS,Professor,True,True,nagalakshmi,,,2016,2026,current,Dr. R. Nagalakshmi;Dr.R.NAGALAKSHMI;NAGALAKSHMI R,nitt_table;nitt_table2;nittdept_physics
+T0877,R Sankaranarayanan,NIT Trichy,Physics,PHYSICS,Professor,True,True,sankar,,,2016,2026,current,Dr. R. Sankaranarayanan;Dr.R.SANKARANARAYANAN;SANKARANARAYANAN.R.,nitt_table;nitt_table2;nittdept_physics
+T0878,S Manivannan,NIT Trichy,Physics,PHYSICS,Professor,True,True,ksmani,,,2016,2026,current,Dr. S. Manivannan;Dr.S.MANIVANNAN;MANIVANNAN S,nitt_table;nitt_table2;nittdept_physics
+T0879,Somnath Mukhopadhyay,NIT Trichy,Physics,physics,Assistant Professor,True,True,somnath,,,2021,2026,current,Dr. Somnath Mukhopadhyay;Dr.SOMNATH MUKHOPADHYAY;Dr.Somnath Mukhopadhyay;Dr.SomnathMukhopadhyay,nitt_table;nitt_table2;nittdept_physics
+T0880,Thirukkumaran K,NIT Trichy,Physics,physics,Assistant Professor,True,True,kkumaran,,,2025,2026,current,Dr. Thirukkumaran K;Dr.THIRUKKUMARAN K,nitt_table;nitt_table2;nittdept_physics
+T0881,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,physics,Assistant Professor,True,True,venkata,,,2021,2026,current,Dr. Venkata Suryanarayana Mummidi;Dr.VENKATA SURYANARAYANA MUMMIDI;Dr.VenkataMummidi,nitt_table;nitt_table2;nittdept_physics
+T0882,Annapureddy Venkateshwarlu,NIT Trichy,Physics,physics,Assistant Professor,True,True,annp,,,2019,2026,current,Dr.ANNAPUREDDY VENKATESHWARLU;Dr.Annapureddy Venkateshwarlu,nitt_table;nitt_table2;nittdept_physics
+T0883,D Sasti Kumar,NIT Trichy,Physics,PHYSICS,Faculty,True,True,sasti,,,2016,2026,current,D. Sastikumar;Dr. D. Sastikumar;Dr.D.SASTI KUMAR;Dr.  D. Sastikumar;SASTI KUMAR D,nitt_table;nitt_table2;nittdept_physics
+T0884,N Gopala Krishnan,NIT Trichy,Physics,PHYSICS,Professor,True,True,ngk,,,2016,2026,current,Dr. N. Gopalakrishnan;Dr. N. Gopalakrishnan (HOD);Dr.N.GOPALA KRISHNAN;GOPALAKRISHNAN N,nitt_table;nitt_table2;nittdept_physics
+T0885,Prabal Singh Verma,NIT Trichy,Physics,Physics,Assistant Professor,True,True,psverma,,,2019,2019,former,Dr.PRABAL SINGH VERMA,nitt_table2
+T0886,Takhellambam Sonamani Singh,NIT Trichy,Physics,physics,Assistant Professor,True,True,takhel;takhel@nitt.edu,,,2021,2026,current,Dr. T. Sonamani Singh;Dr.TAKHELLAMBAM SONAMANI SINGH;Dr.TAKHELLAMBAMSINGH,nitt_table;nitt_table2;nittdept_physics
+T0887,Department Head,NIT Trichy,Production,prod,Faculty,True,True,,,,2016,2017,former,DEPARTMENT HEAD,nittdept_prod
+T0888,A Noorul Haq,NIT Trichy,Production,PRODUCTION,Professor (HAG),True,True,anhaq,,,2016,2022,former,Dr. A. Noorul Haq;Dr.A.NOORUL HAQ;NOORUL HAQ A.,nitt_table;nitt_table2;nittdept_prod
+T0889,Alwin Varghese,NIT Trichy,Production,Production,Assistant Professor,True,True,alwin,,,2025,2026,current,Dr. Alwin Varghese;Dr.ALWIN VARGHESE,nitt_table;nitt_table2;nittdept_prod
+T0890,C Sathiya Narayanan,NIT Trichy,Production,PRODUCTION,Professor,True,True,csathiya,,,2016,2026,current,Dr. C. Sathiya narayanan;Dr.C.SATHIYA NARAYANAN;SATHIYA NARAYANAN.C.,nitt_table;nitt_table2;nittdept_prod
+T0891,D Lenin Singaravelu,NIT Trichy,Production,PRODUCTION,Professor,True,True,dlenin,,,2016,2026,current,Dr. D. Lenin Singaravelu;Dr.D.LENIN SINGARAVELU;LENIN SINGARAVELU D,nitt_table;nitt_table2;nittdept_prod
+T0892,Deepak Deelip Patil,NIT Trichy,Production,Production,Assistant Professor,True,True,deepakdeelip,,,2023,2025,former,Dr. Deepak Deelip Patil;Dr.DEEPAK DEELIP PATIL,nitt_table2;nittdept_prod
+T0893,Dinesh S,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Dr. Dinesh. S,nittdept_prod
+T0894,J Jerald,NIT Trichy,Production,PRODUCTION,Professor,True,True,jerald,,,2016,2026,current,Dr. J. Jerald;Dr.JERALD.J;JERALD J,nitt_table;nitt_table2;nittdept_prod
+T0895,K Panneerselvam,NIT Trichy,Production,PRODUCTION,Professor,True,True,kps,,,2016,2026,current,Dr. K. Panneerselvam;Dr.K.PANNEERSELVAM;PANNEERSELVAM.K.,nitt_table;nitt_table2;nittdept_prod
+T0896,Kumanan Somasundaram,NIT Trichy,Production,PRODUCTION,Professor (HAG),True,True,kumanan,,,2016,2026,current,Dr. Kumanan S;Dr. Kumanan Somasundaram;Dr. S. Kumanan;Dr.S.KUMANAN;KUMANAN S,nitt_table;nitt_table2;nittdept_prod
+T0897,Mallikarjuna,NIT Trichy,Production,Production,Assistant Professor,True,True,mallik,,,2023,2026,current,Dr. Mallikarjuna;Dr.MALLIKARJUNA,nitt_table;nitt_table2;nittdept_prod
+T0898,Matruprasad Rout,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,matruprasad,,,2021,2026,current,Dr. Matruprasad Rout;Dr.MATRUPRASAD ROUT;Dr.Matruprasad Rout;Dr.MatruprasadRout,nitt_table;nitt_table2;nittdept_prod
+T0899,N S Balaji,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Dr. N.S. Balaji,nittdept_prod
+T0900,P Asokan,NIT Trichy,Production,PRODUCTION,Professor (HAG),True,True,asokan,,,2016,2026,current,ASOKAN P.;Dr. P. Asokan;Dr.P.ASOKAN,nitt_table;nitt_table2;nittdept_prod
+T0901,P Parthiban,NIT Trichy,Production,PRODUCTION,Professor,True,True,parthiban,,,2016,2026,current,Dr. P. Parthiban;Dr.P.PARTHIBAN;PARTHIBAN.P.,nitt_table;nitt_table2;nittdept_prod
+T0902,P Sathiya,NIT Trichy,Production,PRODUCTION,Professor,True,True,psathiya,,,2016,2026,current,Dr. P. Sathiya;Dr.P.SATHIYA;SATHIYA.P.,nitt_table;nitt_table2;nittdept_prod
+T0903,P Senthil,NIT Trichy,Production,PRODUCTION,Professor,True,True,senthil,,,2016,2026,current,Dr. P. Senthil;Dr.P.SENTHIL;SENTHIL.P.,nitt_table;nitt_table2;nittdept_prod
+T0904,Pintu Kumar,NIT Trichy,Production,Production,Assistant Professor,True,True,pintu,,,2023,2026,current,Dr. Pintu Kumar;Dr.PINTU KUMAR,nitt_table;nitt_table2;nittdept_prod
+T0905,Prakash Kumar,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,prakashkumar;prakashkumar@nitt.edu,,,2021,2026,current,Dr. Prakash Kumar;Dr.PRAKASH KUMAR;Dr.PRAKASHKUMAR,nitt_table;nitt_table2;nittdept_prod
+T0906,R Jeyapaul,NIT Trichy,Production,PRODUCTION,Professor,True,True,jeyapaul,,,2016,2026,current,Dr. R. Jeyapaul;Dr.R.JEYAPAUL;JEYAPAUL.R.,nitt_table;nitt_table2;nittdept_prod
+T0907,R Narayanasamy,NIT Trichy,Production,PRODUCTION,Professor,True,True,narayan,,,2016,2022,former,Dr. R. Narayanasamy;Dr.NARAYANASAMY R;NARAYANASAMY R.,nitt_table;nitt_table2;nittdept_prod
+T0908,S Prasanna Venkatesan,NIT Trichy,Production,PRODUCTION,Professor,True,True,prasanna,,,2016,2026,current,Dr. S. Prasanna Venkatesan;Dr.S.PRASANNA VENKATESAN.S;PRASANNA VENKATESAN.S.;S.PRASANNA VENKATESAN.S,nitt_table;nitt_table2;nittdept_prod
+T0909,S Vinodh,NIT Trichy,Production,PRODUCTION,Professor,True,True,vinodh,,,2016,2026,current,Dr. S. Vinodh;Dr.S.VINODH;VINODH S.,nitt_table;nitt_table2;nittdept_prod
+T0910,Santosh Kumar Mishra,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,santosh;santosh@nitt.edu,,,2021,2026,current,Dr. Santosh Kumar Mishra;Dr.SANTOSH KUMAR MISHRA;Dr.SANTOSHMISHRA,nitt_table;nitt_table2;nittdept_prod
+T0911,T Jagadesh,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,jagadesh;jagadesh@nitt.edu,,,2021,2026,current,Dr. T. Jagadesh;Dr.JAGADESH T;Dr.JAGADESHT,nitt_table;nitt_table2;nittdept_prod
+T0912,T Selvaraj,NIT Trichy,Production,PRODUCTION,Professor,True,True,tselva,,,2016,2022,former,Dr. T. Selvaraj;Dr.T.SELVARAJ;SELVARAJ T.,nitt_table;nitt_table2;nittdept_prod
+T0913,V Anandakrishnan,NIT Trichy,Production,PRODUCTION,Professor,True,True,krishna,,,2016,2026,current,ANANDAKRISHNAN V.;Dr. V. Anandakrishnan;Dr.V.ANANDAKRISHNAN;Dr.V.ANANDAKRISHNANA,nitt_table;nitt_table2;nittdept_prod
+T0914,V Senthilkumar,NIT Trichy,Production,PRODUCTION,Professor,True,True,vskumar,,,2016,2026,current,Dr. V. Senthilkumar;Dr.V.SENTHILKUMAR;SENTHILKUMAR V,nitt_table;nitt_table2;nittdept_prod
+T0915,Vasu M,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,mvasu;mvasu@nitt.edu,,,2021,2026,current,Dr. Vasu M;Dr.VASU M;Dr.VASUM,nitt_table;nitt_table2;nittdept_prod
+T0916,Vimal K E K,NIT Trichy,Production,Production,Assistant Professor,True,True,vimal,,,2023,2026,current,Dr. Vimal K.E.K;Dr.VIMAL K.E.K,nitt_table;nitt_table2;nittdept_prod
+T0917,Vineet Kumar Yadav,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,vineet;vineet@nitt.edu,,,2021,2026,current,Dr. Vineet Kumar Yadav;Dr.VINEET KUMAR YADAV;Dr.VINEET YADAV,nitt_table;nitt_table2;nittdept_prod
+T0918,M Durai Selvam,NIT Trichy,Production,PRODUCTION,Professor (HAG),True,True,durai,,,2016,2026,current,DURAI SELVAM M;Dr. M. Duraiselvam;Dr.-Ing. M. Duraiselvam;Dr.M.DURAI SELVAM,nitt_table;nitt_table2;nittdept_prod
+T0919,Praveen Jeyachandran,NIT Trichy,Production,prod,Assistant Professor,True,True,praveen,,,2026,2026,current,Dr.Praveen Jeyachandran,nitt_table;nittdept_prod
+T0920,Satheeshkumar V,NIT Trichy,Production,PRODUCTION,Assistant Professor,True,True,satheeshv,,,2019,2026,current,Dr Sateeshkumar V;Dr Satheeshkumar V;Dr.SATHEESHKUMAR V,nitt_table;nitt_table2;nittdept_prod
+T0921,Heads Of Department Yester Years,NIT Trichy,Production,prod,Faculty,True,True,,,,2016,2017,former,HEADS OF DEPARTMENT - YESTER YEARS,nittdept_prod
+T0922,Justus Panicker C T,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. Justus Panicker. C.T,nittdept_prod
+T0923,Kavin Selvaraj,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. Kavin Selvaraj,nittdept_prod
+T0924,Murugabalaji V,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. Murugabalaji.V,nittdept_prod
+T0925,Rajesh R,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. Rajesh R,nittdept_prod
+T0926,S John Vincent Jesuraj,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. S. John Vincent Jesuraj,nittdept_prod
+T0927,Simson D,NIT Trichy,Production,prod,Faculty,True,True,,,,2019,2019,former,Mr. Simson. D,nittdept_prod
+T0928,A K Bakthavatsalam,NIT Trichy,Training & Placement,TRG & PLACEMENT,Professor (HAG),True,False,baktha,,,2016,2026,current,BAKTHAVATSALAM.A.K.;Dr.A.K.BAKTHAVATSALAM,nitt_table;nitt_table2

@@ -1,0 +1,120 @@
+institution,author_id,openalex_name,papers_at_nit,branches,years
+NIT Trichy,A5042972382,Gerard Deepak,92,"{'CSE': 79, 'Management': 1}",2018-2025
+NIT Trichy,A5037958365,Thangavel Mathimani,75,{'Energy & Environment': 73},2018-2024
+NIT Trichy,A5053639953,Jebiti Haribabu,54,{'Chemistry': 54},2016-2023
+NIT Trichy,A5112722948,R. Vijay,49,{'Production': 49},2016-2025
+NIT Trichy,A5026240517,Arasappan Rajesh Kannan,36,{'Mechanical': 36},2019-2023
+NIT Trichy,A5017261839,M. Srıdevı,36,{'CSE': 25},2017-2026
+NIT Trichy,A5057915950,R. Sowmya,35,"{'EEE': 28, 'Energy & Environment': 1}",2018-2023
+NIT Surathkal,A5045233466,Krishnan Chemmangat,33,{'EEE': 29},2016-2026
+NIT Trichy,A5060139290,K. Arun,32,{'Physics': 32},2016-2025
+NIT Surathkal,A5060488083,Aranganathan Viswanathan,30,{'Chemistry': 30},2017-2026
+NIT Surathkal,A5042855600,P. K. Akarsh,30,{'Civil': 21},2022-2026
+NIT Trichy,A5067995152,Padala Raja Shekar,28,{'Civil': 28},2022-2025
+NIT Trichy,A5103147423,R. Pramod,27,{'Mechanical': 26},2019-2024
+NIT Trichy,A5050027952,Santosh Kr. Mishra,25,{'Production': 22},2020-2026
+NIT Trichy,A5003000001,Sandeep Singh,25,{'Civil': 23},2020-2022
+NIT Surathkal,A5057811064,K K Girish,25,{'CSE': 25},2023-2026
+NIT Trichy,A5027903558,Godwin Glivin,24,"{'Energy & Environment': 23, 'Mechanical': 1}",2020-2024
+NIT Trichy,A5043909036,Nrusingha Charan Pradhan,24,{'ECE': 18},2019-2024
+NIT Trichy,A5057263540,Devanantham Abijith,24,{'Civil': 21},2018-2025
+NIT Surathkal,A5083966443,Praveen Naik,23,{'Chemistry': 20},2017-2023
+NIT Surathkal,A5055792064,Saleemsab Doddamani,23,{'Mechanical': 22},2022-2026
+NIT Surathkal,A5035897627,Banavath Shiva Naik,23,{'EEE': 21},2017-2024
+NIT Surathkal,A5068458271,Princy Maria Paul,23,{'ECE': 8},2017-2025
+NIT Trichy,A5109576846,P. Manojkumar,22,{'MME': 22},2020-2024
+NIT Surathkal,A5060923769,Bethi Pardhasaradhi,22,{'ECE': 4},2020-2024
+NIT Trichy,A5047096291,Praveen SV,22,"{'Management': 9, 'CSE': 1}",2020-2023
+NIT Surathkal,A5086221337,Navya Subray Bhat,22,{'Chemistry': 22},2019-2024
+NIT Surathkal,A5029540001,Sunil Mandal,22,{'EEE': 5},2022-2026
+NIT Trichy,A5077399407,Arvind Kumar,22,{'ECE': 18},2016-2019
+NIT Surathkal,A5077601340,K. Mahendra,21,{'Physics': 19},2017-2025
+NIT Surathkal,A5103119981,Karthik S. Bhat,21,"{'Physics': 20, 'Mechanical': 3}",2017-2026
+NIT Trichy,A5066442030,S. Vijaya,21,"{'Chemistry': 20, 'Energy & Environment': 1}",2016-2022
+NIT Trichy,A5016599626,S.A. Srinivasan,21,"{'MME': 10, 'Chemical': 1}",2017-2024
+NIT Surathkal,A5025131882,Ramesh Potnuri,20,{'Chemical': 20},2021-2025
+NIT Trichy,A5034969431,Pujari Venkata Yeswanth,20,{'ECE': 19},2022-2025
+NIT Surathkal,A5074099958,Bharath Kumar Shanmugam,20,"{'Mining': 16, 'Mechanical': 1}",2019-2022
+NIT Surathkal,A5089181845,Manu K. Sajan,20,{'Civil': 13},2021-2026
+NIT Surathkal,A5066638350,Vishwas Mahesh,20,"{'Mechanical': 18, 'MME': 1}",2018-2024
+NIT Surathkal,A5062070202,Saravana Prakash P,20,{'EEE': 12},2016-2020
+NIT Trichy,A5002520213,Marshal Raj,20,{'ECE': 14},2018-2021
+NIT Trichy,A5043035750,Divya Chaturvedi,20,{'ECE': 14},2017-2019
+NIT Trichy,A5091914783,J. Kaarthik,19,{'Physics': 19},2020-2025
+NIT Surathkal,A5013242949,Babita Sah,19,{'Civil': 15},2023-2026
+NIT Trichy,A5040103332,Puthiyavalappil Rasin,19,{'Chemistry': 19},2022-2025
+NIT Trichy,A5038515692,Amruthaluru Saikiran,19,{'MME': 18},2018-2022
+NIT Trichy,A5049460406,Srividya Swaminathan,19,{'Chemistry': 19},2019-2023
+NIT Trichy,A5087406990,Rohit Agrawal,19,{'Production': 18},2017-2022
+NIT Surathkal,A5079313415,Sunaina S. Patil,19,"{'Chemical': 18, 'Energy & Environment': 1}",2017-2025
+NIT Trichy,A5112880608,S Swathi,19,{'Physics': 19},2019-2024
+NIT Surathkal,A5052910368,Kancharapu Aditya,19,{'EEE': 18},2020-2024
+NIT Trichy,A5073998972,Leelambar Singh,18,{'Civil': 16},2018-2022
+NIT Trichy,A5114047251,Madappa C. Maridevaru,18,{'Chemistry': 18},2020-2026
+NIT Trichy,A5068076564,Jesudasan Jacinth Jennifer,18,{'Civil': 15},2018-2022
+NIT Trichy,A5059909347,Balimidi Mallikarjuna,18,{'EEE': 12},2016-2019
+NIT Trichy,A5002105595,Dorothy Priyanka Dorairaj,18,{'Chemistry': 18},2021-2024
+NIT Surathkal,A5075991199,A. Naveena Kumara,18,{'Physics': 17},2018-2025
+NIT Trichy,A5111194424,Atheena Pramod,18,{'Physics': 16},2023-2026
+NIT Surathkal,A5053797644,Robbi Vivek Vardhan,18,{'MME': 17},2018-2025
+NIT Surathkal,A5010793684,K. Brijesh,18,{'Physics': 18},2018-2026
+NIT Surathkal,A5000130750,Makesh Mohan,18,{'Physics': 15},2017-2022
+NIT Trichy,A5023009661,U D Remya,18,{'Physics': 18},2020-2024
+NIT Surathkal,A5012795686,N. Sandeep,18,{'EEE': 18},2016-2020
+NIT Surathkal,A5094137933,M Muniyasamy,17,{'Mathematics': 10},2023-2026
+NIT Surathkal,A5079634639,Khyamling A. Parane,17,{'CSE': 13},2016-2024
+NIT Surathkal,A5061986179,Naganna Chetty,17,{'Management': 4},2018-2022
+NIT Trichy,A5048939161,Anurag Kumar Singh,17,{'Physics': 15},2023-2026
+NIT Trichy,A5078114975,Roja Vadlamudi,17,{'ECE': 15},2019-2023
+NIT Surathkal,A5037149776,Shreeganesh Subraya Hegde,17,{'Chemistry': 17},2021-2026
+NIT Surathkal,A5076771617,T. S. Ashwin,17,{'Information Technology': 10},2016-2021
+NIT Surathkal,A5082159439,Pavankumar R. Sondar,17,{'MME': 17},2020-2025
+NIT Trichy,A5013428925,Biny R. Wiston,17,{'Physics': 15},2018-2025
+NIT Trichy,A5063623844,M. Varatharajulu,17,"{'Production': 16, 'Mechanical': 1}",2020-2024
+NIT Trichy,A5009145958,Rathinavelu Sokkalingam,17,{'MME': 16},2017-2022
+NIT Trichy,A5004062709,Sheeba Narayanan,17,{'Chemical': 14},2017-2025
+NIT Trichy,A5102920065,Anju Thomas,17,{'ECE': 12},2020-2026
+NIT Trichy,A5076427499,Vishnunarayanan Namboothiri Vadakkedathu Palakkeezhillam,17,{'Chemistry': 17},2019-2025
+NIT Trichy,A5032103196,P. Vivekanandhan,17,{'MME': 17},2016-2024
+NIT Trichy,A5113885414,A. Vallimanalan,17,{'MME': 14},2016-2025
+NIT Trichy,A5074501132,Susaimanickam Anto,17,{'Energy & Environment': 17},2019-2026
+NIT Trichy,A5022658570,Shanmugam Boomadevi,17,{'Physics': 16},2016-2022
+NIT Trichy,A5066678533,B Vinod Kumar,17,{'EEE': 15},2023-2025
+NIT Surathkal,A5070623559,Bhukya Nageswar Rao,17,{'EEE': 16},2020-2024
+NIT Trichy,A5087781749,Rajesh Ittamalla,16,{'Management': 9},2020-2022
+NIT Trichy,A5056381857,Vipin Manakkadan,16,{'Chemistry': 16},2022-2025
+NIT Trichy,A5025972822,E. Lokeshkumar,16,{'MME': 16},2020-2024
+NIT Trichy,A5001407753,S. A. Gokula Krishnan,16,{'Chemical': 16},2020-2025
+NIT Trichy,A5027666176,M.A. Sundaramahalingam,16,{'Chemical': 16},2020-2026
+NIT Trichy,A5018358574,S.R. Athul,16,{'Physics': 16},2021-2025
+NIT Surathkal,A5058858689,Spoorthy Venkatesh,16,{'CSE': 11},2020-2025
+NIT Surathkal,A5050307366,Reddiprasad Reddivari,16,{'EEE': 15},2017-2021
+NIT Surathkal,A5008255266,Batchu Veena Vani,16,{'EEE': 14},2022-2026
+NIT Surathkal,A5046712015,C. L. Ahmed Rizwan,16,{'Physics': 15},2018-2025
+NIT Trichy,A5015155554,Reshma Kaimal,16,{'Chemistry': 16},2021-2026
+NIT Trichy,A5038566423,Nayak Ram,16,{'Physics': 16},2022-2026
+NIT Trichy,A5008578403,Krushna Kanth Varikuntla,16,{'ECE': 13},2017-2020
+NIT Surathkal,A5101703163,Madhusmita Das,16,{'Information Technology': 14},2021-2024
+NIT Surathkal,A5027506633,Degavath Vinod,16,{'Water Resources & Ocean': 15},2023-2026
+NIT Surathkal,A5092482328,Raja S. Thanumoorthy,16,{'Mechanical': 15},2023-2026
+NIT Trichy,A5066119454,Srinivasan Sundarrajan,15,"{'MME': 5, 'Mechanical': 1}",2016-2018
+NIT Trichy,A5022877453,Natesan Ayyanar,15,{'ECE': 10},2018-2021
+NIT Trichy,A5002061952,Mettu Goutham Reddy,15,{'ECE': 8},2022-2025
+NIT Trichy,A5040717719,P. Muhammed Shafi,15,{'Physics': 12},2016-2021
+NIT Trichy,A5066846471,Subramaniyan Prathipkumar,15,{'Physics': 6},2019-2023
+NIT Surathkal,A5027589443,K. K. Prabhakaran,15,{'EEE': 13},2016-2022
+NIT Surathkal,A5047522500,Augustine Samuel,15,{'MME': 13},2018-2026
+NIT Surathkal,A5091812650,Devadas Bhat Panemangalore,15,{'MME': 15},2021-2023
+NIT Surathkal,A5075941238,Kezia Buruga,15,{'Chemical': 15},2017-2024
+NIT Trichy,A5009177797,S. Chrisben Gladson,15,{'ECE': 10},2016-2021
+NIT Trichy,A5101603716,M. Rahul,15,{'Mechanical': 13},2019-2025
+NIT Trichy,A5101797740,Shreya Paul,15,{'EEE': 13},2020-2025
+NIT Surathkal,A5053188794,Kavya S. Keremane,15,{'Chemistry': 14},2018-2025
+NIT Surathkal,A5093734130,P. Mukesh,15,{'Physics': 15},2023-2026
+NIT Surathkal,A5116081925,Anusha Hegde H,15,{'CSE': 15},2024-2026
+NIT Surathkal,A5032798713,Ganesan Narendran,15,{'Mechanical': 14},2016-2023
+NIT Surathkal,A5057629751,Doma Hemanth Kumar,15,{'Civil': 11},2022-2026
+NIT Surathkal,A5101660113,Subodh Kumar,15,"{'Civil': 8, 'MME': 2}",2020-2026
+NIT Surathkal,A5055129016,Manazhy Rashmi,15,"{'Information Technology': 11, 'Mathematics': 1}",2020-2024
+NIT Surathkal,A5091822443,Anjana Anandan Vannathan,15,{'Chemistry': 13},2019-2023
+NIT Surathkal,A5083932123,Pravin Bhaskar Ramteke,15,{'CSE': 1},2016-2020

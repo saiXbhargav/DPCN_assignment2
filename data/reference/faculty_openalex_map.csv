@@ -1,0 +1,1487 @@
+faculty_id,author_id,institution,faculty_name,openalex_name,faculty_branch,openalex_branches,name_score,branch_score,orcid_match,papers_at_nit,first_year,last_year,student_name_clash,method,decision,score
+S0001,A5101689463,NIT Surathkal,B Ravi,Bhallamudi Ravi,,{},2,0,False,3,2024,2026,False,name,accepted,2
+S0014,A5009427723,NIT Surathkal,Beerappar Chandavarkar,B. R. Chandavarkar,CSE,{'CSE': 73},3,2,True,111,2016,2026,False,orcid,accepted,15
+S0021,A5004440264,NIT Surathkal,Basavaraj Talawar,Basavaraj Talawar,CSE,"{'CSE': 38, 'Architecture': 4}",3,2,False,49,2016,2026,False,name,accepted,5
+S0021,A5113685089,NIT Surathkal,Basavaraj Talawar,Basavaraj Talwar,CSE,{'CSE': 1},1,2,False,1,2022,2022,False,name,accepted,3
+S0022,A5062271000,NIT Surathkal,Biswajit R Bhowmik,Biswajit R. Bhowmik,CSE,{'CSE': 102},3,2,True,104,2020,2026,False,orcid,accepted,15
+S0022,A5057312988,NIT Surathkal,Biswajit R Bhowmik,DR. BISWAJIT BHOWMIK,CSE,{'CSE': 6},1,2,False,9,2026,2026,False,override,accepted,3
+S0023,A5027824010,NIT Surathkal,Jeny Rajan,Jeny Rajan,CSE,"{'CSE': 68, 'ECE': 1}",3,2,True,71,2016,2026,False,orcid,accepted,15
+S0024,A5054313614,NIT Surathkal,Mahendra Pratap Singh,Mahendra Pratap Singh,CSE,{'CSE': 14},3,2,True,14,2016,2026,False,orcid,accepted,15
+S0024,A5137705988,NIT Surathkal,Mahendra Pratap Singh,Mahendra Pratap Singh,CSE,{'CSE': 1},3,2,True,4,2026,2026,False,orcid,accepted,15
+S0024,A5141044112,NIT Surathkal,Mahendra Pratap Singh,Mahendra Pratap Singh,CSE,{'CSE': 2},3,2,False,2,2026,2026,False,name,accepted,5
+S0025,A5052570333,NIT Surathkal,Manjanna B,Manjanna Basappa,CSE,{'CSE': 1},2,2,False,3,2025,2026,False,name,accepted,4
+S0027,A5036358248,NIT Surathkal,Mohit P Tahiliani,Mohit P. Tahiliani,CSE,{'CSE': 33},3,2,False,63,2016,2026,False,name,accepted,5
+S0030,A5102941586,NIT Surathkal,Saumya Hegde,Saumya Hegde,CSE,"{'CSE': 9, 'Mathematics': 1}",3,2,False,14,2017,2026,False,name,accepted,5
+S0031,A5003354301,NIT Surathkal,Shridhar Sanshi,Shridhar Sanshi,CSE,"{'CSE': 11, 'Information Technology': 4}",3,2,False,16,2017,2026,False,name,accepted,5
+S0032,A5032447000,NIT Surathkal,Sourav Kanti Addya,Sourav Kanti Addya,CSE,{'CSE': 37},3,2,True,51,2020,2026,False,orcid,accepted,15
+S0039,A5038650948,NIT Surathkal,M Venkatesan,M. Venkatesan,CSE,{'CSE': 11},3,2,False,13,2018,2022,False,name,accepted,5
+S0039,A5081813420,NIT Surathkal,M Venkatesan,Mithra Venkatesan,CSE,{'CSE': 5},2,2,False,5,2020,2020,False,name,accepted,4
+S0039,A5103791023,NIT Surathkal,M Venkatesan,Meenakshisundaram Venkatesan,CSE,{'CSE': 1},2,2,False,1,2017,2017,False,name,accepted,4
+S0042,A5121772732,NIT Surathkal,Vani M,M. Vani,CSE,{'CSE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0042,A5059949087,NIT Surathkal,Vani M,M.P. Vani,CSE,{'CSE': 8},1,2,False,9,2017,2026,False,name,accepted,3
+S0046,A5036621212,NIT Surathkal,Alwyn Roshan Pais,Alwyn Roshan Pais,CSE,{'CSE': 57},3,2,True,78,2016,2026,False,orcid,accepted,15
+S0047,A5008134411,NIT Surathkal,Annappa,Basava Annappa,CSE,{'CSE': 69},1,2,True,80,2016,2026,False,orcid,accepted,13
+S0047,A5121924302,NIT Surathkal,Annappa,B. Annappa,CSE,{'CSE': 1},1,2,True,1,2026,2026,False,orcid,accepted,13
+S0047,A5111611012,NIT Surathkal,Annappa,Annappa Annappa,CSE,{'CSE': 1},1,2,False,2,2017,2018,False,name,accepted,3
+S0047,A5062665595,NIT Surathkal,Annappa,B. Annappa,CSE,{'CSE': 1},1,2,False,1,2026,2026,False,name,accepted,3
+S0048,A5137061506,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,{'CSE': 2},3,2,True,2,2026,2026,False,orcid,accepted,15
+S0048,A5069939036,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,"{'CSE': 81, 'Mathematics': 1}",3,2,False,117,2016,2025,False,name,accepted,5
+S0048,A5025040939,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,{'CSE': 4},3,2,False,4,2016,2025,False,name,accepted,5
+S0048,A5090532840,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,{'CSE': 3},3,2,False,3,2025,2025,False,name,accepted,5
+S0048,A5102735048,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,{'CSE': 2},3,2,False,2,2022,2026,False,name,accepted,5
+S0048,A5008707579,NIT Surathkal,Chandrasekaran K,K Chandrasekaran,CSE,{'CSE': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0048,A5155540534,NIT Surathkal,Chandrasekaran K,K. CHANDRASEKARAN,CSE,{'CSE': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0048,A5155832492,NIT Surathkal,Chandrasekaran K,K. Chandrasekaran,CSE,{'CSE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+S0049,A5059811306,NIT Surathkal,P Santhi Thilagam,P. Santhi Thilagam,CSE,{'CSE': 52},3,2,True,64,2016,2026,False,orcid,accepted,15
+S0050,A5046622313,NIT Surathkal,Shasidhar G Koolagudi,Shashidhar G. Koolagudi,CSE,{'CSE': 113},3,2,False,149,2016,2026,False,name,accepted,5
+S0050,A5021580162,NIT Surathkal,Shasidhar G Koolagudi,Koolagudi G. Shashidhar,CSE,{'CSE': 1},3,2,False,1,2017,2017,False,name,accepted,5
+S0050,A5049289213,NIT Surathkal,Shasidhar G Koolagudi,G.K. Shashidhar,CSE,{'CSE': 2},2,2,False,2,2018,2019,False,name,accepted,4
+S0050,A5095384420,NIT Surathkal,Shasidhar G Koolagudi,Shashidhar G. Kooolagudi,CSE,{'CSE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+S0050,A5153402284,NIT Surathkal,Shasidhar G Koolagudi,Shashidhar G Koolagudi,CSE,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0066,A5072137065,NIT Surathkal,D V R Murthy,D.V.R. Murthy,Chemical,{'Chemical': 3},3,2,False,3,2017,2023,False,name,accepted,5
+S0067,A5004357112,NIT Surathkal,B Ashraf Ali,Basheer Ashraf Ali,Chemical,{'Chemical': 5},2,2,False,5,2019,2022,False,name,accepted,4
+S0068,A5006461792,NIT Surathkal,Chinta Sankar Rao,Chinta Sankar Rao,Chemical,{'Chemical': 46},3,2,False,48,2019,2026,False,name,accepted,5
+S0070,A5044565566,NIT Surathkal,Jagannathan T K,Jagannathan T. Kalathi,Chemical,{'Chemical': 14},2,2,True,15,2017,2025,False,orcid,accepted,14
+S0071,A5018736720,NIT Surathkal,M Rajasekaran,Rajasekaran Manokaran,Chemical,{'Chemical': 1},2,2,False,1,2025,2025,False,name,accepted,4
+S0072,A5084196192,NIT Surathkal,Maneesh Kumar Poddar,Maneesh Kumar Poddar,Chemical,{'Chemical': 8},3,2,False,9,2019,2026,False,name,accepted,5
+S0073,A5012224588,NIT Surathkal,Mohan Lal Meena,Mohan Lal Meena,Chemical,{'Chemical': 6},3,2,False,6,2024,2026,False,name,accepted,5
+S0075,A5064071075,NIT Surathkal,Vaishakh Nair,Vaishakh Nair,Chemical,{'Chemical': 19},3,2,False,19,2019,2026,False,name,accepted,5
+S0076,A5067435608,NIT Surathkal,G Srinikethan,Govindan Srinikethan,Chemical,{'Chemical': 13},2,2,False,13,2017,2023,False,name,accepted,4
+S0076,A5052911844,NIT Surathkal,G Srinikethan,Srinikethan Govindan,Chemical,{'Chemical': 2},2,2,False,2,2018,2020,False,name,accepted,4
+S0079,A5038668047,NIT Surathkal,Hari Mahalingam,Hari Mahalingam,Chemical,{'Chemical': 13},3,2,False,13,2017,2025,False,name,accepted,5
+S0080,A5014431155,NIT Surathkal,Hari Prasad Dasari,Hari Prasad Dasari,Chemical,"{'Chemical': 43, 'MME': 1}",3,2,False,42,2016,2025,False,name,accepted,5
+S0081,A5049425888,NIT Surathkal,I Regupathi,Regupathi Iyyaswami,Chemical,{'Chemical': 51},2,2,False,51,2016,2025,False,name,accepted,4
+S0081,A5112046668,NIT Surathkal,I Regupathi,Iyyasamy Regupathi,Chemical,{'Chemical': 2},2,2,False,2,2017,2026,False,name,accepted,4
+S0081,A5112479499,NIT Surathkal,I Regupathi,Iyyasami Regupathi,Chemical,{'Chemical': 1},2,2,False,1,2019,2019,False,name,accepted,4
+S0082,A5005242036,NIT Surathkal,Keyur Raval,Keyur Raval,Chemical,{'Chemical': 31},3,2,True,32,2016,2026,False,orcid,accepted,15
+S0082,A5139044626,NIT Surathkal,Keyur Raval,Keyur Raval,Chemical,{'Chemical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0083,A5055518817,NIT Surathkal,M B Saidutta,M. B. Saidutta,Chemical,{'Chemical': 19},3,2,False,19,2016,2025,False,name,accepted,5
+S0083,A5012843867,NIT Surathkal,M B Saidutta,Saidutta M.B.,Chemical,{'Chemical': 2},3,2,False,3,2018,2021,False,name,accepted,5
+S0083,A5082073681,NIT Surathkal,M B Saidutta,Saidutta Malur Bharathaiyengar,Chemical,{'Chemical': 2},2,2,False,2,2021,2025,False,name,accepted,4
+S0083,A5058860346,NIT Surathkal,M B Saidutta,Saidutta Malur Bharthaiyengar,Chemical,{'Chemical': 1},2,2,False,1,2016,2016,False,name,accepted,4
+S0084,A5112069184,NIT Surathkal,P E Jagadeeshbabu,P. E. JagadeeshBabu,Chemical,{'Chemical': 29},3,2,True,30,2016,2026,False,orcid,accepted,15
+S0084,A5112634078,NIT Surathkal,P E Jagadeeshbabu,Jagadeeshbabu Ponnan Ettiyappan,Chemical,{'Chemical': 3},2,2,False,3,2022,2023,False,name,accepted,4
+S0084,A5153048730,NIT Surathkal,P E Jagadeeshbabu,Jagadeesh Babu Ponnan Ettiyappan,Chemical,{'Chemical': 2},1,2,False,2,2018,2020,False,name,accepted,3
+S0085,A5126215915,NIT Surathkal,Prasanna Belur D,Prasanna B D,Chemical,{'Chemical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0085,A5062194959,NIT Surathkal,Prasanna Belur D,Prasanna Devarbhat Belur,Chemical,{'Chemical': 53},2,2,False,53,2016,2026,False,name,accepted,4
+S0086,A5111793302,NIT Surathkal,Raj Mohan B,B. Raj Mohan,Chemical,{'Chemical': 3},3,2,False,3,2017,2019,False,name,accepted,5
+S0086,A5102629918,NIT Surathkal,Raj Mohan B,Raj Mohan B.,Chemical,{'Chemical': 1},3,2,False,1,2024,2024,False,name,accepted,5
+S0086,A5020716986,NIT Surathkal,Raj Mohan B,Raj Mohan Balakrishnan,Chemical,{'Chemical': 41},2,2,False,44,2016,2026,False,name,accepted,4
+S0087,A5017565255,NIT Surathkal,Vidya Shetty K,Shetty K. Vidya,Chemical,{'Chemical': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0087,A5073033601,NIT Surathkal,Vidya Shetty K,Vidya Shetty Kodialbail,Chemical,{'Chemical': 27},2,2,False,28,2016,2026,False,name,accepted,4
+S0088,A5109134984,NIT Surathkal,Ruben Sudhakar,D. Ruben Sudhakar,Chemical,{'Chemical': 4},1,2,False,4,2018,2021,False,name,accepted,3
+S0091,A5013647967,NIT Surathkal,Airody Vasudeva Adhikari,Airody Vasudeva Adhikari,Chemistry,{'Chemistry': 48},3,2,False,55,2016,2025,False,name,accepted,5
+S0093,A5064441888,NIT Surathkal,Beneesh P B,Beneesh Pattoorpady Babu,Chemistry,{'Chemistry': 14},2,2,True,17,2018,2026,False,orcid,accepted,14
+S0094,A5036838564,NIT Surathkal,Debashree Chakraborty,Debashree Chakraborty,Chemistry,{'Chemistry': 35},3,2,True,37,2018,2026,False,orcid,accepted,15
+S0095,A5089095149,NIT Surathkal,Lakshmi Vellanki,Vellanki Lakshmi,Chemistry,{'Chemistry': 6},3,2,False,9,2021,2026,False,name,accepted,5
+S0096,A5069956773,NIT Surathkal,Saikat Dutta,Saikat Dutta,Chemistry,{'Chemistry': 70},3,2,True,73,2017,2026,False,orcid,accepted,15
+S0096,A5113163977,NIT Surathkal,Saikat Dutta,Saikat Dutta,Chemistry,{'Chemistry': 6},3,2,True,6,2024,2026,False,orcid,accepted,15
+S0096,A5137857450,NIT Surathkal,Saikat Dutta,Saikat Dutta,Chemistry,{'Chemistry': 1},3,2,True,1,2026,2026,False,orcid,accepted,15
+S0096,A5077709942,NIT Surathkal,Saikat Dutta,Saikat Dutta,Chemistry,{'Chemistry': 3},3,2,False,3,2019,2020,False,name,accepted,5
+S0096,A5151055300,NIT Surathkal,Saikat Dutta,Saikat Dutta,Chemistry,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0097,A5026393841,NIT Surathkal,Sib Sankar Mal,Sib Sankar Mal,Chemistry,{'Chemistry': 83},3,2,True,86,2017,2026,False,orcid,accepted,15
+S0098,A5054362570,NIT Surathkal,Vijayendra S Shetti,Vijayendra S. Shetti,Chemistry,{'Chemistry': 8},3,2,True,9,2020,2026,False,orcid,accepted,15
+S0099,A5003045582,NIT Surathkal,Adka Nityananda Shetty,A. Nityananda Shetty,Chemistry,{'Chemistry': 49},3,2,False,52,2016,2026,False,name,accepted,5
+S0099,A5076865156,NIT Surathkal,Adka Nityananda Shetty,Nityananda A Shetty,Chemistry,{'Chemistry': 1},3,2,False,1,2021,2021,False,name,accepted,5
+S0099,A5136034482,NIT Surathkal,Adka Nityananda Shetty,A. Nityananda Shetty,Chemistry,{'Chemistry': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0099,A5042612532,NIT Surathkal,Adka Nityananda Shetty,Adka Nityanada Shetty,Chemistry,{'Chemistry': 5},1,2,False,5,2019,2025,False,name,accepted,3
+S0099,A5059293043,NIT Surathkal,Adka Nityananda Shetty,A. NityanandaShetty,Chemistry,{'Chemistry': 1},1,2,False,1,2020,2020,False,name,accepted,3
+S0099,A5112338896,NIT Surathkal,Adka Nityananda Shetty,ANityananda Shetty,Chemistry,{'Chemistry': 1},1,2,False,1,2017,2017,False,name,accepted,3
+S0100,A5076785150,NIT Surathkal,Ampar Chitharanjan Hegde,Ampar Chitharanjan Hegde,Chemistry,{'Chemistry': 42},3,2,False,55,2016,2026,False,name,accepted,5
+S0100,A5133891003,NIT Surathkal,Ampar Chitharanjan Hegde,A Chitharanjan Hegde,Chemistry,{'Chemistry': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0101,A5089174724,NIT Surathkal,Arun Mohan Isloor,Arun Mohan Isloor,Chemistry,{'Chemistry': 75},3,2,False,87,2016,2026,False,name,accepted,5
+S0102,A5090974967,NIT Surathkal,Badekai Ramachandra Bhat,Badekai Ramachandra Bhat,Chemistry,{'Chemistry': 76},3,2,True,78,2016,2026,False,orcid,accepted,15
+S0103,A5074868844,NIT Surathkal,Darshak R Trivedi,Darshak R. Trivedi,Chemistry,{'Chemistry': 55},3,2,True,62,2016,2026,False,orcid,accepted,15
+S0104,A5055019965,NIT Surathkal,Denthaje Krishna Bhat,D. Krishna Bhat,Chemistry,{'Chemistry': 84},3,2,True,96,2016,2026,False,orcid,accepted,15
+S0104,A5015437561,NIT Surathkal,Denthaje Krishna Bhat,Krishna Bhat D,Chemistry,{'Chemistry': 1},3,2,False,1,2017,2017,False,name,accepted,5
+S0104,A5054617208,NIT Surathkal,Denthaje Krishna Bhat,Krishna Bhat Denthaje,Chemistry,{'Chemistry': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0105,A5060002037,NIT Surathkal,Udaya Kumar Dalimba,Udaya Kumar D.,Chemistry,{'Chemistry': 4},2,2,False,4,2019,2026,False,name,accepted,4
+S0105,A5112408975,NIT Surathkal,Udaya Kumar Dalimba,D. Udaya Kumar,Chemistry,{'Chemistry': 2},2,2,False,2,2022,2023,False,name,accepted,4
+S0105,A5061442259,NIT Surathkal,Udaya Kumar Dalimba,D Udaya Kumar,Chemistry,{'Chemistry': 1},2,2,False,1,2023,2023,False,name,accepted,4
+S0105,A5153079122,NIT Surathkal,Udaya Kumar Dalimba,D. Udaya Kumar,Chemistry,{'Chemistry': 1},2,2,False,1,2019,2019,False,name,accepted,4
+S0105,A5070434867,NIT Surathkal,Udaya Kumar Dalimba,Udayakumar Dalimba,Chemistry,{'Chemistry': 38},1,2,False,41,2016,2026,False,name,accepted,3
+S0105,A5111812780,NIT Surathkal,Udaya Kumar Dalimba,D. Udayakumar,Chemistry,{'Chemistry': 8},1,2,False,8,2016,2026,False,name,accepted,3
+S0105,A5141490841,NIT Surathkal,Udaya Kumar Dalimba,Udayakumar Dalimba,Chemistry,{'Chemistry': 2},1,2,False,2,2026,2026,False,name,accepted,3
+S0105,A5150553856,NIT Surathkal,Udaya Kumar Dalimba,Udayakumar D,Chemistry,{'Chemistry': 1},1,2,False,1,2026,2026,False,name,accepted,3
+S0106,A5110605006,NIT Surathkal,A Gowri,Gowri Asaithambi,Civil,{'Civil': 9},2,2,False,11,2016,2019,False,name,accepted,4
+S0107,A5032075322,NIT Surathkal,A U Ravi Shankar,A. U. Ravi Shankar,Civil,{'Civil': 33},3,2,False,51,2016,2026,False,name,accepted,5
+S0107,A5011740427,NIT Surathkal,A U Ravi Shankar,A.U. Ravishankar,Civil,{'Civil': 4},3,2,False,4,2022,2026,False,name,accepted,5
+S0107,A5110605007,NIT Surathkal,A U Ravi Shankar,Ayyalasomayajula Udaya Ravi Shankar,Civil,{},2,0,False,1,2019,2019,False,name,accepted,2
+S0109,A5017107994,NIT Surathkal,Bibhuti Bhusan Das,Bibhuti Bhusan Das,Civil,{'Civil': 93},3,2,False,114,2016,2026,False,name,accepted,5
+S0109,A5135388457,NIT Surathkal,Bibhuti Bhusan Das,B. B. Das,Civil,{'Civil': 2},3,2,False,3,2026,2026,False,name,accepted,5
+S0109,A5012569182,NIT Surathkal,Bibhuti Bhusan Das,Bhibuti Bhusan Das,Civil,{'Civil': 1},2,2,False,1,2022,2022,False,name,accepted,4
+S0111,A5018440906,NIT Surathkal,Vinoth S,Vinoth Srinivasan,Civil,{'Civil': 11},2,2,False,11,2020,2026,False,name,accepted,4
+S0112,A5077493963,NIT Surathkal,A S Balu,A. S. Balu,Civil,{'Civil': 18},3,2,False,18,2017,2025,False,name,accepted,5
+S0113,A5012808024,NIT Surathkal,Anupama Surenjan,Anupama Surenjan,Civil,{'Civil': 11},3,2,False,11,2020,2025,False,name,accepted,5
+S0114,A5066008737,NIT Surathkal,Babloo Chaudhary,Babloo Chaudhary,Civil,{'Civil': 36},3,2,False,51,2018,2026,False,name,accepted,5
+S0115,A5029954409,NIT Surathkal,J Vijaya Vengadesh Kumar,Vijaya Vengadesh Kumar Jeyapragasam,Civil,{'Civil': 4},2,2,False,8,2022,2026,False,name,accepted,4
+S0115,A5093757259,NIT Surathkal,J Vijaya Vengadesh Kumar,Vijaya Vengadesh Kumar Jeyapragasm,Civil,{'Civil': 1},2,2,False,1,2024,2024,False,name,accepted,4
+S0115,A5114177969,NIT Surathkal,J Vijaya Vengadesh Kumar,J. Vijaya Vengadesh Kumar,Civil,{},3,0,False,1,2022,2022,False,name,accepted,3
+S0117,A5052315718,NIT Surathkal,Lohitkumar Nainegali,Lohitkumar Nainegali,Civil,{'Civil': 11},3,2,False,12,2024,2026,False,name,accepted,5
+S0118,A5027007335,NIT Surathkal,Mithun Mohan,Mithun Mohan,Civil,{'Civil': 12},3,2,False,17,2021,2026,False,name,accepted,5
+S0119,A5101653225,NIT Surathkal,Palanisamy T,T. Palanisamy,Civil,{'Civil': 32},3,2,False,47,2019,2026,False,name,accepted,5
+S0119,A5032282674,NIT Surathkal,Palanisamy T,Palanisamy Thangaraj,Civil,{'Civil': 1},2,2,False,4,2020,2025,False,name,accepted,4
+S0120,A5072961304,NIT Surathkal,Pavan G S,G. S. Pavan,Civil,{'Civil': 21},3,2,False,23,2020,2025,False,name,accepted,5
+S0120,A5126890630,NIT Surathkal,Pavan G S,G.S. Pavan,Civil,{'Civil': 1},3,2,False,2,2026,2026,False,name,accepted,5
+S0121,A5057429109,NIT Surathkal,Prashanth M H,M. H. Prashanth,Civil,{'Civil': 20},3,2,False,35,2019,2026,False,name,accepted,5
+S0121,A5138987661,NIT Surathkal,Prashanth M H,M. H. Prashanth,Civil,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0122,A5082268352,NIT Surathkal,Rajasekaran C,Chandrasekaran Rajasekaran,Civil,{'Civil': 37},2,2,False,42,2016,2026,False,name,accepted,4
+S0123,A5093962295,NIT Surathkal,Raviraj H M,H.M. Raviraj,Civil,{'Civil': 3},3,2,False,4,2020,2026,False,name,accepted,5
+S0123,A5007926651,NIT Surathkal,Raviraj H M,Raviraj H. Mulangi,Civil,{'Civil': 45},2,2,False,56,2016,2026,False,name,accepted,4
+S0124,A5006113731,NIT Surathkal,Saranya P,Packiam Saranya,Civil,{'Civil': 2},2,2,False,2,2024,2024,False,name,accepted,4
+S0125,A5114333956,NIT Surathkal,Sreekumar M,M. Sreekumar,Civil,{'Civil': 1},3,2,False,2,2024,2025,False,name,accepted,5
+S0126,A5067420967,NIT Surathkal,Sreevalsa Kolathayar,Sreevalsa Kolathayar,Civil,{'Civil': 68},3,2,False,95,2019,2026,False,name,accepted,5
+S0126,A5076915092,NIT Surathkal,Sreevalsa Kolathayar,Sreevalsa Kolathayar,Civil,{},3,0,False,1,2020,2020,False,name,accepted,3
+S0127,A5102986143,NIT Surathkal,Sridhar G,Sridhar Gangaputhiran,Civil,{'Civil': 14},2,2,False,17,2021,2026,False,name,accepted,4
+S0129,A5073204420,NIT Surathkal,K S Babu Narayan,K. S. Babu Narayan,Civil,{'Civil': 9},3,2,False,11,2017,2024,False,name,accepted,5
+S0129,A5110603435,NIT Surathkal,K S Babu Narayan,Babu Narayan S.K.,Civil,{'Civil': 1},3,2,False,1,2019,2019,False,name,accepted,5
+S0130,A5025365761,NIT Surathkal,K Swaminathan,K. Swaminathan,Civil,{'Civil': 13},3,2,False,15,2016,2025,False,name,accepted,5
+S0130,A5003004768,NIT Surathkal,K Swaminathan,K. Swaminathan,Civil,{'Civil': 2},3,2,False,3,2022,2023,False,name,accepted,5
+S0131,A5103932570,NIT Surathkal,K N Lokesh,K. N. Lokesh,Civil,{'Civil': 4},3,2,False,4,2017,2021,False,name,accepted,5
+S0131,A5056154250,NIT Surathkal,K N Lokesh,Lokesh Nanjappa Kannanur,Civil,{'Civil': 1},2,2,False,1,2020,2020,False,name,accepted,4
+S0132,A5066380131,NIT Surathkal,K S Babunarayana,K S Babunarayan,Civil,{'Civil': 1},1,2,False,1,2025,2025,False,name,accepted,3
+S0132,A5089626682,NIT Surathkal,K S Babunarayana,K.S. Babunarayan,Civil,{'Civil': 1},1,2,False,1,2019,2019,False,name,accepted,3
+S0133,A5005439575,NIT Surathkal,Arun Kumar Thalla,Arun Kumar Thalla,Civil,{'Civil': 26},3,2,False,35,2016,2026,False,name,accepted,5
+S0134,A5005081410,NIT Surathkal,B R Jayalekshmi,B. R. Jayalekshmi,Civil,{'Civil': 60},3,2,False,71,2016,2026,False,name,accepted,5
+S0135,A5027559765,NIT Surathkal,Basavaraju Manu,Manu Basavaraju,Civil,"{'Civil': 21, 'CSE': 5}",3,2,False,35,2016,2026,False,name,accepted,5
+S0135,A5071075619,NIT Surathkal,Basavaraju Manu,Basavaraju Manu,Civil,{'Civil': 3},3,2,False,4,2024,2026,False,name,accepted,5
+S0135,A5062838234,NIT Surathkal,Basavaraju Manu,Basavaraj Manu,Civil,{'Civil': 2},1,2,False,2,2022,2022,False,name,accepted,3
+S0136,A5122821415,NIT Surathkal,Devatha C P,C. P. Devatha,Civil,{'Civil': 3},3,2,False,5,2023,2026,False,name,accepted,5
+S0136,A5038655899,NIT Surathkal,Devatha C P,Chella Purushothaman Devatha,Civil,{'Civil': 28},2,2,False,34,2016,2025,False,name,accepted,4
+S0137,A5053676119,NIT Surathkal,Gangadhar Mahesh,Gangadhar Mahesh,Civil,{'Civil': 26},3,2,False,32,2017,2025,False,name,accepted,5
+S0138,A5012276120,NIT Surathkal,Katta Venkataramana,Katta Venkataramana,Civil,{'Civil': 35},3,2,False,40,2018,2026,False,name,accepted,5
+S0139,A5059846300,NIT Surathkal,Mattur C Narasimhan,Mattur C. Narasimhan,Civil,{'Civil': 23},3,2,False,27,2017,2025,False,name,accepted,5
+S0139,A5135907818,NIT Surathkal,Mattur C Narasimhan,M.C Narasimhan,Civil,{'Civil': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0139,A5085281199,NIT Surathkal,Mattur C Narasimhan,Narasimhan Chandrashekara Mattur,Civil,{'Civil': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0140,A5029875134,NIT Surathkal,S Shrihari,S. Shrihari,Civil,{'Civil': 5},3,2,False,5,2017,2020,False,name,accepted,5
+S0140,A5048064878,NIT Surathkal,S Shrihari,S. Shrihari,Civil,{'Civil': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0141,A5012127377,NIT Surathkal,Sitaram Nayak,Sitaram Nayak,Civil,{'Civil': 18},3,2,False,24,2017,2026,False,name,accepted,5
+S0142,A5057830702,NIT Surathkal,Subhash C Yaragal,Subhash C. Yaragal,Civil,{'Civil': 27},3,2,False,28,2017,2026,False,name,accepted,5
+S0143,A5065959729,NIT Surathkal,Suresha S N,S. N. Suresha,Civil,{'Civil': 20},3,2,False,21,2017,2026,False,name,accepted,5
+S0144,A5080604095,NIT Surathkal,Varghese George,Varghese George,Civil,{'Civil': 14},3,2,False,18,2016,2026,False,name,accepted,5
+S0145,A5064148667,NIT Surathkal,R Shivashankar,R. Shivashankar,Civil,{'Civil': 33},3,2,False,38,2016,2026,False,name,accepted,5
+S0145,A5085295239,NIT Surathkal,R Shivashankar,R. Shivashankar,Civil,{'Civil': 1},3,2,False,2,2019,2022,False,name,accepted,5
+S0150,A5078072618,NIT Surathkal,Sunil B Malegole,B. M. Sunil,Civil,{'Civil': 23},3,2,False,25,2016,2026,False,name,accepted,5
+S0150,A5067413486,NIT Surathkal,Sunil B Malegole,Sunil B.M.,Civil,{'Civil': 3},3,2,False,3,2019,2023,False,name,accepted,5
+S0150,A5091892730,NIT Surathkal,Sunil B Malegole,Sunil B. Malegole,Civil,{'Civil': 2},3,2,False,3,2021,2023,False,name,accepted,5
+S0152,A5007371983,NIT Surathkal,A Venkata Narasimhadhan,A. V. Narasimhadhan,ECE,{'ECE': 25},3,2,False,58,2016,2026,False,name,accepted,5
+S0152,A5067483144,NIT Surathkal,A Venkata Narasimhadhan,A. V. Narasimha Dhan,ECE,{'ECE': 1},1,2,False,1,2019,2019,False,name,accepted,3
+S0152,A5094093595,NIT Surathkal,A Venkata Narasimhadhan,V. Narasimhadhan Adapa,ECE,{},2,0,False,1,2024,2024,False,name,accepted,2
+S0154,A5102848875,NIT Surathkal,Aparna P,P. Aparna,ECE,{'ECE': 26},3,2,True,38,2016,2025,False,orcid,accepted,15
+S0155,A5087315113,NIT Surathkal,Bini A A,A. A. Bini,ECE,{'ECE': 4},3,2,False,5,2024,2026,False,name,accepted,5
+S0156,A5080162701,NIT Surathkal,Deepu Vijayasenan,Deepu Vijayasenan,ECE,{'ECE': 13},3,2,False,33,2016,2026,False,name,accepted,5
+S0156,A5116060271,NIT Surathkal,Deepu Vijayasenan,DEEPU VIJAYSENAN,ECE,{'ECE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+S0157,A5001618468,NIT Surathkal,Kalpana G Bhat,Kalpana G Bhat,ECE,{'ECE': 5},3,2,False,5,2019,2023,False,name,accepted,5
+S0158,A5113717919,NIT Surathkal,Krishnamoorthy K,K. Krishnamoorthy,ECE,{'ECE': 3},3,2,False,5,2020,2024,False,name,accepted,5
+S0158,A5051096751,NIT Surathkal,Krishnamoorthy K,Krishnamoorthy Kandasamy,ECE,{'ECE': 24},2,2,False,49,2017,2025,False,name,accepted,4
+S0158,A5102754279,NIT Surathkal,Krishnamoorthy K,Kothandam Krishnamoorthy,ECE,{'ECE': 8},2,2,False,8,2017,2023,False,name,accepted,4
+S0158,A5004927710,NIT Surathkal,Krishnamoorthy K,Kandasamy Krishnamoorthy,ECE,{'ECE': 2},2,2,False,2,2022,2022,False,name,accepted,4
+S0158,A5152848988,NIT Surathkal,Krishnamoorthy K,K Krishnamoorthy,ECE,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0158,A5088557416,NIT Surathkal,Krishnamoorthy K,Krishnamoorthy Kandaswamy,ECE,{},2,0,False,1,2019,2019,False,name,accepted,2
+S0159,A5017942630,NIT Surathkal,Mandeep Singh,Mandeep Singh,ECE,{'ECE': 19},3,2,False,24,2020,2026,False,name,accepted,5
+S0159,A5058166673,NIT Surathkal,Mandeep Singh,Mandeep Singh,ECE,{'ECE': 11},3,2,False,20,2019,2026,False,name,accepted,5
+S0159,A5133100556,NIT Surathkal,Mandeep Singh,Mandeep Singh,ECE,{'ECE': 1},3,2,False,4,2026,2026,False,name,accepted,5
+S0160,A5083947280,NIT Surathkal,Muralidhar Kulkarni,Muralidhar Kulkarni,ECE,{'ECE': 24},3,2,False,35,2017,2026,False,name,accepted,5
+S0161,A5035295749,NIT Surathkal,Nikhil K S,KrishnanNadar Savithry Nikhil,ECE,{'ECE': 10},2,2,False,11,2023,2025,False,name,accepted,4
+S0161,A5058996599,NIT Surathkal,Nikhil K S,Nikhil Kumar Singh,ECE,{'ECE': 1},2,2,False,1,2024,2024,False,name,accepted,4
+S0162,A5068278977,NIT Surathkal,Pathipati Srihari,Pathipati Srihari,ECE,{'ECE': 13},3,2,True,90,2016,2026,False,orcid,accepted,15
+S0163,A5101712736,NIT Surathkal,Prabu K,K. Prabu,ECE,{'ECE': 3},3,2,False,3,2019,2023,False,name,accepted,5
+S0163,A5072251962,NIT Surathkal,Prabu K,Prabu Krishnan,ECE,{'ECE': 49},2,2,False,63,2018,2026,False,name,accepted,4
+S0164,A5031216751,NIT Surathkal,Prashantha Kumar H,Prashantha Kumar H,ECE,{'ECE': 2},3,2,False,6,2017,2024,False,name,accepted,5
+S0164,A5037605097,NIT Surathkal,Prashantha Kumar H,Prashantha Kumar Herolli,ECE,{'ECE': 1},2,2,False,1,2018,2018,False,name,accepted,4
+S0164,A5100857810,NIT Surathkal,Prashantha Kumar H,H. Prashantha Kumar,ECE,{},3,0,False,2,2022,2024,False,name,accepted,3
+S0164,A5027613921,NIT Surathkal,Prashantha Kumar H,Prashantha H Kumar,ECE,{},3,0,False,1,2021,2021,False,name,accepted,3
+S0165,A5102821552,NIT Surathkal,Raghavendra B S,B. S. Raghavendra,ECE,{'ECE': 8},3,2,True,25,2020,2026,False,orcid,accepted,15
+S0165,A5134193739,NIT Surathkal,Raghavendra B S,Raghavendra B S,ECE,{'ECE': 1},3,2,True,1,2026,2026,False,orcid,accepted,15
+S0165,A5107181510,NIT Surathkal,Raghavendra B S,Raghavendra S Bobbi,ECE,{},2,0,False,1,2024,2024,False,name,accepted,2
+S0166,A5078831541,NIT Surathkal,Rathnamala Rao,Rathnamala Rao,ECE,{'ECE': 15},3,2,False,24,2016,2026,False,name,accepted,5
+S0167,A5055773865,NIT Surathkal,Rekha S,S. Rekha,ECE,{'ECE': 26},3,2,True,32,2016,2025,False,orcid,accepted,15
+S0167,A5124144436,NIT Surathkal,Rekha S,S Rekha,ECE,{},3,0,False,1,2025,2025,False,name,accepted,3
+S0167,A5153242887,NIT Surathkal,Rekha S,Rekha S.,ECE,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0168,A5010379237,NIT Surathkal,Sandeep Kumar,Sandeep Kumar,ECE,{'ECE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+S0168,A5056522588,NIT Surathkal,Sandeep Kumar,Sandeep Kumar,ECE,{'ECE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+S0168,A5100655925,NIT Surathkal,Sandeep Kumar,Sandeep S. Kumar,ECE,{'ECE': 22},1,2,False,44,2018,2024,False,name,accepted,3
+S0168,A5090167516,NIT Surathkal,Sandeep Kumar,Sandeep S. Kumar,ECE,{'ECE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+S0168,A5101502936,NIT Surathkal,Sandeep Kumar,Sandeep Kumar,ECE,{},3,0,False,1,2023,2023,False,name,accepted,3
+S0169,A5014495539,NIT Surathkal,Shikha Baghel,Shikha Baghel,ECE,{'ECE': 1},3,2,False,1,2024,2024,False,name,accepted,5
+S0170,A5089651751,NIT Surathkal,Shyam Lal,Shyam Lal,ECE,{'ECE': 57},3,2,True,78,2016,2026,False,orcid,accepted,15
+S0170,A5120734399,NIT Surathkal,Shyam Lal,Shyam Lali,ECE,{'ECE': 1},0,2,True,1,2025,2025,False,orcid,accepted,12
+S0170,A5121636621,NIT Surathkal,Shyam Lal,Shyam Lal,ECE,{'ECE': 4},3,2,False,5,2025,2026,False,name,accepted,5
+S0170,A5104088255,NIT Surathkal,Shyam Lal,Lal Shyam,ECE,{'ECE': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0171,A5050300712,NIT Surathkal,Sushil Kumar Pandey,Sushil Kumar Pandey,ECE,{'ECE': 34},3,2,False,48,2020,2026,False,name,accepted,5
+S0177,A5084442576,NIT Surathkal,M Shankaranarayana Bhat,M. Shankaranarayana Bhat,ECE,{'ECE': 25},3,2,True,31,2016,2024,False,orcid,accepted,15
+S0177,A5056927980,NIT Surathkal,M Shankaranarayana Bhat,M S Bhat,ECE,{'ECE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+S0179,A5110358554,NIT Surathkal,Ashvini Chaturvedi,Ashvini Chaturvedi,ECE,{'ECE': 17},3,2,False,27,2016,2026,False,name,accepted,5
+S0181,A5139071665,NIT Surathkal,Neelawar Shekar Vittal Shet,Neelawar Shekar Vittal Vittal Shet,ECE,{},1,0,True,1,2026,2026,False,orcid,accepted,11
+S0181,A5108661914,NIT Surathkal,Neelawar Shekar Vittal Shet,N. Shekar V. Shet,ECE,{'ECE': 12},2,2,False,17,2016,2025,False,name,accepted,4
+S0182,A5065773156,NIT Surathkal,Ramesh Kini M,M. Ramesh Kini,ECE,{'ECE': 10},3,2,True,15,2016,2025,False,orcid,accepted,15
+S0183,A5040122026,NIT Surathkal,Sumam David S,S. Sumam David,ECE,{'ECE': 11},3,2,True,26,2016,2024,False,orcid,accepted,15
+S0183,A5059694422,NIT Surathkal,Sumam David S,David S. Sumam,ECE,{'ECE': 8},3,2,False,9,2016,2021,False,name,accepted,5
+S0183,A5097046416,NIT Surathkal,Sumam David S,Sumam David S.,ECE,{'ECE': 3},3,2,False,8,2017,2026,False,name,accepted,5
+S0183,A5098308318,NIT Surathkal,Sumam David S,S. David Sumam,ECE,{'ECE': 1},3,2,False,2,2020,2024,False,name,accepted,5
+S0184,A5013918113,NIT Surathkal,T Laxminidhi,Tonse Laxminidhi,ECE,{'ECE': 21},2,2,False,23,2016,2025,False,name,accepted,4
+S0184,A5000205533,NIT Surathkal,T Laxminidhi,T Laxmindhi,ECE,{'ECE': 1},1,2,False,1,2016,2016,False,name,accepted,3
+S0185,A5134200328,NIT Surathkal,U Shripathi Acharya,Shripathi U Acharya,ECE,{'ECE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0185,A5053012283,NIT Surathkal,U Shripathi Acharya,Udupi Shripathi Acharya,ECE,{'ECE': 16},2,2,False,30,2016,2026,False,name,accepted,4
+S0186,A5112838974,NIT Surathkal,Raghavendrab S,Raghavendra BS,ECE,{'ECE': 2},1,2,False,2,2021,2022,False,name,accepted,3
+S0189,A5114625305,NIT Surathkal,B Nagavel,B Nagavel,ECE,{'ECE': 2},3,2,False,2,2024,2024,False,name,accepted,5
+S0190,A5047026453,NIT Surathkal,U Sripathi,Udupi Sripati,ECE,{'ECE': 4},2,2,False,5,2017,2022,False,name,accepted,4
+S0194,A5020736383,NIT Surathkal,A Karthikeyan,A. Karthikeyan,EEE,{'EEE': 22},3,2,False,22,2016,2025,False,name,accepted,5
+S0194,A5104140556,NIT Surathkal,A Karthikeyan,Anabalagan Karthikeyan,EEE,{'EEE': 2},2,2,False,3,2023,2026,False,name,accepted,4
+S0194,A5107511391,NIT Surathkal,A Karthikeyan,Karthikeyan Anbalagan,EEE,{'EEE': 1},2,2,False,2,2025,2026,False,name,accepted,4
+S0194,A5092817466,NIT Surathkal,A Karthikeyan,Karthikeyan Anabalagan,EEE,{'EEE': 1},2,2,False,1,2023,2023,False,name,accepted,4
+S0195,A5004962458,NIT Surathkal,Arun Dominic,Arun Dominic D,EEE,{'EEE': 7},1,2,False,19,2022,2025,True,override,accepted,3
+S0196,A5068747113,NIT Surathkal,B Dastagiri Reddy,B. Dastagiri Reddy,EEE,"{'EEE': 6, 'Mechanical': 1}",3,2,False,11,2021,2025,True,name,accepted,5
+S0197,A5044856013,NIT Surathkal,Dharavath Kishan,Dharavath Kishan,EEE,{'EEE': 43},3,2,False,49,2020,2026,True,name,accepted,5
+S0198,A5008825903,NIT Surathkal,Jora M Gonda,Jora M Gonda,EEE,{'EEE': 3},3,2,False,5,2021,2026,False,name,accepted,5
+S0199,A5076691513,NIT Surathkal,Kalpana R,R Kalpana,EEE,{'EEE': 66},3,2,False,76,2016,2025,False,name,accepted,5
+S0199,A5136602135,NIT Surathkal,Kalpana R,R. Kalpana,EEE,{'EEE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0201,A5000964769,NIT Surathkal,Md Waseem Ahmad,Md Waseem Ahmad,EEE,{'EEE': 26},3,2,False,27,2020,2026,True,name,accepted,5
+S0201,A5110752202,NIT Surathkal,Md Waseem Ahmad,Md Wasem Ahmad,EEE,{'EEE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+S0202,A5012538804,NIT Surathkal,Nagendrappa H,Nagendrappa Harischandrappa,EEE,{'EEE': 21},2,2,False,36,2017,2026,False,name,accepted,4
+S0202,A5050595011,NIT Surathkal,Nagendrappa H,Nagendrappa Harishchandrappa,EEE,{},2,0,False,1,2021,2021,False,name,accepted,2
+S0203,A5008667168,NIT Surathkal,P Parthiban,P. Parthiban,EEE,{'EEE': 33},3,2,False,42,2016,2025,False,name,accepted,5
+S0204,A5111704413,NIT Surathkal,Prajof P,P Prajof,EEE,{'EEE': 4},3,2,False,8,2023,2025,True,name,accepted,5
+S0204,A5079584532,NIT Surathkal,Prajof P,P. Prajof,EEE,{'EEE': 1},3,2,False,5,2022,2024,True,name,accepted,5
+S0204,A5016588872,NIT Surathkal,Prajof P,Prajof Prabhakaran,EEE,{'EEE': 18},2,2,False,46,2021,2026,False,name,accepted,4
+S0205,A5056912549,NIT Surathkal,Ravi Raushan,Ravi Raushan,EEE,{'EEE': 16},3,2,False,21,2020,2026,True,name,accepted,5
+S0206,A5009807156,NIT Surathkal,Shashidhara Mecha Kotian,Shashidhara Mecha Kotian,EEE,{'EEE': 3},3,2,False,11,2021,2025,True,name,accepted,5
+S0207,A5078165411,NIT Surathkal,Tukaram Moger,Tukaram Moger,EEE,{'EEE': 62},3,2,False,77,2016,2026,False,name,accepted,5
+S0208,A5109361791,NIT Surathkal,Vignesh Kumar V,V. Vignesh Kumar,EEE,{'EEE': 1},3,2,False,1,2022,2022,True,override,accepted,5
+S0208,A5119080441,NIT Surathkal,Vignesh Kumar V,Vignesh Kumar Vethanayagam,EEE,{'EEE': 1},2,2,False,1,2022,2022,False,override,accepted,4
+S0209,A5033547035,NIT Surathkal,Yashwant Kashyap,Yashwant Kashyap,EEE,{'EEE': 24},3,2,False,36,2020,2026,True,name,accepted,5
+S0210,A5061125679,NIT Surathkal,I Raghavendra Rao,I. R. Rao,EEE,{'EEE': 2},3,2,False,4,2021,2024,False,name,accepted,5
+S0210,A5139891060,NIT Surathkal,I Raghavendra Rao,Iddya Raghavendra Rao,EEE,{'EEE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0213,A5076172952,NIT Surathkal,L Padmavathi,Padmavathi Lakshmanan,EEE,{},2,0,False,3,2020,2021,False,name,accepted,2
+S0214,A5064590012,NIT Surathkal,H Girisha Navada,H. Girisha Navada,EEE,{'EEE': 5},3,2,False,5,2017,2022,False,name,accepted,5
+S0214,A5029373215,NIT Surathkal,H Girisha Navada,Girisha H Navada,EEE,{'EEE': 1},3,2,False,1,2019,2019,False,name,accepted,5
+S0215,A5113960922,NIT Surathkal,K Rajagopala,K. Rajagopala,EEE,{'EEE': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0217,A5088453930,NIT Surathkal,B Venkatesa Perumal,B. Venkatesa Perumal,EEE,{'EEE': 8},3,2,False,9,2016,2025,False,name,accepted,5
+S0217,A5059551166,NIT Surathkal,B Venkatesa Perumal,B. Venkatesaperumal,EEE,{'EEE': 22},1,2,False,24,2018,2025,False,name,accepted,3
+S0217,A5097872336,NIT Surathkal,B Venkatesa Perumal,Venkatesa perumal B V,EEE,{'EEE': 1},1,2,False,1,2021,2021,False,name,accepted,3
+S0218,A5090019586,NIT Surathkal,Dattatraya Narayan Gaonkar,Dattatraya Narayan Gaonkar,EEE,{'EEE': 51},3,2,False,65,2016,2025,False,name,accepted,5
+S0219,A5003720673,NIT Surathkal,Debashisha Jena,Debashisha Jena,EEE,"{'EEE': 82, 'Mechanical': 2}",3,2,False,107,2016,2026,False,name,accepted,5
+S0220,A5024983980,NIT Surathkal,Gururaj S Punekar,Gururaj S. Punekar,EEE,{'EEE': 22},3,2,False,31,2016,2026,False,name,accepted,5
+S0221,A5111880349,NIT Surathkal,Manjunatha Sharma K,K Manjunatha Sharma,EEE,"{'EEE': 15, 'Information Technology': 1}",3,2,False,31,2016,2026,False,name,accepted,5
+S0221,A5066825933,NIT Surathkal,Manjunatha Sharma K,Manjunatha Sharma K,EEE,{'EEE': 5},3,2,False,8,2017,2025,False,name,accepted,5
+S0221,A5130608248,NIT Surathkal,Manjunatha Sharma K,K Manjunatha Sharma,EEE,{'EEE': 1},3,2,False,2,2026,2026,False,name,accepted,5
+S0221,A5138627200,NIT Surathkal,Manjunatha Sharma K,Manjunatha Sharma K,EEE,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0222,A5112465441,NIT Surathkal,Panduranga Vittal K,K. Panduranga Vittal,EEE,{'EEE': 20},3,2,False,26,2016,2025,False,name,accepted,5
+S0222,A5057755595,NIT Surathkal,Panduranga Vittal K,Panduranga Vittal K,EEE,{'EEE': 2},3,2,False,5,2019,2026,False,name,accepted,5
+S0223,A5022738870,NIT Surathkal,Shubhanga K N,K. N. Shubhanga,EEE,{'EEE': 30},3,2,False,34,2016,2025,False,name,accepted,5
+S0224,A5089394241,NIT Surathkal,Udaykumar R Yaragatti,Udaykumar R. Yaragatti,EEE,{'EEE': 28},3,2,False,33,2016,2026,False,name,accepted,5
+S0224,A5064124499,NIT Surathkal,Udaykumar R Yaragatti,Udaykumar R. Yargatti,EEE,{'EEE': 1},1,2,False,1,2022,2022,False,name,accepted,3
+S0224,A5086537620,NIT Surathkal,Udaykumar R Yaragatti,R. Y. Udaykumay,EEE,{'EEE': 1},1,2,False,1,2016,2016,False,name,accepted,3
+S0224,A5110800951,NIT Surathkal,Udaykumar R Yaragatti,R. Y. Udaykumar,EEE,{},2,0,False,1,2017,2017,False,name,accepted,2
+S0225,A5002031857,NIT Surathkal,Vinatha U,U. Vinatha,EEE,{'EEE': 17},3,2,False,29,2016,2025,False,name,accepted,5
+S0225,A5090066867,NIT Surathkal,Vinatha U,U. Vinatha,EEE,{'EEE': 4},3,2,False,4,2024,2025,False,name,accepted,5
+S0225,A5070182478,NIT Surathkal,Vinatha U,Vinatha Urundady,EEE,{'EEE': 4},2,2,False,4,2019,2022,False,name,accepted,4
+S0226,A5064907982,NIT Surathkal,Sheron Figarado,Sheron Figarado,EEE,{'EEE': 3},3,2,False,3,2017,2018,False,name,accepted,5
+S0229,A5069995247,NIT Surathkal,Yellasiri Suresh,Yellasiri Suresh,EEE,{'EEE': 36},3,2,False,39,2016,2026,False,name,accepted,5
+S0229,A5133645404,NIT Surathkal,Yellasiri Suresh,Y Suresh,EEE,{},3,0,False,4,2025,2025,False,name,accepted,3
+S0230,A5109340765,NIT Surathkal,Ananthanarayanav S,VS Ananthanarayana,Information Technology,{'Information Technology': 1},1,2,False,1,2018,2018,False,name,accepted,3
+S0232,A5070140601,NIT Surathkal,Anand Kumar M,M. Anand Kumar,Information Technology,{'Information Technology': 51},3,2,False,62,2018,2026,True,name,accepted,5
+S0232,A5126487567,NIT Surathkal,Anand Kumar M,M. Anand Kumar,Information Technology,{'Information Technology': 3},3,2,False,4,2026,2026,True,name,accepted,5
+S0232,A5089213155,NIT Surathkal,Anand Kumar M,M. Anand Kumar,Information Technology,{'Information Technology': 2},3,2,False,3,2025,2026,True,name,accepted,5
+S0232,A5000063089,NIT Surathkal,Anand Kumar M,Anand kumar M,Information Technology,{'Information Technology': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0232,A5124379940,NIT Surathkal,Anand Kumar M,M. Anand Kumar,Information Technology,{'Information Technology': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0232,A5124514694,NIT Surathkal,Anand Kumar M,Anand Kumar Madasamy,Information Technology,{'Information Technology': 2},2,2,False,2,2025,2025,False,name,accepted,4
+S0232,A5121448028,NIT Surathkal,Anand Kumar M,Anand Kumar Madasamy,Information Technology,{'Information Technology': 1},2,2,False,1,2025,2025,False,name,accepted,4
+S0232,A5131110972,NIT Surathkal,Anand Kumar M,Anand Kumar Madasamy,Information Technology,{'Information Technology': 1},2,2,False,1,2025,2025,False,name,accepted,4
+S0232,A5153287250,NIT Surathkal,Anand Kumar M,Anand Kumar M.,Information Technology,{},3,0,False,3,2026,2026,True,name,accepted,3
+S0232,A5130915638,NIT Surathkal,Anand Kumar M,Madasamy Anand Kumar,Information Technology,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0233,A5030471572,NIT Surathkal,Bhawana Rudra,Bhawana Rudra,Information Technology,{'Information Technology': 48},3,2,False,56,2020,2026,True,name,accepted,5
+S0234,A5032581304,NIT Surathkal,Biju R Mohan,Biju R. Mohan,Information Technology,{'Information Technology': 51},3,2,False,70,2017,2026,True,name,accepted,5
+S0234,A5095866986,NIT Surathkal,Biju R Mohan,Biju Mohan R,Information Technology,{'Information Technology': 3},3,2,False,3,2024,2024,True,name,accepted,5
+S0235,A5037889655,NIT Surathkal,Dinesh Naik,Dinesh Naik,Information Technology,{'Information Technology': 22},3,2,False,29,2021,2026,True,name,accepted,5
+S0236,A5100649597,NIT Surathkal,Geetha V,V. Geetha,Information Technology,{'Information Technology': 27},3,2,False,33,2017,2024,True,name,accepted,5
+S0236,A5124464724,NIT Surathkal,Geetha V,V. Geetha,Information Technology,{'Information Technology': 2},3,2,False,3,2026,2026,True,name,accepted,5
+S0236,A5153252215,NIT Surathkal,Geetha V,Geetha Vasantha,Information Technology,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0237,A5012980480,NIT Surathkal,Janani T,T. Janani,Information Technology,{'Information Technology': 7},3,2,False,7,2026,2026,True,name,accepted,5
+S0237,A5007312650,NIT Surathkal,Janani T,T Janani,Information Technology,{'Information Technology': 2},3,2,False,2,2025,2025,True,name,accepted,5
+S0237,A5117235486,NIT Surathkal,Janani T,Janani Thiyagarajan,Information Technology,{'Information Technology': 1},2,2,False,1,2024,2024,False,name,accepted,4
+S0237,A5030959720,NIT Surathkal,Janani T,T. Janani,Information Technology,{},3,0,False,1,2025,2025,True,name,accepted,3
+S0238,A5103106869,NIT Surathkal,Kiran M,M. Kiran,Information Technology,{'Information Technology': 2},3,2,True,6,2023,2025,False,orcid,accepted,15
+S0238,A5010733714,NIT Surathkal,Kiran M,Kiran Manjappa,Information Technology,{'Information Technology': 2},2,2,False,3,2023,2024,False,name,accepted,4
+S0239,A5040815462,NIT Surathkal,Nagamma Patil,Nagamma Patil,Information Technology,{'Information Technology': 63},3,2,False,74,2016,2026,True,name,accepted,5
+S0239,A5111359554,NIT Surathkal,Nagamma Patil,Nagamma Patil,Information Technology,{'Information Technology': 2},3,2,False,4,2024,2026,True,name,accepted,5
+S0239,A5119251966,NIT Surathkal,Nagamma Patil,Patil Nagamma,Information Technology,{'Information Technology': 1},3,2,False,1,2025,2025,True,name,accepted,5
+S0240,A5122941152,NIT Surathkal,Purushothama B R,B. R. Purushothama,Information Technology,{'Information Technology': 5},3,2,False,5,2026,2026,False,name,accepted,5
+S0240,A5075238878,NIT Surathkal,Purushothama B R,Purushothama B. R,Information Technology,{'Information Technology': 2},3,2,False,2,2025,2025,False,name,accepted,5
+S0240,A5061982583,NIT Surathkal,Purushothama B R,B. Purushothama,Information Technology,"{'Information Technology': 5, 'CSE': 1}",1,2,False,8,2024,2025,False,override,accepted,3
+S0241,A5019016567,NIT Surathkal,Shrutilipi Bhattacharjee,Shrutilipi Bhattacharjee,Information Technology,{'Information Technology': 33},3,2,False,34,2021,2026,True,name,accepted,5
+S0242,A5085977948,NIT Surathkal,Sowmya Kamath S,S. Sowmya Kamath,Information Technology,"{'Information Technology': 92, 'Mathematics': 1}",3,2,True,104,2016,2026,True,orcid,accepted,15
+S0242,A5097865355,NIT Surathkal,Sowmya Kamath S,Sowmya Kamath S.,Information Technology,"{'Information Technology': 2, 'ECE': 1}",3,2,True,3,2017,2026,True,orcid,accepted,15
+S0242,A5121800677,NIT Surathkal,Sowmya Kamath S,S. Sowmya Kamath,Information Technology,{'Information Technology': 5},3,2,False,6,2026,2026,True,name,accepted,5
+S0242,A5112672236,NIT Surathkal,Sowmya Kamath S,Kamath S. Sowmya,Information Technology,{'Information Technology': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0242,A5151208686,NIT Surathkal,Sowmya Kamath S,S. Kamath Sowmya,Information Technology,{'Information Technology': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0242,A5153220291,NIT Surathkal,Sowmya Kamath S,Sowmya Kamath S.,Information Technology,{},3,0,False,2,2026,2026,True,name,accepted,3
+S0242,A5153195269,NIT Surathkal,Sowmya Kamath S,Sowmya Kamath Shevgoor,Information Technology,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0245,A5097652229,NIT Surathkal,Jaidharc D,Jaidhar CD.,Information Technology,{'Information Technology': 2},1,2,False,2,2019,2024,False,name,accepted,3
+S0248,A5057100084,NIT Surathkal,Ananthanarayana V S,V. S. Ananthanarayana,Information Technology,{'Information Technology': 30},3,2,True,41,2016,2026,True,orcid,accepted,15
+S0248,A5033409442,NIT Surathkal,Ananthanarayana V S,Ananthanarayana V.S.,Information Technology,{'Information Technology': 2},3,2,False,3,2016,2023,True,name,accepted,5
+S0248,A5074469081,NIT Surathkal,Ananthanarayana V S,V S Ananthanarayama,Information Technology,{'Information Technology': 1},1,2,False,1,2016,2016,False,name,accepted,3
+S0249,A5054016512,NIT Surathkal,Jaidhar C D,C. D. Jaidhar,Information Technology,{'Information Technology': 45},3,2,False,57,2016,2026,True,name,accepted,5
+S0249,A5088060159,NIT Surathkal,Jaidhar C D,Jaidhar C.D.,Information Technology,{'Information Technology': 5},3,2,False,5,2017,2023,True,name,accepted,5
+S0249,A5007313236,NIT Surathkal,Jaidhar C D,Jaidhar C.D,Information Technology,{'Information Technology': 2},3,2,False,2,2019,2026,True,name,accepted,5
+S0250,A5007453385,NIT Surathkal,Ram Mohana Reddy Guddeti,Ram Mohana Reddy Guddeti,Information Technology,{'Information Technology': 53},3,2,True,68,2016,2026,True,orcid,accepted,15
+S0250,A5124312741,NIT Surathkal,Ram Mohana Reddy Guddeti,G. Ram Mohana Reddy,Information Technology,{'Information Technology': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0250,A5112197578,NIT Surathkal,Ram Mohana Reddy Guddeti,Ram Mohana Reddy Guddetti,Information Technology,{'Information Technology': 1},2,2,False,1,2016,2016,False,name,accepted,4
+S0250,A5046273779,NIT Surathkal,Ram Mohana Reddy Guddeti,Rammohana Reddy G,Information Technology,{'Information Technology': 1},1,2,False,1,2022,2022,False,name,accepted,3
+S0250,A5153298652,NIT Surathkal,Ram Mohana Reddy Guddeti,Ram Mohana Reddy Guddeti,Information Technology,{},3,0,False,1,2026,2026,True,name,accepted,3
+S0250,A5154907247,NIT Surathkal,Ram Mohana Reddy Guddeti,G Ram Mohana REDDY,Information Technology,{},3,0,False,1,2016,2016,True,name,accepted,3
+S0256,A5044849322,NIT Surathkal,A O Surendranathan,Attukalathil Orongil Surendranathan,MME,{'MME': 11},2,2,False,13,2016,2022,False,name,accepted,4
+S0257,A5150848163,NIT Surathkal,B Rajasekaran,B. Rajasekaran,MME,{'MME': 2},3,2,False,2,2026,2026,False,name,accepted,5
+S0257,A5016423438,NIT Surathkal,B Rajasekaran,Balasundaram Rajasekaran,MME,{'MME': 19},2,2,False,20,2021,2025,False,name,accepted,4
+S0258,A5008690507,NIT Surathkal,Kumkum Banerjee,Kumkum Banerjee,MME,{'MME': 1},3,2,False,8,2016,2025,False,name,accepted,5
+S0259,A5033177217,NIT Surathkal,Lipak Kumar Sahoo,Lipak Kumar Sahoo,MME,{'MME': 3},3,2,False,3,2024,2024,False,name,accepted,5
+S0260,A5101928853,NIT Surathkal,Mohammad Rizwanur Rahman,Mohammad Rizwanur Rahman,MME,{'MME': 47},3,2,False,48,2017,2026,False,name,accepted,5
+S0260,A5101928852,NIT Surathkal,Mohammad Rizwanur Rahman,M.R. Rahman,MME,{'MME': 5},2,2,False,5,2019,2025,False,name,accepted,4
+S0260,A5130810698,NIT Surathkal,Mohammad Rizwanur Rahman,Rahman M. R.,MME,{'MME': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0261,A5101047629,NIT Surathkal,Preetham Kumar G V,G. V. Preetham Kumar,MME,{'MME': 26},3,2,False,29,2016,2026,False,name,accepted,5
+S0261,A5112453201,NIT Surathkal,Preetham Kumar G V,Preetham Kumar G V,MME,{'MME': 1},3,2,False,1,2019,2019,False,name,accepted,5
+S0262,A5019354123,NIT Surathkal,Ravishankar K S,K.S. Ravishankar,MME,"{'MME': 18, 'Mechanical': 1}",3,2,False,22,2017,2025,False,name,accepted,5
+S0263,A5067183914,NIT Surathkal,Saumen Mandal,Saumen Mandal,MME,{'MME': 49},3,2,False,52,2017,2026,False,name,accepted,5
+S0264,A5115602972,NIT Surathkal,Selvakumar Murugesan,Selvakumar Murugesan,MME,{'MME': 13},3,2,False,15,2021,2026,False,name,accepted,5
+S0264,A5053003279,NIT Surathkal,Selvakumar Murugesan,Selvakumar Murugesan,MME,{'MME': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0265,A5040557277,NIT Surathkal,Shashi Bhushan Arya,Shashi Bhushan Arya,MME,{'MME': 53},3,2,False,56,2016,2026,False,name,accepted,5
+S0265,A5141250533,NIT Surathkal,Shashi Bhushan Arya,S.B. Arya,MME,{'MME': 1},2,2,False,1,2022,2022,False,name,accepted,4
+S0265,A5112415726,NIT Surathkal,Shashi Bhushan Arya,Shashibhushan Arya,MME,{'MME': 4},1,2,False,4,2019,2021,False,name,accepted,3
+S0266,A5110306964,NIT Surathkal,Sumanth Govindarajan,Sumanth Govindarajan,MME,{'MME': 13},3,2,False,13,2020,2026,False,name,accepted,5
+S0266,A5060109235,NIT Surathkal,Sumanth Govindarajan,Sumanth Govindarajan Cadambi,MME,{'MME': 1},1,2,False,1,2018,2018,False,name,accepted,3
+S0266,A5040767036,NIT Surathkal,Sumanth Govindarajan,G. Sumanth,MME,{},2,0,False,1,2019,2019,False,name,accepted,2
+S0267,A5018344023,NIT Surathkal,K Rajendra Udupa,K. Rajendra Udupa,MME,{'MME': 21},3,2,False,21,2016,2019,False,name,accepted,5
+S0267,A5091356534,NIT Surathkal,K Rajendra Udupa,Rajendra K. Udupa,MME,{'MME': 2},3,2,False,2,2016,2017,False,name,accepted,5
+S0267,A5062808779,NIT Surathkal,K Rajendra Udupa,K. R. Udupa,MME,{'MME': 1},2,2,False,1,2016,2016,False,name,accepted,4
+S0269,A5015684091,NIT Surathkal,Anandhan Srinivasan,Srinivasan Anandhan,MME,{'MME': 56},3,2,False,66,2016,2026,False,name,accepted,5
+S0269,A5148504150,NIT Surathkal,Anandhan Srinivasan,Anandhan Srinivasan,MME,{'MME': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0269,A5040265864,NIT Surathkal,Anandhan Srinivasan,S. Anandhan,MME,{'MME': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0270,A5109696779,NIT Surathkal,Jagannath Nayak,Jagannath Nayak,MME,{'MME': 10},3,2,False,11,2016,2026,False,name,accepted,5
+S0271,A5083650045,NIT Surathkal,K Narayan Prabhu,K. Narayan Prabhu,MME,{'MME': 83},3,2,False,87,2016,2026,False,name,accepted,5
+S0271,A5060943441,NIT Surathkal,K Narayan Prabhu,Prabhu Kishore N,MME,{'MME': 1},2,2,False,1,2021,2021,False,name,accepted,4
+S0272,A5068336762,NIT Surathkal,Udaya Bhat K,K. Udaya Bhat,MME,{'MME': 95},3,2,False,106,2016,2026,False,name,accepted,5
+S0272,A5111059991,NIT Surathkal,Udaya Bhat K,K. Udaya Bhat,MME,"{'MME': 3, 'Mechanical': 1}",3,2,False,4,2016,2026,False,name,accepted,5
+S0272,A5043004901,NIT Surathkal,Udaya Bhat K,Bhat K. Udaya,MME,{'MME': 3},3,2,False,3,2019,2024,False,name,accepted,5
+S0272,A5108734115,NIT Surathkal,Udaya Bhat K,Udaya Bhat Kuruveri,MME,{'MME': 9},2,2,False,9,2018,2023,False,name,accepted,4
+S0272,A5103930717,NIT Surathkal,Udaya Bhat K,Kuruveri Udaya Bhat,MME,{'MME': 3},2,2,False,3,2016,2022,False,name,accepted,4
+S0272,A5034144143,NIT Surathkal,Udaya Bhat K,K. Udayabhat,MME,{'MME': 1},1,2,False,1,2017,2017,False,name,accepted,3
+S0274,A5019724798,NIT Surathkal,Subray Ramachandra Hegde,Subray R. Hegde,MME,{'MME': 17},3,2,False,18,2020,2025,False,name,accepted,5
+S0275,A5021281485,NIT Surathkal,Aloysius Henry Sequeira,Aloysius Henry Sequeira,Management,{'Management': 20},3,2,False,28,2016,2025,False,name,accepted,5
+S0280,A5000778136,NIT Surathkal,Bijuna C Mohan,Bijuna C. Mohan,Management,"{'Management': 9, 'Humanities': 5}",3,2,True,16,2016,2026,False,orcid,accepted,15
+S0282,A5059572062,NIT Surathkal,Dhishna P,Dhishna Pannikot,Management,"{'Humanities': 3, 'Management': 1}",2,0,True,7,2018,2025,False,orcid,accepted,12
+S0283,A5049932354,NIT Surathkal,Gopalakrishna B V,B.V. Gopalakrishna,Management,"{'Management': 8, 'Humanities': 4}",3,2,False,17,2018,2026,False,name,accepted,5
+S0283,A5026500680,NIT Surathkal,Gopalakrishna B V,Gopalakrishna B.V.,Management,"{'Humanities': 1, 'Management': 1}",3,2,False,2,2016,2023,False,name,accepted,5
+S0284,A5068798634,NIT Surathkal,Rahul Sivarajan,Rahul Sivarajan,Management,{},3,0,True,1,2025,2025,False,orcid,accepted,13
+S0285,A5003579745,NIT Surathkal,Rajesh Acharya H,Rajesh Herolli Acharya,Management,"{'Management': 17, 'Humanities': 7}",2,2,True,26,2016,2026,False,orcid,accepted,14
+S0286,A5024301897,NIT Surathkal,Rashmi Uchil,Rashmi Uchil,Management,"{'Management': 7, 'Humanities': 3}",3,2,False,15,2017,2026,False,name,accepted,5
+S0288,A5076996993,NIT Surathkal,Savita Bhat,Savita Bhat,Management,"{'Management': 7, 'Humanities': 6}",3,2,True,14,2017,2024,False,orcid,accepted,15
+S0289,A5035049561,NIT Surathkal,Sheena,Sheena Suresh,Management,"{'Humanities': 6, 'Management': 2}",1,0,True,11,2018,2026,False,orcid,accepted,11
+S0289,A5108835029,NIT Surathkal,Sheena,Sheena,Management,{'Management': 2},3,2,False,2,2023,2024,False,name,accepted,5
+S0290,A5069687729,NIT Surathkal,Suprabha K R,K. R. Suprabha,Management,"{'Management': 3, 'Humanities': 2}",3,2,False,8,2016,2025,False,name,accepted,5
+S0290,A5108025353,NIT Surathkal,Suprabha K R,K. R. Suprabha,Management,"{'Management': 1, 'Humanities': 1}",3,2,False,5,2020,2025,False,name,accepted,5
+S0292,A5103199390,NIT Surathkal,Kirank B,KB Kiran,Management,{'Management': 1},1,2,False,1,2016,2016,False,name,accepted,3
+S0294,A5078285189,NIT Surathkal,K B Kiran,Kunjangada Bheemaiah Kiran,Management,"{'Management': 10, 'Humanities': 4}",2,2,False,17,2016,2025,False,name,accepted,4
+S0294,A5049572920,NIT Surathkal,K B Kiran,Kiran K.B.,Management,{'Humanities': 3},3,-3,False,4,2021,2026,False,override,accepted,0
+S0295,A5088406406,NIT Surathkal,Pradyot Ranjan Jena,Pradyot Ranjan Jena,Management,"{'Management': 21, 'Humanities': 9}",3,2,True,43,2016,2026,False,orcid,accepted,15
+S0296,A5007797350,NIT Surathkal,Ritanjali Majhi,Ritanjali Majhi,Management,"{'Management': 11, 'Humanities': 8}",3,2,True,22,2016,2026,False,orcid,accepted,15
+S0297,A5109723940,NIT Surathkal,S Pavan Kumar,Saraf Pavan Kumar,Management,"{'Management': 9, 'Chemistry': 6}",2,2,True,22,2016,2025,False,orcid,accepted,14
+S0297,A5036589044,NIT Surathkal,S Pavan Kumar,Pavan Kumar Saraf,Management,"{'Management': 4, 'Humanities': 3}",2,2,True,11,2017,2024,False,orcid,accepted,14
+S0297,A5155557162,NIT Surathkal,S Pavan Kumar,S. Pavan Kumar,Management,{'Management': 2},3,2,False,2,2021,2022,False,name,accepted,5
+S0297,A5018921260,NIT Surathkal,S Pavan Kumar,Pavan Kumar S S,Management,{'Management': 1},1,2,False,1,2023,2023,False,name,accepted,3
+S0297,A5134585715,NIT Surathkal,S Pavan Kumar,S. Pavan Kumar,Management,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0298,A5022443166,NIT Surathkal,Shashikantha Koudur,Shashikantha Koudur,Management,{'Humanities': 2},3,-3,True,8,2017,2025,False,orcid,accepted,10
+S0300,A5111021510,NIT Surathkal,Rofin T M,T. M. Rofin,Management,{'Management': 4},3,2,False,4,2020,2021,False,name,accepted,5
+S0305,A5067982923,NIT Surathkal,Sreejith Alathur,Sreejith Alathur,Management,{'Management': 14},3,2,False,40,2016,2022,False,name,accepted,5
+S0306,A5111366196,NIT Surathkal,Sunil D Souza,Sunil D'Souza,Management,{'Management': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0308,A5074715623,NIT Surathkal,A Senthil Thilak,A. Senthil Thilak,Mathematics,{'Mathematics': 7},3,2,False,7,2020,2025,False,name,accepted,5
+S0310,A5074338214,NIT Surathkal,Chandhini G,G. Chandhini,Mathematics,{'Mathematics': 16},3,2,False,22,2017,2026,False,name,accepted,5
+S0311,A5085407154,NIT Surathkal,Falguni Roy,Falguni Roy,Mathematics,{'Mathematics': 6},3,2,False,7,2019,2025,False,name,accepted,5
+S0311,A5113281691,NIT Surathkal,Falguni Roy,Falguni Roy,Mathematics,{'Mathematics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0312,A5152891149,NIT Surathkal,Gayathri P,P. Gayathri,Mathematics,{'Mathematics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0313,A5109379294,NIT Surathkal,Jisna V A,V. A. Jisna,Mathematics,{'Mathematics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0314,A5113517766,NIT Surathkal,Jothi Ramalingam,Jothi Ramalingam,Mathematics,{'Mathematics': 7},3,2,False,7,2024,2026,False,name,accepted,5
+S0315,A5029347975,NIT Surathkal,Kedarnath Senapathi,Kedarnath Senapati,Mathematics,{'Mathematics': 17},3,2,False,22,2018,2026,False,name,accepted,5
+S0318,A5141198766,NIT Surathkal,Pushpajit Khaire,Pushpajit Khaire,Mathematics,{'Mathematics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0320,A5054189959,NIT Surathkal,Srinivasa Rao Kola,Srinivasa Rao Kola,Mathematics,{'Mathematics': 12},3,2,False,13,2016,2024,False,name,accepted,5
+S0321,A5051720300,NIT Surathkal,Vidyadhar Upadhya,Vidyadhar Upadhya,Mathematics,{'Mathematics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0322,A5042889468,NIT Surathkal,Vishwanath K P,Vishwanath Kadaba Puttanna,Mathematics,{'Mathematics': 4},2,2,False,6,2018,2026,False,name,accepted,4
+S0324,A5021378891,NIT Surathkal,I Jeyaraman,I. Jeyaraman,Mathematics,{'Mathematics': 2},3,2,False,2,2016,2017,False,override,accepted,5
+S0327,A5020693411,NIT Surathkal,Jidesh P,P. Jidesh,Mathematics,{'Mathematics': 53},3,2,False,59,2016,2026,False,name,accepted,5
+S0327,A5153300594,NIT Surathkal,Jidesh P,P. Jidesh,Mathematics,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0330,A5061493544,NIT Surathkal,A Kandasamy,A Kandasamy,Mathematics,{'Mathematics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0330,A5011919041,NIT Surathkal,A Kandasamy,Adiyapatham Kandasamy,Mathematics,"{'Mathematics': 18, 'CSE': 1}",2,2,False,22,2016,2024,False,name,accepted,4
+S0331,A5016039975,NIT Surathkal,B R Shankar,B. R. Shankar,Mathematics,{'Mathematics': 6},3,2,False,7,2017,2025,False,name,accepted,5
+S0331,A5121990374,NIT Surathkal,B R Shankar,B R. Shankar,Mathematics,{'Mathematics': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0331,A5122765460,NIT Surathkal,B R Shankar,B R Shankar,Mathematics,{'Mathematics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0331,A5155586637,NIT Surathkal,B R Shankar,B. R. SHANKAR,Mathematics,{'Mathematics': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0332,A5045072152,NIT Surathkal,Madhusudhan R,R. Madhusudhan,Mathematics,"{'Mathematics': 31, 'ECE': 1}",3,2,False,34,2016,2026,True,name,accepted,5
+S0333,A5018009649,NIT Surathkal,Murulidhar N N,N. N. Murulidhar,Mathematics,{'Mathematics': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0333,A5155605114,NIT Surathkal,Murulidhar N N,N. N. MURULIDHAR,Mathematics,{'Mathematics': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0334,A5014529218,NIT Surathkal,P Sam Johnson,P. Sam Johnson,Mathematics,{'Mathematics': 26},3,2,False,28,2016,2025,False,name,accepted,5
+S0334,A5073282292,NIT Surathkal,P Sam Johnson,P. Sam Johnson,Mathematics,{'Mathematics': 4},3,2,False,4,2026,2026,False,name,accepted,5
+S0334,A5102582651,NIT Surathkal,P Sam Johnson,P. Sam. Johnson,Mathematics,{},3,0,False,1,2023,2023,False,name,accepted,3
+S0335,A5018213450,NIT Surathkal,Pushparaj Shetty D,D. Pushparaj Shetty,Mathematics,{'Mathematics': 30},3,2,True,33,2016,2026,False,orcid,accepted,15
+S0335,A5126214195,NIT Surathkal,Pushparaj Shetty D,D Pushparaj Shetty,Mathematics,{'Mathematics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0335,A5140510076,NIT Surathkal,Pushparaj Shetty D,D. P. Shetty,Mathematics,{'Mathematics': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0336,A5086323665,NIT Surathkal,Santhosh George,Santhosh George,Mathematics,{'Mathematics': 193},3,2,False,224,2016,2026,False,name,accepted,5
+S0336,A5121818169,NIT Surathkal,Santhosh George,Santhosh George,Mathematics,{'Mathematics': 1},3,2,False,3,2026,2026,False,name,accepted,5
+S0336,A5137884879,NIT Surathkal,Santhosh George,Santhosh George,Mathematics,{'Mathematics': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0336,A5155098251,NIT Surathkal,Santhosh George,SANTHOSH GEORGE,Mathematics,{'Mathematics': 1},3,2,False,1,2016,2016,False,name,accepted,5
+S0336,A5157201694,NIT Surathkal,Santhosh George,S. George,Mathematics,{'Mathematics': 4},2,2,False,4,2018,2020,False,name,accepted,4
+S0336,A5157095441,NIT Surathkal,Santhosh George,S. George,Mathematics,{'Mathematics': 3},2,2,False,3,2016,2018,False,name,accepted,4
+S0337,A5040232532,NIT Surathkal,Shyam S Kamath,S. S. Kamath,Mathematics,{'Mathematics': 8},2,2,False,9,2016,2022,False,name,accepted,4
+S0338,A5017760787,NIT Surathkal,V Murugan,Veerapazham Murugan,Mathematics,{'Mathematics': 9},2,2,True,10,2016,2024,False,orcid,accepted,14
+S0338,A5045388049,NIT Surathkal,V Murugan,Murugan Veerapazham,Mathematics,{'Mathematics': 2},2,2,False,2,2026,2026,False,name,accepted,4
+S0343,A5037435141,NIT Surathkal,Suresh Manjanathhegde,S. M. Hegde,Mathematics,{'Mathematics': 13},2,2,False,16,2016,2025,False,name,accepted,4
+S0343,A5036824903,NIT Surathkal,Suresh Manjanathhegde,S. M. Hegde,Mathematics,{'Mathematics': 2},2,2,False,2,2022,2026,False,name,accepted,4
+S0344,A5044687678,NIT Surathkal,Satyanarayana Engu,Satyanarayana Engu,Mathematics,{'Mathematics': 2},3,2,False,3,2016,2019,False,name,accepted,5
+S0349,A5033404301,NIT Surathkal,Ajay Kumar Yadav,Ajay Kumar Yadav,Mechanical,{'Mechanical': 45},3,2,False,45,2017,2026,False,name,accepted,5
+S0350,A5014702148,NIT Surathkal,D Chakradhar,D. Chakradhar,Mechanical,{'Mechanical': 15},3,2,False,15,2016,2021,False,name,accepted,5
+S0351,A5101551961,NIT Surathkal,Abhilash Singh,Abhilash Singh,Mechanical,{'Mechanical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0352,A5029961874,NIT Surathkal,Parthasarathy P,P. Parthasarathy,Mechanical,{'Mechanical': 2},3,2,False,2,2022,2022,False,name,accepted,5
+S0352,A5108298529,NIT Surathkal,Parthasarathy P,Pavithra Parthasarathy,Mechanical,{'Mechanical': 6},2,2,False,6,2021,2024,False,name,accepted,4
+S0353,A5004558925,NIT Surathkal,Somasekhara Rao Todeti,Somasekhara Rao Todeti,Mechanical,{'Mechanical': 8},3,2,False,8,2019,2026,False,name,accepted,5
+S0353,A5113894412,NIT Surathkal,Somasekhara Rao Todeti,T. Somasekhara Rao,Mechanical,{'Mechanical': 2},2,2,False,2,2019,2020,False,name,accepted,4
+S0353,A5113860544,NIT Surathkal,Somasekhara Rao Todeti,Somasekhara RaoT.,Mechanical,{'Mechanical': 1},1,2,False,1,2019,2019,False,name,accepted,3
+S0354,A5091130401,NIT Surathkal,A S S Balan,A.S.S. Balan,Mechanical,{'Mechanical': 39},3,2,False,42,2020,2026,False,name,accepted,5
+S0354,A5134511814,NIT Surathkal,A S S Balan,Balan Arunachalam Shenbagam Setra,Mechanical,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0355,A5055785478,NIT Surathkal,Arumuga Perumal D,D. Arumuga Perumal,Mechanical,{'Mechanical': 64},3,2,False,68,2016,2026,False,name,accepted,5
+S0355,A5087471256,NIT Surathkal,Arumuga Perumal D,Arumuga Perumal D,Mechanical,{'Mechanical': 2},3,2,False,2,2019,2025,False,name,accepted,5
+S0355,A5108260192,NIT Surathkal,Arumuga Perumal D,Dharmaraj Arumuga Perumal,Mechanical,{'Mechanical': 3},2,2,False,3,2018,2025,False,name,accepted,4
+S0356,A5073780700,NIT Surathkal,Arun Kumar Shettigar,Arun Kumar Shettigar,Mechanical,{'Mechanical': 33},3,2,False,34,2020,2026,False,name,accepted,5
+S0357,A5030365234,NIT Surathkal,Deepak Kumar,Deepak Kumar,Mechanical,{'Mechanical': 1},3,2,False,1,2021,2021,False,name,accepted,5
+S0357,A5087097654,NIT Surathkal,Deepak Kumar,Deepak Kumar,Mechanical,{'Mechanical': 1},3,2,False,1,2021,2021,False,name,accepted,5
+S0357,A5101960927,NIT Surathkal,Deepak Kumar,Deepak Kumar,Mechanical,{},3,0,False,1,2021,2021,False,name,accepted,3
+S0357,A5152027488,NIT Surathkal,Deepak Kumar,Deepak Kumar,Mechanical,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0358,A5076200413,NIT Surathkal,Khyati Verma,Khyati Verma,Mechanical,{'Mechanical': 8},3,2,False,9,2023,2026,False,name,accepted,5
+S0359,A5008265945,NIT Surathkal,Mervin Joe Thomas,Mervin Joe Thomas,Mechanical,{'Mechanical': 10},3,2,False,14,2024,2026,False,name,accepted,5
+S0360,A5018887827,NIT Surathkal,Mruthyunjaya Swamy K B,K.B. Mruthyunjaya Swamy,Mechanical,{'Mechanical': 1},3,2,False,2,2022,2024,False,name,accepted,5
+S0360,A5114428611,NIT Surathkal,Mruthyunjaya Swamy K B,Mruthyunjaya Swamy K B,Mechanical,{'Mechanical': 2},3,2,False,2,2024,2024,False,name,accepted,5
+S0360,A5060143274,NIT Surathkal,Mruthyunjaya Swamy K B,K. B. M. Swamy,Mechanical,{'Mechanical': 2},2,2,False,3,2022,2026,False,name,accepted,4
+S0360,A5152333408,NIT Surathkal,Mruthyunjaya Swamy K B,K.B.M. Swamy,Mechanical,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0361,A5084157321,NIT Surathkal,Navin Karanth P,Navin Karanth P,Mechanical,{'Mechanical': 12},3,2,False,12,2016,2024,False,name,accepted,5
+S0361,A5109398531,NIT Surathkal,Navin Karanth P,P. Navin Karanth,Mechanical,{'Mechanical': 11},3,2,False,12,2016,2024,False,name,accepted,5
+S0361,A5078554225,NIT Surathkal,Navin Karanth P,Navin Karanth Panambur,Mechanical,{'Mechanical': 3},2,2,False,3,2020,2022,False,name,accepted,4
+S0361,A5091089972,NIT Surathkal,Navin Karanth P,Karanth P. Navin,Mechanical,{},3,0,False,1,2018,2018,False,name,accepted,3
+S0362,A5074877637,NIT Surathkal,P S Suvin,P.S. Suvin,Mechanical,{'Mechanical': 12},3,2,False,13,2020,2025,False,name,accepted,5
+S0362,A5071959221,NIT Surathkal,P S Suvin,P. S. Suvin,Mechanical,{'Mechanical': 4},3,2,False,4,2023,2026,False,name,accepted,5
+S0363,A5012581873,NIT Surathkal,Poornesh Kumar Koorata,Poornesh Kumar Koorata,Mechanical,{'Mechanical': 30},3,2,False,31,2020,2025,False,name,accepted,5
+S0364,A5000840943,NIT Surathkal,Ranjeet Kumar Sahu,Ranjeet Kumar Sahu,Mechanical,{'Mechanical': 28},3,2,False,31,2019,2026,False,name,accepted,5
+S0364,A5136670594,NIT Surathkal,Ranjeet Kumar Sahu,Ranjeet Kumar Sahu,Mechanical,{'Mechanical': 2},3,2,False,2,2026,2026,False,name,accepted,5
+S0365,A5006289943,NIT Surathkal,Ranjith M,Ranjith Maniyeri,Mechanical,{'Mechanical': 51},2,2,False,51,2016,2026,False,name,accepted,4
+S0366,A5089223024,NIT Surathkal,Saurabh Chandraker,Saurabh Chandraker,Mechanical,{'Mechanical': 12},3,2,False,12,2020,2026,False,name,accepted,5
+S0366,A5109462347,NIT Surathkal,Saurabh Chandraker,Saurabh Chandrakar,Mechanical,{'Mechanical': 3},1,2,False,3,2019,2021,False,name,accepted,3
+S0367,A5046059953,NIT Surathkal,Sudhakar C Jambagi,Sudhakar C. Jambagi,Mechanical,{'Mechanical': 22},3,2,False,22,2017,2026,False,name,accepted,5
+S0368,A5004986925,NIT Surathkal,Vasudeva Madav,Vasudeva Madav,Mechanical,"{'Mechanical': 27, 'Energy & Environment': 5}",3,2,False,35,2018,2026,False,name,accepted,5
+S0368,A5055495113,NIT Surathkal,Vasudeva Madav,M. Vasudeva,Mechanical,{},3,0,False,1,2020,2020,False,name,accepted,3
+S0371,A5029731923,NIT Surathkal,Guruprasad K R,K. R. Guruprasad,Mechanical,{'Mechanical': 9},3,2,False,11,2016,2021,False,name,accepted,5
+S0372,A5071852359,NIT Surathkal,H Suresh Hebbar,H. Suresh Hebbar,Mechanical,{'Mechanical': 4},3,2,False,4,2019,2025,False,name,accepted,5
+S0374,A5022567164,NIT Surathkal,Mervin Arunaraj Herbert,Mervin A. Herbert,Mechanical,{'Mechanical': 49},3,2,False,54,2016,2026,False,name,accepted,5
+S0374,A5111254841,NIT Surathkal,Mervin Arunaraj Herbert,Mervin A. Herbert,Mechanical,{'Mechanical': 7},3,2,False,10,2023,2026,False,name,accepted,5
+S0374,A5113833557,NIT Surathkal,Mervin Arunaraj Herbert,Herbert Mervin,Mechanical,{'Mechanical': 2},1,2,False,4,2018,2018,False,override,accepted,3
+S0375,A5011842558,NIT Surathkal,Mrityunjay R Doddamani,Mrityunjay R. Doddamani,Mechanical,{'Mechanical': 82},3,2,False,85,2016,2022,False,name,accepted,5
+S0376,A5085739832,NIT Surathkal,N Gnanasekaran,N. Gnanasekaran,Mechanical,{'Mechanical': 48},3,2,False,52,2016,2024,False,name,accepted,5
+S0376,A5037938456,NIT Surathkal,N Gnanasekaran,N. Gnanasekaran,Mechanical,{'Mechanical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0376,A5109568755,NIT Surathkal,N Gnanasekaran,Nagarajan Gnanasekaran,Mechanical,{'Mechanical': 16},2,2,False,16,2016,2023,False,name,accepted,4
+S0376,A5028050676,NIT Surathkal,N Gnanasekaran,N. Gnanasekeran,Mechanical,{'Mechanical': 1},1,2,False,1,2020,2020,False,name,accepted,3
+S0378,A5108407809,NIT Surathkal,P Mohanan,P. Mohanan,Mechanical,{'Mechanical': 6},3,2,False,6,2016,2017,False,name,accepted,5
+S0378,A5063534036,NIT Surathkal,P Mohanan,P. Mohanan,Mechanical,{},3,0,False,1,2020,2020,False,name,accepted,3
+S0379,A5101937713,NIT Surathkal,Prasad Krishna,Prasad Krishna,Mechanical,{'Mechanical': 21},3,2,False,23,2016,2026,False,name,accepted,5
+S0379,A5101267148,NIT Surathkal,Prasad Krishna,Krishna Prasad,Mechanical,{'Mechanical': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0379,A5113716659,NIT Surathkal,Prasad Krishna,P. Krishna,Mechanical,{'Mechanical': 2},2,2,False,2,2016,2021,False,name,accepted,4
+S0379,A5047082331,NIT Surathkal,Prasad Krishna,Krishna Prasad,Mechanical,{},3,0,False,1,2017,2017,False,name,accepted,3
+S0380,A5001042509,NIT Surathkal,Anish S,S. Anish,Mechanical,{'Mechanical': 35},3,2,False,37,2016,2025,False,name,accepted,5
+S0380,A5021191103,NIT Surathkal,Anish S,S. Anish,Mechanical,{'Mechanical': 2},3,2,False,2,2023,2023,False,name,accepted,5
+S0380,A5140240015,NIT Surathkal,Anish S,S. Anish,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0381,A5111634533,NIT Surathkal,Arun M,M. Arun,Mechanical,{'Mechanical': 6},3,2,False,10,2017,2025,False,name,accepted,5
+S0381,A5086241333,NIT Surathkal,Arun M,Arun Mahalingam,Mechanical,{'Mechanical': 13},2,2,False,17,2016,2026,False,name,accepted,4
+S0381,A5104063590,NIT Surathkal,Arun M,Mahalingam Arun,Mechanical,{'Mechanical': 2},2,2,False,2,2018,2018,False,name,accepted,4
+S0382,A5091283841,NIT Surathkal,G C Mohan Kumar,G. C. Mohan Kumar,Mechanical,"{'Mechanical': 51, 'Chemistry': 1}",3,2,False,57,2016,2025,False,name,accepted,5
+S0382,A5103486159,NIT Surathkal,G C Mohan Kumar,G. C. Mohan Kumar,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0382,A5082289542,NIT Surathkal,G C Mohan Kumar,G.C. Mohan Kumara,Mechanical,{'Mechanical': 1},1,2,False,1,2022,2022,False,name,accepted,3
+S0383,A5068744341,NIT Surathkal,Gangadharan K V,K. V. Gangadharan,Mechanical,{'Mechanical': 55},3,2,True,95,2016,2026,False,orcid,accepted,15
+S0383,A5120951788,NIT Surathkal,Gangadharan K V,KV Gangadharan,Mechanical,{'Mechanical': 3},1,2,True,7,2025,2026,False,orcid,accepted,13
+S0383,A5059759429,NIT Surathkal,Gangadharan K V,Gangadharan K. V,Mechanical,"{'Water Resources & Ocean': 1, 'Mechanical': 1}",3,2,False,3,2022,2026,False,name,accepted,5
+S0383,A5144437722,NIT Surathkal,Gangadharan K V,K V Gangadharan,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0383,A5113963378,NIT Surathkal,Gangadharan K V,Gangadharan V. Kalluvalappil,Mechanical,{},2,0,False,4,2021,2025,False,name,accepted,2
+S0384,A5033569457,NIT Surathkal,Hemantha Kumar,Hemantha Kumar,Mechanical,{'Mechanical': 79},3,2,True,95,2016,2026,False,orcid,accepted,15
+S0384,A5028744755,NIT Surathkal,Hemantha Kumar,Hemantha kumara,Mechanical,{'Mechanical': 2},1,2,False,2,2019,2022,False,name,accepted,3
+S0385,A5058746944,NIT Surathkal,Jeyaraj P,P Jeyaraj,Mechanical,{'Mechanical': 1},3,2,False,1,2021,2021,False,name,accepted,5
+S0385,A5042457712,NIT Surathkal,Jeyaraj P,Jeyaraj Pitchaimani,Mechanical,{'Mechanical': 93},2,2,False,121,2016,2026,False,name,accepted,4
+S0385,A5064019212,NIT Surathkal,Jeyaraj P,Jeyaraj Pichaimani,Mechanical,{'Mechanical': 1},2,2,False,1,2022,2022,False,name,accepted,4
+S0386,A5084785746,NIT Surathkal,Kumar G N,G. N. Kumar,Mechanical,{'Mechanical': 10},3,2,False,10,2020,2026,False,name,accepted,5
+S0386,A5114175502,NIT Surathkal,Kumar G N,Kumar G. N.,Mechanical,{'Mechanical': 2},3,2,False,2,2026,2026,False,name,accepted,5
+S0386,A5134074051,NIT Surathkal,Kumar G N,Kumar G N,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0386,A5113808678,NIT Surathkal,Kumar G N,Kumar Gottekere Narayanappa,Mechanical,{'Mechanical': 7},2,2,False,9,2017,2023,False,name,accepted,4
+S0386,A5110101153,NIT Surathkal,Kumar G N,G. Narendra Kumar,Mechanical,{'Mechanical': 4},2,2,False,4,2022,2023,False,name,accepted,4
+S0386,A5108835640,NIT Surathkal,Kumar G N,Gottekre Narayanappa Kumar,Mechanical,{'Mechanical': 3},2,2,False,3,2016,2018,False,name,accepted,4
+S0386,A5037893074,NIT Surathkal,Kumar G N,Kumar Narayanappa Gottekere,Mechanical,{'Mechanical': 2},2,2,False,2,2017,2017,False,name,accepted,4
+S0386,A5094003371,NIT Surathkal,Kumar G N,Kumar Gottikere Narayaneppa,Mechanical,{'Mechanical': 1},2,2,False,1,2024,2024,False,name,accepted,4
+S0386,A5108659294,NIT Surathkal,Kumar G N,Gottigere Narayanappa Kumar,Mechanical,{'Mechanical': 1},2,2,False,1,2018,2018,False,name,accepted,4
+S0386,A5102014958,NIT Surathkal,Kumar G N,Gunasekaran Kumar,Mechanical,{'Mechanical': 35},1,2,False,41,2016,2025,False,override,accepted,3
+S0386,A5023828299,NIT Surathkal,Kumar G N,Gunjan Kumar Nayak,Mechanical,{},2,0,False,1,2020,2020,False,name,accepted,2
+S0387,A5076779096,NIT Surathkal,Narendranath S,S. Narendranath,Mechanical,{'Mechanical': 41},3,2,False,47,2016,2026,False,name,accepted,5
+S0387,A5103190003,NIT Surathkal,Narendranath S,S. Narendranath,Mechanical,{'Mechanical': 43},3,2,False,47,2016,2025,False,name,accepted,5
+S0387,A5021337698,NIT Surathkal,Narendranath S,Narendranath Sannayellappa,Mechanical,{'Mechanical': 5},2,2,False,5,2017,2024,False,name,accepted,4
+S0387,A5109402272,NIT Surathkal,Narendranath S,Sannayellapa Narendranath,Mechanical,{'Mechanical': 2},2,2,False,2,2016,2018,False,name,accepted,4
+S0387,A5082396161,NIT Surathkal,Narendranath S,Narendranath Sanna,Mechanical,{'Mechanical': 1},2,2,False,1,2019,2019,False,name,accepted,4
+S0387,A5104149826,NIT Surathkal,Narendranath S,SannaYellappa Narendranath,Mechanical,{'Mechanical': 1},2,2,False,1,2023,2023,False,name,accepted,4
+S0388,A5122792533,NIT Surathkal,Ramesh M R,M.R. Ramesh,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0388,A5053200063,NIT Surathkal,Ramesh M R,Motagondanahalli Rangarasaiah Ramesh,Mechanical,{'Mechanical': 147},2,2,False,171,2016,2026,False,name,accepted,4
+S0389,A5017999833,NIT Surathkal,Ravikiran Kadoli,Ravikiran Kadoli,Mechanical,{'Mechanical': 49},3,2,False,49,2016,2026,False,name,accepted,5
+S0390,A5009025171,NIT Surathkal,S M Murigendrappa,S. M. Murigendrappa,Mechanical,{'Mechanical': 34},3,2,False,37,2016,2025,False,name,accepted,5
+S0391,A5076998144,NIT Surathkal,Sathyabhama A,Alangar Sathyabhama,Mechanical,{'Mechanical': 50},2,2,False,57,2016,2026,False,name,accepted,4
+S0392,A5012044208,NIT Surathkal,Satyabodh M Kulkarni,S. M. Kulkarni,Mechanical,"{'Mechanical': 91, 'MME': 1}",3,2,False,99,2016,2026,False,name,accepted,5
+S0392,A5078726149,NIT Surathkal,Satyabodh M Kulkarni,S M Kulkarni,Mechanical,{'Mechanical': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0392,A5110486036,NIT Surathkal,Satyabodh M Kulkarni,SM Kulkarni,Mechanical,{'Mechanical': 1},1,2,False,1,2018,2018,False,name,accepted,3
+S0393,A5016835522,NIT Surathkal,Sharnappa Joladarashi,Sharnappa Joladarashi,Mechanical,{'Mechanical': 114},3,2,False,120,2017,2026,False,name,accepted,5
+S0393,A5092092582,NIT Surathkal,Sharnappa Joladarashi,Sharnappa Joladarshi,Mechanical,{'Mechanical': 1},1,2,False,2,2022,2023,False,name,accepted,3
+S0394,A5060491341,NIT Surathkal,Shivananda Nayaka H,Shivananda Nayaka H,Mechanical,{'Mechanical': 4},3,2,False,5,2019,2025,False,name,accepted,5
+S0394,A5026384287,NIT Surathkal,Shivananda Nayaka H,Nayaka H. Shivananda,Mechanical,{'Mechanical': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0394,A5056406984,NIT Surathkal,Shivananda Nayaka H,Hanumanthappa Shivananda Nayaka,Mechanical,{'Mechanical': 36},2,2,False,39,2016,2026,False,name,accepted,4
+S0394,A5082883961,NIT Surathkal,Shivananda Nayaka H,Shivananda Nayaka Hanumanthappa,Mechanical,{'Mechanical': 1},2,2,False,1,2022,2022,False,name,accepted,4
+S0395,A5006104479,NIT Surathkal,Shrikantha S Rao,Shrikantha Sasihithlu Rao,Mechanical,{'Mechanical': 49},2,2,False,57,2016,2025,False,name,accepted,4
+S0395,A5144038511,NIT Surathkal,Shrikantha S Rao,Shrikantha Sasihithlu Rao,Mechanical,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0396,A5083737062,NIT Surathkal,Srikanth Bontha,Srikanth Bontha,Mechanical,{'Mechanical': 62},3,2,False,66,2016,2026,False,name,accepted,5
+S0397,A5008510859,NIT Surathkal,Subhaschandra Kattimani,Subhaschandra Kattimani,Mechanical,{'Mechanical': 76},3,2,False,85,2016,2026,False,name,accepted,5
+S0398,A5035511693,NIT Surathkal,Veershetty Gumtapure,Veershetty Gumtapure,Mechanical,{'Mechanical': 34},3,2,False,38,2018,2026,False,name,accepted,5
+S0398,A5000156701,NIT Surathkal,Veershetty Gumtapure,G. Veershetty,Mechanical,{'Mechanical': 1},2,2,False,1,2018,2018,False,name,accepted,4
+S0398,A5093613520,NIT Surathkal,Veershetty Gumtapure,Veershetty Gumptapure,Mechanical,{'Mechanical': 3},1,2,False,3,2023,2025,False,name,accepted,3
+S0399,A5008544467,NIT Surathkal,Rameshm R,R. Ramesh,Mechanical,{'Mechanical': 1},1,2,False,1,2017,2017,False,name,accepted,3
+S0400,A5022908742,NIT Surathkal,Shrikantha,Rao Shrikantha,Mechanical,{'Mechanical': 2},1,2,False,4,2018,2018,False,name,accepted,3
+S0401,A5081318919,NIT Surathkal,T P Ashok Babu,T.P. Ashok Babu,Mechanical,{'Mechanical': 19},3,2,False,21,2016,2024,False,name,accepted,5
+S0401,A5033553991,NIT Surathkal,T P Ashok Babu,Babu T. P Ashok,Mechanical,{'Mechanical': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0401,A5110182560,NIT Surathkal,T P Ashok Babu,Ashok Babu T.P.,Mechanical,{'Mechanical': 1},3,2,False,1,2018,2018,False,name,accepted,5
+S0401,A5010027724,NIT Surathkal,T P Ashok Babu,Ashok Babu Talanki Puttarangasetty,Mechanical,{'Mechanical': 1},2,2,False,1,2016,2016,False,name,accepted,4
+S0401,A5110322600,NIT Surathkal,T P Ashok Babu,Ashok Babu Talanki Puttaranga Setty,Mechanical,{'Mechanical': 11},1,2,False,11,2016,2023,False,name,accepted,3
+S0402,A5111441632,NIT Surathkal,Vijay Desai,Vijay Desai,Mechanical,{'Mechanical': 31},3,2,False,33,2017,2024,False,name,accepted,5
+S0403,A5008612430,NIT Surathkal,Vijaykumar H,Vijaykumar Hindasageri,Mechanical,{'Mechanical': 7},2,2,False,8,2016,2020,False,name,accepted,4
+S0404,A5000805139,NIT Surathkal,Y Suresh Kumar,Y. Suresh Kumar,Mechanical,{'Mechanical': 1},3,2,False,1,2017,2017,False,name,accepted,5
+S0405,A5103865467,NIT Surathkal,Chivukula Suryanarayana Murthy,Chivukula Suryanarayana Murthy,Mining,{'Mining': 6},3,2,False,7,2019,2026,False,name,accepted,5
+S0405,A5020195838,NIT Surathkal,Chivukula Suryanarayana Murthy,Suryanarayana Murthy Chivukula,Mining,{'Mining': 2},3,2,False,2,2020,2021,False,name,accepted,5
+S0406,A5110630782,NIT Surathkal,Mandela Govinda Raj,Mandela Govinda Raj,Mining,{'Mining': 21},3,2,False,27,2017,2026,False,name,accepted,5
+S0406,A5077590188,NIT Surathkal,Mandela Govinda Raj,Govinda Raj Mandela,Mining,{'Mining': 13},3,2,False,15,2019,2023,False,name,accepted,5
+S0406,A5098567443,NIT Surathkal,Mandela Govinda Raj,Govinda Raj M.,Mining,{'Mining': 1},3,2,False,1,2019,2019,False,name,accepted,5
+S0406,A5056984172,NIT Surathkal,Mandela Govinda Raj,R.M. Govinda,Mining,{'Mining': 1},2,2,False,1,2018,2018,False,name,accepted,4
+S0406,A5007707012,NIT Surathkal,Mandela Govinda Raj,Govindaraj Mandela,Mining,{},2,0,False,1,2026,2026,False,name,accepted,2
+S0407,A5022498855,NIT Surathkal,Mangalpady Aruna,Mangalpady Aruna,Mining,{'Mining': 28},3,2,True,30,2016,2026,False,orcid,accepted,15
+S0407,A5088000196,NIT Surathkal,Mangalpady Aruna,Mangalpady Aruna,Mining,"{'Mining': 12, 'MME': 6}",3,2,False,19,2019,2026,False,name,accepted,5
+S0407,A5079227812,NIT Surathkal,Mangalpady Aruna,M. Aruna,Mining,{'Mining': 1},3,2,False,1,2023,2023,False,name,accepted,5
+S0407,A5148810457,NIT Surathkal,Mangalpady Aruna,Aruna Mangalpady,Mining,{'Mining': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0407,A5073454878,NIT Surathkal,Mangalpady Aruna,Aruna Manglapady,Mining,{'Mining': 1},2,2,False,1,2019,2019,False,name,accepted,4
+S0408,A5068118121,NIT Surathkal,Ram Prasad Choudhary,R. P. Choudhary,Mining,{'Mining': 5},3,2,False,5,2018,2020,False,name,accepted,5
+S0409,A5033270394,NIT Surathkal,Anup Kumar Tripathi,Anup Kumar Tripathi,Mining,{'Mining': 9},3,2,False,10,2019,2025,False,name,accepted,5
+S0409,A5062754011,NIT Surathkal,Anup Kumar Tripathi,Abhishek Kumar Tripathi,Mining,{'Mining': 4},2,2,False,4,2016,2018,False,name,accepted,4
+S0410,A5075514372,NIT Surathkal,Bijay Mihir Kunar,Bijay Mihir Kunar,Mining,{'Mining': 19},3,2,True,27,2016,2026,False,orcid,accepted,15
+S0412,A5030108914,NIT Surathkal,Ch Suryanarayana Murthy,Ch. S. N. Murthy,Mining,{'Mining': 26},3,2,False,30,2017,2026,False,name,accepted,5
+S0412,A5048662043,NIT Surathkal,Ch Suryanarayana Murthy,Murthy Ch.S.N.,Mining,{'Mining': 2},3,2,False,2,2019,2020,False,name,accepted,5
+S0413,A5042121404,NIT Surathkal,Akhil Avchar,Akhil Avchar,Mining,{'Mining': 9},3,2,False,11,2023,2026,False,name,accepted,5
+S0414,A5111246525,NIT Surathkal,Amrites Senapati,Amrites Senapati,Mining,{'Mining': 3},3,2,False,4,2024,2025,False,name,accepted,5
+S0414,A5030482207,NIT Surathkal,Amrites Senapati,Amrites Senapati,Mining,{'Mining': 1},3,2,False,1,2025,2025,False,name,accepted,5
+S0415,A5091721998,NIT Surathkal,Sandi Kumar Reddy,Sandi Kumar Reddy,Mining,{'Mining': 9},3,2,True,16,2022,2026,False,orcid,accepted,15
+S0415,A5126071317,NIT Surathkal,Sandi Kumar Reddy,S. Kumar Reddy,Mining,{'Mining': 2},2,2,True,4,2026,2026,False,orcid,accepted,14
+S0415,A5155521180,NIT Surathkal,Sandi Kumar Reddy,S.K. Reddy,Mining,{'Mining': 1},2,2,False,1,2025,2025,False,name,accepted,4
+S0415,A5135504249,NIT Surathkal,Sandi Kumar Reddy,Kumar Reddy Sandi,Mining,{},3,0,False,2,2026,2026,False,name,accepted,3
+S0417,A5008838529,NIT Surathkal,Harsha Vardhan,Harsha Vardhan,Mining,{'Mining': 33},3,2,False,39,2016,2025,False,name,accepted,5
+S0417,A5124137424,NIT Surathkal,Harsha Vardhan,Harsha Vardhan,Mining,{'Mining': 1},3,2,False,2,2024,2026,False,name,accepted,5
+S0417,A5101457390,NIT Surathkal,Harsha Vardhan,Harsha Vardhan,Mining,{'Mining': 1},3,2,False,1,2020,2020,False,name,accepted,5
+S0418,A5047612572,NIT Surathkal,Karra Ram Chandar,Karra Ram Chandar,Mining,{'Mining': 15},3,2,False,19,2016,2025,False,name,accepted,5
+S0418,A5013180627,NIT Surathkal,Karra Ram Chandar,K. Ram Chandar,Mining,{'Mining': 1},3,2,False,1,2022,2022,False,name,accepted,5
+S0418,A5113800740,NIT Surathkal,Karra Ram Chandar,Ram Chandar Karra,Mining,{'Mining': 1},3,2,False,1,2026,2026,False,name,accepted,5
+S0418,A5081111447,NIT Surathkal,Karra Ram Chandar,Chandar K Ram,Mining,{},3,0,False,1,2016,2016,False,name,accepted,3
+S0418,A5096794354,NIT Surathkal,Karra Ram Chandar,Ram Chandar K.,Mining,{},3,0,False,1,2019,2019,False,name,accepted,3
+S0420,A5157157682,NIT Surathkal,Rajib Pal,Rajib Pal,Mining,{'Mining': 1},3,2,False,1,2024,2024,True,name,accepted,5
+S0421,A5068655096,NIT Surathkal,Vedala Rama Sastry,Vedala Rama Sastry,Mining,{'Mining': 11},3,2,False,12,2016,2023,False,name,accepted,5
+S0421,A5027794943,NIT Surathkal,Vedala Rama Sastry,V.R. Sastry,Mining,{'Mining': 2},3,2,False,2,2017,2022,False,name,accepted,5
+S0421,A5050194375,NIT Surathkal,Vedala Rama Sastry,Rama Sastry Vedala,Mining,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0422,A5086486721,NIT Surathkal,Ajith Kulangara Madam,K. M. Ajith,Physics,{'Physics': 23},3,2,False,27,2016,2025,False,name,accepted,5
+S0422,A5072596123,NIT Surathkal,Ajith Kulangara Madam,Ajith Kulangara Madam,Physics,{'Physics': 9},3,2,False,10,2018,2026,False,name,accepted,5
+S0422,A5038598689,NIT Surathkal,Ajith Kulangara Madam,Ajith K.M,Physics,{'Physics': 3},3,2,False,3,2018,2021,False,name,accepted,5
+S0422,A5009752879,NIT Surathkal,Ajith Kulangara Madam,K. Ajith,Physics,{'Physics': 7},1,2,False,7,2018,2023,False,override,accepted,3
+S0423,A5064350753,NIT Surathkal,Deepak Vaid,Deepak Vaid,Physics,{'Physics': 9},3,2,False,10,2018,2023,False,name,accepted,5
+S0424,A5029181348,NIT Surathkal,Kartick Tarafder,Kartick Tarafder,Physics,{'Physics': 54},3,2,False,62,2016,2026,False,name,accepted,5
+S0424,A5025552069,NIT Surathkal,Kartick Tarafder,Kartick Tarafder,Physics,{'Physics': 7},3,2,False,7,2020,2023,False,name,accepted,5
+S0425,A5062717892,NIT Surathkal,Partha Pratim Das,Partha Pratim Das,Physics,{'Physics': 30},3,2,True,32,2016,2026,False,orcid,accepted,15
+S0426,A5101725582,NIT Surathkal,V Sreenath,V. Sreenath,Physics,{'Physics': 8},3,2,False,10,2020,2023,False,name,accepted,5
+S0426,A5015596503,NIT Surathkal,V Sreenath,V. Sreenath,Physics,{},3,0,False,2,2025,2026,False,name,accepted,3
+S0427,A5018521079,NIT Surathkal,Govinda Rao Umesh,Govindarao Umesh,Physics,{'Physics': 17},1,2,False,19,2016,2021,False,name,accepted,3
+S0428,A5008681032,NIT Surathkal,H D Shashikala,H.D. Shashikala,Physics,{'Physics': 39},3,2,False,43,2016,2026,False,name,accepted,5
+S0428,A5030955939,NIT Surathkal,H D Shashikala,Shashikala Holavanahalli Doraiswamy,Physics,{'Physics': 1},2,2,False,1,2020,2020,False,name,accepted,4
+S0429,A5087975808,NIT Surathkal,Kasturi V Bangera,Kasturi V. Bangera,Physics,{'Physics': 33},3,2,False,33,2016,2022,False,name,accepted,5
+S0430,A5113220690,NIT Surathkal,M Nagarajan Satyanarayan,M. N. Satyanarayan,Physics,{'Physics': 42},3,2,False,47,2016,2026,False,name,accepted,5
+S0430,A5083224012,NIT Surathkal,M Nagarajan Satyanarayan,Satyanarayan M. Nagarajan,Physics,{'Physics': 2},3,2,False,2,2020,2022,False,name,accepted,5
+S0431,A5080946443,NIT Surathkal,N K Udayashankar,N.K. Udayashankar,Physics,{'Physics': 70},3,2,False,73,2016,2026,False,name,accepted,5
+S0432,A5102837998,NIT Surathkal,Nagaraja H S,H.S. Nagaraja,Physics,{'Physics': 74},3,2,False,78,2016,2026,False,name,accepted,5
+S0432,A5008154948,NIT Surathkal,Nagaraja H S,Nagaraja Hosakoppa S,Physics,{'Physics': 2},2,2,False,2,2017,2020,False,name,accepted,4
+S0432,A5117553759,NIT Surathkal,Nagaraja H S,Nagaraja Subraya Hosakoppa,Physics,{'Physics': 2},2,2,False,2,2025,2026,False,name,accepted,4
+S0432,A5118747164,NIT Surathkal,Nagaraja H S,S. Nagaraja Hosakoppa,Physics,{'Physics': 1},2,2,False,1,2025,2025,False,name,accepted,4
+S0433,A5001750254,NIT Surathkal,Shajahan Thamara Kunnathu,T. K. Shajahan,Physics,{'Physics': 8},3,2,False,12,2016,2026,False,name,accepted,5
+S0435,A5010776917,NIT Surathkal,Arkal Vittal Hegde,Arkal Vittal Hegde,Water Resources & Ocean,{'Water Resources & Ocean': 11},3,2,False,13,2016,2023,False,name,accepted,5
+S0436,A5110442549,NIT Surathkal,Dwarakishg S,GS Dwarakish,Water Resources & Ocean,{'Water Resources & Ocean': 1},1,2,False,1,2016,2016,False,name,accepted,3
+S0439,A5017802576,NIT Surathkal,Debabrata Karmakar,D. Karmakar,Water Resources & Ocean,"{'Water Resources & Ocean': 83, 'EEE': 1}",2,2,False,93,2016,2026,False,name,accepted,4
+S0439,A5047595343,NIT Surathkal,Debabrata Karmakar,D. Karmaka,Water Resources & Ocean,{'Water Resources & Ocean': 1},1,2,False,1,2019,2019,False,name,accepted,3
+S0440,A5126641099,NIT Surathkal,Pruthviraj U,Pruthviraj U.,Water Resources & Ocean,{'Water Resources & Ocean': 2},3,2,False,3,2018,2026,False,name,accepted,5
+S0440,A5009115053,NIT Surathkal,Pruthviraj U,Pruthviraj Umesh,Water Resources & Ocean,"{'Water Resources & Ocean': 40, 'Mechanical': 1}",2,2,False,55,2019,2026,False,name,accepted,4
+S0440,A5015924876,NIT Surathkal,Pruthviraj U,Pruthviraj Umesht,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2021,2021,False,name,accepted,4
+S0440,A5153283576,NIT Surathkal,Pruthviraj U,Pruthviraj U.,Water Resources & Ocean,{},3,0,False,1,2026,2026,False,name,accepted,3
+S0441,A5137148867,NIT Surathkal,Shwetha H R,Hassan Rangaswamy Shwetha,Water Resources & Ocean,{'Water Resources & Ocean': 11},2,2,False,15,2020,2026,False,name,accepted,4
+S0442,A5085834920,NIT Surathkal,Subrahmanya K,Subrahmanya Kundapura,Water Resources & Ocean,{'Water Resources & Ocean': 34},2,2,False,36,2020,2026,False,name,accepted,4
+S0443,A5039900601,NIT Surathkal,Vadivuchezhian Kaliveeran,Vadivuchezhian Kaliveeran,Water Resources & Ocean,{'Water Resources & Ocean': 29},3,2,False,30,2019,2026,False,name,accepted,5
+S0444,A5108917882,NIT Surathkal,Nagaraj M K,M. K. Nagaraj,Water Resources & Ocean,{'Water Resources & Ocean': 8},3,2,False,9,2018,2022,False,name,accepted,5
+S0444,A5108700753,NIT Surathkal,Nagaraj M K,Mysore Kashipathy Nagaraj,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2019,2019,False,name,accepted,4
+S0446,A5054654905,NIT Surathkal,Paresh Chandra Deka,Paresh Chandra Deka,Water Resources & Ocean,{'Water Resources & Ocean': 27},3,2,False,31,2016,2023,False,name,accepted,5
+S0447,A5077767025,NIT Surathkal,Amba Shetty,Amba Shetty,Water Resources & Ocean,{'Water Resources & Ocean': 66},3,2,False,83,2016,2026,False,name,accepted,5
+S0448,A5121813890,NIT Surathkal,Dodamani B M,B. M. Dodamani,Water Resources & Ocean,{'Water Resources & Ocean': 1},3,2,False,2,2025,2026,False,name,accepted,5
+S0448,A5007816353,NIT Surathkal,Dodamani B M,Basavanand M. Dodamani,Water Resources & Ocean,{'Water Resources & Ocean': 23},2,2,False,30,2016,2025,False,name,accepted,4
+S0448,A5006868894,NIT Surathkal,Dodamani B M,Basavanad .M. Dodamani,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2018,2018,False,name,accepted,4
+S0449,A5061154862,NIT Surathkal,Dwarakish G S,Gowdagere Siddaramaiah Dwarakish,Water Resources & Ocean,{'Water Resources & Ocean': 38},2,2,False,49,2016,2026,False,name,accepted,4
+S0449,A5041391648,NIT Surathkal,Dwarakish G S,Prof. Gowdagede Siddaramaiah Dwarakish,Water Resources & Ocean,{},2,0,False,1,2022,2022,False,name,accepted,2
+S0450,A5070062668,NIT Surathkal,Kiran G Shirlal,Kiran G. Shirlal,Water Resources & Ocean,{'Water Resources & Ocean': 15},3,2,False,17,2016,2024,False,name,accepted,5
+S0451,A5056648294,NIT Surathkal,Lakshman Nandagiri,Lakshman Nandagiri,Water Resources & Ocean,{'Water Resources & Ocean': 11},3,2,False,12,2016,2023,False,name,accepted,5
+S0452,A5078131834,NIT Surathkal,Mahesha A,Amai Mahesha,Water Resources & Ocean,{'Water Resources & Ocean': 38},2,2,False,39,2016,2026,False,name,accepted,4
+S0452,A5133369056,NIT Surathkal,Mahesha A,Mahesha Amai,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2026,2026,False,name,accepted,4
+S0453,A5101650354,NIT Surathkal,Manu,Manu Rao,Water Resources & Ocean,{'Water Resources & Ocean': 18},1,2,True,19,2018,2026,False,orcid,accepted,13
+S0453,A5142880874,NIT Surathkal,Manu,Manu,Water Resources & Ocean,{},3,0,False,1,2019,2019,False,name,accepted,3
+S0454,A5058466765,NIT Surathkal,Nasar T,Nasar Thuvanismail,Water Resources & Ocean,{'Water Resources & Ocean': 8},2,2,False,12,2017,2024,False,name,accepted,4
+S0455,A5102724061,NIT Surathkal,Ramesh H,H. Ramesh,Water Resources & Ocean,{'Water Resources & Ocean': 28},3,2,False,33,2016,2026,True,name,accepted,5
+S0455,A5135488753,NIT Surathkal,Ramesh H,Ramesh H,Water Resources & Ocean,{'Water Resources & Ocean': 2},3,2,False,2,2026,2026,True,name,accepted,5
+S0455,A5140431680,NIT Surathkal,Ramesh H,H. Ramesh,Water Resources & Ocean,{'Water Resources & Ocean': 1},3,2,False,1,2026,2026,True,name,accepted,5
+S0455,A5037833689,NIT Surathkal,Ramesh H,Ramesh Honnasiddaiah,Water Resources & Ocean,{'Water Resources & Ocean': 5},2,2,False,5,2020,2024,False,name,accepted,4
+S0455,A5122710886,NIT Surathkal,Ramesh H,Ramesh H. Gowda,Water Resources & Ocean,{'Water Resources & Ocean': 1},1,2,False,1,2026,2026,False,name,accepted,3
+S0456,A5021812348,NIT Surathkal,Varija K,Kumble Varija,Water Resources & Ocean,{'Water Resources & Ocean': 10},2,2,False,10,2018,2026,False,name,accepted,4
+S0456,A5092439972,NIT Surathkal,Varija K,Varija Kumble,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2023,2023,False,name,accepted,4
+S0458,A5062289894,NIT Surathkal,S Ganapathi Mayya,S. G. Mayya,Water Resources & Ocean,{'Water Resources & Ocean': 1},2,2,False,1,2022,2022,False,name,accepted,4
+S0460,A5100620412,NIT Surathkal,Subba Rao,Subba Rao,Water Resources & Ocean,{'Water Resources & Ocean': 24},3,2,False,30,2016,2025,False,name,accepted,5
+S0460,A5104108891,NIT Surathkal,Subba Rao,Subba Rao,Water Resources & Ocean,{'Water Resources & Ocean': 3},3,2,False,3,2024,2026,False,name,accepted,5
+S0460,A5135442538,NIT Surathkal,Subba Rao,Subba Rao,Water Resources & Ocean,{'Water Resources & Ocean': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0462,A5040914861,NIT Trichy,Mini Shaji Thomas,Mini Shaji Thomas,,{'EEE': 5},3,0,False,10,2017,2022,False,name,accepted,3
+T0463,A5046648179,NIT Trichy,A Meenatchi Sundaram,A. Meenatchi Sundaram,Architecture,{'Architecture': 4},3,2,False,6,2021,2025,False,name,accepted,5
+T0463,A5017537179,NIT Trichy,A Meenatchi Sundaram,Meenatchi Sundaram A,Architecture,{'Architecture': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0463,A5152715111,NIT Trichy,A Meenatchi Sundaram,A. Meenatchi Sundaram,Architecture,{'Architecture': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0465,A5053976252,NIT Trichy,D Kannamma,D. Kannamma,Architecture,{'Architecture': 11},3,2,False,12,2021,2025,False,name,accepted,5
+T0466,A5044575363,NIT Trichy,G Subbaiyan,G. Subbaiyan,Architecture,{'Architecture': 2},3,2,False,2,2022,2026,False,name,accepted,5
+T0466,A5032434022,NIT Trichy,G Subbaiyan,Gnanasambandam Subbaiyan,Architecture,{'Architecture': 11},2,2,False,15,2016,2026,False,name,accepted,4
+T0466,A5140488974,NIT Trichy,G Subbaiyan,Subbaiyan Gnanasambandam,Architecture,{},2,0,False,1,2026,2026,False,name,accepted,2
+T0468,A5102728438,NIT Trichy,K Thirumaran,Thirumaran Kesavaperumal,Architecture,{'Architecture': 22},2,2,False,23,2016,2025,False,name,accepted,4
+T0469,A5093454977,NIT Trichy,L Saikala,L. Saikala,Architecture,{'Architecture': 3},3,2,False,3,2024,2025,False,name,accepted,5
+T0470,A5053905536,NIT Trichy,P Gopalakrishnan,Padmanaban Gopalakrishnan,Architecture,{'Architecture': 12},2,2,False,13,2017,2025,False,name,accepted,4
+T0470,A5140510197,NIT Trichy,P Gopalakrishnan,Gopalakrishnan Padmanaban,Architecture,{},2,0,False,1,2026,2026,False,name,accepted,2
+T0471,A5110286285,NIT Trichy,S Monika,Monika Shankar,Architecture,{},2,0,False,1,2025,2025,False,name,accepted,2
+T0473,A5043818914,NIT Trichy,T Srinivas,Srinivas Tadepalli,Architecture,{'Architecture': 11},2,2,False,13,2016,2025,False,name,accepted,4
+T0475,A5058809070,NIT Trichy,Keerti Manisha,Keerti Manisha,Architecture,{'Architecture': 5},3,2,False,5,2024,2026,False,name,accepted,5
+T0477,A5060018020,NIT Trichy,Amalan Sigmund Kaushik,S. Amalan Sigmund Kaushik,Architecture,{'Architecture': 13},3,2,False,13,2022,2026,False,name,accepted,5
+T0477,A5113353138,NIT Trichy,Amalan Sigmund Kaushik,Amalan Sigmund Kaushik S,Architecture,{'Architecture': 5},3,2,False,7,2023,2026,False,name,accepted,5
+T0477,A5133533865,NIT Trichy,Amalan Sigmund Kaushik,Amalan Sigmund Kaushik S,Architecture,{'Architecture': 3},3,2,False,4,2026,2026,False,name,accepted,5
+T0477,A5110134242,NIT Trichy,Amalan Sigmund Kaushik,Amalan Sigmund Kaushik S,Architecture,{'Architecture': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0480,A5106604918,NIT Trichy,K Bhagyasri,K. Bhagyasri,Architecture,{'Architecture': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0484,A5100695950,NIT Trichy,Saurabh Kumar,Saurabh Kumar,Architecture,{'Architecture': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0488,A5018658712,NIT Trichy,Ramprasad V,Ramprasad Vittal,Architecture,{'Architecture': 1},2,2,False,1,2016,2016,False,name,accepted,4
+T0488,A5047764772,NIT Trichy,Ramprasad V,Vittal Ramprasad,Architecture,{'Architecture': 1},2,2,False,1,2017,2017,False,name,accepted,4
+T0497,A5020764369,NIT Trichy,R Leela Velusamy,R. Leela Velusamy,CSE,{'CSE': 23},3,2,False,31,2016,2026,False,name,accepted,5
+T0497,A5097702070,NIT Trichy,R Leela Velusamy,Leela Velusamy R,CSE,{'CSE': 1},3,2,False,1,2016,2016,False,name,accepted,5
+T0497,A5070925570,NIT Trichy,R Leela Velusamy,Leela Velusamy Rangaraj,CSE,{'CSE': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0499,A5059458977,NIT Trichy,Aghila G,Aghila Gnanasekaran,CSE,{'CSE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0499,A5071383931,NIT Trichy,Aghila G,G. Aghila,CSE,{},3,0,False,1,2023,2023,False,name,accepted,3
+T0499,A5037972115,NIT Trichy,Aghila G,Gnanasekaran Aghila,CSE,{},2,0,False,3,2024,2025,False,name,accepted,2
+T0500,A5085637448,NIT Trichy,B Shameedha Begum,B. Shameedha Begum,CSE,{'CSE': 27},3,2,False,36,2016,2026,False,name,accepted,5
+T0500,A5153314985,NIT Trichy,B Shameedha Begum,B. Shameedha Begum,CSE,{'CSE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0500,A5112721884,NIT Trichy,B Shameedha Begum,Shameedha Begum,CSE,{'CSE': 3},1,2,False,4,2018,2023,False,override,accepted,3
+T0501,A5086678167,NIT Trichy,C Mala,C. Mala,CSE,{'CSE': 46},3,2,False,53,2016,2026,False,name,accepted,5
+T0501,A5026756531,NIT Trichy,C Mala,Mala Chelliah,CSE,{'CSE': 2},2,2,False,2,2020,2024,False,name,accepted,4
+T0502,A5123337860,NIT Trichy,C Oswald,C Oswald,CSE,{'CSE': 3},3,2,False,3,2022,2026,False,name,accepted,5
+T0503,A5123128454,NIT Trichy,Chandra Priya J,J. Chandra Priya,CSE,{'CSE': 2},3,2,False,2,2026,2026,False,name,accepted,5
+T0503,A5038233508,NIT Trichy,Chandra Priya J,Jayabal Chandra Priya,CSE,{'CSE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0504,A5066177122,NIT Trichy,Chandramani Chaudhary,Chandramani Chaudhary,CSE,{},3,0,False,1,2023,2023,False,name,accepted,3
+T0505,A5030717154,NIT Trichy,E Sivasankar,E. Sivasankar,CSE,{'CSE': 4},3,2,False,4,2019,2026,False,name,accepted,5
+T0505,A5019965668,NIT Trichy,E Sivasankar,E Sivasankar,CSE,{'CSE': 2},3,2,False,2,2023,2025,False,name,accepted,5
+T0505,A5024737663,NIT Trichy,E Sivasankar,Sivasankar Elango,CSE,{'CSE': 12},2,2,False,13,2018,2026,False,name,accepted,4
+T0506,A5010997545,NIT Trichy,K Viswanathan Iyer,Kailasam Viswanathan Iyer,CSE,{'CSE': 4},2,2,False,4,2016,2025,False,name,accepted,4
+T0507,A5020432080,NIT Trichy,Kamalika Bhattacharjee,Kamalika Bhattacharjee,CSE,{'CSE': 23},3,2,False,24,2021,2025,False,name,accepted,5
+T0508,A5090718537,NIT Trichy,Karthick S,Karthick Seshadri,CSE,{'CSE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0508,A5155644743,NIT Trichy,Karthick S,Karthick S,CSE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0508,A5038057654,NIT Trichy,Karthick S,Karthick Subramaniam,CSE,{},2,0,False,2,2019,2020,False,name,accepted,2
+T0509,A5070981578,NIT Trichy,Madhukrishna Priyadarsini,Madhukrishna Priyadarsini,CSE,{'CSE': 1},3,2,False,2,2023,2024,False,name,accepted,5
+T0510,A5102887238,NIT Trichy,R Bala Krishnan,R. Balakrishnan,CSE,{'CSE': 2},3,2,False,2,2024,2025,False,name,accepted,5
+T0510,A5110659741,NIT Trichy,R Bala Krishnan,R. Bala Krishnan,CSE,{'CSE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0511,A5109402555,NIT Trichy,R Mohan,R. Mohan,CSE,{'CSE': 2},3,2,False,4,2019,2024,False,name,accepted,5
+T0511,A5001178161,NIT Trichy,R Mohan,R. Mohan,CSE,{'CSE': 3},3,2,False,3,2023,2026,False,name,accepted,5
+T0511,A5007423127,NIT Trichy,R Mohan,Mohan Ramasundaram,CSE,{'CSE': 16},2,2,False,18,2018,2025,False,name,accepted,4
+T0511,A5102619594,NIT Trichy,R Mohan,Ramasundaram Mohan,CSE,{'CSE': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0511,A5113835817,NIT Trichy,R Mohan,R. Krishna Mohan,CSE,{'CSE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+T0512,A5043959327,NIT Trichy,S Mary Saira Bhanu,S. Mary Saira Bhanu,CSE,"{'CSE': 25, 'Computer Applications': 1}",3,2,False,36,2016,2025,False,name,accepted,5
+T0512,A5089642734,NIT Trichy,S Mary Saira Bhanu,Mary Saira Bhanu S,CSE,{'CSE': 2},3,2,False,2,2020,2021,False,name,accepted,5
+T0512,A5028586400,NIT Trichy,S Mary Saira Bhanu,Saira Bhanu S Mary,CSE,{'CSE': 1},3,2,False,1,2021,2021,False,name,accepted,5
+T0512,A5065988048,NIT Trichy,S Mary Saira Bhanu,Mary Saira Bhanu Somasundaram,CSE,{'CSE': 4},2,2,False,4,2018,2023,False,name,accepted,4
+T0512,A5112226349,NIT Trichy,S Mary Saira Bhanu,Somasundaram Mary Saira Bhanu,CSE,{'CSE': 2},2,2,False,3,2016,2019,False,name,accepted,4
+T0513,A5100638043,NIT Trichy,S Selvakumar,Subramanian Selvakumar,CSE,{'CSE': 14},2,2,False,17,2016,2023,False,name,accepted,4
+T0513,A5115602969,NIT Trichy,S Selvakumar,Saravanan Selvakumar,CSE,{'CSE': 3},2,2,False,3,2021,2022,False,name,accepted,4
+T0513,A5101687090,NIT Trichy,S Selvakumar,Selvakumar Subramanian,CSE,{'CSE': 2},2,2,False,2,2016,2020,False,name,accepted,4
+T0514,A5050706857,NIT Trichy,Sai Krishna Mothku,Sai Krishna Mothku,CSE,{'CSE': 13},3,2,False,14,2022,2026,False,name,accepted,5
+T0516,A5001991479,NIT Trichy,Sitara K,K. Sitara,CSE,{'CSE': 7},3,2,False,7,2022,2026,False,name,accepted,5
+T0517,A5031538118,NIT Trichy,Usha Kiruthika S,S. Usha Kiruthika,CSE,{'CSE': 2},3,2,False,4,2024,2024,False,name,accepted,5
+T0517,A5037554620,NIT Trichy,Usha Kiruthika S,Usha Kiruthika S,CSE,{'CSE': 2},3,2,False,3,2022,2024,False,name,accepted,5
+T0517,A5090068671,NIT Trichy,Usha Kiruthika S,Usha Kiruthika,CSE,{'CSE': 4},1,2,False,5,2024,2026,False,override,accepted,3
+T0518,A5101621503,NIT Trichy,Rajeswari Sridhar,Rajeswari Sridhar,CSE,{'CSE': 19},3,2,False,27,2020,2026,False,name,accepted,5
+T0519,A5027435703,NIT Trichy,Jakkepalli Pavan Kumar,Jakkepalli Pavan Kumar,CSE,{'CSE': 2},3,2,False,2,2024,2026,False,name,accepted,5
+T0520,A5014954893,NIT Trichy,Priyanka Panigrahi,Priyanka Panigrahi,CSE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0521,A5057006110,NIT Trichy,A Santhana Vijayan,A. Santhanavijayan,CSE,"{'CSE': 81, 'ECE': 1, 'Mechanical': 1}",3,2,False,95,2017,2026,False,name,accepted,5
+T0521,A5017290534,NIT Trichy,A Santhana Vijayan,Santhana vijayan,CSE,{'CSE': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0521,A5153037959,NIT Trichy,A Santhana Vijayan,A. Santhanavijayan,CSE,{'CSE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0521,A5098006072,NIT Trichy,A Santhana Vijayan,Santhanavijayan,CSE,{'CSE': 2},1,2,False,2,2021,2024,False,name,accepted,3
+T0522,A5074927441,NIT Trichy,Kunwar Singh,Kunwar Singh,CSE,{'CSE': 31},3,2,False,39,2016,2026,False,name,accepted,5
+T0522,A5124655280,NIT Trichy,Kunwar Singh,KUNWAR SINGH,CSE,{'CSE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0522,A5130138388,NIT Trichy,Kunwar Singh,Kunwar Singh,CSE,{'CSE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0522,A5048702806,NIT Trichy,Kunwar Singh,Kunwar Pal Singh,CSE,{'CSE': 3},1,2,False,3,2022,2023,False,name,accepted,3
+T0523,A5101806896,NIT Trichy,B Nithya,B. Nithya,CSE,{'CSE': 41},3,2,False,45,2017,2026,False,name,accepted,5
+T0523,A5040183987,NIT Trichy,B Nithya,B. Nithya,CSE,{'CSE': 2},3,2,False,3,2022,2024,False,name,accepted,5
+T0523,A5013898460,NIT Trichy,B Nithya,B Nithya,CSE,{'CSE': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0523,A5059721808,NIT Trichy,B Nithya,B. Nithya,CSE,{'CSE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0523,A5015723709,NIT Trichy,B Nithya,Nithya Balasubramanian,CSE,{'CSE': 4},2,2,False,4,2018,2023,False,name,accepted,4
+T0524,A5050995570,NIT Trichy,M Brindha,M. Brindha,CSE,{'CSE': 40},3,2,False,47,2016,2025,False,name,accepted,5
+T0524,A5057853276,NIT Trichy,M Brindha,M. Brindha,CSE,{'CSE': 12},3,2,False,13,2025,2026,False,name,accepted,5
+T0524,A5016616446,NIT Trichy,M Brindha,M Brindha,CSE,{'CSE': 1},3,2,False,2,2026,2026,False,name,accepted,5
+T0524,A5130927223,NIT Trichy,M Brindha,Brindha M,CSE,{'CSE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0524,A5111228687,NIT Trichy,M Brindha,Brindha Matharasi Murugan,CSE,{'CSE': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0525,A5003633999,NIT Trichy,M Sridevi,M. Sridevi,CSE,{'CSE': 3},3,2,False,3,2025,2026,False,name,accepted,5
+T0526,A5058497633,NIT Trichy,S Jaya Nirmala,S. Jaya Nirmala,CSE,{'CSE': 20},3,2,False,38,2016,2026,False,name,accepted,5
+T0527,A5020945633,NIT Trichy,Rama Subramanian N,N. Ramasubramanian,CSE,{'CSE': 16},3,2,False,20,2016,2025,False,name,accepted,5
+T0527,A5000794734,NIT Trichy,Rama Subramanian N,N. Ramasubramanian,CSE,{'CSE': 6},3,2,False,6,2019,2026,False,name,accepted,5
+T0527,A5156025288,NIT Trichy,Rama Subramanian N,N Ramasubramanian,CSE,{'CSE': 2},3,2,False,2,2025,2025,False,name,accepted,5
+T0527,A5012477842,NIT Trichy,Rama Subramanian N,N. Ramasubramaniam,CSE,{'CSE': 1},1,2,False,1,2018,2018,False,name,accepted,3
+T0529,A5090347204,NIT Trichy,P Kalaichelvi,P. Kalaichelvi,Chemical,{'Chemical': 1},3,2,False,1,2017,2017,False,name,accepted,5
+T0529,A5064187650,NIT Trichy,P Kalaichelvi,Ponnusamy Kalaichelvi,Chemical,{'Chemical': 37},2,2,False,40,2016,2026,False,name,accepted,4
+T0530,A5013685794,NIT Trichy,A Arunagiri,Arunagiri Appusamy,Chemical,{'Chemical': 40},2,2,False,40,2016,2026,False,name,accepted,4
+T0530,A5016934263,NIT Trichy,A Arunagiri,Appusamy Arunagiri,Chemical,{'Chemical': 1},2,2,False,1,2017,2017,False,name,accepted,4
+T0530,A5112395325,NIT Trichy,A Arunagiri,Appusami Arunagiri,Chemical,{'Chemical': 1},2,2,False,1,2018,2018,False,name,accepted,4
+T0530,A5025328304,NIT Trichy,A Arunagiri,A. Arunangiri,Chemical,{'Chemical': 1},1,2,False,1,2022,2022,False,name,accepted,3
+T0532,A5051671071,NIT Trichy,G Arthanareeswaran,G. Arthanareeswaran,Chemical,{'Chemical': 7},3,2,False,7,2022,2026,False,name,accepted,5
+T0532,A5074420449,NIT Trichy,G Arthanareeswaran,G Arthanareeswaran,Chemical,{'Chemical': 2},3,2,False,2,2025,2025,False,name,accepted,5
+T0532,A5101056686,NIT Trichy,G Arthanareeswaran,G. Arthanareeswaran,Chemical,{'Chemical': 1},3,2,False,1,2019,2019,False,name,accepted,5
+T0532,A5157606331,NIT Trichy,G Arthanareeswaran,Arthanareeswaran G,Chemical,{'Chemical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0532,A5083873088,NIT Trichy,G Arthanareeswaran,Gangasalam Arthanareeswaran,Chemical,"{'Chemical': 146, 'Energy & Environment': 1}",2,2,False,148,2016,2026,False,name,accepted,4
+T0532,A5101464510,NIT Trichy,G Arthanareeswaran,Gangasalam Arthanareeswaran,Chemical,{'Chemical': 3},2,2,False,4,2019,2026,False,name,accepted,4
+T0532,A5121412937,NIT Trichy,G Arthanareeswaran,Arthanareeswaran G,Chemical,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0533,A5070156934,NIT Trichy,J Sarat Chandra Babu,Jakka Sarat Chandra Babu,Chemical,{'Chemical': 9},2,2,False,9,2016,2024,False,name,accepted,4
+T0533,A5146810537,NIT Trichy,J Sarat Chandra Babu,Sarat Chandra Babu Jakka,Chemical,{'Chemical': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0534,A5102923798,NIT Trichy,Jyoti Sahu,Jyoti Sahu,Chemical,{'Chemical': 7},3,2,False,7,2021,2026,False,name,accepted,5
+T0535,A5101530857,NIT Trichy,K Sankar,K. Sankar,Chemical,{'Chemical': 3},3,2,False,4,2021,2026,False,name,accepted,5
+T0535,A5119661339,NIT Trichy,K Sankar,Sankar Kasinathan,Chemical,{'Chemical': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0536,A5032236309,NIT Trichy,K M Meera Sheriffa Begum,K.M. Meera Sheriffa Begum,Chemical,{'Chemical': 41},3,2,False,41,2016,2025,False,name,accepted,5
+T0536,A5112510820,NIT Trichy,K M Meera Sheriffa Begum,Meera Sheriffa Begum Khadhar Mohamed,Chemical,{'Chemical': 7},2,2,False,7,2019,2026,False,name,accepted,4
+T0536,A5010177443,NIT Trichy,K M Meera Sheriffa Begum,Meera Sheriffa Begum Khadhar Mohamad,Chemical,{'Chemical': 1},2,2,False,1,2020,2020,False,name,accepted,4
+T0537,A5047458803,NIT Trichy,K N Sheeba,K. N. Sheeba,Chemical,{'Chemical': 8},3,2,False,11,2016,2026,False,name,accepted,5
+T0537,A5037837520,NIT Trichy,K N Sheeba,K. Sheeba Narayanan,Chemical,{'Chemical': 2},2,2,False,2,2017,2022,False,name,accepted,4
+T0537,A5047056779,NIT Trichy,K N Sheeba,Sheeba Narayanan Kizhakkuveettil,Chemical,{'Chemical': 1},2,2,False,1,2016,2016,False,name,accepted,4
+T0538,A5016007426,NIT Trichy,Kartikeya Shukla,Kartikeya Shukla,Chemical,{'Chemical': 11},3,2,False,11,2022,2026,False,name,accepted,5
+T0538,A5034971276,NIT Trichy,Kartikeya Shukla,Kartikeya Shukla,Chemical,{'Chemical': 2},3,2,False,2,2024,2026,False,name,accepted,5
+T0539,A5034381389,NIT Trichy,M Arivazhagan,M. Arivazhagan,Chemical,{'Chemical': 14},3,2,False,14,2017,2026,False,name,accepted,5
+T0540,A5023975501,NIT Trichy,M Perumalsamy,Muthiah Perumalsamy,Chemical,{'Chemical': 20},2,2,False,20,2016,2026,False,name,accepted,4
+T0540,A5086260380,NIT Trichy,M Perumalsamy,Perumalsamy Muthih,Chemical,{'Chemical': 1},2,2,False,1,2017,2017,False,name,accepted,4
+T0541,A5013978653,NIT Trichy,Muthukumar K,Karuppan Muthukumar,Chemical,{'Chemical': 27},2,2,False,27,2019,2026,False,name,accepted,4
+T0542,A5036685459,NIT Trichy,N Anantharaman,N. Anantharaman,Chemical,"{'Chemical': 1, 'Energy & Environment': 1}",3,2,False,2,2022,2025,False,name,accepted,5
+T0542,A5012671229,NIT Trichy,N Anantharaman,Narayanan Anantharaman,Chemical,{'Chemical': 39},2,2,False,41,2016,2025,False,name,accepted,4
+T0542,A5136357197,NIT Trichy,N Anantharaman,Anantharaman Narayanan,Chemical,{'Chemical': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0543,A5030066230,NIT Trichy,N Samsudeen,N. Samsudeen,Chemical,{'Chemical': 3},3,2,False,3,2022,2024,False,name,accepted,5
+T0543,A5032954074,NIT Trichy,N Samsudeen,Samsudeen Naina Mohamed,Chemical,{'Chemical': 55},1,2,False,56,2016,2026,False,name,accepted,3
+T0544,A5022097068,NIT Trichy,Nandlal Pingua,Nandlal Pingua,Chemical,{'Chemical': 5},3,2,False,6,2024,2026,False,name,accepted,5
+T0545,A5054064481,NIT Trichy,P Sivashanmugam,Palani Sivashanmugam,Chemical,{'Chemical': 67},2,2,False,68,2016,2026,False,name,accepted,4
+T0545,A5022609216,NIT Trichy,P Sivashanmugam,P. Sivashanmugham,Chemical,{'Chemical': 3},1,2,False,3,2017,2022,False,name,accepted,3
+T0545,A5059109240,NIT Trichy,P Sivashanmugam,P. Sivashanmugam,Chemical,{},3,0,False,1,2016,2016,False,name,accepted,3
+T0546,A5021494832,NIT Trichy,Rupam Sinha,Rupam Sinha,Chemical,{'Chemical': 4},3,2,False,5,2024,2026,False,name,accepted,5
+T0547,A5083329094,NIT Trichy,S Saravanan,S. Saravanan,Chemical,{'Chemical': 1},3,2,False,1,2016,2016,False,name,accepted,5
+T0547,A5101201968,NIT Trichy,S Saravanan,Saravanan Settu,Chemical,{'Chemical': 4},2,2,False,4,2023,2025,False,name,accepted,4
+T0547,A5100740456,NIT Trichy,S Saravanan,Sundaram Saravanan,Chemical,{'Chemical': 1},2,2,False,1,2018,2018,False,name,accepted,4
+T0548,A5130939804,NIT Trichy,T K Radhakrishnan,Radhakrishnan T K,Chemical,{'Chemical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0548,A5153011079,NIT Trichy,T K Radhakrishnan,T. K. Radhakrishnan,Chemical,{'Chemical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0548,A5049334112,NIT Trichy,T K Radhakrishnan,Thota Karunakaran Radhakrishnan,Chemical,"{'Chemical': 66, 'Civil': 1}",2,2,False,69,2016,2026,False,name,accepted,4
+T0548,A5055262506,NIT Trichy,T K Radhakrishnan,Radhakrishnan Thota Karunakaran,Chemical,{'Chemical': 2},2,2,False,2,2017,2024,False,name,accepted,4
+T0549,A5035824626,NIT Trichy,T Sivasankar,Thirugnanasambandam Sivasankar,Chemical,{'Chemical': 28},2,2,False,28,2016,2026,False,name,accepted,4
+T0550,A5086823010,NIT Trichy,Virivinti Nagajyothi,Nagajyothi Virivinti,Chemical,{'Chemical': 8},3,2,False,13,2020,2026,False,name,accepted,5
+T0551,A5108111080,NIT Trichy,M Matheswaran,M. Matheswaran,Chemical,{'Chemical': 2},3,2,False,2,2017,2019,False,name,accepted,5
+T0551,A5137535958,NIT Trichy,M Matheswaran,M Matheswaran,Chemical,{'Chemical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0551,A5107842562,NIT Trichy,M Matheswaran,Manickam Matheswaran,Chemical,{'Chemical': 26},2,2,False,26,2016,2024,False,name,accepted,4
+T0551,A5101599121,NIT Trichy,M Matheswaran,Manickam Matheswaran,Chemical,{'Chemical': 11},2,2,False,12,2016,2024,False,name,accepted,4
+T0551,A5103952814,NIT Trichy,M Matheswaran,Manickam Matheswaran,Chemical,{'Chemical': 1},2,2,False,1,2019,2019,False,name,accepted,4
+T0552,A5036622326,NIT Trichy,S Velmathi,Sivan Velmathi,Chemistry,{'Chemistry': 100},2,2,False,105,2016,2026,False,name,accepted,4
+T0553,A5013108193,NIT Trichy,L Cindrella,L. Cindrella,Chemistry,{'Chemistry': 44},3,2,False,45,2016,2026,False,name,accepted,5
+T0553,A5123513089,NIT Trichy,L Cindrella,Cindrella Louis,Chemistry,{'Chemistry': 2},2,2,False,2,2026,2026,False,name,accepted,4
+T0554,A5069455441,NIT Trichy,A Sreekanth,Anandaram Sreekanth,Chemistry,{'Chemistry': 65},2,2,False,66,2016,2026,False,name,accepted,4
+T0554,A5106907619,NIT Trichy,A Sreekanth,Anandaram Sreekanth,Chemistry,{'Chemistry': 3},2,2,False,3,2024,2025,False,name,accepted,4
+T0554,A5083210550,NIT Trichy,A Sreekanth,Sreekanth Anadaram,Chemistry,{},2,0,False,1,2021,2021,False,name,accepted,2
+T0555,A5005704438,NIT Trichy,Arivazhagan C,C. Arivazhagan,Chemistry,{'Chemistry': 2},3,2,False,2,2024,2026,False,name,accepted,5
+T0556,A5050875555,NIT Trichy,Baby Viswambharan,Baby Viswambharan,Chemistry,{'Chemistry': 5},3,2,False,5,2023,2026,False,name,accepted,5
+T0557,A5111047254,NIT Trichy,G Venkatesa Prabhu,G. Venkatesa Prabhu,Chemistry,{'Chemistry': 3},3,2,False,3,2016,2017,False,name,accepted,5
+T0557,A5078912979,NIT Trichy,G Venkatesa Prabhu,G. VenkatesaPrabhu,Chemistry,{'Chemistry': 1},3,2,False,1,2018,2018,False,name,accepted,5
+T0557,A5102727308,NIT Trichy,G Venkatesa Prabhu,Ganesan Venkatesa Prabhu,Chemistry,{'Chemistry': 4},2,2,False,4,2017,2017,False,name,accepted,4
+T0558,A5048533063,NIT Trichy,Ganesh Chandra Nandi,Ganesh Chandra Nandi,Chemistry,{'Chemistry': 39},3,2,False,40,2018,2026,False,name,accepted,5
+T0559,A5010341774,NIT Trichy,Jothi Lakshmi Nallasivam,Jothi L. Nallasivam,Chemistry,{'Chemistry': 10},2,2,False,11,2023,2026,False,name,accepted,4
+T0560,A5073325628,NIT Trichy,Projesh Kumar Roy,Projesh Kumar Roy,Chemistry,{'Chemistry': 1},3,2,False,2,2025,2026,False,name,accepted,5
+T0561,A5086878929,NIT Trichy,R Karvembu,Ramasamy Karvembu,Chemistry,{'Chemistry': 142},2,2,False,145,2016,2026,False,name,accepted,4
+T0562,A5011065929,NIT Trichy,S Anandan,Sambandam Anandan,Chemistry,"{'Chemistry': 259, 'Energy & Environment': 1}",2,2,False,260,2016,2026,False,name,accepted,4
+T0562,A5126769257,NIT Trichy,S Anandan,Anandan Sambandam,Chemistry,{'Chemistry': 5},2,2,False,5,2026,2026,False,name,accepted,4
+T0562,A5147462820,NIT Trichy,S Anandan,Sanjhana Anandan,Chemistry,{'Chemistry': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0563,A5080767780,NIT Trichy,Sarthak Mandal,Sarthak Mandal,Chemistry,{'Chemistry': 13},3,2,False,14,2019,2026,False,name,accepted,5
+T0563,A5157447361,NIT Trichy,Sarthak Mandal,S. Mandal,Chemistry,{'Chemistry': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0564,A5024928679,NIT Trichy,Somenath Garai,Somenath Garai,Chemistry,{'Chemistry': 4},3,2,False,6,2018,2020,False,name,accepted,5
+T0564,A5077736136,NIT Trichy,Somenath Garai,Somnath Garai,Chemistry,{'Chemistry': 1},1,2,False,1,2018,2018,False,name,accepted,3
+T0565,A5045221411,NIT Trichy,Sunandan Sarkar,Sunandan Sarkar,Chemistry,{'Chemistry': 18},3,2,False,18,2020,2026,False,name,accepted,5
+T0566,A5015039693,NIT Trichy,V M Biju,V.M. Biju,Chemistry,{'Chemistry': 25},3,2,False,26,2016,2026,False,name,accepted,5
+T0566,A5108724167,NIT Trichy,V M Biju,Valasala Madhavan Nair Biju,Chemistry,{'Chemistry': 1},1,2,False,1,2020,2020,False,name,accepted,3
+T0566,A5135906924,NIT Trichy,V M Biju,Biju Valsala Madhavan Nair,Chemistry,{'Chemistry': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0567,A5033493870,NIT Trichy,Velmurugan Gunasekaran,Gunasekaran Velmurugan,Chemistry,{'Chemistry': 10},3,2,False,10,2026,2026,False,name,accepted,5
+T0569,A5062657095,NIT Trichy,Aneesh Mathew,Aneesh Mathew,Civil,{'Civil': 71},3,2,False,71,2021,2026,False,name,accepted,5
+T0569,A5153320641,NIT Trichy,Aneesh Mathew,Aneesh Mathew,Civil,{'Civil': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0570,A5111167195,NIT Trichy,C Natarajan,C. Natarajan,Civil,{'Civil': 18},3,2,False,18,2016,2021,False,name,accepted,5
+T0570,A5036596111,NIT Trichy,C Natarajan,C. Natarajan,Civil,{'Civil': 1},3,2,False,1,2018,2018,False,name,accepted,5
+T0570,A5110161464,NIT Trichy,C Natarajan,Chidmabrathanu Natarajan,Civil,{'Civil': 2},2,2,False,2,2017,2017,False,name,accepted,4
+T0570,A5077588213,NIT Trichy,C Natarajan,Natarajan Chidambarathanu,Civil,{'Civil': 1},2,2,False,1,2019,2019,False,name,accepted,4
+T0571,A5085916582,NIT Trichy,Chandaluri Vinaykumar,Vinay Kumar Chandaluri,Civil,{'Civil': 1},1,2,False,2,2023,2025,False,name,accepted,3
+T0571,A5123279881,NIT Trichy,Chandaluri Vinaykumar,Chandaluri Vinay Kumar,Civil,{'Civil': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0573,A5003006256,NIT Trichy,Darshana O,Darshana Othayoth,Civil,{'Civil': 8},2,2,False,19,2020,2025,False,name,accepted,4
+T0574,A5071848233,NIT Trichy,Deendayal Rathod,Deendayal Rathod,Civil,{'Civil': 42},3,2,False,46,2016,2026,False,name,accepted,5
+T0574,A5112355316,NIT Trichy,Deendayal Rathod,R. Deendayal,Civil,{'Civil': 1},2,2,False,5,2016,2022,False,name,accepted,4
+T0575,A5121385857,NIT Trichy,G Swaminathan,G. Swaminathan,Civil,{'Civil': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0575,A5089856764,NIT Trichy,G Swaminathan,Ganapathiraman Swaminathan,Civil,"{'Civil': 23, 'Chemical': 1}",2,2,False,26,2016,2026,False,name,accepted,4
+T0575,A5093948388,NIT Trichy,G Swaminathan,Swaminathan Ganapathiraman,Civil,{'Civil': 3},2,2,False,3,2022,2024,False,name,accepted,4
+T0575,A5106007463,NIT Trichy,G Swaminathan,Manivasakan Swaminathan,Civil,{'Civil': 1},1,2,False,1,2024,2024,False,name,accepted,3
+T0576,A5047594592,NIT Trichy,Greegar George,Greegar George,Civil,{'Civil': 11},3,2,False,15,2022,2026,False,name,accepted,5
+T0577,A5023562456,NIT Trichy,J Karthikeyan,J. Karthikeyan,Civil,{'Civil': 18},3,2,False,19,2016,2023,False,name,accepted,5
+T0578,A5055605716,NIT Trichy,Jeevan Joseph,Jeevan Joseph,Civil,{'Civil': 6},3,2,False,8,2019,2025,False,name,accepted,5
+T0579,A5034461736,NIT Trichy,K Baskar,K. Baskar,Civil,{'Civil': 9},3,2,False,10,2016,2021,False,name,accepted,5
+T0579,A5004131856,NIT Trichy,K Baskar,K. Baskar,Civil,{},3,0,False,2,2022,2024,False,name,accepted,3
+T0580,A5051657112,NIT Trichy,K Muthukkumaran,K. Muthukkumaran,Civil,{'Civil': 1},3,2,False,3,2022,2026,False,name,accepted,5
+T0580,A5019130995,NIT Trichy,K Muthukkumaran,Kasinathan Muthukkumaran,Civil,{'Civil': 62},2,2,False,73,2016,2026,False,name,accepted,4
+T0581,A5006618105,NIT Trichy,Kamal Krishna Bera,Kamal Krishna Bera,Civil,{'Civil': 28},3,2,False,31,2021,2026,False,name,accepted,5
+T0583,A5015182414,NIT Trichy,Laiju A R,A. R. Laiju,Civil,{'Civil': 3},3,2,False,3,2022,2024,False,name,accepted,5
+T0585,A5103178223,NIT Trichy,Lekshmi Mohan V,Lekshmi Mohan V,Civil,{'Civil': 2},3,2,False,2,2026,2026,False,name,accepted,5
+T0586,A5009998434,NIT Trichy,Moses Santhakumar,S. Moses Santhakumar,Civil,{'Civil': 21},3,2,False,23,2020,2025,False,name,accepted,5
+T0586,A5074973977,NIT Trichy,Moses Santhakumar,Moses Santhakumar,Civil,{'Civil': 2},3,2,False,3,2020,2020,False,name,accepted,5
+T0586,A5069332337,NIT Trichy,Moses Santhakumar,Moses Santhakumar Selvaraj,Civil,{'Civil': 1},2,2,False,2,2020,2022,False,name,accepted,4
+T0586,A5092316160,NIT Trichy,Moses Santhakumar,Moses Santhakumar M.,Civil,{'Civil': 1},1,2,False,2,2022,2022,False,name,accepted,3
+T0587,A5121762605,NIT Trichy,Makendran C,C. Makendran,Civil,{'Civil': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0587,A5042017007,NIT Trichy,Makendran C,Makendran Chandrakasu,Civil,{'Civil': 8},2,2,False,8,2023,2026,False,name,accepted,4
+T0589,A5089472365,NIT Trichy,Mashudha Sulthana U,U. Mashudha Sulthana,Civil,{'Civil': 3},3,2,False,3,2020,2024,False,name,accepted,5
+T0589,A5024150564,NIT Trichy,Mashudha Sulthana U,Mashudha Sulthana U,Civil,{'Civil': 2},3,2,False,2,2023,2024,False,name,accepted,5
+T0590,A5080414946,NIT Trichy,Nisha Radhakrishnan,Nisha Radhakrishnan,Civil,{'Civil': 25},3,2,False,30,2016,2026,False,name,accepted,5
+T0591,A5006034456,NIT Trichy,Prabha Mohandoss,Prabha Mohandoss,Civil,{'Civil': 5},3,2,False,5,2021,2026,False,name,accepted,5
+T0591,A5110864983,NIT Trichy,Prabha Mohandoss,Mariappan Prabha,Civil,{},2,0,False,1,2021,2021,False,name,accepted,2
+T0594,A5002485616,NIT Trichy,R Gandhimathi,Rajan Gandhimathi,Civil,{'Civil': 51},2,2,False,51,2016,2026,False,name,accepted,4
+T0595,A5002530895,NIT Trichy,R Manjula,R. Manjula,Civil,{'Civil': 13},3,2,False,13,2018,2025,False,name,accepted,5
+T0595,A5077261254,NIT Trichy,R Manjula,R. Manjula,Civil,{'Civil': 2},3,2,False,2,2022,2024,False,name,accepted,5
+T0595,A5112587230,NIT Trichy,R Manjula,Manjula Renganathan,Civil,{'Civil': 3},2,2,False,3,2020,2025,False,name,accepted,4
+T0596,A5101477525,NIT Trichy,R Senthil Kumar,R. Senthil Kumar,Civil,{'Civil': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0596,A5110148186,NIT Trichy,R Senthil Kumar,R. Senthilkumar,Civil,{'Civil': 24},1,2,False,25,2018,2025,False,name,accepted,3
+T0596,A5054018914,NIT Trichy,R Senthil Kumar,R. Senthilkumar,Civil,{'Civil': 9},1,2,False,9,2023,2026,False,name,accepted,3
+T0596,A5084579386,NIT Trichy,R Senthil Kumar,Nishanth Senthilkumar,Civil,{'Civil': 1},1,2,False,1,2018,2018,False,name,accepted,3
+T0597,A5031114801,NIT Trichy,Raghavan Ramalingam,Raghavan Ramalingam,Civil,{'Civil': 8},3,2,False,8,2021,2024,False,name,accepted,5
+T0598,A5018209189,NIT Trichy,S Jayalekshmi,S. Jayalekshmi,Civil,{'Civil': 4},3,2,False,6,2023,2026,False,name,accepted,5
+T0598,A5036265606,NIT Trichy,S Jayalekshmi,S. Jayalekshmi,Civil,{'Civil': 1},3,2,False,1,2018,2018,False,name,accepted,5
+T0598,A5058497661,NIT Trichy,S Jayalekshmi,Selvan Jayalekshmi,Civil,"{'Civil': 12, 'CSE': 3}",2,2,False,18,2016,2025,False,name,accepted,4
+T0599,A5038014698,NIT Trichy,S Marisamynathan,Sankaran Marisamynathan,Civil,{'Civil': 30},2,2,False,33,2019,2026,False,name,accepted,4
+T0599,A5112566137,NIT Trichy,S Marisamynathan,Marisamynathan,Civil,{},3,0,False,1,2020,2020,False,name,accepted,3
+T0600,A5147542021,NIT Trichy,S Saravanan,Saravanan. S,Civil,{'Civil': 1},3,2,False,1,2018,2018,False,name,accepted,5
+T0600,A5042096726,NIT Trichy,S Saravanan,Subbarayan Saravanan,Civil,"{'Civil': 80, 'Chemical': 3}",2,2,False,89,2016,2026,False,name,accepted,4
+T0600,A5126655650,NIT Trichy,S Saravanan,Saravanan Subbarayan,Civil,{'Civil': 3},2,2,False,3,2026,2026,False,name,accepted,4
+T0600,A5103247286,NIT Trichy,S Saravanan,Gurusamy Saravanan,Civil,{'Civil': 4},1,2,False,4,2023,2025,False,name,accepted,3
+T0601,A5062694898,NIT Trichy,S T Ramesh,Sreekrishnaperumal Thanga Ramesh,Civil,{'Civil': 34},2,2,False,34,2016,2025,False,name,accepted,4
+T0601,A5113008004,NIT Trichy,S T Ramesh,Srikrishnaperumal Thangam Ramesh,Civil,{'Civil': 8},2,2,False,8,2021,2026,False,name,accepted,4
+T0601,A5008836192,NIT Trichy,S T Ramesh,Ramesh Srikrishnaperumal Thangam,Civil,{'Civil': 2},2,2,False,2,2021,2023,False,name,accepted,4
+T0601,A5152479166,NIT Trichy,S T Ramesh,Sreekrishnaperumal Thangam Ramesh,Civil,{'Civil': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0602,A5038362057,NIT Trichy,Santhosh L,Santhosh Loganathan,Civil,{'Civil': 2},2,2,False,3,2024,2026,False,name,accepted,4
+T0603,A5070973422,NIT Trichy,Sevugan Rajkannu J,J. Sevugan Rajkannu,Civil,{'Civil': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0604,A5013701233,NIT Trichy,V Sunitha,V. Sunitha,Civil,{'Civil': 28},3,2,False,33,2020,2026,False,name,accepted,5
+T0605,A5070457530,NIT Trichy,Vanama Raghava Kumar,Raghava Kumar Vanama,Civil,{'Civil': 3},3,2,False,3,2024,2026,False,name,accepted,5
+T0606,A5078403259,NIT Trichy,Jayabalan P,Perumalsamy Jayabalan,Civil,{'Civil': 12},2,2,False,12,2016,2025,False,name,accepted,4
+T0606,A5030199802,NIT Trichy,Jayabalan P,Jayabalan Perumalsami,Civil,{'Civil': 3},2,2,False,3,2019,2020,False,name,accepted,4
+T0607,A5108080832,NIT Trichy,Krishnan P A,P.A. Krishnan,Civil,{'Civil': 3},3,2,False,4,2017,2020,False,name,accepted,5
+T0607,A5021075241,NIT Trichy,Krishnan P A,P A. Krishanan,Civil,{'Civil': 1},1,2,False,2,2017,2018,False,name,accepted,3
+T0608,A5045728253,NIT Trichy,Samson Mathew M,Samson Mathew,Civil,{'Civil': 35},3,2,False,39,2016,2026,False,name,accepted,5
+T0608,A5114043873,NIT Trichy,Samson Mathew M,M. Samson,Civil,{'Civil': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0613,A5092872165,NIT Trichy,Anjuna,S. Anjuna,Civil,{'Civil': 3},1,2,False,4,2024,2025,False,name,accepted,3
+T0618,A5022662457,NIT Trichy,B Janet,B. Janet,Computer Applications,{'Computer Applications': 50},3,2,False,68,2016,2026,False,name,accepted,5
+T0618,A5156088380,NIT Trichy,B Janet,Janet B.,Computer Applications,{'Computer Applications': 1},3,2,False,1,2021,2021,False,name,accepted,5
+T0619,A5084634146,NIT Trichy,Ashwinth Janarthanan,Ashwinth Janarthanan,Computer Applications,{'Computer Applications': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0620,A5056623487,NIT Trichy,Aswani Devi Aguru,Aswani Devi Aguru,Computer Applications,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0621,A5039037892,NIT Trichy,G R Gangadharan,G. R. Gangadharan,Computer Applications,{'Computer Applications': 7},3,2,False,35,2018,2026,False,name,accepted,5
+T0621,A5121550994,NIT Trichy,G R Gangadharan,Gangadharan G R,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0621,A5135140926,NIT Trichy,G R Gangadharan,Gangadharan G. R,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0622,A5036380464,NIT Trichy,Michael Arock,Michael Arock,Computer Applications,{'Computer Applications': 26},3,2,False,39,2016,2026,False,name,accepted,5
+T0623,A5021541915,NIT Trichy,P J A Alphonse,P. J. A. Alphonse,Computer Applications,{'Computer Applications': 29},3,2,False,34,2017,2026,False,name,accepted,5
+T0623,A5102840915,NIT Trichy,P J A Alphonse,P. J. A. Alphonse,Computer Applications,{'Computer Applications': 15},3,2,False,23,2016,2026,False,name,accepted,5
+T0623,A5125016963,NIT Trichy,P J A Alphonse,Alphonse P J A,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0624,A5081700146,NIT Trichy,R Eswari,Eswari Rajagopal,Computer Applications,{'Computer Applications': 5},2,2,False,9,2019,2024,False,name,accepted,4
+T0625,A5089504882,NIT Trichy,S Domnic,S. Domnic,Computer Applications,{'Computer Applications': 21},3,2,False,31,2016,2026,False,name,accepted,5
+T0626,A5069799587,NIT Trichy,S Nickolas,S. Nickolas,Computer Applications,{'Computer Applications': 1},3,2,False,2,2022,2026,False,name,accepted,5
+T0626,A5124486758,NIT Trichy,S Nickolas,S. Nickolas,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0626,A5022010331,NIT Trichy,S Nickolas,Nickolas Savarimuthu,Computer Applications,"{'Computer Applications': 29, 'CSE': 1}",2,2,False,46,2016,2025,False,name,accepted,4
+T0627,A5120587658,NIT Trichy,S R Balasundaram,Balasundaram S.R.,Computer Applications,{'Computer Applications': 2},3,2,False,2,2025,2026,False,name,accepted,5
+T0627,A5029024321,NIT Trichy,S R Balasundaram,Sadhu Ramakrishnan Balasundaram,Computer Applications,"{'Computer Applications': 32, 'CSE': 2}",2,2,False,46,2016,2025,False,name,accepted,4
+T0628,A5109758301,NIT Trichy,Selvakumar K,K. Selvakumar,Computer Applications,{'Computer Applications': 5},3,2,False,8,2020,2025,False,name,accepted,5
+T0628,A5127905845,NIT Trichy,Selvakumar K,Selvakumar K,Computer Applications,"{'Computer Applications': 6, 'Humanities': 1}",3,2,False,7,2025,2026,False,name,accepted,5
+T0628,A5112909732,NIT Trichy,Selvakumar K,K. Selvakumar,Computer Applications,{'Computer Applications': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0628,A5155502325,NIT Trichy,Selvakumar K,K Selvakumar,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0628,A5157152944,NIT Trichy,Selvakumar K,K. Selvakumar,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0628,A5027235114,NIT Trichy,Selvakumar K,Kamalanathan Selvakumar,Computer Applications,{'Computer Applications': 1},2,2,False,2,2021,2024,False,name,accepted,4
+T0628,A5100748925,NIT Trichy,Selvakumar K,Selvakumar Kamalanathan,Computer Applications,{'Computer Applications': 1},2,2,False,2,2021,2025,False,name,accepted,4
+T0629,A5018721994,NIT Trichy,U Srinivasulu Reddy,U. Srinivasulu Reddy,Computer Applications,{'Computer Applications': 45},3,2,False,58,2016,2025,False,name,accepted,5
+T0629,A5123658032,NIT Trichy,U Srinivasulu Reddy,U Srinivasulu Reddy,Computer Applications,{'Computer Applications': 3},3,2,False,4,2025,2026,False,name,accepted,5
+T0629,A5123416109,NIT Trichy,U Srinivasulu Reddy,Srinivasulu Reddy U,Computer Applications,{'Computer Applications': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0629,A5121491295,NIT Trichy,U Srinivasulu Reddy,Srinivasulu Reddy Uyyala,Computer Applications,{'Computer Applications': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0629,A5122933568,NIT Trichy,U Srinivasulu Reddy,U. Srinivasulu Reddy,Computer Applications,{},3,0,False,2,2026,2026,False,name,accepted,3
+T0630,A5101962191,NIT Trichy,Vishnu Priya R,R. Vishnu Priya,Computer Applications,{'Computer Applications': 6},3,2,False,8,2023,2026,False,name,accepted,5
+T0630,A5101962190,NIT Trichy,Vishnu Priya R,R. Vishnu Priya,Computer Applications,{'Computer Applications': 3},3,2,False,3,2024,2025,False,name,accepted,5
+T0630,A5021254338,NIT Trichy,Vishnu Priya R,Vishnu Priya R,Computer Applications,{'Computer Applications': 2},3,2,False,2,2025,2026,False,name,accepted,5
+T0630,A5052271888,NIT Trichy,Vishnu Priya R,Vishnu Priya R.,Computer Applications,{'Computer Applications': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0631,A5007535678,NIT Trichy,S Sangeetha,S. Sangeetha,Computer Applications,{'Computer Applications': 29},3,2,False,36,2018,2025,False,name,accepted,5
+T0631,A5022495672,NIT Trichy,S Sangeetha,S. Sangeetha,Computer Applications,{'Computer Applications': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0631,A5121741074,NIT Trichy,S Sangeetha,S. Sangeetha,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0631,A5124482981,NIT Trichy,S Sangeetha,S. Sangeetha,Computer Applications,{'Computer Applications': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0631,A5039808587,NIT Trichy,S Sangeetha,S Sangeetha,Computer Applications,{},3,0,False,3,2022,2022,False,name,accepted,3
+T0631,A5129715959,NIT Trichy,S Sangeetha,Sangeetha Sivanesan,Computer Applications,{},2,0,False,2,2022,2025,False,name,accepted,2
+T0632,A5105937534,NIT Trichy,B Ramadoss,B. Ramadoss,Computer Applications,{'Computer Applications': 1},3,2,False,1,2016,2016,False,name,accepted,5
+T0632,A5105938689,NIT Trichy,B Ramadoss,Ramadoss Balakrishnan,Computer Applications,{'Computer Applications': 18},2,2,False,26,2016,2025,False,name,accepted,4
+T0632,A5031262635,NIT Trichy,B Ramadoss,Balakrishnan Ramadoss,Computer Applications,{'Computer Applications': 3},2,2,False,3,2018,2025,False,name,accepted,4
+T0632,A5154558615,NIT Trichy,B Ramadoss,Balakrishnan Ramadoss,Computer Applications,{'Computer Applications': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0633,A5071885065,NIT Trichy,Balaji Banothu,Balaji Banothu,Computer Applications,{'Computer Applications': 13},3,2,False,16,2022,2026,False,name,accepted,5
+T0634,A5072903565,NIT Trichy,Bopche Ghanshyam Sitkura,Ghanshyam S. Bopche,Computer Applications,{'Computer Applications': 3},3,2,False,12,2021,2026,False,name,accepted,5
+T0635,A5054507472,NIT Trichy,Gopalan N P,N. P. Gopalan,Computer Applications,{'Computer Applications': 37},3,2,False,47,2016,2026,False,name,accepted,5
+T0635,A5014713117,NIT Trichy,Gopalan N P,Dr.N.P.Gopalan,Computer Applications,{'Computer Applications': 3},3,2,False,3,2020,2021,False,name,accepted,5
+T0636,A5038146323,NIT Trichy,Jitendra Kumar,Jitendra Kumar,Computer Applications,{'Computer Applications': 13},3,2,False,14,2019,2024,False,name,accepted,5
+T0637,A5068759332,NIT Trichy,Saroja S,S. Saroja,Computer Applications,{'Computer Applications': 3},3,2,False,5,2023,2026,False,name,accepted,5
+T0638,A5080854051,NIT Trichy,Sindhia Lingaswamy,Sindhia Lingaswamy,Computer Applications,{'Computer Applications': 3},3,2,False,3,2024,2024,False,name,accepted,5
+T0639,A5113423678,NIT Trichy,Vadivel A,A. Vadivel,Computer Applications,{'Computer Applications': 1},3,2,False,1,2018,2018,False,name,accepted,5
+T0640,A5112759751,NIT Trichy,Venkataswamy Reddy,A. V. Reddy,Computer Applications,{'Computer Applications': 7},2,2,False,9,2016,2020,False,name,accepted,4
+T0640,A5111246149,NIT Trichy,Venkataswamy Reddy,A.V. Reddy,Computer Applications,{'Computer Applications': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0640,A5037904567,NIT Trichy,Venkataswamy Reddy,Venkataswamy Reddy A,Computer Applications,{'Computer Applications': 1},1,2,False,2,2021,2023,False,name,accepted,3
+T0641,A5050272591,NIT Trichy,Vinay Raj,Vinay Raj,Computer Applications,{'Computer Applications': 14},3,2,False,15,2023,2025,False,name,accepted,5
+T0641,A5102513469,NIT Trichy,Vinay Raj,Vinay Raj,Computer Applications,{'Computer Applications': 2},3,2,False,3,2025,2026,False,name,accepted,5
+T0644,A5021214513,NIT Trichy,B Naresh Kumar Reddy,B. Naresh Kumar Reddy,ECE,{'ECE': 12},3,2,False,30,2024,2026,False,name,accepted,5
+T0644,A5051118545,NIT Trichy,B Naresh Kumar Reddy,B. Naresh Kumar Reddy,ECE,{'ECE': 14},3,2,False,27,2022,2025,False,name,accepted,5
+T0645,A5018233463,NIT Trichy,B Venkataramani,B. Venkataramani,ECE,{'ECE': 17},3,2,False,26,2016,2022,False,name,accepted,5
+T0646,A5012308758,NIT Trichy,B Malarkodi,B. Malarkodi,ECE,{'ECE': 36},3,2,False,48,2016,2026,False,name,accepted,5
+T0646,A5081066260,NIT Trichy,B Malarkodi,Malarkodi Balakrishnan,ECE,{'ECE': 2},2,2,False,2,2020,2022,False,name,accepted,4
+T0647,A5111980344,NIT Trichy,D Sriram Kumar,D. Sriram Kumar,ECE,{'ECE': 24},3,2,False,36,2016,2025,False,name,accepted,5
+T0647,A5104049006,NIT Trichy,D Sriram Kumar,D. Sriram Kumar,ECE,{'ECE': 2},3,2,False,7,2017,2025,False,name,accepted,5
+T0647,A5016000446,NIT Trichy,D Sriram Kumar,Sriram Kumar D.,ECE,{'ECE': 3},3,2,False,6,2020,2025,False,name,accepted,5
+T0647,A5102025046,NIT Trichy,D Sriram Kumar,D. Sriram Kumar,ECE,{'ECE': 2},3,2,False,3,2016,2018,False,name,accepted,5
+T0647,A5102025044,NIT Trichy,D Sriram Kumar,Sriram Kumar Dhamodharan,ECE,{'ECE': 15},2,2,False,17,2016,2025,False,name,accepted,4
+T0647,A5108111464,NIT Trichy,D Sriram Kumar,Dhamodharan Sriram Kumar,ECE,{'ECE': 3},2,2,False,9,2018,2025,False,name,accepted,4
+T0647,A5051734659,NIT Trichy,D Sriram Kumar,Sriram Kumar Damodaran,ECE,{'ECE': 2},2,2,False,2,2019,2024,False,name,accepted,4
+T0647,A5063831818,NIT Trichy,D Sriram Kumar,Sriram Kumar Damodharan,ECE,{'ECE': 2},2,2,False,2,2019,2020,False,name,accepted,4
+T0648,A5041024203,NIT Trichy,E S Gopi,E. S. Gopi,ECE,{'ECE': 20},3,2,False,23,2017,2026,False,name,accepted,5
+T0649,A5090745467,NIT Trichy,G Thavasi Raja,G. Thavasi Raja,ECE,{'ECE': 16},3,2,False,31,2017,2026,False,name,accepted,5
+T0649,A5153239761,NIT Trichy,G Thavasi Raja,G. Thavasi Raja,ECE,{'ECE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0649,A5103943498,NIT Trichy,G Thavasi Raja,Gopal Thavasi Raja,ECE,{},2,0,False,2,2020,2021,False,name,accepted,2
+T0650,A5035232604,NIT Trichy,Hemant Kumar,Hemant Kumar,ECE,{'ECE': 8},3,2,False,11,2021,2024,False,name,accepted,5
+T0651,A5065147017,NIT Trichy,Karthikeyan S S,Sholampettai Subramanian Karthikeyan,ECE,{'ECE': 42},2,2,False,53,2018,2026,False,name,accepted,4
+T0652,A5108539503,NIT Trichy,M Bhaskar,M. Bhaskar,ECE,{'ECE': 28},3,2,False,49,2016,2025,False,name,accepted,5
+T0652,A5044258626,NIT Trichy,M Bhaskar,Bhaskar Manickam,ECE,{'ECE': 2},2,2,False,3,2022,2026,False,name,accepted,4
+T0653,A5002411775,NIT Trichy,Maheswaran P,Palani Maheswaran,ECE,{'ECE': 7},2,2,False,7,2020,2025,False,name,accepted,4
+T0653,A5018725024,NIT Trichy,Maheswaran P,Maheswaran Palani,ECE,{'ECE': 1},2,2,False,1,2021,2021,False,name,accepted,4
+T0654,A5030159712,NIT Trichy,P Palanisamy,P. Palanisamy,ECE,{'ECE': 4},3,2,False,4,2025,2026,False,name,accepted,5
+T0654,A5044437998,NIT Trichy,P Palanisamy,Ponnusamy Palanisamy,ECE,{'ECE': 63},2,2,False,86,2016,2026,False,name,accepted,4
+T0654,A5137069553,NIT Trichy,P Palanisamy,Palanisamy Ponnusamy,ECE,{'ECE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0654,A5004972470,NIT Trichy,P Palanisamy,Praveen Palanisamy,ECE,{},2,0,False,2,2018,2024,False,name,accepted,2
+T0655,A5111465250,NIT Trichy,Parthasarathy R,Parthasarathy Ramanujam,ECE,{'ECE': 8},2,2,False,16,2022,2026,False,name,accepted,4
+T0656,A5080416142,NIT Trichy,R K Jeyachitra,Ramasamy Kandasamy Jeyachitra,ECE,{'ECE': 27},2,2,False,43,2016,2026,False,name,accepted,4
+T0656,A5119511021,NIT Trichy,R K Jeyachitra,Jeyachitra Ramasamy Kandasamy,ECE,{},2,0,False,1,2025,2025,False,name,accepted,2
+T0657,A5088955202,NIT Trichy,R Malmathanraj,R. Malmathanraj,ECE,{'ECE': 9},3,2,False,17,2017,2026,False,name,accepted,5
+T0658,A5065355815,NIT Trichy,R Pandeeswari,R. Pandeeswari,ECE,{'ECE': 40},3,2,False,55,2016,2026,False,name,accepted,5
+T0659,A5017444255,NIT Trichy,S Raghavan,Singaravelu Raghavan,ECE,{'ECE': 74},2,2,False,106,2016,2025,False,name,accepted,4
+T0659,A5047262518,NIT Trichy,S Raghavan,Raghavan Singara Velu,ECE,{'ECE': 1},1,2,False,1,2019,2019,False,name,accepted,3
+T0659,A5124176521,NIT Trichy,S Raghavan,Raghavan S,ECE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0660,A5021007815,NIT Trichy,Sovanjyoti Giri,Sovanjyoti Giri,ECE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0661,A5021908794,NIT Trichy,Srinivasulu Jogi,Srinivasulu Jogi,ECE,{'ECE': 7},3,2,False,14,2024,2026,False,name,accepted,5
+T0662,A5062972647,NIT Trichy,Sudharsan P,Sudharsan Parthasarathy,ECE,{'ECE': 2},2,2,False,5,2020,2026,False,name,accepted,4
+T0662,A5075106063,NIT Trichy,Sudharsan P,P Sudharsan,ECE,{},3,0,False,1,2023,2023,False,name,accepted,3
+T0662,A5123471407,NIT Trichy,Sudharsan P,Sudharsan Parthasarathy,ECE,{},2,0,False,1,2025,2025,False,name,accepted,2
+T0663,A5037939833,NIT Trichy,Varun P Gopi,Varun P. Gopi,ECE,{'ECE': 52},3,2,False,78,2018,2026,False,name,accepted,5
+T0663,A5137961551,NIT Trichy,Varun P Gopi,Varun P.Gopi,ECE,{'ECE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0664,A5010140343,NIT Trichy,Avik Hati,Avik Hati,ECE,{'ECE': 1},3,2,False,11,2023,2026,False,name,accepted,5
+T0665,A5007616149,NIT Trichy,Bibin Francis,Bibin Francis,ECE,{'ECE': 3},3,2,False,3,2025,2026,False,name,accepted,5
+T0665,A5093964392,NIT Trichy,Bibin Francis,Bibin Francis,ECE,{'ECE': 2},3,2,False,3,2024,2026,False,name,accepted,5
+T0665,A5129516309,NIT Trichy,Bibin Francis,Bibin Francis,ECE,{},3,0,False,2,2026,2026,False,name,accepted,3
+T0666,A5126492426,NIT Trichy,Bukke Chandrababu Naik,B Chandrababu Naik,ECE,{'ECE': 3},2,2,False,4,2024,2026,False,name,accepted,4
+T0666,A5112660885,NIT Trichy,Bukke Chandrababu Naik,B. Chandrababu Naik,ECE,{'ECE': 1},2,2,False,2,2025,2026,False,name,accepted,4
+T0666,A5124396659,NIT Trichy,Bukke Chandrababu Naik,Bukke Chandrababu Naik,ECE,{},3,0,False,5,2026,2026,False,name,accepted,3
+T0666,A5110285507,NIT Trichy,Bukke Chandrababu Naik,B. Chandrababu Naik,ECE,{},2,0,False,4,2023,2024,False,name,accepted,2
+T0667,A5059499345,NIT Trichy,G Lakshmi Narayanan,G. Lakshminarayanan,ECE,{'ECE': 33},3,2,False,52,2016,2026,False,name,accepted,5
+T0667,A5021019663,NIT Trichy,G Lakshmi Narayanan,G. Lakshminarayanan,ECE,{'ECE': 1},3,2,False,4,2019,2026,False,name,accepted,5
+T0667,A5107893912,NIT Trichy,G Lakshmi Narayanan,G. Lakshmi Narayanan,ECE,{'ECE': 4},3,2,False,4,2018,2025,False,name,accepted,5
+T0667,A5089863667,NIT Trichy,G Lakshmi Narayanan,Narayanan G Lakshmi,ECE,{'ECE': 1},3,2,False,1,2019,2019,False,name,accepted,5
+T0667,A5108015728,NIT Trichy,G Lakshmi Narayanan,Lakshminarayanan Gopalakrishnan,ECE,{'ECE': 3},2,2,False,3,2021,2022,False,name,accepted,4
+T0667,A5153356508,NIT Trichy,G Lakshmi Narayanan,Lakshminaraynan Gopalakrishnan,ECE,{'ECE': 1},1,2,False,1,2016,2016,False,name,accepted,3
+T0669,A5066679195,NIT Trichy,Murali Krishna Rajendran,Murali K. Rajendran,ECE,{'ECE': 2},2,2,False,2,2023,2024,False,name,accepted,4
+T0669,A5138845849,NIT Trichy,Murali Krishna Rajendran,Murali K. Rajendran,ECE,{},2,0,False,1,2026,2026,False,name,accepted,2
+T0670,A5027032975,NIT Trichy,P Muthuchidambaranathan,P. Muthuchidambaranathan,ECE,{'ECE': 45},3,2,False,49,2016,2025,False,name,accepted,5
+T0670,A5097537086,NIT Trichy,P Muthuchidambaranathan,Dr.P. Muthuchidambaranathan,ECE,{'ECE': 3},3,2,False,3,2026,2026,False,name,accepted,5
+T0670,A5113718269,NIT Trichy,P Muthuchidambaranathan,Muthuchidambaranathan Palanivel,ECE,{'ECE': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0670,A5086106321,NIT Trichy,P Muthuchidambaranathan,P Muthuchidamdaranathan,ECE,{'ECE': 3},1,2,False,3,2018,2021,False,name,accepted,3
+T0670,A5083495625,NIT Trichy,P Muthuchidambaranathan,P. Muthuchidambara Nathan,ECE,{'ECE': 2},1,2,False,2,2019,2020,False,name,accepted,3
+T0670,A5075107631,NIT Trichy,P Muthuchidambaranathan,P. Muthuchidamabaranathan,ECE,{'ECE': 1},1,2,False,1,2022,2022,False,name,accepted,3
+T0670,A5113918845,NIT Trichy,P Muthuchidambaranathan,Palanivelu Muthuchidambaranathan,ECE,{},2,0,False,1,2020,2020,False,name,accepted,2
+T0671,A5129990417,NIT Trichy,Padala Surya Teja Naga Srinivas,P S T N Srinivas,ECE,{'ECE': 2},2,2,False,2,2026,2026,False,name,accepted,4
+T0672,A5129416848,NIT Trichy,R R Manikandan,R.R. Manikandan,ECE,{},3,0,False,1,2025,2025,False,name,accepted,3
+T0673,A5037813534,NIT Trichy,B Rebekka,B. Rebekka,ECE,{'ECE': 15},3,2,False,24,2016,2026,False,name,accepted,5
+T0673,A5048426733,NIT Trichy,B Rebekka,B. Rebekka,ECE,{'ECE': 2},3,2,False,2,2016,2023,False,name,accepted,5
+T0673,A5035844857,NIT Trichy,B Rebekka,Rebekka Balakrishnan,ECE,{'ECE': 3},2,2,False,4,2020,2024,False,name,accepted,4
+T0674,A5069550084,NIT Trichy,N Gunavathi,Nagarajan Gunavathi,ECE,{'ECE': 9},2,2,False,22,2017,2025,False,name,accepted,4
+T0674,A5030810204,NIT Trichy,N Gunavathi,N. Gunavthi,ECE,{'ECE': 1},1,2,False,1,2016,2016,False,name,accepted,3
+T0675,A5100630280,NIT Trichy,R K Kavitha,R. K. Kavitha,ECE,{'ECE': 4},3,2,False,11,2016,2025,False,name,accepted,5
+T0676,A5026732945,NIT Trichy,R Thilagavathy,R. Thilagavathy,ECE,{'ECE': 3},3,2,False,9,2017,2022,False,name,accepted,5
+T0676,A5125036456,NIT Trichy,R Thilagavathy,Thilagavathy Ramaiah,ECE,{},2,0,False,1,2025,2025,False,name,accepted,2
+T0677,A5040431047,NIT Trichy,S Deivalakshmi,S. Deivalakshmi,ECE,"{'ECE': 30, 'EEE': 1}",3,2,False,42,2016,2026,False,name,accepted,5
+T0677,A5127682169,NIT Trichy,S Deivalakshmi,S Deivalakshmi,ECE,{'ECE': 2},3,2,False,2,2026,2026,False,name,accepted,5
+T0678,A5089022769,NIT Trichy,V Sudha,V. Sudha,ECE,{'ECE': 7},3,2,False,12,2017,2022,False,name,accepted,5
+T0678,A5123421276,NIT Trichy,V Sudha,V Sudha,ECE,{'ECE': 1},3,2,False,2,2026,2026,False,name,accepted,5
+T0678,A5006736385,NIT Trichy,V Sudha,Sudha Vaiyamalai,ECE,{'ECE': 3},2,2,False,3,2018,2024,False,name,accepted,4
+T0678,A5108286495,NIT Trichy,V Sudha,Venugopal Sudha,ECE,{'ECE': 1},2,2,False,1,2021,2021,False,name,accepted,4
+T0678,A5147321479,NIT Trichy,V Sudha,Sudha V,ECE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0680,A5074590122,NIT Trichy,S Mageshwari,S. Mageshwari,EEE,{'EEE': 2},3,2,False,3,2017,2026,False,name,accepted,5
+T0680,A5076010922,NIT Trichy,S Mageshwari,Mageshwari Sannasy,EEE,{'EEE': 9},2,2,False,13,2017,2025,False,name,accepted,4
+T0681,A5092184976,NIT Trichy,Aneesa Farhan M A,Aneesa Farhan M A,EEE,{'EEE': 25},3,2,False,29,2023,2026,False,name,accepted,5
+T0681,A5111342666,NIT Trichy,Aneesa Farhan M A,M A Aneesa Farhan,EEE,{'EEE': 4},3,2,False,4,2023,2024,False,name,accepted,5
+T0682,A5002183879,NIT Trichy,Ankur Singh Rana,Ankur Singh Rana,EEE,{'EEE': 17},3,2,False,40,2019,2026,False,name,accepted,5
+T0683,A5046929608,NIT Trichy,Dipanshu Naware,Dipanshu Naware,EEE,{'EEE': 4},3,2,False,4,2024,2025,False,name,accepted,5
+T0684,A5016478029,NIT Trichy,G Saravana Ilango,Saravana Ilango G,EEE,{'EEE': 1},3,2,False,2,2022,2025,False,name,accepted,5
+T0684,A5067503497,NIT Trichy,G Saravana Ilango,Ganesan Saravana Ilango,EEE,"{'EEE': 47, 'CSE': 1}",2,2,False,62,2016,2026,False,name,accepted,4
+T0684,A5104244776,NIT Trichy,G Saravana Ilango,SaravanaIlango Ganesan,EEE,{'EEE': 1},1,2,False,1,2024,2024,False,name,accepted,3
+T0685,A5029911281,NIT Trichy,Jose Thankachan,Jose Thankachan,EEE,"{'EEE': 5, 'Energy & Environment': 1}",3,2,False,6,2023,2025,False,name,accepted,5
+T0686,A5065920100,NIT Trichy,Josephine R L,R.L. Josephine,EEE,{'EEE': 14},3,2,False,15,2018,2025,False,name,accepted,5
+T0686,A5068962448,NIT Trichy,Josephine R L,R L Josephine,EEE,{'EEE': 4},3,2,False,6,2023,2025,False,name,accepted,5
+T0686,A5081734703,NIT Trichy,Josephine R L,Josephine Rathinadurai Louis,EEE,{'EEE': 7},2,2,False,9,2022,2026,False,name,accepted,4
+T0687,A5024253015,NIT Trichy,K Sundareswaran,K. Sundareswaran,EEE,{'EEE': 2},3,2,False,3,2023,2026,False,name,accepted,5
+T0687,A5003851577,NIT Trichy,K Sundareswaran,Kinattingal Sundareswaran,EEE,{'EEE': 40},2,2,False,46,2016,2026,False,name,accepted,4
+T0687,A5133094736,NIT Trichy,K Sundareswaran,Sundareswaran K,EEE,{},3,0,False,2,2025,2025,False,name,accepted,3
+T0687,A5152670873,NIT Trichy,K Sundareswaran,K Sundareswaran,EEE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0688,A5010053884,NIT Trichy,Karthik Thirumala,Karthik Thirumala,EEE,{'EEE': 30},3,2,False,35,2018,2026,False,name,accepted,5
+T0689,A5091414379,NIT Trichy,M Jaya Bharata Reddy,Maddikara Jaya Bharata Reddy,EEE,{'EEE': 36},2,2,False,52,2016,2026,False,name,accepted,4
+T0690,A5001168323,NIT Trichy,M P Selvan,M. P. Selvan,EEE,{'EEE': 1},3,2,False,2,2020,2021,False,name,accepted,5
+T0690,A5007049755,NIT Trichy,M P Selvan,Manickavasagam Parvathy Selvan,EEE,{'EEE': 44},2,2,False,54,2016,2025,False,name,accepted,4
+T0690,A5113908269,NIT Trichy,M P Selvan,Selvan Manickavasagam Parvathy,EEE,{'EEE': 5},2,2,False,7,2017,2024,False,name,accepted,4
+T0691,A5108622344,NIT Trichy,M Venkata Kirthiga,M. Venkata Kirthiga,EEE,"{'EEE': 7, 'ICE': 1}",3,2,False,9,2016,2026,False,name,accepted,5
+T0691,A5058623465,NIT Trichy,M Venkata Kirthiga,M. Venkatakirthiga,EEE,{'EEE': 1},3,2,False,3,2016,2026,False,name,accepted,5
+T0691,A5010974936,NIT Trichy,M Venkata Kirthiga,Venkata Kirthiga M,EEE,{'EEE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0691,A5009145175,NIT Trichy,M Venkata Kirthiga,Venkatakirthiga Murali,EEE,{'EEE': 29},2,2,False,30,2017,2026,False,name,accepted,4
+T0691,A5006983250,NIT Trichy,M Venkata Kirthiga,Venkata Kirthiga,EEE,{'EEE': 1},1,2,False,1,2017,2017,False,name,accepted,3
+T0693,A5082341278,NIT Trichy,N Kumaresan,Natarajan Kumaresan,EEE,{'EEE': 30},2,2,False,40,2016,2025,False,name,accepted,4
+T0693,A5125359344,NIT Trichy,N Kumaresan,Kumaresan Natarajan,EEE,{'EEE': 2},2,2,False,3,2025,2026,False,name,accepted,4
+T0694,A5153653502,NIT Trichy,P Raja,P. Raja,EEE,{'EEE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0694,A5090062437,NIT Trichy,P Raja,Pitchaimuthu Raja,EEE,{'EEE': 22},2,2,False,26,2016,2026,False,name,accepted,4
+T0694,A5135363704,NIT Trichy,P Raja,Raja Pitchaimuthu,EEE,{'EEE': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0695,A5140646744,NIT Trichy,P Srinivasa Rao Nayak,Srinivasa Rao Nayak P,EEE,{'EEE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0695,A5042117771,NIT Trichy,P Srinivasa Rao Nayak,Panugothu Srinivasa Rao Nayak,EEE,{'EEE': 39},2,2,False,53,2016,2026,False,name,accepted,4
+T0695,A5072198649,NIT Trichy,P Srinivasa Rao Nayak,Srinivasa Rao Nayak Panugothu,EEE,{'EEE': 3},2,2,False,3,2019,2021,False,name,accepted,4
+T0695,A5152722108,NIT Trichy,P Srinivasa Rao Nayak,P Srinivasa Rao Nayak,EEE,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0696,A5030899102,NIT Trichy,Rakesh Kumar Panda,Rakesh Kumar Panda,EEE,{'EEE': 1},3,2,False,3,2025,2025,False,name,accepted,5
+T0697,A5090091530,NIT Trichy,S Arul Daniel,S. Arul Daniel,EEE,{'EEE': 12},3,2,False,27,2016,2026,False,name,accepted,5
+T0698,A5110327227,NIT Trichy,S Kayalvizhi,S. Kayalvizhi,EEE,{'EEE': 1},3,2,False,9,2024,2025,False,name,accepted,5
+T0698,A5121583440,NIT Trichy,S Kayalvizhi,S Kayalvizhi,EEE,{'EEE': 5},3,2,False,5,2025,2026,False,name,accepted,5
+T0699,A5031295654,NIT Trichy,S Moorthi,S. Moorthi,EEE,{'EEE': 27},3,2,False,34,2016,2025,False,name,accepted,5
+T0699,A5135416505,NIT Trichy,S Moorthi,Moorthi Sridharan,EEE,{'EEE': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0700,A5143744513,NIT Trichy,S Sudha,S. Sudha,EEE,{'EEE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0700,A5101035242,NIT Trichy,S Sudha,Sudha Selvaraj,EEE,{'EEE': 3},2,2,False,4,2017,2020,False,name,accepted,4
+T0700,A5101969764,NIT Trichy,S Sudha,S. V. Sudha,EEE,{'EEE': 17},1,2,False,21,2016,2025,False,name,accepted,3
+T0700,A5103883738,NIT Trichy,S Sudha,Selvaraj Sudha,EEE,{},2,0,False,1,2019,2019,False,name,accepted,2
+T0701,A5121142103,NIT Trichy,S Senthil Kumar,S Senthil Kumar,EEE,{'EEE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0701,A5111211400,NIT Trichy,S Senthil Kumar,Senthil Kumar Subramanium,EEE,{'EEE': 4},2,2,False,4,2020,2024,False,name,accepted,4
+T0701,A5102112936,NIT Trichy,S Senthil Kumar,Senthil Kumar Subramaniam,EEE,{'EEE': 2},2,2,False,2,2016,2021,False,name,accepted,4
+T0701,A5153188676,NIT Trichy,S Senthil Kumar,Senthil Kumar Subramanium,EEE,{'EEE': 1},2,2,False,1,2018,2018,False,name,accepted,4
+T0701,A5100612896,NIT Trichy,S Senthil Kumar,S. Senthilkumar,EEE,"{'EEE': 27, 'CSE': 1}",1,2,False,41,2016,2026,False,name,accepted,3
+T0701,A5108895217,NIT Trichy,S Senthil Kumar,Senthil kumar S,EEE,{},3,0,False,1,2023,2023,False,name,accepted,3
+T0702,A5081982191,NIT Trichy,Sateesh Kumar Kuncham,Sateesh Kumar Kuncham,EEE,{'EEE': 8},3,2,False,14,2023,2026,False,name,accepted,5
+T0702,A5110721191,NIT Trichy,Sateesh Kumar Kuncham,K. Sateesh Kumar,EEE,{'EEE': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0702,A5130736541,NIT Trichy,Sateesh Kumar Kuncham,Kuncham Sateesh Kumar,EEE,{},3,0,False,1,2025,2025,False,name,accepted,3
+T0703,A5014199659,NIT Trichy,Shelas Sathyan,Shelas Sathyan,EEE,{'EEE': 19},3,2,False,28,2018,2026,False,name,accepted,5
+T0704,A5023951570,NIT Trichy,Sishaj P Simon,Sishaj P. Simon,EEE,{'EEE': 71},3,2,False,86,2016,2026,False,name,accepted,5
+T0705,A5048168840,NIT Trichy,Suman M,Suman Murugesan,EEE,{'EEE': 23},2,2,False,24,2017,2025,False,name,accepted,4
+T0705,A5124914314,NIT Trichy,Suman M,Suman M,EEE,{},3,0,False,1,2025,2025,False,name,accepted,3
+T0706,A5080064463,NIT Trichy,Suryanarayana Gangolu,Suryanarayana Gangolu,EEE,{'EEE': 4},3,2,False,6,2019,2025,False,name,accepted,5
+T0707,A5109361791,NIT Trichy,V Vignesh Kumar,V. Vignesh Kumar,EEE,{'EEE': 2},3,2,False,2,2016,2025,False,override,accepted,5
+T0707,A5119080441,NIT Trichy,V Vignesh Kumar,Vignesh Kumar Vethanayagam,EEE,{'EEE': 2},2,2,False,3,2025,2026,False,override,accepted,4
+T0707,A5085229247,NIT Trichy,V Vignesh Kumar,Vethanayagam Vigneshkumar,EEE,{'EEE': 1},1,2,False,1,2016,2016,False,name,accepted,3
+T0709,A5103738776,NIT Trichy,Ashokkumar,Ashok Kumar,EEE,{'EEE': 2},1,2,False,2,2020,2020,False,name,accepted,3
+T0710,A5111538067,NIT Trichy,C Nagamani,C. Nagamani,EEE,{'EEE': 7},3,2,False,8,2016,2024,False,name,accepted,5
+T0710,A5039347783,NIT Trichy,C Nagamani,Chilakapati Nagamani,EEE,{'EEE': 43},2,2,False,52,2016,2025,False,name,accepted,4
+T0711,A5103093664,NIT Trichy,Manoranjan Sahoo,Manoranjan Sahoo,EEE,{'EEE': 9},3,2,False,10,2018,2023,False,name,accepted,5
+T0712,A5003456069,NIT Trichy,N Ammmasai Goundan,N. Ammasai Gounden,EEE,{'EEE': 14},3,2,False,16,2016,2021,False,name,accepted,5
+T0712,A5027634343,NIT Trichy,N Ammmasai Goundan,Ammasai Gounden Nanjappa Gounder,EEE,{'EEE': 2},1,2,False,3,2016,2021,False,name,accepted,3
+T0712,A5019883253,NIT Trichy,N Ammmasai Goundan,Nanjappa Gounder Ammasai Gounden,EEE,{'EEE': 1},1,2,False,2,2016,2016,False,name,accepted,3
+T0713,A5059944392,NIT Trichy,Naveenyalla,Naveen Yalla,EEE,{'EEE': 2},1,2,False,3,2021,2022,False,name,accepted,3
+T0714,A5026068207,NIT Trichy,Pinkymol Kp,Kudilil Prasad Pinkymol,EEE,{'EEE': 10},2,2,False,15,2020,2025,False,name,accepted,4
+T0714,A5109748344,NIT Trichy,Pinkymol Kp,Pinkymol Kudilil Prasad,EEE,{'EEE': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0715,A5103003208,NIT Trichy,V Sankara Narayanan,V. Sankaranarayanan,EEE,{'EEE': 18},3,2,False,23,2016,2026,False,name,accepted,5
+T0716,A5043441212,NIT Trichy,Vivek Mohan,Vivek Mohan,EEE,{'EEE': 11},3,2,False,12,2018,2022,False,name,accepted,5
+T0716,A5030045450,NIT Trichy,Vivek Mohan,Vivek Mohan M.,EEE,{'EEE': 1},1,2,False,1,2018,2018,False,name,accepted,3
+T0717,A5079950584,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 2},3,2,False,2,2023,2025,False,name,accepted,5
+T0717,A5100663831,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 2},3,2,False,2,2024,2025,False,name,accepted,5
+T0717,A5139168637,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 1},3,2,False,2,2026,2026,False,name,accepted,5
+T0717,A5004060519,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0717,A5100663832,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0717,A5121010053,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{'Energy & Environment': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0717,A5100991008,NIT Trichy,Aditya Kumar,Aditya Kumar,Energy & Environment,{},3,0,False,1,2025,2025,False,name,accepted,3
+T0718,A5010717554,NIT Trichy,Jaganathan Vm,V.M. Jaganathan,Energy & Environment,{'Energy & Environment': 11},1,2,False,11,2022,2026,False,name,accepted,3
+T0718,A5121867189,NIT Trichy,Jaganathan Vm,Jaganathan V M,Energy & Environment,{'Energy & Environment': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0720,A5068331766,NIT Trichy,M Premalatha,M. Premalatha,Energy & Environment,"{'Energy & Environment': 25, 'Chemical': 1}",3,2,False,26,2016,2025,False,name,accepted,5
+T0720,A5074873590,NIT Trichy,M Premalatha,M. Premalatha,Energy & Environment,{'Energy & Environment': 23},3,2,False,23,2016,2025,False,name,accepted,5
+T0720,A5027787432,NIT Trichy,M Premalatha,M. Premalatha,Energy & Environment,{'Energy & Environment': 2},3,2,False,2,2025,2026,False,name,accepted,5
+T0720,A5136447136,NIT Trichy,M Premalatha,M Premalatha,Energy & Environment,{'Energy & Environment': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0720,A5098532803,NIT Trichy,M Premalatha,Premalatha Manikam,Energy & Environment,{'Energy & Environment': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0720,A5058089900,NIT Trichy,M Premalatha,M. M. Premalatha,Energy & Environment,{'Energy & Environment': 1},1,2,False,1,2022,2022,False,name,accepted,3
+T0721,A5109134984,NIT Trichy,Ruben Sudhakar D,D. Ruben Sudhakar,Energy & Environment,{'Energy & Environment': 22},3,2,False,22,2019,2026,False,name,accepted,5
+T0722,A5001258130,NIT Trichy,Damodhar Siva Krishna Rao K,D V Siva Krishna Rao K,Energy & Environment,{'Energy & Environment': 11},3,2,False,11,2017,2026,False,name,accepted,5
+T0722,A5128716189,NIT Trichy,Damodhar Siva Krishna Rao K,D V Siva Krishna Rao K,Energy & Environment,{'Energy & Environment': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0723,A5032941580,NIT Trichy,G Nagasubramaniyan,G. Nagasubramaniyan,Humanities,{'Humanities': 4},3,2,False,5,2022,2025,False,name,accepted,5
+T0723,A5090783028,NIT Trichy,G Nagasubramaniyan,G. Nagasubramaniyan,Humanities,{'Humanities': 3},3,2,False,3,2025,2026,False,name,accepted,5
+T0723,A5014024710,NIT Trichy,G Nagasubramaniyan,Nagasubramaniyan Gopalan,Humanities,{},2,0,False,2,2018,2019,False,name,accepted,2
+T0725,A5015836494,NIT Trichy,Nisha Viswanathan,Nisha Viswanathan,Humanities,{'Humanities': 1},3,2,False,4,2024,2026,False,name,accepted,5
+T0726,A5109608104,NIT Trichy,Padmaja M,M Padmaja,Humanities,{'Humanities': 11},3,2,False,13,2020,2026,False,name,accepted,5
+T0727,A5062572382,NIT Trichy,R Joseph Ponniah,R. Joseph Ponniah,Humanities,{'Humanities': 17},3,2,False,27,2018,2025,False,name,accepted,5
+T0727,A5153616010,NIT Trichy,R Joseph Ponniah,R. Joseph Ponniah,Humanities,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0728,A5025155952,NIT Trichy,R Murugesan,R. Murugesan,Humanities,{'Humanities': 2},3,2,False,2,2025,2026,False,name,accepted,5
+T0728,A5074890371,NIT Trichy,R Murugesan,Ramasamy Murugesan,Humanities,"{'Humanities': 27, 'Architecture': 1}",2,2,False,36,2016,2025,False,name,accepted,4
+T0728,A5152783074,NIT Trichy,R Murugesan,Murugesan Ramasamy,Humanities,{'Humanities': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0729,A5109789644,NIT Trichy,S Mekala,S. Mekala,Humanities,{'Humanities': 5},3,2,False,7,2016,2025,False,name,accepted,5
+T0729,A5125124539,NIT Trichy,S Mekala,S Mekala,Humanities,{'Humanities': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0731,A5079708160,NIT Trichy,Sathyaraj Venkatesan,Sathyaraj Venkatesan,Humanities,{'Humanities': 51},3,2,False,64,2016,2026,False,name,accepted,5
+T0731,A5153594819,NIT Trichy,Sathyaraj Venkatesan,Sathyaraj Venkatesan,Humanities,{'Humanities': 1},3,2,False,1,2021,2021,False,name,accepted,5
+T0732,A5006127702,NIT Trichy,V Vinod Balakrishnan,Vinod Valiathakidi Balakrishnan,Humanities,{'Humanities': 8},2,2,False,10,2018,2023,False,name,accepted,4
+T0733,A5032002849,NIT Trichy,Anu Kuriakose,Anu Kuriakose,Humanities,{'Humanities': 3},3,2,False,4,2026,2026,False,name,accepted,5
+T0734,A5074296643,NIT Trichy,Chintada Umasankar,Umasankar Patra,Humanities,{'Humanities': 2},3,2,False,2,2020,2023,False,name,accepted,5
+T0735,A5013235969,NIT Trichy,Karthika Vk,V. K. Karthika,Humanities,{'Humanities': 9},3,2,False,18,2020,2026,False,name,accepted,5
+T0735,A5156284996,NIT Trichy,Karthika Vk,V. K. Karthika,Humanities,{'Humanities': 2},3,2,False,2,2025,2025,False,name,accepted,5
+T0738,A5044777497,NIT Trichy,B Vasuki,B. Vasuki,ICE,{'ICE': 19},3,2,False,19,2016,2025,False,name,accepted,5
+T0739,A5051007939,NIT Trichy,C Geetha,Geetha Chakaravarthi,ICE,{'ICE': 16},2,2,False,19,2018,2026,False,name,accepted,4
+T0740,A5113169693,NIT Trichy,D Ezhilarasi,D. Ezhilarasi,ICE,{'ICE': 10},3,2,False,13,2016,2023,False,name,accepted,5
+T0740,A5045901070,NIT Trichy,D Ezhilarasi,Ezhilarasi Deenadayalan,ICE,{'ICE': 17},2,2,False,18,2017,2026,False,name,accepted,4
+T0740,A5103614242,NIT Trichy,D Ezhilarasi,Deenadayalan Ezhilarasi,ICE,{'ICE': 1},2,2,False,2,2026,2026,False,name,accepted,4
+T0741,A5031209972,NIT Trichy,G Uma,G. Uma,ICE,{'ICE': 27},3,2,False,31,2016,2026,False,name,accepted,5
+T0741,A5107988875,NIT Trichy,G Uma,Uma Gandhi,ICE,{'ICE': 37},2,2,False,43,2016,2026,False,name,accepted,4
+T0742,A5031049643,NIT Trichy,K Dhanalakshmi,K. Dhanalakshmi,ICE,{'ICE': 39},3,2,False,40,2016,2026,False,name,accepted,5
+T0742,A5121747796,NIT Trichy,K Dhanalakshmi,Dhanalakshmi Kaliaperumal,ICE,{'ICE': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0742,A5140530721,NIT Trichy,K Dhanalakshmi,Kaliaperumal Dhanalakshmi,ICE,{'ICE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0742,A5011539356,NIT Trichy,K Dhanalakshmi,K. Dhanalakshami,ICE,{'ICE': 1},1,2,False,1,2022,2022,False,name,accepted,3
+T0742,A5014133833,NIT Trichy,K Dhanalakshmi,Dhanalakshmi Kaliperumal,ICE,{},2,0,False,1,2018,2018,False,name,accepted,2
+T0743,A5070079824,NIT Trichy,K Srinivasan,K. Srinivasan,ICE,{'ICE': 2},3,2,False,2,2023,2026,False,name,accepted,5
+T0743,A5100687799,NIT Trichy,K Srinivasan,Kannan Srinivasan,ICE,{'ICE': 29},2,2,False,32,2016,2025,False,name,accepted,4
+T0743,A5024199805,NIT Trichy,K Srinivasan,Kiran Srinivasan,ICE,{},2,0,False,1,2024,2024,False,name,accepted,2
+T0743,A5056730493,NIT Trichy,K Srinivasan,Kirthika Srinivasan,ICE,{},2,0,False,1,2022,2022,False,name,accepted,2
+T0743,A5101935749,NIT Trichy,K Srinivasan,Karuppanan Srinivasan,ICE,{},2,0,False,1,2021,2021,False,name,accepted,2
+T0744,A5072908811,NIT Trichy,M Umapathy,Mangalanathan Umapathy,ICE,{'ICE': 59},2,2,False,67,2016,2026,False,name,accepted,4
+T0744,A5135124877,NIT Trichy,M Umapathy,Umapathy Mangalanathan,ICE,{'ICE': 2},2,2,False,4,2026,2026,False,name,accepted,4
+T0744,A5020301608,NIT Trichy,M Umapathy,Umapathy Mangalnathan,ICE,{'ICE': 1},2,2,False,1,2018,2018,False,name,accepted,4
+T0744,A5157423713,NIT Trichy,M Umapathy,Umapathy Managalanathan,ICE,{'ICE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0745,A5065060448,NIT Trichy,N Sivakumaran,N. Sivakumaran,ICE,"{'ICE': 52, 'Computer Applications': 1, 'CSE': 1}",3,2,False,62,2016,2026,False,name,accepted,5
+T0745,A5030596037,NIT Trichy,N Sivakumaran,N. Sivakumaran,ICE,{'ICE': 5},3,2,False,6,2026,2026,False,name,accepted,5
+T0745,A5126071994,NIT Trichy,N Sivakumaran,Sivakumaran N,ICE,{'ICE': 2},3,2,False,2,2025,2025,False,name,accepted,5
+T0745,A5135674139,NIT Trichy,N Sivakumaran,N. Sivakumaran,ICE,{'ICE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0745,A5152987644,NIT Trichy,N Sivakumaran,N. Sivakumaran,ICE,{'ICE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0745,A5096443064,NIT Trichy,N Sivakumaran,N. Sivakumaranb,ICE,{'ICE': 1},1,2,False,1,2022,2022,False,name,accepted,3
+T0746,A5047734065,NIT Trichy,P A Karthick,P. A. Karthick,ICE,{'ICE': 38},3,2,False,46,2019,2026,False,name,accepted,5
+T0746,A5154064243,NIT Trichy,P A Karthick,Karthick P. Allimuthu,ICE,{'ICE': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0746,A5022513410,NIT Trichy,P A Karthick,Karthick Pa,ICE,{'ICE': 5},1,2,False,5,2021,2025,False,override,accepted,3
+T0747,A5110755523,NIT Trichy,R Periyasamy,R. Periyasamy,ICE,{'ICE': 2},3,2,False,4,2020,2025,False,name,accepted,5
+T0747,A5106123058,NIT Trichy,R Periyasamy,Ramachandran Periyasamy,ICE,{'ICE': 14},2,2,False,19,2018,2026,False,name,accepted,4
+T0748,A5104112241,NIT Trichy,Rahul Kumar Sharma,Rahul Kumar Sharma,ICE,{'ICE': 5},3,2,False,5,2023,2026,False,name,accepted,5
+T0748,A5103280596,NIT Trichy,Rahul Kumar Sharma,Rahul Kumar Sharma,ICE,{'ICE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0748,A5125649432,NIT Trichy,Rahul Kumar Sharma,Rahul Kumar Sharma,ICE,{'ICE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0749,A5087979663,NIT Trichy,S Narayanan,S. Narayanan,ICE,{'ICE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0750,A5053219360,NIT Trichy,Shiraz Sohail,Shiraz Sohail,ICE,{'ICE': 17},3,2,False,19,2020,2026,False,name,accepted,5
+T0752,A5014469414,NIT Trichy,Ram Shankar Rajadurai,Sri Ram Shankar Rajadurai,ICE,{'ICE': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0754,A5110285371,NIT Trichy,V Sridevi,V. Sridevi,ICE,{'ICE': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0754,A5130631445,NIT Trichy,V Sridevi,Dr.V. Sridevi,ICE,{'ICE': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0754,A5051996787,NIT Trichy,V Sridevi,Sridevi Veerasingam,ICE,{'ICE': 7},2,2,False,10,2017,2026,False,name,accepted,4
+T0755,A5062656725,NIT Trichy,Rama Kalyan Ayyagari,Ramakalyan Ayyagari,ICE,{'ICE': 13},3,2,False,17,2016,2025,False,name,accepted,5
+T0755,A5058976635,NIT Trichy,Rama Kalyan Ayyagari,A. Ramakalyan,ICE,{'ICE': 1},3,2,False,1,2016,2016,False,name,accepted,5
+T0756,A5052708619,NIT Trichy,Prince Gideon Kubendran Amos,P. G. Kubendran Amos,MME,{'MME': 18},2,2,False,18,2020,2026,False,name,accepted,4
+T0756,A5133309455,NIT Trichy,Prince Gideon Kubendran Amos,P. G. Kubendran Amos,MME,{'MME': 2},2,2,False,2,2026,2026,False,name,accepted,4
+T0757,A5109272162,NIT Trichy,A Muthuchamy,A. Muthuchamy,MME,{'MME': 17},3,2,False,17,2020,2026,False,name,accepted,5
+T0757,A5103973587,NIT Trichy,A Muthuchamy,Muthuchamy AyyappaRaj,MME,{'MME': 1},2,2,False,1,2021,2021,False,name,accepted,4
+T0758,A5043534221,NIT Trichy,Anand S,Sriram Anand,MME,{'MME': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0758,A5016069844,NIT Trichy,Anand S,Anand SUNDRAVEL,MME,{},2,0,False,1,2021,2021,False,name,accepted,2
+T0759,A5107986002,NIT Trichy,B Ravisankar,B. Ravisankar,MME,{'MME': 49},3,2,False,52,2016,2025,False,name,accepted,5
+T0759,A5137443821,NIT Trichy,B Ravisankar,Ravisankar B,MME,{'MME': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0759,A5108129089,NIT Trichy,B Ravisankar,Balasubramanian Ravisankar,MME,{'MME': 5},2,2,False,5,2016,2021,False,name,accepted,4
+T0759,A5103585194,NIT Trichy,B Ravisankar,Ravisankar Balasubramanian,MME,{'MME': 4},2,2,False,4,2018,2026,False,name,accepted,4
+T0760,A5028019554,NIT Trichy,D Nagarajan,Devarajan Nagarajan,MME,{'MME': 12},2,2,False,13,2018,2026,False,name,accepted,4
+T0761,A5031453461,NIT Trichy,Illa Mani Pujitha,Mani Pujitha Illa,MME,{'MME': 2},3,2,False,3,2025,2026,False,name,accepted,5
+T0761,A5060796543,NIT Trichy,Illa Mani Pujitha,Illa Mani Pujitha,MME,{'MME': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0763,A5101256408,NIT Trichy,N Ramesh Babu,Nagumothu Ramesh Babu,MME,{'MME': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0763,A5037120749,NIT Trichy,N Ramesh Babu,Rameshbabu Nagumothu,MME,{'MME': 40},1,2,False,41,2016,2026,False,name,accepted,3
+T0763,A5053705163,NIT Trichy,N Ramesh Babu,N. Rameshbabu,MME,{'MME': 6},1,2,False,6,2017,2026,False,name,accepted,3
+T0764,A5003951873,NIT Trichy,Nimu Chand Reger,Nimu Chand Reger,MME,{'MME': 5},3,2,False,5,2023,2024,False,name,accepted,5
+T0765,A5109472263,NIT Trichy,P Anbarasi,P. Anbarasi,MME,{'MME': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0766,A5101899818,NIT Trichy,S Kumaran,S. Kumaran,MME,{'MME': 33},3,2,False,33,2017,2025,False,name,accepted,5
+T0766,A5109804373,NIT Trichy,S Kumaran,S. Kumaran,MME,{'MME': 12},3,2,False,13,2016,2026,False,name,accepted,5
+T0766,A5001342873,NIT Trichy,S Kumaran,S. Kumaran,MME,{'MME': 6},3,2,False,6,2017,2022,False,name,accepted,5
+T0766,A5058850532,NIT Trichy,S Kumaran,Kumaran Sinnaeruvadi,MME,{'MME': 17},2,2,False,17,2016,2026,False,name,accepted,4
+T0766,A5104038364,NIT Trichy,S Kumaran,Sinnaeruvadi Kumaran,MME,{'MME': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0767,A5060091466,NIT Trichy,S Muthukumaran,S. Muthukumaran,MME,{'MME': 42},3,2,False,46,2016,2025,False,name,accepted,5
+T0767,A5108295082,NIT Trichy,S Muthukumaran,Muthukumaran Shanmugam,MME,{'MME': 2},2,2,False,2,2020,2022,False,name,accepted,4
+T0767,A5133938376,NIT Trichy,S Muthukumaran,Muthu Kumaran,MME,{'MME': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0768,A5006442249,NIT Trichy,S Natarajan,S. Natarajan,MME,{'MME': 11},3,2,False,35,2016,2023,False,name,accepted,5
+T0768,A5103286808,NIT Trichy,S Natarajan,S. Natarajan,MME,{},3,0,False,2,2017,2018,False,name,accepted,3
+T0768,A5101043884,NIT Trichy,S Natarajan,Natarajan Srinivasan,MME,{},2,0,False,2,2017,2018,False,name,accepted,2
+T0769,A5074221732,NIT Trichy,S P Kumaresh Babu,S.P. Kumaresh Babu,MME,{'MME': 61},3,2,False,69,2016,2026,False,name,accepted,5
+T0769,A5089538718,NIT Trichy,S P Kumaresh Babu,Kumaresh Babu S P,MME,{'MME': 4},3,2,False,4,2021,2026,False,name,accepted,5
+T0769,A5153405334,NIT Trichy,S P Kumaresh Babu,S.P. Kumaresh Babu,MME,{'MME': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0769,A5109467029,NIT Trichy,S P Kumaresh Babu,Subramanian Palani Kumaresh Babu,MME,{'MME': 3},2,2,False,3,2020,2025,False,name,accepted,4
+T0769,A5041634463,NIT Trichy,S P Kumaresh Babu,S. P. Kumareshbabu,MME,{'MME': 5},1,2,False,6,2019,2023,False,name,accepted,3
+T0769,A5013521901,NIT Trichy,S P Kumaresh Babu,SP Kumaresh Babu,MME,{'MME': 3},1,2,False,3,2020,2026,False,override,accepted,3
+T0770,A5051221486,NIT Trichy,S Raman Sankaranarayanan,Sankara Raman Sankaranarayanan,MME,{'MME': 12},2,2,False,13,2016,2025,False,name,accepted,4
+T0770,A5070104874,NIT Trichy,S Raman Sankaranarayanan,SankaraRaman Sankaranarayanan,MME,{'MME': 5},1,2,False,5,2021,2026,False,name,accepted,3
+T0772,A5081002942,NIT Trichy,V Karthik,V. Karthik,MME,{'MME': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0772,A5073155886,NIT Trichy,V Karthik,Karthik Vaduganathan,MME,{'MME': 4},2,2,False,4,2020,2026,False,name,accepted,4
+T0773,A5043901502,NIT Trichy,V Muthupandi,Veerappan Muthupandi,MME,{'MME': 35},2,2,False,43,2016,2023,False,name,accepted,4
+T0775,A5038621802,NIT Trichy,Puppala Laxman Mani Kanta,P. Laxman Mani Kanta,MME,{'MME': 1},2,2,False,1,2017,2017,False,name,accepted,4
+T0776,A5034362287,NIT Trichy,Siva Prasad Katakam,Katakam Siva Prasad,MME,{'MME': 1},3,2,False,2,2020,2024,False,name,accepted,5
+T0776,A5051954191,NIT Trichy,Siva Prasad Katakam,Katakam Sivaprasad,MME,{'MME': 68},2,2,False,74,2016,2025,False,name,accepted,4
+T0777,A5073310209,NIT Trichy,T Srinivasa Rao,T. Srinivasa Rao,MME,{'MME': 8},3,2,False,11,2017,2021,False,name,accepted,5
+T0778,A5089737298,NIT Trichy,Vinothkumar Govindaraj,Vinothkumar Govindaraj,MME,{'MME': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0779,A5109650340,NIT Trichy,S Jerome,S. Jerome,MME,{'MME': 31},3,2,False,37,2018,2026,False,name,accepted,5
+T0779,A5044429093,NIT Trichy,S Jerome,Jerome Das Savarimuthu,MME,{'MME': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0780,A5069179761,NIT Trichy,G Muruganantham,Ganesan Muruganantham,Management,{'Management': 4},2,2,False,4,2016,2024,False,name,accepted,4
+T0780,A5110644001,NIT Trichy,G Muruganantham,Muruganantham Ganesan,Management,{'Management': 3},2,2,False,4,2018,2025,False,name,accepted,4
+T0781,A5044228300,NIT Trichy,J Kirubakaran,Kirubakaran Jayaprakasam,Management,{'Management': 5},2,2,False,5,2023,2026,False,name,accepted,4
+T0782,A5033683059,NIT Trichy,Janarthanan Balakrishnan,Janarthanan Balakrishnan,Management,{'Management': 28},3,2,False,35,2020,2026,False,name,accepted,5
+T0783,A5046490202,NIT Trichy,M Punniyamoorthy,Murugesan Punniyamoorthy,Management,{'Management': 30},2,2,False,56,2016,2025,False,name,accepted,4
+T0783,A5123653542,NIT Trichy,M Punniyamoorthy,Punniyamoorthy Murugesan,Management,{'Management': 1},2,2,False,2,2025,2026,False,name,accepted,4
+T0784,A5049161795,NIT Trichy,Malolan Sundararaman,Malolan Sundararaman,Management,{'Management': 8},3,2,False,8,2020,2026,False,name,accepted,5
+T0784,A5033847311,NIT Trichy,Malolan Sundararaman,Malolan Sundararaman,Management,{'Management': 2},3,2,False,2,2025,2025,False,name,accepted,5
+T0785,A5112266815,NIT Trichy,P Sridevi,P. Sridevi,Management,{'Management': 19},3,2,False,21,2016,2025,False,name,accepted,5
+T0785,A5001072968,NIT Trichy,P Sridevi,P. Sridevi,Management,{'Management': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0785,A5059258369,NIT Trichy,P Sridevi,P. Sridevi,Management,{'Management': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0785,A5102712236,NIT Trichy,P Sridevi,Sridevi Periaiya,Management,{'Management': 6},2,2,False,7,2017,2026,False,name,accepted,4
+T0786,A5076325187,NIT Trichy,Shobitha Poulose,Shobitha Poulose,Management,{'Management': 1},3,2,False,2,2022,2024,False,name,accepted,5
+T0787,A5104005855,NIT Trichy,V J Sivakumar,V.J. Sivakumar,Management,{'Management': 24},3,2,False,29,2016,2026,False,name,accepted,5
+T0787,A5015357601,NIT Trichy,V J Sivakumar,Sivakumar Vepur Jayaraman,Management,{'Management': 2},2,2,False,2,2022,2023,False,name,accepted,4
+T0789,A5036968729,NIT Trichy,Yamini S,S. Yamini,Management,{'Management': 25},3,2,False,26,2021,2026,False,name,accepted,5
+T0790,A5113837533,NIT Trichy,B Senthil Arasu,B. Senthil Arasu,Management,{'Management': 5},3,2,False,8,2017,2021,False,name,accepted,5
+T0790,A5027876394,NIT Trichy,B Senthil Arasu,Senthil Arasu Balasubramanian,Management,{'Management': 25},2,2,False,29,2016,2026,False,name,accepted,4
+T0790,A5104342729,NIT Trichy,B Senthil Arasu,Balasubramanian Senthil Arasu,Management,{'Management': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0791,A5004260577,NIT Trichy,G K Kannabiran,Ganesan Kannabiran,Management,{'Management': 8},2,2,False,11,2016,2025,False,name,accepted,4
+T0792,A5058496505,NIT Trichy,Manjumahipalan,Manju Mahipalan,Management,{'Management': 2},1,2,False,3,2022,2022,False,name,accepted,3
+T0793,A5076476841,NIT Trichy,N Thamaraiselvan,Thamaraiselvan Natarajan,Management,{'Management': 34},2,2,False,40,2016,2025,False,name,accepted,4
+T0794,A5013297287,NIT Trichy,Nivethitha S,Nivethitha Santhanam,Management,{'Management': 8},2,2,False,11,2019,2024,False,name,accepted,4
+T0795,A5132889012,NIT Trichy,Prince R,R. Prince,Management,{'Management': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0798,A5041673061,NIT Trichy,V Lavanya,V. Lavanya,Management,"{'Management': 12, 'CSE': 1}",3,2,False,16,2018,2026,False,name,accepted,5
+T0798,A5109861649,NIT Trichy,V Lavanya,V. Lavanya,Management,{'Management': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0798,A5138424368,NIT Trichy,V Lavanya,Vilvanathan Lavanya,Management,{'Management': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0799,A5102017933,NIT Trichy,Abhijit Das,Abhijit Das,Mathematics,{'Mathematics': 13},3,2,False,13,2023,2026,False,name,accepted,5
+T0800,A5062684117,NIT Trichy,Atul Kumar Verma,Atul Kumar Verma,Mathematics,{'Mathematics': 9},3,2,False,9,2021,2023,False,name,accepted,5
+T0801,A5027555124,NIT Trichy,Balasubramani N,N. Balasubramani,Mathematics,{'Mathematics': 4},3,2,False,5,2024,2026,False,name,accepted,5
+T0802,A5101875424,NIT Trichy,Gautam Singh,Gautam Singh,Mathematics,{'Mathematics': 4},3,2,False,4,2023,2026,False,name,accepted,5
+T0803,A5021378891,NIT Trichy,I Jeyaraman,I. Jeyaraman,Mathematics,{'Mathematics': 5},3,2,False,7,2023,2025,False,override,accepted,5
+T0804,A5004215041,NIT Trichy,Jitraj Saha,Jitraj Saha,Mathematics,{'Mathematics': 32},3,2,False,32,2018,2026,False,name,accepted,5
+T0807,A5023136041,NIT Trichy,M Sivanesan,M. Sivanesan,Mathematics,"{'Mathematics': 1, 'EEE': 1}",3,2,False,2,2023,2025,False,name,accepted,5
+T0808,A5152780360,NIT Trichy,N Prakash,N. Prakash,Mathematics,{'Mathematics': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0808,A5080915091,NIT Trichy,N Prakash,N. Hari Prakash,Mathematics,{'Mathematics': 3},1,2,False,3,2023,2023,False,name,accepted,3
+T0809,A5018775464,NIT Trichy,N Shivaranjani,Shivaranjani Nagarajan,Mathematics,{'Mathematics': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0813,A5089192465,NIT Trichy,R Ponalagusamy,R. Ponalagusamy,Mathematics,{'Mathematics': 42},3,2,False,45,2016,2026,False,name,accepted,5
+T0815,A5077383669,NIT Trichy,Somya,Somya Malik,Mathematics,{'Mathematics': 4},1,2,False,4,2022,2026,False,name,accepted,3
+T0816,A5002171843,NIT Trichy,T N Janakiraman,T. N. Janakiraman,Mathematics,"{'Mathematics': 4, 'Computer Applications': 2}",3,2,False,7,2016,2018,False,name,accepted,5
+T0817,A5027212982,NIT Trichy,Vamsinadh Thota,Vamsinadh Thota,Mathematics,{'Mathematics': 12},3,2,False,12,2022,2026,False,name,accepted,5
+T0817,A5152904829,NIT Trichy,Vamsinadh Thota,V. Thota,Mathematics,{'Mathematics': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0818,A5004699620,NIT Trichy,R Tamil Selvi,R. Tamil Selvi,Mathematics,{'Mathematics': 7},3,2,False,8,2019,2025,False,name,accepted,5
+T0818,A5030404678,NIT Trichy,R Tamil Selvi,R. Tamil Selvi,Mathematics,{'Mathematics': 2},3,2,False,2,2026,2026,False,name,accepted,5
+T0822,A5101537619,NIT Trichy,K Murugesan,K. Murugesan,Mathematics,{'Mathematics': 29},3,2,False,29,2016,2026,False,name,accepted,5
+T0822,A5038914114,NIT Trichy,K Murugesan,K. Murugesan,Mathematics,{'Mathematics': 2},3,2,False,1,2025,2025,False,name,accepted,5
+T0822,A5101964057,NIT Trichy,K Murugesan,K. Murugesan,Mathematics,{'Mathematics': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0823,A5132701659,NIT Trichy,P Saikrishnan,P. Saikrishnan,Mathematics,{'Mathematics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0823,A5047410214,NIT Trichy,P Saikrishnan,Ponnaiah Saikrishnan,Mathematics,{'Mathematics': 13},2,2,False,13,2016,2024,False,name,accepted,4
+T0824,A5111267967,NIT Trichy,V Kumaran,V. Kumaran,Mathematics,{'Mathematics': 7},3,2,False,7,2017,2024,False,name,accepted,5
+T0825,A5013326280,NIT Trichy,V Lakshmana Gomathi Nayagam,V. Lakshmana Gomathi Nayagam,Mathematics,{'Mathematics': 21},3,2,False,21,2016,2026,False,name,accepted,5
+T0826,A5053787757,NIT Trichy,V Ravichandran,V. Ravichandran,Mathematics,{'Mathematics': 49},3,2,False,52,2018,2026,False,name,accepted,5
+T0826,A5132599093,NIT Trichy,V Ravichandran,V. Ravichandran,Mathematics,{'Mathematics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0826,A5106494193,NIT Trichy,V Ravichandran,Ravichandran Vaithiyanathan,Mathematics,{'Mathematics': 1},2,2,False,1,2024,2024,False,name,accepted,4
+T0827,A5087734313,NIT Trichy,V Shanthi,V. Shanthi,Mathematics,{'Mathematics': 29},3,2,False,29,2016,2025,False,name,accepted,5
+T0828,A5113934323,NIT Trichy,Veerappan,AR. Veerappan,Mechanical,{'Mechanical': 29},3,2,False,29,2016,2025,False,name,accepted,5
+T0828,A5114036616,NIT Trichy,Veerappan,A.R. Veerappan,Mechanical,{'Mechanical': 10},3,2,False,10,2017,2025,False,name,accepted,5
+T0828,A5113535046,NIT Trichy,Veerappan,Arunachalam R. Veerappan,Mechanical,{'Mechanical': 2},2,2,False,2,2018,2022,False,name,accepted,4
+T0828,A5044268962,NIT Trichy,Veerappan,Veerappan Arunachalam,Mechanical,{'Mechanical': 2},1,2,False,2,2016,2023,False,name,accepted,3
+T0829,A5082138870,NIT Trichy,Bishweshwar Babu,Bishweshwar Babu,Mechanical,{'Mechanical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0830,A5026653871,NIT Trichy,Dudul Das,Dudul Das,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0831,A5150829367,NIT Trichy,G Rajasekaran,G. Rajasekaran,Mechanical,{},3,0,False,1,2026,2026,False,name,accepted,3
+T0833,A5003667234,NIT Trichy,J Sarangan,J. Sarangan,Mechanical,{'Mechanical': 3},3,2,False,3,2016,2016,False,name,accepted,5
+T0833,A5083439003,NIT Trichy,J Sarangan,Sarangan Jaganathan,Mechanical,{},2,0,False,1,2016,2016,False,name,accepted,2
+T0834,A5107994324,NIT Trichy,K Sankaranarayanasamy,Krishnasamy Sankaranarayanasamy,Mechanical,{'Mechanical': 21},2,2,False,22,2016,2025,False,name,accepted,4
+T0834,A5036953624,NIT Trichy,K Sankaranarayanasamy,Krishnasamy Sankaranarayanasamy,Mechanical,{'Mechanical': 3},2,2,False,3,2017,2025,False,name,accepted,4
+T0835,A5009548143,NIT Trichy,K R Balasubramanian,K.R. Balasubramanian,Mechanical,{'Mechanical': 30},3,2,False,41,2016,2026,False,name,accepted,5
+T0835,A5039060645,NIT Trichy,K R Balasubramanian,K.R. Balasubramanian,Mechanical,{'Mechanical': 3},3,2,False,3,2018,2026,False,name,accepted,5
+T0835,A5027785759,NIT Trichy,K R Balasubramanian,Balasubramanian K. R,Mechanical,{'Mechanical': 1},3,2,False,1,2019,2019,False,name,accepted,5
+T0835,A5069209584,NIT Trichy,K R Balasubramanian,Balasubramanian Karuppudaiyar Ramasamy,Mechanical,{},2,0,False,1,2019,2019,False,name,accepted,2
+T0836,A5035486307,NIT Trichy,Kaushik P,P. Kaushik,Mechanical,{'Mechanical': 13},3,2,False,15,2018,2025,False,name,accepted,5
+T0837,A5111551426,NIT Trichy,M Udayakumar,M. Udayakumar,Mechanical,{'Mechanical': 11},3,2,False,12,2019,2022,False,name,accepted,5
+T0837,A5052659586,NIT Trichy,M Udayakumar,Udayakumar Meivelu,Mechanical,{'Mechanical': 1},2,2,False,2,2020,2022,False,name,accepted,4
+T0838,A5011874392,NIT Trichy,N Siva Shanmugam,S. Shanmugam,Mechanical,"{'Mechanical': 33, 'Production': 1}",3,2,False,34,2016,2022,False,name,accepted,5
+T0838,A5031272760,NIT Trichy,N Siva Shanmugam,Nallathambi Siva Shanmugam,Mechanical,{'Mechanical': 112},2,2,False,115,2016,2026,False,name,accepted,4
+T0838,A5010645274,NIT Trichy,N Siva Shanmugam,Siva Shanmugam Nallathambi,Mechanical,{'Mechanical': 1},2,2,False,1,2021,2021,False,name,accepted,4
+T0838,A5019581979,NIT Trichy,N Siva Shanmugam,Shanmugam Subramaniam,Mechanical,{'Mechanical': 1},2,2,False,1,2016,2016,False,name,accepted,4
+T0839,A5041421162,NIT Trichy,Nivish George,Nivish George,Mechanical,{'Mechanical': 7},3,2,False,8,2020,2022,False,name,accepted,5
+T0841,A5108715627,NIT Trichy,R Prakash,R. Prakash,Mechanical,{'Mechanical': 1},3,2,False,1,2020,2020,False,name,accepted,5
+T0841,A5049139888,NIT Trichy,R Prakash,Prakash Rajendran,Mechanical,{'Mechanical': 14},2,2,False,14,2020,2026,False,name,accepted,4
+T0842,A5103027142,NIT Trichy,R B Anand,R.B. Anand,Mechanical,{'Mechanical': 8},3,2,False,8,2016,2023,False,name,accepted,5
+T0842,A5101616647,NIT Trichy,R B Anand,Anand Ramanathan,Mechanical,{'Mechanical': 50},2,2,False,50,2016,2026,False,name,accepted,4
+T0842,A5021960363,NIT Trichy,R B Anand,Anand Ramachandran Bhagavathiammal,Mechanical,{'Mechanical': 1},2,2,False,1,2017,2017,False,name,accepted,4
+T0842,A5044046602,NIT Trichy,R B Anand,Anand Ramachandran Bhagavathi,Mechanical,{'Mechanical': 1},2,2,False,1,2016,2016,False,name,accepted,4
+T0842,A5012209269,NIT Trichy,R B Anand,Anand Ramachandran Bhagavathi Ammal,Mechanical,{'Mechanical': 1},1,2,False,1,2018,2018,False,name,accepted,3
+T0842,A5103858645,NIT Trichy,R B Anand,Rb Anand,Mechanical,{},2,0,False,1,2019,2019,False,name,accepted,2
+T0843,A5024616821,NIT Trichy,Raghu Ram Karthik Desu,Raghuram Karthik Desu,Mechanical,{'Mechanical': 8},1,2,False,9,2021,2026,False,name,accepted,3
+T0845,A5100766268,NIT Trichy,S Suresh,S. Suresh,Mechanical,{'Mechanical': 103},3,2,False,112,2016,2026,False,name,accepted,5
+T0845,A5044022648,NIT Trichy,S Suresh,S. Suresh,Mechanical,{'Mechanical': 4},3,2,False,4,2026,2026,False,name,accepted,5
+T0845,A5133932188,NIT Trichy,S Suresh,Suresh S,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0845,A5154887775,NIT Trichy,S Suresh,S. Suresh,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0845,A5126281020,NIT Trichy,S Suresh,Suresh Sivan,Mechanical,{'Mechanical': 2},2,2,False,2,2020,2026,False,name,accepted,4
+T0845,A5014181547,NIT Trichy,S Suresh,Sneha Suresh,Mechanical,{'Mechanical': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0845,A5014933964,NIT Trichy,S Suresh,S. Suresh,Mechanical,{},3,0,False,1,2016,2016,False,name,accepted,3
+T0846,A5052496657,NIT Trichy,S Venkatachalapathy,S. Venkatachalapathy,Mechanical,{'Mechanical': 22},3,2,False,25,2016,2025,False,name,accepted,5
+T0847,A5019451647,NIT Trichy,S P Sivapirakasam,S.P. Sivapirakasam,Mechanical,{'Mechanical': 5},3,2,False,5,2021,2026,False,name,accepted,5
+T0847,A5122796651,NIT Trichy,S P Sivapirakasam,S. P. Sivapirakasam,Mechanical,{'Mechanical': 4},3,2,False,4,2025,2026,False,name,accepted,5
+T0847,A5023316953,NIT Trichy,S P Sivapirakasam,Suthandathan Paramashivan Sivapirakasam,Mechanical,{'Mechanical': 62},2,2,False,70,2017,2026,False,name,accepted,4
+T0847,A5109956762,NIT Trichy,S P Sivapirakasam,Suthangathan Paramashivan Sivapirakasam,Mechanical,{'Mechanical': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0849,A5063375023,NIT Trichy,Saurav Kumar Dutta,Saurav Kumar Dutta,Mechanical,{'Mechanical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0850,A5101788029,NIT Trichy,Sreejith Mohan,Sreejith Mohan,Mechanical,{'Mechanical': 16},3,2,False,20,2020,2026,False,name,accepted,5
+T0850,A5101788030,NIT Trichy,Sreejith Mohan,Sreejith Mohan,Mechanical,{'Mechanical': 7},3,2,False,7,2017,2025,False,name,accepted,5
+T0850,A5146911928,NIT Trichy,Sreejith Mohan,Sreejith Mohan,Mechanical,{'Mechanical': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0850,A5113874683,NIT Trichy,Sreejith Mohan,S. Mohan Kumar,Mechanical,{'Mechanical': 15},1,2,False,15,2018,2021,False,override,accepted,3
+T0852,A5055009517,NIT Trichy,T Ramesh,Thillaigovindan Ramesh,Mechanical,"{'Mechanical': 34, 'Production': 1}",2,2,False,35,2016,2025,False,name,accepted,4
+T0853,A5031150250,NIT Trichy,T Suthakar,T. Suthakar,Mechanical,{'Mechanical': 6},3,2,False,6,2016,2023,False,name,accepted,5
+T0853,A5021673756,NIT Trichy,T Suthakar,Suthakar Thomas,Mechanical,{},2,0,False,1,2016,2016,False,name,accepted,2
+T0855,A5002294070,NIT Trichy,V Arul Mozhi Selvan,V. Arul Mozhi Selvan,Mechanical,{'Mechanical': 39},3,2,False,52,2017,2026,False,name,accepted,5
+T0856,A5066345027,NIT Trichy,Vedharaj Sivasankaralingam,Vedharaj Sivasankaralingam,Mechanical,{},3,0,False,8,2022,2026,False,name,accepted,3
+T0857,A5025904225,NIT Trichy,Ashok Kumar Nallathambi,Ashok Kumar Nallathambi,Mechanical,{'Mechanical': 13},3,2,False,13,2018,2026,False,name,accepted,5
+T0858,A5084326653,NIT Trichy,Harish Kruthiventi Ss,S. S. Harish Kruthiventi,Mechanical,{'Mechanical': 25},2,2,False,25,2020,2026,False,name,accepted,4
+T0859,A5031893751,NIT Trichy,K Pannir Selvam,K. Pannirselvam,Mechanical,{'Mechanical': 2},3,2,False,2,2020,2021,False,name,accepted,5
+T0859,A5070136080,NIT Trichy,K Pannir Selvam,Pannir Selvam Kasavan,Mechanical,{'Mechanical': 1},2,2,False,1,2022,2022,False,name,accepted,4
+T0860,A5034497364,NIT Trichy,Nanda Naik Korra,Nanda Naik Korra,Mechanical,{'Mechanical': 17},3,2,False,18,2019,2026,False,name,accepted,5
+T0860,A5063991403,NIT Trichy,Nanda Naik Korra,Korra Nanda Naik,Mechanical,{'Mechanical': 1},3,2,False,1,2020,2020,False,name,accepted,5
+T0861,A5035598663,NIT Trichy,V Mariappan,V. Mariappan,Mechanical,"{'Mechanical': 24, 'Chemical': 1}",3,2,False,25,2018,2026,False,name,accepted,5
+T0861,A5012580039,NIT Trichy,V Mariappan,V. Mariappan,Mechanical,{'Mechanical': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0862,A5015690438,NIT Trichy,M Shahul Hameed,M. Shahul Hameed,Mechanical,{'Mechanical': 2},3,2,False,2,2018,2025,False,name,accepted,5
+T0862,A5155576011,NIT Trichy,M Shahul Hameed,M. Shahul Hameed,Mechanical,{'Mechanical': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0867,A5111359606,NIT Trichy,A Chandra Bose,A. Chandra Bose,Physics,{'Physics': 3},3,2,False,3,2025,2026,False,name,accepted,5
+T0867,A5101086165,NIT Trichy,A Chandra Bose,Chandra Bose A.,Physics,{'Physics': 1},3,2,False,1,2020,2020,False,name,accepted,5
+T0867,A5043674112,NIT Trichy,A Chandra Bose,Arumugam Chandra Bose,Physics,{'Physics': 82},2,2,False,87,2016,2025,False,name,accepted,4
+T0867,A5110465715,NIT Trichy,A Chandra Bose,A C Bose,Physics,{'Physics': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0867,A5061354869,NIT Trichy,A Chandra Bose,A. Chandrabose,Physics,{'Physics': 2},1,2,False,2,2016,2017,False,name,accepted,3
+T0867,A5012704325,NIT Trichy,A Chandra Bose,Chandra Bose Arumugam,Physics,{},2,0,False,1,2021,2021,False,name,accepted,2
+T0868,A5110090532,NIT Trichy,B Karthikeyan,B. Karthikeyan,Physics,{'Physics': 18},3,2,False,18,2016,2023,False,name,accepted,5
+T0868,A5110708877,NIT Trichy,B Karthikeyan,B Karthikeyan,Physics,{'Physics': 1},3,2,False,1,2020,2020,False,name,accepted,5
+T0868,A5100775879,NIT Trichy,B Karthikeyan,Karthikeyan Balasubramanian,Physics,{'Physics': 55},2,2,False,58,2016,2025,False,name,accepted,4
+T0868,A5110716749,NIT Trichy,B Karthikeyan,Karthikeyan Balasubramanian,Physics,{'Physics': 16},2,2,False,16,2017,2025,False,name,accepted,4
+T0868,A5035935905,NIT Trichy,B Karthikeyan,Karthikeyan Balasubramanian,Physics,{'Physics': 3},2,2,False,3,2017,2022,False,name,accepted,4
+T0868,A5100775877,NIT Trichy,B Karthikeyan,Balasubramanian Karthikeyan,Physics,{'Physics': 2},2,2,False,2,2021,2025,False,name,accepted,4
+T0868,A5023462818,NIT Trichy,B Karthikeyan,Karthikeyan Balasurbamanian,Physics,{'Physics': 1},2,2,False,1,2019,2019,False,name,accepted,4
+T0868,A5132573463,NIT Trichy,B Karthikeyan,Balasubramnian Karthikeyan,Physics,{'Physics': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0869,A5070135713,NIT Trichy,J Hemalatha,J. Hemalatha,Physics,{'Physics': 10},3,2,False,10,2018,2026,False,name,accepted,5
+T0869,A5153134664,NIT Trichy,J Hemalatha,J. Hemalatha,Physics,{},3,0,False,2,2017,2018,False,name,accepted,3
+T0871,A5086942445,NIT Trichy,M Ashok,M. Ashok,Physics,"{'Physics': 67, 'Civil': 1}",3,2,False,69,2016,2026,False,name,accepted,5
+T0871,A5147386447,NIT Trichy,M Ashok,M. Ashok,Physics,{'Physics': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0872,A5001990874,NIT Trichy,M C Santhosh Kumar,M.C. Santhosh Kumar,Physics,{'Physics': 59},3,2,False,63,2016,2026,False,name,accepted,5
+T0872,A5157136021,NIT Trichy,M C Santhosh Kumar,M C Santhosh Kumar,Physics,{},3,0,False,1,2024,2024,False,name,accepted,3
+T0873,A5056900001,NIT Trichy,N Baskaran,Baskaran Natesan,Physics,{'Physics': 15},2,2,False,16,2019,2026,False,name,accepted,4
+T0873,A5024021447,NIT Trichy,N Baskaran,Baskaran Nastesan,Physics,{'Physics': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0874,A5027506823,NIT Trichy,N V Giridharan,Giridharan N.V.,Physics,{'Physics': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0874,A5019398187,NIT Trichy,N V Giridharan,Nambi Venkatesan Giridharan,Physics,{'Physics': 62},2,2,False,68,2016,2026,False,name,accepted,4
+T0875,A5007214645,NIT Trichy,R Justin Joseyphus,R. Justin Joseyphus,Physics,{'Physics': 33},3,2,False,35,2016,2026,False,name,accepted,5
+T0875,A5118181088,NIT Trichy,R Justin Joseyphus,Justin Joseyphus Raphael,Physics,{'Physics': 1},2,2,False,1,2025,2025,False,name,accepted,4
+T0876,A5084532872,NIT Trichy,R Nagalakshmi,R. Nagalakshmi,Physics,{'Physics': 58},3,2,False,59,2016,2026,False,name,accepted,5
+T0876,A5127871337,NIT Trichy,R Nagalakshmi,R. Nagalakshmi,Physics,{'Physics': 3},3,2,False,3,2026,2026,False,name,accepted,5
+T0876,A5091398001,NIT Trichy,R Nagalakshmi,Nagalakshmi Ramamoorthi,Physics,{'Physics': 4},2,2,False,4,2021,2026,False,name,accepted,4
+T0876,A5076125779,NIT Trichy,R Nagalakshmi,Nagalakshmi Ramamoorthy,Physics,{'Physics': 2},2,2,False,2,2020,2025,False,name,accepted,4
+T0876,A5102663831,NIT Trichy,R Nagalakshmi,Ramamoorthy Nagalakshmi,Physics,{},2,0,False,1,2025,2025,False,name,accepted,2
+T0877,A5048858244,NIT Trichy,R Sankaranarayanan,R. Sankaranarayanan,Physics,{'Physics': 23},3,2,False,23,2017,2026,False,name,accepted,5
+T0877,A5038613811,NIT Trichy,R Sankaranarayanan,R Sankaranarayanan,Physics,{'Physics': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0878,A5036720105,NIT Trichy,S Manivannan,S. Manivannan,Physics,{'Physics': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0878,A5101396762,NIT Trichy,S Manivannan,S. Manivannan,Physics,{'Physics': 1},3,2,False,1,2019,2019,False,name,accepted,5
+T0878,A5101396765,NIT Trichy,S Manivannan,Sellaperumal Manivannan,Physics,{'Physics': 38},2,2,False,38,2016,2026,False,name,accepted,4
+T0878,A5133341933,NIT Trichy,S Manivannan,Manivannan Sellaperumal,Physics,{'Physics': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0878,A5108146251,NIT Trichy,S Manivannan,S. Manivannan,Physics,"{'MME': 4, 'Physics': 1}",3,0,False,5,2016,2021,False,name,accepted,3
+T0881,A5043635650,NIT Trichy,Venkata Suryanarayana Mummidi,V. Suryanarayana Mummidi,Physics,{'Physics': 3},2,2,False,3,2021,2025,False,name,accepted,4
+T0882,A5051446099,NIT Trichy,Annapureddy Venkateshwarlu,Venkateswarlu Annapureddy,Physics,"{'Physics': 36, 'Energy & Environment': 2}",1,2,False,38,2018,2026,False,name,accepted,3
+T0882,A5126438087,NIT Trichy,Annapureddy Venkateshwarlu,Annapureddy Venkateswarlu,Physics,{'Physics': 5},1,2,False,5,2026,2026,False,name,accepted,3
+T0883,A5008928506,NIT Trichy,D Sasti Kumar,Dillibabu Sastikumar,Physics,{'Physics': 47},2,2,False,54,2016,2025,False,name,accepted,4
+T0883,A5108786580,NIT Trichy,D Sasti Kumar,Dilibabu Sastikumar,Physics,{'Physics': 2},2,2,False,2,2020,2021,False,name,accepted,4
+T0883,A5157311500,NIT Trichy,D Sasti Kumar,D. Sastikumar,Physics,{},3,0,False,1,2022,2022,False,name,accepted,3
+T0884,A5059125464,NIT Trichy,N Gopala Krishnan,N. Gopalakrishnan,Physics,{'Physics': 44},3,2,False,49,2016,2026,False,name,accepted,5
+T0884,A5157169423,NIT Trichy,N Gopala Krishnan,N Gopalakrishnan,Physics,{'Physics': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0884,A5091929939,NIT Trichy,N Gopala Krishnan,Gopalakrishnan Nammalwar,Physics,{'Physics': 1},2,2,False,1,2023,2023,False,name,accepted,4
+T0884,A5103798077,NIT Trichy,N Gopala Krishnan,Nammalvar Gopalakrishnan,Physics,{},2,0,False,1,2018,2018,False,name,accepted,2
+T0886,A5102881072,NIT Trichy,Takhellambam Sonamani Singh,T. Sonamani Singh,Physics,{'Physics': 5},3,2,False,5,2023,2025,False,name,accepted,5
+T0888,A5032271128,NIT Trichy,A Noorul Haq,A. Noorul Haq,Production,{'Production': 24},3,2,False,26,2016,2022,False,name,accepted,5
+T0888,A5056094780,NIT Trichy,A Noorul Haq,Noorul Haq A,Production,{'Production': 1},3,2,False,1,2020,2020,False,name,accepted,5
+T0888,A5054304618,NIT Trichy,A Noorul Haq,Noorul Haq Abdul Haq,Production,{'Production': 1},1,2,False,1,2021,2021,False,name,accepted,3
+T0890,A5109432115,NIT Trichy,C Sathiya Narayanan,Chinnaiyan Sathiya Narayanan,Production,{'Production': 33},2,2,False,33,2016,2025,False,name,accepted,4
+T0890,A5108259039,NIT Trichy,C Sathiya Narayanan,Sathiya Narayanan Chinnaiyan,Production,{'Production': 6},2,2,False,7,2018,2026,False,name,accepted,4
+T0890,A5051673545,NIT Trichy,C Sathiya Narayanan,Sathiya Narayanan Chinnayan,Production,{'Production': 1},2,2,False,1,2021,2021,False,name,accepted,4
+T0890,A5026873694,NIT Trichy,C Sathiya Narayanan,C. Sathiyanarayanan,Production,{'Production': 5},1,2,False,5,2016,2020,False,name,accepted,3
+T0891,A5087973478,NIT Trichy,D Lenin Singaravelu,D. Lenin Singaravelu,Production,"{'Production': 70, 'Mechanical': 1}",3,2,False,72,2016,2026,False,name,accepted,5
+T0893,A5110593618,NIT Trichy,Dinesh S,S. Dinesh,Production,{'Production': 7},3,2,False,7,2016,2021,False,name,accepted,5
+T0894,A5083205088,NIT Trichy,J Jerald,Jason Jerald,Production,{'Production': 29},2,2,False,31,2016,2025,False,name,accepted,4
+T0894,A5115762132,NIT Trichy,J Jerald,J. Jeral,Production,{'Production': 3},1,2,False,3,2022,2026,False,name,accepted,3
+T0895,A5032192676,NIT Trichy,K Panneerselvam,K. Panneerselvam,Production,{'Production': 4},3,2,False,4,2022,2026,False,name,accepted,5
+T0895,A5074270010,NIT Trichy,K Panneerselvam,Kavan Panneerselvam,Production,{'Production': 62},2,2,False,65,2016,2026,False,name,accepted,4
+T0895,A5061447682,NIT Trichy,K Panneerselvam,Panneerselvem Kavan,Production,{'Production': 1},1,2,False,1,2021,2021,False,name,accepted,3
+T0896,A5088678959,NIT Trichy,Kumanan Somasundaram,S. Kumanan,Production,{'Production': 31},3,2,False,36,2016,2026,False,name,accepted,5
+T0896,A5015241056,NIT Trichy,Kumanan Somasundaram,S. Kumanan,Production,{'Production': 2},3,2,False,2,2022,2026,False,name,accepted,5
+T0897,A5013758384,NIT Trichy,Mallikarjuna,Balichakra Mallikarjuna,Production,{'Production': 9},1,2,False,9,2023,2026,False,name,accepted,3
+T0897,A5121245190,NIT Trichy,Mallikarjuna,B. Mallikarjuna,Production,{'Production': 1},1,2,False,1,2025,2025,False,name,accepted,3
+T0898,A5017088220,NIT Trichy,Matruprasad Rout,Matruprasad Rout,Production,"{'Production': 13, 'Mechanical': 1}",3,2,False,18,2020,2026,False,name,accepted,5
+T0899,A5071901882,NIT Trichy,N S Balaji,N.S. Balaji,Production,{'Production': 5},3,2,False,5,2019,2023,False,name,accepted,5
+T0900,A5076171540,NIT Trichy,P Asokan,P. Asokan,Production,{'Production': 36},3,2,False,36,2016,2026,False,name,accepted,5
+T0901,A5110291700,NIT Trichy,P Parthiban,P. Parthiban,Production,"{'Production': 42, 'Mechanical': 1}",3,2,False,46,2016,2026,False,name,accepted,5
+T0901,A5101640045,NIT Trichy,P Parthiban,P. Parthiban,Production,{'Civil': 2},3,-3,False,3,2019,2019,False,override,accepted,0
+T0902,A5006613254,NIT Trichy,P Sathiya,P. Sathiya,Production,{'Production': 88},3,2,False,93,2016,2025,False,name,accepted,5
+T0902,A5047521170,NIT Trichy,P Sathiya,P. Sathiya,Production,{'Production': 3},3,2,False,3,2024,2026,False,name,accepted,5
+T0902,A5030342079,NIT Trichy,P Sathiya,Paul Sathiya,Production,{'Production': 6},2,2,False,6,2017,2026,False,name,accepted,4
+T0902,A5123062856,NIT Trichy,P Sathiya,Sathiya Paulraj,Production,{'Production': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0902,A5139348595,NIT Trichy,P Sathiya,Paulraj Sathiya,Production,{'Production': 1},2,2,False,1,2026,2026,False,name,accepted,4
+T0903,A5087591933,NIT Trichy,P Senthil,P. Senthil,Production,{'Production': 24},3,2,False,24,2016,2025,False,name,accepted,5
+T0903,A5110445461,NIT Trichy,P Senthil,P. Senthil,Production,{'Production': 9},3,2,False,9,2018,2023,False,name,accepted,5
+T0904,A5065011940,NIT Trichy,Pintu Kumar,Pintu Kumar,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0905,A5033006914,NIT Trichy,Prakash Kumar,Prakash Kumar,Production,{'Production': 14},3,2,False,15,2020,2025,False,name,accepted,5
+T0905,A5101647980,NIT Trichy,Prakash Kumar,Prakash Kumar,Production,{'Production': 2},3,2,False,2,2024,2025,False,name,accepted,5
+T0905,A5129703205,NIT Trichy,Prakash Kumar,Prakash Kumar,Production,{'Production': 2},3,2,False,2,2026,2026,False,name,accepted,5
+T0906,A5100046533,NIT Trichy,R Jeyapaul,R. Jeyapaul,Production,{'Production': 6},3,2,False,6,2019,2026,False,name,accepted,5
+T0906,A5000502573,NIT Trichy,R Jeyapaul,Rajamani Jeyapaul,Production,{'Production': 27},2,2,False,31,2016,2026,False,name,accepted,4
+T0906,A5009742011,NIT Trichy,R Jeyapaul,R. Jeyapaul,Production,{},3,0,False,1,2020,2020,False,name,accepted,3
+T0907,A5107963308,NIT Trichy,R Narayanasamy,R. Narayanasamy,Production,{'Production': 17},3,2,False,18,2016,2024,False,name,accepted,5
+T0907,A5041964451,NIT Trichy,R Narayanasamy,R. Narayanasamy,Production,{'Production': 2},3,2,False,2,2018,2018,False,name,accepted,5
+T0908,A5108327295,NIT Trichy,S Prasanna Venkatesan,Prasanna Venkatesan S,Production,{'Production': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0908,A5048395535,NIT Trichy,S Prasanna Venkatesan,Shanmugam Prasanna Venkatesan,Production,{'Production': 21},2,2,False,21,2016,2025,False,name,accepted,4
+T0908,A5141033935,NIT Trichy,S Prasanna Venkatesan,Shanmugam PrasannaVenkatesan,Production,{'Production': 1},1,2,False,1,2026,2026,False,name,accepted,3
+T0909,A5063655818,NIT Trichy,S Vinodh,S. Vinodh,Production,{'Production': 10},3,2,False,10,2019,2026,False,name,accepted,5
+T0909,A5024615121,NIT Trichy,S Vinodh,Sekar Vinodh,Production,{'Production': 101},2,2,False,103,2016,2026,False,name,accepted,4
+T0910,A5021320169,NIT Trichy,Santosh Kumar Mishra,Santosh Kumar Mishra,Production,{'Production': 1},3,2,False,2,2024,2025,False,name,accepted,5
+T0910,A5101882849,NIT Trichy,Santosh Kumar Mishra,Santosh Kumar Mishra,Production,{'Production': 1},3,2,False,1,2022,2022,False,name,accepted,5
+T0911,A5018067605,NIT Trichy,T Jagadesh,T. Jagadesh,Production,{'Production': 13},3,2,False,13,2020,2024,False,name,accepted,5
+T0911,A5128207005,NIT Trichy,T Jagadesh,T. Jagadesh,Production,{'Production': 1},3,2,False,1,2023,2023,False,name,accepted,5
+T0912,A5103708529,NIT Trichy,T Selvaraj,Thangiah Selvaraj,Production,{'Production': 3},2,2,False,3,2016,2017,False,name,accepted,4
+T0913,A5053341668,NIT Trichy,V Anandakrishnan,Veeramani Anandakrishnan,Production,{'Production': 45},2,2,False,52,2016,2026,False,name,accepted,4
+T0913,A5029828806,NIT Trichy,V Anandakrishnan,V. Anandakrishanan,Production,{'Production': 1},1,2,False,1,2016,2016,False,name,accepted,3
+T0914,A5100748987,NIT Trichy,V Senthilkumar,V. Senthilkumar,Production,{'Production': 43},3,2,False,47,2016,2026,False,name,accepted,5
+T0914,A5125258667,NIT Trichy,V Senthilkumar,SENTHILKUMAR V,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0914,A5153095206,NIT Trichy,V Senthilkumar,V. Senthilkumar,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0914,A5100748988,NIT Trichy,V Senthilkumar,V. Senthil Kumar,Production,{'Production': 5},1,2,False,6,2018,2025,False,name,accepted,3
+T0915,A5018188331,NIT Trichy,Vasu M,M Vasu,Production,{'Production': 1},3,2,False,1,2025,2025,False,name,accepted,5
+T0915,A5122228016,NIT Trichy,Vasu M,Vasu M,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0915,A5054321162,NIT Trichy,Vasu M,Vasu Mallesha,Production,{'Production': 5},2,2,False,5,2023,2024,False,name,accepted,4
+T0916,A5027682223,NIT Trichy,Vimal K E K,K. E. K. Vimal,Production,{'Production': 20},3,2,False,22,2016,2026,False,name,accepted,5
+T0916,A5020792965,NIT Trichy,Vimal K E K,Vimal K.E.K,Production,{'Production': 6},3,2,False,7,2023,2026,False,name,accepted,5
+T0917,A5020793286,NIT Trichy,Vineet Kumar Yadav,Vineet Kumar Yadav,Production,{'Production': 11},3,2,False,11,2021,2024,False,name,accepted,5
+T0918,A5083976183,NIT Trichy,M Durai Selvam,Muthukannan Duraiselvam,Production,{'Production': 64},2,2,False,71,2016,2026,False,name,accepted,4
+T0918,A5072204112,NIT Trichy,M Durai Selvam,Duraiselvam Muthukannan,Production,{'Production': 3},2,2,False,3,2023,2026,False,name,accepted,4
+T0918,A5050072286,NIT Trichy,M Durai Selvam,M Duraiselvam,Production,{},3,0,False,1,2022,2022,False,name,accepted,3
+T0920,A5082839921,NIT Trichy,Satheeshkumar V,V. Satheeshkumar,Production,{'Production': 11},3,2,False,13,2020,2026,False,name,accepted,5
+T0920,A5126764106,NIT Trichy,Satheeshkumar V,V. Satheeshkumar,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0920,A5075433991,NIT Trichy,Satheeshkumar V,Vinaitheerthan Satheeshkumar,Production,{'Production': 3},2,2,False,3,2024,2025,False,name,accepted,4
+T0922,A5076587359,NIT Trichy,Justus Panicker C T,C.T. Justus Panicker,Production,{'Production': 10},3,2,False,13,2019,2025,False,name,accepted,5
+T0924,A5016185340,NIT Trichy,Murugabalaji V,V. Murugabalaji,Production,{'Production': 6},3,2,False,6,2023,2025,False,name,accepted,5
+T0924,A5138367109,NIT Trichy,Murugabalaji V,Viswanathan Murugabalaji,Production,{},2,0,False,1,2026,2026,False,name,accepted,2
+T0925,A5100692264,NIT Trichy,Rajesh R,R. Rajesh,Production,{'Production': 1},3,2,False,1,2026,2026,False,name,accepted,5
+T0926,A5104544262,NIT Trichy,S John Vincent Jesuraj,S. John Vincent Jesuraj,Production,{'Production': 1},3,2,False,1,2024,2024,False,name,accepted,5
+T0927,A5034751623,NIT Trichy,Simson D,D. Simson,Production,{'Production': 1},3,2,False,1,2019,2019,False,name,accepted,5
+T0928,A5031947839,NIT Trichy,A K Bakthavatsalam,Bakthavatsalam A.K.,Training & Placement,{},3,0,False,1,2019,2019,False,name,accepted,3
+T0928,A5082287896,NIT Trichy,A K Bakthavatsalam,Kannapan Bakthavatsalam Ayalur,Training & Placement,{},2,0,False,1,2017,2017,False,name,accepted,2
+T0928,A5054394549,NIT Trichy,A K Bakthavatsalam,A.K. Bakthavatsalam,Training & Placement,"{'Energy & Environment': 9, 'Training & Placement': 1}",3,-3,False,11,2016,2025,False,override,accepted,0
+T0928,A5029616829,NIT Trichy,A K Bakthavatsalam,Bakthavatsalam Kannappan Ayalur,Training & Placement,{'Energy & Environment': 8},2,-3,False,10,2017,2024,False,override,accepted,-1

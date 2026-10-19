@@ -1,0 +1,31 @@
+your_inst,partner_inst,partner_cluster,cross_cluster,shared_papers,total_citations
+NIT Trichy,Vellore Institute of Technology University,University / college,True,216,3620
+NIT Trichy,SRM Institute of Science and Technology,University / college,True,155,1718
+NIT Trichy,Indian Institute of Technology Madras,IIT,True,119,1390
+NIT Trichy,Bharathidasan University,University / college,True,109,1826
+NIT Trichy,"Anna University, Chennai",University / college,True,108,3467
+NIT Trichy,Bharat Heavy Electricals (India),Industry,True,94,1284
+NIT Trichy,Amrita Vishwa Vidyapeetham,University / college,True,90,533
+NIT Trichy,SASTRA University,University / college,True,88,794
+NIT Trichy,National Institute of Technology Calicut,NIT,False,57,966
+NIT Trichy,Indian Space Research Organisation,ISRO,True,56,1244
+NIT Trichy,Indira Gandhi Centre for Atomic Research,DAE,True,55,566
+NIT Trichy,National Institute of Technology Warangal,NIT,False,54,1291
+NIT Trichy,Indian Institute of Science Bangalore,IISER / IISc,True,54,1464
+NIT Trichy,Thiagarajar College of Engineering,University / college,True,54,539
+NIT Trichy,Vikram Sarabhai Space Centre,ISRO,True,49,479
+NIT Surathkal,Manipal Academy of Higher Education,University / college,True,461,7283
+NIT Surathkal,Vellore Institute of Technology University,University / college,True,158,2527
+NIT Surathkal,Indian Institute of Science Bangalore,IISER / IISc,True,126,1618
+NIT Surathkal,Nitte University,University / college,True,114,753
+NIT Surathkal,Siddaganga Institute of Technology,University / college,True,100,1139
+NIT Surathkal,Indian Institute of Technology Madras,IIT,True,79,1367
+NIT Surathkal,Indian Institute of Technology Kharagpur,IIT,True,72,961
+NIT Surathkal,Visvesvaraya Technological University,University / college,True,70,1400
+NIT Surathkal,Indian Institute of Technology Bombay,IIT,True,64,840
+NIT Surathkal,"Kasturba Medical College, Manipal",University / college,True,64,1143
+NIT Surathkal,National Institute of Technology Calicut,NIT,False,58,617
+NIT Surathkal,Amrita Vishwa Vidyapeetham,University / college,True,57,626
+NIT Surathkal,"Kasturba Medical College, Mangalore",University / college,True,57,1184
+NIT Surathkal,Indian Institute of Technology Delhi,IIT,True,52,824
+NIT Surathkal,Nitte Meenakshi Institute of Technology,University / college,True,49,838

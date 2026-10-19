@@ -1,0 +1,60 @@
+faculty_id,author_id,decision,faculty_name,openalex_name
+S0022,A5057312988,accept,Biswajit R Bhowmik,DR. BISWAJIT BHOWMIK
+S0030,A5017738782,reject,Saumya Hegde,Shreyas S. Hegde
+S0100,A5153230865,reject,Ampar Chitharanjan Hegde,Anusha Hegde
+S0154,A5052160146,reject,Aparna P,Aparna Panda
+S0195,A5004962458,accept,Arun Dominic,Arun Dominic D
+S0208,A5109361791,accept,Vignesh Kumar V,V. Vignesh Kumar
+S0208,A5119080441,accept,Vignesh Kumar V,Vignesh Kumar Vethanayagam
+S0208,A5050321671,reject,Vignesh Kumar V,Vivek Kumar
+S0232,A5038845271,reject,Anand Kumar M,Manish Kumar
+S0238,A5069612705,reject,Kiran M,M. C. Kiran
+S0238,A5030398374,reject,Kiran M,M. Raveendra Kiran
+S0240,A5061982583,accept,Purushothama B R,B. Purushothama
+S0242,A5086912122,reject,Sowmya Kamath S,S. Shilpa Kamath
+S0288,A5108236738,reject,Savita Bhat,Savita Bhat
+S0294,A5049572920,accept,K B Kiran,Kiran K.B.
+S0297,A5013472204,reject,S Pavan Kumar,Pavan Kumar Singeetham
+S0309,A5104088940,reject,Amit Kumar,Amit Kumar
+S0324,A5021378891,accept,I Jeyaraman,I. Jeyaraman
+S0337,A5086912122,reject,Shyam S Kamath,S. Shilpa Kamath
+S0340,A5100730507,reject,Shankarb Ramesh,S. Ramesh
+S0357,A5100757600,reject,Deepak Kumar,Deepak Kumar
+S0363,A5021929784,reject,Poornesh Kumar Koorata,K. Kumar
+S0374,A5113833557,accept,Mervin Arunaraj Herbert,Herbert Mervin
+S0377,A5031829689,accept,Narendranaths,Narendra Nath.S
+S0386,A5102014958,accept,Kumar G N,Gunasekaran Kumar
+S0387,A5031829689,accept,Narendranath S,Narendra Nath.S
+S0422,A5009752879,accept,Ajith Kulangara Madam,K. Ajith
+S0432,A5014188193,reject,Nagaraja H S,Suneetha Nagaraja
+S0435,A5153230865,reject,Arkal Vittal Hegde,Anusha Hegde
+T0464,A5077399407,reject,Arvind Kumar,Arvind Kumar
+T0500,A5112721884,accept,B Shameedha Begum,Shameedha Begum
+T0515,A5037412554,reject,Sathyanarayanan S,S. Sathyanarayanan
+T0517,A5090068671,accept,Usha Kiruthika S,Usha Kiruthika
+T0521,A5083510939,reject,A Santhana Vijayan,S. Vijayan
+T0523,A5027152120,reject,B Nithya,Nithya Balakrishnan
+T0537,A5004062709,reject,K N Sheeba,Sheeba Narayanan
+T0541,A5071286019,reject,Muthukumar K,Krishnan Muthukumar
+T0547,A5141003114,accept,S Saravanan,S. Saravanan
+T0600,A5141003114,accept,S Saravanan,S. Saravanan
+T0647,A5103266259,reject,D Sriram Kumar,S. Dinesh Kumar
+T0701,A5107986001,reject,S Senthil Kumar,S. Suresh Kumar
+T0707,A5109361791,accept,V Vignesh Kumar,V. Vignesh Kumar
+T0707,A5119080441,accept,V Vignesh Kumar,Vignesh Kumar Vethanayagam
+T0743,A5101577266,reject,K Srinivasan,Kumar Srinivasan
+T0746,A5022513410,accept,P A Karthick,Karthick Pa
+T0749,A5004062709,reject,S Narayanan,Sheeba Narayanan
+T0768,A5071220227,reject,S Natarajan,Surendar Natarajan
+T0769,A5013521901,accept,S P Kumaresh Babu,SP Kumaresh Babu
+T0803,A5021378891,accept,I Jeyaraman,I. Jeyaraman
+T0822,A5015864550,reject,K Murugesan,Murugesan Krishnaveni
+T0845,A5053515940,reject,S Suresh,Setti Suresh
+T0850,A5113874683,accept,Sreejith Mohan,S. Mohan Kumar
+T0850,A5112194383,reject,Sreejith Mohan,S. Mohan
+T0873,A5009657913,reject,N Baskaran,Nithiya Baskaran
+T0883,A5103266259,reject,D Sasti Kumar,S. Dinesh Kumar
+T0901,A5101640045,accept,P Parthiban,P. Parthiban
+T0908,A5032709866,reject,S Prasanna Venkatesan,Su. Venkatesan
+T0928,A5054394549,accept,A K Bakthavatsalam,A.K. Bakthavatsalam
+T0928,A5029616829,accept,A K Bakthavatsalam,Bakthavatsalam Kannappan Ayalur

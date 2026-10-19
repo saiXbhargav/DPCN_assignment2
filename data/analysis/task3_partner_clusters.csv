@@ -1,0 +1,31 @@
+your_inst,partner_cluster,partners,co_author_partners,shared_papers,cites_from_partner,cites_to_partner,cross_cluster
+NIT Surathkal,CSIR,41,24,172,1033,3800,True
+NIT Surathkal,DAE,21,14,69,408,1092,True
+NIT Surathkal,DRDO,41,11,69,165,540,True
+NIT Surathkal,Hospital / medical,108,14,27,172,134,True
+NIT Surathkal,ICAR,68,3,8,288,478,True
+NIT Surathkal,ICMR,15,0,0,24,38,True
+NIT Surathkal,IIIT,20,7,17,364,437,True
+NIT Surathkal,IISER / IISc,8,6,149,732,1887,True
+NIT Surathkal,IIT,23,23,583,4490,12034,True
+NIT Surathkal,ISRO,10,8,63,244,592,True
+NIT Surathkal,Industry,107,22,77,229,478,True
+NIT Surathkal,NIT,24,22,277,4159,3906,False
+NIT Surathkal,Other,56,5,19,122,211,True
+NIT Surathkal,Other government R&D,240,51,200,1467,2646,True
+NIT Surathkal,University / college,1229,261,2347,36502,26254,True
+NIT Trichy,CSIR,41,17,180,1471,3887,True
+NIT Trichy,DAE,20,9,114,468,1595,True
+NIT Trichy,DRDO,45,15,128,265,738,True
+NIT Trichy,Hospital / medical,97,8,9,123,148,True
+NIT Trichy,ICAR,68,3,8,344,394,True
+NIT Trichy,ICMR,14,0,0,11,36,True
+NIT Trichy,IIIT,21,9,72,429,539,True
+NIT Trichy,IISER / IISc,8,6,71,425,1418,True
+NIT Trichy,IIT,23,19,411,5194,12073,True
+NIT Trichy,ISRO,10,8,145,216,418,True
+NIT Trichy,Industry,106,30,181,210,505,True
+NIT Trichy,NIT,24,22,323,4460,4620,False
+NIT Trichy,Other,73,4,7,130,256,True
+NIT Trichy,Other government R&D,225,40,262,1474,2349,True
+NIT Trichy,University / college,1265,274,2492,44826,34516,True
