@@ -1,0 +1,785 @@
+institution,partner,cluster,they_cite_us,we_cite_them,reciprocity,balance,pagerank
+NIT Surathkal,Manipal Academy of Higher Education,University / college,898,258,0.2873051224944321,they mostly cite us,0.0017104203245581799
+NIT Surathkal,Vellore Institute of Technology University,University / college,1388,1051,0.7572046109510087,balanced,0.007807417575087446
+NIT Surathkal,Indian Institute of Science Bangalore,IISER / IISc,569,1603,0.35495945102932003,we mostly cite them,0.008859550611281509
+NIT Surathkal,Nitte University,University / college,252,21,0.08333333333333333,they mostly cite us,0.00020193807890343612
+NIT Surathkal,Siddaganga Institute of Technology,University / college,492,77,0.1565040650406504,they mostly cite us,0.00047181804455165543
+NIT Surathkal,Indian Institute of Technology Madras,IIT,439,1974,0.22239108409321176,we mostly cite them,0.012209996275290399
+NIT Surathkal,Indian Institute of Technology Kharagpur,IIT,380,1818,0.20902090209020902,we mostly cite them,0.011431385927231388
+NIT Surathkal,Visvesvaraya Technological University,University / college,854,173,0.202576112412178,they mostly cite us,0.0013432562321256357
+NIT Surathkal,Indian Institute of Technology Bombay,IIT,348,1340,0.25970149253731345,we mostly cite them,0.007863534984452265
+NIT Surathkal,"Kasturba Medical College, Manipal",University / college,41,26,0.6341463414634146,balanced,0.0002404259445473018
+NIT Surathkal,National Institute of Technology Calicut,NIT,270,284,0.9507042253521126,balanced,0.002078919596057187
+NIT Surathkal,Amrita Vishwa Vidyapeetham,University / college,499,340,0.6813627254509018,balanced,0.0022182860964721457
+NIT Surathkal,Indian Institute of Technology Delhi,IIT,360,1315,0.2737642585551331,we mostly cite them,0.009635323307993502
+NIT Surathkal,Nitte Meenakshi Institute of Technology,University / college,479,61,0.12734864300626306,they mostly cite us,0.0003564876824052809
+NIT Surathkal,National Institute of Technology Rourkela,NIT,346,660,0.5242424242424243,balanced,0.004188821166423993
+NIT Surathkal,REVA University,University / college,388,80,0.20618556701030927,they mostly cite us,0.0005758291123825961
+NIT Surathkal,Indian Institute of Technology Mandi,IIT,183,148,0.8087431693989071,balanced,0.0008669501170239663
+NIT Surathkal,Indian Institute of Technology Hyderabad,IIT,131,227,0.5770925110132159,balanced,0.0015742486277743216
+NIT Surathkal,Indian Institute of Technology Palakkad,IIT,71,35,0.49295774647887325,they mostly cite us,0.0002620666878961201
+NIT Surathkal,National Aerospace Laboratories,CSIR,22,126,0.1746031746031746,we mostly cite them,0.0007165279606497801
+NIT Surathkal,SRM Institute of Science and Technology,University / college,925,494,0.534054054054054,balanced,0.003767192358977839
+NIT Surathkal,Yenepoya University,University / college,42,24,0.5714285714285714,balanced,0.00016891000823945367
+NIT Surathkal,Indian Institute of Technology Dhanbad,IIT,338,539,0.62708719851577,balanced,0.003366393561312215
+NIT Surathkal,Indian Space Research Organisation,ISRO,94,225,0.4177777777777778,we mostly cite them,0.0013526422064482247
+NIT Surathkal,Central Glass and Ceramic Research Institute,CSIR,29,83,0.3493975903614458,we mostly cite them,0.0007418340761993353
+NIT Surathkal,Aditya University,University / college,135,14,0.1037037037037037,they mostly cite us,0.00019960788576916193
+NIT Surathkal,Council of Scientific and Industrial Research,CSIR,221,818,0.2701711491442543,we mostly cite them,0.005616469534448029
+NIT Surathkal,KLE Technological University,University / college,214,95,0.4439252336448598,they mostly cite us,0.000626035976697563
+NIT Surathkal,Indian Institute of Technology Guwahati,IIT,330,831,0.3971119133574007,we mostly cite them,0.005190568720232042
+NIT Surathkal,National Institute of Technology Warangal,NIT,298,328,0.9085365853658537,balanced,0.0026962590619962145
+NIT Surathkal,Sardar Vallabhbhai National Institute of Technology Surat,NIT,206,291,0.7079037800687286,balanced,0.0018756910814490763
+NIT Surathkal,Indian Institute of Technology Kanpur,IIT,227,636,0.35691823899371067,we mostly cite them,0.0048250091076506435
+NIT Surathkal,"Birla Institute of Technology and Science, Pilani",University / college,226,363,0.6225895316804407,balanced,0.002420780404154414
+NIT Surathkal,Indian Institute of Technology Patna,IIT,127,155,0.8193548387096774,balanced,0.0011270444039939295
+NIT Surathkal,Jawaharlal Nehru University,University / college,86,136,0.6323529411764706,balanced,0.0011002103352356727
+NIT Surathkal,Government of Karnataka,Other government R&D,304,45,0.14802631578947367,they mostly cite us,0.00028683703309054736
+NIT Surathkal,Pandit Deendayal Energy University,University / college,158,128,0.810126582278481,balanced,0.001058859337316643
+NIT Surathkal,GITAM University,University / college,202,84,0.4158415841584158,they mostly cite us,0.0007351751681524499
+NIT Surathkal,SR University,University / college,157,30,0.1910828025477707,they mostly cite us,0.00028883555486888444
+NIT Surathkal,Defence Research and Development Organisation,DRDO,61,86,0.7093023255813954,balanced,0.0006794404758578694
+NIT Surathkal,Saveetha University,University / college,879,231,0.2627986348122867,they mostly cite us,0.0019195763715015714
+NIT Surathkal,Ramaiah Institute of Technology,University / college,195,88,0.4512820512820513,they mostly cite us,0.0009108354070764612
+NIT Surathkal,Jain University,University / college,512,122,0.23828125,they mostly cite us,0.0009552479738413696
+NIT Surathkal,National Institute Of Technology Silchar,University / college,443,192,0.43340857787810383,they mostly cite us,0.0013733531375147237
+NIT Surathkal,Bhabha Atomic Research Centre,DAE,124,430,0.28837209302325584,we mostly cite them,0.0029273818612158857
+NIT Surathkal,"Vignan's Foundation for Science, Technology & Research",University / college,102,49,0.4803921568627451,they mostly cite us,0.0004657601086453901
+NIT Surathkal,National Institute of Technology Meghalaya,NIT,93,62,0.6666666666666666,balanced,0.0004738165663299925
+NIT Surathkal,University of Mysore,University / college,73,103,0.7087378640776699,balanced,0.0006608613013549298
+NIT Surathkal,Sahyadri College of Engineering & Management,University / college,62,20,0.3225806451612903,they mostly cite us,0.00017596862064200657
+NIT Surathkal,Indian Institute of Science Education and Research Pune,IISER / IISc,16,51,0.3137254901960784,we mostly cite them,0.0004067625797199781
+NIT Surathkal,Indian Institute of Technology Roorkee,IIT,505,1698,0.29740871613663133,we mostly cite them,0.010142239449125482
+NIT Surathkal,Dayananda Sagar College of Engineering,University / college,262,65,0.2480916030534351,they mostly cite us,0.0004603655154509991
+NIT Surathkal,Andhra University,University / college,118,136,0.8676470588235294,balanced,0.0011002103352356727
+NIT Surathkal,"Anna University, Chennai",University / college,382,830,0.4602409638554217,we mostly cite them,0.007690034814234197
+NIT Surathkal,Homi Bhabha National Institute,DAE,124,153,0.8104575163398693,balanced,0.0011403622200877003
+NIT Surathkal,Defence Metallurgical Research Laboratory,DRDO,11,176,0.0625,we mostly cite them,0.0016626145175914553
+NIT Surathkal,PES University,University / college,135,76,0.562962962962963,balanced,0.000491528299121867
+NIT Surathkal,Aligarh Muslim University,University / college,232,249,0.9317269076305221,balanced,0.001959595021568376
+NIT Surathkal,Birla Institute of Technology and Science - Hyderabad Campus,University / college,88,172,0.5116279069767442,balanced,0.001069311189921012
+NIT Surathkal,CMR University,University / college,64,29,0.453125,they mostly cite us,0.00025634042334579194
+NIT Surathkal,Defence Institute of Advanced Technology,University / college,56,65,0.8615384615384616,balanced,0.0005778276341609332
+NIT Surathkal,National Remote Sensing Centre,ISRO,14,67,0.208955223880597,we mostly cite them,0.0003556882736939461
+NIT Surathkal,National Institute of Technology Patna,NIT,244,98,0.4016393442622951,they mostly cite us,0.0009225544057475624
+NIT Surathkal,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,NIT,201,188,0.9353233830845771,balanced,0.0012303212648990276
+NIT Surathkal,Indian Institute of Technology Ropar,IIT,77,194,0.39690721649484534,we mostly cite them,0.0014611832569767292
+NIT Surathkal,Mangalore University,University / college,66,105,0.6285714285714286,balanced,0.0006149151189528438
+NIT Surathkal,Acharya Institute of Technology,University / college,52,27,0.5192307692307693,balanced,0.00023702987313124784
+NIT Surathkal,Central Electrochemical Research Institute,CSIR,58,257,0.22568093385214008,we mostly cite them,0.0017823359652216954
+NIT Surathkal,Motilal Nehru National Institute of Technology,NIT,203,234,0.8675213675213675,balanced,0.0017527719989734972
+NIT Surathkal,Dayananda Sagar University,University / college,174,18,0.10344827586206896,they mostly cite us,0.00022517763967492405
+NIT Surathkal,Cochin University of Science and Technology,University / college,126,183,0.6885245901639344,balanced,0.0014365461465675243
+NIT Surathkal,JSS Academy of Higher Education and Research,University / college,61,22,0.36065573770491804,they mostly cite us,0.00017896498770239312
+NIT Surathkal,Indian Institute of Technology BHU,IIT,320,390,0.8205128205128205,balanced,0.002730415381513231
+NIT Surathkal,National Institute of Technology Srinagar,NIT,217,93,0.42857142857142855,they mostly cite us,0.000645879466052997
+NIT Surathkal,Indian Institute of Technology Indore,IIT,157,249,0.6305220883534136,balanced,0.001966120694830039
+NIT Surathkal,National Institute of Technology Manipur,NIT,46,35,0.7608695652173914,balanced,0.00027838087105027764
+NIT Surathkal,Indira Gandhi Centre for Atomic Research,DAE,45,162,0.2777777777777778,we mostly cite them,0.0018700385123269546
+NIT Surathkal,International Advanced Research Centre for Powder Metallurgy and New Materials,Other government R&D,37,81,0.4567901234567901,we mostly cite them,0.0006833694864148132
+NIT Surathkal,Indian Statistical Institute,University / college,19,153,0.12418300653594772,we mostly cite them,0.0010326886112702607
+NIT Surathkal,Raja Ramanna Centre for Advanced Technology,DAE,12,99,0.12121212121212122,we mostly cite them,0.0007658050126824277
+NIT Surathkal,Academy of Scientific and Innovative Research,University / college,396,454,0.8722466960352423,balanced,0.003159108463790415
+NIT Surathkal,Visvesvaraya National Institute of Technology,NIT,241,197,0.8174273858921162,balanced,0.0016402395673167944
+NIT Surathkal,Indian Institute of Technology Tirupati,IIT,68,22,0.3235294117647059,they mostly cite us,0.00023443321042652872
+NIT Surathkal,JSS Science and Technology University,University / college,50,7,0.14,they mostly cite us,0.00013202096001825765
+NIT Surathkal,National Institute for Interdisciplinary Science and Technology,CSIR,37,140,0.2642857142857143,we mostly cite them,0.0010442091733706474
+NIT Surathkal,Shiv Nadar University,University / college,35,59,0.5932203389830508,balanced,0.0004252737212231874
+NIT Surathkal,Malaviya National Institute of Technology Jaipur,NIT,347,254,0.7319884726224783,balanced,0.002311315203772066
+NIT Surathkal,Jadavpur University,University / college,238,418,0.569377990430622,balanced,0.003721849979930611
+NIT Surathkal,Jamia Millia Islamia,University / college,211,253,0.83399209486166,balanced,0.001910119532965014
+NIT Surathkal,Osmania University,University / college,83,112,0.7410714285714286,balanced,0.0008750094059228067
+NIT Surathkal,KLE Academy of Higher Education and Research,University / college,79,31,0.3924050632911392,they mostly cite us,0.00022018275083620042
+NIT Surathkal,RV University,University / college,49,1,0.02040816326530612,they mostly cite us,8.061498263628844e-05
+NIT Surathkal,"Birla Institute of Technology and Science, Pilani - Goa Campus",University / college,34,56,0.6071428571428571,balanced,0.0004060964057938658
+NIT Surathkal,Tata Steel (India),Industry,12,64,0.1875,we mostly cite them,0.00046702442349788457
+NIT Surathkal,KIIT University,University / college,271,244,0.9003690036900369,balanced,0.001451258681084774
+NIT Surathkal,Indian Institute of Technology Bhubaneswar,IIT,109,209,0.5215311004784688,balanced,0.0016516920964174508
+NIT Surathkal,PSG College of Technology,University / college,105,150,0.7,balanced,0.0011831788006441773
+NIT Surathkal,Atria Institute of Technology,University / college,99,9,0.09090909090909091,they mostly cite us,0.0001252288171861497
+NIT Surathkal,GMR Institute of Technology,University / college,90,32,0.35555555555555557,they mostly cite us,0.000285306248667608
+NIT Surathkal,"Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",IIIT,68,21,0.3088235294117647,they mostly cite us,0.00035529140055251676
+NIT Surathkal,Vikram Sarabhai Space Centre,ISRO,55,75,0.7333333333333333,balanced,0.0005830209595703715
+NIT Surathkal,Kuvempu University,University / college,35,64,0.546875,balanced,0.00038219067109626544
+NIT Surathkal,Centre for Nano and Soft Matter Sciences,Other government R&D,29,30,0.9666666666666667,balanced,0.0002398930054064119
+NIT Surathkal,Indian Institute of Petroleum and Energy,University / college,29,22,0.7586206896551724,balanced,0.00016265080454823562
+NIT Surathkal,Savitribai Phule Pune University,University / college,364,217,0.5961538461538461,balanced,0.0017746140101072682
+NIT Surathkal,Banaras Hindu University,University / college,260,429,0.6060606060606061,balanced,0.0030254001949260533
+NIT Surathkal,SASTRA University,University / college,151,193,0.7823834196891192,balanced,0.0015004705313319297
+NIT Surathkal,Sharda University,University / college,144,41,0.2847222222222222,they mostly cite us,0.0004668259869271699
+NIT Surathkal,National Institute of Technology Goa,NIT,87,54,0.6206896551724138,balanced,0.0004520425881959518
+NIT Surathkal,University B.D.T College of Engineering,University / college,61,58,0.9508196721311475,balanced,0.0003405732036067907
+NIT Surathkal,National Chemical Laboratory,CSIR,28,281,0.099644128113879,we mostly cite them,0.0017758754937455244
+NIT Surathkal,National Institute of Oceanography,CSIR,14,82,0.17073170731707318,we mostly cite them,0.0004026323013780815
+NIT Surathkal,Koneru Lakshmaiah Education Foundation,University / college,346,108,0.31213872832369943,they mostly cite us,0.0008233369589703927
+NIT Surathkal,Graphic Era University,University / college,329,87,0.26443768996960487,they mostly cite us,0.0007413011370584455
+NIT Surathkal,Amity University,University / college,307,165,0.5374592833876222,balanced,0.0014683099023790123
+NIT Surathkal,Sathyabama Institute of Science and Technology,University / college,238,173,0.726890756302521,balanced,0.001268210989616511
+NIT Surathkal,Christ University,University / college,190,74,0.3894736842105263,they mostly cite us,0.00072671900611218
+NIT Surathkal,Symbiosis International University,University / college,174,74,0.42528735632183906,they mostly cite us,0.0005668400112014364
+NIT Surathkal,"Birla Institute of Technology, Mesra",University / college,133,151,0.8807947019867549,balanced,0.001359238743923856
+NIT Surathkal,Chaitanya Bharathi Institute of Technology,University / college,131,22,0.16793893129770993,they mostly cite us,0.0002833757598890012
+NIT Surathkal,Veer Surendra Sai University of Technology,University / college,116,114,0.9827586206896551,balanced,0.0006887612483949661
+NIT Surathkal,National Institute of Technology Agartala,NIT,99,85,0.8585858585858586,balanced,0.0008786067451238135
+NIT Surathkal,Alliance University,University / college,96,20,0.20833333333333334,they mostly cite us,0.00018575713053450109
+NIT Surathkal,Sri Venkateswara University,University / college,90,143,0.6293706293706294,balanced,0.0011058033650007786
+NIT Surathkal,Indian Institute of Chemical Technology,CSIR,70,353,0.19830028328611898,we mostly cite them,0.0020338351929376896
+NIT Surathkal,Indian Institute of Technology Dharwad,IIT,52,9,0.17307692307692307,they mostly cite us,0.00014806867360197024
+NIT Surathkal,National Environmental Engineering Research Institute,CSIR,48,86,0.5581395348837209,balanced,0.0006827033124887009
+NIT Surathkal,Tata Consultancy Services (India),Industry,34,35,0.9714285714285714,balanced,0.00035016327692857064
+NIT Surathkal,Gandhigram Rural Institute,University / college,34,69,0.4927536231884058,we mostly cite them,0.0006033973880666954
+NIT Surathkal,Kannur University,University / college,20,30,0.6666666666666666,balanced,0.00019747612920560236
+NIT Surathkal,Lovely Professional University,University / college,583,165,0.2830188679245283,they mostly cite us,0.0014128416796548768
+NIT Surathkal,University of Petroleum and Energy Studies,University / college,293,139,0.47440273037542663,they mostly cite us,0.0010932849576183424
+NIT Surathkal,Maulana Azad National Institute of Technology,NIT,204,246,0.8292682926829268,balanced,0.0015293002906542853
+NIT Surathkal,National Institute of Technology Durgapur,NIT,127,151,0.8410596026490066,balanced,0.0013559759072930245
+NIT Surathkal,Indian Institute of Technology Jodhpur,IIT,116,57,0.49137931034482757,they mostly cite us,0.0006930927945218155
+NIT Surathkal,University of Kerala,University / college,81,113,0.7168141592920354,balanced,0.0008063566018901227
+NIT Surathkal,Karnatak University,University / college,62,38,0.6129032258064516,balanced,0.0004639628546520059
+NIT Surathkal,Institute of Minerals and Materials Technology,CSIR,62,104,0.5961538461538461,balanced,0.0007651388387563154
+NIT Surathkal,Tezpur University,University / college,52,118,0.4406779661016949,we mostly cite them,0.000972095096136417
+NIT Surathkal,Dr. A.P.J. Abdul Kalam Technical University,University / college,43,25,0.5813953488372093,balanced,0.00023729634270169277
+NIT Surathkal,Dibrugarh University,University / college,35,30,0.8571428571428571,balanced,0.00026273286182223245
+NIT Surathkal,Nagarjuna College of Engineering and Technology,University / college,25,29,0.8620689655172413,balanced,0.00019108369072916184
+NIT Surathkal,Rajiv Gandhi University of Knowledge Technologies,University / college,23,40,0.575,balanced,0.00030708022680164874
+NIT Surathkal,Jawaharlal Nehru Centre for Advanced Scientific Research,Other government R&D,14,188,0.07446808510638298,we mostly cite them,0.0010737051066191153
+NIT Surathkal,Central Road Research Institute,CSIR,11,53,0.20754716981132076,we mostly cite them,0.0004325988031961852
+NIT Surathkal,Tata Institute of Fundamental Research,DAE,9,58,0.15517241379310345,we mostly cite them,0.0008365243714931793
+NIT Surathkal,New Horizon College of Engineering,University / college,354,26,0.07344632768361582,they mostly cite us,0.0002404259445473018
+NIT Surathkal,National Institute of Technology Raipur,NIT,238,182,0.7647058823529411,balanced,0.0012572233666570142
+NIT Surathkal,Karpagam Academy of Higher Education,University / college,198,75,0.3787878787878788,they mostly cite us,0.0007461627911119467
+NIT Surathkal,National Institute of Technology Andhra Pradesh,NIT,121,40,0.3305785123966942,they mostly cite us,0.0003494971030024583
+NIT Surathkal,M S Ramaiah University of Applied Sciences,University / college,113,24,0.21238938053097345,they mostly cite us,0.0002309039042252522
+NIT Surathkal,"SRM University, Andhra Pradesh",University / college,110,23,0.20909090909090908,they mostly cite us,0.0002669283419496212
+NIT Surathkal,"Indian Institute of Engineering Science and Technology, Shibpur",University / college,110,148,0.7432432432432432,balanced,0.001650030908423527
+NIT Surathkal,Mahatma Gandhi University,University / college,75,153,0.49019607843137253,we mostly cite them,0.00016997588652123346
+NIT Surathkal,APJ Abdul Kalam Technological University,University / college,72,15,0.20833333333333334,they mostly cite us,0.00017337195793728743
+NIT Surathkal,SRM University,University / college,60,120,0.5,balanced,0.0010109826661359501
+NIT Surathkal,Central Mechanical Engineering Research Institute,CSIR,58,107,0.5420560747663551,balanced,0.0007549506245081534
+NIT Surathkal,COEP Technological University,University / college,55,38,0.6909090909090909,balanced,0.00034323789931124015
+NIT Surathkal,College of Engineering Trivandrum,University / college,48,75,0.64,balanced,0.000521027063584573
+NIT Surathkal,Kakatiya University,University / college,41,22,0.5365853658536586,balanced,0.00031600412619731626
+NIT Surathkal,National Institute of Hydrology,Other government R&D,40,143,0.27972027972027974,we mostly cite them,0.0007860453751792911
+NIT Surathkal,Central Building Research Institute,CSIR,39,108,0.3611111111111111,we mostly cite them,0.0005949383948121874
+NIT Surathkal,Indian Institute of Technology Gandhinagar,IIT,36,116,0.3103448275862069,we mostly cite them,0.0007048089619786787
+NIT Surathkal,Indian Institute of Technology Bhilai,IIT,34,20,0.5882352941176471,balanced,0.00022491117010447912
+NIT Surathkal,Government of India,Other government R&D,30,75,0.4,we mostly cite them,0.0005406040833695619
+NIT Surathkal,University of Rajasthan,University / college,25,49,0.5102040816326531,balanced,0.00038092635624377105
+NIT Surathkal,Space Applications Centre,ISRO,18,84,0.21428571428571427,we mostly cite them,0.00045457121790094064
+NIT Surathkal,Energy and Resources Institute,Other,16,65,0.24615384615384617,we mostly cite them,0.0005125709015443031
+NIT Surathkal,Delhi Technological University,University / college,256,218,0.8515625,balanced,0.0017549037555370565
+NIT Surathkal,University of Delhi,University / college,255,353,0.7223796033994334,balanced,0.002934378103047185
+NIT Surathkal,Sri Sivasubramaniya Nadar College of Engineering,University / college,252,214,0.8492063492063492,balanced,0.0015270381305197412
+NIT Surathkal,National Institute of Technology Jamshedpur,NIT,250,84,0.336,they mostly cite us,0.0006209758860733472
+NIT Surathkal,Thapar Institute of Engineering & Technology,University / college,242,418,0.5789473684210527,balanced,0.002791941540143632
+NIT Surathkal,Kalasalingam Academy of Research and Education,University / college,184,179,0.9728260869565217,balanced,0.001182577828503557
+NIT Surathkal,Siksha O Anusandhan University,University / college,183,103,0.5628415300546448,balanced,0.0010197733307463952
+NIT Surathkal,Annamalai University,University / college,177,267,0.6629213483146067,balanced,0.0023585257010266467
+NIT Surathkal,MIT World Peace University,University / college,155,17,0.10967741935483871,they mostly cite us,0.00023836222098347256
+NIT Surathkal,Netaji Subhas University of Technology,University / college,129,85,0.6589147286821705,balanced,0.0006795737106430918
+NIT Surathkal,Bharathidasan University,University / college,124,128,0.96875,balanced,0.0015874388715113464
+NIT Surathkal,University of Mumbai,University / college,93,121,0.768595041322314,balanced,0.0008379190899166579
+NIT Surathkal,Vels University,University / college,91,12,0.13186813186813187,they mostly cite us,0.00029775945426455195
+NIT Surathkal,Government of Tamil Nadu,Other government R&D,85,62,0.7294117647058823,balanced,0.0006695867641798827
+NIT Surathkal,Central University of Haryana,University / college,68,18,0.2647058823529412,they mostly cite us,0.00026106884261407063
+NIT Surathkal,Thiagarajar College of Engineering,University / college,64,93,0.6881720430107527,balanced,0.0010406826983836088
+NIT Surathkal,Sona College of Technology,University / college,64,14,0.21875,they mostly cite us,0.00023549908870830846
+NIT Surathkal,Indian Council of Agricultural Research,ICAR,62,71,0.8732394366197183,balanced,0.0005150343294637998
+NIT Surathkal,Charotar University of Science and Technology,University / college,54,42,0.7777777777777778,balanced,0.00032639077701619284
+NIT Surathkal,AMET University,University / college,54,29,0.5370370370370371,balanced,0.00025634042334579194
+NIT Surathkal,CSIR National Physical Laboratory of India,CSIR,43,161,0.2670807453416149,we mostly cite them,0.0014721056781507337
+NIT Surathkal,Bangalore University,University / college,41,79,0.5189873417721519,balanced,0.0011306445744091742
+NIT Surathkal,Presidency University,University / college,36,27,0.75,balanced,0.0003349149720561929
+NIT Surathkal,Acharya Nagarjuna University,University / college,34,57,0.5964912280701754,balanced,0.00035702062154617075
+NIT Surathkal,Mizoram University,University / college,31,22,0.7096774193548387,balanced,0.0002442217203190232
+NIT Surathkal,University of Calicut,University / college,30,34,0.8823529411764706,balanced,0.00032419381866714104
+NIT Surathkal,National Institute of Science Education and Research,DAE,28,41,0.6829268292682927,balanced,0.00038199223452555083
+NIT Surathkal,Loyola College,University / college,26,79,0.3291139240506329,we mostly cite them,0.0006477447530461117
+NIT Surathkal,Central Scientific Instruments Organisation,CSIR,24,32,0.75,balanced,0.000317934614975923
+NIT Surathkal,Inter-University Accelerator Centre,Other government R&D,21,51,0.4117647058823529,we mostly cite them,0.00041002541635080963
+NIT Surathkal,Indian Institute of Science Education and Research Kolkata,IISER / IISc,20,47,0.425531914893617,we mostly cite them,0.0004921292712624872
+NIT Surathkal,Central Institute of Mining and Fuel Research,CSIR,13,69,0.18840579710144928,we mostly cite them,0.00038478733380098467
+NIT Surathkal,Chandigarh University,University / college,529,137,0.2589792060491493,they mostly cite us,0.0010543973876188093
+NIT Surathkal,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,University / college,263,116,0.44106463878326996,they mostly cite us,0.001031092625061829
+NIT Surathkal,GLA University,University / college,228,94,0.41228070175438597,they mostly cite us,0.0008219394093326758
+NIT Surathkal,Karunya University,University / college,162,147,0.9074074074074074,balanced,0.0012912521138172843
+NIT Surathkal,National Institute of Technology Kurukshetra,NIT,156,258,0.6046511627906976,balanced,0.0017528372007589892
+NIT Surathkal,Uttaranchal University,University / college,151,48,0.31788079470198677,they mostly cite us,0.0003875852642906565
+NIT Surathkal,Hindustan Institute of Technology and Science,University / college,144,72,0.5,balanced,0.0005899463371877019
+NIT Surathkal,Bennett University,University / college,112,17,0.15178571428571427,they mostly cite us,0.00022531087446014654
+NIT Surathkal,Mohan Babu University,University / college,104,10,0.09615384615384616,they mostly cite us,0.00013162125566259025
+NIT Surathkal,Pondicherry University,University / college,103,167,0.6167664670658682,balanced,0.001317952947790318
+NIT Surathkal,Guru Nanak Dev University,University / college,90,169,0.5325443786982249,balanced,0.0012295898891874228
+NIT Surathkal,Mepco Schlenk Engineering College,University / college,82,63,0.7682926829268293,balanced,0.0007281845887496273
+NIT Surathkal,University of Allahabad,University / college,80,89,0.898876404494382,balanced,0.0008356569297821141
+NIT Surathkal,Jawaharlal Nehru Technological University Anantapur,University / college,79,34,0.43037974683544306,they mostly cite us,0.0004612329571620642
+NIT Surathkal,Punjab Technical University,University / college,78,115,0.6782608695652174,balanced,0.0008191414788430039
+NIT Surathkal,Banasthali University,University / college,77,29,0.37662337662337664,they mostly cite us,0.00035748835890156845
+NIT Surathkal,Glocal University,University / college,73,19,0.2602739726027397,they mostly cite us,0.00018915320195055508
+NIT Surathkal,Indian Institute of Technology Jammu,IIT,70,45,0.6428571428571429,balanced,0.00040103631516964994
+NIT Surathkal,Bharati Vidyapeeth (Deemed to be University),University / college,67,25,0.373134328358209,they mostly cite us,0.0002503476892250188
+NIT Surathkal,Integral University,University / college,63,30,0.47619047619047616,they mostly cite us,0.00023663016877558041
+NIT Surathkal,Gauhati University,University / college,61,54,0.8852459016393442,balanced,0.0003900486922101532
+NIT Surathkal,National Institute of Technology Delhi,NIT,59,41,0.6949152542372882,balanced,0.00031020982864725773
+NIT Surathkal,Siddhartha Academy of Higher Education,University / college,58,32,0.5517241379310345,balanced,0.0003016204318217655
+NIT Surathkal,Madurai Kamaraj University,University / college,57,82,0.6951219512195121,balanced,0.0010519367909135506
+NIT Surathkal,University of Kalyani,University / college,57,65,0.8769230769230769,balanced,0.0005125709015443031
+NIT Surathkal,Guru Gobind Singh Indraprastha University,University / college,56,45,0.8035714285714286,balanced,0.00040756198843131295
+NIT Surathkal,Central University of Punjab,University / college,55,42,0.7636363636363637,balanced,0.0003981731828944859
+NIT Surathkal,Bharath University,University / college,55,34,0.6181818181818182,balanced,0.0003405080018212986
+NIT Surathkal,Nirma University,University / college,54,73,0.7397260273972602,balanced,0.0006289671419724574
+NIT Surathkal,Biju Patnaik University of Technology,University / college,54,15,0.2777777777777778,they mostly cite us,0.00017010912130645592
+NIT Surathkal,VIT Bhopal University,University / college,54,15,0.2777777777777778,they mostly cite us,0.00019947465098393944
+NIT Surathkal,"Jawaharlal Nehru Technological University, Hyderabad",University / college,52,101,0.5148514851485149,balanced,0.000869949315298591
+NIT Surathkal,University of Hyderabad,University / college,51,197,0.25888324873096447,we mostly cite them,0.0015945598544851534
+NIT Surathkal,Ballari Institute of Technology & Management,University / college,48,2,0.041666666666666664,they mostly cite us,0.00010005876763605499
+NIT Surathkal,Central University of Tamil Nadu,University / college,47,22,0.46808510638297873,they mostly cite us,0.00030947845293565325
+NIT Surathkal,G.L. Bajaj Institute of Technology and Management Greater Noida,University / college,46,13,0.2826086956521739,they mostly cite us,0.0002193181403393734
+NIT Surathkal,Chaudhary Charan Singh University,University / college,44,59,0.7457627118644068,balanced,0.0005101074736248065
+NIT Surathkal,Tamil Nadu Agricultural University,University / college,43,27,0.627906976744186,balanced,0.0002696582394395629
+NIT Surathkal,National Institute of Technology Arunachal Pradesh,NIT,42,9,0.21428571428571427,they mostly cite us,0.00017417136664862225
+NIT Surathkal,Rajiv Gandhi Institute of Petroleum Technology,University / college,41,16,0.3902439024390244,they mostly cite us,0.00020912992609121149
+NIT Surathkal,Maharaja Sayajirao University of Baroda,University / college,38,70,0.5428571428571428,balanced,0.0004531736682632237
+NIT Surathkal,Central Salt and Marine Chemicals Research Institute,CSIR,38,104,0.36538461538461536,we mostly cite them,0.0008336584080037771
+NIT Surathkal,Indian Institute of Petroleum,CSIR,37,62,0.5967741935483871,balanced,0.000444451036652509
+NIT Surathkal,Noorul Islam University,University / college,37,59,0.6271186440677966,balanced,0.0003730683351298833
+NIT Surathkal,Raisoni Group of Institutions,University / college,36,15,0.4166666666666667,they mostly cite us,0.00017663479456811893
+NIT Surathkal,Vidyasagar University,University / college,35,51,0.6862745098039216,balanced,0.0005307503716915753
+NIT Surathkal,Indian Institute of Remote Sensing,ISRO,35,103,0.33980582524271846,we mostly cite them,0.0005956045687382997
+NIT Surathkal,Indian Association for the Cultivation of Science,University / college,34,109,0.3119266055045872,we mostly cite them,0.0012245326297774452
+NIT Surathkal,Dr. Babasaheb Ambedkar Marathwada University,University / college,31,68,0.45588235294117646,we mostly cite them,0.0005709022565436027
+NIT Surathkal,UGC DAE Consortium for Scientific Research,DAE,30,54,0.5555555555555556,balanced,0.0005205621574434134
+NIT Surathkal,Goa University,University / college,29,38,0.7631578947368421,balanced,0.0002453528003862951
+NIT Surathkal,"International Institute of Information Technology, Hyderabad",IIIT,28,154,0.18181818181818182,we mostly cite them,0.00099340133691506
+NIT Surathkal,Advanced Materials and Processes Research Institute,CSIR,26,87,0.2988505747126437,we mostly cite them,0.0005748964688860388
+NIT Surathkal,"Indian Institute of Science Education and Research, Bhopal",IISER / IISc,26,57,0.45614035087719296,we mostly cite them,0.00039943749774698034
+NIT Surathkal,Indian Institute of Science Education and Research Mohali,IISER / IISc,25,63,0.3968253968253968,we mostly cite them,0.00034969553957317294
+NIT Surathkal,Indian Institute of Tropical Meteorology,Other government R&D,22,159,0.13836477987421383,we mostly cite them,0.0007773879453540685
+NIT Surathkal,National Engineering College,University / college,22,31,0.7096774193548387,balanced,0.0004159529486860906
+NIT Surathkal,Indian Institute of Science Education and Research Thiruvananthapuram,IISER / IISc,22,51,0.43137254901960786,we mostly cite them,0.0003904483965658206
+NIT Surathkal,Indraprastha Institute of Information Technology Delhi,University / college,18,37,0.4864864864864865,we mostly cite them,0.0003140056044189792
+NIT Surathkal,Devi Ahilya Vishwavidyalaya,University / college,18,58,0.3103448275862069,we mostly cite them,0.0005102407084100289
+NIT Surathkal,National Metallurgical Laboratory,CSIR,14,115,0.12173913043478261,we mostly cite them,0.0009039752312446228
+NIT Surathkal,Central Institute of Plastics Engineering and Technology,Other government R&D,13,52,0.25,we mostly cite them,0.0003772638152572721
+NIT Surathkal,Kavayitri Bahinabai Chaudhari North Maharashtra University,University / college,9,64,0.140625,we mostly cite them,0.00036587648794210795
+NIT Surathkal,Chitkara University,University / college,378,73,0.1931216931216931,they mostly cite us,0.0005930759390333108
+NIT Surathkal,Panjab University,University / college,167,226,0.7389380530973452,balanced,0.0016004845556061964
+NIT Surathkal,KPR Institute of Engineering and Technology,University / college,128,42,0.328125,they mostly cite us,0.0005776291975902186
+NIT Surathkal,Galgotias University,University / college,120,36,0.3,they mostly cite us,0.0003989725916058207
+NIT Surathkal,Centurion University of Technology and Management,University / college,119,28,0.23529411764705882,they mostly cite us,0.0002564736581310144
+NIT Surathkal,University of Calcutta,University / college,116,191,0.6073298429319371,balanced,0.0014159032485007558
+NIT Surathkal,Punjabi University,University / college,112,114,0.9824561403508771,balanced,0.0007148639414416183
+NIT Surathkal,Punjab Engineering College,University / college,111,106,0.954954954954955,balanced,0.0007322440028775555
+NIT Surathkal,Shivaji University,University / college,104,204,0.5098039215686274,balanced,0.0014924792754328197
+NIT Surathkal,Shoolini University,University / college,102,78,0.7647058823529411,balanced,0.0006511408244621657
+NIT Surathkal,Institute of Chemical Technology,University / college,100,189,0.5291005291005291,balanced,0.0013835413517628856
+NIT Surathkal,Madan Mohan Malaviya University of Technology,University / college,95,36,0.37894736842105264,they mostly cite us,0.0003010874926808756
+NIT Surathkal,Marwadi University,University / college,89,16,0.1797752808988764,they mostly cite us,0.00021891843598370597
+NIT Surathkal,Maharshi Dayanand University,University / college,85,62,0.7294117647058823,balanced,0.0004477138732833405
+NIT Surathkal,Guru Jambheshwar University of Science and Technology,University / college,83,64,0.7710843373493976,balanced,0.0006269034184086282
+NIT Surathkal,University of Madras,University / college,82,136,0.6029411764705882,balanced,0.0012829291865622367
+NIT Surathkal,B.S. Abdur Rahman Crescent Institute of Science & Technology,University / college,81,56,0.691358024691358,balanced,0.000725854395615353
+NIT Surathkal,Parul University,University / college,80,15,0.1875,they mostly cite us,0.00019621181435310796
+NIT Surathkal,Gaya College,University / college,78,2,0.02564102564102564,they mostly cite us,0.0001033216042668865
+NIT Surathkal,Amity University Gurugram,University / college,75,17,0.22666666666666666,they mostly cite us,0.0002807790971842821
+NIT Surathkal,Manonmaniam Sundaranar University,University / college,74,44,0.5945945945945946,balanced,0.0005088431587723121
+NIT Surathkal,Gyan Vihar University,University / college,70,10,0.14285714285714285,they mostly cite us,0.0001740381318633998
+NIT Surathkal,"Maharishi Markandeshwar University, Mullana",University / college,68,55,0.8088235294117647,balanced,0.0003899154574249308
+NIT Surathkal,Vinayaka Missions University,University / college,68,15,0.22058823529411764,they mostly cite us,0.00017337195793728743
+NIT Surathkal,International Institute of Information Technology,IIIT,66,25,0.3787878787878788,they mostly cite us,0.00011570677686410016
+NIT Surathkal,Indian Institute of Information Technology Design and Manufacturing Jabalpur,IIIT,65,79,0.8227848101265823,balanced,0.0007162643222935732
+NIT Surathkal,Gujarat Technological University,University / college,64,23,0.359375,they mostly cite us,0.00024735132216463225
+NIT Surathkal,PSG INSTITUTE OF TECHNOLOGY AND APPLIED RESEARCH,University / college,64,25,0.390625,they mostly cite us,0.00025361052585585027
+NIT Surathkal,Guru Ghasidas Vishwavidyalaya,University / college,63,51,0.8095238095238095,balanced,0.00032192882731835903
+NIT Surathkal,Periyar University,University / college,60,48,0.8,balanced,0.0006257723383413563
+NIT Surathkal,Jaypee Institute of Information Technology,University / college,60,55,0.9166666666666666,balanced,0.0006150511849523045
+NIT Surathkal,Govind Ballabh Pant University of Agriculture and Technology,University / college,60,65,0.9230769230769231,balanced,0.0005386735945909552
+NIT Surathkal,University of Lucknow,University / college,59,23,0.3898305084745763,they mostly cite us,0.00038765329729038687
+NIT Surathkal,Deenbandhu Chhotu Ram University of Science and Technology,University / college,59,56,0.9491525423728814,balanced,0.0004844044849338218
+NIT Surathkal,Alagappa University,University / college,58,135,0.42962962962962964,we mostly cite them,0.0011460232828525362
+NIT Surathkal,Puducherry Technological University,University / college,58,66,0.8787878787878788,balanced,0.0005450660330673957
+NIT Surathkal,Sant Longowal Institute of Engineering and Technology,University / college,58,191,0.3036649214659686,we mostly cite them,0.0009558432835535136
+NIT Surathkal,Sri Sairam Engineering College,University / college,57,71,0.8028169014084507,balanced,0.0006390221214353969
+NIT Surathkal,Bharathiar University,University / college,56,136,0.4117647058823529,we mostly cite them,0.0019224451662052115
+NIT Surathkal,"Jawaharlal Nehru Technological University, Kakinada",University / college,56,41,0.7321428571428571,balanced,0.00041788343746469736
+NIT Surathkal,"National Institute of Technical Teachers Training and Research, Chandigarh",University / college,54,32,0.5925925925925926,balanced,0.00027878057540594496
+NIT Surathkal,Shri Mata Vaishno Devi University,University / college,54,84,0.6428571428571429,balanced,0.0007188609849982923
+NIT Surathkal,Kurukshetra University,University / college,53,55,0.9636363636363636,balanced,0.0004421208435182348
+NIT Surathkal,Aditya Institute of Technology and Management,University / college,52,12,0.23076923076923078,they mostly cite us,0.00015745747913879733
+NIT Surathkal,Vishwakarma Institute of Technology,University / college,51,23,0.45098039215686275,they mostly cite us,0.0002212486291179802
+NIT Surathkal,Dehradun Institute of Technology University,University / college,51,49,0.9607843137254902,balanced,0.0003254581335196355
+NIT Surathkal,University of Engineering & Management,University / college,50,26,0.52,balanced,0.0002502144544397963
+NIT Surathkal,Central University of Kerala,University / college,50,12,0.24,they mostly cite us,0.00018682300881628085
+NIT Surathkal,Coimbatore Institute of Technology,University / college,50,144,0.3472222222222222,we mostly cite them,0.0010175735411831054
+NIT Surathkal,Fakir Mohan University,University / college,49,6,0.12244897959183673,they mostly cite us,0.00010931433838765961
+NIT Surathkal,Central University of Jharkhand,University / college,48,44,0.9166666666666666,balanced,0.0003522270004923999
+NIT Surathkal,Babasaheb Bhimrao Ambedkar University,University / college,44,39,0.8863636363636364,balanced,0.00044098976345096285
+NIT Surathkal,Narsee Monjee Institute of Management Studies,University / college,44,29,0.6590909090909091,balanced,0.0002530775867149604
+NIT Surathkal,Institute of Infrastructure Technology Research and Management,University / college,44,28,0.6363636363636364,balanced,0.00028583918780849784
+NIT Surathkal,"J.C. Bose University of Science & Technology, YMCA",University / college,44,25,0.5681818181818182,balanced,0.00029276456542582833
+NIT Surathkal,Harcourt Butler Technical University,University / college,43,39,0.9069767441860465,balanced,0.0003365789912643547
+NIT Surathkal,"Indian Institute of Science Education and Research, Tirupati",IISER / IISc,43,7,0.16279069767441862,they mostly cite us,0.00012875812338742617
+NIT Surathkal,Himachal Pradesh University,University / college,43,48,0.8958333333333334,balanced,0.0004854703632156017
+NIT Surathkal,Indira Gandhi Delhi Technical University for Women,University / college,42,32,0.7619047619047619,balanced,0.0003146717783450915
+NIT Surathkal,Indian Agricultural Research Institute,ICAR,42,71,0.5915492957746479,balanced,0.0005346113492487889
+NIT Surathkal,Chettinad Academy of Research and Education,University / college,41,12,0.2926829268292683,they mostly cite us,0.00018029733555461784
+NIT Surathkal,Ministry of Earth Sciences,Other government R&D,41,143,0.2867132867132867,we mostly cite them,0.000655531909946031
+NIT Surathkal,University of Jammu,University / college,40,23,0.575,balanced,0.0002865053617346103
+NIT Surathkal,National Institute of Technical Teachers’ Training and Research,University / college,40,20,0.5,balanced,0.00019228280379616407
+NIT Surathkal,Noida Institute of Engineering and Technology,University / college,40,27,0.675,balanced,0.0002337670365004163
+NIT Surathkal,Velammal Educational Trust,University / college,39,28,0.717948717948718,balanced,0.0002564736581310144
+NIT Surathkal,Rajasthan Technical University,University / college,38,16,0.42105263157894735,they mostly cite us,0.00020586708946037995
+NIT Surathkal,Central University of Gujarat,University / college,38,19,0.5,balanced,0.0002413585880438591
+NIT Surathkal,PSG College of Arts & Science,University / college,37,15,0.40540540540540543,they mostly cite us,0.00020273748761477092
+NIT Surathkal,University of Kashmir,University / college,36,45,0.8,balanced,0.0005054470873562581
+NIT Surathkal,North Eastern Hill University,University / college,36,28,0.7777777777777778,balanced,0.0003674101035792855
+NIT Surathkal,North East Institute of Science and Technology,CSIR,36,46,0.782608695652174,balanced,0.00039111457049193296
+NIT Surathkal,University of Burdwan,University / college,34,100,0.34,we mostly cite them,0.000860294040191319
+NIT Surathkal,Jaypee University of Information Technology,University / college,34,41,0.8292682926829268,balanced,0.00035588954147889885
+NIT Surathkal,National Institute of Technology Nagaland,NIT,34,22,0.6470588235294118,balanced,0.0002442217203190232
+NIT Surathkal,Sardar Patel University,University / college,34,82,0.4146341463414634,we mostly cite them,0.0005298829299805101
+NIT Surathkal,Sikkim Manipal University,University / college,34,19,0.5588235294117647,balanced,0.0002283072415205331
+NIT Surathkal,Rajiv Gandhi Technical University,University / college,33,22,0.6666666666666666,balanced,0.00022790753716486566
+NIT Surathkal,Kammavari Sangham Institute of Technology,University / college,33,18,0.5454545454545454,balanced,0.000153395233796631
+NIT Surathkal,Central University of Rajasthan,University / college,33,26,0.7878787878787878,balanced,0.00034157388010307843
+NIT Surathkal,"Maulana Abul Kalam Azad University of Technology, West Bengal",University / college,33,23,0.696969696969697,balanced,0.00027997968847294724
+NIT Surathkal,The NorthCap University,University / college,32,58,0.5517241379310345,balanced,0.00036993873328427433
+NIT Surathkal,Government of Gujarat,Other government R&D,32,49,0.6530612244897959,balanced,0.0004168175591829176
+NIT Surathkal,Shri Vile Parle Kelavani Mandal,University / college,32,19,0.59375,balanced,0.00018589036531972355
+NIT Surathkal,Central Institute of Technology Kokrajhar,University / college,31,23,0.7419354838709677,balanced,0.00019514593607132817
+NIT Surathkal,Haldia Institute of Technology,University / college,30,23,0.7666666666666667,balanced,0.00024735132216463225
+NIT Surathkal,North Eastern Regional Institute of Science and Technology,University / college,29,73,0.3972602739726027,we mostly cite them,0.0004951908401083659
+NIT Surathkal,North Bengal University,University / college,29,25,0.8620689655172413,balanced,0.0003058159119491543
+NIT Surathkal,Rashtrasant Tukadoji Maharaj Nagpur University,University / college,28,44,0.6363636363636364,balanced,0.0003718040202773889
+NIT Surathkal,Indian Institute of Information Technology Allahabad,IIIT,27,59,0.4576271186440678,we mostly cite them,0.00040569670143819836
+NIT Surathkal,Jamia Hamdard,University / college,26,40,0.65,balanced,0.0003494971030024583
+NIT Surathkal,Mohanlal Sukhadia University,University / college,26,33,0.7878787878787878,balanced,0.00030148719703654303
+NIT Surathkal,Shri Govindram Seksaria Institute of Technology and Science,University / college,26,50,0.52,balanced,0.000299222205687761
+NIT Surathkal,Gujarat University,University / college,25,36,0.6944444444444444,balanced,0.0002619334531108976
+NIT Surathkal,Solapur University,University / college,25,37,0.6756756756756757,balanced,0.00034010829746563116
+NIT Surathkal,Visva-Bharati University,University / college,24,52,0.46153846153846156,we mostly cite them,0.0005828225229996568
+NIT Surathkal,Central Leather Research Institute,CSIR,23,66,0.3484848484848485,we mostly cite them,0.000956183448552165
+NIT Surathkal,Punjab Agricultural University,University / college,23,65,0.35384615384615387,we mostly cite them,0.000421211475881021
+NIT Surathkal,National Institute of Pharmaceutical Education and Research,Other government R&D,22,31,0.7096774193548387,balanced,0.00012209921534054067
+NIT Surathkal,ICAR-National Bureau of Soil Survey and Land Use Planning,ICAR,21,29,0.7241379310344828,balanced,0.0002465519134532974
+NIT Surathkal,S.N. Bose National Centre for Basic Sciences,Other government R&D,21,54,0.3888888888888889,we mostly cite them,0.00044225407830345725
+NIT Surathkal,Indira Gandhi Institute of Technology,University / college,20,31,0.6451612903225806,balanced,0.0002723881369295045
+NIT Surathkal,Maharaja Ranjit Singh Punjab Technical University,University / college,20,56,0.35714285714285715,we mostly cite them,0.0003245254900230782
+NIT Surathkal,Gautam Buddha University,University / college,18,68,0.2647058823529412,we mostly cite them,0.0004175489348945221
+NIT Surathkal,Indian Institute of Toxicology Research,CSIR,15,60,0.25,we mostly cite them,0.0004153519765454704
+NIT Surathkal,Maharana Pratap University of Agriculture and Technology,University / college,13,45,0.28888888888888886,we mostly cite them,0.0004662930477862801
+NIT Surathkal,All India Institute of Medical Sciences,University / college,13,39,0.3333333333333333,we mostly cite them,0.0003463675011568493
+NIT Surathkal,National Geophysical Research Institute,CSIR,11,71,0.15492957746478872,we mostly cite them,0.0004367262503238437
+NIT Surathkal,India Meteorological Department,Other government R&D,8,155,0.05161290322580645,we mostly cite them,0.0007159269885091598
+NIT Surathkal,Sant Gadge Baba Amravati University,University / college,7,45,0.15555555555555556,we mostly cite them,0.0003162025627680308
+NIT Surathkal,Central Food Technological Research Institute,CSIR,4,103,0.038834951456310676,we mostly cite them,0.0005336106727525013
+NIT Surathkal,Inter-University Centre for Astronomy and Astrophysics,Other government R&D,4,47,0.0851063829787234,we mostly cite them,0.0002278395041651354
+NIT Trichy,Vellore Institute of Technology University,University / college,1953,1361,0.6968766001024066,balanced,0.007807417575087446
+NIT Trichy,SRM Institute of Science and Technology,University / college,1648,657,0.39866504854368934,they mostly cite us,0.003767192358977839
+NIT Trichy,Indian Institute of Technology Madras,IIT,527,1825,0.28876712328767123,we mostly cite them,0.012209996275290399
+NIT Trichy,Bharathidasan University,University / college,319,340,0.9382352941176471,balanced,0.0015874388715113464
+NIT Trichy,"Anna University, Chennai",University / college,841,1537,0.5471698113207547,balanced,0.007690034814234197
+NIT Trichy,Bharat Heavy Electricals (India),Industry,4,52,0.07692307692307693,we mostly cite them,0.0002972265151236621
+NIT Trichy,Amrita Vishwa Vidyapeetham,University / college,564,330,0.5851063829787234,balanced,0.0022182860964721457
+NIT Trichy,SASTRA University,University / college,334,251,0.7514970059880239,balanced,0.0015004705313319297
+NIT Trichy,National Institute of Technology Calicut,NIT,274,341,0.8035190615835777,balanced,0.002078919596057187
+NIT Trichy,Indian Space Research Organisation,ISRO,80,175,0.45714285714285713,we mostly cite them,0.0013526422064482247
+NIT Trichy,Indira Gandhi Centre for Atomic Research,DAE,51,394,0.12944162436548223,we mostly cite them,0.0018700385123269546
+NIT Trichy,National Institute of Technology Warangal,NIT,398,488,0.8155737704918032,balanced,0.0026962590619962145
+NIT Trichy,Indian Institute of Science Bangalore,IISER / IISc,297,1154,0.25736568457538994,we mostly cite them,0.008859550611281509
+NIT Trichy,Thiagarajar College of Engineering,University / college,102,206,0.49514563106796117,we mostly cite them,0.0010406826983836088
+NIT Trichy,Vikram Sarabhai Space Centre,ISRO,56,83,0.6746987951807228,balanced,0.0005830209595703715
+NIT Trichy,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,University / college,610,181,0.2967213114754098,they mostly cite us,0.001031092625061829
+NIT Trichy,Manipal Academy of Higher Education,University / college,607,253,0.41680395387149916,they mostly cite us,0.0017104203245581799
+NIT Trichy,Indian Institute of Technology Roorkee,IIT,604,1456,0.41483516483516486,we mostly cite them,0.010142239449125482
+NIT Trichy,Centre for Development of Advanced Computing,Other government R&D,21,43,0.4883720930232558,we mostly cite them,0.00029602740205665986
+NIT Trichy,Central Electrochemical Research Institute,CSIR,70,276,0.2536231884057971,we mostly cite them,0.0017823359652216954
+NIT Trichy,Saveetha University,University / college,1745,343,0.19656160458452723,they mostly cite us,0.0019195763715015714
+NIT Trichy,Sri Sivasubramaniya Nadar College of Engineering,University / college,345,239,0.6927536231884058,balanced,0.0015270381305197412
+NIT Trichy,Council of Scientific and Industrial Research,CSIR,303,913,0.33187294633077763,we mostly cite them,0.005616469534448029
+NIT Trichy,Indian Institute of Technology Hyderabad,IIT,172,241,0.7136929460580913,balanced,0.0015742486277743216
+NIT Trichy,Koneru Lakshmaiah Education Foundation,University / college,390,125,0.32051282051282054,they mostly cite us,0.0008233369589703927
+NIT Trichy,Indian Institute of Technology Delhi,IIT,589,1668,0.35311750599520386,we mostly cite them,0.009635323307993502
+NIT Trichy,"Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",IIIT,61,65,0.9384615384615385,balanced,0.00035529140055251676
+NIT Trichy,International Advanced Research Centre for Powder Metallurgy and New Materials,Other government R&D,38,108,0.35185185185185186,we mostly cite them,0.0006833694864148132
+NIT Trichy,PSG College of Technology,University / college,209,195,0.9330143540669856,balanced,0.0011831788006441773
+NIT Trichy,"Birla Institute of Technology, Mesra",University / college,205,248,0.8266129032258065,balanced,0.001359238743923856
+NIT Trichy,Defence Research and Development Organisation,DRDO,70,102,0.6862745098039216,balanced,0.0006794404758578694
+NIT Trichy,"Birla Institute of Technology and Science, Pilani",University / college,346,370,0.9351351351351351,balanced,0.002420780404154414
+NIT Trichy,Indian Institute of Technology Bombay,IIT,316,1101,0.28701180744777477,we mostly cite them,0.007863534984452265
+NIT Trichy,Central University of Tamil Nadu,University / college,176,50,0.2840909090909091,they mostly cite us,0.00030947845293565325
+NIT Trichy,Kalasalingam Academy of Research and Education,University / college,277,167,0.6028880866425993,balanced,0.001182577828503557
+NIT Trichy,Madurai Kamaraj University,University / college,185,220,0.8409090909090909,balanced,0.0010519367909135506
+NIT Trichy,Bharathiar University,University / college,213,435,0.4896551724137931,we mostly cite them,0.0019224451662052115
+NIT Trichy,University of Madras,University / college,207,239,0.8661087866108786,balanced,0.0012829291865622367
+NIT Trichy,Karpagam Academy of Higher Education,University / college,508,133,0.2618110236220472,they mostly cite us,0.0007461627911119467
+NIT Trichy,University of Delhi,University / college,393,537,0.7318435754189944,balanced,0.002934378103047185
+NIT Trichy,National Institute Of Technology Silchar,University / college,377,213,0.5649867374005305,balanced,0.0013733531375147237
+NIT Trichy,National Institute of Technology Patna,NIT,336,165,0.49107142857142855,they mostly cite us,0.0009225544057475624
+NIT Trichy,Periyar Maniammai Institute of Science & Technology,University / college,60,23,0.38333333333333336,they mostly cite us,0.00019008584544711238
+NIT Trichy,Pandit Deendayal Energy University,University / college,204,178,0.8725490196078431,balanced,0.001058859337316643
+NIT Trichy,Bhabha Atomic Research Centre,DAE,113,461,0.24511930585683298,we mostly cite them,0.0029273818612158857
+NIT Trichy,"SRM University, Andhra Pradesh",University / college,240,36,0.15,they mostly cite us,0.0002669283419496212
+NIT Trichy,Christ University,University / college,222,128,0.5765765765765766,balanced,0.00072671900611218
+NIT Trichy,Indian Institute of Technology Guwahati,IIT,355,770,0.461038961038961,we mostly cite them,0.005190568720232042
+NIT Trichy,Maulana Azad National Institute of Technology,NIT,198,209,0.9473684210526315,balanced,0.0015293002906542853
+NIT Trichy,Jamia Millia Islamia,University / college,196,319,0.6144200626959248,balanced,0.001910119532965014
+NIT Trichy,National Environmental Engineering Research Institute,CSIR,112,103,0.9196428571428571,balanced,0.0006827033124887009
+NIT Trichy,Indian Institute of Technology Kharagpur,IIT,491,1736,0.2828341013824885,we mostly cite them,0.011431385927231388
+NIT Trichy,B.S. Abdur Rahman Crescent Institute of Science & Technology,University / college,217,145,0.6682027649769585,balanced,0.000725854395615353
+NIT Trichy,Alagappa University,University / college,161,198,0.8131313131313131,balanced,0.0011460232828525362
+NIT Trichy,Annamalai University,University / college,315,443,0.7110609480812641,balanced,0.0023585257010266467
+NIT Trichy,Birla Institute of Technology and Science - Hyderabad Campus,University / college,138,139,0.9928057553956835,balanced,0.001069311189921012
+NIT Trichy,Central Leather Research Institute,CSIR,77,206,0.3737864077669903,we mostly cite them,0.000956183448552165
+NIT Trichy,National Institute of Technology Andhra Pradesh,NIT,116,45,0.3879310344827586,they mostly cite us,0.0003494971030024583
+NIT Trichy,National Aerospace Laboratories,CSIR,37,75,0.49333333333333335,we mostly cite them,0.0007165279606497801
+NIT Trichy,Indian Institute of Technology Dhanbad,IIT,369,491,0.7515274949083504,balanced,0.003366393561312215
+NIT Trichy,Homi Bhabha National Institute,DAE,146,179,0.8156424581005587,balanced,0.0011403622200877003
+NIT Trichy,Gandhigram Rural Institute,University / college,69,95,0.7263157894736842,balanced,0.0006033973880666954
+NIT Trichy,National Institute of Technology Rourkela,NIT,377,627,0.6012759170653907,balanced,0.004188821166423993
+NIT Trichy,Government of Tamil Nadu,Other government R&D,206,122,0.5922330097087378,balanced,0.0006695867641798827
+NIT Trichy,Indian Institute of Technology Jodhpur,IIT,175,134,0.7657142857142857,balanced,0.0006930927945218155
+NIT Trichy,PSG INSTITUTE OF TECHNOLOGY AND APPLIED RESEARCH,University / college,155,30,0.1935483870967742,they mostly cite us,0.00025361052585585027
+NIT Trichy,Defence Research and Development Laboratory,DRDO,13,43,0.3023255813953488,we mostly cite them,0.00029602740205665986
+NIT Trichy,Motilal Nehru National Institute of Technology,NIT,246,289,0.8512110726643599,balanced,0.0017527719989734972
+NIT Trichy,"Vignan's Foundation for Science, Technology & Research",University / college,195,72,0.36923076923076925,they mostly cite us,0.0004657601086453901
+NIT Trichy,Mepco Schlenk Engineering College,University / college,144,139,0.9652777777777778,balanced,0.0007281845887496273
+NIT Trichy,Periyar University,University / college,133,122,0.9172932330827067,balanced,0.0006257723383413563
+NIT Trichy,APJ Abdul Kalam Technological University,University / college,115,15,0.13043478260869565,they mostly cite us,0.00017337195793728743
+NIT Trichy,University of Hyderabad,University / college,60,276,0.21739130434782608,we mostly cite them,0.0015945598544851534
+NIT Trichy,Defence Metallurgical Research Laboratory,DRDO,42,317,0.13249211356466878,we mostly cite them,0.0016626145175914553
+NIT Trichy,Sardar Vallabhbhai National Institute of Technology Surat,NIT,230,272,0.8455882352941176,balanced,0.0018756910814490763
+NIT Trichy,Coimbatore Institute of Technology,University / college,83,150,0.5533333333333333,balanced,0.0010175735411831054
+NIT Trichy,Rajiv Gandhi University of Knowledge Technologies,University / college,34,32,0.9411764705882353,balanced,0.00030708022680164874
+NIT Trichy,Academy of Scientific and Innovative Research,University / college,473,509,0.9292730844793713,balanced,0.003159108463790415
+NIT Trichy,Karunya University,University / college,243,231,0.9506172839506173,balanced,0.0012912521138172843
+NIT Trichy,Panjab University,University / college,202,250,0.808,balanced,0.0016004845556061964
+NIT Trichy,SR University,University / college,178,36,0.20224719101123595,they mostly cite us,0.00028883555486888444
+NIT Trichy,Ramaiah Institute of Technology,University / college,166,171,0.9707602339181286,balanced,0.0009108354070764612
+NIT Trichy,National Institute of Technology Nagaland,NIT,57,30,0.5263157894736842,balanced,0.0002442217203190232
+NIT Trichy,Jain University,University / college,341,152,0.44574780058651026,they mostly cite us,0.0009552479738413696
+NIT Trichy,SRM University,University / college,211,171,0.8104265402843602,balanced,0.0010109826661359501
+NIT Trichy,Maharaj Vijayaram Gajapathi Raj College of Engineering,University / college,68,16,0.23529411764705882,they mostly cite us,0.00017976439641372794
+NIT Trichy,Indian Institute of Technology BHU,IIT,386,439,0.8792710706150342,balanced,0.002730415381513231
+NIT Trichy,Malaviya National Institute of Technology Jaipur,NIT,290,441,0.6575963718820862,balanced,0.002311315203772066
+NIT Trichy,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,NIT,268,173,0.6455223880597015,balanced,0.0012303212648990276
+NIT Trichy,Indian Institute of Technology Kanpur,IIT,225,845,0.26627218934911245,we mostly cite them,0.0048250091076506435
+NIT Trichy,National Institute of Technology Raipur,NIT,216,187,0.8657407407407407,balanced,0.0012572233666570142
+NIT Trichy,KIIT University,University / college,262,187,0.7137404580152672,balanced,0.001451258681084774
+NIT Trichy,Indian Institute of Technology Indore,IIT,193,340,0.5676470588235294,balanced,0.001966120694830039
+NIT Trichy,Chaitanya Bharathi Institute of Technology,University / college,132,42,0.3181818181818182,they mostly cite us,0.0002833757598890012
+NIT Trichy,"Indian Institute of Engineering Science and Technology, Shibpur",University / college,116,340,0.3411764705882353,we mostly cite them,0.001650030908423527
+NIT Trichy,Manonmaniam Sundaranar University,University / college,106,90,0.8490566037735849,balanced,0.0005088431587723121
+NIT Trichy,Kakatiya University,University / college,44,52,0.8461538461538461,balanced,0.00031600412619731626
+NIT Trichy,Sathyabama Institute of Science and Technology,University / college,377,199,0.5278514588859416,balanced,0.001268210989616511
+NIT Trichy,National Institute of Technology Kurukshetra,NIT,200,266,0.7518796992481203,balanced,0.0017528372007589892
+NIT Trichy,National Institute of Technology Srinagar,NIT,166,85,0.5120481927710844,balanced,0.000645879466052997
+NIT Trichy,Indian Institute of Technology Patna,IIT,126,173,0.7283236994219653,balanced,0.0011270444039939295
+NIT Trichy,Mahatma Gandhi University,University / college,106,158,0.6708860759493671,balanced,0.00016997588652123346
+NIT Trichy,MIT World Peace University,University / college,73,33,0.4520547945205479,they mostly cite us,0.00023836222098347256
+NIT Trichy,National Institute for Interdisciplinary Science and Technology,CSIR,57,162,0.35185185185185186,we mostly cite them,0.0010442091733706474
+NIT Trichy,Tata Institute of Fundamental Research,DAE,9,177,0.05084745762711865,we mostly cite them,0.0008365243714931793
+NIT Trichy,Chandigarh University,University / college,629,168,0.2670906200317965,they mostly cite us,0.0010543973876188093
+NIT Trichy,KPR Institute of Engineering and Technology,University / college,279,113,0.4050179211469534,they mostly cite us,0.0005776291975902186
+NIT Trichy,Visvesvaraya National Institute of Technology,NIT,240,290,0.8275862068965517,balanced,0.0016402395673167944
+NIT Trichy,Bharath University,University / college,123,48,0.3902439024390244,they mostly cite us,0.0003405080018212986
+NIT Trichy,Sri Venkateswara University,University / college,102,178,0.5730337078651685,balanced,0.0011058033650007786
+NIT Trichy,Velammal Educational Trust,University / college,65,28,0.4307692307692308,they mostly cite us,0.0002564736581310144
+NIT Trichy,College of Engineering Trivandrum,University / college,55,64,0.859375,balanced,0.000521027063584573
+NIT Trichy,National Engineering College,University / college,51,74,0.6891891891891891,balanced,0.0004159529486860906
+NIT Trichy,National Metallurgical Laboratory,CSIR,32,143,0.22377622377622378,we mostly cite them,0.0009039752312446228
+NIT Trichy,St. Peter's Institute of Higher Education and Research,University / college,30,30,1.0,balanced,0.00024735132216463225
+NIT Trichy,Pondicherry University,University / college,239,220,0.9205020920502092,balanced,0.001317952947790318
+NIT Trichy,AMET University,University / college,101,27,0.26732673267326734,they mostly cite us,0.00025634042334579194
+NIT Trichy,Dhanalakshmi Srinivasan Group of Institutions,University / college,56,13,0.23214285714285715,they mostly cite us,0.00013242066437392508
+NIT Trichy,Loyola College,University / college,54,99,0.5454545454545454,balanced,0.0006477447530461117
+NIT Trichy,Lovely Professional University,University / college,505,251,0.497029702970297,they mostly cite us,0.0014128416796548768
+NIT Trichy,Thapar Institute of Engineering & Technology,University / college,322,431,0.7470997679814385,balanced,0.002791941540143632
+NIT Trichy,Galgotias University,University / college,146,64,0.4383561643835616,they mostly cite us,0.0003989725916058207
+NIT Trichy,National Institute of Technology Meghalaya,NIT,92,62,0.6739130434782609,balanced,0.0004738165663299925
+NIT Trichy,Rajiv Gandhi Institute of Petroleum Technology,University / college,80,25,0.3125,they mostly cite us,0.00020912992609121149
+NIT Trichy,"J.C. Bose University of Science & Technology, YMCA",University / college,54,42,0.7777777777777778,balanced,0.00029276456542582833
+NIT Trichy,JSS Academy of Higher Education and Research,University / college,45,10,0.2222222222222222,they mostly cite us,0.00017896498770239312
+NIT Trichy,TKM College of Engineering,University / college,39,22,0.5641025641025641,balanced,0.0002275078328091983
+NIT Trichy,"Bharati Vidyapeeth's College of Engineering, Delhi",University / college,36,30,0.8333333333333334,balanced,0.00022857371109097802
+NIT Trichy,Indian Institute of Science Education and Research Kolkata,IISER / IISc,34,82,0.4146341463414634,we mostly cite them,0.0004921292712624872
+NIT Trichy,International Institute of Information Technology,IIIT,24,32,0.75,balanced,0.00011570677686410016
+NIT Trichy,Ministry of Defence,Other government R&D,22,28,0.7857142857142857,balanced,0.00021265923229248795
+NIT Trichy,Jadavpur University,University / college,456,716,0.6368715083798883,balanced,0.003721849979930611
+NIT Trichy,Banaras Hindu University,University / college,307,492,0.6239837398373984,balanced,0.0030254001949260533
+NIT Trichy,GITAM University,University / college,256,121,0.47265625,they mostly cite us,0.0007351751681524499
+NIT Trichy,National Institute of Technology Agartala,NIT,160,164,0.975609756097561,balanced,0.0008786067451238135
+NIT Trichy,Hindustan Institute of Technology and Science,University / college,160,88,0.55,balanced,0.0005899463371877019
+NIT Trichy,Indian Institute of Technology Bhubaneswar,IIT,154,282,0.5460992907801419,balanced,0.0016516920964174508
+NIT Trichy,Siddhartha Academy of Higher Education,University / college,137,38,0.2773722627737226,they mostly cite us,0.0003016204318217655
+NIT Trichy,Sona College of Technology,University / college,129,35,0.2713178294573643,they mostly cite us,0.00023549908870830846
+NIT Trichy,"Jawaharlal Nehru Technological University, Hyderabad",University / college,105,146,0.7191780821917808,balanced,0.000869949315298591
+NIT Trichy,Vinayaka Missions University,University / college,77,15,0.19480519480519481,they mostly cite us,0.00017337195793728743
+NIT Trichy,University of Mysore,University / college,69,80,0.8625,balanced,0.0006608613013549298
+NIT Trichy,Government of Kerala,Other government R&D,55,14,0.2545454545454545,they mostly cite us,0.00017949792684328304
+NIT Trichy,Bishop Heber College,University / college,36,39,0.9230769230769231,balanced,0.00024542083338602544
+NIT Trichy,Cochin University of Science and Technology,University / college,175,241,0.7261410788381742,balanced,0.0014365461465675243
+NIT Trichy,National Institute of Technology Jamshedpur,NIT,170,86,0.5058823529411764,balanced,0.0006209758860733472
+NIT Trichy,Dayananda Sagar College of Engineering,University / college,136,55,0.40441176470588236,they mostly cite us,0.0004603655154509991
+NIT Trichy,GMR Institute of Technology,University / college,107,33,0.308411214953271,they mostly cite us,0.000285306248667608
+NIT Trichy,Andhra University,University / college,101,183,0.5519125683060109,balanced,0.0011002103352356727
+NIT Trichy,"Jawaharlal Nehru Technological University, Kakinada",University / college,89,65,0.7303370786516854,balanced,0.00041788343746469736
+NIT Trichy,Siddaganga Institute of Technology,University / college,71,47,0.6619718309859155,balanced,0.00047181804455165543
+NIT Trichy,National Institute of Technology Goa,NIT,69,63,0.9130434782608695,balanced,0.0004520425881959518
+NIT Trichy,Dayananda Sagar University,University / college,65,28,0.4307692307692308,they mostly cite us,0.00022517763967492405
+NIT Trichy,Aditya Institute of Technology and Management,University / college,54,13,0.24074074074074073,they mostly cite us,0.00015745747913879733
+NIT Trichy,Haldia Institute of Technology,University / college,50,30,0.6,balanced,0.00024735132216463225
+NIT Trichy,Tamil Nadu Agricultural University,University / college,49,33,0.673469387755102,balanced,0.0002696582394395629
+NIT Trichy,Indian Institute of Technology Palakkad,IIT,48,23,0.4791666666666667,they mostly cite us,0.0002620666878961201
+NIT Trichy,St. Joseph's Institute of Technology,University / college,46,21,0.45652173913043476,they mostly cite us,0.00017417136664862225
+NIT Trichy,PSG College of Arts & Science,University / college,46,24,0.5217391304347826,balanced,0.00020273748761477092
+NIT Trichy,Ramakrishna Mission Vidyalaya,University / college,31,36,0.8611111111111112,balanced,0.0002325027216479219
+NIT Trichy,Tata Steel (India),Industry,23,58,0.39655172413793105,we mostly cite them,0.00046702442349788457
+NIT Trichy,"Institute of Physics, Bhubaneshwar",Other government R&D,14,42,0.3333333333333333,we mostly cite them,0.00025833894512412896
+NIT Trichy,Central Road Research Institute,CSIR,11,58,0.1896551724137931,we mostly cite them,0.0004325988031961852
+NIT Trichy,Raman Research Institute,Other government R&D,5,95,0.05263157894736842,we mostly cite them,0.0005001205271615974
+NIT Trichy,Chitkara University,University / college,451,88,0.1951219512195122,they mostly cite us,0.0005930759390333108
+NIT Trichy,Delhi Technological University,University / college,375,305,0.8133333333333334,balanced,0.0017549037555370565
+NIT Trichy,Visvesvaraya Technological University,University / college,357,222,0.6218487394957983,balanced,0.0013432562321256357
+NIT Trichy,Alliance University,University / college,228,14,0.06140350877192982,they mostly cite us,0.00018575713053450109
+NIT Trichy,KLE Technological University,University / college,195,77,0.39487179487179486,they mostly cite us,0.000626035976697563
+NIT Trichy,Aditya University,University / college,189,24,0.12698412698412698,they mostly cite us,0.00019960788576916193
+NIT Trichy,National Institute of Technology Durgapur,NIT,154,247,0.6234817813765182,balanced,0.0013559759072930245
+NIT Trichy,University of Kerala,University / college,116,115,0.9913793103448276,balanced,0.0008063566018901227
+NIT Trichy,Bennett University,University / college,99,29,0.29292929292929293,they mostly cite us,0.00022531087446014654
+NIT Trichy,Jawaharlal Nehru Technological University Anantapur,University / college,98,85,0.8673469387755102,balanced,0.0004612329571620642
+NIT Trichy,Centurion University of Technology and Management,University / college,91,28,0.3076923076923077,they mostly cite us,0.0002564736581310144
+NIT Trichy,Punjab Engineering College,University / college,87,99,0.8787878787878788,balanced,0.0007322440028775555
+NIT Trichy,University of Allahabad,University / college,86,147,0.5850340136054422,balanced,0.0008356569297821141
+NIT Trichy,Chettinad Academy of Research and Education,University / college,84,20,0.23809523809523808,they mostly cite us,0.00018029733555461784
+NIT Trichy,Defence Institute of Advanced Technology,University / college,81,91,0.8901098901098901,balanced,0.0005778276341609332
+NIT Trichy,Nitte University,University / college,75,18,0.24,they mostly cite us,0.00020193807890343612
+NIT Trichy,PES University,University / college,75,54,0.72,balanced,0.000491528299121867
+NIT Trichy,Indian Institute of Space Science and Technology,University / college,65,68,0.9558823529411765,balanced,0.0003650799104450113
+NIT Trichy,National Institute of Technology Manipur,NIT,63,28,0.4444444444444444,they mostly cite us,0.00027838087105027764
+NIT Trichy,Thiruvalluvar University,University / college,61,37,0.6065573770491803,balanced,0.00029209839149971597
+NIT Trichy,Yogi Vemana University,University / college,59,44,0.7457627118644068,balanced,0.00026486461838579197
+NIT Trichy,Atal Bihari Vajpayee Indian Institute of Information Technology and Management,IIIT,49,43,0.8775510204081632,balanced,0.00026786098544617857
+NIT Trichy,UGC DAE Consortium for Scientific Research,DAE,39,84,0.4642857142857143,we mostly cite them,0.0005205621574434134
+NIT Trichy,ICFAI Foundation for Higher Education,University / college,37,23,0.6216216216216216,balanced,0.00018695624360150334
+NIT Trichy,Indian Institute of Information Technology Allahabad,IIIT,36,44,0.8181818181818182,balanced,0.00040569670143819836
+NIT Trichy,Central Glass and Ceramic Research Institute,CSIR,29,124,0.23387096774193547,we mostly cite them,0.0007418340761993353
+NIT Trichy,Presidency College,University / college,17,40,0.425,we mostly cite them,0.0003331829198483008
+NIT Trichy,University of Petroleum and Energy Studies,University / college,274,178,0.6496350364963503,balanced,0.0010932849576183424
+NIT Trichy,Symbiosis International University,University / college,238,79,0.3319327731092437,they mostly cite us,0.0005668400112014364
+NIT Trichy,Indian Institute of Technology Ropar,IIT,129,238,0.542016806722689,balanced,0.0014611832569767292
+NIT Trichy,Nitte Meenakshi Institute of Technology,University / college,123,27,0.21951219512195122,they mostly cite us,0.0003564876824052809
+NIT Trichy,University of Calcutta,University / college,116,227,0.5110132158590308,balanced,0.0014159032485007558
+NIT Trichy,REVA University,University / college,108,76,0.7037037037037037,balanced,0.0005758291123825961
+NIT Trichy,Jaypee Institute of Information Technology,University / college,98,112,0.875,balanced,0.0006150511849523045
+NIT Trichy,Central University of Punjab,University / college,96,58,0.6041666666666666,balanced,0.0003981731828944859
+NIT Trichy,Indian Institute of Technology Jammu,IIT,90,56,0.6222222222222222,balanced,0.00040103631516964994
+NIT Trichy,Noorul Islam University,University / college,87,34,0.39080459770114945,they mostly cite us,0.0003730683351298833
+NIT Trichy,Indian Institute of Technology Mandi,IIT,85,100,0.85,balanced,0.0008669501170239663
+NIT Trichy,Guru Jambheshwar University of Science and Technology,University / college,73,107,0.6822429906542056,balanced,0.0006269034184086282
+NIT Trichy,Punjab Technical University,University / college,72,117,0.6153846153846154,balanced,0.0008191414788430039
+NIT Trichy,Dehradun Institute of Technology University,University / college,71,29,0.4084507042253521,they mostly cite us,0.0003254581335196355
+NIT Trichy,University of Calicut,University / college,69,43,0.6231884057971014,balanced,0.00032419381866714104
+NIT Trichy,Punjabi University,University / college,65,86,0.7558139534883721,balanced,0.0007148639414416183
+NIT Trichy,KCG College of Technology,University / college,63,8,0.12698412698412698,they mostly cite us,0.00014740249967585786
+NIT Trichy,Prasad V. Potluri Siddhartha Institute of Technology,University / college,60,21,0.35,they mostly cite us,0.0001773009684942313
+NIT Trichy,Indian Institute of Chemical Technology,CSIR,60,261,0.22988505747126436,we mostly cite them,0.0020338351929376896
+NIT Trichy,"National Institute of Technical Teachers Training and Research, Chandigarh",University / college,55,31,0.5636363636363636,balanced,0.00027878057540594496
+NIT Trichy,CMR University,University / college,53,27,0.5094339622641509,balanced,0.00025634042334579194
+NIT Trichy,"Birla Institute of Technology and Science, Pilani - Goa Campus",University / college,49,47,0.9591836734693877,balanced,0.0004060964057938658
+NIT Trichy,Mangalore University,University / college,47,64,0.734375,balanced,0.0006149151189528438
+NIT Trichy,Manav Rachna International Institute of Research and Studies,University / college,46,19,0.41304347826086957,they mostly cite us,0.0001895529063062225
+NIT Trichy,Indian Institute of Technology Tirupati,IIT,43,27,0.627906976744186,balanced,0.00023443321042652872
+NIT Trichy,Sri Ramakrishna College of Arts and Science,University / college,42,19,0.4523809523809524,they mostly cite us,0.00015825688785013216
+NIT Trichy,Bangalore University,University / college,40,247,0.16194331983805668,we mostly cite them,0.0011306445744091742
+NIT Trichy,LNM Institute of Information Technology,University / college,37,25,0.6756756756756757,balanced,0.00023729634270169277
+NIT Trichy,Indian Association for the Cultivation of Science,University / college,33,247,0.13360323886639677,we mostly cite them,0.0012245326297774452
+NIT Trichy,Ministry of Earth Sciences,Other government R&D,33,40,0.825,balanced,0.000655531909946031
+NIT Trichy,Kongunadu Arts and Science College,University / college,31,37,0.8378378378378378,balanced,0.0002514135675067986
+NIT Trichy,Central Building Research Institute,CSIR,29,55,0.5272727272727272,balanced,0.0005949383948121874
+NIT Trichy,Institute for Plasma Research,DAE,29,40,0.725,balanced,0.0002768500866273382
+NIT Trichy,Central Electronics Engineering Research Institute,CSIR,21,44,0.4772727272727273,we mostly cite them,0.0002930310349962732
+NIT Trichy,Graphic Era University,University / college,397,120,0.3022670025188917,they mostly cite us,0.0007413011370584455
+NIT Trichy,Amity University,University / college,351,268,0.7635327635327636,balanced,0.0014683099023790123
+NIT Trichy,Siksha O Anusandhan University,University / college,278,190,0.6834532374100719,balanced,0.0010197733307463952
+NIT Trichy,Sharda University,University / college,189,80,0.42328042328042326,they mostly cite us,0.0004668259869271699
+NIT Trichy,Uttaranchal University,University / college,173,49,0.2832369942196532,they mostly cite us,0.0003875852642906565
+NIT Trichy,Sri Sairam Engineering College,University / college,138,104,0.7536231884057971,balanced,0.0006390221214353969
+NIT Trichy,Indian Institute of Information Technology Design and Manufacturing Jabalpur,IIIT,136,120,0.8823529411764706,balanced,0.0007162643222935732
+NIT Trichy,Veer Surendra Sai University of Technology,University / college,133,78,0.5864661654135338,balanced,0.0006887612483949661
+NIT Trichy,Mohan Babu University,University / college,125,7,0.056,they mostly cite us,0.00013162125566259025
+NIT Trichy,Jawaharlal Nehru University,University / college,118,183,0.644808743169399,balanced,0.0011002103352356727
+NIT Trichy,Guru Nanak Dev University,University / college,113,191,0.5916230366492147,balanced,0.0012295898891874228
+NIT Trichy,Parul University,University / college,113,22,0.19469026548672566,they mostly cite us,0.00019621181435310796
+NIT Trichy,Babasaheb Bhimrao Ambedkar University,University / college,92,74,0.8043478260869565,balanced,0.00044098976345096285
+NIT Trichy,Institute of Infrastructure Technology Research and Management,University / college,78,37,0.47435897435897434,they mostly cite us,0.00028583918780849784
+NIT Trichy,Tezpur University,University / college,76,161,0.4720496894409938,we mostly cite them,0.000972095096136417
+NIT Trichy,Sardar Patel University,University / college,74,60,0.8108108108108109,balanced,0.0005298829299805101
+NIT Trichy,Dr. A.P.J. Abdul Kalam Technical University,University / college,71,25,0.352112676056338,they mostly cite us,0.00023729634270169277
+NIT Trichy,Charotar University of Science and Technology,University / college,69,36,0.5217391304347826,balanced,0.00032639077701619284
+NIT Trichy,University of Engineering & Management,University / college,68,28,0.4117647058823529,they mostly cite us,0.0002502144544397963
+NIT Trichy,"Maharishi Markandeshwar University, Mullana",University / college,66,43,0.6515151515151515,balanced,0.0003899154574249308
+NIT Trichy,Guru Ghasidas Vishwavidyalaya,University / college,62,26,0.41935483870967744,they mostly cite us,0.00032192882731835903
+NIT Trichy,Puducherry Technological University,University / college,60,80,0.75,balanced,0.0005450660330673957
+NIT Trichy,CSIR National Physical Laboratory of India,CSIR,60,273,0.21978021978021978,we mostly cite them,0.0014721056781507337
+NIT Trichy,Vidyasagar University,University / college,57,90,0.6333333333333333,balanced,0.0005307503716915753
+NIT Trichy,University of Kalyani,University / college,55,71,0.7746478873239436,balanced,0.0005125709015443031
+NIT Trichy,University of Kashmir,University / college,54,88,0.6136363636363636,balanced,0.0005054470873562581
+NIT Trichy,Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology,University / college,50,13,0.26,they mostly cite us,0.0001418094699107522
+NIT Trichy,Sikkim Manipal University,University / college,49,28,0.5714285714285714,balanced,0.0002283072415205331
+NIT Trichy,COEP Technological University,University / college,46,45,0.9782608695652174,balanced,0.00034323789931124015
+NIT Trichy,Paavai Engineering College,University / college,45,15,0.3333333333333333,they mostly cite us,0.00017650155978289647
+NIT Trichy,Glocal University,University / college,42,16,0.38095238095238093,they mostly cite us,0.00018915320195055508
+NIT Trichy,"Indian Institute of Science Education and Research, Bhopal",IISER / IISc,39,44,0.8863636363636364,balanced,0.00039943749774698034
+NIT Trichy,Sri Venkateswara College of Engineering Tirupati,University / college,37,20,0.5405405405405406,balanced,0.00018029733555461784
+NIT Trichy,O. P. Jindal Global University,University / college,36,24,0.6666666666666666,balanced,0.00017144146915868064
+NIT Trichy,Visva-Bharati University,University / college,34,105,0.3238095238095238,we mostly cite them,0.0005828225229996568
+NIT Trichy,Rashtrasant Tukadoji Maharaj Nagpur University,University / college,34,48,0.7083333333333334,balanced,0.0003718040202773889
+NIT Trichy,Shiv Nadar University,University / college,34,50,0.68,balanced,0.0004252737212231874
+NIT Trichy,Bundelkhand University,University / college,30,23,0.7666666666666667,balanced,0.00019947465098393944
+NIT Trichy,Advanced Materials and Processes Research Institute,CSIR,29,69,0.42028985507246375,we mostly cite them,0.0005748964688860388
+NIT Trichy,Government of India,Other government R&D,29,70,0.4142857142857143,we mostly cite them,0.0005406040833695619
+NIT Trichy,Indian Institute of Petroleum,CSIR,28,53,0.5283018867924528,balanced,0.000444451036652509
+NIT Trichy,Raja Ramanna Centre for Advanced Technology,DAE,25,116,0.21551724137931033,we mostly cite them,0.0007658050126824277
+NIT Trichy,Gautam Buddha University,University / college,23,39,0.5897435897435898,balanced,0.0004175489348945221
+NIT Trichy,Inter-University Accelerator Centre,Other government R&D,22,53,0.41509433962264153,we mostly cite them,0.00041002541635080963
+NIT Trichy,Energy and Resources Institute,Other,21,71,0.29577464788732394,we mostly cite them,0.0005125709015443031
+NIT Trichy,Jawaharlal Nehru Centre for Advanced Scientific Research,Other government R&D,19,125,0.152,we mostly cite them,0.0010737051066191153
+NIT Trichy,Indian Institute of Remote Sensing,ISRO,18,60,0.3,we mostly cite them,0.0005956045687382997
+NIT Trichy,All India Institute of Medical Sciences,University / college,17,45,0.37777777777777777,we mostly cite them,0.0003463675011568493
+NIT Trichy,Central Institute of Plastics Engineering and Technology,Other government R&D,15,42,0.35714285714285715,we mostly cite them,0.0003772638152572721
+NIT Trichy,Indian Institute of Science Education and Research Thiruvananthapuram,IISER / IISc,12,47,0.2553191489361702,we mostly cite them,0.0003904483965658206
+NIT Trichy,Solid State Physics Laboratory,DRDO,11,39,0.28205128205128205,we mostly cite them,0.0002767168518421157
+NIT Trichy,Aligarh Muslim University,University / college,289,338,0.8550295857988166,balanced,0.001959595021568376
+NIT Trichy,GLA University,University / college,287,138,0.4808362369337979,they mostly cite us,0.0008219394093326758
+NIT Trichy,Savitribai Phule Pune University,University / college,254,312,0.8141025641025641,balanced,0.0017746140101072682
+NIT Trichy,Netaji Subhas University of Technology,University / college,163,103,0.6319018404907976,balanced,0.0006795737106430918
+NIT Trichy,New Horizon College of Engineering,University / college,143,25,0.17482517482517482,they mostly cite us,0.0002404259445473018
+NIT Trichy,Shoolini University,University / college,130,101,0.7769230769230769,balanced,0.0006511408244621657
+NIT Trichy,Vels University,University / college,119,56,0.47058823529411764,they mostly cite us,0.00029775945426455195
+NIT Trichy,Madan Mohan Malaviya University of Technology,University / college,118,34,0.288135593220339,they mostly cite us,0.0003010874926808756
+NIT Trichy,Guru Gobind Singh Indraprastha University,University / college,115,58,0.5043478260869565,balanced,0.00040756198843131295
+NIT Trichy,Maharshi Dayanand University,University / college,115,54,0.46956521739130436,they mostly cite us,0.0004477138732833405
+NIT Trichy,Shivaji University,University / college,106,238,0.44537815126050423,we mostly cite them,0.0014924792754328197
+NIT Trichy,Nirma University,University / college,105,99,0.9428571428571428,balanced,0.0006289671419724574
+NIT Trichy,Institute of Chemical Technology,University / college,105,219,0.4794520547945205,we mostly cite them,0.0013835413517628856
+NIT Trichy,Marwadi University,University / college,103,28,0.27184466019417475,they mostly cite us,0.00021891843598370597
+NIT Trichy,Sant Longowal Institute of Engineering and Technology,University / college,102,86,0.8431372549019608,balanced,0.0009558432835535136
+NIT Trichy,Osmania University,University / college,97,137,0.708029197080292,balanced,0.0008750094059228067
+NIT Trichy,Shri Mata Vaishno Devi University,University / college,93,116,0.8017241379310345,balanced,0.0007188609849982923
+NIT Trichy,Presidency University,University / college,87,53,0.6091954022988506,balanced,0.0003349149720561929
+NIT Trichy,National Institute of Technology Delhi,NIT,84,32,0.38095238095238093,they mostly cite us,0.00031020982864725773
+NIT Trichy,University of Mumbai,University / college,79,117,0.6752136752136753,balanced,0.0008379190899166579
+NIT Trichy,Kurukshetra University,University / college,79,59,0.7468354430379747,balanced,0.0004421208435182348
+NIT Trichy,Central University of Rajasthan,University / college,79,56,0.7088607594936709,balanced,0.00034157388010307843
+NIT Trichy,Central Mechanical Engineering Research Institute,CSIR,78,105,0.7428571428571429,balanced,0.0007549506245081534
+NIT Trichy,Indian Council of Agricultural Research,ICAR,75,66,0.88,balanced,0.0005150343294637998
+NIT Trichy,Harcourt Butler Technical University,University / college,75,42,0.56,balanced,0.0003365789912643547
+NIT Trichy,Gujarat Technological University,University / college,74,30,0.40540540540540543,they mostly cite us,0.00024735132216463225
+NIT Trichy,Acharya Nagarjuna University,University / college,72,31,0.4305555555555556,they mostly cite us,0.00035702062154617075
+NIT Trichy,Integral University,University / college,72,20,0.2777777777777778,they mostly cite us,0.00023663016877558041
+NIT Trichy,GIET University,University / college,71,27,0.38028169014084506,they mostly cite us,0.00020626679381604743
+NIT Trichy,North Eastern Hill University,University / college,69,62,0.8985507246376812,balanced,0.0003674101035792855
+NIT Trichy,Narsee Monjee Institute of Management Studies,University / college,66,26,0.3939393939393939,they mostly cite us,0.0002530775867149604
+NIT Trichy,Institute of Minerals and Materials Technology,CSIR,66,111,0.5945945945945946,balanced,0.0007651388387563154
+NIT Trichy,Central University of Haryana,University / college,63,39,0.6190476190476191,balanced,0.00026106884261407063
+NIT Trichy,North East Institute of Science and Technology,CSIR,62,52,0.8387096774193549,balanced,0.00039111457049193296
+NIT Trichy,Dr. Babasaheb Ambedkar Marathwada University,University / college,61,86,0.7093023255813954,balanced,0.0005709022565436027
+NIT Trichy,Govind Ballabh Pant University of Agriculture and Technology,University / college,61,79,0.7721518987341772,balanced,0.0005386735945909552
+NIT Trichy,Indira Gandhi Delhi Technical University for Women,University / college,60,42,0.7,balanced,0.0003146717783450915
+NIT Trichy,VIT Bhopal University,University / college,59,23,0.3898305084745763,they mostly cite us,0.00019947465098393944
+NIT Trichy,Banasthali University,University / college,57,58,0.9827586206896551,balanced,0.00035748835890156845
+NIT Trichy,Government of Gujarat,Other government R&D,57,57,1.0,balanced,0.0004168175591829176
+NIT Trichy,South Asian University,University / college,57,12,0.21052631578947367,they mostly cite us,0.00015732424435357486
+NIT Trichy,North Eastern Regional Institute of Science and Technology,University / college,55,58,0.9482758620689655,balanced,0.0004951908401083659
+NIT Trichy,National Institute of Hydrology,Other government R&D,55,80,0.6875,balanced,0.0007860453751792911
+NIT Trichy,Maharaja Sayajirao University of Baroda,University / college,54,48,0.8888888888888888,balanced,0.0004531736682632237
+NIT Trichy,Bharati Vidyapeeth (Deemed to be University),University / college,54,29,0.5370370370370371,balanced,0.0002503476892250188
+NIT Trichy,Government of Karnataka,Other government R&D,53,21,0.39622641509433965,they mostly cite us,0.00028683703309054736
+NIT Trichy,Noida Institute of Engineering and Technology,University / college,53,22,0.41509433962264153,they mostly cite us,0.0002337670365004163
+NIT Trichy,Deenbandhu Chhotu Ram University of Science and Technology,University / college,52,71,0.7323943661971831,balanced,0.0004844044849338218
+NIT Trichy,Shri Vile Parle Kelavani Mandal,University / college,52,15,0.28846153846153844,they mostly cite us,0.00018589036531972355
+NIT Trichy,Punjab Agricultural University,University / college,52,43,0.8269230769230769,balanced,0.000421211475881021
+NIT Trichy,Karnatak University,University / college,51,82,0.6219512195121951,balanced,0.0004639628546520059
+NIT Trichy,Gurukul Kangri Vishwavidyalaya,University / college,50,35,0.7,balanced,0.0002667951071643988
+NIT Trichy,Central University of Jharkhand,University / college,50,42,0.84,balanced,0.0003522270004923999
+NIT Trichy,Indian Institute of Technology Gandhinagar,IIT,50,81,0.6172839506172839,balanced,0.0007048089619786787
+NIT Trichy,Amity University Gurugram,University / college,50,46,0.92,balanced,0.0002807790971842821
+NIT Trichy,Dibrugarh University,University / college,50,28,0.56,balanced,0.00026273286182223245
+NIT Trichy,University of Burdwan,University / college,49,144,0.3402777777777778,we mostly cite them,0.000860294040191319
+NIT Trichy,Central University of Jammu,University / college,49,30,0.6122448979591837,balanced,0.00022544410924536898
+NIT Trichy,Vishwakarma Institute of Technology,University / college,49,22,0.4489795918367347,they mostly cite us,0.0002212486291179802
+NIT Trichy,Indian Agricultural Research Institute,ICAR,49,72,0.6805555555555556,balanced,0.0005346113492487889
+NIT Trichy,National Chemical Laboratory,CSIR,48,251,0.19123505976095617,we mostly cite them,0.0017758754937455244
+NIT Trichy,North Bengal University,University / college,48,46,0.9583333333333334,balanced,0.0003058159119491543
+NIT Trichy,Indian Institute of Management Mumbai,University / college,47,85,0.5529411764705883,balanced,0.00037047450363940235
+NIT Trichy,Central Salt and Marine Chemicals Research Institute,CSIR,46,132,0.3484848484848485,we mostly cite them,0.0008336584080037771
+NIT Trichy,KR Mangalam University,University / college,46,7,0.15217391304347827,they mostly cite us,0.00014726926489063542
+NIT Trichy,Madras Christian College,University / college,46,18,0.391304347826087,they mostly cite us,0.00017064206044734582
+NIT Trichy,Doon University,University / college,46,17,0.3695652173913043,they mostly cite us,0.00015799041827968722
+NIT Trichy,Biju Patnaik University of Technology,University / college,45,14,0.3111111111111111,they mostly cite us,0.00017010912130645592
+NIT Trichy,Central Scientific Instruments Organisation,CSIR,45,43,0.9555555555555556,balanced,0.000317934614975923
+NIT Trichy,G.L. Bajaj Institute of Technology and Management Greater Noida,University / college,45,31,0.6888888888888889,balanced,0.0002193181403393734
+NIT Trichy,Kannur University,University / college,44,8,0.18181818181818182,they mostly cite us,0.00019747612920560236
+NIT Trichy,Mizoram University,University / college,43,30,0.6976744186046512,balanced,0.0002442217203190232
+NIT Trichy,National Institute of Technology Arunachal Pradesh,NIT,43,21,0.4883720930232558,they mostly cite us,0.00017417136664862225
+NIT Trichy,University of Rajasthan,University / college,43,46,0.9347826086956522,balanced,0.00038092635624377105
+NIT Trichy,Gauhati University,University / college,42,44,0.9545454545454546,balanced,0.0003900486922101532
+NIT Trichy,University of Jammu,University / college,42,42,1.0,balanced,0.0002865053617346103
+NIT Trichy,Chaudhary Charan Singh University,University / college,42,76,0.5526315789473685,balanced,0.0005101074736248065
+NIT Trichy,University of Gour Banga,University / college,42,51,0.8235294117647058,balanced,0.0003596853172506202
+NIT Trichy,"Maulana Abul Kalam Azad University of Technology, West Bengal",University / college,42,40,0.9523809523809523,balanced,0.00027997968847294724
+NIT Trichy,Rajiv Gandhi Technical University,University / college,41,25,0.6097560975609756,balanced,0.00022790753716486566
+NIT Trichy,Central University of Kerala,University / college,40,22,0.55,balanced,0.00018682300881628085
+NIT Trichy,BML Munjal University,University / college,39,16,0.41025641025641024,they mostly cite us,0.00017037559087690086
+NIT Trichy,Rajasthan Technical University,University / college,39,24,0.6153846153846154,balanced,0.00020586708946037995
+NIT Trichy,Hemwati Nandan Bahuguna Garhwal University,University / college,39,22,0.5641025641025641,balanced,0.00020247101804432604
+NIT Trichy,Dayalbagh Educational Institute,University / college,38,30,0.7894736842105263,balanced,0.00023796251662780513
+NIT Trichy,Ajay Kumar Garg Engineering College,University / college,38,16,0.42105263157894735,they mostly cite us,0.0001453387761120286
+NIT Trichy,Central University of Gujarat,University / college,38,32,0.8421052631578947,balanced,0.0002413585880438591
+NIT Trichy,Mohanlal Sukhadia University,University / college,37,37,1.0,balanced,0.00030148719703654303
+NIT Trichy,Utkal University,University / college,37,45,0.8222222222222222,balanced,0.00026499785317101447
+NIT Trichy,Dwarkadas J. Sanghvi College of Engineering,University / college,36,17,0.4722222222222222,they mostly cite us,0.00016424962197090527
+NIT Trichy,Assam University,University / college,36,36,1.0,balanced,0.0002512803327215761
+NIT Trichy,Gyan Vihar University,University / college,36,20,0.5555555555555556,balanced,0.0001740381318633998
+NIT Trichy,The NorthCap University,University / college,35,34,0.9714285714285714,balanced,0.00036993873328427433
+NIT Trichy,Raisoni Group of Institutions,University / college,34,16,0.47058823529411764,they mostly cite us,0.00017663479456811893
+NIT Trichy,Sambalpur University,University / college,33,26,0.7878787878787878,balanced,0.00022804077195008815
+NIT Trichy,Kuvempu University,University / college,33,32,0.9696969696969697,balanced,0.00038219067109626544
+NIT Trichy,Rayat Bahra University,University / college,33,17,0.5151515151515151,balanced,0.00017676802935334143
+NIT Trichy,Jaypee University of Information Technology,University / college,32,46,0.6956521739130435,balanced,0.00035588954147889885
+NIT Trichy,Indian Institute of Technology Bhilai,IIT,32,26,0.8125,balanced,0.00022491117010447912
+NIT Trichy,Tripura University,University / college,32,31,0.96875,balanced,0.00027252137171472694
+NIT Trichy,Indian Institute of Toxicology Research,CSIR,32,46,0.6956521739130435,balanced,0.0004153519765454704
+NIT Trichy,Himachal Pradesh University,University / college,32,79,0.4050632911392405,we mostly cite them,0.0004854703632156017
+NIT Trichy,Solapur University,University / college,31,45,0.6888888888888889,balanced,0.00034010829746563116
+NIT Trichy,University of Lucknow,University / college,31,73,0.4246575342465753,we mostly cite them,0.00038765329729038687
+NIT Trichy,Government of West Bengal,Other government R&D,31,23,0.7419354838709677,balanced,0.00023077066944002977
+NIT Trichy,Jamia Hamdard,University / college,30,45,0.6666666666666666,balanced,0.0003494971030024583
+NIT Trichy,Dr. Hari Singh Gour University,University / college,30,30,1.0,balanced,0.00025048092401024123
+NIT Trichy,Maharana Pratap University of Agriculture and Technology,University / college,29,76,0.3815789473684211,we mostly cite them,0.0004662930477862801
+NIT Trichy,Centre for Materials for Electronics Technology,Other government R&D,29,76,0.3815789473684211,we mostly cite them,0.00044751543671262586
+NIT Trichy,Kamla Nehru Institute of Technology,University / college,28,25,0.8928571428571429,balanced,0.0001903523150175573
+NIT Trichy,Alagappa Government Arts College,University / college,28,38,0.7368421052631579,balanced,0.00028597242259372033
+NIT Trichy,Swami Ramanand Teerth Marathwada University,University / college,27,31,0.8709677419354839,balanced,0.00022870694587620051
+NIT Trichy,National Institute of Science and Technology,University / college,27,24,0.8888888888888888,balanced,0.0001683118673130716
+NIT Trichy,M S Ramaiah University of Applied Sciences,University / college,26,24,0.9230769230769231,balanced,0.0002309039042252522
+NIT Trichy,Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya,University / college,25,35,0.7142857142857143,balanced,0.00023549908870830846
+NIT Trichy,Central Institute of Mining and Fuel Research,CSIR,23,28,0.8214285714285714,balanced,0.00038478733380098467
+NIT Trichy,National Institute of Science Education and Research,DAE,22,54,0.4074074074074074,we mostly cite them,0.00038199223452555083
+NIT Trichy,Tata Consultancy Services (India),Industry,22,50,0.44,we mostly cite them,0.00035016327692857064
+NIT Trichy,Indian Institute of Tropical Meteorology,Other government R&D,20,62,0.3225806451612903,we mostly cite them,0.0007773879453540685
+NIT Trichy,Indraprastha Institute of Information Technology Delhi,University / college,18,37,0.4864864864864865,we mostly cite them,0.0003140056044189792
+NIT Trichy,National Geophysical Research Institute,CSIR,18,42,0.42857142857142855,we mostly cite them,0.0004367262503238437
+NIT Trichy,Devi Ahilya Vishwavidyalaya,University / college,17,77,0.22077922077922077,we mostly cite them,0.0005102407084100289
+NIT Trichy,Indian Institute of Science Education and Research Pune,IISER / IISc,16,52,0.3076923076923077,we mostly cite them,0.0004067625797199781
+NIT Trichy,"International Institute of Information Technology, Hyderabad",IIIT,16,133,0.12030075187969924,we mostly cite them,0.00099340133691506
+NIT Trichy,"St Joseph's University, Bengaluru, India",University / college,14,58,0.2413793103448276,we mostly cite them,0.00027924831276134276
+NIT Trichy,Indian Statistical Institute,University / college,14,146,0.0958904109589041,we mostly cite them,0.0010326886112702607
+NIT Trichy,Naval Materials Research Laboratory,DRDO,13,43,0.3023255813953488,we mostly cite them,0.0002709905872917876
+NIT Trichy,Saha Institute of Nuclear Physics,Other government R&D,11,119,0.09243697478991597,we mostly cite them,0.0005565213933822902
+NIT Trichy,Central Food Technological Research Institute,CSIR,10,41,0.24390243902439024,we mostly cite them,0.0005336106727525013
+NIT Trichy,S.N. Bose National Centre for Basic Sciences,Other government R&D,10,60,0.16666666666666666,we mostly cite them,0.00044225407830345725
+NIT Trichy,India Meteorological Department,Other government R&D,9,47,0.19148936170212766,we mostly cite them,0.0007159269885091598
+NIT Trichy,TERI University,University / college,6,56,0.10714285714285714,we mostly cite them,0.0003759995004047777
+NIT Trichy,Sri Krishnadevaraya University,University / college,5,62,0.08064516129032258,we mostly cite them,0.00032985488143197713

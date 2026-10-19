@@ -18,6 +18,7 @@ The files cover **only regular faculty of science / engineering / technology dep
 | `faculty.csv` | One row per science / engineering faculty member (811): department, designation, current/former, OpenAlex IDs, papers and citations 2016–2026, h-index (career and 2016–2026), mean FWCI, top journal |
 | `network_metrics/` | PageRank and in-degree per paper; degree, betweenness and Louvain community per faculty member; Gephi `.gexf` files; `network_summary.json` |
 | `analysis/` | `ANALYSIS.md` and its tables and charts: large-paper bias check, institute and branch comparison, IF > 5 / IF > 10, impact ratio, partners, and Task 3 (`task3_*`) |
+| `analysis/NETWORK_SCIENCE.md`, `analysis/ns_*` | Degree-distribution fits, small-world and rich-club tests, assortativity, communities vs departments, institute citation-flow network, regression and bootstrap comparison |
 
 ## Raw and reference files
 
