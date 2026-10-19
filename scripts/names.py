@@ -109,6 +109,11 @@ def _close(t, u):
     return any(l[:i] + l[i + 1:] == s for i in range(len(l)))
 
 
+def _abbrev(t):
+    """Short forms written without vowels, like "Ch" for Chivukula or "Sk" for Shaik."""
+    return 2 <= len(t) <= 3 and not re.search(r"[aeiouy]", t)
+
+
 def _align(a, b):
     """Try to pair every token of a with a distinct token of b (full = same word, initial = first letter).
     Returns (full-word matches, number of unmatched tokens in b, typo matches) or None."""
@@ -127,6 +132,13 @@ def _align(a, b):
                 typos += 1
             else:
                 j = next((j for j, u in enumerate(b) if j not in used and len(u) == 1 and u == t[0]), None)
+            if j is None:  # an abbreviation matches a longer word that starts with it ("ch" = "chivukula"),
+                # in either direction; it counts like an initial, not as a full-word match
+                j = next((j for j, u in enumerate(b) if j not in used and len(u) > len(t) and _abbrev(t)
+                          and u.startswith(t)), None)
+            if j is None:
+                j = next((j for j, u in enumerate(b) if j not in used and len(t) > len(u) and _abbrev(u)
+                          and t.startswith(u)), None)
         if j is None:
             return None
         used.add(j)

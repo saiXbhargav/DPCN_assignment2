@@ -1,5 +1,5 @@
 per_faculty_measure,median_NIT Trichy,median_NIT Surathkal,mann_whitney_p,difference_is_significant_5pct
-papers,19.0,31.0,0.0018136664989361459,True
-citations_in_period,192.0,260.0,0.01467544119945793,True
-h_index_2016_2026,7.0,8.0,0.02434326311620589,True
-mean_fwci,1.0165,1.0735000000000001,0.15520299632900075,False
+papers,19.0,31.0,0.0003122228121236162,True
+citations_in_period,192.0,280.0,0.005578442590205066,True
+h_index_2016_2026,7.0,9.0,0.00898609736044588,True
+mean_fwci,1.0165,1.073,0.15169808969831852,False

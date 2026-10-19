@@ -24,11 +24,11 @@ The full list of assignment tasks is in [assignment.md](assignment.md). This fil
 | | |
 |---|---|
 | Papers | **18,343**: 9,184 for NIT Trichy and 9,206 for NIT Surathkal. 47 have faculty from both NITs and count for each. |
-| Rows in `group12_data.csv` | **21,932**, one per (paper, NIT faculty member) |
-| Faculty | **811** regular faculty in science / engineering branches (current and former, 2016–2026); 663 of them have papers |
+| Rows in `group12_data.csv` | **21,933**, one per (paper, NIT faculty member) |
+| Faculty | **767** regular faculty in science / engineering branches (current and former, 2016–2026); 656 of them have papers |
 | Who is left out | PhD students and other non-faculty authors; Management and Humanities faculty; papers on business, economics, social sciences, psychology or arts |
 | Citation network | 181,189 edges |
-| Authorship network | 25,691 co-author rows; faculty graph of 663 people |
+| Authorship network | 25,693 co-author rows; faculty graph of 656 people |
 
 ---
 
@@ -209,8 +209,13 @@ OpenAlex can't tell faculty from PhD students, so the faculty list comes from th
 
 | | Regular faculty | Science / engineering | Current | Former |
 |---|---|---|---|---|
-| NIT Trichy | 467 | 431 | 344 | 87 |
-| NIT Surathkal | 411 | 380 | 269 | 111 |
+| NIT Trichy | 457 | 421 | 343 | 78 |
+| NIT Surathkal | 370 | 346 | 269 | 77 |
+
+**Duplicates.** The same person can be listed under different spellings, and these are merged:
+- NIT Surathkal's 2016–2018 directory prints names with the spaces removed ("VANIM" for Vani M, "RAMESHM.R." for Ramesh M R). Entries with exactly the same letters in the same order are one person; about 50 such pairs are merged.
+- Abbreviated surnames match the full name ("Ch Suryanarayana Murthy" = "Chivukula Suryanarayana Murthy").
+- A one-word listing ("SHRIKANTHA", "Dr. Krishnan") is merged with the one person in the same branch whose fuller name contains that word, if the two never appear on the same page in the same year.
 
 `research_scholars.csv` holds 1,365 names listed as research scholars. They are used to avoid matching a student with a faculty member.
 
@@ -220,7 +225,7 @@ A faculty member is linked to an OpenAlex author ID who has papers at the same N
 - **the names agree and the department agrees.** Initials, word order, one typo or glued words are allowed, for example "M R Ramesh" = "Ramesh M R" and "N Samsudeen" = "Samsudeen Naina Mohamed". The department named in the author's own NIT affiliation text must be the faculty member's department.
 
 Other rules:
-- One person can have **several OpenAlex IDs**. OpenAlex often splits people; **382 faculty have 2 or more IDs**, which are merged.
+- One person can have **several OpenAlex IDs**. OpenAlex often splits people; **381 faculty have 2 or more IDs**, which are merged.
 - One ID belongs to at most one person per institute. Faculty who moved between the two NITs (V. Vignesh Kumar, I. Jeyaraman, Ruben Sudhakar D) keep the same ID at both.
 - Authorships with **no OpenAlex author ID** are assigned by a clear name match within the same department.
 - **Team review.** 59 uncertain links were checked by hand: 21 accepted, 34 rejected.
@@ -229,7 +234,7 @@ Other rules:
 - **Accuracy.** A random check of 50 automatic links found about 95% correct; the doubtful ones are single-paper links with very common surnames.
 - **Scopus.** 61 NIT Surathkal profiles list a Scopus ID, but OpenAlex no longer stores Scopus author IDs (0 of 4,948 NIT authors). Linking them would need an Elsevier Scopus API key.
 
-**Result:** **701 of 878 faculty are linked** (NIT Trichy 379, NIT Surathkal 322), with 1,486 links: 1,403 by name, 62 by ORCID and 21 by team decision.
+**Result:** **693 of 827 faculty are linked** (NIT Trichy 379, NIT Surathkal 314), with 1,487 links: 1,403 by name, 62 by ORCID and 22 by team decision.
 
 `unmatched_prolific_authors.csv` lists 119 NIT authors with 15+ papers and no faculty link. Most are PhD scholars or post-docs; a few are faculty missing from every list we could download.
 
@@ -257,7 +262,7 @@ The citation counts in `group12_data.csv` stay as collected on **7 October 2026*
   - A further 2,917 papers are dropped because no faculty member of our scope is an author; most are written by PhD students with outside co-authors.
 - The rule in Step 11 decides `cites_indian_inst` / `cited_by_indian_inst`.
 
-**`data/group12_data.csv`**: **21,932 rows**, one per *(paper, NIT faculty member)*, and **18,343 papers**:
+**`data/group12_data.csv`**: **21,933 rows**, one per *(paper, NIT faculty member)*, and **18,343 papers**:
 - Type: 13,571 journal, 4,772 conference
 - Journal quartile: Q1 4,599 · Q2 4,825 · Q3 2,485 · Q4 652 · 1,010 journal papers whose journal isn't in SCImago
 - CORE rank: A\* 3 · A 6 · B 16 · C 98 · the rest unranked
@@ -298,7 +303,7 @@ How each **required** column is filled:
 | `fwci`, `top10pct` | Field-weighted citation impact and the top-10% flag (Step 9) |
 | `journal_if_2yr` | The journal's 2-year mean citedness (Step 9); blank for conferences |
 
-**`data/faculty.csv`**: one row per science / engineering faculty member (811 rows, 663 with papers). Columns:
+**`data/faculty.csv`**: one row per science / engineering faculty member (767 rows, 656 with papers). Columns:
 - institution, `faculty_id`, main OpenAlex ID and all IDs, name, department, designation, current/former, years seen on the website;
 - papers and citations in 2016–2026, mean FWCI and top journal;
 - `h_index`: OpenAlex career h-index of the main ID;
@@ -358,7 +363,7 @@ Required columns: `source_doi, target_doi, source_inst, target_inst, year`. Extr
 - **PageRank** uses damping 0.85.
 - Saved to `data/network_metrics/citation_paper_metrics.csv`, one row per paper, sorted by PageRank, with counts of Indian papers citing and cited.
 
-### 2b. `data/authorship_network.csv`: 25,691 co-authorship rows
+### 2b. `data/authorship_network.csv`: 25,693 co-authorship rows
 Required columns: `author_a, author_b, paper_doi, inst_a, inst_b, year`. Extra columns: `edge_category, cross_institution, author_a_id, author_b_id, paper_id`.
 
 - **One row per (pair of authors, paper).** If two people wrote 5 papers together, there are 5 rows, so the edge weight is the number of rows.
@@ -370,21 +375,21 @@ Required columns: `author_a, author_b, paper_doi, inst_a, inst_b, year`. Extra c
 
 | `edge_category` | Rows | Meaning |
 |---|---|---|
-| `same_nit` | 3,861 | Two faculty of the same NIT |
+| `same_nit` | 3,862 | Two faculty of the same NIT |
 | `nit_nit` | 55 | A NIT Trichy and a NIT Surathkal faculty member |
-| `nit_indian` | 12,038 | Faculty with an author at **another Indian institute** (the "Indian connections") |
+| `nit_indian` | 12,039 | Faculty with an author at **another Indian institute** (the "Indian connections") |
 | `nit_foreign` | 6,028 | Faculty with a foreign co-author |
 | `nit_unknown` | 3,709 | Co-author has no institution in OpenAlex |
 
-Left out: 21,360 authorships by NIT people who are not faculty in our scope, and 1,238 outside authorships with no OpenAlex author ID.
+Left out: 21,359 authorships by NIT people who are not faculty in our scope, and 1,238 outside authorships with no OpenAlex author ID.
 
-**Metrics** are computed on the faculty-only graph: **663 faculty, 967 weighted edges**.
+**Metrics** are computed on the faculty-only graph: **656 faculty, 961 weighted edges**.
 - **Degree centrality:** distinct faculty co-authors ÷ (number of faculty − 1).
 - **Betweenness centrality:** exact (not sampled), using unweighted shortest paths.
 - **Louvain communities:** NetworkX, weighted by number of joint papers, random seed 42 so the result is reproducible.
-  - 162 communities, 18 of them with 10 or more members.
-  - **Modularity 0.844** (strong group structure, typical of department-based collaboration).
-- The graph has 139 separate pieces; the largest contains 496 faculty.
+  - 161 communities, 19 of them with 10 or more members.
+  - **Modularity 0.847** (strong group structure, typical of department-based collaboration).
+- The graph has 136 separate pieces; the largest contains 492 faculty.
 - Saved to `data/network_metrics/author_metrics.csv`, including each faculty member's number of partner Indian institutes.
 
 ### 2c. `data/indian_connections.csv`: 4,053 rows (our NIT × partner Indian institute)
@@ -471,18 +476,18 @@ Every table is saved as CSV, and [ANALYSIS.md](data/analysis/ANALYSIS.md) collec
 | | NIT Trichy | NIT Surathkal |
 |---|---|---|
 | Papers | 9,184 | 9,206 |
-| Faculty with papers | 357 | 306 |
-| Papers per faculty member | 25.7 | 30.1 |
+| Faculty with papers | 357 | 299 |
+| Papers per faculty member | 25.7 | 30.8 |
 | Citations per paper | 15.2 | 13.6 |
 | Mean FWCI | 1.31 | 1.39 |
 | Share in the world's top 10% cited | 13.6% | 14.3% |
 | Q1 share of ranked journal papers | 35.2% | 38.3% |
-| Median faculty h-index (2016–2026) | 7 | 8 |
+| Median faculty h-index (2016–2026) | 7 | 9 |
 | Papers with a foreign co-author | 17.1% | 14.4% |
 
 Per faculty member (Mann–Whitney test):
 - NIT Surathkal faculty publish more (median 31 vs 19 papers), get more citations and have a higher h-index. All three differences are **significant**.
-- The FWCI difference is **not** significant (p = 0.16).
+- The FWCI difference is **not** significant (p = 0.15).
 
 In short: higher output per person at NIT Surathkal and more citations per paper at NIT Trichy. On field-normalised impact, the two institutes are **statistically the same** once branch, year and collaboration are taken into account (section 7.5).
 
@@ -618,25 +623,25 @@ the same on every run.
 - total citations per paper.
 
 All four are heavy-tailed (power-law exponent α ≈ 2.5–2.9 in the tail), but a **log-normal fits significantly
-better than a pure power law** in every case (likelihood-ratio test, p < 0.02). This is typical of collaboration and
+better than a pure power law** in every case (likelihood-ratio test, p < 0.04). This is typical of collaboration and
 citation data, where growth is limited by time and team size.
 
-**7.2 Small world, rich club, assortativity, cores.** These use the faculty network's largest component: 496 faculty and 936 links.
+**7.2 Small world, rich club, assortativity, cores.** These use the faculty network's largest component: 492 faculty and 930 links.
 - **Small world.** Compared with 20 degree-preserving random graphs:
-  - clustering is **0.21 vs 0.008**, about 25× higher;
-  - paths are only 1.36× longer (6.1 vs 4.5);
-  - small-world index **σ = 18.2**.
-- **Rich club.** The best-connected faculty co-author with each other up to **3.1×** more than chance (ρ(k) peaks at k > 11).
+  - clustering is **0.21 vs 0.010**, about 21× higher;
+  - paths are only 1.35× longer (6.1 vs 4.5);
+  - small-world index **σ = 16.1**.
+- **Rich club.** The best-connected faculty co-author with each other up to **3.4×** more than chance (ρ(k) peaks at k > 11).
 - **Assortativity:**
-  - **by branch r = 0.66** (z ≈ 76 against random labels), and 69% of faculty–faculty links stay within one branch;
+  - **by branch r = 0.66** (z ≈ 73 against random labels), and 69% of faculty–faculty links stay within one branch;
   - by institute r = 0.94;
-  - by rank only r = 0.08: senior and junior faculty mix freely;
+  - by rank only r = 0.07: senior and junior faculty mix freely;
   - by degree r = 0.20.
-- **k-cores:** the innermost 4-core has 38 faculty.
+- **k-cores:** the innermost 4-core has 36 faculty.
 
 **7.3 Communities vs departments.**
-- Louvain communities against departments: **NMI = 0.69**, against 0.23 for random labels; ARI = 0.36.
-- So collaboration groups are mostly departments, but 8 of the 19 communities with 8+ members are clearly
+- Louvain communities against departments: **NMI = 0.68**, against 0.24 for random labels; ARI = 0.34.
+- So collaboration groups are mostly departments, but 10 of the 20 communities with 8+ members are clearly
   cross-department. These are the interdisciplinary groups worth naming in the report.
 
 **7.4 Institute-level citation-flow network.** Institutes as nodes, weighted arrows for "cites", using the co-authorship rule.
@@ -745,7 +750,7 @@ python insights.py                  # data/analysis/insights/
 ## Known limitations (mention these in the report)
 
 1. **Faculty coverage.**
-   - 177 of the 878 regular faculty have no OpenAlex link, mostly new or low-output faculty.
+   - 134 of the 827 regular faculty have no OpenAlex link, mostly new or low-output faculty.
    - A few faculty appear on no page we could download (see `unmatched_prolific_authors.csv`).
    - The archived pages are yearly, so join and leave years are approximate.
    - A faculty member's papers from before they joined (for example their PhD at the same NIT) count if they carry the NIT affiliation.

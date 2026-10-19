@@ -208,7 +208,7 @@ def merge(records):
         if p is None:
             p = {"institution": r["institution"], "branch": r["branch"], "names": [], "years": set(),
                  "designations": [], "departments": collections.Counter(), "emails": set(), "sources": set(),
-                 "orcid": "", "scopus_id": "", "regular_years": set()}
+                 "orcid": "", "scopus_id": "", "regular_years": set(), "pages": set()}
             people.append(p)
         if key:
             by_key[key] = p
@@ -220,6 +220,7 @@ def merge(records):
         if r["email"]:
             p["emails"].add(r["email"].lower())
         p["sources"].add(r["source"])
+        p["pages"].add((r["source"], r["year"]))  # two entries on the same page and year are two people
         if r["designation"] not in ("Non-regular", ""):
             p["regular_years"].add(r["year"])
         p["orcid"] = p["orcid"] or r.get("orcid", "")
@@ -252,8 +253,24 @@ def consolidate(people):
                 if ei and ej and not (ei & ej):
                     continue
                 best = max((name_detail(a, b) for a in spellings[i] for b in spellings[j]), key=lambda t: t[0])
-                if best[0] >= 2 or best[1] in ("typo", "glued"):
+                same_letters = {"".join(tokens(a)) for a in spellings[i]} & {"".join(tokens(b)) for b in spellings[j]}
+                if best[0] >= 2 or best[1] in ("typo", "glued") or same_letters:  # "NARENDRANATHS" = "Narendranath S"
                     parent[find(j)] = find(i)
+        # an entry listed by one word only ("SHRIKANTHA", "Dr. Krishnan") is the one person in the same branch whose
+        # fuller name contains that word ("Shrikantha S Rao"), if there is exactly one such person and the two are
+        # never listed on the same page in the same year
+        for i in idx:
+            words = {tuple(tokens(n)) for n in spellings[i]}
+            if len(words) != 1 or len(next(iter(words))) != 1 or len(next(iter(words))[0]) < 4:
+                continue
+            w = next(iter(words))[0]
+            cands = [j for j in idx if j != i and any(w in tokens(n) and len(tokens(n)) > 1 for n in spellings[j])]
+            if len(cands) != 1:
+                continue
+            j = cands[0]
+            ei, ej = people[i]["emails"], people[j]["emails"]
+            if not (people[i]["pages"] & people[j]["pages"]) and not (ei and ej and not (ei & ej)):
+                parent[find(i)] = find(j)
     merged = {}
     for i, p in enumerate(people):
         root = find(i)
@@ -261,7 +278,7 @@ def consolidate(people):
             merged[root] = p
             continue
         m = merged[root]
-        for k in ("years", "emails", "sources", "regular_years"):
+        for k in ("years", "emails", "sources", "regular_years", "pages"):
             m[k] |= p[k]
         m["names"] += p["names"]
         m["designations"] += p["designations"]

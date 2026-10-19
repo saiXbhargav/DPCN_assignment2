@@ -6,16 +6,16 @@ The files cover **only regular faculty of science / engineering / technology dep
 
 | File | What it contains |
 |---|---|
-| `group12_data.csv` | **The main submission file.** 21,932 rows, one per (paper, NIT faculty member), covering 18,343 papers. It has all 14 required columns plus extra columns. |
+| `group12_data.csv` | **The main submission file.** 21,933 rows, one per (paper, NIT faculty member), covering 18,343 papers. It has all 14 required columns plus extra columns. |
 | `citation_network.csv` | **Task 2.** 181,189 directed citation edges: internal, out to other Indian institutes, in from them, and the co-authored ("shared institute") ones that are not counted as flow |
-| `authorship_network.csv` | **Task 2.** 25,691 co-author pairs on our papers; every pair has at least one NIT faculty member |
+| `authorship_network.csv` | **Task 2.** 25,693 co-author pairs on our papers; every pair has at least one NIT faculty member |
 | `indian_connections.csv` | **Task 2.** 4,053 rows of our NIT × partner Indian institute: shared papers, their citations, citation in-flow and out-flow, and the partner's type, cluster (IIT, CSIR, DAE, …) and `cross_cluster` flag |
 
 ## Other outputs
 
 | File | What it contains |
 |---|---|
-| `faculty.csv` | One row per science / engineering faculty member (811): department, designation, current/former, OpenAlex IDs, papers and citations 2016–2026, h-index (career and 2016–2026), mean FWCI, top journal |
+| `faculty.csv` | One row per science / engineering faculty member (767): department, designation, current/former, OpenAlex IDs, papers and citations 2016–2026, h-index (career and 2016–2026), mean FWCI, top journal |
 | `network_metrics/` | PageRank and in-degree per paper; degree, betweenness and Louvain community per faculty member; Gephi `.gexf` files; `network_summary.json` |
 | `analysis/` | `ANALYSIS.md` and its tables and charts: large-paper bias check, institute and branch comparison, IF > 5 / IF > 10, impact ratio, partners, and Task 3 (`task3_*`) |
 | `analysis/NETWORK_SCIENCE.md`, `analysis/ns_*` | Degree-distribution fits, small-world and rich-club tests, assortativity, communities vs departments, institute citation-flow network, regression and bootstrap comparison |

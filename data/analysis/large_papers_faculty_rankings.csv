@@ -1,5 +1,5 @@
 max_authors,measure,spearman_vs_all_papers,faculty_whose_value_changes
-20,papers,0.9999989186351876,1
+20,papers,0.9999988836901936,1
 20,citations,1.0,0
 20,h_index,1.0,0
 30,papers,1.0,0
@@ -11,4 +11,4 @@ max_authors,measure,spearman_vs_all_papers,faculty_whose_value_changes
 100,papers,1.0,0
 100,citations,1.0,0
 100,h_index,1.0,0
-fractional,papers,0.9778827628370871,663
+fractional,papers,0.977315904694031,656

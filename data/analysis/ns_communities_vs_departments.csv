@@ -1,3 +1,3 @@
 comparison,NMI,ARI,NMI_if_random
-Louvain communities vs department (institute + branch),0.6856400574047863,0.36141557169331273,0.22951081108499571
-Louvain communities vs institute,0.30763223564486225,0.09255112145613772,
+Louvain communities vs department (institute + branch),0.6780580822669471,0.343716900973244,0.23994675029990467
+Louvain communities vs institute,0.3017975616569743,0.08311760661700004,

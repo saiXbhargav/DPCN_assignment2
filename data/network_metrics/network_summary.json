@@ -17,22 +17,22 @@
     "dropped_citer_own_nit_outside_corpus": 2220
   },
   "authorship_network": {
-    "edges_total": 25691,
+    "edges_total": 25693,
     "edges_by_category": {
-      "nit_indian": 12038,
+      "nit_indian": 12039,
       "nit_foreign": 6028,
-      "same_nit": 3861,
+      "same_nit": 3862,
       "nit_unknown": 3709,
       "nit_nit": 55
     },
-    "nit_graph_nodes": 663,
-    "nit_graph_edges": 967,
-    "nit_graph_components": 139,
-    "largest_component": 496,
-    "louvain_communities": 162,
-    "communities_size_ge_10": 18,
-    "modularity": 0.8437,
-    "nit_authorships_not_faculty": 21360,
+    "nit_graph_nodes": 656,
+    "nit_graph_edges": 961,
+    "nit_graph_components": 136,
+    "largest_component": 492,
+    "louvain_communities": 161,
+    "communities_size_ge_10": 19,
+    "modularity": 0.8466,
+    "nit_authorships_not_faculty": 21359,
     "authorships_without_id": 1238
   },
   "indian_connections": {
