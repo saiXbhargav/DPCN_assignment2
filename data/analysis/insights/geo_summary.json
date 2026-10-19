@@ -1,0 +1,16 @@
+{
+  "partners_with_coordinates": 4051,
+  "partners_dropped_no_coordinates_or_size": 2,
+  "median_distance_km_weighted_by_joint_papers": {
+    "NIT Surathkal": 463.4871931173882,
+    "NIT Trichy": 305.70391885638185
+  },
+  "median_distance_km_weighted_by_citations": {
+    "NIT Surathkal": 1089.0866947027225,
+    "NIT Trichy": 1295.8697185966407
+  },
+  "share_joint_papers_within_300km_pct": 37.357392316647264,
+  "share_citations_within_300km_pct": 15.812387733177918,
+  "distance_elasticity_joint_papers": -0.70111164793447,
+  "distance_elasticity_citations": -0.167722035177978
+}

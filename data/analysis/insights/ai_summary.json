@@ -1,0 +1,11 @@
+{
+  "definition": "AI if OpenAlex subfield in AI_SUBFIELDS, or the title matches AI_PHRASES / AI_ACRONYMS",
+  "ai_papers": 2614,
+  "papers": 18343,
+  "ai_by_topic_only": 1026,
+  "ai_by_title_only": 1140,
+  "ai_by_both": 448,
+  "departments_with_ai_share_ge_5pct_2016_2018": 10,
+  "departments_with_ai_share_ge_5pct_2023_2025": 15,
+  "departments": 18
+}

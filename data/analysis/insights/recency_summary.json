@@ -1,0 +1,13 @@
+{
+  "price_index_definition": "share of references at most 4 years older than the citing paper",
+  "references_total": 628751,
+  "references_with_year": 596981,
+  "references_year_unknown": 31020,
+  "references_dated_after_citing_paper_excluded": 750,
+  "overall_price_index_pct": 38.01896542771043,
+  "overall_mean_reference_age": 9.146704836502334,
+  "overall_median_reference_age": 6.0,
+  "spearman_price_index_vs_fwci_all_papers": 0.16993474854708027,
+  "spearman_price_index_vs_fwci_mean_within_department": 0.1688212234366812,
+  "papers_in_impact_test": 15841
+}

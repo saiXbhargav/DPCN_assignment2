@@ -1,0 +1,10 @@
+feature,standardised_coefficient
+same_institute,1.347610645816122
+same_department,0.7784623498032837
+log_papers_sum,0.25679667664275935
+log_papers_min,0.1479591974747098
+common_neighbours,0.08856025474750888
+log_preferential_attachment,0.056582550853652706
+adamic_adar,-0.05631487411927956
+resource_allocation,0.017909055658205265
+jaccard,0.015234716824441217
