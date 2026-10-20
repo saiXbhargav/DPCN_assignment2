@@ -6,7 +6,7 @@
 
 **Interactive dashboard (live):** https://saixbhargav.github.io/DPCN_assignment2/dashboard/
 
-This file explains **what we have done and exactly how we got the data**, so anyone on the team can understand it, defend it in the report and reproduce it.
+This file explains **what we did and exactly how we got the data**, so that every number can be checked and reproduced.
 
 ---
 
@@ -96,12 +96,12 @@ In plain English: *"give me every paper where at least one author lists NIT Tric
 
 | OpenAlex type | NIT Trichy | NIT Surathkal | Kept? |
 |---|---|---|---|
-| article | 9,286 | 7,300 | ✅ (journal) |
-| review | 26 | 22 | ✅ (journal) |
-| conference-paper | 2,366 | 3,485 | ✅ (conference) |
-| book-chapter | 932 | 739 | ❌ |
-| preprint | 527 | 278 | ❌ not peer-reviewed; often duplicates a published paper |
-| erratum, retraction, editorial, paratext, dataset, … | ~250 | ~240 | ❌ not research papers |
+| article | 9,286 | 7,300 | Yes (journal) |
+| review | 26 | 22 | Yes (journal) |
+| conference-paper | 2,366 | 3,485 | Yes (conference) |
+| book-chapter | 932 | 739 | No |
+| preprint | 527 | 278 | No: not peer-reviewed; often duplicates a published paper |
+| erratum, retraction, editorial, paratext, dataset, … | ~250 | ~240 | No: not research papers |
 
 **Paging.** OpenAlex returns at most 200 results per request, so the script uses **cursor paging**. Each response includes a `next_cursor`, which we pass back to get the next 200, until there are none left. That took about 115 requests in total.
 
@@ -128,7 +128,7 @@ That file has SJR **scores** but no quartile column, so we computed quartiles th
 3. A journal can belong to several subject areas, so we take its **best** quartile, as SCImago's "best quartile" does.
 4. Match each paper to its journal by **ISSN**, using **the paper's publication year**. For 2026, which has no SJR data yet, we use the nearest year, 2025.
 
-**Caveat (mention in the report):** the mirror groups journals into **27 broad subject areas**, for example "Engineering". SCImago's official quartiles use about **300 narrower categories**, for example "Mechanical Engineering". Our quartiles are therefore a close approximation, and a few journals may be one quartile off.
+**Caveat:** the mirror groups journals into **27 broad subject areas**, for example "Engineering". SCImago's official quartiles use about **300 narrower categories**, for example "Mechanical Engineering". Our quartiles are therefore a close approximation, and a few journals may be one quartile off.
 
 ### Step 5: Got conference ranks (CORE A\*/A/B/C)
 - Downloaded the **ICORE2026** list (986 ranked conferences) from the CORE portal's CSV export: `portal.core.edu.au/conf-ranks/?source=ICORE2026&do=Export`. It's saved as `data/reference/core_conf.csv`.
@@ -660,6 +660,7 @@ citation data, where growth is limited by time and team size.
 DPCN_assignment2/
 ├── README.md                ← this file
 ├── dashboard/index.html     ← Task 5: the interactive dashboard (one file; live link at the top)
+├── report/                  ← Task 4: the statistics report (10 slides)
 ├── scripts/
 │   ├── fetch_works.py       ← Step 2: papers
 │   ├── fetch_authors.py     ← Step 3: author h-index
@@ -731,6 +732,7 @@ python analysis.py                  # data/analysis/
 python network_science.py           # data/analysis/ns_* and NETWORK_SCIENCE.md
 python fetch_insights.py            # reference years and institute coordinates (resumable)
 python insights.py                  # data/analysis/insights/
+python build_dashboard.py           # dashboard/index.html
 ```
 
 - Each download step skips anything already saved in `data/raw/`. To download fresh data, delete those files first.
@@ -739,7 +741,7 @@ python insights.py                  # data/analysis/insights/
 
 ---
 
-## Known limitations (mention these in the report)
+## Limitations
 
 1. **Faculty coverage.**
    - 134 of the 827 regular faculty have no OpenAlex link, mostly new or low-output faculty.
@@ -754,11 +756,3 @@ python insights.py                  # data/analysis/insights/
 5. **CORE covers mainly computing conferences.** Most engineering conferences at our NITs are unranked, so this column is mostly blank for conferences.
 6. **OpenAlex coverage.** A few papers may be missing or have wrong affiliations; 595 of our papers have no venue name and 68 no DOI.
 7. **Snapshot dates.** Citation counts are as of **7 October 2026**; FWCI and journal impact are as of **19 October 2026**.
-
----
-
-## Dashboard (Task 5)
-
-**Live:** https://saixbhargav.github.io/DPCN_assignment2/dashboard/ (served by GitHub Pages from `dashboard/index.html`; it can also be opened directly from a clone, with an internet connection for the chart libraries).
-
-Ten tabs: overview scoreboard, publications, AI and research trends, faculty (list, h-index, ranking), the interactive citation and co-authorship networks, network growth and link prediction, Indian connections (flow, partners, map), the fair institute comparison, and how the data was built. After any change to the data, rebuild it with `python build_dashboard.py` from `scripts/`.
