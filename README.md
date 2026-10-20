@@ -4,20 +4,11 @@
 **Period:** 2016–2026
 **Instructor:** Chittaranjan Hens
 
-The full list of assignment tasks is in [assignment.md](assignment.md). This file explains **what we have done and exactly how we got the data**, so anyone on the team can understand it, defend it in the report and reproduce it.
+**Interactive dashboard (live):** https://saixbhargav.github.io/DPCN_assignment2/dashboard/
+
+This file explains **what we have done and exactly how we got the data**, so anyone on the team can understand it, defend it in the report and reproduce it.
 
 ---
-
-## Status at a glance
-
-| Task | Status |
-|---|---|
-| 1. Data collection (`group12_data.csv`) | ✅ Done. Faculty only, science / engineering papers only. Every required column is filled. |
-| 2. Network files (`citation_network.csv`, `authorship_network.csv`, `indian_connections.csv`) | ✅ Done. All 44 automated checks pass. |
-| Analyses asked for by the team and in class (large-paper bias, institute and branch comparison, IF > 5 / IF > 10, impact ratio, collaboration) | ✅ Done: [data/analysis/ANALYSIS.md](data/analysis/ANALYSIS.md) |
-| 3. Indian connectivity analysis | ✅ Done: citation in/out-flow by year with a chart, impact ratio, top 10 citing institutes and papers, partner ranking, cross-cluster flags (NIT ↔ IIT / CSIR / IISER / DAE / ISRO / DRDO …), Jaccard topic similarity, hub authors ([ANALYSIS.md](data/analysis/ANALYSIS.md), section 5) |
-| 4. Statistics report | ⏳ Not started |
-| 5. Interactive dashboard | ⏳ Not started |
 
 ## The data in one minute
 
@@ -61,9 +52,8 @@ The `fetch_*` scripts download from the internet and save **raw** files to `data
 ## Step-by-step: what we did
 
 ### Step 0: Understood the assignment
-- Read the instructor's note and assignment slides (shared with the class, not kept in this repo; the tasks are in [assignment.md](assignment.md)).
+- Read the instructor's note and assignment slides (shared with the class, not kept in this repo).
 - Slide 5 assigns **Group 12 → "Top NITs" → NIT Trichy and NIT Surathkal**.
-- Wrote [assignment.md](assignment.md), our checklist of everything to submit.
 - Agreed as a team on the changes the professor asked for:
   - faculty only;
   - science / engineering only;
@@ -669,7 +659,7 @@ citation data, where growth is limited by time and team size.
 ```
 DPCN_assignment2/
 ├── README.md                ← this file
-├── assignment.md            ← what the assignment asks for
+├── dashboard/index.html     ← Task 5: the interactive dashboard (one file; live link at the top)
 ├── scripts/
 │   ├── fetch_works.py       ← Step 2: papers
 │   ├── fetch_authors.py     ← Step 3: author h-index
@@ -687,7 +677,9 @@ DPCN_assignment2/
 │   ├── analysis.py          ← analyses → data/analysis/
 │   ├── network_science.py   ← degree fits, null models, communities, institute network, regression
 │   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates (resumable)
-│   └── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
+│   ├── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
+│   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
+│   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
     ├── README.md            ← short data dictionary
     ├── group12_data.csv     ← MAIN SUBMISSION FILE
@@ -765,7 +757,8 @@ python insights.py                  # data/analysis/insights/
 
 ---
 
-## What to do next
+## Dashboard (Task 5)
 
-1. **Task 4:** statistics report (at most 10 slides or 5 pages), using the tables and charts in `data/analysis/`.
-2. **Task 5:** interactive dashboard with all required panels, including the citation and co-authorship network graphs.
+**Live:** https://saixbhargav.github.io/DPCN_assignment2/dashboard/ (served by GitHub Pages from `dashboard/index.html`; it can also be opened directly from a clone, with an internet connection for the chart libraries).
+
+Ten tabs: overview scoreboard, publications, AI and research trends, faculty (list, h-index, ranking), the interactive citation and co-authorship networks, network growth and link prediction, Indian connections (flow, partners, map), the fair institute comparison, and how the data was built. After any change to the data, rebuild it with `python build_dashboard.py` from `scripts/`.
