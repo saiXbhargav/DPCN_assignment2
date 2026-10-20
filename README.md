@@ -61,7 +61,7 @@ The `fetch_*` scripts download from the internet and save **raw** files to `data
 ## Step-by-step: what we did
 
 ### Step 0: Understood the assignment
-- Read the instruction note (`DPCN_Instruction_Note (1).docx`) and the slides (`DPCN Research Mapping Project_n4.pptx`).
+- Read the instructor's note and assignment slides (shared with the class, not kept in this repo; the tasks are in [assignment.md](assignment.md)).
 - Slide 5 assigns **Group 12 → "Top NITs" → NIT Trichy and NIT Surathkal**.
 - Wrote [assignment.md](assignment.md), our checklist of everything to submit.
 - Agreed as a team on the changes the professor asked for:
