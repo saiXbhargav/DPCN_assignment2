@@ -1,0 +1,15 @@
+cluster,institutes,joint_papers,mean_degree,mean_betweenness
+University / college,507,6552,8.357,0.00024
+IIT,23,1356,29.47826,0.00102
+NIT,25,819,17.32,0.00035
+Other government R&D,75,583,5.93333,7e-05
+CSIR,27,408,9.7037,7e-05
+IISER / IISc,7,324,19.57143,0.00077
+Industry,41,295,4.21951,4e-05
+DRDO,21,225,8.33333,0.00014
+ISRO,8,222,11.875,0.0001
+DAE,17,211,10.94118,0.00025
+IIIT,15,114,5.0,7e-05
+Other,25,56,3.4,2e-05
+Hospital / medical,23,41,3.82609,0.0
+ICAR,10,38,4.6,0.00013

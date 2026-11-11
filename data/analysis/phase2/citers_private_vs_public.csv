@@ -1,0 +1,16 @@
+measure,private_median,public_median,mann_whitney_p
+citations_to_us,841.0,706.5,0.2535
+their_papers_2016_2026,21724.5,21606.0,0.6537
+citations_per_1000_of_their_papers,43.0005,36.7631,0.2829
+distance_km,410.9892,1663.9385,0.0487
+personal_tie_pct,18.0772,12.1199,0.0843
+same_person_pct,9.8435,6.2546,0.1966
+alumni_pct,4.1061,2.4644,0.0843
+earlier_coauthor_pct,3.3502,1.9682,0.0129
+our_papers_per_citing_paper,1.3139,1.2904,0.596
+pct_citations_from_papers_citing_5plus_of_ours,7.9497,5.6317,0.1058
+top3_faculty_share_pct,11.4025,12.9584,0.7753
+citing_papers_in_proceedings_pct,14.7224,9.7413,0.0007
+median_citations_of_citing_papers,5.25,8.0,0.0002
+median_citations_per_year_of_citing_papers,1.7857,2.2222,0.0337
+pct_citations_2023_2026,74.0801,63.1019,0.0

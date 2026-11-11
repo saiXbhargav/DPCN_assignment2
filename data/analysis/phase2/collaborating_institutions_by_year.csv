@@ -1,0 +1,67 @@
+scope,institution,year,papers,collaborating_institutions,indian_institutions,foreign_institutions,countries,papers_with_outside_coauthor_pct,partial_year
+faculty papers,NIT Trichy,2016,550,168,93,68,29,46.91,False
+faculty papers,NIT Trichy,2017,568,148,86,58,26,38.73,False
+faculty papers,NIT Trichy,2018,774,242,127,103,29,43.28,False
+faculty papers,NIT Trichy,2019,895,280,139,125,35,44.13,False
+faculty papers,NIT Trichy,2020,990,338,157,164,44,46.67,False
+faculty papers,NIT Trichy,2021,883,334,149,158,42,50.06,False
+faculty papers,NIT Trichy,2022,967,387,178,181,50,49.95,False
+faculty papers,NIT Trichy,2023,1031,384,189,168,49,50.05,False
+faculty papers,NIT Trichy,2024,939,342,181,134,47,48.99,False
+faculty papers,NIT Trichy,2025,989,356,192,144,48,49.04,False
+faculty papers,NIT Trichy,2026,598,254,141,96,36,50.33,True
+faculty papers,NIT Surathkal,2016,527,151,85,63,29,37.57,False
+faculty papers,NIT Surathkal,2017,631,170,90,75,21,38.19,False
+faculty papers,NIT Surathkal,2018,878,185,98,78,33,35.65,False
+faculty papers,NIT Surathkal,2019,844,207,108,93,36,36.26,False
+faculty papers,NIT Surathkal,2020,967,270,143,116,32,43.54,False
+faculty papers,NIT Surathkal,2021,850,303,148,137,41,47.41,False
+faculty papers,NIT Surathkal,2022,852,304,141,143,44,46.01,False
+faculty papers,NIT Surathkal,2023,1011,334,172,143,45,44.71,False
+faculty papers,NIT Surathkal,2024,1117,324,173,135,45,43.69,False
+faculty papers,NIT Surathkal,2025,939,329,176,140,45,46.01,False
+faculty papers,NIT Surathkal,2026,590,229,135,80,33,43.39,True
+faculty papers,Both NITs,2016,1071,280,152,119,42,42.02,False
+faculty papers,Both NITs,2017,1197,288,153,126,31,38.35,False
+faculty papers,Both NITs,2018,1644,379,187,172,45,38.93,False
+faculty papers,Both NITs,2019,1736,432,204,206,47,40.21,False
+faculty papers,Both NITs,2020,1953,542,251,265,49,45.01,False
+faculty papers,Both NITs,2021,1728,551,240,272,58,48.61,False
+faculty papers,Both NITs,2022,1814,597,259,298,61,47.96,False
+faculty papers,Both NITs,2023,2040,617,287,292,59,47.35,False
+faculty papers,Both NITs,2024,2052,564,278,250,61,46.0,False
+faculty papers,Both NITs,2025,1924,580,286,266,57,47.45,False
+faculty papers,Both NITs,2026,1184,420,223,171,46,46.71,True
+all papers (incl. students),NIT Trichy,2016,630,209,115,84,32,50.16,False
+all papers (incl. students),NIT Trichy,2017,648,198,119,74,28,43.21,False
+all papers (incl. students),NIT Trichy,2018,885,294,154,125,33,47.23,False
+all papers (incl. students),NIT Trichy,2019,1050,391,180,191,44,48.0,False
+all papers (incl. students),NIT Trichy,2020,1175,477,208,247,54,51.49,False
+all papers (incl. students),NIT Trichy,2021,1122,493,212,251,58,54.81,False
+all papers (incl. students),NIT Trichy,2022,1248,535,227,272,57,53.69,False
+all papers (incl. students),NIT Trichy,2023,1210,505,236,239,59,54.05,False
+all papers (incl. students),NIT Trichy,2024,1117,460,236,194,51,53.36,False
+all papers (incl. students),NIT Trichy,2025,1166,461,241,193,51,51.54,False
+all papers (incl. students),NIT Trichy,2026,699,330,176,132,46,51.79,True
+all papers (incl. students),NIT Surathkal,2016,593,186,103,78,31,39.8,False
+all papers (incl. students),NIT Surathkal,2017,710,220,115,99,26,41.83,False
+all papers (incl. students),NIT Surathkal,2018,977,245,124,110,38,38.69,False
+all papers (incl. students),NIT Surathkal,2019,932,256,131,118,44,38.63,False
+all papers (incl. students),NIT Surathkal,2020,1061,337,171,154,39,45.99,False
+all papers (incl. students),NIT Surathkal,2021,974,439,191,228,50,51.13,False
+all papers (incl. students),NIT Surathkal,2022,986,422,198,197,53,50.51,False
+all papers (incl. students),NIT Surathkal,2023,1134,429,211,197,49,48.5,False
+all papers (incl. students),NIT Surathkal,2024,1257,396,218,156,49,46.7,False
+all papers (incl. students),NIT Surathkal,2025,1084,455,211,223,52,49.45,False
+all papers (incl. students),NIT Surathkal,2026,669,268,162,91,37,46.19,True
+all papers (incl. students),Both NITs,2016,1217,345,182,149,44,44.86,False
+all papers (incl. students),Both NITs,2017,1354,367,197,159,37,42.32,False
+all papers (incl. students),Both NITs,2018,1852,477,228,226,51,42.44,False
+all papers (incl. students),Both NITs,2019,1978,570,252,292,54,43.48,False
+all papers (incl. students),Both NITs,2020,2230,712,312,370,58,48.74,False
+all papers (incl. students),Both NITs,2021,2089,800,321,435,70,52.94,False
+all papers (incl. students),Both NITs,2022,2227,813,342,417,70,52.13,False
+all papers (incl. students),Both NITs,2023,2336,794,350,401,66,51.2,False
+all papers (incl. students),Both NITs,2024,2370,719,355,321,64,49.75,False
+all papers (incl. students),Both NITs,2025,2243,771,345,385,61,50.38,False
+all papers (incl. students),Both NITs,2026,1364,520,274,215,54,48.9,True

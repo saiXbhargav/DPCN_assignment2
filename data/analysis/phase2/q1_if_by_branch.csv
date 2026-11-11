@@ -1,0 +1,29 @@
+institution,department,journal_papers,Q1,IF_gt_5,IF_gt_10,Q1_and_IF_gt_5,Q1_and_IF_gt_10,Q1_and_IF_gt_5_pct
+NIT Surathkal,Mechanical,1424.0,477.0,513.0,77.0,336.0,75.0,23.6
+NIT Surathkal,Chemistry,747.0,323.0,360.0,40.0,238.0,38.0,31.86
+NIT Surathkal,Civil,606.0,235.0,199.0,66.0,141.0,66.0,23.27
+NIT Surathkal,Physics,402.0,193.0,179.0,18.0,127.0,18.0,31.59
+NIT Surathkal,Chemical,384.0,164.0,185.0,24.0,125.0,24.0,32.55
+NIT Surathkal,EEE,393.0,210.0,131.0,18.0,112.0,17.0,28.5
+NIT Surathkal,ECE,471.0,146.0,139.0,5.0,105.0,5.0,22.29
+NIT Surathkal,CSE,361.0,149.0,130.0,8.0,104.0,8.0,28.81
+NIT Surathkal,MME,509.0,137.0,160.0,19.0,96.0,17.0,18.86
+NIT Surathkal,Information Technology,214.0,97.0,91.0,9.0,75.0,8.0,35.05
+NIT Surathkal,Water Resources & Ocean,416.0,114.0,89.0,9.0,63.0,9.0,15.14
+NIT Surathkal,Mathematics,432.0,55.0,27.0,0.0,17.0,0.0,3.94
+NIT Surathkal,Mining,155.0,21.0,24.0,1.0,15.0,1.0,9.68
+NIT Trichy,Chemical,636.0,297.0,317.0,93.0,250.0,93.0,39.31
+NIT Trichy,Chemistry,758.0,288.0,318.0,57.0,199.0,56.0,26.25
+NIT Trichy,Mechanical,716.0,247.0,285.0,63.0,185.0,63.0,25.84
+NIT Trichy,Physics,734.0,241.0,266.0,20.0,183.0,18.0,24.93
+NIT Trichy,Civil,623.0,255.0,189.0,40.0,134.0,40.0,21.51
+NIT Trichy,Production,841.0,164.0,251.0,18.0,111.0,16.0,13.2
+NIT Trichy,MME,528.0,153.0,216.0,12.0,107.0,6.0,20.27
+NIT Trichy,EEE,490.0,212.0,128.0,31.0,93.0,25.0,18.98
+NIT Trichy,Computer Applications,408.0,113.0,126.0,5.0,90.0,5.0,22.06
+NIT Trichy,ECE,693.0,151.0,108.0,5.0,82.0,5.0,11.83
+NIT Trichy,CSE,393.0,113.0,134.0,7.0,81.0,6.0,20.61
+NIT Trichy,ICE,291.0,91.0,71.0,4.0,57.0,4.0,19.59
+NIT Trichy,Energy & Environment,96.0,55.0,56.0,19.0,44.0,19.0,45.83
+NIT Trichy,Mathematics,284.0,77.0,29.0,0.0,19.0,0.0,6.69
+NIT Trichy,Architecture,63.0,19.0,18.0,0.0,15.0,0.0,23.81

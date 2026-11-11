@@ -15,6 +15,8 @@ The files cover **only regular faculty of science / engineering / technology dep
 
 | File | What it contains |
 |---|---|
+| `all_papers.csv` | **Phase II.** One row per (NIT, paper) for every science / engineering paper with an author from that NIT, **including the 2,917 papers by students / other NIT staff** (21,327 rows, 21,260 papers). Columns: venue, quartile, IF, citations, FWCI, number of authors, `has_faculty_author`, partner-institution counts and large-team flags. Used for publication statistics; networks and faculty measures stay faculty-only |
+| `analysis/phase2/` | `PHASE2.md` and its tables and charts: statistics with and without students' papers, author-count classes, Q1 × IF, collaborating institutions per year, large-team / high-citation flags, why private institutes cite us, top 30 papers by journal IF, each faculty member's top 10 papers by IF, most-used journals and conferences, research vs collaboration scores, and the institute co-authorship network (with a Gephi `.gexf` file) |
 | `faculty.csv` | One row per science / engineering faculty member (767): department, designation, current/former, OpenAlex IDs, papers and citations 2016–2026, h-index (career and 2016–2026), mean FWCI, top journal |
 | `network_metrics/` | PageRank and in-degree per paper; degree, betweenness and Louvain community per faculty member; Gephi `.gexf` files; `network_summary.json` |
 | `analysis/` | `ANALYSIS.md` and its tables and charts: large-paper bias check, institute and branch comparison, IF > 5 / IF > 10, impact ratio, partners, and Task 3 (`task3_*`) |
@@ -33,6 +35,7 @@ The files cover **only regular faculty of science / engineering / technology dep
 | `raw/sources.jsonl` | Journal 2-year mean citedness, used as the impact factor (fetched 19 Oct 2026) |
 | `raw/partner_subfields.jsonl` | Papers per research subfield for 129 partner institutes |
 | `raw/institutions.jsonl` | Type and parent organisations of every partner institute (for the cluster flags) |
+| `raw/citer_output.jsonl` | Papers 2016–2026 of the 40 institutes that cite us most (Phase II, task 2) |
 | `raw/citers_info.jsonl` | Title, year, venue and citation count of the Indian papers that cite us |
 | `raw/faculty_pages/` | The institutes' faculty pages, current and one archived copy per year, with `manifest.csv` |
 | `reference/scimago_all.csv` | SCImago SJR scores for each journal and year, used to work out quartiles |

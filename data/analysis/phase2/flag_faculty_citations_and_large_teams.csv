@@ -1,0 +1,657 @@
+faculty_id,papers,papers_10plus_authors,max_authors,citations_2016_2026,citations_from_10plus_author_papers,share_citations_from_10plus_pct,career_citations_openalex,author,institution,department,status,flag_career_citations_1_lakh,flag_mostly_large_team,nit_share_of_career_citations_pct,flag_possible_openalex_name_merge
+S0351,180,0,9,4129,0,0.0,20427,Ramesh M R,NIT Surathkal,Mechanical,current,False,False,20.2,False
+T0512,267,9,12,7324,243,3.3,18273,S Anandan,NIT Trichy,Chemistry,current,False,False,40.1,False
+T0472,44,0,5,201,0,0.0,15552,Kunwar Singh,NIT Trichy,CSE,current,False,False,1.3,True
+T0793,156,1,10,4579,1,0.0,12011,S Suresh,NIT Trichy,Mechanical,current,False,False,38.1,False
+T0665,10,0,5,24,0,0.0,11804,Aditya Kumar,NIT Trichy,Energy & Environment,current,False,False,0.2,True
+S0092,84,2,13,1239,52,4.2,11362,Saikat Dutta,NIT Surathkal,Chemistry,current,False,False,10.9,False
+T0814,98,0,7,3132,0,0.0,9890,A Chandra Bose,NIT Trichy,Physics,current,False,False,31.7,False
+T0856,76,0,5,2111,0,0.0,9486,S Vinodh,NIT Trichy,Production,current,False,False,22.3,False
+T0511,145,9,12,4126,237,5.7,9483,R Karvembu,NIT Trichy,Chemistry,current,False,False,43.5,False
+S0097,87,1,12,2744,29,1.1,9407,Arun Mohan Isloor,NIT Surathkal,Chemistry,current,False,False,29.2,False
+S0161,48,0,8,243,0,0.0,8148,Sandeep Kumar,NIT Surathkal,ECE,former,False,False,3.0,False
+T0482,171,9,12,4194,210,5.0,7208,G Arthanareeswaran,NIT Trichy,Chemical,current,False,False,58.2,False
+T0463,23,0,4,485,0,0.0,6978,S Selvakumar,NIT Trichy,CSE,current,False,False,7.0,False
+S0100,98,1,10,4904,1,0.0,6912,Denthaje Krishna Bhat,NIT Surathkal,Chemistry,current,False,False,70.9,False
+T0491,28,1,10,713,0,0.0,6744,Muthukumar K,NIT Trichy,Chemical,current,False,False,10.6,False
+T0854,21,0,8,414,0,0.0,6547,R Narayanasamy,NIT Trichy,Production,former,False,False,6.3,False
+T0835,18,0,7,229,0,0.0,6419,A Noorul Haq,NIT Trichy,Production,former,False,False,3.6,False
+T0543,51,0,8,1705,0,0.0,6099,R Gandhimathi,NIT Trichy,Civil,current,False,False,28.0,False
+T0502,107,0,8,2304,0,0.0,5341,S Velmathi,NIT Trichy,Chemistry,current,False,False,43.1,False
+T0495,77,1,15,3298,64,1.9,5295,P Sivashanmugam,NIT Trichy,Chemical,current,False,False,62.3,False
+T0790,66,1,10,1606,29,1.8,5276,R B Anand,NIT Trichy,Mechanical,current,False,False,30.4,False
+S0164,49,1,11,439,109,24.8,5265,Sushil Kumar Pandey,NIT Surathkal,ECE,current,False,False,8.3,False
+S0349,77,0,6,1913,0,0.0,5231,Kumar G N,NIT Surathkal,Mechanical,current,False,False,36.6,False
+T0786,153,0,8,2560,0,0.0,4996,N Siva Shanmugam,NIT Trichy,Mechanical,current,False,False,51.2,False
+T0691,40,0,6,342,0,0.0,4990,K Srinivasan,NIT Trichy,ICE,current,False,False,6.9,False
+T0838,72,0,9,4805,0,0.0,4989,D Lenin Singaravelu,NIT Trichy,Production,current,False,False,96.3,False
+S0088,55,0,8,1510,0,0.0,4948,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,former,False,False,30.5,False
+S0339,85,1,11,3121,226,7.2,4413,Mrityunjay R Doddamani,NIT Surathkal,Mechanical,former,False,False,70.7,False
+T0774,54,0,5,392,0,0.0,4319,V Ravichandran,NIT Trichy,Mathematics,current,False,False,9.1,False
+S0093,87,3,15,1535,120,7.8,4318,Sib Sankar Mal,NIT Surathkal,Chemistry,current,False,False,35.5,False
+T0724,76,0,8,1320,0,0.0,4255,Siva Prasad Katakam,NIT Trichy,MME,current,False,False,31.0,False
+S0050,146,0,8,1672,0,0.0,4108,Shasidhar G Koolagudi,NIT Surathkal,CSE,current,False,False,40.7,False
+T0652,86,0,6,1358,0,0.0,4079,Sishaj P Simon,NIT Trichy,EEE,current,False,False,33.3,False
+S0251,88,0,6,728,0,0.0,4031,K Narayan Prabhu,NIT Surathkal,MME,current,False,False,18.1,False
+T0849,107,0,8,1745,0,0.0,3864,P Sathiya,NIT Trichy,Production,current,False,False,45.2,False
+S0348,130,0,7,2448,0,0.0,3817,Jeyaraj P,NIT Surathkal,Mechanical,current,False,False,64.1,False
+S0105,123,0,7,2398,0,0.0,3793,Bibhuti Bhusan Das,NIT Surathkal,Civil,current,False,False,63.2,False
+S0355,101,0,7,1833,0,0.0,3793,Satyabodh M Kulkarni,NIT Surathkal,Mechanical,current,False,False,48.3,False
+T0847,18,0,6,415,0,0.0,3730,P Asokan,NIT Trichy,Production,current,False,False,11.1,False
+T0800,35,1,11,539,18,3.3,3714,T Ramesh,NIT Trichy,Mechanical,current,False,False,14.5,False
+S0048,126,0,7,979,0,0.0,3661,Chandrasekaran K,NIT Surathkal,CSE,current,False,False,26.7,False
+T0841,32,0,6,565,0,0.0,3593,J Jerald,NIT Trichy,Production,current,False,False,15.7,False
+T0498,73,1,10,1997,0,0.0,3583,T K Radhakrishnan,NIT Trichy,Chemical,current,False,False,55.7,False
+T0602,108,0,8,2043,0,0.0,3530,P Palanisamy,NIT Trichy,ECE,current,False,False,57.9,False
+S0323,4,0,4,23,0,0.0,3502,Deepak Kumar,NIT Surathkal,Mechanical,current,False,False,0.7,False
+S0098,82,3,12,1843,38,2.1,3498,Badekai Ramachandra Bhat,NIT Surathkal,Chemistry,current,False,False,52.7,False
+S0350,104,0,8,2360,0,0.0,3481,Narendranath S,NIT Surathkal,Mechanical,current,False,False,67.8,False
+S0407,51,0,7,835,0,0.0,3438,Dwarakish G S,NIT Surathkal,Water Resources & Ocean,current,False,False,24.3,False
+T0501,43,0,8,1870,0,0.0,3433,M Matheswaran,NIT Trichy,Chemical,current,False,False,54.5,False
+T0549,94,2,13,2455,33,1.3,3384,S Saravanan,NIT Trichy,Civil,current,False,False,72.5,False
+T0658,60,0,6,1209,0,0.0,3380,C Nagamani,NIT Trichy,EEE,former,False,False,35.8,False
+T0830,57,0,9,1371,0,0.0,3355,D Sasti Kumar,NIT Trichy,Physics,current,False,False,40.9,False
+T0607,119,0,8,2073,0,0.0,3321,S Raghavan,NIT Trichy,ECE,former,False,False,62.4,False
+T0829,43,3,18,1099,156,14.2,3311,Annapureddy Venkateshwarlu,NIT Trichy,Physics,current,False,False,33.2,False
+T0668,67,1,10,1206,2,0.2,3281,M Premalatha,NIT Trichy,Energy & Environment,current,False,False,36.8,False
+T0721,43,0,8,880,0,0.0,3271,V Muthupandi,NIT Trichy,MME,former,False,False,26.9,False
+T0504,68,3,10,1416,19,1.3,3268,A Sreekanth,NIT Trichy,Chemistry,current,False,False,43.3,False
+S0252,125,2,12,2066,20,1.0,3234,Udaya Bhat K,NIT Surathkal,MME,current,False,False,63.9,False
+T0819,66,2,10,1209,28,2.3,3214,M C Santhosh Kumar,NIT Trichy,Physics,current,False,False,37.6,False
+T0519,72,0,9,1757,0,0.0,3201,Aneesh Mathew,NIT Trichy,Civil,current,False,False,54.9,False
+T0550,48,0,6,1612,0,0.0,3196,S T Ramesh,NIT Trichy,Civil,current,False,False,50.4,False
+T0503,47,3,18,1894,842,44.5,3192,L Cindrella,NIT Trichy,Chemistry,current,False,False,59.3,False
+S0083,48,0,8,1931,0,0.0,3184,Raj Mohan B,NIT Surathkal,Chemical,current,False,False,60.6,False
+T0492,44,0,8,1233,0,0.0,3156,N Anantharaman,NIT Trichy,Chemical,former,False,False,39.1,False
+T0815,117,2,11,2297,14,0.6,3129,B Karthikeyan,NIT Trichy,Physics,current,False,False,73.4,False
+T0861,55,0,6,1218,0,0.0,3020,V Senthilkumar,NIT Trichy,Production,current,False,False,40.3,False
+T0635,52,0,6,566,0,0.0,3001,K Sundareswaran,NIT Trichy,EEE,current,False,False,18.9,False
+S0392,83,0,8,1932,0,0.0,2965,Nagaraja H S,NIT Surathkal,Physics,current,False,False,65.2,False
+S0023,71,4,14,1945,106,5.4,2952,Jeny Rajan,NIT Surathkal,CSE,current,False,False,65.9,False
+T0486,51,0,6,1539,0,0.0,2932,K M Meera Sheriffa Begum,NIT Trichy,Chemical,current,False,False,52.5,False
+T0818,72,1,10,1388,20,1.4,2805,M Ashok,NIT Trichy,Physics,current,False,False,49.5,False
+S0404,31,0,6,1294,0,0.0,2796,Paresh Chandra Deka,NIT Surathkal,Water Resources & Ocean,former,False,False,46.3,False
+T0725,12,2,10,124,22,17.7,2788,T Srinivasa Rao,NIT Trichy,MME,former,False,False,4.4,False
+T0825,47,3,11,819,86,10.5,2730,S Manivannan,NIT Trichy,Physics,current,False,False,30.0,False
+T0863,19,0,6,402,0,0.0,2713,Vimal K E K,NIT Trichy,Production,current,False,False,14.8,False
+S0249,68,3,13,1380,47,3.4,2707,Anandhan Srinivasan,NIT Surathkal,MME,current,False,False,51.0,False
+S0384,69,3,11,1719,8,0.5,2648,Kartick Tarafder,NIT Surathkal,Physics,current,False,False,64.9,False
+S0095,61,0,7,1299,0,0.0,2610,Adka Nityananda Shetty,NIT Surathkal,Chemistry,current,False,False,49.8,False
+S0001,3,0,5,8,0,0.0,2610,B Ravi,NIT Surathkal,,current,False,False,0.3,False
+T0508,38,1,10,615,2,0.3,2607,Ganesh Chandra Nandi,NIT Trichy,Chemistry,current,False,False,23.6,False
+T0545,36,0,6,536,0,0.0,2584,R Senthil Kumar,NIT Trichy,Civil,current,False,False,20.7,False
+T0487,14,0,5,244,0,0.0,2526,K N Sheeba,NIT Trichy,Chemical,current,False,False,9.7,False
+T0632,77,0,6,1433,0,0.0,2516,G Saravana Ilango,NIT Trichy,EEE,current,False,False,57.0,False
+T0822,36,1,11,529,71,13.4,2498,R Justin Joseyphus,NIT Trichy,Physics,current,False,False,21.2,False
+T0843,36,0,7,580,0,0.0,2489,Kumanan Somasundaram,NIT Trichy,Production,current,False,False,23.3,False
+T0637,54,1,18,1052,36,3.4,2481,M Jaya Bharata Reddy,NIT Trichy,EEE,current,False,False,42.4,False
+S0212,36,0,7,1240,0,0.0,2476,Udaykumar R Yaragatti,NIT Surathkal,EEE,current,False,False,50.1,False
+T0689,76,0,8,1102,0,0.0,2476,G Uma,NIT Trichy,ICE,current,False,False,44.5,False
+S0099,62,0,7,1142,0,0.0,2472,Darshak R Trivedi,NIT Surathkal,Chemistry,current,False,False,46.2,False
+S0207,107,0,8,1304,0,0.0,2471,Debashisha Jena,NIT Surathkal,EEE,current,False,False,52.8,False
+S0126,18,0,4,479,0,0.0,2436,K Swaminathan,NIT Surathkal,Civil,former,False,False,19.7,False
+S0356,122,0,9,2418,0,0.0,2427,Sharnappa Joladarashi,NIT Surathkal,Mechanical,current,False,False,99.6,False
+T0578,58,0,6,1796,0,0.0,2418,U Srinivasulu Reddy,NIT Trichy,Computer Applications,current,False,False,74.3,False
+T0716,39,0,6,588,0,0.0,2412,S Natarajan,NIT Trichy,MME,former,False,False,24.4,False
+S0078,54,0,7,942,0,0.0,2298,I Regupathi,NIT Surathkal,Chemical,current,False,False,41.0,False
+S0358,61,0,9,1000,0,0.0,2291,Shrikantha S Rao,NIT Surathkal,Mechanical,current,False,False,43.6,False
+S0316,15,0,3,566,0,0.0,2282,D Chakradhar,NIT Surathkal,Mechanical,former,False,False,24.8,False
+S0073,19,2,12,561,42,7.5,2279,Vaishakh Nair,NIT Surathkal,Chemical,current,False,False,24.6,False
+T0585,15,0,5,638,0,0.0,2274,Jitendra Kumar,NIT Trichy,Computer Applications,former,False,False,28.1,False
+S0096,58,0,8,944,0,0.0,2265,Ampar Chitharanjan Hegde,NIT Surathkal,Chemistry,current,False,False,41.7,False
+S0359,68,0,9,1473,0,0.0,2257,Srikanth Bontha,NIT Surathkal,Mechanical,current,False,False,65.3,False
+T0857,3,0,6,33,0,0.0,2254,Santosh Kumar Mishra,NIT Trichy,Production,current,False,False,1.5,False
+T0493,63,1,13,2108,59,2.8,2221,N Samsudeen,NIT Trichy,Chemical,current,False,False,94.9,False
+S0387,19,0,8,289,0,0.0,2153,Govinda Rao Umesh,NIT Surathkal,Physics,former,False,False,13.4,False
+T0611,78,0,7,1400,0,0.0,2142,Varun P Gopi,NIT Trichy,ECE,current,False,False,65.4,False
+T0865,75,0,7,1071,0,0.0,2130,M Durai Selvam,NIT Trichy,Production,current,False,False,50.3,False
+T0782,25,0,6,546,0,0.0,2118,K Sankaranarayanasamy,NIT Trichy,Mechanical,former,False,False,25.8,False
+T0717,87,0,9,817,0,0.0,2111,S P Kumaresh Babu,NIT Trichy,MME,current,False,False,38.7,False
+S0347,99,0,7,1580,0,0.0,2102,Hemantha Kumar,NIT Surathkal,Mechanical,current,False,False,75.2,False
+S0346,110,0,7,1226,0,0.0,2073,Gangadharan K V,NIT Surathkal,Mechanical,current,False,False,59.1,False
+T0570,35,0,6,620,0,0.0,2070,G R Gangadharan,NIT Trichy,Computer Applications,current,False,False,30.0,False
+S0360,86,0,8,1659,0,0.0,2067,Subhaschandra Kattimani,NIT Surathkal,Mechanical,current,False,False,80.3,False
+T0803,52,0,6,1190,0,0.0,2065,V Arul Mozhi Selvan,NIT Trichy,Mechanical,current,False,False,57.6,False
+T0529,34,0,5,250,0,0.0,2044,K Baskar,NIT Trichy,Civil,current,False,False,12.2,False
+T0850,36,0,6,1572,0,0.0,2033,P Senthil,NIT Trichy,Production,current,False,False,77.3,False
+S0413,42,0,9,688,0,0.0,2031,Ramesh H,NIT Surathkal,Water Resources & Ocean,current,False,False,33.9,False
+S0232,72,0,7,1271,0,0.0,2019,Ram Mohana Reddy Guddeti,NIT Surathkal,Information Technology,current,False,False,63.0,False
+S0163,83,0,9,1895,0,0.0,2018,Shyam Lal,NIT Surathkal,ECE,current,False,False,93.9,False
+T0715,50,0,7,768,0,0.0,1960,S Muthukumaran,NIT Trichy,MME,current,False,False,39.2,False
+T0860,53,0,7,649,0,0.0,1957,V Anandakrishnan,NIT Trichy,Production,current,False,False,33.2,False
+S0046,77,0,9,1724,0,0.0,1949,Alwyn Roshan Pais,NIT Surathkal,CSE,current,False,False,88.5,False
+T0513,15,0,9,182,0,0.0,1932,Sarthak Mandal,NIT Trichy,Chemistry,current,False,False,9.4,False
+S0129,35,0,6,1594,0,0.0,1927,Arun Kumar Thalla,NIT Surathkal,Civil,current,False,False,82.7,False
+T0785,15,0,6,272,0,0.0,1908,M Udayakumar,NIT Trichy,Mechanical,former,False,False,14.3,False
+T0692,73,0,8,1044,0,0.0,1896,M Umapathy,NIT Trichy,ICE,current,False,False,55.1,False
+T0821,75,6,12,860,122,14.2,1879,N V Giridharan,NIT Trichy,Physics,current,False,False,45.8,False
+T0638,63,0,6,695,0,0.0,1848,M P Selvan,NIT Trichy,EEE,current,False,False,37.6,False
+S0366,41,0,5,602,0,0.0,1847,Chivukula Suryanarayana Murthy,NIT Surathkal,Mining,former,False,False,32.6,False
+T0499,28,0,7,585,0,0.0,1832,T Sivasankar,NIT Trichy,Chemical,current,False,False,31.9,False
+S0131,46,0,7,760,0,0.0,1822,Basavaraju Manu,NIT Surathkal,Civil,current,False,False,41.7,False
+T0489,14,0,4,179,0,0.0,1802,M Arivazhagan,NIT Trichy,Chemical,current,False,False,9.9,False
+S0135,29,0,8,481,0,0.0,1782,Mattur C Narasimhan,NIT Surathkal,Civil,current,False,False,27.0,False
+T0711,51,1,12,1184,30,2.5,1780,N Ramesh Babu,NIT Trichy,MME,current,False,False,66.5,False
+T0853,25,0,5,236,0,0.0,1777,R Jeyapaul,NIT Trichy,Production,current,False,False,13.3,False
+T0595,99,0,6,1008,0,0.0,1757,D Sriram Kumar,NIT Trichy,ECE,current,False,False,57.4,False
+T0795,77,0,8,645,0,0.0,1747,S P Sivapirakasam,NIT Trichy,Mechanical,current,False,False,36.9,False
+T0842,70,0,7,1072,0,0.0,1722,K Panneerselvam,NIT Trichy,Production,current,False,False,62.3,False
+T0515,18,1,10,135,8,5.9,1708,Sunandan Sarkar,NIT Trichy,Chemistry,current,False,False,7.9,False
+S0216,74,0,9,699,0,0.0,1683,Anand Kumar M,NIT Surathkal,Information Technology,current,False,False,41.5,False
+S0122,95,0,7,489,0,0.0,1669,Sreevalsa Kolathayar,NIT Surathkal,Civil,current,False,False,29.3,False
+T0823,71,3,10,317,4,1.3,1655,R Nagalakshmi,NIT Trichy,Physics,current,False,False,19.2,False
+T0831,56,1,10,942,24,2.5,1648,N Gopala Krishnan,NIT Trichy,Physics,current,False,False,57.2,False
+S0320,43,1,10,730,34,4.7,1645,A S S Balan,NIT Surathkal,Mechanical,current,False,False,44.4,False
+T0480,43,0,7,1438,0,0.0,1642,A Arunagiri,NIT Trichy,Chemical,current,False,False,87.6,False
+S0244,17,5,22,320,52,16.2,1641,Selvakumar Murugesan,NIT Surathkal,MME,current,False,False,19.5,False
+S0089,17,0,9,330,0,0.0,1634,Beneesh P B,NIT Surathkal,Chemistry,current,False,False,20.2,False
+T0479,41,0,8,1322,0,0.0,1608,P Kalaichelvi,NIT Trichy,Chemical,current,False,False,82.2,False
+S0101,63,1,11,696,0,0.0,1601,Udaya Kumar Dalimba,NIT Surathkal,Chemistry,current,False,False,43.5,False
+S0039,19,0,9,254,0,0.0,1588,M Venkatesan,NIT Surathkal,CSE,former,False,False,16.0,False
+S0196,77,0,6,1463,0,0.0,1564,Tukaram Moger,NIT Surathkal,EEE,current,False,False,93.5,False
+S0226,117,0,7,1202,0,0.0,1554,Sowmya Kamath S,NIT Surathkal,Information Technology,current,False,False,77.3,False
+S0049,62,0,6,1055,0,0.0,1551,P Santhi Thilagam,NIT Surathkal,CSE,current,False,False,68.0,False
+S0231,65,0,4,1347,0,0.0,1548,Jaidhar C D,NIT Surathkal,Information Technology,current,False,False,87.0,False
+S0080,25,0,9,740,0,0.0,1548,M B Saidutta,NIT Surathkal,Chemical,current,False,False,47.8,False
+T0693,77,0,7,631,0,0.0,1545,N Sivakumaran,NIT Trichy,ICE,current,False,False,40.8,False
+S0398,95,2,11,667,1,0.1,1539,Debabrata Karmakar,NIT Surathkal,Water Resources & Ocean,current,False,False,43.3,False
+S0388,44,0,8,648,0,0.0,1538,H D Shashikala,NIT Surathkal,Physics,former,False,False,42.1,False
+T0707,65,0,8,945,0,0.0,1530,B Ravisankar,NIT Trichy,MME,current,False,False,61.8,False
+T0761,45,0,4,742,0,0.0,1523,R Ponalagusamy,NIT Trichy,Mathematics,former,False,False,48.7,False
+S0352,49,0,5,436,0,0.0,1519,Ravikiran Kadoli,NIT Surathkal,Mechanical,current,False,False,28.7,False
+S0084,34,0,4,860,0,0.0,1518,Vidya Shetty K,NIT Surathkal,Chemical,current,False,False,56.7,False
+S0082,55,2,10,798,18,2.3,1507,Prasanna Belur D,NIT Surathkal,Chemical,current,False,False,53.0,False
+S0066,48,2,10,1168,80,6.8,1507,Chinta Sankar Rao,NIT Surathkal,Chemical,current,False,False,77.5,False
+S0103,54,0,8,792,0,0.0,1484,A U Ravi Shankar,NIT Surathkal,Civil,former,False,False,53.4,False
+T0837,46,0,6,610,0,0.0,1467,C Sathiya Narayanan,NIT Trichy,Production,current,False,False,41.6,False
+T0660,21,0,6,309,0,0.0,1466,N Ammmasai Goundan,NIT Trichy,EEE,former,False,False,21.1,False
+S0206,65,0,7,916,0,0.0,1465,Dattatraya Narayan Gaonkar,NIT Surathkal,EEE,current,False,False,62.5,False
+T0645,30,0,5,485,0,0.0,1456,S Arul Daniel,NIT Trichy,EEE,current,False,False,33.3,False
+S0132,39,0,4,1130,0,0.0,1453,Devatha C P,NIT Surathkal,Civil,current,False,False,77.8,False
+S0321,72,0,8,865,0,0.0,1452,Arumuga Perumal D,NIT Surathkal,Mechanical,current,False,False,59.6,False
+T0643,58,0,6,615,0,0.0,1435,P Srinivasa Rao Nayak,NIT Trichy,EEE,current,False,False,42.9,False
+S0345,59,0,8,776,0,0.0,1431,G C Mohan Kumar,NIT Surathkal,Mechanical,current,False,False,54.2,False
+S0047,74,0,6,904,0,0.0,1416,Annappa,NIT Surathkal,CSE,current,False,False,63.8,False
+S0081,35,0,6,1023,0,0.0,1385,P E Jagadeeshbabu,NIT Surathkal,Chemical,current,False,False,73.9,False
+S0405,83,0,5,1035,0,0.0,1384,Amba Shetty,NIT Surathkal,Water Resources & Ocean,current,False,False,74.8,False
+S0315,45,0,6,1097,0,0.0,1363,Ajay Kumar Yadav,NIT Surathkal,Mechanical,current,False,False,80.5,False
+S0390,49,2,11,669,43,6.4,1342,M Nagarajan Satyanarayan,NIT Surathkal,Physics,current,False,False,49.9,False
+T0783,61,0,6,982,0,0.0,1338,K R Balasubramanian,NIT Trichy,Mechanical,current,False,False,73.4,False
+S0395,14,0,5,262,0,0.0,1335,Arkal Vittal Hegde,NIT Surathkal,Water Resources & Ocean,former,False,False,19.6,False
+T0517,10,2,15,6,0,0.0,1325,Velmurugan Gunasekaran,NIT Trichy,Chemistry,current,False,False,0.5,False
+T0514,7,1,11,241,13,5.4,1325,Somenath Garai,NIT Trichy,Chemistry,former,False,False,18.2,False
+S0340,71,0,5,1023,0,0.0,1317,N Gnanasekaran,NIT Surathkal,Mechanical,current,False,False,77.7,False
+T0419,10,0,7,203,0,0.0,1308,Mini Shaji Thomas,NIT Trichy,,former,False,False,15.5,False
+T0497,9,0,5,104,0,0.0,1307,S Saravanan,NIT Trichy,Chemical,current,False,False,8.0,False
+T0580,45,1,11,963,2,0.2,1297,S Sangeetha,NIT Trichy,Computer Applications,current,False,False,74.2,False
+S0377,44,0,8,571,0,0.0,1283,Harsha Vardhan,NIT Surathkal,Mining,current,False,False,44.5,False
+T0599,75,0,6,802,0,0.0,1274,Karthikeyan S S,NIT Trichy,ECE,current,False,False,63.0,False
+S0156,71,0,8,1094,0,0.0,1274,Prabu K,NIT Surathkal,ECE,current,False,False,85.9,False
+T0516,28,1,12,320,0,0.0,1272,V M Biju,NIT Trichy,Chemistry,current,False,False,25.2,False
+T0592,57,0,6,434,0,0.0,1260,B Naresh Kumar Reddy,NIT Trichy,ECE,current,False,False,34.4,False
+T0852,19,0,9,336,0,0.0,1243,Prakash Kumar,NIT Trichy,Production,current,False,False,27.0,False
+S0338,67,0,7,899,0,0.0,1232,Mervin Arunaraj Herbert,NIT Surathkal,Mechanical,current,False,False,73.0,False
+T0530,78,1,12,679,21,3.1,1228,K Muthukkumaran,NIT Trichy,Civil,current,False,False,55.3,False
+S0391,74,3,12,895,20,2.2,1224,N K Udayashankar,NIT Surathkal,Physics,current,False,False,73.1,False
+S0136,14,0,4,151,0,0.0,1174,S Shrihari,NIT Surathkal,Civil,current,False,False,12.9,False
+S0137,24,0,3,503,0,0.0,1174,Sitaram Nayak,NIT Surathkal,Civil,current,False,False,42.8,False
+S0382,54,0,8,1084,0,0.0,1163,Ajith Kulangara Madam,NIT Surathkal,Physics,current,False,False,93.2,False
+T0848,36,0,6,238,0,0.0,1159,P Parthiban,NIT Trichy,Production,current,False,False,20.5,False
+T0567,61,0,5,946,0,0.0,1139,B Janet,NIT Trichy,Computer Applications,current,False,False,83.1,False
+T0618,65,0,7,899,0,0.0,1135,P Muthuchidambaranathan,NIT Trichy,ECE,current,False,False,79.2,False
+T0449,5,0,3,6,0,0.0,1125,Aghila G,NIT Trichy,CSE,current,False,False,0.5,False
+S0151,77,0,7,659,0,0.0,1125,Krishnamoorthy K,NIT Surathkal,ECE,current,False,False,58.6,False
+S0215,43,0,6,720,0,0.0,1123,Yellasiri Suresh,NIT Surathkal,EEE,current,False,False,64.1,False
+S0410,40,0,6,716,0,0.0,1106,Mahesha A,NIT Surathkal,Water Resources & Ocean,current,False,False,64.7,False
+S0318,10,0,6,101,0,0.0,1100,Parthasarathy P,NIT Surathkal,Mechanical,current,False,False,9.2,False
+T0840,9,0,6,374,0,0.0,1083,Dinesh S,NIT Trichy,Production,former,False,False,34.5,False
+S0138,28,0,6,860,0,0.0,1075,Subhash C Yaragal,NIT Surathkal,Civil,current,False,False,80.0,False
+T0641,44,0,6,279,0,0.0,1074,N Kumaresan,NIT Trichy,EEE,current,False,False,26.0,False
+S0223,76,0,6,892,0,0.0,1074,Nagamma Patil,NIT Surathkal,Information Technology,current,False,False,83.1,False
+T0576,50,0,5,262,0,0.0,1071,S R Balasundaram,NIT Trichy,Computer Applications,current,False,False,24.5,False
+T0714,90,0,8,818,0,0.0,1071,S Kumaran,NIT Trichy,MME,current,False,False,76.4,False
+S0152,48,0,9,466,0,0.0,1066,Mandeep Singh,NIT Surathkal,ECE,current,False,False,43.7,False
+S0245,61,2,10,954,9,0.9,1063,Shashi Bhushan Arya,NIT Surathkal,MME,current,False,False,89.7,False
+S0077,43,3,12,652,35,5.4,1063,Hari Prasad Dasari,NIT Surathkal,Chemical,current,False,False,61.3,False
+T0778,1,0,4,1,0,0.0,1062,Dudul Das,NIT Trichy,Mechanical,current,False,False,0.1,False
+S0068,15,0,9,524,0,0.0,1060,Jagannathan T K,NIT Surathkal,Chemical,current,False,False,49.4,False
+T0460,3,0,3,5,0,0.0,1056,R Bala Krishnan,NIT Trichy,CSE,current,False,False,0.5,False
+S0306,243,0,6,465,0,0.0,1037,Santhosh George,NIT Surathkal,Mathematics,current,False,False,44.8,False
+S0091,10,0,6,89,0,0.0,1037,Lakshmi Vellanki,NIT Surathkal,Chemistry,current,False,False,8.6,False
+T0773,22,0,5,378,0,0.0,1036,V Lakshmana Gomathi Nayagam,NIT Trichy,Mathematics,current,False,False,36.5,False
+S0102,11,0,7,449,0,0.0,1023,A Gowri,NIT Surathkal,Civil,former,False,False,43.9,False
+T0471,96,0,6,854,0,0.0,1022,A Santhana Vijayan,NIT Trichy,CSE,current,False,False,83.6,False
+T0490,21,0,5,310,0,0.0,1010,M Perumalsamy,NIT Trichy,Chemical,current,False,False,30.7,False
+S0300,23,0,4,327,0,0.0,987,A Kandasamy,NIT Surathkal,Mathematics,current,False,False,33.1,False
+S0362,35,0,7,547,0,0.0,987,T P Ashok Babu,NIT Surathkal,Mechanical,former,False,False,55.4,False
+S0327,28,0,8,512,0,0.0,983,Navin Karanth P,NIT Surathkal,Mechanical,current,False,False,52.1,False
+S0243,52,0,8,714,0,0.0,982,Saumen Mandal,NIT Surathkal,MME,current,False,False,72.7,False
+T0794,25,1,10,327,1,0.3,981,S Venkatachalapathy,NIT Trichy,Mechanical,current,False,False,33.3,False
+T0798,44,0,8,707,0,0.0,967,Sreejith Mohan,NIT Trichy,Mechanical,current,False,False,73.1,False
+S0389,33,0,5,410,0,0.0,965,Kasturi V Bangera,NIT Surathkal,Physics,former,False,False,42.5,False
+S0090,37,0,8,393,0,0.0,963,Debashree Chakraborty,NIT Surathkal,Chemistry,current,False,False,40.8,False
+S0363,33,0,7,782,0,0.0,953,Vijay Desai,NIT Surathkal,Mechanical,former,False,False,82.1,False
+T0557,34,0,5,379,0,0.0,952,Samson Mathew M,NIT Trichy,Civil,current,False,False,39.8,False
+S0188,77,0,6,777,0,0.0,949,Kalpana R,NIT Surathkal,EEE,current,False,False,81.9,False
+S0074,15,0,6,336,0,0.0,946,G Srinikethan,NIT Surathkal,Chemical,former,False,False,35.5,False
+T0575,56,0,4,514,0,0.0,945,S Nickolas,NIT Trichy,Computer Applications,current,False,False,54.4,False
+T0649,54,0,9,646,0,0.0,922,S Senthil Kumar,NIT Trichy,EEE,current,False,False,70.1,False
+T0748,9,0,4,62,0,0.0,919,Atul Kumar Verma,NIT Trichy,Mathematics,former,False,False,6.7,False
+S0230,45,0,5,307,0,0.0,916,Ananthanarayana V S,NIT Surathkal,Information Technology,current,False,False,33.5,False
+S0190,28,0,7,360,0,0.0,910,Md Waseem Ahmad,NIT Surathkal,EEE,current,False,False,39.6,False
+S0193,60,0,6,232,0,0.0,904,Prajof P,NIT Surathkal,EEE,current,False,False,25.7,False
+S0367,43,0,7,691,0,0.0,902,Mandela Govinda Raj,NIT Surathkal,Mining,current,False,False,76.6,False
+T0572,55,0,5,800,0,0.0,888,P J A Alphonse,NIT Trichy,Computer Applications,current,False,False,90.1,False
+S0322,34,0,9,453,0,0.0,888,Arun Kumar Shettigar,NIT Surathkal,Mechanical,current,False,False,51.0,False
+S0361,42,0,5,588,0,0.0,885,Veershetty Gumtapure,NIT Surathkal,Mechanical,current,False,False,66.4,False
+T0524,52,0,4,804,0,0.0,884,Deendayal Rathod,NIT Trichy,Civil,current,False,False,91.0,False
+S0210,32,0,6,532,0,0.0,880,Panduranga Vittal K,NIT Surathkal,EEE,current,False,False,60.5,False
+S0343,42,1,10,760,18,2.4,875,Anish S,NIT Surathkal,Mechanical,current,False,False,86.9,False
+S0094,9,0,6,61,0,0.0,874,Vijayendra S Shetti,NIT Surathkal,Chemistry,current,False,False,7.0,False
+S0070,9,2,15,199,43,21.6,868,Maneesh Kumar Poddar,NIT Surathkal,Chemical,current,False,False,22.9,False
+S0022,88,0,6,381,0,0.0,867,Biswajit R Bhowmik,NIT Surathkal,CSE,current,False,False,43.9,False
+T0630,40,0,6,432,0,0.0,862,Ankur Singh Rana,NIT Trichy,EEE,current,False,False,50.1,False
+S0076,13,0,4,309,0,0.0,848,Hari Mahalingam,NIT Surathkal,Chemical,current,False,False,36.4,False
+T0664,13,0,8,118,0,0.0,839,Vivek Mohan,NIT Trichy,EEE,former,False,False,14.1,False
+T0820,19,0,7,177,0,0.0,837,N Baskaran,NIT Trichy,Physics,current,False,False,21.1,False
+T0615,80,0,6,552,0,0.0,836,G Lakshmi Narayanan,NIT Trichy,ECE,current,False,False,66.0,False
+T0606,59,0,7,538,0,0.0,833,R Pandeeswari,NIT Trichy,ECE,current,False,False,64.6,False
+S0368,49,0,8,541,0,0.0,824,Mangalpady Aruna,NIT Surathkal,Mining,current,False,False,65.7,False
+T0548,31,0,4,464,0,0.0,819,S Marisamynathan,NIT Trichy,Civil,current,False,False,56.7,False
+S0342,28,0,7,382,0,0.0,814,Prasad Krishna,NIT Surathkal,Mechanical,current,False,False,46.9,False
+T0695,23,0,6,164,0,0.0,811,R Periyasamy,NIT Trichy,ICE,current,False,False,20.2,False
+S0330,33,0,6,370,0,0.0,799,Ranjeet Kumar Sahu,NIT Surathkal,Mechanical,current,False,False,46.3,False
+T0593,26,0,6,222,0,0.0,798,B Venkataramani,NIT Trichy,ECE,former,False,False,27.8,False
+T0474,78,0,7,739,0,0.0,797,M Brindha,NIT Trichy,CSE,current,False,False,92.7,False
+S0364,8,0,5,202,0,0.0,797,Vijaykumar H,NIT Surathkal,Mechanical,former,False,False,25.3,False
+S0409,12,0,3,182,0,0.0,782,Lakshman Nandagiri,NIT Surathkal,Water Resources & Ocean,current,False,False,23.3,False
+T0775,29,0,4,444,0,0.0,781,V Shanthi,NIT Trichy,Mathematics,current,False,False,56.9,False
+S0417,35,0,7,192,0,0.0,780,Subba Rao,NIT Surathkal,Water Resources & Ocean,former,False,False,24.6,False
+S0079,33,1,10,578,1,0.2,775,Keyur Raval,NIT Surathkal,Chemical,current,False,False,74.6,False
+T0577,28,0,6,212,0,0.0,772,Selvakumar K,NIT Trichy,Computer Applications,current,False,False,27.5,False
+S0357,47,0,6,594,0,0.0,771,Shivananda Nayaka H,NIT Surathkal,Mechanical,current,False,False,77.0,False
+T0539,24,0,4,264,0,0.0,770,Nisha Radhakrishnan,NIT Trichy,Civil,current,False,False,34.3,False
+S0329,31,0,5,561,0,0.0,768,Poornesh Kumar Koorata,NIT Surathkal,Mechanical,current,False,False,73.0,False
+S0118,43,0,5,685,0,0.0,764,Rajasekaran C,NIT Surathkal,Civil,current,False,False,89.7,False
+T0727,38,1,11,604,35,5.8,763,S Jerome,NIT Trichy,MME,current,False,False,79.2,False
+S0354,57,0,5,607,0,0.0,761,Sathyabhama A,NIT Surathkal,Mechanical,current,False,False,79.8,False
+T0855,19,0,5,409,0,0.0,753,S Prasanna Venkatesan,NIT Trichy,Production,current,False,False,54.3,False
+T0584,46,0,3,310,0,0.0,748,Gopalan N P,NIT Trichy,Computer Applications,former,False,False,41.4,False
+S0237,23,0,8,279,0,0.0,742,B Rajasekaran,NIT Surathkal,MME,current,False,False,37.6,False
+T0636,35,0,8,315,0,0.0,739,Karthik Thirumala,NIT Trichy,EEE,current,False,False,42.6,False
+T0694,50,0,9,310,0,0.0,734,P A Karthick,NIT Trichy,ICE,current,False,False,42.2,False
+T0770,36,0,7,434,0,0.0,733,K Murugesan,NIT Trichy,Mathematics,current,False,False,59.2,False
+S0146,59,0,8,614,0,0.0,731,A Venkata Narasimhadhan,NIT Surathkal,ECE,current,False,False,84.0,False
+S0334,36,0,6,624,0,0.0,731,Vasudeva Madav,NIT Surathkal,Mechanical,current,False,False,85.4,False
+S0370,16,0,4,156,0,0.0,728,Anup Kumar Tripathi,NIT Surathkal,Mining,current,False,False,21.4,False
+S0240,54,5,13,631,44,7.0,727,Mohammad Rizwanur Rahman,NIT Surathkal,MME,current,False,False,86.8,False
+T0776,44,0,5,344,0,0.0,727,Veerappan,NIT Trichy,Mechanical,current,False,False,47.3,False
+S0406,33,0,4,511,0,0.0,726,Dodamani B M,NIT Surathkal,Water Resources & Ocean,current,False,False,70.4,False
+T0473,55,0,5,173,0,0.0,719,B Nithya,NIT Trichy,CSE,current,False,False,24.1,False
+S0225,34,0,8,166,0,0.0,710,Shrutilipi Bhattacharjee,NIT Surathkal,Information Technology,current,False,False,23.4,False
+T0669,22,0,8,607,0,0.0,705,Ruben Sudhakar D,NIT Trichy,Energy & Environment,current,False,False,86.1,False
+S0085,4,0,3,37,0,0.0,705,Ruben Sudhakar,NIT Surathkal,Chemical,former,False,False,5.2,False
+T0647,53,0,6,408,0,0.0,701,S Moorthi,NIT Trichy,EEE,current,False,False,58.2,False
+T0651,28,0,5,159,0,0.0,695,Shelas Sathyan,NIT Trichy,EEE,current,False,False,22.9,False
+S0145,31,0,6,270,0,0.0,692,Sunil B Malegole,NIT Surathkal,Civil,current,False,False,39.0,False
+T0625,67,0,9,708,0,0.0,691,S Deivalakshmi,NIT Trichy,ECE,current,False,False,102.5,False
+T0597,34,0,7,634,0,0.0,689,G Thavasi Raja,NIT Trichy,ECE,current,False,False,92.0,False
+S0141,40,0,4,142,0,0.0,684,R Shivashankar,NIT Surathkal,Civil,former,False,False,20.8,False
+S0250,11,0,6,67,0,0.0,682,Jagannath Nayak,NIT Surathkal,MME,current,False,False,9.8,False
+T0532,3,0,3,27,0,0.0,682,Laiju A R,NIT Trichy,Civil,current,False,False,4.0,False
+T0525,30,0,5,385,0,0.0,679,G Swaminathan,NIT Trichy,Civil,current,False,False,56.7,False
+S0014,108,0,5,464,0,0.0,671,Beerappar Chandavarkar,NIT Surathkal,CSE,current,False,False,69.2,False
+T0596,23,0,4,63,0,0.0,670,E S Gopi,NIT Trichy,ECE,current,False,False,9.4,False
+T0639,44,0,6,441,0,0.0,666,M Venkata Kirthiga,NIT Trichy,EEE,current,False,False,66.2,False
+S0032,51,0,7,241,0,0.0,665,Sourav Kanti Addya,NIT Surathkal,CSE,current,False,False,36.2,False
+T0663,26,0,5,282,0,0.0,660,V Sankara Narayanan,NIT Trichy,EEE,current,False,False,42.7,False
+S0333,22,0,6,372,0,0.0,658,Sudhakar C Jambagi,NIT Surathkal,Mechanical,current,False,False,56.5,False
+S0149,33,0,8,173,0,0.0,647,Deepu Vijayasenan,NIT Surathkal,ECE,current,False,False,26.7,False
+T0634,30,4,12,358,128,35.8,647,Josephine R L,NIT Trichy,EEE,current,False,False,55.3,False
+S0218,60,0,7,466,0,0.0,644,Biju R Mohan,NIT Surathkal,Information Technology,current,False,False,72.4,False
+S0298,73,0,5,545,0,0.0,644,Jidesh P,NIT Surathkal,Mathematics,current,False,False,84.6,False
+T0789,16,0,7,351,0,0.0,644,R Prakash,NIT Trichy,Mechanical,current,False,False,54.5,False
+T0655,7,0,4,22,0,0.0,641,V Vignesh Kumar,NIT Trichy,EEE,current,False,False,3.4,False
+S0155,90,0,7,587,0,0.0,633,Pathipati Srihari,NIT Surathkal,ECE,current,False,False,92.7,False
+S0328,18,0,9,216,0,0.0,631,P S Suvin,NIT Surathkal,Mechanical,current,False,False,34.2,False
+T0705,18,0,7,321,0,0.0,626,A Muthuchamy,NIT Trichy,MME,current,False,False,51.3,False
+S0153,35,0,5,147,0,0.0,621,Muralidhar Kulkarni,NIT Surathkal,ECE,former,False,False,23.7,False
+T0447,33,0,5,345,0,0.0,621,R Leela Velusamy,NIT Trichy,CSE,current,False,False,55.6,False
+S0247,24,0,5,324,0,0.0,618,K Rajendra Udupa,NIT Surathkal,MME,former,False,False,52.4,False
+S0139,21,0,8,310,0,0.0,615,Suresha S N,NIT Surathkal,Civil,current,False,False,50.4,False
+S0147,44,0,5,523,0,0.0,610,Aparna P,NIT Surathkal,ECE,current,False,False,85.7,False
+S0205,34,0,6,412,0,0.0,602,B Venkatesa Perumal,NIT Surathkal,EEE,current,False,False,68.4,False
+T0688,33,0,6,249,0,0.0,601,D Ezhilarasi,NIT Trichy,ICE,current,False,False,41.4,False
+S0133,28,0,6,366,0,0.0,589,Gangadhar Mahesh,NIT Surathkal,Civil,current,False,False,62.1,False
+T0506,5,0,8,21,0,0.0,585,Baby Viswambharan,NIT Trichy,Chemistry,current,False,False,3.6,False
+S0344,29,1,10,430,99,23.0,583,Arun M,NIT Surathkal,Mechanical,current,False,False,73.8,False
+T0809,29,1,10,617,2,0.3,581,V Mariappan,NIT Trichy,Mechanical,current,False,False,106.2,False
+T0574,43,0,9,477,0,0.0,576,S Domnic,NIT Trichy,Computer Applications,current,False,False,82.8,False
+S0110,52,0,6,304,0,0.0,576,Babloo Chaudhary,NIT Surathkal,Civil,current,False,False,52.8,False
+T0581,30,0,7,246,0,0.0,575,B Ramadoss,NIT Trichy,Computer Applications,former,False,False,42.8,False
+T0781,4,0,4,42,0,0.0,569,J Sarangan,NIT Trichy,Mechanical,former,False,False,7.4,False
+S0134,40,0,6,154,0,0.0,568,Katta Venkataramana,NIT Surathkal,Civil,current,False,False,27.1,False
+T0468,23,0,4,116,0,0.0,566,Rajeswari Sridhar,NIT Trichy,CSE,current,False,False,20.5,False
+T0772,7,0,2,11,0,0.0,565,V Kumaran,NIT Trichy,Mathematics,current,False,False,1.9,False
+T0451,53,0,5,216,0,0.0,563,C Mala,NIT Trichy,CSE,current,False,False,38.4,False
+S0353,37,0,6,375,0,0.0,562,S M Murigendrappa,NIT Surathkal,Mechanical,current,False,False,66.7,False
+S0183,34,0,7,302,0,0.0,550,A Karthikeyan,NIT Surathkal,EEE,current,False,False,54.9,False
+T0648,28,0,5,277,0,0.0,549,S Sudha,NIT Trichy,EEE,current,False,False,50.5,False
+S0385,34,1,11,623,2,0.3,547,Partha Pratim Das,NIT Surathkal,Physics,current,False,False,113.9,False
+S0158,31,0,9,237,0,0.0,545,Raghavendra B S,NIT Surathkal,ECE,current,False,False,43.5,False
+S0140,8,0,4,99,0,0.0,536,Varghese George,NIT Surathkal,Civil,current,False,False,18.5,False
+T0520,21,1,10,231,0,0.0,530,C Natarajan,NIT Trichy,Civil,former,False,False,43.6,False
+S0168,32,0,5,143,0,0.0,526,M Shankaranarayana Bhat,NIT Surathkal,ECE,current,False,False,27.2,False
+S0198,36,0,9,360,0,0.0,525,Yashwant Kashyap,NIT Surathkal,EEE,current,False,False,68.6,False
+T0712,5,0,7,28,0,0.0,524,Nimu Chand Reger,NIT Trichy,MME,current,False,False,5.3,False
+T0527,28,0,5,556,0,0.0,524,J Karthikeyan,NIT Trichy,Civil,former,False,False,106.1,False
+S0220,40,0,6,217,0,0.0,523,Geetha V,NIT Surathkal,Information Technology,current,False,False,41.5,False
+T0690,61,0,5,345,0,0.0,522,K Dhanalakshmi,NIT Trichy,ICE,current,False,False,66.1,False
+T0441,1,0,3,3,0,0.0,521,Saurabh Kumar,NIT Trichy,Architecture,current,False,False,0.6,False
+T0488,15,1,10,117,0,0.0,510,Kartikeya Shukla,NIT Trichy,Chemical,current,False,False,22.9,False
+S0236,13,0,6,89,0,0.0,509,A O Surendranathan,NIT Surathkal,MME,former,False,False,17.5,False
+S0071,6,2,12,59,54,91.5,508,Mohan Lal Meena,NIT Surathkal,Chemical,current,False,True,11.6,False
+T0784,16,0,4,248,0,0.0,508,Kaushik P,NIT Trichy,Mechanical,former,False,False,48.8,False
+T0604,44,0,5,445,0,0.0,502,R K Jeyachitra,NIT Trichy,ECE,current,False,False,88.6,False
+T0791,9,0,8,34,0,0.0,499,Raghu Ram Karthik Desu,NIT Trichy,Mechanical,current,False,False,6.8,False
+T0704,20,0,7,84,0,0.0,498,Prince Gideon Kubendran Amos,NIT Trichy,MME,current,False,False,16.9,False
+S0331,52,0,6,330,0,0.0,498,Ranjith M,NIT Surathkal,Mechanical,current,False,False,66.3,False
+T0467,12,0,5,45,0,0.0,494,Usha Kiruthika S,NIT Trichy,CSE,current,False,False,9.1,False
+S0335,11,0,3,148,0,0.0,494,Guruprasad K R,NIT Surathkal,Mechanical,former,False,False,30.0,False
+S0027,63,2,11,290,6,2.1,492,Mohit P Tahiliani,NIT Surathkal,CSE,current,False,False,58.9,False
+T0864,8,0,6,259,0,0.0,488,Vineet Kumar Yadav,NIT Trichy,Production,current,False,False,53.1,False
+T0867,17,0,5,158,0,0.0,483,Satheeshkumar V,NIT Trichy,Production,current,False,False,32.7,False
+T0462,46,0,4,333,0,0.0,480,S Mary Saira Bhanu,NIT Trichy,CSE,current,False,False,69.4,False
+S0386,13,0,4,286,0,0.0,478,V Sreenath,NIT Surathkal,Physics,current,False,False,59.8,False
+T0804,8,0,7,124,0,0.0,474,Vedharaj Sivasankaralingam,NIT Trichy,Mechanical,current,False,False,26.2,False
+T0598,12,0,5,33,0,0.0,468,Hemant Kumar,NIT Trichy,ECE,current,False,False,7.1,False
+T0507,8,0,6,157,0,0.0,466,G Venkatesa Prabhu,NIT Trichy,Chemistry,former,False,False,33.7,False
+S0042,7,0,7,109,0,0.0,463,Vani M,NIT Surathkal,CSE,current,False,False,23.5,False
+S0174,44,0,8,204,0,0.0,460,Sumam David S,NIT Surathkal,ECE,current,False,False,44.3,False
+T0496,5,0,4,23,0,0.0,459,Rupam Sinha,NIT Trichy,Chemical,current,False,False,5.0,False
+S0238,8,0,6,73,0,0.0,459,Kumkum Banerjee,NIT Surathkal,MME,current,False,False,15.9,False
+T0698,19,0,6,246,0,0.0,445,Shiraz Sohail,NIT Trichy,ICE,current,False,False,55.3,False
+S0213,37,0,6,320,0,0.0,436,Vinatha U,NIT Surathkal,EEE,current,False,False,73.4,False
+S0217,52,0,5,339,0,0.0,433,Bhawana Rudra,NIT Surathkal,Information Technology,current,False,False,78.3,False
+S0399,66,0,7,492,0,0.0,432,Pruthviraj U,NIT Surathkal,Water Resources & Ocean,current,False,False,113.9,False
+T0709,4,0,8,28,0,0.0,429,Illa Mani Pujitha,NIT Trichy,MME,current,False,False,6.5,False
+T0642,43,0,6,288,0,0.0,428,P Raja,NIT Trichy,EEE,current,False,False,67.3,False
+T0594,50,1,11,372,2,0.5,419,B Malarkodi,NIT Trichy,ECE,current,False,False,88.8,False
+T0806,25,0,7,390,0,0.0,418,Harish Kruthiventi Ss,NIT Trichy,Mechanical,current,False,False,93.3,False
+S0319,12,0,8,401,0,0.0,412,Somasekhara Rao Todeti,NIT Surathkal,Mechanical,current,False,False,97.3,False
+S0119,37,0,6,176,0,0.0,410,Raviraj H M,NIT Surathkal,Civil,current,False,False,42.9,False
+T0505,2,1,11,0,0,,408,Arivazhagan C,NIT Trichy,Chemistry,current,False,False,0.0,False
+T0824,26,0,4,201,0,0.0,406,R Sankaranarayanan,NIT Trichy,Physics,current,False,False,49.5,False
+T0653,26,0,7,228,0,0.0,405,Suman M,NIT Trichy,EEE,current,False,False,56.3,False
+T0450,32,0,5,93,0,0.0,405,B Shameedha Begum,NIT Trichy,CSE,current,False,False,23.0,False
+S0369,5,0,6,30,0,0.0,400,Ram Prasad Choudhary,NIT Surathkal,Mining,former,False,False,7.5,False
+T0600,52,0,7,372,0,0.0,399,M Bhaskar,NIT Trichy,ECE,current,False,False,93.2,False
+S0242,22,0,6,248,0,0.0,397,Ravishankar K S,NIT Surathkal,MME,current,False,False,62.5,False
+T0586,6,0,4,51,0,0.0,396,Saroja S,NIT Trichy,Computer Applications,current,False,False,12.9,False
+S0176,32,0,7,404,0,0.0,395,U Shripathi Acharya,NIT Surathkal,ECE,current,False,False,102.3,False
+T0476,30,0,6,271,0,0.0,392,S Jaya Nirmala,NIT Trichy,CSE,current,False,False,69.1,False
+T0670,12,0,5,177,0,0.0,391,Damodhar Siva Krishna Rao K,NIT Trichy,Energy & Environment,current,False,False,45.3,False
+T0845,18,0,6,146,0,0.0,390,Matruprasad Rout,NIT Trichy,Production,current,False,False,37.4,False
+S0224,15,0,4,6,0,0.0,383,Purushothama B R,NIT Surathkal,Information Technology,current,False,False,1.6,False
+T0603,18,0,6,39,0,0.0,382,Parthasarathy R,NIT Trichy,ECE,current,False,False,10.2,False
+T0766,10,0,3,127,0,0.0,374,R Tamil Selvi,NIT Trichy,Mathematics,current,False,False,34.0,False
+S0175,24,0,6,186,0,0.0,374,T Laxminidhi,NIT Surathkal,ECE,current,False,False,49.7,False
+T0457,24,0,4,182,0,0.0,373,Kamalika Bhattacharjee,NIT Trichy,CSE,current,False,False,48.8,False
+T0483,19,1,10,139,0,0.0,371,J Sarat Chandra Babu,NIT Trichy,Chemical,current,False,False,37.5,False
+S0371,25,0,8,149,0,0.0,370,Bijay Mihir Kunar,NIT Surathkal,Mining,current,False,False,40.3,False
+S0064,3,0,5,32,0,0.0,370,D V R Murthy,NIT Surathkal,Chemical,former,False,False,8.6,False
+S0408,17,0,6,176,0,0.0,369,Kiran G Shirlal,NIT Surathkal,Water Resources & Ocean,current,False,False,47.7,False
+T0708,13,0,8,196,0,0.0,368,D Nagarajan,NIT Trichy,MME,current,False,False,53.3,False
+T0571,35,0,4,163,0,0.0,367,Michael Arock,NIT Trichy,Computer Applications,current,False,False,44.4,False
+T0752,32,0,6,170,0,0.0,362,Jitraj Saha,NIT Trichy,Mathematics,current,False,False,47.0,False
+S0393,12,0,9,73,0,0.0,359,Shajahan Thamara Kunnathu,NIT Surathkal,Physics,current,False,False,20.3,False
+S0302,35,0,4,192,0,0.0,358,Madhusudhan R,NIT Surathkal,Mathematics,current,False,False,53.6,False
+S0332,15,0,7,258,0,0.0,358,Saurabh Chandraker,NIT Surathkal,Mechanical,current,False,False,72.1,False
+T0750,4,0,3,3,0,0.0,358,Gautam Singh,NIT Trichy,Mathematics,current,False,False,0.8,False
+T0553,44,0,5,458,0,0.0,357,V Sunitha,NIT Trichy,Civil,current,False,False,128.3,False
+T0771,14,0,7,87,0,0.0,351,P Saikrishnan,NIT Trichy,Mathematics,current,False,False,24.8,False
+T0858,14,0,4,178,0,0.0,351,T Jagadesh,NIT Trichy,Production,current,False,False,50.7,False
+S0378,28,0,6,181,0,0.0,350,Karra Ram Chandar,NIT Surathkal,Mining,current,False,False,51.7,False
+T0659,10,0,6,52,0,0.0,347,Manoranjan Sahoo,NIT Trichy,EEE,former,False,False,15.0,False
+S0241,30,0,6,280,0,0.0,346,Preetham Kumar G V,NIT Surathkal,MME,current,False,False,80.9,False
+S0211,34,0,5,124,0,0.0,344,Shubhanga K N,NIT Surathkal,EEE,current,False,False,36.0,False
+T0555,16,0,6,186,0,0.0,344,Jayabalan P,NIT Trichy,Civil,former,False,False,54.1,False
+S0154,15,0,6,14,0,0.0,341,Nikhil K S,NIT Surathkal,ECE,current,False,False,4.1,False
+S0192,45,0,6,342,0,0.0,339,P Parthiban,NIT Surathkal,EEE,current,False,False,100.9,False
+T0464,14,0,5,224,0,0.0,339,Sai Krishna Mothku,NIT Trichy,CSE,current,False,False,66.1,False
+S0130,71,0,5,198,0,0.0,328,B R Jayalekshmi,NIT Surathkal,Civil,current,False,False,60.4,False
+S0185,11,0,6,63,0,0.0,328,B Dastagiri Reddy,NIT Surathkal,EEE,current,False,False,19.2,False
+S0194,21,0,5,162,0,0.0,327,Ravi Raushan,NIT Surathkal,EEE,current,False,False,49.5,False
+T0458,4,0,3,28,0,0.0,325,Karthick S,NIT Trichy,CSE,current,False,False,8.6,False
+S0186,49,0,5,170,0,0.0,322,Dharavath Kishan,NIT Surathkal,EEE,current,False,False,52.8,False
+S0282,22,0,9,86,0,0.0,321,Chandhini G,NIT Surathkal,Mathematics,current,False,False,26.8,False
+T0509,11,2,12,68,15,22.1,321,Jothi Lakshmi Nallasivam,NIT Trichy,Chemistry,current,False,False,21.2,False
+S0113,12,0,5,36,0,0.0,312,Lohitkumar Nainegali,NIT Surathkal,Civil,current,False,False,11.5,False
+T0805,13,0,7,31,0,0.0,309,Ashok Kumar Nallathambi,NIT Trichy,Mechanical,current,False,False,10.0,False
+T0808,19,0,5,187,0,0.0,309,Nanda Naik Korra,NIT Trichy,Mechanical,current,False,False,60.5,False
+S0341,7,0,4,53,0,0.0,306,P Mohanan,NIT Surathkal,Mechanical,former,False,False,17.3,False
+T0605,23,0,5,401,0,0.0,305,R Malmathanraj,NIT Trichy,ECE,current,False,False,131.5,False
+S0107,12,0,6,200,0,0.0,304,Vinoth S,NIT Surathkal,Civil,current,False,False,65.8,False
+S0312,18,0,5,22,0,0.0,301,Suresh Manjanathhegde,NIT Surathkal,Mathematics,former,False,False,7.3,False
+T0644,3,0,4,0,0,,297,Rakesh Kumar Panda,NIT Trichy,EEE,current,False,False,0.0,False
+S0383,14,0,6,166,0,0.0,297,Deepak Vaid,NIT Surathkal,Physics,former,False,False,55.9,False
+S0109,11,0,6,111,0,0.0,295,Anupama Surenjan,NIT Surathkal,Civil,current,False,False,37.6,False
+S0115,61,0,5,249,0,0.0,294,Palanisamy T,NIT Surathkal,Civil,current,False,False,84.7,False
+T0844,10,0,5,171,0,0.0,292,Mallikarjuna,NIT Trichy,Production,current,False,False,58.6,False
+S0208,31,0,5,155,0,0.0,289,Gururaj S Punekar,NIT Surathkal,EEE,current,False,False,53.6,False
+T0646,14,0,6,12,0,0.0,289,S Kayalvizhi,NIT Trichy,EEE,current,False,False,4.2,False
+S0191,37,0,4,227,0,0.0,288,Nagendrappa H,NIT Surathkal,EEE,current,False,False,78.8,False
+S0170,27,0,4,180,0,0.0,283,Ashvini Chaturvedi,NIT Surathkal,ECE,current,False,False,63.6,False
+T0485,6,0,7,21,0,0.0,281,K Sankar,NIT Trichy,Chemical,current,False,False,7.5,False
+T0535,28,0,4,245,0,0.0,280,Moses Santhakumar,NIT Trichy,Civil,former,False,False,87.5,False
+T0703,20,0,6,149,0,0.0,279,Rama Kalyan Ayyagari,NIT Trichy,ICE,current,False,False,53.4,False
+T0531,31,0,4,229,0,0.0,278,Kamal Krishna Bera,NIT Trichy,Civil,current,False,False,82.4,False
+S0024,20,0,5,96,0,0.0,275,Mahendra Pratap Singh,NIT Surathkal,CSE,current,False,False,34.9,False
+T0846,7,0,6,72,0,0.0,273,N S Balaji,NIT Trichy,Production,former,False,False,26.4,False
+S0197,5,0,4,38,0,0.0,270,Vignesh Kumar V,NIT Surathkal,EEE,current,False,False,14.1,False
+T0851,1,0,2,0,0,,270,Pintu Kumar,NIT Trichy,Production,current,False,False,0.0,False
+S0108,19,0,3,74,0,0.0,268,A S Balu,NIT Surathkal,Civil,current,False,False,27.6,False
+T0589,12,0,3,67,0,0.0,267,Venkataswamy Reddy,NIT Trichy,Computer Applications,former,False,False,25.1,False
+S0400,25,0,5,192,0,0.0,266,Shwetha H R,NIT Surathkal,Water Resources & Ocean,current,False,False,72.2,False
+S0160,35,0,6,195,0,0.0,264,Rekha S,NIT Surathkal,ECE,current,False,False,73.9,False
+T0459,2,0,4,11,0,0.0,263,Madhukrishna Priyadarsini,NIT Trichy,CSE,former,False,False,4.2,False
+T0650,18,0,6,47,0,0.0,259,Sateesh Kumar Kuncham,NIT Trichy,EEE,current,False,False,18.1,False
+T0461,40,0,5,270,0,0.0,257,R Mohan,NIT Trichy,CSE,current,False,False,105.1,False
+T0425,17,0,4,133,0,0.0,253,K Thirumaran,NIT Trichy,Architecture,current,False,False,52.6,False
+T0455,29,0,4,361,0,0.0,252,E Sivasankar,NIT Trichy,CSE,current,False,False,143.3,False
+S0021,50,0,7,191,0,0.0,251,Basavaraj Talawar,NIT Surathkal,CSE,current,False,False,76.1,False
+T0756,4,0,2,0,0,,250,N Prakash,NIT Trichy,Mathematics,current,False,False,0.0,False
+T0718,18,0,6,153,0,0.0,248,S Raman Sankaranarayanan,NIT Trichy,MME,current,False,False,61.7,False
+S0202,3,0,7,1,0,0.0,242,L Padmavathi,NIT Surathkal,EEE,former,False,False,0.4,False
+T0466,7,0,4,26,0,0.0,241,Sitara K,NIT Trichy,CSE,current,False,False,10.8,False
+T0610,12,0,6,12,0,0.0,239,Sudharsan P,NIT Trichy,ECE,current,False,False,5.0,False
+T0477,69,0,5,377,0,0.0,237,Rama Subramanian N,NIT Trichy,CSE,current,False,False,159.1,False
+T0626,31,0,3,192,0,0.0,235,V Sudha,NIT Trichy,ECE,current,False,False,81.7,False
+S0305,34,0,5,150,0,0.0,234,Pushparaj Shetty D,NIT Surathkal,Mathematics,current,False,False,64.1,False
+T0787,8,0,7,59,0,0.0,233,Nivish George,NIT Trichy,Mechanical,former,False,False,25.3,False
+T0816,43,0,7,969,0,0.0,230,J Hemalatha,NIT Trichy,Physics,current,False,False,421.3,False
+S0221,11,0,5,6,0,0.0,226,Janani T,NIT Surathkal,Information Technology,current,False,False,2.7,False
+T0622,23,0,4,86,0,0.0,226,N Gunavathi,NIT Trichy,ECE,current,False,False,38.1,False
+S0030,16,0,5,187,0,0.0,225,Saumya Hegde,NIT Surathkal,CSE,current,False,False,83.1,False
+T0687,19,0,6,172,0,0.0,224,C Geetha,NIT Trichy,ICE,current,False,False,76.8,False
+S0159,24,0,5,109,0,0.0,221,Rathnamala Rao,NIT Surathkal,ECE,current,False,False,49.3,False
+T0629,33,0,6,210,0,0.0,220,Aneesa Farhan M A,NIT Trichy,EEE,current,False,False,95.5,False
+T0810,3,0,7,55,0,0.0,214,M Shahul Hameed,NIT Trichy,Mechanical,current,False,False,25.7,False
+S0114,17,0,4,36,0,0.0,213,Mithun Mohan,NIT Surathkal,Civil,current,False,False,16.9,False
+T0470,1,0,2,0,0,,206,Priyanka Panigrahi,NIT Trichy,CSE,current,False,False,0.0,False
+S0381,15,0,5,95,0,0.0,206,Vedala Rama Sastry,NIT Surathkal,Mining,former,False,False,46.1,False
+S0336,5,0,6,36,0,0.0,206,H Suresh Hebbar,NIT Surathkal,Mechanical,former,False,False,17.5,False
+S0325,14,0,6,15,0,0.0,204,Mervin Joe Thomas,NIT Surathkal,Mechanical,current,False,False,7.4,False
+S0222,18,0,5,129,0,0.0,204,Kiran M,NIT Surathkal,Information Technology,current,False,False,63.2,False
+S0401,38,0,5,212,0,0.0,202,Subrahmanya K,NIT Surathkal,Water Resources & Ocean,current,False,False,105.0,False
+S0365,1,0,5,7,0,0.0,196,Y Suresh Kumar,NIT Surathkal,Mechanical,former,False,False,3.6,False
+T0590,18,0,8,82,0,0.0,195,Vinay Raj,NIT Trichy,Computer Applications,current,False,False,42.1,False
+T0833,9,0,8,20,0,0.0,195,Takhellambam Sonamani Singh,NIT Trichy,Physics,current,False,False,10.3,False
+S0116,26,0,7,73,0,0.0,188,Pavan G S,NIT Surathkal,Civil,current,False,False,38.8,False
+T0801,7,0,5,154,0,0.0,186,T Suthakar,NIT Trichy,Mechanical,former,False,False,82.8,False
+T0764,7,0,3,36,0,0.0,186,T N Janakiraman,NIT Trichy,Mathematics,former,False,False,19.4,False
+S0214,3,0,4,36,0,0.0,184,Sheron Figarado,NIT Surathkal,EEE,former,False,False,19.6,False
+T0621,30,0,6,156,0,0.0,183,B Rebekka,NIT Trichy,ECE,current,False,False,85.2,False
+T0569,1,0,2,0,0,,183,Aswani Devi Aguru,NIT Trichy,Computer Applications,current,False,False,0.0,False
+T0430,12,0,4,163,0,0.0,181,T Srinivas,NIT Trichy,Architecture,former,False,False,90.1,False
+T0859,18,0,4,339,0,0.0,181,T Selvaraj,NIT Trichy,Production,former,False,False,187.3,False
+S0127,5,0,6,176,0,0.0,181,K N Lokesh,NIT Surathkal,Civil,former,False,False,97.2,False
+T0869,13,0,6,173,0,0.0,180,Justus Panicker C T,NIT Trichy,Production,former,False,False,96.1,False
+S0065,10,0,3,60,0,0.0,180,B Ashraf Ali,NIT Surathkal,Chemical,current,False,False,33.3,False
+S0148,5,0,4,5,0,0.0,179,Bini A A,NIT Surathkal,ECE,current,False,False,2.8,False
+T0702,9,0,8,74,0,0.0,179,V Sridevi,NIT Trichy,ICE,current,False,False,41.3,False
+S0219,28,0,5,130,0,0.0,169,Dinesh Naik,NIT Surathkal,Information Technology,current,False,False,76.9,False
+T0534,2,0,6,1,0,0.0,167,Lekshmi Mohan V,NIT Trichy,Civil,current,False,False,0.6,False
+S0324,10,0,6,7,0,0.0,164,Khyati Verma,NIT Surathkal,Mechanical,current,False,False,4.3,False
+S0411,31,0,6,199,0,0.0,164,Manu,NIT Surathkal,Water Resources & Ocean,current,False,False,121.3,False
+T0686,19,0,4,118,0,0.0,164,B Vasuki,NIT Trichy,ICE,current,False,False,72.0,False
+T0777,1,0,2,2,0,0.0,163,Bishweshwar Babu,NIT Trichy,Mechanical,current,False,False,1.2,False
+S0326,8,0,5,54,0,0.0,157,Mruthyunjaya Swamy K B,NIT Surathkal,Mechanical,current,False,False,34.4,False
+S0414,11,0,3,62,0,0.0,153,Varija K,NIT Surathkal,Water Resources & Ocean,current,False,False,40.5,False
+T0510,2,0,4,0,0,,151,Projesh Kumar Roy,NIT Trichy,Chemistry,current,False,False,0.0,False
+S0117,36,0,7,109,0,0.0,149,Prashanth M H,NIT Surathkal,Civil,current,False,False,73.2,False
+T0536,12,0,5,24,0,0.0,146,Makendran C,NIT Trichy,Civil,current,False,False,16.4,False
+S0031,17,0,4,75,0,0.0,144,Shridhar Sanshi,NIT Surathkal,CSE,current,False,False,52.1,False
+S0179,5,0,5,22,0,0.0,143,U Sripathi,NIT Surathkal,ECE,former,False,False,15.4,False
+S0246,16,0,9,115,0,0.0,143,Sumanth Govindarajan,NIT Surathkal,MME,current,False,False,80.4,False
+T0544,19,0,4,95,0,0.0,143,R Manjula,NIT Trichy,Civil,current,False,False,66.4,False
+T0579,8,0,5,40,0,0.0,139,Vishnu Priya R,NIT Trichy,Computer Applications,current,False,False,28.8,False
+T0528,8,0,4,31,0,0.0,137,Jeevan Joseph,NIT Trichy,Civil,current,False,False,22.6,False
+S0125,12,0,4,10,0,0.0,134,K S Babu Narayan,NIT Surathkal,Civil,former,False,False,7.5,False
+T0631,4,0,4,10,0,0.0,133,Dipanshu Naware,NIT Trichy,EEE,current,False,False,7.5,False
+S0209,42,0,7,121,0,0.0,132,Manjunatha Sharma K,NIT Surathkal,EEE,current,False,False,91.7,False
+T0696,7,0,4,5,0,0.0,131,Rahul Kumar Sharma,NIT Trichy,ICE,current,False,False,3.8,False
+S0375,24,0,6,121,0,0.0,128,Sandi Kumar Reddy,NIT Surathkal,Mining,current,False,False,94.5,False
+T0500,13,0,3,51,0,0.0,127,Virivinti Nagajyothi,NIT Trichy,Chemical,current,False,False,40.2,False
+S0287,22,0,6,104,0,0.0,127,Kedarnath Senapathi,NIT Surathkal,Mathematics,current,False,False,81.9,False
+T0654,7,0,4,63,0,0.0,127,Suryanarayana Gangolu,NIT Trichy,EEE,current,False,False,49.6,False
+T0583,11,0,4,9,0,0.0,126,Bopche Ghanshyam Sitkura,NIT Trichy,Computer Applications,current,False,False,7.1,False
+T0556,6,0,4,60,0,0.0,126,Krishnan P A,NIT Trichy,Civil,former,False,False,47.6,False
+T0747,13,0,3,42,0,0.0,125,Abhijit Das,NIT Trichy,Mathematics,current,False,False,33.6,False
+S0172,18,0,5,79,0,0.0,123,Neelawar Shekar Vittal Shet,NIT Surathkal,ECE,current,False,False,64.2,False
+S0402,32,0,4,142,0,0.0,122,Vadivuchezhian Kaliveeran,NIT Surathkal,Water Resources & Ocean,current,False,False,116.4,False
+T0427,12,0,4,107,0,0.0,122,P Gopalakrishnan,NIT Trichy,Architecture,current,False,False,87.7,False
+T0666,12,0,7,28,0,0.0,122,Jaganathan Vm,NIT Trichy,Energy & Environment,current,False,False,23.0,False
+T0624,10,0,6,90,0,0.0,121,R Thilagavathy,NIT Trichy,ECE,current,False,False,74.4,False
+T0662,16,0,6,80,0,0.0,118,Pinkymol Kp,NIT Trichy,EEE,current,False,False,67.8,False
+S0123,20,0,3,28,0,0.0,118,Sridhar G,NIT Surathkal,Civil,current,False,False,23.7,False
+T0623,11,0,5,42,0,0.0,117,R K Kavitha,NIT Trichy,ECE,current,False,False,35.9,False
+S0254,18,0,6,98,0,0.0,109,Subray Ramachandra Hegde,NIT Surathkal,MME,current,False,False,89.9,False
+S0374,5,0,8,4,0,0.0,108,Amrites Senapati,NIT Surathkal,Mining,current,False,False,3.7,False
+S0304,33,0,6,73,0,0.0,107,P Sam Johnson,NIT Surathkal,Mathematics,current,False,False,68.2,False
+T0661,3,0,6,12,0,0.0,107,Naveenyalla,NIT Trichy,EEE,former,False,False,11.2,False
+S0184,19,0,6,69,0,0.0,107,Arun Dominic,NIT Surathkal,EEE,current,False,False,64.5,False
+S0111,10,0,5,15,0,0.0,106,J Vijaya Vengadesh Kumar,NIT Surathkal,Civil,current,False,False,14.2,False
+T0723,1,0,8,23,0,0.0,105,Puppala Laxman Mani Kanta,NIT Trichy,MME,current,False,False,21.9,False
+S0203,6,0,3,20,0,0.0,103,H Girisha Navada,NIT Surathkal,EEE,current,False,False,19.4,False
+S0069,1,0,7,3,0,0.0,102,M Rajasekaran,NIT Surathkal,Chemical,current,False,False,2.9,False
+T0862,9,0,9,85,0,0.0,101,Vasu M,NIT Trichy,Production,current,False,False,84.2,False
+T0547,26,0,5,106,0,0.0,100,S Jayalekshmi,NIT Trichy,Civil,current,False,False,106.0,False
+S0286,9,0,4,27,0,0.0,98,Jothi Ramalingam,NIT Surathkal,Mathematics,current,False,False,27.6,False
+T0633,6,0,4,4,0,0.0,97,Jose Thankachan,NIT Trichy,EEE,current,False,False,4.1,False
+T0872,1,0,3,0,0,,96,Rajesh R,NIT Trichy,Production,former,False,False,0.0,False
+T0828,3,0,3,42,0,0.0,93,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,current,False,False,45.2,False
+T0568,1,0,2,0,0,,92,Ashwinth Janarthanan,NIT Trichy,Computer Applications,current,False,False,0.0,False
+T0609,14,0,5,13,0,0.0,90,Srinivasulu Jogi,NIT Trichy,ECE,current,False,False,14.4,False
+T0628,29,0,4,135,0,0.0,90,S Mageshwari,NIT Trichy,EEE,current,False,False,150.0,False
+T0521,3,0,4,8,0,0.0,89,Chandaluri Vinaykumar,NIT Trichy,Civil,current,False,False,9.0,False
+T0551,2,0,6,0,0,,88,Santhosh L,NIT Trichy,Civil,current,False,False,0.0,False
+S0162,1,0,7,4,0,0.0,85,Shikha Baghel,NIT Surathkal,ECE,former,False,False,4.7,False
+S0120,3,0,5,14,0,0.0,85,Saranya P,NIT Surathkal,Civil,current,False,False,16.5,False
+T0614,20,0,5,29,0,0.0,84,Bukke Chandrababu Naik,NIT Trichy,ECE,current,False,False,34.5,False
+T0423,14,0,3,36,0,0.0,84,G Subbaiyan,NIT Trichy,Architecture,current,False,False,42.9,False
+T0582,16,0,4,37,0,0.0,84,Balaji Banothu,NIT Trichy,Computer Applications,current,False,False,44.0,False
+T0587,3,0,7,84,0,0.0,84,Sindhia Lingaswamy,NIT Trichy,Computer Applications,current,False,False,100.0,False
+S0025,2,0,3,0,0,,83,Manjanna B,NIT Surathkal,CSE,current,False,False,0.0,False
+S0293,1,0,2,0,0,,82,Vidyadhar Upadhya,NIT Surathkal,Mathematics,current,False,False,0.0,False
+S0307,9,0,4,18,0,0.0,81,Shyam S Kamath,NIT Surathkal,Mathematics,current,False,False,22.2,False
+S0292,13,0,3,36,0,0.0,79,Srinivasa Rao Kola,NIT Surathkal,Mathematics,current,False,False,45.6,False
+T0612,11,1,16,12,2,16.7,78,Avik Hati,NIT Trichy,ECE,current,False,False,15.4,False
+S0403,10,0,4,58,0,0.0,78,Nagaraj M K,NIT Surathkal,Water Resources & Ocean,former,False,False,74.4,False
+T0755,2,0,3,2,0,0.0,78,M Sivanesan,NIT Trichy,Mathematics,former,False,False,2.6,False
+T0422,12,0,3,58,0,0.0,73,D Kannamma,NIT Trichy,Architecture,current,False,False,79.5,False
+T0523,11,0,4,12,0,0.0,72,Darshana O,NIT Trichy,Civil,current,False,False,16.7,False
+T0456,4,0,3,11,0,0.0,70,K Viswanathan Iyer,NIT Trichy,CSE,former,False,False,15.7,False
+T0573,40,0,4,499,0,0.0,67,R Eswari,NIT Trichy,Computer Applications,current,False,False,744.8,False
+S0294,6,0,4,27,0,0.0,67,Vishwanath K P,NIT Surathkal,Mathematics,current,False,False,40.3,False
+T0454,1,0,3,1,0,0.0,65,Chandramani Chaudhary,NIT Trichy,CSE,former,False,False,1.5,False
+T0540,5,0,5,37,0,0.0,65,Prabha Mohandoss,NIT Trichy,Civil,current,False,False,56.9,False
+T0706,2,0,8,35,0,0.0,64,Anand S,NIT Trichy,MME,current,False,False,54.7,False
+T0538,5,0,3,22,0,0.0,64,Mashudha Sulthana U,NIT Trichy,Civil,current,False,False,34.4,False
+S0128,2,0,4,62,0,0.0,63,K S Babunarayana,NIT Surathkal,Civil,former,False,False,98.4,False
+T0554,3,0,3,6,0,0.0,63,Vanama Raghava Kumar,NIT Trichy,Civil,current,False,False,9.5,False
+T0546,8,0,5,13,0,0.0,61,Raghavan Ramalingam,NIT Trichy,Civil,current,False,False,21.3,False
+T0617,3,0,3,19,0,0.0,61,Murali Krishna Rajendran,NIT Trichy,ECE,current,False,False,31.1,False
+T0726,1,0,5,1,0,0.0,60,Vinothkumar Govindaraj,NIT Trichy,MME,current,False,False,1.7,False
+T0749,7,0,4,14,0,0.0,59,Balasubramani N,NIT Trichy,Mathematics,current,False,False,23.7,False
+S0157,10,0,6,47,0,0.0,59,Prashantha Kumar H,NIT Surathkal,ECE,current,False,False,79.7,False
+S0317,1,0,5,6,0,0.0,59,Abhilash Singh,NIT Surathkal,Mechanical,current,False,False,10.2,False
+T0588,2,0,3,38,0,0.0,58,Vadivel A,NIT Trichy,Computer Applications,former,False,False,65.5,False
+T0432,4,0,2,23,0,0.0,58,Keerti Manisha,NIT Trichy,Architecture,current,False,False,39.7,False
+T0420,6,0,3,6,0,0.0,58,A Meenatchi Sundaram,NIT Trichy,Architecture,current,False,False,10.3,False
+S0308,15,0,4,21,0,0.0,57,V Murugan,NIT Surathkal,Mathematics,current,False,False,36.8,False
+T0720,13,0,8,118,0,0.0,56,V Karthik,NIT Trichy,MME,current,False,False,210.7,False
+T0871,7,0,6,48,0,0.0,55,Murugabalaji V,NIT Trichy,Production,former,False,False,87.3,False
+T0453,3,0,4,1,0,0.0,53,Chandra Priya J,NIT Trichy,CSE,current,False,False,1.9,False
+T0765,13,0,6,34,0,0.0,53,Vamsinadh Thota,NIT Trichy,Mathematics,current,False,False,64.2,False
+T0601,8,0,2,13,0,0.0,50,Maheswaran P,NIT Trichy,ECE,current,False,False,26.0,False
+T0445,1,0,2,5,0,0.0,49,Ramprasad V,NIT Trichy,Architecture,former,False,False,10.2,False
+S0195,11,0,3,20,0,0.0,49,Shashidhara Mecha Kotian,NIT Surathkal,EEE,current,False,False,40.8,False
+T0484,7,0,6,6,0,0.0,47,Jyoti Sahu,NIT Trichy,Chemical,current,False,False,12.8,False
+S0415,1,0,3,3,0,0.0,45,S Ganapathi Mayya,NIT Surathkal,Water Resources & Ocean,former,False,False,6.7,False
+T0713,1,0,6,0,0,,44,P Anbarasi,NIT Trichy,MME,current,False,False,0.0,False
+S0173,15,0,4,26,0,0.0,44,Ramesh Kini M,NIT Surathkal,ECE,current,False,False,59.1,False
+T0552,1,0,2,1,0,0.0,41,Sevugan Rajkannu J,NIT Trichy,Civil,current,False,False,2.4,False
+T0807,3,0,4,40,0,0.0,40,K Pannir Selvam,NIT Trichy,Mechanical,current,False,False,100.0,False
+T0751,7,0,3,12,0,0.0,38,I Jeyaraman,NIT Trichy,Mathematics,current,False,False,31.6,False
+S0296,2,0,3,9,0,0.0,38,I Jeyaraman,NIT Surathkal,Mathematics,former,False,False,23.7,False
+S0412,28,0,4,131,0,0.0,35,Nasar T,NIT Surathkal,Water Resources & Ocean,current,False,False,374.3,False
+S0204,1,0,2,0,0,,34,K Rajagopala,NIT Surathkal,EEE,current,False,False,0.0,False
+S0239,3,0,3,3,0,0.0,33,Lipak Kumar Sahoo,NIT Surathkal,MME,current,False,False,9.1,False
+T0434,25,0,5,29,0,0.0,29,Amalan Sigmund Kaushik,NIT Trichy,Architecture,current,False,False,100.0,False
+S0178,2,0,3,26,0,0.0,28,B Nagavel,NIT Surathkal,ECE,current,False,False,92.9,False
+S0373,11,0,8,9,0,0.0,28,Akhil Avchar,NIT Surathkal,Mining,current,False,False,32.1,False
+T0613,8,0,6,1,0,0.0,28,Bibin Francis,NIT Trichy,ECE,current,False,False,3.6,False
+S0301,11,0,4,16,0,0.0,27,B R Shankar,NIT Surathkal,Mathematics,current,False,False,59.3,False
+T0494,6,0,8,3,0,0.0,27,Nandlal Pingua,NIT Trichy,Chemical,current,False,False,11.1,False
+S0313,3,0,3,7,0,0.0,27,Satyanarayana Engu,NIT Surathkal,Mathematics,former,False,False,25.9,False
+S0280,7,0,3,17,0,0.0,27,A Senthil Thilak,NIT Surathkal,Mathematics,current,False,False,63.0,False
+S0283,8,0,4,12,0,0.0,26,Falguni Roy,NIT Surathkal,Mathematics,current,False,False,46.2,False
+T0797,1,0,2,8,0,0.0,26,Saurav Kumar Dutta,NIT Trichy,Mechanical,current,False,False,30.8,False
+S0303,2,0,3,5,0,0.0,24,Murulidhar N N,NIT Surathkal,Mathematics,current,False,False,20.8,False
+S0187,4,0,3,4,0,0.0,22,Jora M Gonda,NIT Surathkal,EEE,current,False,False,18.2,False
+T0469,2,0,4,1,0,0.0,21,Jakkepalli Pavan Kumar,NIT Trichy,CSE,current,False,False,4.8,False
+T0757,1,0,1,11,0,0.0,20,N Shivaranjani,NIT Trichy,Mathematics,current,False,False,55.0,False
+S0150,5,0,5,12,0,0.0,20,Kalpana G Bhat,NIT Surathkal,ECE,current,False,False,60.0,False
+T0526,15,0,6,18,0,0.0,17,Greegar George,NIT Trichy,Civil,current,False,False,105.9,False
+T0697,13,0,5,18,0,0.0,16,S Narayanan,NIT Trichy,ICE,current,False,False,112.5,False
+T0874,1,0,5,15,0,0.0,15,Simson D,NIT Trichy,Production,former,False,False,100.0,False
+T0700,2,0,4,0,0,,11,Ram Shankar Rajadurai,NIT Trichy,ICE,current,False,False,0.0,False
+T0437,1,0,2,0,0,,11,K Bhagyasri,NIT Trichy,Architecture,current,False,False,0.0,False
+T0657,2,0,2,10,0,0.0,10,Ashokkumar,NIT Trichy,EEE,former,False,False,100.0,False
+T0428,1,0,2,1,0,0.0,9,S Monika,NIT Trichy,Architecture,current,False,False,11.1,False
+T0763,4,0,3,5,0,0.0,8,Somya,NIT Trichy,Mathematics,current,False,False,62.5,False
+S0199,5,0,3,5,0,0.0,8,I Raghavendra Rao,NIT Surathkal,EEE,current,False,False,62.5,False
+T0608,2,0,4,0,0,,8,Sovanjyoti Giri,NIT Trichy,ECE,current,False,False,0.0,False
+T0562,4,0,3,4,0,0.0,4,Anjuna,NIT Trichy,Civil,former,False,False,100.0,False
+T0452,3,0,5,3,0,0.0,3,C Oswald,NIT Trichy,CSE,current,False,False,100.0,False
+S0121,9,0,4,44,0,0.0,2,Sreekumar M,NIT Surathkal,Civil,current,False,False,2200.0,False
+T0620,1,0,2,1,0,0.0,1,R R Manikandan,NIT Trichy,ECE,current,False,False,100.0,False
+T0826,6,0,3,8,0,0.0,0,Somnath Mukhopadhyay,NIT Trichy,Physics,current,False,False,inf,False
+S0284,1,0,3,0,0,,0,Gayathri P,NIT Surathkal,Mathematics,current,False,False,,False
+T0537,3,0,8,39,0,0.0,0,Manthiram Karthik R,NIT Trichy,Civil,current,False,False,inf,False
+S0171,4,0,6,17,0,0.0,0,John D Souza,NIT Surathkal,ECE,former,False,False,inf,False
+T0619,2,0,6,0,0,,0,Padala Surya Teja Naga Srinivas,NIT Trichy,ECE,current,False,False,,False
+T0566,2,0,4,12,0,0.0,0,R Jayasankar,NIT Trichy,Civil,former,False,False,inf,False
+S0106,4,0,4,8,0,0.0,0,D Venkat Reddy,NIT Surathkal,Civil,former,False,False,inf,False
+T0836,1,0,6,0,0,,0,Alwin Varghese,NIT Trichy,Production,current,False,False,,False
+S0290,1,0,3,0,0,,0,Pushpajit Khaire,NIT Surathkal,Mathematics,current,False,False,,False
+S0189,2,0,5,22,0,0.0,0,Krishnan C M C,NIT Surathkal,EEE,current,False,False,inf,False
+T0475,4,0,5,11,0,0.0,0,M Sridevi,NIT Trichy,CSE,current,False,False,inf,False
+S0380,1,0,4,0,0,,0,Rajib Pal,NIT Surathkal,Mining,current,False,False,,False
+T0762,5,0,3,15,0,0.0,0,R Ravindran,NIT Trichy,Mathematics,former,False,False,inf,False
+T0426,3,0,4,0,0,,0,L Saikala,NIT Trichy,Architecture,current,False,False,,False
+T0436,2,0,5,7,0,0.0,0,G Sangeetha,NIT Trichy,Architecture,current,False,False,inf,False
+T0779,5,0,4,17,0,0.0,0,G Rajasekaran,NIT Trichy,Mechanical,current,False,False,inf,False
+S0072,2,0,3,2,0,0.0,0,S Jitendra Pal,NIT Surathkal,Chemical,current,False,False,inf,False
+T0873,1,0,4,0,0,,0,S John Vincent Jesuraj,NIT Trichy,Production,former,False,False,,False

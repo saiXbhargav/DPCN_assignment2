@@ -1,0 +1,827 @@
+institution_id,institution,cluster,papers_with_us,degree,joint_papers_weighted_degree,linked_to_nit_trichy,linked_to_nit_surathkal,betweenness,community
+I122964287,National Institute of Technology Tiruchirappalli,NIT (ours),10949,615,6149,False,True,0.52615,0
+I11880225,National Institute of Technology Karnataka,NIT (ours),10376,564,5260,True,False,0.44159,1
+I164861460,Manipal Academy of Higher Education,University / college,602,141,1037,True,True,0.01974,1
+I876193797,Vellore Institute of Technology University,University / college,439,117,671,True,True,0.01047,0
+I145286018,SRM Institute of Science and Technology,University / college,275,107,491,True,True,0.00832,0
+I24676775,Indian Institute of Technology Madras,IIT,277,97,448,True,True,0.00576,0
+I59270414,Indian Institute of Science Bangalore,IISER / IISc,266,85,434,True,True,0.00503,1
+I4076070,Bharathidasan University,University / college,152,65,302,True,True,0.00345,0
+I33585257,"Anna University, Chennai",University / college,169,62,289,True,True,0.00277,0
+I81556334,Amrita Vishwa Vidyapeetham,University / college,169,63,270,True,True,0.00304,0
+I85461943,Saveetha University,University / college,110,74,238,True,True,0.00468,0
+I145894827,Indian Institute of Technology Kharagpur,IIT,130,73,233,True,True,0.00479,1
+I114845381,National Institute of Technology Calicut,NIT,152,42,225,True,True,0.00073,1
+I1333540553,Nitte University,University / college,134,35,221,True,True,0.00099,1
+I76414455,"Kasturba Medical College, Manipal",University / college,68,24,216,True,True,0.00203,1
+I932239252,SASTRA University,University / college,146,44,208,True,True,0.00096,0
+I121750182,National Institute of Technology Warangal,NIT,109,56,208,True,True,0.00147,0
+I66760702,Council of Scientific and Industrial Research,CSIR,81,45,201,True,True,0.0009,4
+I1289461252,Indian Space Research Organisation,ISRO,90,32,200,True,True,0.00038,5
+I65674248,Visvesvaraya Technological University,University / college,99,60,200,True,True,0.00336,1
+I68891433,Indian Institute of Technology Delhi,IIT,128,47,190,True,True,0.00175,1
+I162827531,Indian Institute of Technology Bombay,IIT,126,42,181,True,True,0.00147,1
+I4387153400,"Kasturba Medical College, Mangalore",University / college,60,17,181,False,True,0.00011,1
+I1340206300,Defence Research and Development Organisation,DRDO,65,56,180,True,True,0.00263,2
+I4387153738,Siddaganga Institute of Technology,University / college,113,25,173,True,True,0.00071,1
+I154851008,Indian Institute of Technology Roorkee,IIT,84,45,148,True,True,0.00137,0
+I4405268608,Nitte Meenakshi Institute of Technology,University / college,67,37,143,True,True,0.00129,1
+I65181880,Indian Institute of Technology Hyderabad,IIT,101,33,142,True,True,0.00065,0
+I1317621060,Indian Institute of Technology Guwahati,IIT,74,48,141,True,True,0.00247,1
+I74796645,"Birla Institute of Technology and Science, Pilani",University / college,65,29,133,True,True,0.00035,2
+I25547181,Bharat Heavy Electricals (India),Industry,103,22,130,True,True,0.00062,0
+I106349282,Central Electrochemical Research Institute,CSIR,65,18,130,True,True,4e-05,4
+I2802630050,Indira Gandhi Centre for Atomic Research,DAE,73,29,125,True,True,0.00073,0
+I151903974,National Institute Of Technology Silchar,NIT,61,33,125,True,True,0.00089,1
+I71374576,Vikram Sarabhai Space Centre,ISRO,61,22,124,True,True,0.00033,5
+I875944469,Koneru Lakshmaiah Education Foundation,University / college,65,34,122,True,True,0.00139,0
+I83737708,REVA University,University / college,63,27,118,True,True,0.00048,1
+I1329621470,Bhabha Atomic Research Centre,DAE,48,33,117,True,True,0.00116,3
+I16292982,National Institute of Technology Rourkela,NIT,78,27,117,True,True,0.00044,1
+I33586908,Pandit Deendayal Energy University,University / college,59,28,116,True,True,0.00166,6
+I1330855593,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,University / college,64,32,115,True,True,0.00144,0
+I200207707,Homi Bhabha National Institute,DAE,38,40,112,True,True,0.00152,3
+I189109744,Indian Institute of Technology Dhanbad,IIT,62,30,110,True,True,0.00064,6
+I158688498,Yenepoya University,University / college,42,28,109,True,True,0.00158,1
+I94234084,Indian Institute of Technology Kanpur,IIT,60,36,108,True,True,0.00109,1
+I65220239,Karpagam Academy of Higher Education,University / college,50,36,104,True,True,0.00179,0
+I1286499117,National Aerospace Laboratories,CSIR,64,15,99,True,True,9e-05,4
+I916357946,Sri Sivasubramaniya Nadar College of Engineering,University / college,51,30,98,True,True,0.00107,0
+I42014448,Sardar Vallabhbhai National Institute of Technology Surat,NIT,46,34,97,True,True,0.00084,1
+I99364266,Academy of Scientific and Innovative Research,University / college,30,39,96,True,True,0.00214,4
+I21234101,Thiagarajar College of Engineering,University / college,66,24,96,True,True,0.00059,0
+I56404289,Indian Institute of Technology BHU,IIT,35,41,95,True,True,0.00086,2
+I112471378,Central University of Tamil Nadu,University / college,45,21,88,True,True,0.00077,0
+I4405268903,Yenepoya Research Centre,Other government R&D,30,21,88,False,True,0.00012,1
+I4405263155,SR University,University / college,44,25,84,True,True,0.00074,1
+I4210103291,International Advanced Research Centre for Powder Metallurgy and New Materials,Other government R&D,51,20,84,True,True,0.00027,0
+I4405255153,Ramaiah Institute of Technology,University / college,41,27,83,True,True,0.00083,1
+I9579091,Indian Institute of Technology Mandi,IIT,51,23,81,True,True,0.00031,1
+I132153292,Indian Institute of Technology Patna,IIT,41,29,80,True,True,0.00073,1
+I4405260736,Dayananda Sagar College of Engineering,University / college,43,29,80,True,True,0.0012,7
+I215927,University of Madras,University / college,35,33,80,True,True,0.00175,0
+I4405262389,Aditya University,University / college,37,30,77,True,True,0.00109,1
+I4210113248,Indian Institute of Technology Palakkad,IIT,49,21,76,True,True,8e-05,1
+I4210101034,Birla Institute of Technology and Science - Hyderabad Campus,University / college,35,14,75,True,True,2e-05,2
+I13268429,Madurai Kamaraj University,University / college,41,28,72,True,True,0.00084,0
+I197081775,Annamalai University,University / college,30,21,71,True,True,0.00034,0
+I154549908,Indian Institute of Technology Jodhpur,IIT,27,31,71,True,True,0.00075,3
+I115715567,"Birla Institute of Technology, Mesra",University / college,46,13,70,True,True,0.00031,0
+I106826634,Jain University,University / college,39,23,68,True,True,0.00024,1
+I4405254442,PSG College of Technology,University / college,46,20,68,True,True,0.00049,0
+I1331500379,Centre for Development of Advanced Computing,Other government R&D,62,6,68,True,True,0.00027,0
+I48018076,Christ University,University / college,37,22,67,True,True,0.00075,0
+I4405272038,St. Joseph's College,University / college,34,13,67,True,False,4e-05,0
+I170979836,Jadavpur University,University / college,31,30,67,True,True,0.002,0
+I39244652,"Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",IIIT,47,16,66,True,True,4e-05,0
+I98499257,Kalasalingam Academy of Research and Education,University / college,34,28,65,True,True,0.00062,0
+I100887729,Andhra University,University / college,28,16,62,True,True,0.0005,6
+I43814544,Sathyabama Institute of Science and Technology,University / college,30,25,62,True,True,0.00069,0
+I2802584695,Government of Karnataka,Other government R&D,32,22,62,False,True,0.00021,1
+I19144141,Gas Turbine Research Establishment,DRDO,32,11,62,True,True,2e-05,2
+I1309307044,Central Glass and Ceramic Research Institute,CSIR,34,19,61,True,True,0.00021,1
+I111575329,Bharathiar University,University / college,40,21,61,True,True,0.00119,0
+I150312865,Institute for Development and Research in Banking Technology,Other government R&D,51,7,60,True,True,0.00021,0
+I59475050,Jamia Millia Islamia,University / college,37,17,60,True,True,0.00046,1
+I146682468,National Institute for Interdisciplinary Science and Technology,CSIR,22,24,60,True,True,0.00035,4
+I202429437,Defence Metallurgical Research Laboratory,DRDO,32,19,58,True,True,0.0001,0
+I36893310,University of Hyderabad,University / college,21,29,58,True,True,0.00106,0
+I4210131147,SRM University,University / college,22,27,58,True,True,0.00103,0
+I91277730,Maulana Azad National Institute of Technology,NIT,34,19,58,True,True,0.00029,0
+I4405276349,Shri Madhwa Vadiraja Institute of Technology and Management,University / college,25,21,58,False,True,0.00011,1
+I4405262155,Coimbatore Institute of Technology,University / college,34,15,57,True,True,0.00036,0
+I196608512,PES University,University / college,28,17,57,True,True,0.00023,1
+I204743663,University of Mysore,University / college,30,19,57,True,True,0.00062,1
+I91357014,Banaras Hindu University,University / college,19,24,56,True,True,0.00059,2
+I4210153924,National Institute of Technology Andhra Pradesh,NIT,28,25,56,True,True,0.00086,0
+I2802990396,Indian Institute of Management Tiruchirappalli,University / college,27,24,55,True,False,0.00028,0
+I11793825,National Institute of Technology Patna,NIT,38,13,54,True,True,9e-05,0
+I4210100463,"SRM University, Andhra Pradesh",University / college,32,19,54,True,True,0.00048,0
+I148776243,Government of Tamil Nadu,Other government R&D,31,19,54,True,True,0.00086,0
+I152429107,Jawaharlal Nehru University,University / college,27,17,54,True,True,0.00023,1
+I8778637,National Institute of Technology Srinagar,NIT,24,22,54,True,True,0.00051,1
+I4405274569,Loyola College,University / college,17,22,53,True,True,0.00109,0
+I3132975163,KLE Technological University,University / college,35,11,53,True,True,0.00033,1
+I885392262,GITAM University,University / college,32,19,53,True,True,0.00031,1
+I149313025,"Vignan's Foundation for Science, Technology & Research",University / college,40,13,53,True,True,7e-05,1
+I152869788,Motilal Nehru National Institute of Technology,NIT,31,20,53,True,True,0.00034,1
+I70971781,Dr. B. R. Ambedkar National Institute of Technology Jalandhar,NIT,28,16,52,True,True,0.0002,1
+I119668213,Karunya University,University / college,25,26,52,True,True,0.00088,0
+I126824641,JSS Academy of Higher Education and Research,University / college,21,17,50,True,True,0.00092,1
+I882761360,Indian Institute of Space Science and Technology,University / college,31,16,50,True,True,8e-05,1
+I110166357,University of Delhi,University / college,29,14,48,True,True,0.00093,0
+I64295750,Indian Institute of Technology Indore,IIT,27,20,48,True,True,0.00015,1
+I83205935,Malaviya National Institute of Technology Jaipur,NIT,25,15,47,True,True,0.0002,1
+I4405260489,A. Veeriya Vandayar Memorial Sri Pushpam College,University / college,23,9,47,True,False,2e-05,0
+I880551032,Gandhigram Rural Institute,University / college,27,14,46,True,True,0.00022,0
+I4210094269,Kasturba Medical College Hospital,Hospital / medical,13,6,46,False,True,0.0,1
+I67357951,KIIT University,University / college,27,15,45,True,True,0.00012,3
+I141431873,Periyar University,University / college,18,19,45,True,False,0.00013,0
+I94948490,B.S. Abdur Rahman Crescent Institute of Science & Technology,University / college,25,14,45,True,False,6e-05,0
+I19008122,Mangalore University,University / college,26,15,45,True,True,0.00068,1
+I1311524620,National Remote Sensing Centre,ISRO,21,10,43,True,True,1e-05,5
+I4405272215,GMR Institute of Technology,University / college,30,15,43,True,True,0.00076,0
+I4210109528,PSG INSTITUTE OF TECHNOLOGY AND APPLIED RESEARCH,University / college,22,17,42,True,True,0.00039,0
+I131155284,Alagappa University,University / college,28,12,42,True,False,3e-05,0
+I156406944,Defence Institute of Advanced Technology,University / college,22,14,42,True,True,9e-05,1
+I4210133257,KPR Institute of Engineering and Technology,University / college,16,17,41,True,False,8e-05,0
+I2800373951,Sree Chitra Thirunal Institute for Medical Sciences and Technology,Other government R&D,18,15,41,True,True,0.0004,1
+I6498739,Indian Statistical Institute,University / college,17,14,41,True,True,0.00022,1
+I11947397,Tata Institute of Fundamental Research,DAE,18,20,40,True,True,0.00048,3
+I175691731,Pondicherry University,University / college,16,14,40,True,True,0.00054,0
+I207025910,Periyar Maniammai Institute of Science & Technology,University / college,29,8,39,True,False,1e-05,0
+I38335241,National Institute of Technology Raipur,NIT,27,12,39,True,True,0.00062,0
+I9523339,National Institute of Technology Meghalaya,NIT,25,12,39,True,True,0.00015,1
+I3129367976,APJ Abdul Kalam Technological University,University / college,22,15,39,True,True,0.00056,0
+I4210125149,Centre for Military Airworthiness and Certification,DRDO,12,16,39,True,True,2e-05,2
+I144614875,Alliance University,University / college,20,14,37,True,True,0.00065,0
+I4405272456,Sahyadri College of Engineering & Management,University / college,22,7,36,True,True,0.0,1
+I34628043,AMET University,University / college,10,17,36,True,True,0.0002,0
+I863896202,Delhi Technological University,University / college,12,22,36,True,True,0.00038,3
+I112576028,Central Leather Research Institute,CSIR,21,13,36,True,False,7e-05,0
+I4405261969,Bishop Heber College,University / college,16,13,35,True,False,5e-05,0
+I4405257909,RV University,University / college,11,15,35,False,True,3e-05,1
+I4405261980,Acharya Institute of Technology,University / college,18,13,35,False,True,5e-05,1
+I4210150591,Ministry of Defence,Other government R&D,9,18,34,True,True,0.00012,2
+I4405263468,Indian Institute of Petroleum and Energy,University / college,11,8,34,True,True,0.0,6
+I20497027,Cochin University of Science and Technology,University / college,18,14,34,True,True,4e-05,4
+I170347488,National Environmental Engineering Research Institute,CSIR,28,7,34,True,True,1e-05,0
+I134892692,Chaitanya Bharathi Institute of Technology,University / college,22,11,34,True,True,0.00031,0
+I182997119,Manonmaniam Sundaranar University,University / college,18,13,34,True,False,5e-05,0
+I106053113,Central University of Karnataka,University / college,22,6,33,True,True,0.00014,1
+I4405263267,KSCSTE-National Transportation Planning And Research Centre,Other government R&D,17,7,33,True,True,0.0,0
+I99729588,Indian Institute of Technology Bhubaneswar,IIT,19,15,33,True,True,8e-05,1
+I60054993,Graphic Era University,University / college,14,19,33,True,True,0.00012,7
+I101407740,Chandigarh University,University / college,15,18,33,True,True,0.00033,0
+I4405280447,"Indian Statistical Institute, Bangalore Centre",University / college,15,10,33,True,True,0.0002,1
+I46700001,Rajiv Gandhi University of Knowledge Technologies,University / college,22,12,33,True,True,0.00017,0
+I4405253460,Dhanalakshmi Srinivasan University,University / college,18,8,32,True,False,3e-05,0
+I4210148827,"Birla Institute of Technology and Science, Pilani - Goa Campus",University / college,13,10,32,True,True,0.00015,2
+I4405268392,Space Applications Centre,ISRO,14,5,32,True,True,0.0,5
+I110360157,Lovely Professional University,University / college,12,21,32,True,True,0.00027,0
+I4210109292,Indian Institute of Technology Tirupati,IIT,20,11,32,True,True,1e-05,1
+I4405268244,Mepco Schlenk Engineering College,University / college,20,12,32,True,True,9e-05,0
+I59574800,Ashok Leyland (India),Industry,17,11,32,True,False,2e-05,0
+I181996519,Indian Institute of Science Education and Research Pune,IISER / IISc,21,9,32,True,True,1e-05,1
+I96797292,Noorul Islam University,University / college,12,14,31,True,True,0.00037,0
+I53465836,Bangalore University,University / college,17,14,31,True,True,0.00018,3
+I4210100914,Ministry of Earth Sciences,Other government R&D,10,15,31,True,False,7e-05,5
+I4210137436,JSS Science and Technology University,University / college,16,13,30,True,True,9e-05,1
+I4210133459,Central Manufacturing Technology Institute,Other government R&D,23,7,30,True,True,0.0,1
+I160856166,JSW Group (India),Industry,25,7,30,True,True,0.00019,1
+I8975392,Osmania University,University / college,12,18,30,True,True,0.00092,4
+I4210104573,CMR University,University / college,22,10,30,True,True,9e-05,1
+I4210086621,Electronics and Radar Development Establishment,DRDO,17,5,29,True,True,0.0,2
+I4210095388,ISRO Propulsion Complex,ISRO,17,6,29,True,True,0.0,5
+I4210111921,National Metallurgical Laboratory,CSIR,13,11,29,True,True,0.00014,4
+I4210138561,Research Centre Imarat,DRDO,9,9,29,True,True,0.00011,0
+I4400573291,Dayananda Sagar University,University / college,18,11,29,True,True,0.00017,1
+I119241673,Indian Institute of Technology Ropar,IIT,17,10,28,True,True,0.00035,1
+I119598438,Raman Research Institute,Other government R&D,17,10,28,True,True,8e-05,1
+I4405257457,Sona College of Technology,University / college,12,16,28,True,True,0.00019,0
+I170558118,Sri Venkateswara University,University / college,15,12,28,True,True,0.00062,8
+I177436651,Mahatma Gandhi University,University / college,13,12,28,True,True,0.00027,1
+I98365261,"Indian Institute of Engineering Science and Technology, Shibpur",University / college,16,11,28,True,True,0.00028,0
+I1284637955,"Kerala State Council for Science, Technology and Environment",Other government R&D,11,7,27,True,True,0.0,0
+I4405258076,U. R. Rao Satellite Centre,ISRO,11,7,27,True,True,3e-05,5
+I265627732,National Institute of Technology Manipur,NIT,15,12,27,True,True,0.00043,1
+I1289303365,Raja Ramanna Centre for Advanced Technology,DAE,12,7,26,True,True,1e-05,3
+I74319210,Chitkara University,University / college,10,17,26,True,True,0.0005,0
+I167153416,Visvesvaraya National Institute of Technology,NIT,20,7,25,True,True,1e-05,1
+I4405259747,Sacred Heart College (Autonomous),University / college,12,7,25,True,False,1e-05,0
+I4210105562,Velammal Educational Trust,University / college,10,13,25,True,False,4e-05,0
+I4405260672,PSG College of Arts & Science,University / college,9,13,25,True,False,2e-05,0
+I4405253093,NSS College of Engineering Palakkad,Other government R&D,15,10,25,True,True,0.00013,0
+I4210164565,Mahindra University,University / college,13,10,25,True,True,0.0002,1
+I878213199,Savitribai Phule Pune University,University / college,10,15,24,True,True,0.00179,1
+I244572783,Symbiosis International University,University / college,12,12,24,True,True,0.00034,9
+I127439422,Indian Institute of Science Education and Research Kolkata,IISER / IISc,13,10,24,True,True,2e-05,1
+I98210582,Rajiv Gandhi Institute of Petroleum Technology,University / college,13,11,23,True,True,0.00035,0
+I87816474,Tata Steel (India),Industry,17,7,23,True,True,5e-05,1
+I171210897,Aligarh Muslim University,University / college,17,7,23,True,True,1e-05,1
+I860813019,Bharath University,University / college,12,13,23,True,True,6e-05,0
+I196486160,National Institute of Technology Agartala,NIT,14,10,23,True,True,1e-05,0
+I179420787,Indian Council of Agricultural Research,ICAR,9,11,23,True,True,0.00128,4
+I155837530,National Institute of Technology Durgapur,NIT,12,13,23,True,True,0.00014,1
+I4210088227,MIT World Peace University,University / college,14,8,22,True,True,1e-05,1
+I51452335,Panjab University,University / college,15,8,22,True,False,1e-05,0
+I28210344,Kakatiya University,University / college,14,7,22,True,True,0.0,0
+I4210092165,National Institute of Construction Management and Research,Other,16,7,21,True,True,0.00027,1
+I59611059,Institute of Mathematical Sciences,Other government R&D,8,11,21,True,True,2e-05,3
+I19926482,Dr. M.G.R. Educational and Research Institute,University / college,9,8,21,True,False,2e-05,0
+I2800689258,Defence Research and Development Laboratory,DRDO,17,4,21,True,False,0.0,0
+I4405256893,Atria Institute of Technology,University / college,12,6,21,False,True,2e-05,1
+I110083240,Karnatak University,University / college,10,9,21,False,True,3e-05,1
+I4210093312,Defence Bioengineering and Electromedical Laboratory,DRDO,7,8,21,True,False,0.0,2
+I26604189,Shiv Nadar University,University / college,11,7,21,True,True,0.0,1
+I3130021832,Shree Guru Gobind Singh Tricentenary University,University / college,4,15,21,False,True,4e-05,3
+I4210115714,Centre for Nano and Soft Matter Sciences,Other government R&D,8,10,21,False,True,3e-05,1
+I4210151956,Robert Bosch (India),Industry,15,4,21,True,True,0.0,1
+I105094715,National Institute of Technology Kurukshetra,NIT,12,11,21,True,True,0.00014,0
+I4405269433,National Engineering College,University / college,16,7,21,True,True,5e-05,0
+I86826812,JSS Medical College and Hospital,University / college,11,6,21,True,True,0.00015,1
+I4210094866,Maharaj Vijayaram Gajapathi Raj College of Engineering,University / college,15,7,20,True,True,0.00022,0
+I3133098998,St. Peter's Institute of Higher Education and Research,University / college,9,8,20,True,False,1e-05,0
+I4210115612,Indian Institute of Science Education and Research Berhampur,IISER / IISc,7,14,20,True,True,0.00014,3
+I3125981224,National Chemical Laboratory,CSIR,8,11,20,True,True,2e-05,4
+I4210117185,National Centre for Coastal Research,Other government R&D,7,11,20,True,True,0.00025,5
+I2800731441,Government of Kerala,Other government R&D,10,12,20,True,True,0.00022,1
+I53508799,Tumkur University,University / college,7,13,19,True,True,0.00041,1
+I142253595,University B.D.T College of Engineering,University / college,10,7,19,False,True,1e-05,1
+I187761245,National Institute of Technology Jamshedpur,NIT,9,12,19,True,True,0.00022,1
+I134900695,Tamil Nadu Agricultural University,University / college,8,8,18,True,True,0.00039,0
+I4210146157,Dhanalakshmi Srinivasan Group of Institutions,University / college,9,8,18,True,False,1e-05,0
+I138535024,Aeronautical Development Agency,Other government R&D,15,5,18,True,True,0.0,1
+I74885063,Sharda University,University / college,10,9,18,True,True,0.0003,1
+I4210109276,National Institute of Technology Goa,NIT,12,6,18,True,True,0.00023,0
+I162030827,Thapar Institute of Engineering & Technology,University / college,10,8,18,True,True,0.00016,0
+I10874241,"Jawaharlal Nehru Technological University, Hyderabad",University / college,9,10,18,True,True,1e-05,0
+I4405255148,Rajah Serfoji Government College (Autonomous),University / college,5,12,18,True,True,0.00035,0
+I4210127244,Indian Institute of Information Technology Una,IIIT,14,3,18,True,False,0.0,0
+I25592554,National Institute of Ocean Technology,Other government R&D,7,9,17,True,True,0.00013,5
+I42095658,Central Scientific Instruments Organisation,CSIR,6,10,17,True,True,4e-05,4
+I55215948,Tata Consultancy Services (India),Industry,8,10,17,True,True,5e-05,1
+I4405263325,Jawaharlal Nehru New College of Engineering,University / college,10,5,17,False,True,0.0,1
+I185790649,Indian Veterinary Research Institute,ICAR,4,11,17,True,False,2e-05,0
+I2799351866,Government of India,Other government R&D,6,10,17,True,True,0.00067,2
+I3131484930,National Institute of Technology Nagaland,NIT,13,3,17,True,False,0.0,0
+I43663321,Hindustan Institute of Technology and Science,University / college,9,7,17,True,True,0.0,0
+I4210161912,Central Council for Research in Siddha,Other government R&D,9,8,16,True,True,0.00044,0
+I175399479,Haldia Institute of Technology,University / college,8,8,16,True,False,1e-05,0
+I4405254352,College of Engineering Trivandrum,University / college,11,7,16,True,True,0.0,5
+I88910343,CSIR National Physical Laboratory of India,CSIR,5,11,16,True,True,1e-05,4
+I55016150,Manav Rachna International Institute of Research and Studies,University / college,5,11,16,True,True,0.00035,1
+I178319760,Kuvempu University,University / college,8,6,16,False,True,1e-05,1
+I55664587,Indian Institute of Chemical Technology,CSIR,8,8,16,True,True,1e-05,4
+I4210088939,Hindustan Aeronautics Limited (India),Industry,13,4,16,True,True,0.0001,0
+I117381506,Thiruvalluvar University,University / college,5,9,16,True,False,1e-05,0
+I158338959,University of Kerala,University / college,9,9,16,True,True,1e-05,5
+I70764227,Indus University,University / college,9,5,16,False,True,0.0,1
+I4405258170,Gati Shakti Vishwavidyalaya,Other government R&D,9,6,16,True,True,0.00016,0
+I4210101705,Naval Physical & Oceanographic Laboratory,DRDO,10,6,15,True,True,0.0,0
+I55124831,"J.C. Bose University of Science & Technology, YMCA",University / college,10,6,15,True,False,1e-05,0
+I4210101093,St. Joseph's Institute of Technology,University / college,7,9,15,True,False,1e-05,0
+I114176345,University of Calicut,University / college,9,8,15,True,True,1e-05,3
+I181514455,International Institute of Information Technology Bangalore,IIIT,8,8,15,True,True,0.00052,1
+I4210132317,UGC DAE Consortium for Scientific Research,DAE,4,11,15,True,True,0.00012,0
+I138876546,Vels University,University / college,6,11,15,True,True,4e-05,0
+I75093019,National Institute of Oceanography,CSIR,8,8,15,True,True,1e-05,1
+I4210138731,ICFAI Foundation for Higher Education,University / college,7,9,15,True,True,0.00038,10
+I5847235,University of Petroleum and Energy Studies,University / college,6,9,15,True,True,1e-05,2
+I35340524,Central University of Kerala,University / college,10,6,15,True,True,3e-05,1
+I140352217,Uka Tarsadia University,University / college,6,7,14,True,False,1e-05,0
+I4210129200,O. P. Jindal Global University,University / college,6,9,14,True,True,0.00013,7
+I207223250,Indian Institute of Information Technology Design and Manufacturing Jabalpur,IIIT,8,7,14,True,True,0.0,0
+I4210125823,KLE Academy of Higher Education and Research,University / college,8,5,14,False,True,0.0,1
+I4405253803,TKM College of Engineering,University / college,10,6,14,True,True,0.00036,0
+I121502294,Physical Research Laboratory,Other government R&D,5,9,14,True,True,1e-05,3
+I288749910,"Indian Institute of Science Education and Research, Bhopal",IISER / IISc,7,8,14,True,True,0.0002,1
+I163389970,National Institute of Science Education and Research,DAE,4,10,14,False,True,0.0,3
+I4405270214,JSS College of Pharmacy,University / college,4,5,14,False,True,0.0,1
+I82571370,GLA University,University / college,6,10,14,True,True,5e-05,1
+I26285277,Guru Ghasidas Vishwavidyalaya,University / college,7,5,14,True,True,0.0,0
+I4210095875,National Research Centre for Banana,ICAR,11,3,14,True,False,0.0,0
+I109493002,Central Power Research Institute,Other government R&D,14,2,14,True,True,0.0,0
+I119939252,Indraprastha Institute of Information Technology Delhi,University / college,9,7,14,True,True,0.00026,1
+I68695296,"Indian Institute of Information Technology and Management, Kerala",IIIT,5,9,14,True,True,0.00041,10
+I155284866,"Maharishi Markandeshwar University, Mullana",University / college,3,11,13,True,True,0.00016,0
+I3130511786,Institute of Infrastructure Technology Research and Management,University / college,4,10,13,True,True,0.00013,1
+I4405263743,Government Engineering College Wayanad,University / college,8,4,13,True,False,0.0,0
+I155125381,Galgotias University,University / college,8,5,13,True,False,0.0,0
+I52703040,Kannur University,University / college,6,8,13,True,True,1e-05,1
+I4210144541,Social Change and Development,Other,4,7,13,True,False,1e-05,0
+I3148377317,Department of Space,ISRO,4,9,13,True,True,1e-05,2
+I52035452,Jawaharlal Nehru Technological University Anantapur,University / college,8,5,13,True,True,0.0,1
+I40912709,"Institute of Physics, Bhubaneshwar",Other government R&D,4,8,13,True,False,1e-05,3
+I142809039,"Jawaharlal Nehru Technological University, Kakinada",University / college,8,6,13,True,True,0.0,0
+I4388446400,"Government College of Engineering, Keonjhar",University / college,2,9,12,True,False,1e-05,0
+I3130698519,Glocal University,University / college,3,11,12,True,True,0.00025,0
+I165998391,Indian Association for the Cultivation of Science,University / college,5,7,12,True,True,0.0,4
+I4210106426,Central Road Research Institute,CSIR,10,4,12,True,True,0.0,1
+I4210133707,"Rani Channamma University, Belagavi",University / college,3,7,12,False,True,1e-05,1
+I302410947,M S Ramaiah University of Applied Sciences,University / college,6,5,12,False,True,0.0,1
+I185065464,Veer Surendra Sai University of Technology,University / college,8,6,12,True,True,6e-05,1
+I101326570,National Institute of Technology Sikkim,NIT,4,8,12,True,False,1e-05,1
+I4210116054,BLDE (Deemed to be University),University / college,7,7,12,True,True,0.00026,1
+I154970844,Jaypee Institute of Information Technology,University / college,7,6,12,True,True,0.0,0
+I201958307,Gulbarga University,University / college,6,7,12,True,True,0.00049,2
+I4405261004,Sri Venkateswara College of Engineering Tirupati,University / college,6,7,12,True,True,0.00012,8
+I4405259495,"Bharati Vidyapeeth's College of Engineering, Delhi",University / college,6,2,12,True,False,0.0,0
+I64128412,Dibrugarh University,University / college,4,5,12,False,True,0.0,1
+I4405262108,Vimal Jyothi Engineering College,University / college,6,5,12,True,True,5e-05,0
+I4210089292,Icon (India),Industry,3,10,12,True,True,9e-05,2
+I4405256143,GM University Davanagere Karnataka,University / college,5,9,12,True,True,0.00011,1
+I1286858202,Energy and Resources Institute,Other,6,6,11,True,True,0.00025,5
+I4210112052,Indian Institute of Technology Goa,IIT,6,6,11,False,True,0.0,1
+I129734738,All India Institute of Medical Sciences Raipur,University / college,4,7,11,True,True,0.00015,1
+I4405276907,Government Engineering College Thrissur,University / college,5,8,11,True,True,0.0002,5
+I114724429,Central University of Punjab,University / college,3,8,11,True,True,6e-05,0
+I4405262028,Siddhartha Academy of Higher Education,University / college,6,7,11,True,True,1e-05,0
+I60324483,K S Hegde Medical Academy,University / college,6,4,11,False,True,0.0,1
+I4210133311,Shoolini University,University / college,4,9,11,True,True,0.00038,0
+I860003557,Punjab Engineering College,University / college,6,6,11,True,True,0.0,0
+I4210139030,Samsung (India),Industry,9,3,11,True,True,0.0,0
+I21131202,University Grants Commission,Other government R&D,2,11,11,True,True,8e-05,1
+I47639616,Centurion University of Technology and Management,University / college,5,6,11,True,False,1e-05,0
+I47885761,Indian Maritime University,University / college,5,6,11,True,False,0.0,0
+I187279525,National Dairy Research Institute,ICAR,3,6,11,True,False,0.0,4
+I147481903,Jawaharlal Nehru Centre for Advanced Scientific Research,Other government R&D,6,7,11,True,True,0.0,4
+I4405256925,New Horizon College of Engineering,University / college,4,7,11,True,True,4e-05,1
+I63739035,All India Institute of Medical Sciences,University / college,4,9,11,True,True,0.00028,1
+I4210098947,National Institute of Science and Technology,University / college,6,3,11,False,True,1e-05,1
+I4210121466,Indian Institute of Technology Bhilai,IIT,5,6,11,False,True,2e-05,1
+I2800084297,Indian Institute of Management Shillong,University / college,6,6,11,True,False,0.0,0
+I132357854,Indian Institute of Management Kozhikode,University / college,8,4,11,True,True,0.00017,1
+I220840466,Chettinad Academy of Research and Education,University / college,4,7,11,True,False,1e-05,0
+I4210121405,Centre for Artificial Intelligence and Robotics,DRDO,5,5,11,True,True,0.0,2
+I4210141018,Ramakrishna Mission Vidyalaya,University / college,4,7,11,True,False,0.0,0
+I4387152492,Vaagdevi College of Engineering,University / college,7,5,10,True,True,0.0,0
+I3149292468,Department of Atomic Energy,DAE,2,9,10,False,True,1e-05,1
+I4210139346,Department of Public,Other government R&D,2,9,10,True,True,9e-05,2
+I84279003,Indian Institute of Petroleum,CSIR,2,10,10,True,True,1e-05,6
+I94616015,Punjab Technical University,University / college,3,6,10,True,True,0.00029,0
+I4210147492,Centre for Water Resources Development and Management,Other government R&D,6,6,10,True,True,0.0,1
+I4405277151,Dayananda Sagar Academy of Technology and Management,University / college,5,6,10,True,True,0.0,1
+I4210089002,Inter-University Accelerator Centre,Other government R&D,3,7,10,True,True,1e-05,2
+I177001074,Acharya Nagarjuna University,University / college,5,7,10,True,True,0.00012,8
+I15896350,Guru Jambheshwar University of Science and Technology,University / college,5,5,10,True,False,0.0,0
+I4210128956,Central Institute of Technology Kokrajhar,University / college,6,4,10,True,False,1e-05,0
+I140777494,Solid State Physics Laboratory,DRDO,3,8,10,True,True,1e-05,2
+I4405271520,Nagarjuna College of Engineering and Technology,University / college,6,5,10,False,True,0.0,1
+I4210116967,Sri Manakula Vinayagar Educational Trust,University / college,2,9,10,False,True,1e-05,1
+I35839044,Assam Agricultural University,University / college,3,4,10,False,True,0.0,1
+I157674215,Presidency University,University / college,4,8,10,True,True,0.00014,0
+I41763900,Central Electronics Engineering Research Institute,CSIR,4,5,10,True,True,0.0,4
+I165916956,Indian Institute of Science Education and Research Mohali,IISER / IISc,5,6,10,True,True,0.0,3
+I4210107015,Institute of Minerals and Materials Technology,CSIR,5,7,10,True,True,1e-05,1
+I4405260778,Jain College of Engineering and Research,University / college,6,5,10,False,True,0.0,1
+I9747756,Atal Bihari Vajpayee Indian Institute of Information Technology and Management,IIIT,5,7,10,True,True,0.00012,0
+I2801424531,Government of West Bengal,Other government R&D,3,8,9,True,True,0.0003,3
+I189949046,Integral University,University / college,3,7,9,False,True,4e-05,2
+I98389781,Dhirubhai Ambani University,University / college,8,2,9,True,False,0.0,0
+I4210099439,Defence Laboratory Jodhpur,DRDO,3,5,9,True,True,0.0,1
+I175548057,Vinayaka Missions University,University / college,6,3,9,True,False,0.0,0
+I3129773123,Bennett University,University / college,5,6,9,True,True,0.0,2
+I84913233,National Centre for Earth Science Studies,Other government R&D,4,6,9,True,True,0.00022,5
+I27674431,Indian Institute of Technology Gandhinagar,IIT,5,6,9,True,True,0.0,1
+I50557253,Indian Institute of Science Education and Research Thiruvananthapuram,IISER / IISc,5,5,9,True,True,0.0,0
+I126601174,Tezpur University,University / college,5,6,9,True,True,0.00014,1
+I4210152718,Indian Institute of Technology Dharwad,IIT,7,3,9,True,True,0.0,1
+I70735523,Central Mechanical Engineering Research Institute,CSIR,5,4,9,False,True,0.0,1
+I887998513,Bharati Vidyapeeth (Deemed to be University),University / college,4,5,9,True,True,0.00022,0
+I4210116539,Larsen & Toubro (India),Industry,7,3,9,True,True,0.0,5
+I94415630,Sri Padmavati Mahila Visvavidyalayam,University / college,4,7,9,True,True,1e-05,4
+I3130244785,Adamas University,University / college,2,7,9,True,False,0.0,0
+I4210138251,"Indian Institute of Information Technology, Nagpur",IIIT,4,5,8,True,True,0.0,0
+I4210127441,Indian Institute of Technology Jammu,IIT,5,5,8,True,True,6e-05,0
+I4405271589,Sri Sairam Engineering College,University / college,4,5,8,True,False,0.0,0
+I4405281587,Presidency College,University / college,3,4,8,True,False,0.0,0
+I4210101534,Honeywell (India),Industry,7,3,8,True,True,0.0,0
+I933318745,Dehradun Institute of Technology University,University / college,6,2,8,True,False,0.0,0
+I4210139271,GIET University,University / college,4,4,8,True,False,0.0,0
+I4210136518,Maharaja Ranjit Singh Punjab Technical University,University / college,2,4,8,True,False,0.0,0
+I79161377,Punjabi University,University / college,2,4,8,True,False,0.0,0
+I4210137186,Society for Applied Microwave Electronics Engineering & Research,Other government R&D,8,2,8,True,True,0.0,1
+I168893459,University of Allahabad,University / college,5,5,8,True,True,0.00021,0
+I4405258780,Sri Ramakrishna College of Arts and Science,University / college,2,6,8,True,False,0.0,0
+I169877490,University of Mumbai,University / college,4,5,8,True,True,0.00039,1
+I59781447,Inter-University Centre for Astronomy and Astrophysics,Other government R&D,5,5,8,True,True,0.0,3
+I1589757,TVS Motor Company (India),Industry,5,4,8,True,False,1e-05,0
+I4210147161,Mudra Institute of Communications Ahmedabad,Other,2,5,8,True,False,0.0,0
+I116943215,Dr. A.P.J. Abdul Kalam Technical University,University / college,5,4,8,True,True,0.0,1
+I1341847395,DAV University,University / college,2,6,8,True,False,0.0,0
+I61923386,Jawaharlal Institute of Post Graduate Medical Education and Research,University / college,2,5,8,True,False,0.0,0
+I2800685081,Tata Chemicals (India),Industry,2,8,8,True,True,0.00038,1
+I77501641,University of Kalyani,University / college,3,7,8,True,True,5e-05,4
+I4210108186,Agilent Technologies (India),Industry,3,5,8,True,True,0.00015,0
+I4405277279,Seethalakshmi Ramaswami College,University / college,3,3,8,True,False,0.0,0
+I130291710,Visva-Bharati University,University / college,3,6,8,True,True,5e-05,3
+I4210115651,Trichy SRM Medical College Hospital and Research Centre,University / college,3,5,8,True,False,1e-05,0
+I160682246,PRIST University,University / college,6,3,8,True,False,0.0,0
+I4210131107,Vivekananda Institute of Medical Sciences,Other,2,6,8,False,True,0.0,1
+I4405263975,Federal Institute of Science and Technology,University / college,7,3,8,True,True,0.0,1
+I4405265996,Mannar Thirumalai Naicker College,University / college,2,4,8,True,False,0.0,0
+I4210126659,Poornima University,University / college,3,6,8,True,True,0.00018,1
+I195459967,Mizoram University,University / college,2,6,8,False,True,1e-05,1
+I1333738725,Indian National Centre for Ocean Information Services,Other government R&D,4,3,7,False,True,0.0,1
+I4210106276,Institute for Plasma Research,DAE,3,5,7,True,True,0.00018,3
+I342246540,Karnataka State Open University,University / college,2,4,7,False,True,0.0,1
+I4405278187,Gaya College,University / college,3,5,7,False,True,0.0,1
+I167494164,Mahatma Phule Krishi Vidyapeeth,University / college,6,2,7,False,True,0.0,1
+I4405258373,T.K.M Institute of Technology,University / college,3,5,7,True,False,0.0,0
+I296362101,Indira Gandhi National Tribal University,University / college,3,5,7,False,True,1e-05,2
+I17647740,Father Muller Medical College Hospital,Hospital / medical,3,5,7,False,True,0.0,1
+I3132702812,Uttaranchal University,University / college,2,6,7,True,True,0.0,0
+I49068896,Assam Down Town University,University / college,2,5,7,False,True,0.0,1
+I106542073,University of Calcutta,University / college,3,6,7,True,True,0.0,3
+I4405267585,Sree Sevugan Annamalai College,University / college,1,7,7,False,True,0.0,0
+I213512949,T A Pai Management Institute,University / college,3,4,7,False,True,0.0,1
+I4405255682,"Shiv Nadar University, Chennai",University / college,4,5,7,True,True,0.0,6
+I115635661,Advanced Materials and Processes Research Institute,CSIR,3,6,7,True,True,0.0,1
+I4210146682,Intel (India),Industry,4,5,7,True,True,0.0,1
+I4405259151,Prasad V. Potluri Siddhartha Institute of Technology,University / college,4,4,7,True,False,0.0,0
+I4390039373,"Government College of Engineering, Tirunelveli",University / college,4,4,7,True,False,0.0,8
+I4405265954,Lady Doak College,University / college,2,6,7,True,True,0.0,0
+I99601430,"Maulana Abul Kalam Azad University of Technology, West Bengal",University / college,2,6,7,True,False,1e-05,3
+I1287339526,Reserve Bank of India,Other,4,2,7,True,False,0.0,0
+I4405266969,KCG College of Technology,University / college,4,5,7,True,True,5e-05,0
+I1282879092,Amrita Institute of Medical Sciences and Research Centre,Hospital / medical,2,4,7,True,False,0.0,0
+I4210141791,ABB (India),Industry,7,2,7,True,True,0.0,1
+I4405264803,Ballari Institute of Technology & Management,University / college,2,7,7,True,True,0.00012,7
+I4405270565,Aditya Institute of Technology and Management,University / college,4,4,7,True,False,0.0,0
+I10640828,Central Institute of Plastics Engineering and Technology,Other government R&D,3,6,7,True,True,0.0,0
+I4210090636,Wipro (India),Industry,5,3,7,True,False,0.0,0
+I4210130378,Tech Mahindra (India),Industry,4,4,7,True,True,4e-05,0
+I4210159024,Apollo Hospitals,Hospital / medical,1,7,7,False,True,0.0,1
+I4210130696,Apollo Hospitals,Hospital / medical,1,7,7,False,True,0.0,1
+I4210122887,Apollo Hospitals,Hospital / medical,1,7,7,False,True,0.0,1
+I1327930874,Apollo Hospitals,Hospital / medical,1,7,7,False,True,0.0,1
+I36090812,Netaji Subhas University of Technology,University / college,3,5,7,False,True,0.0,1
+I244504473,Karnataka Veterinary Animal and Fisheries Sciences University,University / college,3,3,7,False,True,0.0,4
+I4210129961,IBM (India),Industry,3,5,7,True,False,1e-05,0
+I4405256109,Manipal Centre for Natural Sciences,Other government R&D,2,4,6,False,True,0.0,1
+I33459947,Charotar University of Science and Technology,University / college,3,5,6,True,True,0.00015,9
+I4405260745,Mahatma Gandhi University,University / college,2,5,6,True,True,0.0,1
+I4210091646,National Research Centre for Grapes,ICAR,2,3,6,True,False,0.0,0
+I4405264798,Rajeev Institute of Technology,University / college,4,2,6,False,True,0.0,1
+I4405263365,"Kerala University of Digital Sciences, Innovation and Technology",University / college,2,4,6,False,True,0.0,10
+I4210107157,Kalpana Chawla Government Medical College and Hospital,Other,1,6,6,True,False,0.0,4
+I177828482,Institute of Genomics and Integrative Biology,CSIR,1,6,6,True,False,0.0,4
+I51281103,Indian Institute of Remote Sensing,ISRO,4,4,6,True,True,0.0,1
+I2800341339,Indian Army,Other government R&D,3,2,6,True,False,0.0,0
+I16019930,Saha Institute of Nuclear Physics,Other government R&D,2,5,6,False,True,0.0,3
+I2799463389,Fourth Paradigm Institute,CSIR,3,3,6,False,True,0.0,1
+I4405265746,Women's Christian College,University / college,2,5,6,False,True,0.0,1
+I4405263749,Gayatri Vidya Parishad College of Engineering for Women,University / college,5,2,6,False,True,0.0,1
+I4405263215,Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology,University / college,3,5,6,True,True,0.0,1
+I191972202,Amity University,University / college,6,2,6,True,True,0.0,1
+I4210146715,National Institute of Pharmaceutical Education and Research,University / college,2,4,6,False,True,0.0,4
+I102117144,Banasthali University,University / college,3,5,6,True,True,9e-05,1
+I2801347850,Central Building Research Institute,CSIR,5,3,6,True,True,0.0,1
+I4405259253,Indian Institute of Information Technology Bhopal,IIIT,2,4,6,True,False,0.0,0
+I2802738084,Fatima Mata National College,University / college,1,6,6,True,False,0.0,0
+I2800401362,Government of Andhra Pradesh,Other government R&D,3,5,6,True,True,0.0,7
+I96211989,HCL Technologies (India),Industry,6,2,6,True,True,0.0,0
+I4405277739,Kunthavai Naacchiyaar Government Arts College for Women (Autonomous),University / college,3,3,6,True,False,0.0,0
+I170110779,Ansal University,University / college,2,3,6,True,False,0.0,2
+I4210103194,"Dr. D.Y. Patil Vidyapeeth, Pune",University / college,1,6,6,False,True,0.0,1
+I4210143183,MSN Laboratories (India),Industry,1,6,6,True,False,0.0,0
+I4405263612,Nanda Nath Saikia College,University / college,1,6,6,True,False,0.0,0
+I4210155803,CPCL Polytechnic College,University / college,2,5,6,True,False,0.0,2
+I4405273661,COEP Technological University,University / college,5,3,6,True,True,0.0,1
+I4405278262,Swarnandhra College of Engineering and Technology,University / college,1,6,6,True,False,0.0,0
+I116132077,"National Institute of Food Technology, Entrepreneurship and Management - Thanjavur",Other government R&D,3,4,6,True,False,0.0,0
+I4210106490,All India Institute of Medical Sciences Bhopal,University / college,3,4,6,True,False,0.0,0
+I4210097016,International Institute of Information Technology,IIIT,6,1,6,True,False,0.0,0
+I4210097624,Poornaprajna Institute of Scientific Research,University / college,5,3,6,True,True,0.0,1
+I4210162544,Dr D Y Patil Dental College & Hospital,University / college,1,6,6,False,True,0.0,1
+I118315836,TERI University,University / college,2,5,6,True,True,0.0,5
+I4210116159,SCMS Group of Educational Institutions,University / college,4,4,6,True,True,0.0,1
+I51317819,Institute of Medical Sciences,University / college,1,5,5,False,True,0.0,1
+I1333651918,Indian Institute of Tropical Meteorology,Other government R&D,2,4,5,False,True,0.0,1
+I4210090503,International Centre for Theoretical Sciences,DAE,1,5,5,False,True,0.0,3
+I4405254961,Malla Reddy University,University / college,5,1,5,False,True,0.0,1
+I180507071,Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya,University / college,2,3,5,False,True,0.0,0
+I4210089896,Indian Institute of Information Technology Guwahati,IIIT,3,3,5,False,True,0.0,1
+I4405259196,"Government Engineering College, Bhavnagar",University / college,3,2,5,False,True,0.0,8
+I4210149022,Father Muller Charitable Institutions,Other,1,5,5,False,True,0.0,1
+I4210130653,Guru Nanak Institutions,University / college,2,3,5,True,False,0.0,7
+I2802608988,Defence Food Research Laboratory,DRDO,1,5,5,False,True,0.0,1
+I4405263326,"Government College of Engineering, Erode",University / college,3,2,5,True,False,0.0,0
+I2801583272,Oxford Educational Institutions,University / college,2,5,5,True,True,0.00024,1
+I4210117605,Peerless Hospital & B.K.Roy Research Centre,Hospital / medical,1,5,5,False,True,0.0,1
+I186246823,University of Lucknow,University / college,1,5,5,False,True,0.0,2
+I4210098184,Sardar Vallabhbhai Patel University of Agriculture & Technology,University / college,1,5,5,True,False,0.0,0
+I2802982682,Sandip Foundation,University / college,1,5,5,True,False,0.0,0
+I9223067,Jaipur National University,University / college,1,5,5,True,False,0.0,0
+I4405256338,The Assam Royal Global University,University / college,2,3,5,False,True,0.0,1
+I4405256405,Velalar College of Engineering and Technology,University / college,4,2,5,True,False,0.0,0
+I4210136064,Reliance Industries (India),Industry,2,5,5,True,True,0.0,6
+I157117621,Kavayitri Bahinabai Chaudhari North Maharashtra University,University / college,2,4,5,False,True,0.0,1
+I99552915,University of Rajasthan,University / college,3,3,5,False,True,0.0,1
+I4210113629,D A Pandu Memorial RV Dental College and Hospital,University / college,3,2,5,False,True,0.0,1
+I4405254056,St. Thomas College (Autonomous),University / college,1,5,5,False,True,0.0,1
+I4210156819,Center for Excellence in Basic Sciences,DAE,2,3,5,False,True,0.0,1
+I72677176,Tripura University,University / college,1,5,5,True,False,0.0,0
+I4210134671,M.S. Ramaiah Medical College,University / college,2,3,5,False,True,0.0,1
+I4405277150,Madras Christian College,University / college,1,5,5,False,True,0.0,4
+I4210147361,National Institute of Hydrology,Other government R&D,4,2,5,False,True,0.0,1
+I2800849556,"American College, Madurai",University / college,2,5,5,True,True,0.0,0
+I4210142041,Central Plantation Crops Research Institute,ICAR,5,1,5,False,True,0.0,1
+I4405261689,Rathinam Technical Campus,University / college,1,5,5,True,False,0.0,0
+I4405262983,IIMT University,University / college,2,4,5,True,False,0.0,0
+I4210128379,Orthopaedic Research Group,Other,1,5,5,True,False,0.0,0
+I162289562,All India Council for Technical Education,Other government R&D,2,4,5,True,False,2e-05,0
+I135388327,University of Kashmir,University / college,1,5,5,True,False,0.0,9
+I4405266173,SRM Medical College Hospital and Research Centre,University / college,2,3,5,True,False,0.0,0
+I28630478,Kanya Maha Vidyalaya,University / college,3,3,5,True,False,0.0,0
+I4405257640,"All India Institute of Medical Sciences, Mangalagiri",University / college,2,5,5,True,True,0.00025,1
+I193073490,Siksha O Anusandhan University,University / college,4,3,5,True,True,0.0,1
+I185052938,Hemwati Nandan Bahuguna Garhwal University,University / college,2,4,5,True,False,0.0,0
+I4405258111,Ahalia School of Engineering and Technology,University / college,4,2,5,True,False,0.0,0
+I1341020899,Structural Engineering Research Centre,CSIR,2,4,5,True,True,0.0,4
+I83073037,Yogi Vemana University,University / college,5,2,5,True,True,0.0,0
+I4210113821,"Indian Institute of Information Technology, Pune",IIIT,2,4,5,False,True,0.0,1
+I33552525,LNM Institute of Information Technology,University / college,4,3,5,True,True,0.0,1
+I82452031,Tamil Nadu Veterinary and Animal Sciences University,University / college,2,3,4,True,False,0.0,0
+I127727965,Magadh University,University / college,2,3,4,True,False,0.0,0
+I4405263758,G.L. Bajaj Institute of Technology and Management Greater Noida,University / college,2,3,4,False,True,0.0,1
+I4210154029,PSG Institute of Advanced Studies,University / college,2,3,4,False,True,0.0,1
+I4210127669,Central Institute of Mining and Fuel Research,CSIR,2,2,4,False,True,0.0,1
+I4210165321,Manipal Hospital,Hospital / medical,1,4,4,False,True,0.0,1
+I165831266,Nirma University,University / college,2,4,4,True,True,0.0,1
+I4210108071,Indian Institute of Integrative Medicine,CSIR,1,4,4,False,True,0.0,4
+I3132308339,Government Dental College & Research Institute,University / college,2,2,4,False,True,0.0,1
+I4210104670,National Centre for Cell Science,Other government R&D,2,2,4,False,True,0.0,1
+I78663439,Institute of Chartered Financial Analysts of India,University / college,1,4,4,False,True,0.0,10
+I699696,National Institute of Mental Health and Neurosciences,Hospital / medical,2,3,4,False,True,0.0,1
+I2802772015,IITB-Monash Research Academy,University / college,2,2,4,True,False,0.0,1
+I4405279679,Ramakrishna Mission Vivekananda College,University / college,1,4,4,True,False,0.0,0
+I303593345,Chaudhary Charan Singh University,University / college,2,3,4,False,True,0.0,1
+I61198380,Nagaland University,University / college,1,4,4,False,True,0.0,1
+I377099284,Chaudhary Sarwan Kumar Himachal Pradesh Krishi Vishvavidyalaya,University / college,3,2,4,False,True,0.0,1
+I196652580,Swami Ramanand Teerth Marathwada University,University / college,1,4,4,False,True,0.0,1
+I4405263630,"Toshniwal Arts, Commerce, and Science College",University / college,1,4,4,False,True,0.0,1
+I26771391,Jaipuria Institute of Management,University / college,2,2,4,True,False,0.0,9
+I4210123960,NIIT University,University / college,4,1,4,True,False,0.0,0
+I4210145115,D.Y. Patil Education Society,University / college,1,4,4,True,False,0.0,11
+I43218427,Mohanlal Sukhadia University,University / college,1,4,4,True,False,0.0,11
+I4210153931,D.Y. Patil University,University / college,1,4,4,True,False,0.0,11
+I3132999081,Marwadi University,University / college,1,4,4,True,False,0.0,0
+I4210165642,Oracle (India),Industry,3,3,4,True,True,0.0,1
+I4210119093,Suamandeep Vidyapeeth University,University / college,1,4,4,True,False,0.0,0
+I4210121746,Ministry of Electronics and Information Technology,Other government R&D,2,2,4,True,False,0.0,0
+I64189192,"International Institute of Information Technology, Hyderabad",IIIT,3,3,4,True,True,0.0,1
+I2801092184,Central Water and Power Research Station,Other government R&D,2,3,4,False,True,0.0,1
+I4210101251,Bangalore Baptist Hospital,Hospital / medical,2,2,4,False,True,0.0,1
+I64157871,B.J. Medical College,Hospital / medical,1,4,4,False,True,0.0,6
+I3016035982,Ahmedabad Civil Hospital,Hospital / medical,1,4,4,False,True,0.0,6
+I4405278019,Nagaon University,University / college,2,2,4,False,True,0.0,1
+I4028839,Biju Patnaik University of Technology,University / college,2,3,4,False,True,0.0,1
+I4387154320,Gnanamani College of Technology,University / college,3,2,4,True,False,0.0,0
+I4210137508,Shri Vishwakarma Skill University,University / college,2,2,4,False,True,0.0,1
+I3131743352,Patliputra University,University / college,1,4,4,True,False,0.0,0
+I2800889234,Manubhai Patel Dental College and Hospital,University / college,1,4,4,True,False,0.0,0
+I8977528,Dr. Hari Singh Gour University,University / college,2,4,4,True,True,0.0002,6
+I4405258421,P P Savani University,University / college,1,4,4,True,False,0.0,3
+I4210162141,Microsoft (India),Industry,4,2,4,True,True,0.0,1
+I4405256248,Malla Reddy Engineering College for Women,University / college,2,3,4,True,False,0.0,0
+I20791572,Indira Gandhi Institute of Technology,University / college,2,3,4,True,False,0.0,0
+I4210152788,Aurigene Discovery Technologies (India),Other,1,4,4,True,False,0.0,3
+I2800701874,Tamil Nadu Dr. M.G.R. Medical University,University / college,2,3,4,True,False,0.0,0
+I147727580,Dr. Bhimrao Ambedkar University,University / college,1,4,4,True,False,0.0,0
+I4405261743,Vishwakarma Institute of Technology,University / college,2,4,4,True,True,0.0,1
+I4405256247,Sri Dev Suman Uttarakhand University,University / college,2,4,4,True,True,0.00015,0
+I4210119409,Microwave Tube Research & Development Centre,DRDO,3,2,4,True,False,0.0,0
+I2801496733,Armament Research and Development Establishment,DRDO,2,4,4,True,True,0.0,2
+I137674396,RK University,University / college,1,4,4,True,False,0.0,7
+I4388891759,Rajagiri College of Social Sciences (Autonomous),University / college,1,4,4,False,True,0.0,1
+I4210141416,Mondelēz International (India),Industry,1,4,4,False,True,0.0,1
+I4210137505,Torrent Pharma (India),Industry,1,4,4,False,True,0.0,1
+I4210089662,Central Council for Research in Ayurvedic Science,Other government R&D,1,4,4,False,True,0.0,1
+I4405260237,Sitamarhi Institute of Technology,Other government R&D,1,4,4,False,True,0.0,1
+I238035932,Indira Gandhi Institute of Medical Sciences,University / college,1,3,3,False,True,0.0,1
+I45509622,Indian Agricultural Research Institute,ICAR,1,3,3,False,True,0.0,4
+I19149307,Chennai Mathematical Institute,University / college,2,2,3,False,True,0.0,1
+I4210100893,Indian Institute of Information Technology Vadodara,IIIT,3,1,3,False,True,0.0,1
+I4210149349,Syngene International (India),Industry,2,2,3,True,False,0.0,0
+I893914191,Ragas Dental College & Hospital,Hospital / medical,1,3,3,True,False,0.0,0
+I165682329,Guru Nanak Dev University,University / college,2,3,3,True,True,0.0,1
+I4405270480,Mohan Babu University,University / college,2,3,3,True,True,0.0002,0
+I4405275147,Vidyasagar College,University / college,1,3,3,True,False,0.0,0
+I4405270341,Ramakrishna Mission Vivekananda Centenary College,University / college,1,3,3,True,False,0.0,0
+I190570697,Bundelkhand University,University / college,1,3,3,True,False,0.0,0
+I229991691,Chhatrapati Shahu Ji Maharaj University,University / college,1,3,3,True,False,0.0,3
+I4405276411,Indian Overseas Bank,Other,1,3,3,True,False,0.0,3
+I4210104323,Velammal Medical College Hospital and Research Institute,Hospital / medical,1,3,3,True,False,0.0,0
+I1331084196,National Forensic Sciences University,University / college,3,1,3,True,False,0.0,0
+I3173610708,Vimhans PrimaMed Super Speciality Hospital,Hospital / medical,1,3,3,True,False,0.0,0
+I2800176906,Welspun (India),Industry,1,3,3,True,False,0.0,0
+I57085157,Sardar Patel University,University / college,1,3,3,True,False,0.0,9
+I2799532815,Madan Mohan Malaviya University of Technology,University / college,2,3,3,True,True,0.0,1
+I4405265651,Don Bosco Institute of Technology,University / college,1,3,3,True,False,0.0,0
+I4405264256,Don Bosco Institute of Technology,University / college,1,3,3,True,False,0.0,0
+I4210102005,Rajiv Gandhi University,University / college,1,3,3,True,False,0.0,0
+I4210119396,Social Service Sericulture Project Trust,Other,3,1,3,True,False,0.0,0
+I4210091849,Bhabha Atomic Research Center Hospital,DAE,1,3,3,True,False,0.0,3
+I4405268639,Kongunadu Arts and Science College,University / college,2,2,3,True,False,0.0,0
+I4210094717,"National Institute of Technical Teachers Training and Research, Chandigarh",University / college,2,2,3,True,False,0.0,0
+I4405260223,Kamaraj College,University / college,1,3,3,True,False,0.0,0
+I2801220108,Government General Hospital,Hospital / medical,1,3,3,True,False,0.0,0
+I159337121,Madras Medical College,University / college,1,3,3,True,False,0.0,0
+I2800696116,Bihar Agricultural University,University / college,1,3,3,True,False,0.0,4
+I4210148176,Kalpavriksh,Other,1,3,3,True,False,0.0,0
+I2801764298,Fortis Malar Hospital,Hospital / medical,1,3,3,True,False,0.0,0
+I38192578,Pandit Ravishankar Shukla University,University / college,1,3,3,False,True,0.0,1
+I4210128070,National Institute of High Security Animal Diseases,Other,1,3,3,False,True,0.0,1
+I4405261723,Marathwada Mitra Mandal's College of Engineering,University / college,1,3,3,True,False,0.0,12
+I188963388,International Institute of Information Technology,IIIT,1,3,3,True,False,0.0,12
+I152185767,Navsari Agricultural University,University / college,1,3,3,True,False,0.0,0
+I106841677,Mother Teresa Women's University,University / college,1,3,3,True,False,0.0,0
+I4210148816,Institute of Advanced Study in Science and Technology,Other government R&D,2,2,3,True,False,0.0,0
+I4210142485,QNu Labs (India),Industry,3,1,3,False,True,0.0,1
+I41549804,Vidyasagar University,University / college,2,3,3,True,True,0.0,3
+I4210153998,M S Ramaiah Memorial Hospital,Other,1,3,3,False,True,0.0,1
+I4405272818,"National Institute of Technical Teachers Training and Research, Chennai",University / college,3,1,3,True,False,0.0,0
+I161370692,Sanjay Gandhi Post Graduate Institute of Medical Sciences,Other government R&D,1,3,3,False,True,0.0,1
+I4405266258,Chaitanya,University / college,1,3,3,True,False,0.0,0
+I56365517,Terminal Ballistics Research Laboratory,DRDO,1,3,3,True,False,0.0,2
+I112700253,Ranchi University,University / college,1,3,3,True,False,0.0,0
+I4210125896,Naval Science & Technological Laboratory,DRDO,2,2,3,True,False,0.0,0
+I4405258486,Paavai Engineering College,University / college,2,3,3,True,True,0.0,0
+I4405266797,Indian Institute of Geomagnetism,University / college,1,3,3,True,False,0.0,0
+I71631882,Vinoba Bhave University,University / college,1,3,3,True,False,0.0,0
+I4405276938,Sri Raaja Raajan College of Engineering and Technology,University / college,1,3,3,True,False,0.0,0
+I4210154858,Government Mohan Kumaramangalam Medical College,Other,1,3,3,True,False,0.0,0
+I4210118770,Centre of Plasma Physics - Institute for Plasma Research,DAE,1,3,3,False,True,0.0,3
+I4405274437,Poornima Institute of Engineering and Technology,University / college,1,3,3,False,True,0.0,1
+I221342038,Kerala University of Fisheries and Ocean Studies,University / college,1,3,3,False,True,0.0,5
+I105454292,Guru Gobind Singh Indraprastha University,University / college,1,3,3,False,True,0.0,3
+I4405260500,AWH Engineering College,University / college,1,3,3,False,True,0.0,1
+I2802895650,Institution of Engineers,Other,1,3,3,False,True,0.0,1
+I57496824,National Institute of Technology Arunachal Pradesh,NIT,1,3,3,False,True,0.0,1
+I119336924,Bhavnagar University,University / college,1,3,3,False,True,0.0,6
+I4405266390,Ministry of Railways,Other government R&D,1,3,3,False,True,0.0,0
+I4405260978,Guru Nanak Institute of Technology,University / college,1,3,3,True,False,0.0,7
+I110116418,Maharaja Sayajirao University of Baroda,University / college,1,3,3,False,True,0.0,6
+I899802,Central Marine Fisheries Research Institute,ICAR,1,3,3,False,True,0.0,1
+I76777374,Central University of Rajasthan,University / college,1,3,3,False,True,0.0,2
+I26072440,Indian Institute of Information Technology Allahabad,IIIT,3,1,3,True,False,0.0,0
+I51969498,Indira Gandhi National Open University,University / college,2,2,3,True,False,0.0,0
+I3133421068,Bhartiya Skill Development University,University / college,1,3,3,True,False,0.0,1
+I4405272889,"Regional Institute of Education, Bhubaneswar",University / college,1,3,3,False,True,0.0,1
+I79741504,Tata Institute of Social Sciences,University / college,2,2,3,False,True,0.0,5
+I4210118226,Mangalore Institute of Oncology,Other,2,2,3,False,True,0.0,1
+I123665430,Shri BM Patil Medical College,University / college,1,3,3,False,True,0.0,1
+I4405260855,"UGC-DAE Consortium for Scientific Research, Mumbai Centre",DAE,1,3,3,False,True,0.0,3
+I1322336093,Central Tuber Crops Research Institute,ICAR,1,3,3,True,False,0.0,4
+I242113363,National Institute of Disaster Management,Other government R&D,1,3,3,False,True,0.0,2
+I4405257022,S. G. Balekundri Institute of Technology Belagavi,University / college,2,2,3,False,True,0.0,1
+I4210133477,Government College Kodanchery,University / college,1,3,3,True,False,0.0,5
+I4405266773,Ministry of Home Affairs,Other government R&D,1,3,3,False,True,0.0,2
+I2799533726,Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth,University / college,1,3,3,True,False,0.0,4
+I158867519,International Management Institute,University / college,1,3,3,True,False,0.0,0
+I4210109271,J. S. Ayurveda Mahavidyalaya and P.D. Patel Ayurveda Hospital,University / college,1,3,3,False,True,0.0,1
+I4405266223,Ministry of Education,Other government R&D,1,2,2,True,False,0.0,0
+I118298837,Sankara Nethralaya,Hospital / medical,2,2,2,True,True,0.0,1
+I4210091027,Indian Institute of Advanced Research,University / college,1,2,2,True,False,0.0,6
+I4405277257,Hemchand Yadav Vishwavidyalaya,University / college,1,2,2,False,True,0.0,1
+I4210147242,Amicable Knowledge Solution University,University / college,1,2,2,False,True,0.0,1
+I4405256669,RajaRajeswari College of Engineering,University / college,2,1,2,True,False,0.0,0
+I90425906,South Asian University,University / college,1,2,2,False,True,0.0,1
+I2802599571,India Meteorological Department,Other government R&D,1,2,2,True,False,0.0,5
+I4210090456,Harcourt Butler Technical University,University / college,1,2,2,True,False,0.0,0
+I342702707,National Institute of Food Technology Entrepreneurship and Management,University / college,1,2,2,True,False,0.0,0
+I4405266204,National Payments Corporation of India,Other government R&D,2,1,2,True,False,0.0,0
+I4405262393,Somaiya Vidyavihar University,University / college,1,2,2,True,False,0.0,1
+I4210146606,Shanmuganathan Engineering College,University / college,1,2,2,True,False,0.0,0
+I4405271476,Pandu College,University / college,1,2,2,True,False,0.0,0
+I3130411899,Bhagat Phool Singh Mahila Vishwavidyalaya,University / college,1,2,2,True,False,0.0,0
+I4210125378,Integrated Test Range,DRDO,1,2,2,True,False,0.0,2
+I4405276712,CARE School of Architecture,University / college,2,1,2,True,False,0.0,0
+I4210094264,National Institute of Technical Teachers’ Training and Research,University / college,1,2,2,True,False,0.0,0
+I507952983,Dr. NTR University of Health Sciences,University / college,1,2,2,True,False,0.0,0
+I864998749,Indian Institute of Management Mumbai,University / college,2,1,2,False,True,0.0,1
+I4405260288,Loyola Institute of Technology and Science,University / college,1,2,2,True,False,0.0,0
+I4405264314,Jorhat Engineering College,University / college,1,2,2,True,False,0.0,1
+I4210130471,Krishna Institute of Medical Sciences Deemed University,University / college,1,2,2,True,False,0.0,0
+I150870154,Indian Institute of Management Ahmedabad,University / college,1,2,2,True,False,0.0,1
+I4405256783,"Jawaharlal Nehru Technological University-Gurajada, Vizianagaram",University / college,1,2,2,True,False,0.0,1
+I4210102197,Healthcare Technology Innovation Centre,Other government R&D,1,2,2,True,False,0.0,0
+I4210091132,Krishna Institute of Medical Sciences,Hospital / medical,1,2,2,True,False,0.0,0
+I4405258392,Maharaja Agrasen Himalayan Garhwal University,University / college,1,2,2,True,False,0.0,0
+I96307353,Tilka Manjhi Bhagalpur University,University / college,2,1,2,True,False,0.0,0
+I4405263090,VIT Bhopal University,University / college,2,1,2,False,True,0.0,1
+I16319596,Indira Gandhi Institute of Development Research,University / college,1,2,2,False,True,0.0,1
+I172917736,"Christian Medical College, Vellore",University / college,1,2,2,False,True,0.0,1
+I4405270522,Ministry of Jal Shakti,Other government R&D,1,2,2,False,True,0.0,1
+I4210133503,Central University of Haryana,University / college,2,1,2,False,True,0.0,1
+I212738717,Dwarkadas J. Sanghvi College of Engineering,University / college,1,2,2,False,True,0.0,1
+I4210103279,IBM Research - India,Other government R&D,1,2,2,True,False,0.0,0
+I4405268729,Audisankara (Deemed to be University),University / college,1,2,2,True,False,0.0,0
+I4405264359,East West Institute of Technology,University / college,1,2,2,False,True,0.0,1
+I4210118696,Mitra Biotech (India),Other,1,2,2,True,False,0.0,0
+I1337315214,Dr. Ram Manohar Lohia Avadh University,University / college,1,2,2,False,True,0.0,2
+I4210093039,Melaka Manipal Medical College,University / college,1,2,2,False,True,0.0,1
+I4210097370,Sanjay Ghodawat University,University / college,1,2,2,False,True,0.0,1
+I236004819,Babasaheb Bhimrao Ambedkar Bihar University,University / college,1,2,2,False,True,0.0,2
+I238597064,Goa Medical College,University / college,2,1,2,False,True,0.0,1
+I85145500,Indian Institute of Toxicology Research,CSIR,1,2,2,True,False,0.0,0
+I867306930,Power Grid Corporation (India),Industry,1,2,2,True,False,0.0,1
+I132157868,Dr. Babasaheb Ambedkar Technological University,University / college,1,2,2,False,True,0.0,1
+I288045149,Dravidian University,University / college,1,2,2,False,True,0.0,1
+I189266452,Dr. R. Ahmed Dental College and Hospital,University / college,1,2,2,True,False,0.0,1
+I4405261846,Ramachandra College of Engineering (A),University / college,2,1,2,True,False,0.0,0
+I1315184752,Government of Maharashtra,Other government R&D,1,2,2,True,True,0.0,1
+I61553790,University of Agricultural Sciences Raichur,University / college,1,2,2,False,True,0.0,1
+I4210112849,TIFR Centre for Interdisciplinary Sciences,DAE,1,2,2,False,True,0.0,3
+I4405272881,"Centre for Incubation, Innovation, Research and Consultancy",Other government R&D,1,2,2,False,True,0.0,1
+I44635919,National Institute of Technology Delhi,NIT,1,2,2,False,True,0.0,1
+I4210154636,"Technology Information, Forecasting and Assessment Council",Other government R&D,1,2,2,False,True,0.0,1
+I4210092534,Indira Gandhi Medical College and Research Institute,Other,1,2,2,True,False,0.0,0
+I4210108681,Vidya Prathishthan,University / college,2,1,2,False,True,0.0,1
+I4405253771,Atria University,University / college,1,2,2,False,True,0.0,1
+I4387152955,Shri Dharmasthala Manjunatheshwara University,University / college,1,2,2,False,True,0.0,1
+I4210113972,Defence Materials and Stores Research and Development Establishment,DRDO,1,2,2,False,True,0.0,1
+I33375025,Airbus (India),Industry,1,2,2,False,True,0.0,1
+I4210145302,St.John's Medical College Hospital,University / college,1,2,2,False,True,0.0,1
+I347237974,Ashoka University,University / college,2,1,2,False,True,0.0,1
+I4210109535,Texas Instruments (India),Industry,2,2,2,True,True,0.0,1
+I4210114808,Jaswant Rai Speciality Hospital,Hospital / medical,1,2,2,True,False,0.0,0
+I4405260459,Vikas College of Engineering and Technology,University / college,1,2,2,True,False,0.0,0
+I4405271313,AJK College of Arts and Science,Other,1,2,2,True,False,0.0,0
+I81020251,Great Lakes Institute of Management,University / college,1,2,2,True,False,0.0,0
+I3129450392,West Bengal National University of Juridical Sciences,University / college,1,2,2,True,False,0.0,0
+I10767319,Assam Don Bosco University,University / college,1,2,2,True,False,0.0,0
+I2799277952,Indira Gandhi Medical College,University / college,1,2,2,True,False,0.0,0
+I4210145126,Aditya Birla (India),Industry,1,2,2,True,False,0.0,6
+I4210142581,General Electric (India),Industry,1,2,2,True,False,0.0,0
+I4210115326,Swami Vivekanand College of Pharmacy,University / college,2,1,2,True,False,0.0,0
+I4405272148,Adani Group (India),Industry,1,2,2,True,False,0.0,1
+I4405259325,Sai University,University / college,2,1,2,True,False,0.0,0
+I4405254295,Sister Nibedita Government General Degree College for Girls,University / college,1,2,2,False,True,0.0,1
+I4210095987,Institute of Seismological Research,Other government R&D,2,1,2,False,True,0.0,1
+I221092938,Krishna University,University / college,1,2,2,True,False,0.0,0
+I2799289540,Indian Institute of Management Kashipur,University / college,2,1,2,False,True,0.0,1
+I173709673,Indian Oil Corporation (India),Industry,2,1,2,True,False,0.0,0
+I182663762,Lingaya's Vidyapeeth,University / college,1,2,2,False,True,0.0,2
+I4405272783,Nehru Arts and Science College,University / college,1,2,2,False,True,0.0,1
+I4210095456,Tejas Networks (India),Industry,1,2,2,True,False,0.0,0
+I4405278167,Shri Govindram Seksaria Institute of Technology and Science,University / college,1,2,2,True,False,0.0,0
+I4405261353,Sri Muthukumaran Institute of Technology,University / college,1,2,2,True,False,0.0,0
+I140717209,Indian Institute of Astrophysics,Other government R&D,2,2,2,True,True,0.0,1
+I72769676,Gautam Buddha University,University / college,1,2,2,True,False,0.0,1
+I4405253485,Rajkiya Engineering College Kannauj,University / college,1,2,2,True,False,0.0,0
+I1332470094,Indian Institute of Horticultural Research,ICAR,1,2,2,True,False,0.0,0
+I4405270675,Air India Limited (India),Industry,1,2,2,True,False,0.0,0
+I4210089955,Bharat Forge (India),Industry,1,2,2,False,True,0.0,1
+I1279672703,Variable Energy Cyclotron Centre,DAE,1,2,2,True,False,0.0,3
+I4210137468,XIM University,University / college,2,1,2,True,False,0.0,0
+I4387154860,Rajkiya Engineering College Azamgarh,Other government R&D,1,2,2,True,False,0.0,0
+I4210162812,Combat Vehicles Research and Development Establishment,DRDO,1,2,2,True,False,0.0,2
+I2801345345,Cancer Institute (WIA),Other,1,2,2,True,False,0.0,0
+I4405261651,KIRND Institute of Research and Development Pvt Ltd,Other government R&D,1,2,2,True,False,0.0,0
+I2890559060,Shri Dharmasthala Manjunatheswara College of Ayurveda and Hospital,University / college,1,2,2,False,True,0.0,1
+I128420443,Central Salt and Marine Chemicals Research Institute,CSIR,1,2,2,False,True,0.0,4
+I1291012402,"Ministry of Environment, Forests and Climate Change",Other government R&D,1,1,1,False,True,0.0,1
+I4405279395,LDRP Institute of Technology and Research,University / college,1,1,1,False,True,0.0,1
+I138537684,Gauhati University,University / college,1,1,1,False,True,0.0,1
+I3131870445,Woxsen School of Business,University / college,1,1,1,True,False,0.0,0
+I4405254494,Puducherry Technological University,University / college,1,1,1,True,False,0.0,0
+I4819740,Sri Sathya Sai Institute of Higher Learning,University / college,1,1,1,True,False,0.0,0
+I25051037,Stanley Medical College,University / college,1,1,1,True,False,0.0,0
+I143247161,Babasaheb Bhimrao Ambedkar University,University / college,1,1,1,True,False,0.0,0
+I4405274491,Kishkinda University,University / college,1,1,1,True,False,0.0,0
+I3141573830,Department of Biotechnology,Other government R&D,1,1,1,True,False,0.0,0
+I161045824,Avinashilingam University,University / college,1,1,1,True,False,0.0,0
+I138272832,Devi Ahilya Vishwavidyalaya,University / college,1,1,1,False,True,0.0,1
+I4210138020,Murugappa (India),Industry,1,1,1,True,False,0.0,0
+I2800120229,Indian Navy,Other government R&D,1,1,1,False,True,0.0,1
+I4405266038,Birla Global University,University / college,1,1,1,True,False,0.0,0
+I2800614057,Kalinga University,University / college,1,1,1,False,True,0.0,1
+I2799306724,Ramakrishna Mission Vidyamandira,Other,1,1,1,False,True,0.0,1
+I140887281,Goa University,University / college,1,1,1,False,True,0.0,1
+I4210146358,Raisoni Group of Institutions,University / college,1,1,1,False,True,0.0,1
+I4405271317,Don Bosco College of Engineering,University / college,1,1,1,False,True,0.0,1
+I4210096567,D Y Patil International University,University / college,1,1,1,False,True,0.0,1
+I2800611740,"Regional Cancer Center, Thiruvananthapuram",Hospital / medical,1,1,1,False,True,0.0,1
+I290407205,Meenakshi Academy of Higher Education and Research,University / college,1,1,1,False,True,0.0,1
+I52527943,Ahmedabad University,University / college,1,1,1,True,False,0.0,0
+I9694494,Parul University,University / college,1,1,1,True,False,0.0,0
+I4210163774,International Crops Research Institute for the Semi-Arid Tropics,Other,1,1,1,False,True,0.0,1
+I4405277697,Trident Academy of Technology,University / college,1,1,1,True,False,0.0,0
+I4405257354,Nalla Narasimha Reddy Education Society's Group of Institutions,University / college,1,1,1,True,False,0.0,0
+I4405253601,Jabalpur Engineering College,University / college,1,1,1,True,False,0.0,0
+I1296725772,University of Engineering & Management,University / college,1,1,1,True,False,0.0,0
+I4405258633,Rungta College of Engineering and Technology,University / college,1,1,1,False,True,0.0,1
+I59100879,Jai Narain Vyas University,University / college,1,1,1,False,True,0.0,1
+I165259314,Dr. Babasaheb Ambedkar Marathwada University,University / college,1,1,1,False,True,0.0,1
+I4405255249,Indian Institute of Management Jammu,University / college,1,1,1,False,True,0.0,1
+I4210119567,Medi-Caps University,University / college,1,1,1,True,False,0.0,0
+I299920578,Baba Ghulam Shah Badshah University,University / college,1,1,1,True,False,0.0,0
+I151205615,Agharkar Research Institute,Other government R&D,1,1,1,True,False,0.0,0
+I33003672,Indian Institute of Management Indore,University / college,1,1,1,True,False,0.0,0
+I304343950,Tamil Nadu Dr. J Jayalalitha Fisheries University,University / college,1,1,1,True,False,0.0,0
+I4210160748,Dr. Agarwal's Eye Hospital,Hospital / medical,1,1,1,False,True,0.0,1
+I14467051,Central Pollution Control Board,Other government R&D,1,1,1,False,True,0.0,1
+I4405260856,Bengaluru City University,University / college,1,1,1,False,True,0.0,1
+I4405260234,Dr. Daulatrao Aher College of Engineering,University / college,1,1,1,False,True,0.0,1
+I4210117535,Cognizant (India),Industry,1,1,1,True,False,0.0,0
+I25205351,"Jaypee University of Engineering and Technology, Guna",University / college,1,1,1,False,True,0.0,1
+I167751958,Institute of Chemical Technology,University / college,1,1,1,True,False,0.0,0
+I81433678,Sikkim Manipal University,University / college,1,1,1,True,False,0.0,0
+I133978751,Rashtrasant Tukadoji Maharaj Nagpur University,University / college,1,1,1,True,False,0.0,0
+I4210150675,University of Agricultural and Horticultural Sciences,University / college,1,1,1,False,True,0.0,1
+I4210164514,Bapuji Dental College and Hospital,University / college,1,1,1,False,True,0.0,1
+I4405258911,Adani University,University / college,1,1,1,False,True,0.0,1
+I112754052,Sambalpur University,University / college,1,1,1,False,True,0.0,1
+I194223965,National Centre for Biological Sciences,DAE,1,1,1,False,True,0.0,1
+I4210153382,Rajarajeswari Dental College and Hospital,University / college,1,1,1,False,True,0.0,1
+I4210162439,"MIT Art, Design and Technology University",University / college,1,1,1,False,True,0.0,1
+I4210142231,Central University of Jammu,University / college,1,1,1,False,True,0.0,1
+I4405263055,Sandip University Sijoul Madhubani Bihar,University / college,1,1,1,False,True,0.0,1
+I4210111264,Central Soil and Materials Research Station,Other government R&D,1,1,1,True,False,0.0,0
+I4210115222,Advanced Numerical Research and Analysis Group,DRDO,1,1,1,False,True,0.0,1
+I248710770,Government Medical College,University / college,1,1,1,True,False,0.0,0
+I4210148999,Chhattisgarh Council of Science and Technology,Other government R&D,1,1,1,False,True,0.0,1
+I4405259024,Seshadripuram Institute of Management Studies,Other,1,1,1,False,True,0.0,1

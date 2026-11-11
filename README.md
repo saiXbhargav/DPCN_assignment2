@@ -652,6 +652,52 @@ citation data, where growth is limited by time and team size.
   real institute-wide difference.
 - Branch by branch, the bootstrap intervals give the table in section 3: three clear wins for each NIT, and four branches with no clear difference.
 
+### 8. Phase II additions (`scripts/phase2.py` → [PHASE2.md](data/analysis/phase2/PHASE2.md))
+These answer the professor's Phase II suggestions. Details, tables and caveats are in PHASE2.md.
+
+- **Students' papers counted.**
+  - `data/all_papers.csv` adds the **2,917 papers with no faculty author** (students and other NIT staff), science / engineering only. That makes **21,260 papers** (Trichy 10,950, Surathkal 10,377).
+  - Publication statistics are reported for both scopes. Networks and faculty rankings stay faculty-only.
+  - Student-only papers are not weaker: at NIT Trichy their mean FWCI is 1.84.
+- **Author count:** only **1%** of papers have 10 or more authors (212), holding under 2% of citations.
+- **Q1 and IF together:**
+  - Q1 and IF > 5: **1,586 Trichy / 1,481 Surathkal** (faculty papers);
+  - Q1 and IF > 10: **337 / 272**;
+  - almost every IF > 10 paper is also Q1.
+- **Collaborating institutions per year:**
+  - Indian partners about doubled from 2016 to 2025 (Trichy 115 → 241, Surathkal 103 → 211);
+  - foreign partners peaked around 2021–22;
+  - 2016–2026 totals: 1,712 (Trichy) and 1,534 (Surathkal) institutions in 85 and 80 countries.
+- **Large-team and high-citation flags:**
+  - no faculty member near 1 lakh citations (the highest is 20,427);
+  - no faculty paper with more than 22 authors;
+  - the only large physics paper (48 authors) has no faculty author;
+  - one faculty member gets most of his (few) citations from 10+-author papers;
+  - two career profiles (Kunwar Singh, Aditya Kumar) are polluted by same-name researchers in OpenAlex.
+- **Why private institutes cite us so much:**
+  - mainly **size, recent growth and proximity**: they're as big as the public citers, publish heavily since 2023 (74% of their citations to us) and are a median of 411 km away vs 1,664 km;
+  - **adjusted for size they cite us no more than public institutes** (43 vs 37 per 1,000 papers);
+  - somewhat more **personal ties**: former NIT members and earlier co-authors;
+  - their citing papers are lower-impact;
+  - **no general citation packing**; the few heavy-packing institutes (Nitte Meenakshi, VTU) are explained by alumni networks.
+- **Top 30 papers by journal IF:**
+  - SCImago-ranked journals only, ties broken by citations; one list for all papers and one for faculty papers;
+  - led by three NIT papers in *IEEE Communications Surveys & Tutorials* (IF 43.6);
+  - at least 12 of the 30 are reviews or surveys.
+- **Each faculty member's top 10 papers by journal IF:** 635 faculty, 5,100 rows.
+- **Most-used venues** (top 25 journals and top 15 conferences, per NIT and scope):
+  - *Materials Today: Proceedings* is #1 at both NITs (572 papers, mean FWCI 0.65–0.80);
+  - 163 "journal" papers are really repository deposits (Zenodo, DOAJ) and are flagged.
+- **Collaboration score** (faculty co-authors, Indian and foreign partner institutes), next to the unchanged research score:
+  - the two scores correlate at ρ = 0.71;
+  - top collaborators: S Suresh, G Arthanareeswaran, Siva Prasad Katakam;
+  - "strong research, few collaborators" is mostly Surathkal CSE and IT.
+- **Institute co-authorship network:**
+  - 826 Indian institutes and 4,147 links, including 2,969 partner–partner links created by our papers;
+  - 353 institutes linked to both NITs;
+  - two regional neighbourhoods (Karnataka around Surathkal, Tamil Nadu around Trichy);
+  - IITs are the best-connected partner type.
+
 ---
 
 ## Folder layout
@@ -679,11 +725,13 @@ DPCN_assignment2/
 │   ├── network_science.py   ← degree fits, null models, communities, institute network, regression
 │   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates (resumable)
 │   ├── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
+│   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
     ├── README.md            ← short data dictionary
     ├── group12_data.csv     ← MAIN SUBMISSION FILE
+    ├── all_papers.csv       ← every NIT paper incl. students' (science / engineering), for publication statistics
     ├── citation_network.csv     ← Task 2 submission
     ├── authorship_network.csv   ← Task 2 submission
     ├── indian_connections.csv   ← Task 2 submission
@@ -730,8 +778,11 @@ python build_networks.py            # again, so indian_connections.csv gets the 
 python fetch_impact.py partners     # partner research topics (uses indian_connections.csv)
 python analysis.py                  # data/analysis/
 python network_science.py           # data/analysis/ns_* and NETWORK_SCIENCE.md
-python fetch_insights.py            # reference years and institute coordinates (resumable)
+python fetch_insights.py refyears   # years of every cited work (about 4,400 requests, resumable)
+python fetch_insights.py geo        # institute coordinates (about 25 requests)
+python fetch_insights.py citerout   # size of the 40 institutes that cite us most (40 requests)
 python insights.py                  # data/analysis/insights/
+python phase2.py                    # data/all_papers.csv and data/analysis/phase2/
 python build_dashboard.py           # dashboard/index.html
 ```
 

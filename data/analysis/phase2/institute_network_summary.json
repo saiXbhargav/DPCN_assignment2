@@ -1,0 +1,14 @@
+{
+  "papers_used": 21258,
+  "institutes": 826,
+  "links": 4147,
+  "partner_partner_links": 2969,
+  "density": 0.012171105730427765,
+  "avg_clustering": 0.6584224341288083,
+  "louvain_communities": 13,
+  "modularity": 0.2825264347342139,
+  "largest_component_share_with_our_nits": 1.0,
+  "largest_component_share_without_our_nits": 0.8543689320388349,
+  "institutes_linked_to_both_nits": 353,
+  "joint_papers_nit_trichy_surathkal": 67
+}

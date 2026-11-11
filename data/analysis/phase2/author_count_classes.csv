@@ -1,0 +1,13 @@
+scope,institution,authors,papers,share_of_papers_pct,citations,share_of_citations_pct,citations_per_paper,mean_fwci,median_authors
+faculty papers,NIT Trichy,fewer than 10 authors,9100,99.09,137491,98.18,15.11,1.3,3.0
+faculty papers,NIT Trichy,10 or more authors,84,0.91,2544,1.82,30.29,1.85,11.0
+faculty papers,NIT Surathkal,fewer than 10 authors,9149,99.38,123976,98.96,13.55,1.38,3.0
+faculty papers,NIT Surathkal,10 or more authors,57,0.62,1304,1.04,22.88,2.41,11.0
+faculty papers,Both NITs,fewer than 10 authors,18202,99.23,260575,98.54,14.32,1.34,3.0
+faculty papers,Both NITs,10 or more authors,141,0.77,3848,1.46,27.29,2.07,11.0
+all papers (incl. students),NIT Trichy,fewer than 10 authors,10828,98.89,172903,97.98,15.97,1.38,3.0
+all papers (incl. students),NIT Trichy,10 or more authors,122,1.11,3573,2.02,29.29,1.99,11.0
+all papers (incl. students),NIT Surathkal,fewer than 10 authors,10287,99.13,138638,98.35,13.48,1.38,3.0
+all papers (incl. students),NIT Surathkal,10 or more authors,90,0.87,2332,1.65,25.91,2.88,11.0
+all papers (incl. students),Both NITs,fewer than 10 authors,21048,99.0,309964,98.13,14.73,1.38,3.0
+all papers (incl. students),Both NITs,10 or more authors,212,1.0,5905,1.87,27.85,2.36,11.0

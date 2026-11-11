@@ -1,0 +1,83 @@
+pair,joint_papers
+University / college – University / college,2117
+IIT – University / college,434
+Other government R&D – University / college,271
+NIT – University / college,259
+CSIR – University / college,137
+IISER / IISc – University / college,115
+IIT – NIT,96
+CSIR – CSIR,89
+IIT – IIT,83
+DAE – University / college,79
+ISRO – ISRO,76
+Hospital / medical – University / college,70
+DRDO – University / college,68
+NIT – NIT,65
+DRDO – DRDO,64
+IIT – Other government R&D,60
+Industry – University / college,59
+ISRO – University / college,53
+DAE – DAE,45
+IISER / IISc – IIT,40
+Other – University / college,39
+IIIT – University / college,38
+Other government R&D – Other government R&D,37
+ICAR – University / college,32
+DAE – IIT,30
+CSIR – IIT,26
+DRDO – IIT,25
+DAE – Other government R&D,24
+NIT – Other government R&D,24
+IIT – Industry,23
+CSIR – DAE,20
+DRDO – NIT,17
+DAE – NIT,15
+DRDO – Other government R&D,15
+IIT – ISRO,15
+IISER / IISc – NIT,14
+CSIR – NIT,14
+CSIR – DRDO,11
+Industry – NIT,10
+IIIT – NIT,10
+IIIT – IIT,10
+DRDO – IISER / IISc,9
+CSIR – ISRO,9
+DAE – IISER / IISc,9
+Industry – Industry,9
+Hospital / medical – Hospital / medical,8
+CSIR – IISER / IISc,7
+CSIR – Other government R&D,7
+Other – Other government R&D,6
+DAE – DRDO,6
+IISER / IISc – Other government R&D,6
+ISRO – Other government R&D,6
+Industry – Other government R&D,5
+DAE – ISRO,5
+CSIR – Industry,5
+IISER / IISc – Industry,5
+NIT – Other,4
+IIT – Other,4
+DRDO – Industry,4
+IISER / IISc – ISRO,4
+ICAR – ICAR,4
+CSIR – ICAR,3
+ISRO – Industry,3
+IISER / IISc – Other,3
+Hospital / medical – IIT,3
+Hospital / medical – Industry,2
+ISRO – Other,2
+ICAR – Industry,2
+IIIT – Other,2
+ICAR – IIT,2
+Hospital / medical – Other,2
+IISER / IISc – IISER / IISc,2
+ICAR – Other,2
+CSIR – IIIT,1
+CSIR – Other,1
+IIIT – IISER / IISc,1
+Hospital / medical – Other government R&D,1
+Hospital / medical – IIIT,1
+DAE – Industry,1
+IIIT – IIIT,1
+ISRO – NIT,1
+Other – Other,1

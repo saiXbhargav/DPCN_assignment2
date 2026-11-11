@@ -1,0 +1,241 @@
+rank,journal_name,papers,quartile_or_rank,journal_if_2yr,citations,citations_per_paper,mean_fwci,share_of_venue_type_pct,scope,institution,venue_type
+1,Materials Today Proceedings,288,,5.13,3285,11.41,0.77,3.95,faculty papers,NIT Trichy,journal
+2,Transactions of the Indian Institute of Metals,92,Q3,2.0,946,10.28,0.78,1.26,faculty papers,NIT Trichy,journal
+3,Journal of Materials Engineering and Performance,78,Q2,2.04,729,9.35,0.81,1.07,faculty papers,NIT Trichy,journal
+4,Materials Research Express,61,Q3,2.98,1240,20.33,1.04,0.84,faculty papers,NIT Trichy,journal
+5,Journal of Alloys and Compounds,61,Q1,6.4,1961,32.15,1.83,0.84,faculty papers,NIT Trichy,journal
+6,AEU - International Journal of Electronics and Communications,55,Q2,3.32,766,13.93,1.46,0.75,faculty papers,NIT Trichy,journal
+7,Multimedia Tools and Applications,54,Q1,5.94,745,13.8,1.46,0.74,faculty papers,NIT Trichy,journal
+8,International Journal of Hydrogen Energy,54,Q1,10.28,2660,49.26,2.62,0.74,faculty papers,NIT Trichy,journal
+9,Materials Letters,54,Q2,2.78,1093,20.24,1.47,0.74,faculty papers,NIT Trichy,journal
+10,Applied Physics A,53,Q2,3.38,845,15.94,0.91,0.73,faculty papers,NIT Trichy,journal
+11,Journal of Materials Science Materials in Electronics,51,Q2,2.94,849,16.65,0.74,0.7,faculty papers,NIT Trichy,journal
+12,Wireless Personal Communications,50,Q2,3.42,501,10.02,1.0,0.69,faculty papers,NIT Trichy,journal
+13,Energy Sources Part A Recovery Utilization and Environmental Effects,45,Q3,2.44,484,10.76,0.53,0.62,faculty papers,NIT Trichy,journal
+14,Arabian Journal for Science and Engineering,42,Q2,3.92,551,13.12,0.75,0.58,faculty papers,NIT Trichy,journal
+15,Sadhana,41,Q2,1.57,242,5.9,0.64,0.56,faculty papers,NIT Trichy,journal
+16,International Journal of Information Technology,41,Q2,6.29,232,5.66,0.8,0.56,faculty papers,NIT Trichy,journal
+17,Journal of Energy Storage,40,Q1,10.75,960,24.0,2.31,0.55,faculty papers,NIT Trichy,journal
+18,ChemistrySelect,39,Q3,2.51,493,12.64,0.51,0.54,faculty papers,NIT Trichy,journal
+19,Surface Review and Letters,37,Q4,0.99,265,7.16,0.57,0.51,faculty papers,NIT Trichy,journal
+20,Journal of Thermal Analysis and Calorimetry,35,Q2,4.45,562,16.06,1.33,0.48,faculty papers,NIT Trichy,journal
+21,Journal of Molecular Structure,35,Q2,5.52,637,18.2,1.24,0.48,faculty papers,NIT Trichy,journal
+22,Environmental Science and Pollution Research,34,Q1,6.5,710,20.88,1.57,0.47,faculty papers,NIT Trichy,journal
+23,IETE Journal of Research,32,Q3,1.67,230,7.19,0.72,0.44,faculty papers,NIT Trichy,journal
+24,Materials Chemistry and Physics,31,Q2,5.92,425,13.71,1.05,0.43,faculty papers,NIT Trichy,journal
+25,Ceramics International,30,Q1,6.11,682,22.73,1.5,0.41,faculty papers,NIT Trichy,journal
+1,Lecture notes in civil engineering,105,,,153,1.46,0.94,5.64,faculty papers,NIT Trichy,conference
+2,AIP conference proceedings,93,,,247,2.66,1.26,4.99,faculty papers,NIT Trichy,conference
+3,Communications in computer and information science,68,,,64,0.94,0.48,3.65,faculty papers,NIT Trichy,conference
+4,Lecture notes in networks and systems,67,,,146,2.18,0.52,3.6,faculty papers,NIT Trichy,conference
+5,IOP Conference Series Materials Science and Engineering,37,,,276,7.46,2.64,1.99,faculty papers,NIT Trichy,conference
+6,National Power Systems Conference,32,,,125,3.91,0.91,1.72,faculty papers,NIT Trichy,conference
+7,Lecture notes in electrical engineering,32,,,24,0.75,0.48,1.72,faculty papers,NIT Trichy,conference
+8,National Power Electronics Conference (NPEC),31,,,30,0.97,0.29,1.66,faculty papers,NIT Trichy,conference
+9,IOP Conference Series Earth and Environmental Science,30,,,164,5.47,2.79,1.61,faculty papers,NIT Trichy,conference
+10,Procedia Computer Science,30,,,421,14.03,2.28,1.61,faculty papers,NIT Trichy,conference
+11,"IEEE International Conference on Power Electronics, Drives and Energy Systems",30,,,68,2.27,0.76,1.61,faculty papers,NIT Trichy,conference
+12,"TEQIP III Sponsored International Conference on Microwave Integrated Circuits, Photonics and Wireless Networks (IMICPW)",29,,,123,4.24,0.83,1.56,faculty papers,NIT Trichy,conference
+13,"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",25,,,114,4.56,0.86,1.34,faculty papers,NIT Trichy,conference
+14,IEEE India Council International Conference (INDICON),25,,,107,4.28,0.73,1.34,faculty papers,NIT Trichy,conference
+15,IEEE International Conference on Sustainable Energy and Future Electric Transportation (SEFET),23,,,16,0.7,0.54,1.24,faculty papers,NIT Trichy,conference
+1,Materials Today Proceedings,230,,5.13,2053,8.93,0.64,3.68,faculty papers,NIT Surathkal,journal
+2,IEEE Access,111,Q1,6.52,1844,16.61,2.11,1.78,faculty papers,NIT Surathkal,journal
+3,Journal of Materials Engineering and Performance,77,Q2,2.04,1045,13.57,0.91,1.23,faculty papers,NIT Surathkal,journal
+4,Materials Research Express,76,Q3,2.98,1287,16.93,0.94,1.22,faculty papers,NIT Surathkal,journal
+5,Journal of Alloys and Compounds,49,Q1,6.4,1872,38.2,2.17,0.78,faculty papers,NIT Surathkal,journal
+6,Scientific Reports,48,Q1,5.27,1791,37.31,3.64,0.77,faculty papers,NIT Surathkal,journal
+7,RSC Advances,48,Q1,7.56,1108,23.08,2.01,0.77,faculty papers,NIT Surathkal,journal
+8,Transactions of the Indian Institute of Metals,39,Q3,2.0,453,11.62,0.78,0.62,faculty papers,NIT Surathkal,journal
+9,Multimedia Tools and Applications,39,Q1,5.94,502,12.87,1.52,0.62,faculty papers,NIT Surathkal,journal
+10,Construction and Building Materials,37,Q1,10.16,2048,55.35,4.88,0.59,faculty papers,NIT Surathkal,journal
+11,Journal of Materials Science Materials in Electronics,36,Q2,2.94,517,14.36,0.88,0.58,faculty papers,NIT Surathkal,journal
+12,SN Computer Science,35,Q2,3.86,268,7.66,1.29,0.56,faculty papers,NIT Surathkal,journal
+13,Environmental Science and Pollution Research,34,Q2,6.5,1077,31.68,1.54,0.54,faculty papers,NIT Surathkal,journal
+14,Arabian Journal for Science and Engineering,33,Q2,3.92,474,14.36,0.94,0.53,faculty papers,NIT Surathkal,journal
+15,ChemistrySelect,33,Q3,2.51,338,10.24,0.67,0.53,faculty papers,NIT Surathkal,journal
+16,Sadhana,31,Q2,1.57,349,11.26,1.34,0.5,faculty papers,NIT Surathkal,journal
+17,Materials Letters,28,Q2,2.78,329,11.75,0.99,0.45,faculty papers,NIT Surathkal,journal
+18,Engineering Research Express,27,Q3,1.56,104,3.85,0.47,0.43,faculty papers,NIT Surathkal,journal
+19,Surface and Coatings Technology,26,Q1,7.53,874,33.62,2.9,0.42,faculty papers,NIT Surathkal,journal
+20,International Journal of Hydrogen Energy,26,Q1,10.28,1034,39.77,2.19,0.42,faculty papers,NIT Surathkal,journal
+21,Journal of the Brazilian Society of Mechanical Sciences and Engineering,26,Q2,3.0,514,19.77,2.16,0.42,faculty papers,NIT Surathkal,journal
+22,Ceramics International,26,Q1,6.11,690,26.54,1.73,0.42,faculty papers,NIT Surathkal,journal
+23,Journal of Energy Storage,26,Q1,10.75,987,37.96,2.88,0.42,faculty papers,NIT Surathkal,journal
+24,New Journal of Chemistry,26,Q2,2.9,545,20.96,1.03,0.42,faculty papers,NIT Surathkal,journal
+25,ACS Omega,25,Q2,4.98,426,17.04,2.02,0.4,faculty papers,NIT Surathkal,journal
+1,Lecture notes in civil engineering,403,,,845,2.1,1.44,13.79,faculty papers,NIT Surathkal,conference
+2,AIP conference proceedings,175,,,695,3.97,1.92,5.99,faculty papers,NIT Surathkal,conference
+3,"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",106,,,508,4.79,1.04,3.63,faculty papers,NIT Surathkal,conference
+4,Communications in computer and information science,97,,,269,2.77,0.83,3.32,faculty papers,NIT Surathkal,conference
+5,IOP Conference Series Materials Science and Engineering,81,,,527,6.51,1.67,2.77,faculty papers,NIT Surathkal,conference
+6,"IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",74,,,298,4.03,0.84,2.53,faculty papers,NIT Surathkal,conference
+7,Lecture notes in networks and systems,57,,,58,1.02,0.88,1.95,faculty papers,NIT Surathkal,conference
+8,Lecture notes in computer science,52,,,175,3.37,0.65,1.78,faculty papers,NIT Surathkal,conference
+9,IEEE India Council International Conference (INDICON),50,,,197,3.94,0.87,1.71,faculty papers,NIT Surathkal,conference
+10,Lecture notes in mechanical engineering,44,,,5,0.11,0.74,1.51,faculty papers,NIT Surathkal,conference
+11,"IEEE International Conference on Power Electronics, Drives and Energy Systems",42,,,118,2.81,0.95,1.44,faculty papers,NIT Surathkal,conference
+12,Lecture notes in electrical engineering,42,,,35,0.83,0.31,1.44,faculty papers,NIT Surathkal,conference
+13,IEEE Region 10 Conference (TENCON),40,CORE C,,348,8.7,0.88,1.37,faculty papers,NIT Surathkal,conference
+14,"IEEE International Conference on Power Electronics, Smart Grid, and Renewable Energy (PESGRE)",37,,,125,3.38,1.15,1.27,faculty papers,NIT Surathkal,conference
+15,MATEC Web of Conferences,22,,,105,4.77,1.81,0.75,faculty papers,NIT Surathkal,conference
+1,Materials Today Proceedings,518,,5.13,5338,10.31,0.71,3.84,faculty papers,Both NITs,journal
+2,Journal of Materials Engineering and Performance,154,Q2,2.04,1763,11.45,0.86,1.14,faculty papers,Both NITs,journal
+3,Materials Research Express,137,Q3,2.98,2527,18.45,0.99,1.01,faculty papers,Both NITs,journal
+4,Transactions of the Indian Institute of Metals,130,Q3,2.0,1398,10.75,0.79,0.96,faculty papers,Both NITs,journal
+5,IEEE Access,127,Q1,6.52,2178,17.15,2.15,0.94,faculty papers,Both NITs,journal
+6,Journal of Alloys and Compounds,110,Q1,6.4,3833,34.85,1.98,0.81,faculty papers,Both NITs,journal
+7,Multimedia Tools and Applications,92,Q1,5.94,1246,13.54,1.47,0.68,faculty papers,Both NITs,journal
+8,Journal of Materials Science Materials in Electronics,87,Q2,2.94,1366,15.7,0.79,0.64,faculty papers,Both NITs,journal
+9,Materials Letters,80,Q2,2.78,1357,16.96,1.26,0.59,faculty papers,Both NITs,journal
+10,International Journal of Hydrogen Energy,80,Q1,10.28,3694,46.18,2.48,0.59,faculty papers,Both NITs,journal
+11,RSC Advances,76,Q1,7.56,1950,25.66,1.82,0.56,faculty papers,Both NITs,journal
+12,Arabian Journal for Science and Engineering,75,Q2,3.92,1025,13.67,0.83,0.56,faculty papers,Both NITs,journal
+13,Wireless Personal Communications,73,Q3,3.42,692,9.48,0.9,0.54,faculty papers,Both NITs,journal
+14,Scientific Reports,73,Q1,5.27,2274,31.15,3.67,0.54,faculty papers,Both NITs,journal
+15,Sadhana,72,Q2,1.57,591,8.21,0.94,0.53,faculty papers,Both NITs,journal
+16,ChemistrySelect,72,Q3,2.51,831,11.54,0.58,0.53,faculty papers,Both NITs,journal
+17,Applied Physics A,71,Q2,3.38,1221,17.2,0.89,0.53,faculty papers,Both NITs,journal
+18,Environmental Science and Pollution Research,67,Q1,6.5,1787,26.67,1.58,0.5,faculty papers,Both NITs,journal
+19,Journal of Energy Storage,66,Q1,10.75,1947,29.5,2.53,0.49,faculty papers,Both NITs,journal
+20,AEU - International Journal of Electronics and Communications,66,Q2,3.32,825,12.5,1.32,0.49,faculty papers,Both NITs,journal
+21,SN Computer Science,58,Q2,3.86,426,7.34,1.17,0.43,faculty papers,Both NITs,journal
+22,Ceramics International,56,Q1,6.11,1372,24.5,1.6,0.41,faculty papers,Both NITs,journal
+23,Energy Sources Part A Recovery Utilization and Environmental Effects,55,Q3,2.44,601,10.93,0.57,0.41,faculty papers,Both NITs,journal
+24,New Journal of Chemistry,54,Q2,2.9,1201,22.24,1.24,0.4,faculty papers,Both NITs,journal
+25,Journal of Molecular Structure,51,Q2,5.52,888,17.41,1.21,0.38,faculty papers,Both NITs,journal
+1,Lecture notes in civil engineering,508,,,998,1.96,1.34,10.65,faculty papers,Both NITs,conference
+2,AIP conference proceedings,268,,,942,3.51,1.69,5.62,faculty papers,Both NITs,conference
+3,Communications in computer and information science,165,,,333,2.02,0.68,3.46,faculty papers,Both NITs,conference
+4,"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",131,,,622,4.75,1.0,2.75,faculty papers,Both NITs,conference
+5,Lecture notes in networks and systems,124,,,204,1.65,0.69,2.6,faculty papers,Both NITs,conference
+6,IOP Conference Series Materials Science and Engineering,118,,,803,6.81,1.97,2.47,faculty papers,Both NITs,conference
+7,"IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",87,,,371,4.26,0.86,1.82,faculty papers,Both NITs,conference
+8,IEEE India Council International Conference (INDICON),74,,,289,3.91,0.8,1.55,faculty papers,Both NITs,conference
+9,Lecture notes in electrical engineering,74,,,59,0.8,0.38,1.55,faculty papers,Both NITs,conference
+10,"IEEE International Conference on Power Electronics, Drives and Energy Systems",70,,,182,2.6,0.89,1.47,faculty papers,Both NITs,conference
+11,Lecture notes in computer science,68,,,233,3.43,0.74,1.42,faculty papers,Both NITs,conference
+12,Lecture notes in mechanical engineering,64,,,13,0.2,0.74,1.34,faculty papers,Both NITs,conference
+13,"IEEE International Conference on Power Electronics, Smart Grid, and Renewable Energy (PESGRE)",54,,,167,3.09,1.11,1.13,faculty papers,Both NITs,conference
+14,IEEE Region 10 Conference (TENCON),53,CORE C,,404,7.62,0.82,1.11,faculty papers,Both NITs,conference
+15,IOP Conference Series Earth and Environmental Science,47,,,186,3.96,2.42,0.98,faculty papers,Both NITs,conference
+1,Materials Today Proceedings,326,,5.13,3998,12.26,0.8,3.82,all papers (incl. students),NIT Trichy,journal
+2,Transactions of the Indian Institute of Metals,97,Q3,2.0,1042,10.74,0.82,1.14,all papers (incl. students),NIT Trichy,journal
+3,Journal of Materials Engineering and Performance,89,Q2,2.04,855,9.61,0.85,1.04,all papers (incl. students),NIT Trichy,journal
+4,Journal of Alloys and Compounds,68,Q1,6.4,2259,33.22,1.89,0.8,all papers (incl. students),NIT Trichy,journal
+5,Materials Research Express,65,Q3,2.98,1280,19.69,1.01,0.76,all papers (incl. students),NIT Trichy,journal
+6,Materials Letters,63,Q2,2.78,1324,21.02,1.54,0.74,all papers (incl. students),NIT Trichy,journal
+7,Multimedia Tools and Applications,62,Q1,5.94,860,13.87,1.4,0.73,all papers (incl. students),NIT Trichy,journal
+8,Journal of Materials Science Materials in Electronics,57,Q2,2.94,934,16.39,0.73,0.67,all papers (incl. students),NIT Trichy,journal
+9,International Journal of Hydrogen Energy,57,Q1,10.28,3018,52.95,2.97,0.67,all papers (incl. students),NIT Trichy,journal
+10,Fuel,55,Q1,7.74,4408,80.15,4.73,0.64,all papers (incl. students),NIT Trichy,journal
+11,AEU - International Journal of Electronics and Communications,55,Q2,3.32,766,13.93,1.46,0.64,all papers (incl. students),NIT Trichy,journal
+12,Applied Physics A,55,Q2,3.38,873,15.87,0.91,0.64,all papers (incl. students),NIT Trichy,journal
+13,Wireless Personal Communications,54,Q2,3.42,525,9.72,0.96,0.63,all papers (incl. students),NIT Trichy,journal
+14,Energy Sources Part A Recovery Utilization and Environmental Effects,48,Q3,2.44,515,10.73,0.53,0.56,all papers (incl. students),NIT Trichy,journal
+15,Journal of Energy Storage,45,Q1,10.75,1235,27.44,2.39,0.53,all papers (incl. students),NIT Trichy,journal
+16,International Journal of Information Technology,44,Q2,6.29,262,5.95,0.83,0.52,all papers (incl. students),NIT Trichy,journal
+17,Arabian Journal for Science and Engineering,44,Q2,3.92,610,13.86,0.85,0.52,all papers (incl. students),NIT Trichy,journal
+18,ChemistrySelect,44,Q3,2.51,532,12.09,0.51,0.52,all papers (incl. students),NIT Trichy,journal
+19,Environmental Science and Pollution Research,41,Q1,6.5,786,19.17,1.45,0.48,all papers (incl. students),NIT Trichy,journal
+20,Sadhana,41,Q2,1.57,242,5.9,0.64,0.48,all papers (incl. students),NIT Trichy,journal
+21,Journal of Molecular Structure,40,Q2,5.52,687,17.18,1.19,0.47,all papers (incl. students),NIT Trichy,journal
+22,Surface Review and Letters,39,Q4,0.99,279,7.15,0.56,0.46,all papers (incl. students),NIT Trichy,journal
+23,Journal of Thermal Analysis and Calorimetry,38,Q2,4.45,631,16.61,1.38,0.44,all papers (incl. students),NIT Trichy,journal
+24,Ceramics International,36,Q1,6.11,828,23.0,1.62,0.42,all papers (incl. students),NIT Trichy,journal
+25,RSC Advances,34,Q1,7.56,1085,31.91,1.58,0.4,all papers (incl. students),NIT Trichy,journal
+1,Lecture notes in civil engineering,116,,,162,1.4,0.91,5.04,all papers (incl. students),NIT Trichy,conference
+2,AIP conference proceedings,110,,,277,2.52,1.28,4.78,all papers (incl. students),NIT Trichy,conference
+3,Lecture notes in networks and systems,102,,,283,2.77,0.63,4.43,all papers (incl. students),NIT Trichy,conference
+4,Communications in computer and information science,85,,,143,1.68,0.69,3.69,all papers (incl. students),NIT Trichy,conference
+5,IOP Conference Series Materials Science and Engineering,50,,,375,7.5,2.68,2.17,all papers (incl. students),NIT Trichy,conference
+6,Lecture notes in electrical engineering,43,,,48,1.12,0.48,1.87,all papers (incl. students),NIT Trichy,conference
+7,Procedia Computer Science,35,,,514,14.69,2.56,1.52,all papers (incl. students),NIT Trichy,conference
+8,"IEEE International Conference on Power Electronics, Drives and Energy Systems",35,,,85,2.43,0.75,1.52,all papers (incl. students),NIT Trichy,conference
+9,National Power Electronics Conference (NPEC),33,,,34,1.03,0.34,1.43,all papers (incl. students),NIT Trichy,conference
+10,National Power Systems Conference,33,,,125,3.79,0.88,1.43,all papers (incl. students),NIT Trichy,conference
+11,IOP Conference Series Earth and Environmental Science,33,,,171,5.18,2.59,1.43,all papers (incl. students),NIT Trichy,conference
+12,Lecture notes in mechanical engineering,31,,,19,0.61,0.68,1.35,all papers (incl. students),NIT Trichy,conference
+13,Lecture notes in computer science,31,,,631,20.35,1.85,1.35,all papers (incl. students),NIT Trichy,conference
+14,"TEQIP III Sponsored International Conference on Microwave Integrated Circuits, Photonics and Wireless Networks (IMICPW)",31,,,128,4.13,0.81,1.35,all papers (incl. students),NIT Trichy,conference
+15,Journal of Physics Conference Series,29,,,89,3.07,0.98,1.26,all papers (incl. students),NIT Trichy,conference
+1,Materials Today Proceedings,247,,5.13,2301,9.32,0.65,3.53,all papers (incl. students),NIT Surathkal,journal
+2,IEEE Access,115,Q1,6.52,2060,17.91,2.11,1.65,all papers (incl. students),NIT Surathkal,journal
+3,Materials Research Express,82,Q3,2.98,1354,16.51,0.98,1.17,all papers (incl. students),NIT Surathkal,journal
+4,Journal of Materials Engineering and Performance,79,Q2,2.04,1056,13.37,0.91,1.13,all papers (incl. students),NIT Surathkal,journal
+5,Journal of Alloys and Compounds,52,Q1,6.4,1915,36.83,2.09,0.74,all papers (incl. students),NIT Surathkal,journal
+6,Scientific Reports,51,Q1,5.27,1796,35.22,3.6,0.73,all papers (incl. students),NIT Surathkal,journal
+7,RSC Advances,49,Q1,7.56,1145,23.37,2.02,0.7,all papers (incl. students),NIT Surathkal,journal
+8,Transactions of the Indian Institute of Metals,43,Q3,2.0,502,11.67,0.77,0.62,all papers (incl. students),NIT Surathkal,journal
+9,Multimedia Tools and Applications,41,Q1,5.94,518,12.63,1.51,0.59,all papers (incl. students),NIT Surathkal,journal
+10,Journal of Materials Science Materials in Electronics,40,Q2,2.94,596,14.9,0.88,0.57,all papers (incl. students),NIT Surathkal,journal
+11,Construction and Building Materials,39,Q1,10.16,2105,53.97,4.77,0.56,all papers (incl. students),NIT Surathkal,journal
+12,SN Computer Science,37,Q2,3.86,276,7.46,1.24,0.53,all papers (incl. students),NIT Surathkal,journal
+13,Environmental Science and Pollution Research,36,Q2,6.5,1104,30.67,1.61,0.52,all papers (incl. students),NIT Surathkal,journal
+14,Arabian Journal for Science and Engineering,35,Q2,3.92,541,15.46,0.98,0.5,all papers (incl. students),NIT Surathkal,journal
+15,ChemistrySelect,34,Q3,2.51,349,10.26,0.67,0.49,all papers (incl. students),NIT Surathkal,journal
+16,Sadhana,34,Q2,1.57,353,10.38,1.23,0.49,all papers (incl. students),NIT Surathkal,journal
+17,Materials Letters,31,Q2,2.78,475,15.32,1.18,0.44,all papers (incl. students),NIT Surathkal,journal
+18,International Journal of Hydrogen Energy,30,Q1,10.28,1146,38.2,2.06,0.43,all papers (incl. students),NIT Surathkal,journal
+19,Engineering Research Express,30,Q3,1.56,148,4.93,0.48,0.43,all papers (incl. students),NIT Surathkal,journal
+20,Journal of the Brazilian Society of Mechanical Sciences and Engineering,28,Q2,3.0,525,18.75,2.08,0.4,all papers (incl. students),NIT Surathkal,journal
+21,Journal of Energy Storage,28,Q1,10.75,1060,37.86,2.85,0.4,all papers (incl. students),NIT Surathkal,journal
+22,New Journal of Chemistry,27,Q2,2.9,560,20.74,1.02,0.39,all papers (incl. students),NIT Surathkal,journal
+23,Ceramics International,27,Q1,6.11,700,25.93,1.68,0.39,all papers (incl. students),NIT Surathkal,journal
+24,Surface and Coatings Technology,26,Q1,7.53,874,33.62,2.9,0.37,all papers (incl. students),NIT Surathkal,journal
+25,Wireless Personal Communications,26,Q3,3.42,213,8.19,0.76,0.37,all papers (incl. students),NIT Surathkal,journal
+1,Lecture notes in civil engineering,427,,,902,2.11,1.44,12.82,all papers (incl. students),NIT Surathkal,conference
+2,AIP conference proceedings,189,,,747,3.95,1.85,5.67,all papers (incl. students),NIT Surathkal,conference
+3,"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",112,,,520,4.64,1.03,3.36,all papers (incl. students),NIT Surathkal,conference
+4,Communications in computer and information science,103,,,281,2.73,0.89,3.09,all papers (incl. students),NIT Surathkal,conference
+5,IOP Conference Series Materials Science and Engineering,90,,,562,6.24,1.62,2.7,all papers (incl. students),NIT Surathkal,conference
+6,Lecture notes in networks and systems,82,,,91,1.11,0.86,2.46,all papers (incl. students),NIT Surathkal,conference
+7,"IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",80,,,330,4.12,0.84,2.4,all papers (incl. students),NIT Surathkal,conference
+8,Lecture notes in computer science,65,,,294,4.52,1.21,1.95,all papers (incl. students),NIT Surathkal,conference
+9,IEEE India Council International Conference (INDICON),53,,,202,3.81,0.84,1.59,all papers (incl. students),NIT Surathkal,conference
+10,Lecture notes in mechanical engineering,50,,,5,0.1,0.65,1.5,all papers (incl. students),NIT Surathkal,conference
+11,IEEE Region 10 Conference (TENCON),48,CORE C,,361,7.52,0.8,1.44,all papers (incl. students),NIT Surathkal,conference
+12,Lecture notes in electrical engineering,43,,,36,0.84,0.32,1.29,all papers (incl. students),NIT Surathkal,conference
+13,"IEEE International Conference on Power Electronics, Drives and Energy Systems",42,,,118,2.81,0.95,1.26,all papers (incl. students),NIT Surathkal,conference
+14,"IEEE International Conference on Power Electronics, Smart Grid, and Renewable Energy (PESGRE)",39,,,147,3.77,1.25,1.17,all papers (incl. students),NIT Surathkal,conference
+15,MATEC Web of Conferences,32,,,139,4.34,1.58,0.96,all papers (incl. students),NIT Surathkal,conference
+1,Materials Today Proceedings,572,,5.13,6298,11.01,0.74,3.7,all papers (incl. students),Both NITs,journal
+2,Journal of Materials Engineering and Performance,167,Q2,2.04,1900,11.38,0.88,1.08,all papers (incl. students),Both NITs,journal
+3,Materials Research Express,147,Q3,2.98,2634,17.92,0.99,0.95,all papers (incl. students),Both NITs,journal
+4,Transactions of the Indian Institute of Metals,139,Q3,2.0,1543,11.1,0.81,0.9,all papers (incl. students),Both NITs,journal
+5,IEEE Access,136,Q1,6.52,2896,21.29,2.34,0.88,all papers (incl. students),Both NITs,journal
+6,Journal of Alloys and Compounds,120,Q1,6.4,4174,34.78,1.98,0.78,all papers (incl. students),Both NITs,journal
+7,Multimedia Tools and Applications,102,Q1,5.94,1377,13.5,1.43,0.66,all papers (incl. students),Both NITs,journal
+8,Journal of Materials Science Materials in Electronics,97,Q2,2.94,1530,15.77,0.79,0.63,all papers (incl. students),Both NITs,journal
+9,Materials Letters,91,Q2,2.78,1646,18.09,1.33,0.59,all papers (incl. students),Both NITs,journal
+10,International Journal of Hydrogen Energy,87,Q1,10.28,4164,47.86,2.65,0.56,all papers (incl. students),Both NITs,journal
+11,RSC Advances,83,Q1,7.56,2230,26.87,1.84,0.54,all papers (incl. students),Both NITs,journal
+12,Scientific Reports,82,Q1,5.27,2474,30.17,3.54,0.53,all papers (incl. students),Both NITs,journal
+13,Arabian Journal for Science and Engineering,79,Q2,3.92,1151,14.57,0.91,0.51,all papers (incl. students),Both NITs,journal
+14,Wireless Personal Communications,79,Q2,3.42,729,9.23,0.89,0.51,all papers (incl. students),Both NITs,journal
+15,ChemistrySelect,78,Q3,2.51,881,11.29,0.58,0.5,all papers (incl. students),Both NITs,journal
+16,Sadhana,75,Q2,1.57,595,7.93,0.91,0.48,all papers (incl. students),Both NITs,journal
+17,Environmental Science and Pollution Research,75,Q1,6.5,1864,24.85,1.49,0.48,all papers (incl. students),Both NITs,journal
+18,Applied Physics A,74,Q2,3.38,1276,17.24,0.91,0.48,all papers (incl. students),Both NITs,journal
+19,Journal of Energy Storage,73,Q1,10.75,2295,31.44,2.56,0.47,all papers (incl. students),Both NITs,journal
+20,AEU - International Journal of Electronics and Communications,66,Q2,3.32,825,12.5,1.32,0.43,all papers (incl. students),Both NITs,journal
+21,Fuel,64,Q1,7.74,4824,75.38,4.52,0.41,all papers (incl. students),Both NITs,journal
+22,Ceramics International,63,Q1,6.11,1528,24.25,1.65,0.41,all papers (incl. students),Both NITs,journal
+23,SN Computer Science,63,Q2,3.86,448,7.11,1.12,0.41,all papers (incl. students),Both NITs,journal
+24,Journal of Molecular Structure,60,Q2,5.52,1010,16.83,1.18,0.39,all papers (incl. students),Both NITs,journal
+25,Energy Sources Part A Recovery Utilization and Environmental Effects,59,Q3,2.44,655,11.1,0.57,0.38,all papers (incl. students),Both NITs,journal
+1,Lecture notes in civil engineering,543,,,1064,1.96,1.32,9.67,all papers (incl. students),Both NITs,conference
+2,AIP conference proceedings,299,,,1024,3.42,1.64,5.32,all papers (incl. students),Both NITs,conference
+3,Communications in computer and information science,187,,,417,2.23,0.8,3.33,all papers (incl. students),Both NITs,conference
+4,Lecture notes in networks and systems,184,,,374,2.03,0.73,3.28,all papers (incl. students),Both NITs,conference
+5,"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",140,,,634,4.53,0.97,2.49,all papers (incl. students),Both NITs,conference
+6,IOP Conference Series Materials Science and Engineering,140,,,937,6.69,2.0,2.49,all papers (incl. students),Both NITs,conference
+7,Lecture notes in computer science,96,,,925,9.64,1.41,1.71,all papers (incl. students),Both NITs,conference
+8,"IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",95,,,445,4.68,0.91,1.69,all papers (incl. students),Both NITs,conference
+9,Lecture notes in electrical engineering,86,,,84,0.98,0.4,1.53,all papers (incl. students),Both NITs,conference
+10,Lecture notes in mechanical engineering,81,,,24,0.3,0.66,1.44,all papers (incl. students),Both NITs,conference
+11,IEEE India Council International Conference (INDICON),79,,,294,3.72,0.76,1.41,all papers (incl. students),Both NITs,conference
+12,"IEEE International Conference on Power Electronics, Drives and Energy Systems",75,,,199,2.65,0.87,1.34,all papers (incl. students),Both NITs,conference
+13,IEEE Region 10 Conference (TENCON),61,CORE C,,417,6.84,0.77,1.09,all papers (incl. students),Both NITs,conference
+14,"IEEE International Conference on Power Electronics, Smart Grid, and Renewable Energy (PESGRE)",56,,,189,3.38,1.17,1.0,all papers (incl. students),Both NITs,conference
+15,Procedia Computer Science,54,,,758,14.04,2.14,0.96,all papers (incl. students),Both NITs,conference

@@ -1,0 +1,11 @@
+{
+  "edges_credited_to_labelled_institutes": 38559,
+  "share_of_all_indian_inflow_pct": {
+    "NIT Trichy": 35.06977983545948,
+    "NIT Surathkal": 34.72489533522491
+  },
+  "private_share_of_top40_citations_pct": 54.77061127103918,
+  "personal_tie_chi2_p": 4.922322495126896e-14,
+  "packing_mann_whitney_p": 0.924773523953364,
+  "check": "recount equals indian_connections.cites_from_partner for all 40 institutes"
+}

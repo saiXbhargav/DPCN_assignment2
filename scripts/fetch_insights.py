@@ -4,6 +4,8 @@
                                       (~438k works, ~4,400 requests) -> data/raw/ref_years.jsonl
   python fetch_insights.py geo        coordinates and size of our two NITs and every Indian partner institute
                                       (~25 requests) -> data/raw/institutions_geo.jsonl
+  python fetch_insights.py citerout   2016-2026 paper count of the 40 institutes that cite us most
+                                      (40 requests) -> data/raw/citer_output.jsonl
 
 Needs the OPENALEX_API_KEY environment variable for refyears (the free key allows 10,000 requests a day).
 """
@@ -76,10 +78,26 @@ def geo():
             print(f"  +{len(got)}  (requests left today: {left})")
 
 
+def citerout():
+    """Papers (articles, reviews, conference papers) 2016-2026 of the institutes that cite us most, so their
+    citations to us can be compared with their size (phase2.py citers). One count request per institute."""
+    from phase2 import CITER_LABELS
+    path = os.path.join(RAW, "citer_output.jsonl")
+    have = {json.loads(l)["id"] for l in open(path, encoding="utf-8")} if os.path.exists(path) else set()
+    todo = [i for i in CITER_LABELS if i not in have]
+    print(f"citing-institute output: {len(have)} saved, {len(todo)} to fetch")
+    with open(path, "a", encoding="utf-8") as f:
+        for i in todo:
+            data, left = get({"filter": f"authorships.institutions.id:{i},publication_year:2016-2026,"
+                                        "type:article|review|conference-paper", "per_page": 1, "select": "id"})
+            f.write(json.dumps({"id": i, "papers_2016_2026": data["meta"]["count"], "fetched": TODAY}) + "\n")
+            print(f"  {i}: {data['meta']['count']}  (requests left today: {left})")
+
+
 if __name__ == "__main__":
     step = sys.argv[1] if len(sys.argv) > 1 else ""
     try:
-        {"refyears": refyears, "geo": geo}[step]()
+        {"refyears": refyears, "geo": geo, "citerout": citerout}[step]()
     except KeyError:
         sys.exit(__doc__)
     except LimitReached as e:

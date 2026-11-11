@@ -1,0 +1,23 @@
+{
+  "rows_all_papers_csv": 21327,
+  "faculty_rows": 18390,
+  "student_or_staff_only_rows": 2937,
+  "unique_papers_all": 21260,
+  "unique_papers_faculty": 18343,
+  "excluded": {
+    "excluded field": 1158
+  },
+  "large_team_papers_all": {
+    "10+": 212,
+    "50+": 2,
+    "100+": 1
+  },
+  "faculty_flagged_1_lakh": 0,
+  "faculty_flagged_mostly_large_team": 1,
+  "faculty_flagged_possible_name_merge": [
+    "T0472",
+    "T0665"
+  ],
+  "max_career_citations_faculty": 20427.0,
+  "max_career_citations_any_nit_author": 18792
+}

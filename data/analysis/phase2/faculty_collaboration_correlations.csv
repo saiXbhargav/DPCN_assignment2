@@ -1,0 +1,8 @@
+measure,research_score,papers,citations,mean_fwci,faculty_coauthors,indian_partner_institutes,foreign_partner_institutes
+research_score,1.0,0.846,0.957,0.636,0.544,0.653,0.549
+papers,0.846,1.0,0.827,0.274,0.557,0.642,0.47
+citations,0.957,0.827,1.0,0.536,0.556,0.638,0.539
+mean_fwci,0.636,0.274,0.536,1.0,0.187,0.275,0.262
+faculty_coauthors,0.544,0.557,0.556,0.187,1.0,0.532,0.352
+indian_partner_institutes,0.653,0.642,0.638,0.275,0.532,1.0,0.601
+foreign_partner_institutes,0.549,0.47,0.539,0.262,0.352,0.601,1.0
