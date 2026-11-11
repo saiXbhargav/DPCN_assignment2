@@ -1,0 +1,100 @@
+faculty_id,author,institution,department,designation,last_seen,now_at,now_type
+S0039,M Venkatesan,NIT Surathkal,CSE,Assistant Professor,2023,,No current institution listed
+S0064,D V R Murthy,NIT Surathkal,Chemical,Professor,2019,National Institute of Technology Karnataka,Still listed at the same NIT
+S0074,G Srinikethan,NIT Surathkal,Chemical,Professor,2019,National Institute of Technology Karnataka,Still listed at the same NIT
+S0085,Ruben Sudhakar,NIT Surathkal,Chemical,Assistant Professor,2018,National Institute of Technology Tiruchirappalli,Another NIT
+S0088,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,Professor,2019,National Institute of Technology Karnataka,Still listed at the same NIT
+S0102,A Gowri,NIT Surathkal,Civil,Assistant Professor,2018,Indian Institute of Technology Tirupati,IIT
+S0103,A U Ravi Shankar,NIT Surathkal,Civil,Professor (HAG),2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0106,D Venkat Reddy,NIT Surathkal,Civil,Professor,2019,,No OpenAlex profile
+S0125,K S Babu Narayan,NIT Surathkal,Civil,Professor,2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0126,K Swaminathan,NIT Surathkal,Civil,Professor,2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0127,K N Lokesh,NIT Surathkal,Civil,Professor,2022,National Institute of Technology Karnataka,Still listed at the same NIT
+S0128,K S Babunarayana,NIT Surathkal,Civil,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0141,R Shivashankar,NIT Surathkal,Civil,Professor,2022,National Institute of Technology Karnataka,Still listed at the same NIT
+S0153,Muralidhar Kulkarni,NIT Surathkal,ECE,Professor (HAG),2022,National Institute of Technology Karnataka,Still listed at the same NIT
+S0161,Sandeep Kumar,NIT Surathkal,ECE,Assistant Professor,2025,Chaudhary Charan Singh University,Indian university / college
+S0162,Shikha Baghel,NIT Surathkal,ECE,Assistant Professor,2025,Indian Institute of Technology Jammu,IIT
+S0171,John D Souza,NIT Surathkal,ECE,Professor,2025,,No OpenAlex profile
+S0179,U Sripathi,NIT Surathkal,ECE,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0202,L Padmavathi,NIT Surathkal,EEE,Associate Professor,2021,Central Electronics Engineering Research Institute,Government R&D lab
+S0214,Sheron Figarado,NIT Surathkal,EEE,Assistant Professor,2018,Indian Institute of Technology Goa,IIT
+S0236,A O Surendranathan,NIT Surathkal,MME,Professor (HAG),2019,,No current institution listed
+S0247,K Rajendra Udupa,NIT Surathkal,MME,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0296,I Jeyaraman,NIT Surathkal,Mathematics,Assistant Professor,2018,National Institute of Technology Tiruchirappalli,Another NIT
+S0312,Suresh Manjanathhegde,NIT Surathkal,Mathematics,Professor (HAG),2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0313,Satyanarayana Engu,NIT Surathkal,Mathematics,Assistant Professor,2018,,No current institution listed
+S0316,D Chakradhar,NIT Surathkal,Mechanical,Assistant Professor,2018,Indian Institute of Technology Palakkad,IIT
+S0335,Guruprasad K R,NIT Surathkal,Mechanical,Associate Professor,2023,,No current institution listed
+S0336,H Suresh Hebbar,NIT Surathkal,Mechanical,Professor,2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0339,Mrityunjay R Doddamani,NIT Surathkal,Mechanical,Associate Professor,2023,Indian Institute of Technology Jodhpur,IIT
+S0341,P Mohanan,NIT Surathkal,Mechanical,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0362,T P Ashok Babu,NIT Surathkal,Mechanical,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0363,Vijay Desai,NIT Surathkal,Mechanical,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0364,Vijaykumar H,NIT Surathkal,Mechanical,Assistant Professor,2017,,No current institution listed
+S0365,Y Suresh Kumar,NIT Surathkal,Mechanical,Associate Professor,2018,,No current institution listed
+S0366,Chivukula Suryanarayana Murthy,NIT Surathkal,Mining,Professor (HAG),2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0369,Ram Prasad Choudhary,NIT Surathkal,Mining,Assistant Professor,2019,,No current institution listed
+S0381,Vedala Rama Sastry,NIT Surathkal,Mining,Professor (HAG),2023,GITAM University,Indian university / college
+S0383,Deepak Vaid,NIT Surathkal,Physics,Assistant Professor,2023,,No current institution listed
+S0387,Govinda Rao Umesh,NIT Surathkal,Physics,Professor,2018,National Institute of Technology Karnataka,Still listed at the same NIT
+S0388,H D Shashikala,NIT Surathkal,Physics,Assistant Professor,2023,National Institute of Technology Karnataka,Still listed at the same NIT
+S0389,Kasturi V Bangera,NIT Surathkal,Physics,Professor,2020,National Institute of Technology Karnataka,Still listed at the same NIT
+S0395,Arkal Vittal Hegde,NIT Surathkal,Water Resources & Ocean,Assistant Professor,2019,National Institute of Technology Karnataka,Still listed at the same NIT
+S0403,Nagaraj M K,NIT Surathkal,Water Resources & Ocean,Assistant Professor,2019,National Institute of Technology Karnataka,Still listed at the same NIT
+S0404,Paresh Chandra Deka,NIT Surathkal,Water Resources & Ocean,Professor,2021,National Institute of Technology Karnataka,Still listed at the same NIT
+S0415,S Ganapathi Mayya,NIT Surathkal,Water Resources & Ocean,Professor,2016,National Institute of Technology Karnataka,Still listed at the same NIT
+S0417,Subba Rao,NIT Surathkal,Water Resources & Ocean,Professor (HAG),2023,National Institute of Technology Karnataka,Still listed at the same NIT
+T0419,Mini Shaji Thomas,NIT Trichy,,Director,2021,Jamia Millia Islamia,Indian university / college
+T0430,T Srinivas,NIT Trichy,Architecture,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0445,Ramprasad V,NIT Trichy,Architecture,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0454,Chandramani Chaudhary,NIT Trichy,CSE,Faculty,2024,National Institute of Technology Calicut,Another NIT
+T0456,K Viswanathan Iyer,NIT Trichy,CSE,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0459,Madhukrishna Priyadarsini,NIT Trichy,CSE,Assistant Professor,2025,National Institute of Technology Raipur,Another NIT
+T0492,N Anantharaman,NIT Trichy,Chemical,Professor (HAG),2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0507,G Venkatesa Prabhu,NIT Trichy,Chemistry,Professor,2022,,No current institution listed
+T0514,Somenath Garai,NIT Trichy,Chemistry,Assistant Professor,2022,Banaras Hindu University,Indian university / college
+T0520,C Natarajan,NIT Trichy,Civil,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0527,J Karthikeyan,NIT Trichy,Civil,Associate Professor,2023,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0535,Moses Santhakumar,NIT Trichy,Civil,Professor (HAG),2023,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0555,Jayabalan P,NIT Trichy,Civil,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0556,Krishnan P A,NIT Trichy,Civil,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0562,Anjuna,NIT Trichy,Civil,Assistant Professor,2019,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0566,R Jayasankar,NIT Trichy,Civil,Associate Professor,2022,,No OpenAlex profile
+T0581,B Ramadoss,NIT Trichy,Computer Applications,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0584,Gopalan N P,NIT Trichy,Computer Applications,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0585,Jitendra Kumar,NIT Trichy,Computer Applications,Assistant Professor,2025,National Institute of Technology Kurukshetra,Another NIT
+T0588,Vadivel A,NIT Trichy,Computer Applications,Associate Professor,2022,GITAM University,Indian university / college
+T0589,Venkataswamy Reddy,NIT Trichy,Computer Applications,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0593,B Venkataramani,NIT Trichy,ECE,Professor (HAG),2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0607,S Raghavan,NIT Trichy,ECE,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0657,Ashokkumar,NIT Trichy,EEE,Assistant Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0658,C Nagamani,NIT Trichy,EEE,Professor (HAG),2025,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0659,Manoranjan Sahoo,NIT Trichy,EEE,Assistant Professor,2023,National Institute of Technology Rourkela,Another NIT
+T0660,N Ammmasai Goundan,NIT Trichy,EEE,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0661,Naveenyalla,NIT Trichy,EEE,Assistant Professor,2022,Indian Institute of Technology BHU,IIT
+T0664,Vivek Mohan,NIT Trichy,EEE,Assistant Professor,2022,National Institute of Technology Calicut,Another NIT
+T0716,S Natarajan,NIT Trichy,MME,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0721,V Muthupandi,NIT Trichy,MME,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0725,T Srinivasa Rao,NIT Trichy,MME,Professor (HAG),2025,Indian Institute of Technology Kharagpur,IIT
+T0748,Atul Kumar Verma,NIT Trichy,Mathematics,Assistant Professor,2023,Indian Institute of Technology Dhanbad,IIT
+T0755,M Sivanesan,NIT Trichy,Mathematics,Assistant Professor,2023,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0761,R Ponalagusamy,NIT Trichy,Mathematics,Professor (HAG),2023,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0762,R Ravindran,NIT Trichy,Mathematics,Assistant Professor,2022,,No OpenAlex profile
+T0764,T N Janakiraman,NIT Trichy,Mathematics,Faculty,2025,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0781,J Sarangan,NIT Trichy,Mechanical,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0782,K Sankaranarayanasamy,NIT Trichy,Mechanical,Professor (HAG),2025,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0784,Kaushik P,NIT Trichy,Mechanical,Assistant Professor,2023,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0785,M Udayakumar,NIT Trichy,Mechanical,Professor (HAG),2023,University of Technology and Applied Sciences-Salalah,Abroad (university)
+T0787,Nivish George,NIT Trichy,Mechanical,Assistant Professor,2022,Indian Space Research Organisation,Government R&D lab
+T0801,T Suthakar,NIT Trichy,Mechanical,Associate Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0835,A Noorul Haq,NIT Trichy,Production,Professor (HAG),2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0840,Dinesh S,NIT Trichy,Production,Faculty,2019,Dhanalakshmi Srinivasan Group of Institutions,Indian university / college
+T0846,N S Balaji,NIT Trichy,Production,Faculty,2019,SRM Institute of Science and Technology,Indian university / college
+T0854,R Narayanasamy,NIT Trichy,Production,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0859,T Selvaraj,NIT Trichy,Production,Professor,2022,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0869,Justus Panicker C T,NIT Trichy,Production,Faculty,2019,,No current institution listed
+T0871,Murugabalaji V,NIT Trichy,Production,Faculty,2019,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0872,Rajesh R,NIT Trichy,Production,Faculty,2019,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0873,S John Vincent Jesuraj,NIT Trichy,Production,Faculty,2019,National Institute of Technology Tiruchirappalli,Still listed at the same NIT
+T0874,Simson D,NIT Trichy,Production,Faculty,2019,National Institute of Technology Tiruchirappalli,Still listed at the same NIT

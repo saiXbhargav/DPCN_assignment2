@@ -1,0 +1,78 @@
+{
+  "papers": 20965,
+  "transitions": 61184,
+  "yearly_counts_sum_to_total_share": 0.997042690197949,
+  "alpha": 0.75381202881613,
+  "alpha_by_age": [
+    {
+      "papers_age": "age 1-2",
+      "transitions": 27775,
+      "alpha": 0.7840419858337554
+    },
+    {
+      "papers_age": "age 3-5",
+      "transitions": 25342,
+      "alpha": 0.9175693664196312
+    },
+    {
+      "papers_age": "age 6+",
+      "transitions": 8067,
+      "alpha": 0.9976159792821289
+    }
+  ],
+  "uncited_share_after_2y_cohort_2020": 0.1440909090909091,
+  "rate_k0": 0.13844869454386252,
+  "rate_k_55_88": 4.850447864956501,
+  "stay_on_top": [
+    {
+      "cohort": 2016,
+      "papers": 1199,
+      "top10_after_2y_still_top10_after_5y": 0.7166666666666667,
+      "spearman_2y_vs_5y": 0.8956863075240387,
+      "share_of_cites_to_top10_after_2y": 0.4455918913750239,
+      "share_of_cites_to_top10_after_5y": 0.44061327467977746,
+      "gini_after_2y": 0.6385572473778509,
+      "gini_after_5y": 0.6259628311901355
+    },
+    {
+      "cohort": 2017,
+      "papers": 1329,
+      "top10_after_2y_still_top10_after_5y": 0.7894736842105263,
+      "spearman_2y_vs_5y": 0.9126649792246698,
+      "share_of_cites_to_top10_after_2y": 0.4387605963168664,
+      "share_of_cites_to_top10_after_5y": 0.4485187487051999,
+      "gini_after_2y": 0.6334574505406236,
+      "gini_after_5y": 0.6281974839608466
+    },
+    {
+      "cohort": 2018,
+      "papers": 1812,
+      "top10_after_2y_still_top10_after_5y": 0.8011049723756906,
+      "spearman_2y_vs_5y": 0.9193353249052949,
+      "share_of_cites_to_top10_after_2y": 0.4771443699258736,
+      "share_of_cites_to_top10_after_5y": 0.4789015188315684,
+      "gini_after_2y": 0.6561586131286188,
+      "gini_after_5y": 0.6487846316323909
+    },
+    {
+      "cohort": 2019,
+      "papers": 1952,
+      "top10_after_2y_still_top10_after_5y": 0.8256410256410256,
+      "spearman_2y_vs_5y": 0.929773925282522,
+      "share_of_cites_to_top10_after_2y": 0.4562632696390658,
+      "share_of_cites_to_top10_after_5y": 0.4679126013467088,
+      "gini_after_2y": 0.6336737032009561,
+      "gini_after_5y": 0.6325435151623011
+    },
+    {
+      "cohort": 2020,
+      "papers": 2200,
+      "top10_after_2y_still_top10_after_5y": 0.8045454545454546,
+      "spearman_2y_vs_5y": 0.9374216346778211,
+      "share_of_cites_to_top10_after_2y": 0.4545307878461952,
+      "share_of_cites_to_top10_after_5y": 0.46404301075268817,
+      "gini_after_2y": 0.6281245447212105,
+      "gini_after_5y": 0.6293006647116324
+    }
+  ]
+}

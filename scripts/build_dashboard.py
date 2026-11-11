@@ -396,6 +396,149 @@ def fairness_tables():
     return t
 
 
+P2 = os.path.join(AN, "phase2")
+QS = os.path.join(AN, "questions")
+
+
+def phase2_tables():
+    """Phase II additions (scripts/phase2.py -> data/analysis/phase2/)."""
+    t = {}
+    ps = csv(P2, "publication_statistics_both_scopes.csv")
+    t["stats"] = records(ps, list(ps.columns), 3)
+    tr = pd.read_csv(os.path.join(P2, "publication_trend_both_scopes.csv"), header=[0, 1], index_col=0)
+    name = {"Both NITs": "Both", "NIT Trichy": "NIT Trichy", "NIT Surathkal": "NIT Surathkal"}
+    t["trend"] = {"all": {}, "faculty": {}}
+    for sc, inst in tr.columns:
+        t["trend"]["all" if sc.startswith("all") else "faculty"][name[inst]] = {
+            int(y): int(v) for y, v in tr[(sc, inst)].items()}
+    t["students"] = records(csv(P2, "student_only_papers_profile.csv"),
+                           ["institution", "student_only_papers", "mean_fwci", "citations_per_paper",
+                            "conference_share_pct", "with_outside_coauthor_pct"], 2)
+    ac = csv(P2, "author_count_classes.csv")
+    t["authors"] = records(ac, list(ac.columns), 2)
+    t["q1_if_branch"] = records(csv(P2, "q1_if_by_branch.csv"),
+                               ["institution", "department", "journal_papers", "Q1", "IF_gt_5", "IF_gt_10",
+                                "Q1_and_IF_gt_5", "Q1_and_IF_gt_10", "Q1_and_IF_gt_5_pct"], 1)
+    cy = csv(P2, "collaborating_institutions_by_year.csv")
+    t["collab_year"] = records(cy, ["scope", "institution", "year", "papers", "collaborating_institutions",
+                                    "indian_institutions", "foreign_institutions", "countries",
+                                    "papers_with_outside_coauthor_pct", "partial_year"], 2)
+    t["collab_total"] = records(csv(P2, "collaborating_institutions_total.csv"),
+                                ["scope", "institution", "collaborating_institutions", "indian_institutions",
+                                 "foreign_institutions", "countries"])
+    t["papers_summary"] = jload(P2, "phase2_papers_summary.json")
+    fl = csv(P2, "flag_faculty_citations_and_large_teams.csv")
+    flagged = fl[fl.flag_possible_openalex_name_merge | fl.flag_mostly_large_team | fl.flag_career_citations_1_lakh]
+    t["flagged_faculty"] = records(flagged, ["author", "institution", "department", "papers", "papers_10plus_authors",
+                                             "share_citations_from_10plus_pct", "career_citations_openalex",
+                                             "nit_share_of_career_citations_pct", "flag_mostly_large_team",
+                                             "flag_possible_openalex_name_merge"], 1)
+    t["top_career"] = records(fl.nlargest(10, "career_citations_openalex"),
+                              ["author", "institution", "department", "career_citations_openalex",
+                               "citations_2016_2026", "nit_share_of_career_citations_pct", "max_authors"], 1)
+    lt = csv(P2, "flag_large_team_papers.csv").sort_values("n_authors", ascending=False)
+    t["large_papers"] = records(lt.head(12), ["institution", "title", "year", "n_authors", "field", "citations",
+                                              "has_faculty_author", "faculty_on_paper", "doi"], 2)
+    t["large_count"] = {"10+": int(len(lt)), "faculty": int(lt.has_faculty_author.sum()),
+                        "20+": int((lt.n_authors >= 20).sum())}
+    t["citers_cmp"] = records(csv(P2, "citers_private_vs_public.csv"),
+                              ["measure", "private_median", "public_median", "mann_whitney_p"], 4)
+    ci = csv(P2, "citers_by_institute.csv")
+    want = ["institute", "type", "citations_to_us", "their_papers_2016_2026", "citations_per_1000_of_their_papers",
+            "distance_km", "personal_tie_pct", "alumni_pct", "pct_citations_from_papers_citing_5plus_of_ours",
+            "citing_papers_in_proceedings_pct", "pct_citations_2023_2026", "top_cited_faculty"]
+    t["citers"] = records(ci, [c for c in want if c in ci.columns], 1)
+    t["citers_summary"] = jload(P2, "citers_summary.json")
+    cols30 = ["rank", "title", "journal_name", "journal_if_2yr", "quartile", "year", "citations", "fwci", "nits",
+              "has_faculty_author", "faculty_on_paper", "doi"]
+    t["top30_all"] = records(csv(P2, "top30_papers_by_journal_if_all_papers.csv"), cols30, 2)
+    t["top30_fac"] = records(csv(P2, "top30_papers_by_journal_if_faculty_papers.csv"), cols30, 2)
+    ft = csv(P2, "faculty_top10_papers_by_journal_if.csv")
+    journals = sorted(ft.journal_name.fillna("").unique())
+    jix = {j: k for k, j in enumerate(journals)}
+    fac = {}
+    for fid, g in ft.groupby("faculty_id", sort=False):
+        r0 = g.iloc[0]
+        fac[fid] = {"n": r0.author, "i": r0.institution, "d": "" if pd.isna(r0.department) else r0.department,
+                    "p": [[(r.title if isinstance(r.title, str) else "")[:140],
+                           jix[r.journal_name if isinstance(r.journal_name, str) else ""],
+                           rnd(r.journal_if_2yr, 1), r.quartile if isinstance(r.quartile, str) else "", int(r.year),
+                           int(r.citations), (r.doi if isinstance(r.doi, str) else "").replace("https://doi.org/", "")]
+                          for r in g.sort_values("rank_in_faculty").itertuples(index=False)]}
+    t["fac_top10"] = {"journals": journals, "faculty": fac}
+    mu = csv(P2, "most_used_journals_and_conferences.csv")
+    t["venues"] = records(mu, ["scope", "institution", "venue_type", "rank", "journal_name", "papers",
+                               "quartile_or_rank", "journal_if_2yr", "citations_per_paper", "mean_fwci",
+                               "share_of_venue_type_pct"], 2)
+    fr = csv(P2, "faculty_research_and_collaboration.csv")
+    t["collab_faculty"] = records(fr, ["research_rank", "collaboration_rank", "author", "institution", "department",
+                                       "research_score", "collaboration_score", "papers", "h_index", "mean_fwci",
+                                       "faculty_coauthors", "indian_partner_institutes", "foreign_partner_institutes",
+                                       "foreign_countries", "profile"], 2)
+    t["collab_corr"] = jload(P2, "faculty_collaboration_summary.json")
+    t["instnet"] = jload(P2, "institute_network_summary.json")
+    nodes = csv(P2, "institute_coauthorship_nodes.csv")
+    nodes = nodes[~nodes.cluster.eq("NIT (ours)")]
+    t["inst_nodes"] = records(nodes.nlargest(25, "betweenness"),
+                              ["institution", "cluster", "papers_with_us", "degree", "joint_papers_weighted_degree",
+                               "linked_to_nit_trichy", "linked_to_nit_surathkal", "betweenness"], 4)
+    t["inst_clusters"] = records(csv(P2, "institute_network_by_cluster.csv"),
+                                 ["cluster", "institutes", "joint_papers", "mean_degree", "mean_betweenness"], 4)
+    return t
+
+
+def questions_tables():
+    """Research questions 15-27 (scripts/questions.py -> data/analysis/questions/)."""
+    def allcols(f, n=4):
+        d = csv(QS, f)
+        return records(d, list(d.columns), n)
+    t = {}
+    t["countries"] = records(csv(QS, "q15_countries.csv").head(25),
+                             ["country", "papers", "papers_trichy", "papers_surathkal", "mean_fwci", "top10_share",
+                              "papers_2016_2020", "papers_2021_2025", "effect_pct", "ci_low_pct", "ci_high_pct",
+                              "p_value", "top_faculty", "top_faculty_share"], 3)
+    t["foreign_effect"] = allcols("q15_foreign_effect.csv")
+    t["n_countries"] = allcols("q15_effect_by_number_of_countries.csv")
+    t["foreign_year"] = records(csv(QS, "q15_foreign_by_year.csv"),
+                                ["institution", "year", "papers", "foreign_share", "countries"], 4)
+    t["partners"] = allcols("q16_partner_types.csv")
+    t["collab_summary"] = jload(QS, "collab_summary.json")
+    t["robust_curves"] = records(csv(QS, "q17_robustness_curves.csv"),
+                                 ["institution", "strategy", "removed", "removed_share", "connected_pairs_share",
+                                  "giant_share"], 4)
+    t["key_overall"] = records(csv(QS, "q17_key_people_overall.csv").head(15),
+                               ["name", "institution", "department", "designation", "status", "co_authors",
+                                "pairs_cut_share", "components_after"], 4)
+    t["key_dept"] = allcols("q17_key_people_by_department.csv")
+    t["network_summary"] = jload(QS, "network_summary.json")
+    t["former"] = allcols("q18_former_vs_current.csv")
+    t["former_where"] = records(csv(QS, "q18_where_former_faculty_went.csv"),
+                                ["author", "institution", "department", "designation", "last_seen", "now_at",
+                                 "now_type"])
+    t["inequality"] = allcols("q19_inequality.csv")
+    t["inequality_dept"] = allcols("q19_inequality_by_department.csv")
+    t["lorenz"] = allcols("q19_lorenz.csv")
+    t["lotka"] = allcols("q19_lotka.csv")
+    t["roles"] = allcols("q20_author_role_by_rank.csv")
+    t["roles_year"] = allcols("q20_author_role_by_rank_and_year.csv")
+    t["breadth_groups"] = allcols("q21_breadth_groups.csv")
+    t["breadth_corr"] = allcols("q21_breadth_vs_impact.csv")
+    t["people_summary"] = jload(QS, "people_summary.json")
+    t["venue_classes"] = allcols("q22_venue_classes.csv")
+    t["conf_year"] = allcols("q22_conference_share_by_year.csv")
+    t["conf_dept"] = allcols("q22_conference_by_department.csv")
+    t["high_volume"] = allcols("q23_high_volume_venues.csv")
+    t["oa"] = allcols("q24_open_access.csv")
+    t["oa_year"] = allcols("q24_open_access_by_year.csv")
+    t["venues_summary"] = jload(QS, "venues_summary.json")
+    t["kernel"] = allcols("q25_attachment_kernel.csv")
+    t["alpha_age"] = allcols("q25_alpha_by_age.csv")
+    t["stay"] = allcols("q25_top_papers_stay_on_top.csv")
+    t["richer_summary"] = jload(QS, "richer_summary.json")
+    t["sensitivity"] = allcols("q27_name_matching_sensitivity.csv")
+    return t
+
+
 def methods_facts():
     """Numbers for the 'How we built it' tab, counted from the reference files."""
     r = csv(DATA, "reference", "faculty_roster.csv")
@@ -422,7 +565,9 @@ def main():
     data = {"papers": papers(), "faculty": faculty(), "citation_graph": citation_graph(),
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
-            "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026"}}
+            "p2": phase2_tables(), "q": questions_tables(),
+            "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
+                     "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = open(TEMPLATE, encoding="utf-8").read().replace("/*__DATA__*/null", blob)
     # the template is a page body (as the online version needs); the repo file gets a full document around it

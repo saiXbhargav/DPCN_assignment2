@@ -1,0 +1,6 @@
+measure,spearman_breadth,p,spearman_breadth_within_department,p_within,partial_spearman_controlling_papers,p_partial
+mean_fwci,0.1235,0.006,0.093,0.039,0.0831,0.065
+median_fwci,-0.0042,0.9264,0.0067,0.8824,-0.0465,0.3027
+h_index,0.1522,0.0007,0.1208,0.0072,0.0293,0.5159
+citations_per_paper,0.127,0.0047,0.0855,0.0577,0.0753,0.0944
+papers,0.1654,0.0002,0.1648,0.0002,,

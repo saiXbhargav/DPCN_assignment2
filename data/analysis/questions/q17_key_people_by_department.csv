@@ -1,0 +1,28 @@
+institution,department,faculty_with_papers,links_inside_department,isolated_faculty,largest_group_share,connected_pairs,key_person,key_person_designation,key_person_status,key_person_links,pairs_cut_if_key_person_leaves,pairs_cut_share,articulation_points
+NIT Trichy,Computer Applications,24,17,8,0.5417,81,S Nickolas,Professor,current,5,47,0.5802,6
+NIT Surathkal,Physics,12,13,2,0.8333,45,Ajith Kulangara Madam,Professor,current,4,23,0.5111,3
+NIT Trichy,Mathematics,21,6,12,0.2381,12,V Ravichandran,Professor,current,4,6,0.5,1
+NIT Surathkal,Chemical,20,14,7,0.55,56,Keyur Raval,Professor,current,5,27,0.4821,3
+NIT Surathkal,Information Technology,14,9,3,0.4286,19,Sowmya Kamath S,Associate Professor,current,5,9,0.4737,2
+NIT Trichy,Mechanical,29,26,8,0.7241,210,S Suresh,Professor,current,7,98,0.4667,6
+NIT Trichy,Civil,37,28,12,0.6216,254,S T Ramesh,Professor (HAG),current,4,117,0.4606,11
+NIT Trichy,Physics,17,12,7,0.5882,45,M Ashok,Professor,current,4,20,0.4444,4
+NIT Trichy,EEE,35,54,7,0.8,378,S Moorthi,Professor,current,7,152,0.4021,9
+NIT Surathkal,EEE,31,35,5,0.7742,277,Dharavath Kishan,Assistant Professor,current,8,110,0.3971,9
+NIT Surathkal,CSE,17,19,2,0.8824,105,Jeny Rajan,Associate Professor,current,5,40,0.381,7
+NIT Trichy,Chemistry,16,7,9,0.4375,21,Sunandan Sarkar,Assistant Professor,current,3,8,0.381,4
+NIT Surathkal,Mathematics,23,11,10,0.3043,24,Kedarnath Senapathi,Associate Professor,current,4,9,0.375,3
+NIT Trichy,MME,21,16,8,0.619,78,Siva Prasad Katakam,Professor,current,6,29,0.3718,4
+NIT Surathkal,MME,17,17,4,0.7647,78,Udaya Bhat K,Professor,current,5,27,0.3462,5
+NIT Trichy,Production,36,35,6,0.6389,264,V Senthilkumar,Professor,current,6,89,0.3371,10
+NIT Surathkal,Water Resources & Ocean,20,19,1,0.7,101,Nagaraj M K,Assistant Professor,former,4,32,0.3168,6
+NIT Surathkal,Civil,38,36,5,0.7632,408,Rajasekaran C,Associate Professor,current,3,115,0.2819,14
+NIT Trichy,ECE,34,34,10,0.7059,276,N Gunavathi,Associate Professor,current,4,76,0.2754,6
+NIT Trichy,Architecture,14,9,4,0.3571,14,G Subbaiyan,Professor (HAG),current,4,3,0.2143,2
+NIT Surathkal,Chemistry,14,7,2,0.2857,10,Badekai Ramachandra Bhat,Professor (HAG),current,2,2,0.2,2
+NIT Trichy,ICE,16,12,2,0.25,19,N Sivakumaran,Professor,current,3,3,0.1579,3
+NIT Surathkal,Mining,13,27,0,1.0,78,Karra Ram Chandar,Professor,current,4,11,0.141,3
+NIT Trichy,CSE,29,7,16,0.1034,8,C Mala,Professor (HAG),current,2,1,0.125,1
+NIT Surathkal,Mechanical,50,102,4,0.92,1035,Gangadharan K V,Professor (HAG),current,9,128,0.1237,8
+NIT Trichy,Chemical,22,33,5,0.7727,136,T K Radhakrishnan,Professor (HAG),current,6,15,0.1103,2
+NIT Surathkal,ECE,29,40,1,0.8276,282,Sumam David S,Professor (HAG),current,3,22,0.078,6

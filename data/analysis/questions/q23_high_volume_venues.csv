@@ -1,0 +1,14 @@
+venue,papers,trichy,surathkal,venue_class,mean_fwci,median_fwci,top10_share,citations_per_paper,effect_vs_all_other_papers_pct,ci_low_all_pct,ci_high_all_pct,effect_vs_similar_papers_pct,ci_low_pct,ci_high_pct,p_value
+Materials Today Proceedings,572,326,247,"Journal, not ranked",0.7358,0.468,0.0402,11.0105,-19.7918,-22.3971,-17.099,19.1242,13.81,24.6864,0.0
+Lecture notes in civil engineering,543,116,427,"Conference, not ranked",1.3243,0.0,0.1436,1.9595,-8.6338,-13.6152,-3.3651,3.0527,-2.8498,9.3137,0.3177
+AIP conference proceedings,300,111,189,"Conference, not ranked",1.6333,0.455,0.15,3.4133,-4.5258,-12.1642,3.7768,8.0015,-0.8502,17.6435,0.0777
+Communications in computer and information science,187,85,103,"Conference, not ranked",0.7967,0.0,0.0749,2.2299,-14.0845,-20.8797,-6.7057,-7.9208,-15.3069,0.1095,0.0531
+Lecture notes in networks and systems,185,102,83,"Conference, not ranked",0.7303,0.0,0.0919,2.0378,-13.1203,-19.1516,-6.6389,-5.7522,-12.3845,1.3823,0.1116
+Journal of Materials Engineering and Performance,167,89,79,Journal Q2,0.879,0.4903,0.0599,11.3772,-8.1564,-13.8888,-2.0424,-7.9978,-13.7724,-1.8365,0.0117
+Materials Research Express,147,65,82,Journal Q3-Q4,0.9926,0.6345,0.0748,17.9184,-10.6791,-16.6453,-4.2859,16.2585,8.1523,24.9722,0.0
+IOP Conference Series Materials Science and Engineering,140,50,90,"Conference, not ranked",2.0007,1.0292,0.2286,6.6929,8.1163,-3.9711,21.7252,21.7362,7.8429,37.4194,0.0015
+"International Conference on Computing, Communication and Networking Technologies (ICCCNT)",140,29,112,"Conference, not ranked",0.9662,0.4306,0.1071,4.5286,-7.8655,-15.2142,0.1202,-0.8958,-8.9629,7.8862,0.8354
+Transactions of the Indian Institute of Metals,139,97,43,Journal Q3-Q4,0.8115,0.4229,0.036,11.1007,-18.2647,-23.7194,-12.42,7.0039,-0.2056,14.7342,0.0572
+IEEE Access,136,21,115,Journal Q1,2.3415,1.2881,0.2647,21.2941,36.8839,22.6341,52.7895,0.9136,-9.7604,12.8501,0.8733
+Journal of Alloys and Compounds,120,68,52,Journal Q1,1.9753,1.4393,0.2833,34.7833,32.6076,20.4384,46.0064,1.0319,-8.0948,11.0649,0.8317
+Multimedia Tools and Applications,102,62,41,Journal Q1,1.4267,0.7776,0.1569,13.5,14.2586,2.4153,27.4713,-9.1384,-19.1938,2.1682,0.1093

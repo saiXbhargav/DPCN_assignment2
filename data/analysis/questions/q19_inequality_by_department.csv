@@ -1,0 +1,28 @@
+institution,department,faculty_with_papers,gini_papers,gini_citations,top10pct_share_citations,top_person,top_person_share_citations
+NIT Trichy,Chemistry,16,0.6404,0.7244,0.6088,S Anandan,0.3894
+NIT Surathkal,Mathematics,23,0.6573,0.6981,0.4678,Jidesh P,0.2524
+NIT Trichy,Civil,37,0.5015,0.6932,0.5491,S Saravanan,0.1791
+NIT Trichy,Mathematics,21,0.4879,0.6725,0.3926,R Ponalagusamy,0.2456
+NIT Trichy,Mechanical,29,0.5784,0.6676,0.525,S Suresh,0.2749
+NIT Trichy,Architecture,14,0.4897,0.6456,0.2855,T Srinivas,0.2855
+NIT Trichy,ECE,34,0.4703,0.6436,0.4025,S Raghavan,0.1513
+NIT Trichy,Production,36,0.5,0.6235,0.4937,D Lenin Singaravelu,0.2318
+NIT Trichy,CSE,29,0.531,0.5992,0.3856,A Santhana Vijayan,0.1585
+NIT Trichy,Chemical,22,0.4786,0.5968,0.3486,G Arthanareeswaran,0.1951
+NIT Surathkal,EEE,31,0.4288,0.5954,0.381,Tukaram Moger,0.1391
+NIT Surathkal,ECE,29,0.4117,0.5941,0.4169,Shyam Lal,0.2166
+NIT Surathkal,Civil,38,0.4245,0.5862,0.4262,Bibhuti Bhusan Das,0.1709
+NIT Trichy,Computer Applications,24,0.4085,0.5744,0.3116,U Srinivasulu Reddy,0.2028
+NIT Trichy,EEE,35,0.3877,0.5442,0.4006,G Saravana Ilango,0.1136
+NIT Surathkal,Mining,13,0.3809,0.5433,0.2194,Mandela Govinda Raj,0.2194
+NIT Surathkal,MME,17,0.4462,0.5395,0.4118,Udaya Bhat K,0.2469
+NIT Trichy,MME,21,0.5102,0.5389,0.2771,Siva Prasad Katakam,0.1461
+NIT Trichy,ICE,16,0.4072,0.5273,0.4319,G Uma,0.2218
+NIT Surathkal,CSE,17,0.3941,0.5252,0.3472,Jeny Rajan,0.1841
+NIT Surathkal,Mechanical,50,0.4396,0.5198,0.3499,Ramesh M R,0.0998
+NIT Surathkal,Information Technology,14,0.3115,0.4955,0.1877,Jaidhar C D,0.1877
+NIT Surathkal,Chemical,20,0.4343,0.4846,0.2866,Raj Mohan B,0.1786
+NIT Trichy,Physics,17,0.3524,0.477,0.353,A Chandra Bose,0.2036
+NIT Surathkal,Water Resources & Ocean,20,0.3602,0.4646,0.2894,Paresh Chandra Deka,0.1608
+NIT Surathkal,Chemistry,14,0.2746,0.4539,0.2618,Denthaje Krishna Bhat,0.2618
+NIT Surathkal,Physics,12,0.326,0.4155,0.2197,Nagaraja H S,0.2197

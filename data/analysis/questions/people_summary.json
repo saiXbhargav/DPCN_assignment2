@@ -1,0 +1,396 @@
+{
+  "q18": {
+    "current_with_papers": 557,
+    "former_with_papers": 99,
+    "where_former_went": {
+      "Still listed at the same NIT": 60,
+      "No current institution listed": 10,
+      "IIT": 8,
+      "Another NIT": 7,
+      "Indian university / college": 7,
+      "No OpenAlex profile": 4,
+      "Government R&D lab": 2,
+      "Abroad (university)": 1
+    },
+    "former_by_rank": {
+      "Professor": 37,
+      "Assistant Professor": 28,
+      "Professor (HAG)": 16,
+      "Faculty": 9,
+      "Associate Professor": 8,
+      "Director": 1
+    },
+    "headline": [
+      {
+        "measure": "papers per year on the faculty list",
+        "current_median": 3.272727272727273,
+        "former_median": 2.5,
+        "p_value": 0.012972347854900973
+      },
+      {
+        "measure": "citations per paper",
+        "current_median": 9.0,
+        "former_median": 10.666666666666666,
+        "p_value": 0.0630676063350967
+      },
+      {
+        "measure": "mean FWCI",
+        "current_median": 1.0655363636363637,
+        "former_median": 0.9116825657894737,
+        "p_value": 0.11661713437676717
+      },
+      {
+        "measure": "h-index (2016-2026)",
+        "current_median": 8.0,
+        "former_median": 6.0,
+        "p_value": 0.0042328374402441395
+      },
+      {
+        "measure": "share of papers in Q1",
+        "current_median": 0.22727272727272727,
+        "former_median": 0.16666666666666666,
+        "p_value": 0.0169682032921967
+      },
+      {
+        "measure": "share with a foreign co-author",
+        "current_median": 0.05405405405405406,
+        "former_median": 0.0,
+        "p_value": 0.029444761065020503
+      },
+      {
+        "measure": "NIT faculty co-authors",
+        "current_median": 2.0,
+        "former_median": 2.0,
+        "p_value": 0.12582826717588433
+      },
+      {
+        "measure": "betweenness",
+        "current_median": 0.0002278131525535,
+        "former_median": 0.0,
+        "p_value": 0.014665004552512479
+      },
+      {
+        "measure": "Indian partner institutes",
+        "current_median": 4.0,
+        "former_median": 2.0,
+        "p_value": 3.0135750008815823e-06
+      },
+      {
+        "measure": "years on the faculty list",
+        "current_median": 11.0,
+        "former_median": 6.0,
+        "p_value": 3.453590339621485e-21
+      }
+    ]
+  },
+  "q19": {
+    "gini_papers": 0.4892219570020895,
+    "gini_citations": 0.6393291233220315,
+    "top10_share_papers": 0.3107646012857338,
+    "top10_share_citations": 0.44854079790778356,
+    "bottom50_share_citations": 0.07239544392340636,
+    "by_nit": [
+      {
+        "institution": "NIT Trichy",
+        "measure": "papers",
+        "gini": 0.515419700736508,
+        "top10pct_share": 0.3287480249093782
+      },
+      {
+        "institution": "NIT Trichy",
+        "measure": "citations",
+        "gini": 0.6756964628090301,
+        "top10pct_share": 0.4915807796527034
+      },
+      {
+        "institution": "NIT Surathkal",
+        "measure": "papers",
+        "gini": 0.45469565337115014,
+        "top10pct_share": 0.2913012350098443
+      },
+      {
+        "institution": "NIT Surathkal",
+        "measure": "citations",
+        "gini": 0.5940759045808983,
+        "top10pct_share": 0.4009535426667716
+      }
+    ],
+    "lotka": [
+      {
+        "group": "faculty (2016-2026 papers)",
+        "authors": 656,
+        "exponent_mle": 1.2873409560296791,
+        "exponent_least_squares": 0.5157449807075223,
+        "share_with_one_paper": 0.04878048780487805,
+        "lotka_predicted_share_one_paper": 0.24522322203641592
+      },
+      {
+        "group": "all NIT-affiliated authors incl. students (OpenAlex author IDs)",
+        "authors": 10876,
+        "exponent_mle": 1.9058875281303043,
+        "exponent_least_squares": 2.0228169778486946,
+        "share_with_one_paper": 0.558477381390217,
+        "lotka_predicted_share_one_paper": 0.5737567359236946
+      }
+    ],
+    "most_unequal_departments": [
+      {
+        "institution": "NIT Trichy",
+        "department": "Chemistry",
+        "gini_citations": 0.7244437503322878,
+        "top_person": "S Anandan",
+        "top_person_share_citations": 0.38938805890796957
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "Mathematics",
+        "gini_citations": 0.6981493042269973,
+        "top_person": "Jidesh P",
+        "top_person_share_citations": 0.2524316813339509
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "Civil",
+        "gini_citations": 0.6931739558097958,
+        "top_person": "S Saravanan",
+        "top_person_share_citations": 0.1790533148566844
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "Mathematics",
+        "gini_citations": 0.6725303825601741,
+        "top_person": "R Ponalagusamy",
+        "top_person_share_citations": 0.24561403508771928
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "Mechanical",
+        "gini_citations": 0.6676327442330343,
+        "top_person": "S Suresh",
+        "top_person_share_citations": 0.2748994416761722
+      }
+    ],
+    "most_equal_departments": [
+      {
+        "institution": "NIT Surathkal",
+        "department": "Chemical",
+        "gini_citations": 0.48457555021268717
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "Physics",
+        "gini_citations": 0.4769983936357378
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "Water Resources & Ocean",
+        "gini_citations": 0.4645856628152565
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "Chemistry",
+        "gini_citations": 0.4538683325324364
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "Physics",
+        "gini_citations": 0.4154726707603671
+      }
+    ]
+  },
+  "q20": {
+    "roles": [
+      {
+        "rank": "Assistant Professor",
+        "faculty_paper_rows": 3530,
+        "faculty": 242,
+        "first_author": 0.11954674220963173,
+        "last_author": 0.49971671388101985,
+        "middle_author": 0.3696883852691218,
+        "sole_author": 0.01104815864022663,
+        "corresponding_author": 0.440395861448493,
+        "rows_with_corresponding_info": 2223,
+        "median_authors": 3.0
+      },
+      {
+        "rank": "Associate Professor",
+        "faculty_paper_rows": 4499,
+        "faculty": 113,
+        "first_author": 0.06179150922427206,
+        "last_author": 0.5492331629250945,
+        "middle_author": 0.3778617470549011,
+        "sole_author": 0.011113580795732384,
+        "corresponding_author": 0.4481082957306491,
+        "rows_with_corresponding_info": 2881,
+        "median_authors": 3.0
+      },
+      {
+        "rank": "Professor",
+        "faculty_paper_rows": 9490,
+        "faculty": 207,
+        "first_author": 0.03119072708113804,
+        "last_author": 0.5758693361433087,
+        "middle_author": 0.3894625922023182,
+        "sole_author": 0.003477344573234984,
+        "corresponding_author": 0.3925566804505918,
+        "rows_with_corresponding_info": 7013,
+        "median_authors": 3.0
+      },
+      {
+        "rank": "Professor (HAG)",
+        "faculty_paper_rows": 4188,
+        "faculty": 80,
+        "first_author": 0.04083094555873926,
+        "last_author": 0.5702005730659025,
+        "middle_author": 0.3851480420248329,
+        "sole_author": 0.0038204393505253103,
+        "corresponding_author": 0.4095394736842105,
+        "rows_with_corresponding_info": 3040,
+        "median_authors": 3.0
+      },
+      {
+        "rank": "All",
+        "faculty_paper_rows": 21933,
+        "faculty": 656,
+        "first_author": 0.053891396525783064,
+        "last_author": 0.5559203027401632,
+        "middle_author": 0.3838964117995714,
+        "sole_author": 0.006291888934482287,
+        "corresponding_author": 0.41036168132942324,
+        "rows_with_corresponding_info": 15345,
+        "median_authors": 3.0
+      }
+    ],
+    "chi2": 469.047862111128,
+    "chi2_p": 2.4213839385134424e-95,
+    "papers_led_by_nit_faculty_share": 0.7976774615636245,
+    "papers_with_outside_partners_led_by_nit_faculty_share": 0.6273434510904221,
+    "fwci_effect_when_faculty_leads_pct": -1.1744400386666354,
+    "fwci_effect_ci": [
+      -3.4776122577903967,
+      1.1836894022481115
+    ],
+    "fwci_effect_p": 0.32613261605943533,
+    "corresponding_info_share": 0.6996306934755847
+  },
+  "q21": {
+    "faculty": 494,
+    "correlations": [
+      {
+        "measure": "mean_fwci",
+        "spearman_breadth": 0.12353180076090543,
+        "p": 0.00597385324522877,
+        "spearman_breadth_within_department": 0.09301755669502007,
+        "p_within": 0.0389646467832143,
+        "partial_spearman_controlling_papers": 0.08308414916364833,
+        "p_partial": 0.06501563138324624
+      },
+      {
+        "measure": "median_fwci",
+        "spearman_breadth": -0.004166895942197224,
+        "p": 0.926396390055868,
+        "spearman_breadth_within_department": 0.006678899129687732,
+        "p_within": 0.8824052457987754,
+        "partial_spearman_controlling_papers": -0.04646620222806939,
+        "p_partial": 0.30267991192885846
+      },
+      {
+        "measure": "h_index",
+        "spearman_breadth": 0.15215149879197085,
+        "p": 0.0006914592517401643,
+        "spearman_breadth_within_department": 0.1208029911097667,
+        "p_within": 0.007246615173334942,
+        "partial_spearman_controlling_papers": 0.029297606542321455,
+        "p_partial": 0.515910773777792
+      },
+      {
+        "measure": "citations_per_paper",
+        "spearman_breadth": 0.12699189714784034,
+        "p": 0.004701000348174982,
+        "spearman_breadth_within_department": 0.08554892021068747,
+        "p_within": 0.057675864829195594,
+        "partial_spearman_controlling_papers": 0.07533666141112416,
+        "p_partial": 0.09441066449415636
+      },
+      {
+        "measure": "papers",
+        "spearman_breadth": 0.16537867670509313,
+        "p": 0.00022261569440342477,
+        "spearman_breadth_within_department": 0.16484784531537516,
+        "p_within": 0.00023682267063946579,
+        "partial_spearman_controlling_papers": NaN,
+        "p_partial": NaN
+      }
+    ],
+    "groups": [
+      {
+        "breadth_group": "most specialised",
+        "faculty": 124,
+        "median_papers": 28.5,
+        "mean_fwci": 1.1995116899260583,
+        "median_fwci": 1.02709,
+        "median_h": 9.0,
+        "median_breadth": 0.5773215008275614,
+        "median_subfields": 3.0
+      },
+      {
+        "breadth_group": "specialised",
+        "faculty": 123,
+        "median_papers": 35.0,
+        "mean_fwci": 1.2758343729994164,
+        "median_fwci": 1.1139514285714287,
+        "median_h": 10.0,
+        "median_breadth": 1.0266004310556769,
+        "median_subfields": 6.0
+      },
+      {
+        "breadth_group": "broad",
+        "faculty": 123,
+        "median_papers": 35.0,
+        "mean_fwci": 1.2143558171591977,
+        "median_fwci": 1.101848275862069,
+        "median_h": 10.0,
+        "median_breadth": 1.2889403391358654,
+        "median_subfields": 7.0
+      },
+      {
+        "breadth_group": "broadest",
+        "faculty": 124,
+        "median_papers": 41.5,
+        "mean_fwci": 1.435453611513689,
+        "median_fwci": 1.23913007518797,
+        "median_h": 12.0,
+        "median_breadth": 1.5971885490857887,
+        "median_subfields": 11.0
+      }
+    ],
+    "most_specialised_examples": [
+      {
+        "author": "J Vijaya Vengadesh Kumar",
+        "department": "Civil"
+      },
+      {
+        "author": "B Dastagiri Reddy",
+        "department": "EEE"
+      },
+      {
+        "author": "Srinivasa Rao Kola",
+        "department": "Mathematics"
+      }
+    ],
+    "broadest_examples": [
+      {
+        "author": "Bukke Chandrababu Naik",
+        "department": "ECE"
+      },
+      {
+        "author": "N Sivakumaran",
+        "department": "ICE"
+      },
+      {
+        "author": "Pruthviraj U",
+        "department": "Water Resources & Ocean"
+      }
+    ]
+  }
+}

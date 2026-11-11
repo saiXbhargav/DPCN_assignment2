@@ -698,6 +698,39 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - two regional neighbourhoods (Karnataka around Surathkal, Tamil Nadu around Trichy);
   - IITs are the best-connected partner type.
 
+### 9. Research questions (`scripts/questions.py` → [QUESTIONS.md](data/analysis/questions/QUESTIONS.md))
+Eleven questions, each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
+
+- **Countries (15):**
+  - 17% of papers have a foreign co-author, from 94 countries;
+  - a foreign co-author goes with +18% FWCI (adjusted), and two or more countries with +35%;
+  - UK (+40%), Malaysia, Korea and Australia (+20%) help most; Saudi Arabia, Japan and Chile bring no gain;
+  - several country links are mostly one faculty member's network.
+- **Partner types (16):** only foreign partners clearly raise impact (+17%); IITs bring no significant gain, and government labs and IISc / IISER go with slightly lower FWCI.
+- **Key-person risk (17):**
+  - losing the top 10 bridge faculty (3%) disconnects 54% (Trichy) and 44% (Surathkal) of faculty pairs, against 8–9% for 10 random departures;
+  - in 19 of 27 departments one person holds more than a quarter of the department's links together.
+- **Former faculty (18):** the brain drain is junior. Of 28 former Assistant Professors, 12 moved to IITs or other NITs, and they were not weaker than those who stayed.
+- **Inequality (19):**
+  - the top 10% of faculty hold 45% of citations (Gini 0.68 at Trichy, 0.59 at Surathkal);
+  - Lotka's law holds for all NIT authors (exponent 1.9–2.0).
+- **Who leads (20):**
+  - NIT faculty lead 80% of their papers;
+  - Professors are last author 58% of the time and first author 3%;
+  - Assistant Professors as first author fell from 29% (2016) to 7% (2025).
+- **Specialists vs generalists (21):** only a weak link (ρ ≈ 0.1) that mostly disappears once the number of papers is taken into account.
+- **Where to publish (22–23):**
+  - a conference paper is worth less than a Q1/Q2 journal paper (−35% vs Q1) but more than a Q3–Q4 or unranked journal paper;
+  - *Materials Today: Proceedings* (−20%) and *Lecture Notes in Civil Engineering* (−9%), the two most-used venues, lower impact.
+- **Open access (24):**
+  - 22% of papers are open;
+  - gold and green go with +10–13%, diamond and bronze with −12%;
+  - most of the gap is the journal, not the openness.
+- **Rich get richer (25):**
+  - new citations grow as k^0.75 (linear, α = 1, for papers 6+ years old);
+  - 72–83% of the top-10% papers after 2 years are still top 10% after 5.
+- **Name-matching sensitivity (27):** dropping 463 doubtful single-paper matches moves totals by under 2% and leaves the top-20 ranking unchanged.
+
 ---
 
 ## Folder layout
@@ -723,9 +756,10 @@ DPCN_assignment2/
 │   ├── verify_networks.py   ← 44 independent checks
 │   ├── analysis.py          ← analyses → data/analysis/
 │   ├── network_science.py   ← degree fits, null models, communities, institute network, regression
-│   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates (resumable)
+│   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates, citing-institute size, citations per year and open access (resumable)
 │   ├── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
 │   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
+│   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check → data/analysis/questions/
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -744,6 +778,7 @@ DPCN_assignment2/
     │   ├── links_refs.jsonl, links_citers.jsonl   (+ .done progress files)
     │   ├── works_impact.jsonl, sources.jsonl, partner_subfields.jsonl
     │   ├── institutions.jsonl, citers_info.jsonl
+    │   ├── works_yearly.jsonl   ← citations per year and open-access status (fetch_insights.py yearly)
     │   └── faculty_pages/   ← saved faculty pages + manifest.csv
     └── reference/
         ├── scimago_all.csv  ← SJR data (mirror)
@@ -783,6 +818,8 @@ python fetch_insights.py geo        # institute coordinates (about 25 requests)
 python fetch_insights.py citerout   # size of the 40 institutes that cite us most (40 requests)
 python insights.py                  # data/analysis/insights/
 python phase2.py                    # data/all_papers.csv and data/analysis/phase2/
+python fetch_insights.py yearly     # citations per year and open-access status (213 requests)
+python questions.py                 # data/analysis/questions/
 python build_dashboard.py           # dashboard/index.html
 ```
 

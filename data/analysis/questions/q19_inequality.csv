@@ -1,0 +1,13 @@
+scope,institution,measure,faculty,gini,top10pct_share,top20pct_share,bottom50pct_share
+faculty with papers,NIT Trichy,papers,357,0.5154,0.3287,0.5226,0.1374
+faculty with papers,NIT Trichy,citations,357,0.6757,0.4916,0.6898,0.057
+faculty with papers,NIT Surathkal,papers,299,0.4547,0.2913,0.4779,0.1786
+faculty with papers,NIT Surathkal,citations,299,0.5941,0.401,0.6047,0.0921
+faculty with papers,Both,papers,656,0.4892,0.3108,0.502,0.1526
+faculty with papers,Both,citations,656,0.6393,0.4485,0.6502,0.0724
+all faculty (including 0 papers),NIT Trichy,papers,421,0.5891,0.367,0.582,0.0859
+all faculty (including 0 papers),NIT Trichy,citations,421,0.725,0.5347,0.7394,0.0263
+all faculty (including 0 papers),NIT Surathkal,papers,346,0.5288,0.3258,0.5248,0.1211
+all faculty (including 0 papers),NIT Surathkal,citations,346,0.6492,0.4421,0.65,0.0578
+all faculty (including 0 papers),Both,papers,767,0.5631,0.3474,0.5547,0.0989
+all faculty (including 0 papers),Both,citations,767,0.6915,0.4906,0.6992,0.0391

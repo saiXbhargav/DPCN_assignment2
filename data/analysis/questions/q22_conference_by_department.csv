@@ -1,0 +1,29 @@
+institution,department,papers,conference_share,mean_fwci_journal,mean_fwci_conference,conference_vs_journal,p_value
+NIT Surathkal,Information Technology,651,0.6805,2.1184,1.1405,0.5384,0.0
+NIT Surathkal,CSE,955,0.6272,2.3769,1.0381,0.4368,0.0
+NIT Surathkal,EEE,816,0.5233,1.3392,1.1294,0.8433,0.1055
+NIT Trichy,CSE,701,0.4437,1.2011,0.7405,0.6165,0.0
+NIT Trichy,EEE,851,0.4289,1.0243,0.8927,0.8715,0.0001
+NIT Surathkal,ECE,797,0.4266,0.9642,1.0121,1.0497,0.0004
+NIT Surathkal,Civil,1005,0.4,2.0464,1.7362,0.8484,0.0
+NIT Trichy,ECE,1114,0.3905,1.3047,0.9858,0.7556,0.0
+NIT Trichy,Computer Applications,581,0.3373,1.9448,1.0749,0.5527,0.0
+NIT Trichy,Architecture,92,0.337,0.9628,1.0288,1.0685,0.1394
+NIT Trichy,ICE,402,0.3358,0.9354,1.3754,1.4704,0.2834
+NIT Surathkal,Water Resources & Ocean,527,0.2694,1.3261,1.7229,1.2992,0.0045
+NIT Surathkal,Mining,188,0.2181,1.2427,1.5283,1.2299,0.3946
+NIT Trichy,Civil,754,0.1989,1.7575,1.4413,0.8201,0.0
+NIT Surathkal,Mechanical,1715,0.1924,1.6803,1.4399,0.8569,0.0
+NIT Trichy,Energy & Environment,94,0.1702,1.2511,1.9898,1.5905,0.1688
+NIT Surathkal,Mathematics,500,0.164,0.5845,0.4514,0.7723,0.6768
+NIT Trichy,Physics,771,0.1051,0.9859,1.3609,1.3804,0.1684
+NIT Surathkal,MME,514,0.0914,0.964,1.1118,1.1534,0.0036
+NIT Surathkal,Physics,374,0.0856,1.1033,0.6879,0.6235,0.0
+NIT Trichy,Mechanical,731,0.0657,1.4609,0.9359,0.6406,0.0137
+NIT Trichy,MME,551,0.0472,1.0462,2.8162,2.6918,0.6498
+NIT Trichy,Mathematics,296,0.0439,1.4658,1.7936,1.2236,0.8402
+NIT Trichy,Production,819,0.0391,1.6065,1.1478,0.7145,0.0003
+NIT Surathkal,Chemistry,758,0.0343,1.4437,3.3671,2.3322,0.6977
+NIT Trichy,Chemical,651,0.0276,1.591,1.5234,0.9575,0.1388
+NIT Surathkal,Chemical,388,0.0232,1.2886,0.3492,0.271,
+NIT Trichy,Chemistry,739,0.0041,1.3354,0.5851,0.4382,

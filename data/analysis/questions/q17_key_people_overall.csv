@@ -1,0 +1,41 @@
+faculty_id,name,institution,department,designation,status,co_authors,betweenness,pairs_cut_between_others,pairs_cut_share,components_after
+S0027,Mohit P Tahiliani,NIT Surathkal,CSE,Professor,current,5,0.02305,4819,0.03988,3
+T0555,Jayabalan P,NIT Trichy,Civil,Professor,former,6,0.02512,4346,0.03597,3
+S0307,Shyam S Kamath,NIT Surathkal,Mathematics,Professor,current,3,0.01582,3388,0.02804,2
+S0305,Pushparaj Shetty D,NIT Surathkal,Mathematics,Professor,current,2,0.01359,2910,0.02408,2
+S0226,Sowmya Kamath S,NIT Surathkal,Information Technology,Associate Professor,current,9,0.01492,2439,0.02018,5
+T0793,S Suresh,NIT Trichy,Mechanical,Professor,current,14,0.0219,2439,0.02018,5
+S0301,B R Shankar,NIT Surathkal,Mathematics,Professor,current,2,0.01135,2430,0.02011,2
+S0024,Mahendra Pratap Singh,NIT Surathkal,CSE,Assistant Professor,current,4,0.00932,1948,0.01612,2
+S0287,Kedarnath Senapathi,NIT Surathkal,Mathematics,Associate Professor,current,4,0.0091,1948,0.01612,2
+T0450,B Shameedha Begum,NIT Trichy,CSE,Assistant Professor,current,4,0.01485,1948,0.01612,2
+S0406,Dodamani B M,NIT Surathkal,Water Resources & Ocean,Professor,current,3,0.01078,1948,0.01612,2
+T0597,G Thavasi Raja,NIT Trichy,ECE,Associate Professor,current,5,0.00761,1467,0.01214,4
+T0530,K Muthukkumaran,NIT Trichy,Civil,Professor (HAG),current,5,0.00911,1467,0.01214,4
+T0539,Nisha Radhakrishnan,NIT Trichy,Civil,Professor,current,5,0.00717,1466,0.01213,3
+S0407,Dwarakish G S,NIT Surathkal,Water Resources & Ocean,Professor (HAG),current,3,0.00684,1466,0.01213,3
+T0543,R Gandhimathi,NIT Trichy,Civil,Professor,current,6,0.00863,1466,0.01213,3
+T0575,S Nickolas,NIT Trichy,Computer Applications,Professor,current,6,0.01099,1466,0.01213,3
+T0602,P Palanisamy,NIT Trichy,ECE,Professor (HAG),current,10,0.07729,1466,0.01213,3
+S0048,Chandrasekaran K,NIT Surathkal,CSE,Professor (HAG),current,7,0.01211,1466,0.01213,3
+T0850,P Senthil,NIT Trichy,Production,Professor,current,5,0.00874,1464,0.01212,2
+T0702,V Sridevi,NIT Trichy,ICE,Assistant Professor,current,2,0.00684,1464,0.01212,2
+T0791,Raghu Ram Karthik Desu,NIT Trichy,Mechanical,Assistant Professor,current,3,0.00684,1464,0.01212,2
+T0570,G R Gangadharan,NIT Trichy,Computer Applications,Professor,current,4,0.0137,1464,0.01212,2
+S0031,Shridhar Sanshi,NIT Surathkal,CSE,Assistant Professor,current,2,0.00684,1464,0.01212,2
+T0511,R Karvembu,NIT Trichy,Chemistry,Professor (HAG),current,6,0.00922,979,0.0081,3
+S0205,B Venkatesa Perumal,NIT Surathkal,EEE,Professor,current,7,0.05962,979,0.0081,3
+S0231,Jaidhar C D,NIT Surathkal,Information Technology,Professor,current,3,0.00457,979,0.0081,3
+S0249,Anandhan Srinivasan,NIT Surathkal,MME,Professor,current,8,0.02509,979,0.0081,3
+T0691,K Srinivasan,NIT Trichy,ICE,Professor,current,3,0.00457,979,0.0081,3
+S0382,Ajith Kulangara Madam,NIT Surathkal,Physics,Professor,current,7,0.00658,979,0.0081,3
+T0572,P J A Alphonse,NIT Trichy,Computer Applications,Professor,current,3,0.00457,979,0.0081,3
+S0131,Basavaraju Manu,NIT Surathkal,Civil,Professor,current,5,0.00536,979,0.0081,3
+S0119,Raviraj H M,NIT Surathkal,Civil,Associate Professor,current,5,0.00712,979,0.0081,3
+T0649,S Senthil Kumar,NIT Trichy,EEE,Professor,current,5,0.00484,979,0.0081,3
+S0141,R Shivashankar,NIT Surathkal,Civil,Professor,former,4,0.00457,979,0.0081,3
+T0714,S Kumaran,NIT Trichy,MME,Professor,current,4,0.00459,979,0.0081,3
+T0451,C Mala,NIT Trichy,CSE,Professor (HAG),current,4,0.00502,979,0.0081,3
+T0693,N Sivakumaran,NIT Trichy,ICE,Professor,current,13,0.06012,979,0.0081,3
+T0571,Michael Arock,NIT Trichy,Computer Applications,Professor,current,3,0.00457,978,0.00809,2
+S0210,Panduranga Vittal K,NIT Surathkal,EEE,Professor (HAG),current,5,0.00545,978,0.00809,2

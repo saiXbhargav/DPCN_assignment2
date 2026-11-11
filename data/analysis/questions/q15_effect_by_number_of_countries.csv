@@ -1,0 +1,4 @@
+term,coefficient,effect_pct,ci_low_pct,ci_high_pct,p_value
+one_country,0.1228,13.0683,9.9608,16.2636,0.0
+two_plus_countries,0.3007,35.074,28.68,41.7857,0.0
+indian_collab,-0.0003,-0.0259,-1.8513,1.8334,0.978

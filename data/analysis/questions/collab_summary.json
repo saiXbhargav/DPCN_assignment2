@@ -1,0 +1,170 @@
+{
+  "q15": {
+    "papers_all": 21260,
+    "papers_with_foreign_coauthor": 3645,
+    "foreign_share": 0.17144873000940733,
+    "countries": 94,
+    "countries_with_100_plus_papers": [
+      "US",
+      "KR",
+      "SA",
+      "GB",
+      "TW",
+      "CN",
+      "CL",
+      "MY",
+      "CA",
+      "JP",
+      "AU",
+      "DE",
+      "IT",
+      "VN"
+    ],
+    "top5": [
+      {
+        "country_code": "US",
+        "country": "United States",
+        "papers": 800
+      },
+      {
+        "country_code": "KR",
+        "country": "South Korea",
+        "papers": 393
+      },
+      {
+        "country_code": "SA",
+        "country": "Saudi Arabia",
+        "papers": 312
+      },
+      {
+        "country_code": "GB",
+        "country": "United Kingdom",
+        "papers": 265
+      },
+      {
+        "country_code": "TW",
+        "country": "Taiwan",
+        "papers": 261
+      }
+    ],
+    "foreign_effect_all_papers_pct": 17.996541034123847,
+    "foreign_effect_faculty_papers_pct": 14.247109956531578,
+    "foreign_share_2016": 0.15036976170912078,
+    "foreign_share_2025": 0.161836825679893,
+    "regression_papers": 21225,
+    "best_country": [
+      {
+        "term": "cc_VN",
+        "effect_pct": 67.49296741960526
+      },
+      {
+        "term": "cc_GB",
+        "effect_pct": 39.77256005340579
+      },
+      {
+        "term": "cc_MY",
+        "effect_pct": 20.545678290419445
+      }
+    ],
+    "worst_country": [
+      {
+        "term": "cc_CL",
+        "effect_pct": -3.0009319761418407
+      },
+      {
+        "term": "cc_JP",
+        "effect_pct": 2.2567609049909176
+      },
+      {
+        "term": "cc_SA",
+        "effect_pct": 3.487811111607231
+      }
+    ]
+  },
+  "q16": {
+    "regression_papers": 21225,
+    "effects": [
+      {
+        "partner_type": "IIT",
+        "papers": 1279,
+        "effect_pct": 2.531461822591785,
+        "ci_low_pct": -0.8021824891099261,
+        "ci_high_pct": 5.977136667583416,
+        "p_value": 0.13823180054760123
+      },
+      {
+        "partner_type": "Other NIT",
+        "papers": 827,
+        "effect_pct": 5.044999783148474,
+        "ci_low_pct": 0.6126872411647888,
+        "ci_high_pct": 9.672569951267684,
+        "p_value": 0.025240237259201593
+      },
+      {
+        "partner_type": "IISER / IISc",
+        "papers": 322,
+        "effect_pct": -9.689409377445946,
+        "ci_low_pct": -14.676805132508386,
+        "ci_high_pct": -4.410485434107814,
+        "p_value": 0.00043763775116884197
+      },
+      {
+        "partner_type": "IIIT",
+        "papers": 114,
+        "effect_pct": 6.367953088592637,
+        "ci_low_pct": -5.050621099997221,
+        "ci_high_pct": 19.159720425056026,
+        "p_value": 0.28664858026797524
+      },
+      {
+        "partner_type": "Government R&D lab",
+        "papers": 1306,
+        "effect_pct": -5.99692795804303,
+        "ci_low_pct": -8.989725519777615,
+        "ci_high_pct": -2.905714725147368,
+        "p_value": 0.0001794622059385159
+      },
+      {
+        "partner_type": "Indian university / college",
+        "papers": 4988,
+        "effect_pct": 0.6065769442662239,
+        "ci_low_pct": -1.437580744647482,
+        "ci_high_pct": 2.6931299060305225,
+        "p_value": 0.5636572089475232
+      },
+      {
+        "partner_type": "Indian hospital / medical",
+        "papers": 40,
+        "effect_pct": -10.847072412385629,
+        "ci_low_pct": -26.854408804119334,
+        "ci_high_pct": 8.663343442769689,
+        "p_value": 0.2554801644503947
+      },
+      {
+        "partner_type": "Industry",
+        "papers": 398,
+        "effect_pct": -5.232313233683083,
+        "ci_low_pct": -10.86794970935323,
+        "ci_high_pct": 0.7596529615698344,
+        "p_value": 0.08578479766782744
+      },
+      {
+        "partner_type": "Foreign university",
+        "papers": 3493,
+        "effect_pct": 17.054966735041035,
+        "ci_low_pct": 13.94955452916793,
+        "ci_high_pct": 20.245009240771218,
+        "p_value": 1.6798896253188107e-30
+      },
+      {
+        "partner_type": "Foreign other",
+        "papers": 440,
+        "effect_pct": 7.803940183295044,
+        "ci_low_pct": 0.4865651429625917,
+        "ci_high_pct": 15.654162350053834,
+        "p_value": 0.03614017364405473
+      }
+    ],
+    "no_partner_share": 0.5341486359360301
+  }
+}

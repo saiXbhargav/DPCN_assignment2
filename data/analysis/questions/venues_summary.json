@@ -1,0 +1,379 @@
+{
+  "q22": {
+    "papers": 21260,
+    "regression_papers": 21225,
+    "classes": [
+      {
+        "venue_class": "Journal Q1",
+        "papers": 5248,
+        "share": 0.24684854186265287,
+        "mean_fwci": 2.4112315287838353,
+        "median_fwci": 1.4362,
+        "top10_share": 0.2783072817384674,
+        "citations_per_paper": 31.3359375,
+        "effect_vs_q1_journal_pct": NaN,
+        "ci_low_pct": NaN,
+        "ci_high_pct": NaN
+      },
+      {
+        "venue_class": "Journal Q2",
+        "papers": 5377,
+        "share": 0.25291627469426153,
+        "mean_fwci": 1.251881276754141,
+        "median_fwci": 0.7289,
+        "top10_share": 0.12060301507537688,
+        "citations_per_paper": 16.308908313185793,
+        "effect_vs_q1_journal_pct": -27.08473361094661,
+        "ci_low_pct": -28.64093576561776,
+        "ci_high_pct": -25.494593719392476
+      },
+      {
+        "venue_class": "Journal Q3-Q4",
+        "papers": 3592,
+        "share": 0.1689557855126999,
+        "mean_fwci": 0.6617837215829356,
+        "median_fwci": 0.3004,
+        "top10_share": 0.04518664047151277,
+        "citations_per_paper": 8.180957683741648,
+        "effect_vs_q1_journal_pct": -43.98745270022165,
+        "ci_low_pct": -45.21678169251613,
+        "ci_high_pct": -42.73053770955057
+      },
+      {
+        "venue_class": "Journal, not ranked",
+        "papers": 1426,
+        "share": 0.06707431796801505,
+        "mean_fwci": 0.5966035923753665,
+        "median_fwci": 0.18615,
+        "top10_share": 0.04252199413489736,
+        "citations_per_paper": 6.927068723702665,
+        "effect_vs_q1_journal_pct": -47.41478781522329,
+        "ci_low_pct": -48.92419799076525,
+        "ci_high_pct": -45.860771016027776
+      },
+      {
+        "venue_class": "Conference, CORE-ranked",
+        "papers": 168,
+        "share": 0.007902163687676388,
+        "mean_fwci": 1.52499880239521,
+        "median_fwci": 0.4566,
+        "top10_share": 0.10778443113772455,
+        "citations_per_paper": 12.857142857142858,
+        "effect_vs_q1_journal_pct": -35.5885011615335,
+        "ci_low_pct": -41.58816163262317,
+        "ci_high_pct": -28.972597018365555
+      },
+      {
+        "venue_class": "Conference, not ranked",
+        "papers": 5449,
+        "share": 0.25630291627469426,
+        "mean_fwci": 1.2148248301193756,
+        "median_fwci": 0.3924,
+        "top10_share": 0.13039485766758493,
+        "citations_per_paper": 4.092677555514773,
+        "effect_vs_q1_journal_pct": -35.11260826633712,
+        "ci_low_pct": -36.74119362081759,
+        "ci_high_pct": -33.44209530669555
+      }
+    ],
+    "conference_share_2016": {
+      "NIT Surathkal": 0.37436762225969644,
+      "NIT Trichy": 0.23174603174603176,
+      "Both": 0.30073952341824156
+    },
+    "conference_share_2025": {
+      "NIT Surathkal": 0.3062730627306273,
+      "NIT Trichy": 0.2701543739279588,
+      "Both": 0.28756130182790907
+    },
+    "departments_most_conference": [
+      {
+        "institution": "NIT Surathkal",
+        "department": "Information Technology",
+        "conference_share": 0.6804915514592934,
+        "conference_vs_journal": 0.5383920187084194
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "CSE",
+        "conference_share": 0.6272251308900524,
+        "conference_vs_journal": 0.43676705680077776
+      },
+      {
+        "institution": "NIT Surathkal",
+        "department": "EEE",
+        "conference_share": 0.5232843137254902,
+        "conference_vs_journal": 0.8433291862458888
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "CSE",
+        "conference_share": 0.44365192582025675,
+        "conference_vs_journal": 0.6164989227609546
+      },
+      {
+        "institution": "NIT Trichy",
+        "department": "EEE",
+        "conference_share": 0.4289071680376028,
+        "conference_vs_journal": 0.8714863404672634
+      }
+    ]
+  },
+  "q23": {
+    "venues_with_100_plus_papers": 13,
+    "share_of_all_papers": 0.13537158984007525,
+    "venues": [
+      {
+        "venue": "Materials Today Proceedings",
+        "papers": 572,
+        "venue_class": "Journal, not ranked",
+        "mean_fwci": 0.7358424825174825,
+        "effect_vs_all_other_papers_pct": -19.791791541459226,
+        "effect_vs_similar_papers_pct": 19.124152016082373,
+        "p_value": 5.6534147319029825e-14
+      },
+      {
+        "venue": "Lecture notes in civil engineering",
+        "papers": 543,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 1.3243342541436465,
+        "effect_vs_all_other_papers_pct": -8.633789664098035,
+        "effect_vs_similar_papers_pct": 3.052658833738753,
+        "p_value": 0.3176793122934365
+      },
+      {
+        "venue": "AIP conference proceedings",
+        "papers": 300,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 1.6333343333333334,
+        "effect_vs_all_other_papers_pct": -4.525849853440855,
+        "effect_vs_similar_papers_pct": 8.001505367563478,
+        "p_value": 0.0776824708443222
+      },
+      {
+        "venue": "Communications in computer and information science",
+        "papers": 187,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 0.7966754010695186,
+        "effect_vs_all_other_papers_pct": -14.08449356503656,
+        "effect_vs_similar_papers_pct": -7.920770929348686,
+        "p_value": 0.05307023464192674
+      },
+      {
+        "venue": "Lecture notes in networks and systems",
+        "papers": 185,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 0.7302756756756756,
+        "effect_vs_all_other_papers_pct": -13.120257391840518,
+        "effect_vs_similar_papers_pct": -5.752152521044107,
+        "p_value": 0.11155265378881184
+      },
+      {
+        "venue": "Journal of Materials Engineering and Performance",
+        "papers": 167,
+        "venue_class": "Journal Q2",
+        "mean_fwci": 0.879019760479042,
+        "effect_vs_all_other_papers_pct": -8.156404259830163,
+        "effect_vs_similar_papers_pct": -7.997798086210284,
+        "p_value": 0.011720603785961875
+      },
+      {
+        "venue": "Materials Research Express",
+        "papers": 147,
+        "venue_class": "Journal Q3-Q4",
+        "mean_fwci": 0.9926476190476192,
+        "effect_vs_all_other_papers_pct": -10.679104551141016,
+        "effect_vs_similar_papers_pct": 16.25848686975342,
+        "p_value": 4.4022773934285155e-05
+      },
+      {
+        "venue": "IOP Conference Series Materials Science and Engineering",
+        "papers": 140,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 2.0007107142857143,
+        "effect_vs_all_other_papers_pct": 8.11629899615738,
+        "effect_vs_similar_papers_pct": 21.73623194163541,
+        "p_value": 0.0014664844875242839
+      },
+      {
+        "venue": "International Conference on Computing, Communication and Networking Technologies (ICCCNT)",
+        "papers": 140,
+        "venue_class": "Conference, not ranked",
+        "mean_fwci": 0.966195,
+        "effect_vs_all_other_papers_pct": -7.8654836860401645,
+        "effect_vs_similar_papers_pct": -0.8958171448899099,
+        "p_value": 0.8354414567214192
+      },
+      {
+        "venue": "Transactions of the Indian Institute of Metals",
+        "papers": 139,
+        "venue_class": "Journal Q3-Q4",
+        "mean_fwci": 0.8115064748201438,
+        "effect_vs_all_other_papers_pct": -18.264710389794825,
+        "effect_vs_similar_papers_pct": 7.00385169001041,
+        "p_value": 0.05715032577819714
+      },
+      {
+        "venue": "IEEE Access",
+        "papers": 136,
+        "venue_class": "Journal Q1",
+        "mean_fwci": 2.341486764705882,
+        "effect_vs_all_other_papers_pct": 36.883893601928804,
+        "effect_vs_similar_papers_pct": 0.9135819541635115,
+        "p_value": 0.8733212607981854
+      },
+      {
+        "venue": "Journal of Alloys and Compounds",
+        "papers": 120,
+        "venue_class": "Journal Q1",
+        "mean_fwci": 1.9752508333333334,
+        "effect_vs_all_other_papers_pct": 32.60760189263359,
+        "effect_vs_similar_papers_pct": 1.0319073856163596,
+        "p_value": 0.8316955953785438
+      },
+      {
+        "venue": "Multimedia Tools and Applications",
+        "papers": 102,
+        "venue_class": "Journal Q1",
+        "mean_fwci": 1.4267460784313721,
+        "effect_vs_all_other_papers_pct": 14.258561307600592,
+        "effect_vs_similar_papers_pct": -9.138442267655956,
+        "p_value": 0.10925876555719878
+      }
+    ]
+  },
+  "q24": {
+    "papers_with_status": 20965,
+    "open_share": 0.22375387550679704,
+    "statuses": [
+      {
+        "oa_status": "closed",
+        "papers": 16274,
+        "share": 0.7654750705550329,
+        "mean_fwci": 1.351803103490659,
+        "median_fwci": 0.6599,
+        "citations_per_paper": 14.924603662283397,
+        "top10_share": 0.14122418879056048,
+        "journal_share_q1": 0.24222686493793782,
+        "effect_vs_closed_pct": NaN,
+        "ci_low_pct": NaN,
+        "ci_high_pct": NaN,
+        "effect_same_venue_class_pct": NaN,
+        "ci_low_same_venue_class_pct": NaN,
+        "ci_high_same_venue_class_pct": NaN
+      },
+      {
+        "oa_status": "gold",
+        "papers": 1349,
+        "share": 0.0634524929444967,
+        "mean_fwci": 2.0129196441808745,
+        "median_fwci": 0.947,
+        "citations_per_paper": 21.439584877687174,
+        "top10_share": 0.21942179392142327,
+        "journal_share_q1": 0.5055596738324685,
+        "effect_vs_closed_pct": 13.032874396492279,
+        "ci_low_pct": 8.908681095083137,
+        "ci_high_pct": 17.313244140553728,
+        "effect_same_venue_class_pct": 5.934344531644253,
+        "ci_low_same_venue_class_pct": 2.2000100027993463,
+        "ci_high_same_venue_class_pct": 9.805129677010038
+      },
+      {
+        "oa_status": "diamond",
+        "papers": 1308,
+        "share": 0.06152398871119473,
+        "mean_fwci": 1.134269495412844,
+        "median_fwci": 0.2994,
+        "citations_per_paper": 7.7744648318042815,
+        "top10_share": 0.12155963302752294,
+        "journal_share_q1": 0.06880733944954129,
+        "effect_vs_closed_pct": -12.093604217280552,
+        "ci_low_pct": -15.158786087603938,
+        "ci_high_pct": -8.917682065613953,
+        "effect_same_venue_class_pct": 1.9686764198891593,
+        "ci_low_same_venue_class_pct": -1.3992376037148535,
+        "ci_high_same_venue_class_pct": 5.451628548622645
+      },
+      {
+        "oa_status": "hybrid",
+        "papers": 654,
+        "share": 0.030761994355597365,
+        "mean_fwci": 1.3856512232415903,
+        "median_fwci": 0.29855,
+        "citations_per_paper": 13.605504587155963,
+        "top10_share": 0.1345565749235474,
+        "journal_share_q1": 0.22324159021406728,
+        "effect_vs_closed_pct": -6.448440061655547,
+        "ci_low_pct": -11.020343060748184,
+        "ci_high_pct": -1.6416260980557928,
+        "effect_same_venue_class_pct": 1.235652197281012,
+        "ci_low_same_venue_class_pct": -3.3190780942764397,
+        "ci_high_same_venue_class_pct": 6.004960169935281
+      },
+      {
+        "oa_status": "bronze",
+        "papers": 649,
+        "share": 0.03052681091251176,
+        "mean_fwci": 1.1483995377503853,
+        "median_fwci": 0.435,
+        "citations_per_paper": 14.115562403697997,
+        "top10_share": 0.10477657935285054,
+        "journal_share_q1": 0.15870570107858242,
+        "effect_vs_closed_pct": -12.825756720538383,
+        "ci_low_pct": -16.532599759942624,
+        "ci_high_pct": -8.954290303872359,
+        "effect_same_venue_class_pct": -4.159018081333688,
+        "ci_low_same_venue_class_pct": -7.95590008484286,
+        "ci_high_same_venue_class_pct": -0.20551210125394626
+      },
+      {
+        "oa_status": "green",
+        "papers": 731,
+        "share": 0.03438381937911571,
+        "mean_fwci": 2.047368904109589,
+        "median_fwci": 0.81915,
+        "citations_per_paper": 20.715458276333788,
+        "top10_share": 0.1917808219178082,
+        "journal_share_q1": 0.38303693570451436,
+        "effect_vs_closed_pct": 10.484559981109154,
+        "ci_low_pct": 5.102723979262125,
+        "ci_high_pct": 16.14197550795966,
+        "effect_same_venue_class_pct": 7.74339595082465,
+        "ci_low_same_venue_class_pct": 2.7707720186933793,
+        "ci_high_same_venue_class_pct": 12.95662320124087
+      },
+      {
+        "oa_status": "unknown",
+        "papers": 295,
+        "share": 0.013875823142050799,
+        "mean_fwci": 0.3830494897959184,
+        "median_fwci": 0.10705,
+        "citations_per_paper": 2.3491525423728814,
+        "top10_share": 0.030612244897959183,
+        "journal_share_q1": 0.01694915254237288,
+        "effect_vs_closed_pct": NaN,
+        "ci_low_pct": NaN,
+        "ci_high_pct": NaN,
+        "effect_same_venue_class_pct": NaN,
+        "ci_low_same_venue_class_pct": NaN,
+        "ci_high_same_venue_class_pct": NaN
+      }
+    ],
+    "regression_papers": 21029,
+    "any_open_effect_pct": -1.8079740382062948,
+    "any_open_ci": [
+      -3.8533203211952083,
+      0.28088327845858796
+    ],
+    "open_share_2016": {
+      "NIT Surathkal": 0.24096385542168675,
+      "NIT Trichy": 0.1907051282051282,
+      "Both": 0.2151793160967473
+    },
+    "open_share_2025": {
+      "NIT Surathkal": 0.29962894248608535,
+      "NIT Trichy": 0.21795989537925023,
+      "Both": 0.25743913435527505
+    }
+  }
+}

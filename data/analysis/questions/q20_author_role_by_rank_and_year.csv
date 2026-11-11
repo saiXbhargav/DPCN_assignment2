@@ -1,0 +1,45 @@
+rank,year,rows,first_author,last_author
+Assistant Professor,2016,34,0.2941,0.3235
+Assistant Professor,2017,62,0.2903,0.3548
+Assistant Professor,2018,84,0.25,0.4167
+Assistant Professor,2019,99,0.303,0.2626
+Assistant Professor,2020,210,0.219,0.3667
+Assistant Professor,2021,296,0.1689,0.4358
+Assistant Professor,2022,347,0.1037,0.464
+Assistant Professor,2023,569,0.1072,0.5308
+Assistant Professor,2024,695,0.1137,0.5367
+Assistant Professor,2025,665,0.0662,0.5639
+Assistant Professor,2026,469,0.0576,0.5394
+Associate Professor,2016,132,0.1818,0.4545
+Associate Professor,2017,190,0.1579,0.4579
+Associate Professor,2018,332,0.1386,0.494
+Associate Professor,2019,375,0.0587,0.6027
+Associate Professor,2020,514,0.0584,0.5759
+Associate Professor,2021,502,0.0578,0.5637
+Associate Professor,2022,490,0.051,0.5857
+Associate Professor,2023,601,0.0483,0.5441
+Associate Professor,2024,557,0.0323,0.5566
+Associate Professor,2025,497,0.0342,0.5211
+Associate Professor,2026,309,0.0259,0.5566
+Professor,2016,763,0.059,0.5819
+Professor,2017,780,0.0449,0.6051
+Professor,2018,1094,0.0311,0.6051
+Professor,2019,1121,0.0357,0.5905
+Professor,2020,1123,0.0383,0.5815
+Professor,2021,811,0.0247,0.566
+Professor,2022,857,0.0233,0.5741
+Professor,2023,902,0.0233,0.5499
+Professor,2024,834,0.0216,0.5384
+Professor,2025,785,0.014,0.5771
+Professor,2026,420,0.0214,0.531
+Professor (HAG),2016,353,0.0595,0.5949
+Professor (HAG),2017,406,0.0591,0.5567
+Professor (HAG),2018,412,0.0243,0.6311
+Professor (HAG),2019,459,0.0349,0.5686
+Professor (HAG),2020,502,0.0398,0.5159
+Professor (HAG),2021,421,0.0333,0.5938
+Professor (HAG),2022,428,0.0561,0.5444
+Professor (HAG),2023,341,0.0411,0.5425
+Professor (HAG),2024,339,0.0413,0.5959
+Professor (HAG),2025,325,0.0338,0.5508
+Professor (HAG),2026,202,0.0149,0.6089

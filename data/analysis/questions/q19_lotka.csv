@@ -1,0 +1,3 @@
+group,authors,exponent_mle,exponent_least_squares,share_with_one_paper,lotka_predicted_share_one_paper
+faculty (2016-2026 papers),656,1.2873,0.5157,0.0488,0.2452
+all NIT-affiliated authors incl. students (OpenAlex author IDs),10876,1.9059,2.0228,0.5585,0.5738

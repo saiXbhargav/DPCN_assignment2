@@ -1,0 +1,307 @@
+institution,measure,faculty_share,output_share
+NIT Trichy,papers,0.0,0.0
+NIT Trichy,papers,0.02,0.0007
+NIT Trichy,papers,0.04,0.0013
+NIT Trichy,papers,0.06,0.002
+NIT Trichy,papers,0.08,0.0033
+NIT Trichy,papers,0.1,0.0046
+NIT Trichy,papers,0.12,0.0065
+NIT Trichy,papers,0.14,0.0085
+NIT Trichy,papers,0.16,0.0108
+NIT Trichy,papers,0.18,0.0135
+NIT Trichy,papers,0.2,0.0168
+NIT Trichy,papers,0.22,0.0207
+NIT Trichy,papers,0.24,0.0254
+NIT Trichy,papers,0.26,0.0301
+NIT Trichy,papers,0.28,0.0354
+NIT Trichy,papers,0.3,0.0413
+NIT Trichy,papers,0.32,0.0478
+NIT Trichy,papers,0.34,0.0552
+NIT Trichy,papers,0.36,0.0631
+NIT Trichy,papers,0.38,0.0715
+NIT Trichy,papers,0.4,0.0804
+NIT Trichy,papers,0.42,0.0899
+NIT Trichy,papers,0.44,0.1002
+NIT Trichy,papers,0.46,0.1118
+NIT Trichy,papers,0.48,0.1239
+NIT Trichy,papers,0.5,0.1365
+NIT Trichy,papers,0.52,0.1499
+NIT Trichy,papers,0.54,0.1647
+NIT Trichy,papers,0.56,0.1807
+NIT Trichy,papers,0.58,0.1978
+NIT Trichy,papers,0.6,0.2163
+NIT Trichy,papers,0.62,0.2357
+NIT Trichy,papers,0.64,0.256
+NIT Trichy,papers,0.66,0.2778
+NIT Trichy,papers,0.68,0.3011
+NIT Trichy,papers,0.7,0.3256
+NIT Trichy,papers,0.72,0.3528
+NIT Trichy,papers,0.74,0.3815
+NIT Trichy,papers,0.76,0.4109
+NIT Trichy,papers,0.78,0.4419
+NIT Trichy,papers,0.8,0.4754
+NIT Trichy,papers,0.82,0.5104
+NIT Trichy,papers,0.84,0.5468
+NIT Trichy,papers,0.86,0.5857
+NIT Trichy,papers,0.88,0.6278
+NIT Trichy,papers,0.9,0.6733
+NIT Trichy,papers,0.92,0.7219
+NIT Trichy,papers,0.94,0.7726
+NIT Trichy,papers,0.96,0.8269
+NIT Trichy,papers,0.98,0.8938
+NIT Trichy,papers,1.0,1.0
+NIT Trichy,citations,0.0,0.0
+NIT Trichy,citations,0.02,0.0
+NIT Trichy,citations,0.04,0.0
+NIT Trichy,citations,0.06,0.0
+NIT Trichy,citations,0.08,0.0001
+NIT Trichy,citations,0.1,0.0002
+NIT Trichy,citations,0.12,0.0004
+NIT Trichy,citations,0.14,0.0007
+NIT Trichy,citations,0.16,0.0012
+NIT Trichy,citations,0.18,0.0017
+NIT Trichy,citations,0.2,0.0023
+NIT Trichy,citations,0.22,0.0032
+NIT Trichy,citations,0.24,0.0042
+NIT Trichy,citations,0.26,0.0054
+NIT Trichy,citations,0.28,0.0069
+NIT Trichy,citations,0.3,0.0085
+NIT Trichy,citations,0.32,0.0103
+NIT Trichy,citations,0.34,0.0126
+NIT Trichy,citations,0.36,0.0155
+NIT Trichy,citations,0.38,0.019
+NIT Trichy,citations,0.4,0.0233
+NIT Trichy,citations,0.42,0.0285
+NIT Trichy,citations,0.44,0.0345
+NIT Trichy,citations,0.46,0.0413
+NIT Trichy,citations,0.48,0.0486
+NIT Trichy,citations,0.5,0.0564
+NIT Trichy,citations,0.52,0.0651
+NIT Trichy,citations,0.54,0.0749
+NIT Trichy,citations,0.56,0.0853
+NIT Trichy,citations,0.58,0.0964
+NIT Trichy,citations,0.6,0.1087
+NIT Trichy,citations,0.62,0.1223
+NIT Trichy,citations,0.64,0.1369
+NIT Trichy,citations,0.66,0.1526
+NIT Trichy,citations,0.68,0.1694
+NIT Trichy,citations,0.7,0.1876
+NIT Trichy,citations,0.72,0.2074
+NIT Trichy,citations,0.74,0.23
+NIT Trichy,citations,0.76,0.2545
+NIT Trichy,citations,0.78,0.2807
+NIT Trichy,citations,0.8,0.3085
+NIT Trichy,citations,0.82,0.3399
+NIT Trichy,citations,0.84,0.3751
+NIT Trichy,citations,0.86,0.4149
+NIT Trichy,citations,0.88,0.4597
+NIT Trichy,citations,0.9,0.5106
+NIT Trichy,citations,0.92,0.5683
+NIT Trichy,citations,0.94,0.634
+NIT Trichy,citations,0.96,0.7132
+NIT Trichy,citations,0.98,0.8097
+NIT Trichy,citations,1.0,1.0
+NIT Surathkal,papers,0.0,0.0
+NIT Surathkal,papers,0.02,0.0005
+NIT Surathkal,papers,0.04,0.0012
+NIT Surathkal,papers,0.06,0.0024
+NIT Surathkal,papers,0.08,0.004
+NIT Surathkal,papers,0.1,0.0062
+NIT Surathkal,papers,0.12,0.0089
+NIT Surathkal,papers,0.14,0.012
+NIT Surathkal,papers,0.16,0.0161
+NIT Surathkal,papers,0.18,0.0208
+NIT Surathkal,papers,0.2,0.0261
+NIT Surathkal,papers,0.22,0.0319
+NIT Surathkal,papers,0.24,0.0379
+NIT Surathkal,papers,0.26,0.0444
+NIT Surathkal,papers,0.28,0.0516
+NIT Surathkal,papers,0.3,0.0595
+NIT Surathkal,papers,0.32,0.0676
+NIT Surathkal,papers,0.34,0.0766
+NIT Surathkal,papers,0.36,0.0862
+NIT Surathkal,papers,0.38,0.0964
+NIT Surathkal,papers,0.4,0.1078
+NIT Surathkal,papers,0.42,0.1202
+NIT Surathkal,papers,0.44,0.1334
+NIT Surathkal,papers,0.46,0.1482
+NIT Surathkal,papers,0.48,0.1635
+NIT Surathkal,papers,0.5,0.18
+NIT Surathkal,papers,0.52,0.1972
+NIT Surathkal,papers,0.54,0.2149
+NIT Surathkal,papers,0.56,0.2331
+NIT Surathkal,papers,0.58,0.2517
+NIT Surathkal,papers,0.6,0.2708
+NIT Surathkal,papers,0.62,0.2905
+NIT Surathkal,papers,0.64,0.3118
+NIT Surathkal,papers,0.66,0.3343
+NIT Surathkal,papers,0.68,0.3575
+NIT Surathkal,papers,0.7,0.3816
+NIT Surathkal,papers,0.72,0.4073
+NIT Surathkal,papers,0.74,0.4339
+NIT Surathkal,papers,0.76,0.4619
+NIT Surathkal,papers,0.78,0.4913
+NIT Surathkal,papers,0.8,0.5232
+NIT Surathkal,papers,0.82,0.5562
+NIT Surathkal,papers,0.84,0.5915
+NIT Surathkal,papers,0.86,0.6291
+NIT Surathkal,papers,0.88,0.6683
+NIT Surathkal,papers,0.9,0.7094
+NIT Surathkal,papers,0.92,0.7541
+NIT Surathkal,papers,0.94,0.801
+NIT Surathkal,papers,0.96,0.8539
+NIT Surathkal,papers,0.98,0.9152
+NIT Surathkal,papers,1.0,1.0
+NIT Surathkal,citations,0.0,0.0
+NIT Surathkal,citations,0.02,0.0
+NIT Surathkal,citations,0.04,0.0001
+NIT Surathkal,citations,0.06,0.0003
+NIT Surathkal,citations,0.08,0.0006
+NIT Surathkal,citations,0.1,0.0009
+NIT Surathkal,citations,0.12,0.0015
+NIT Surathkal,citations,0.14,0.0023
+NIT Surathkal,citations,0.16,0.0033
+NIT Surathkal,citations,0.18,0.0045
+NIT Surathkal,citations,0.2,0.006
+NIT Surathkal,citations,0.22,0.0081
+NIT Surathkal,citations,0.24,0.0106
+NIT Surathkal,citations,0.26,0.0135
+NIT Surathkal,citations,0.28,0.0169
+NIT Surathkal,citations,0.3,0.0209
+NIT Surathkal,citations,0.32,0.0255
+NIT Surathkal,citations,0.34,0.0308
+NIT Surathkal,citations,0.36,0.0367
+NIT Surathkal,citations,0.38,0.043
+NIT Surathkal,citations,0.4,0.0499
+NIT Surathkal,citations,0.42,0.0573
+NIT Surathkal,citations,0.44,0.065
+NIT Surathkal,citations,0.46,0.0732
+NIT Surathkal,citations,0.48,0.0826
+NIT Surathkal,citations,0.5,0.093
+NIT Surathkal,citations,0.52,0.1046
+NIT Surathkal,citations,0.54,0.117
+NIT Surathkal,citations,0.56,0.1302
+NIT Surathkal,citations,0.58,0.1446
+NIT Surathkal,citations,0.6,0.1602
+NIT Surathkal,citations,0.62,0.1775
+NIT Surathkal,citations,0.64,0.196
+NIT Surathkal,citations,0.66,0.2158
+NIT Surathkal,citations,0.68,0.2372
+NIT Surathkal,citations,0.7,0.2598
+NIT Surathkal,citations,0.72,0.2838
+NIT Surathkal,citations,0.74,0.3096
+NIT Surathkal,citations,0.76,0.3369
+NIT Surathkal,citations,0.78,0.3657
+NIT Surathkal,citations,0.8,0.3964
+NIT Surathkal,citations,0.82,0.4305
+NIT Surathkal,citations,0.84,0.4669
+NIT Surathkal,citations,0.86,0.507
+NIT Surathkal,citations,0.88,0.551
+NIT Surathkal,citations,0.9,0.5999
+NIT Surathkal,citations,0.92,0.654
+NIT Surathkal,citations,0.94,0.7166
+NIT Surathkal,citations,0.96,0.7881
+NIT Surathkal,citations,0.98,0.8707
+NIT Surathkal,citations,1.0,1.0
+Both,papers,0.0,0.0
+Both,papers,0.02,0.0006
+Both,papers,0.04,0.0012
+Both,papers,0.06,0.0021
+Both,papers,0.08,0.0033
+Both,papers,0.1,0.0051
+Both,papers,0.12,0.0069
+Both,papers,0.14,0.0093
+Both,papers,0.16,0.0123
+Both,papers,0.18,0.0156
+Both,papers,0.2,0.0197
+Both,papers,0.22,0.0243
+Both,papers,0.24,0.0294
+Both,papers,0.26,0.0352
+Both,papers,0.28,0.0415
+Both,papers,0.3,0.0484
+Both,papers,0.32,0.0556
+Both,papers,0.34,0.0635
+Both,papers,0.36,0.072
+Both,papers,0.38,0.0811
+Both,papers,0.4,0.091
+Both,papers,0.42,0.1018
+Both,papers,0.44,0.113
+Both,papers,0.46,0.125
+Both,papers,0.48,0.1383
+Both,papers,0.5,0.1526
+Both,papers,0.52,0.1681
+Both,papers,0.54,0.1848
+Both,papers,0.56,0.2023
+Both,papers,0.58,0.2209
+Both,papers,0.6,0.2405
+Both,papers,0.62,0.2608
+Both,papers,0.64,0.2818
+Both,papers,0.66,0.3037
+Both,papers,0.68,0.3274
+Both,papers,0.7,0.3528
+Both,papers,0.72,0.379
+Both,papers,0.74,0.4061
+Both,papers,0.76,0.4351
+Both,papers,0.78,0.4657
+Both,papers,0.8,0.4975
+Both,papers,0.82,0.5312
+Both,papers,0.84,0.5672
+Both,papers,0.86,0.6056
+Both,papers,0.88,0.647
+Both,papers,0.9,0.6906
+Both,papers,0.92,0.7363
+Both,papers,0.94,0.7851
+Both,papers,0.96,0.8398
+Both,papers,0.98,0.9042
+Both,papers,1.0,1.0
+Both,citations,0.0,0.0
+Both,citations,0.02,0.0
+Both,citations,0.04,0.0
+Both,citations,0.06,0.0001
+Both,citations,0.08,0.0002
+Both,citations,0.1,0.0005
+Both,citations,0.12,0.0008
+Both,citations,0.14,0.0013
+Both,citations,0.16,0.0018
+Both,citations,0.18,0.0026
+Both,citations,0.2,0.0036
+Both,citations,0.22,0.0047
+Both,citations,0.24,0.0061
+Both,citations,0.26,0.0078
+Both,citations,0.28,0.0098
+Both,citations,0.3,0.0124
+Both,citations,0.32,0.0154
+Both,citations,0.34,0.0191
+Both,citations,0.36,0.0235
+Both,citations,0.38,0.0285
+Both,citations,0.4,0.0344
+Both,citations,0.42,0.0409
+Both,citations,0.44,0.0479
+Both,citations,0.46,0.0554
+Both,citations,0.48,0.0635
+Both,citations,0.5,0.0724
+Both,citations,0.52,0.0822
+Both,citations,0.54,0.0928
+Both,citations,0.56,0.1045
+Both,citations,0.58,0.1174
+Both,citations,0.6,0.1312
+Both,citations,0.62,0.1461
+Both,citations,0.64,0.1621
+Both,citations,0.66,0.1794
+Both,citations,0.68,0.1984
+Both,citations,0.7,0.2193
+Both,citations,0.72,0.2419
+Both,citations,0.74,0.2661
+Both,citations,0.76,0.2918
+Both,citations,0.78,0.3194
+Both,citations,0.8,0.3493
+Both,citations,0.82,0.3821
+Both,citations,0.84,0.4185
+Both,citations,0.86,0.4585
+Both,citations,0.88,0.5031
+Both,citations,0.9,0.5531
+Both,citations,0.92,0.609
+Both,citations,0.94,0.6734
+Both,citations,0.96,0.7485
+Both,citations,0.98,0.8384
+Both,citations,1.0,1.0

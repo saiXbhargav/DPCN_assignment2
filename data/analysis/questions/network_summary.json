@@ -1,0 +1,126 @@
+{
+  "NIT Trichy": {
+    "faculty": 357,
+    "links": 429,
+    "giant_component": 232,
+    "giant_share": 0.6498599439775911,
+    "connected_pairs": 26838,
+    "pairs_lost_top5_bridges": 0.12512109695208284,
+    "pairs_lost_top10_bridges": 0.5371860794396006,
+    "pairs_lost_top20_bridges": 0.886653252850436,
+    "pairs_lost_10_random": 0.08208659363588988,
+    "pairs_lost_20_random": 0.16075862582904787,
+    "pairs_lost_top10_degree": 0.20389000670690816,
+    "first_10_bridges_removed": [
+      "N Sivakumaran",
+      "S Suresh",
+      "P Palanisamy",
+      "S Saravanan",
+      "Aneesh Mathew",
+      "N V Giridharan",
+      "Ankur Singh Rana",
+      "C Sathiya Narayanan",
+      "G Saravana Ilango",
+      "M Premalatha"
+    ]
+  },
+  "NIT Surathkal": {
+    "faculty": 299,
+    "links": 504,
+    "giant_component": 254,
+    "giant_share": 0.8494983277591973,
+    "connected_pairs": 32135,
+    "pairs_lost_top5_bridges": 0.04677143301695974,
+    "pairs_lost_top10_bridges": 0.44148125097245994,
+    "pairs_lost_top20_bridges": 0.6966858565427104,
+    "pairs_lost_10_random": 0.0976075929671697,
+    "pairs_lost_20_random": 0.1855357087288002,
+    "pairs_lost_top10_degree": 0.11482806908355381,
+    "first_10_bridges_removed": [
+      "Gangadharan K V",
+      "Pruthviraj U",
+      "Mohammad Rizwanur Rahman",
+      "A Venkata Narasimhadhan",
+      "Amba Shetty",
+      "Chandrasekaran K",
+      "Vedala Rama Sastry",
+      "Udaya Bhat K",
+      "Shashi Bhushan Arya",
+      "Ramesh M R"
+    ]
+  },
+  "Both": {
+    "faculty": 656,
+    "links": 961,
+    "giant_component": 492,
+    "giant_share": 0.75,
+    "connected_pairs": 120833,
+    "pairs_lost_top5_bridges": 0.04423460478511665,
+    "pairs_lost_top10_bridges": 0.06401396969370954,
+    "pairs_lost_top20_bridges": 0.3323843651982489,
+    "pairs_lost_10_random": 0.0413021277300073,
+    "pairs_lost_20_random": 0.08181349465791654,
+    "pairs_lost_top10_degree": 0.09522233164781146,
+    "first_10_bridges_removed": [
+      "Ramesh M R",
+      "P Palanisamy",
+      "Gangadharan K V",
+      "N Sivakumaran",
+      "S Saravanan",
+      "N Siva Shanmugam",
+      "Nagaraja H S",
+      "Pruthviraj U",
+      "Hemantha Kumar",
+      "Subhaschandra Kattimani"
+    ]
+  },
+  "top20_key_people_by_designation": {
+    "Professor": 11,
+    "Professor (HAG)": 4,
+    "Associate Professor": 3,
+    "Assistant Professor": 2
+  },
+  "top20_key_people_by_status": {
+    "current": 19,
+    "former": 1
+  },
+  "top5_key_people": [
+    {
+      "name": "Mohit P Tahiliani",
+      "institution": "NIT Surathkal",
+      "department": "CSE",
+      "designation": "Professor",
+      "pairs_cut_share": 0.03988148932824642
+    },
+    {
+      "name": "Jayabalan P",
+      "institution": "NIT Trichy",
+      "department": "Civil",
+      "designation": "Professor",
+      "pairs_cut_share": 0.03596699577102282
+    },
+    {
+      "name": "Shyam S Kamath",
+      "institution": "NIT Surathkal",
+      "department": "Mathematics",
+      "designation": "Professor",
+      "pairs_cut_share": 0.02803869803778769
+    },
+    {
+      "name": "Pushparaj Shetty D",
+      "institution": "NIT Surathkal",
+      "department": "Mathematics",
+      "designation": "Professor",
+      "pairs_cut_share": 0.02408282505606912
+    },
+    {
+      "name": "Sowmya Kamath S",
+      "institution": "NIT Surathkal",
+      "department": "Information Technology",
+      "designation": "Associate Professor",
+      "pairs_cut_share": 0.0201848832686435
+    }
+  ],
+  "departments": 27,
+  "departments_where_one_person_cuts_over_25pct": 19
+}

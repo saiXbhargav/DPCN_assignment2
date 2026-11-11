@@ -6,6 +6,8 @@
                                       (~25 requests) -> data/raw/institutions_geo.jsonl
   python fetch_insights.py citerout   2016-2026 paper count of the 40 institutes that cite us most
                                       (40 requests) -> data/raw/citer_output.jsonl
+  python fetch_insights.py yearly     citations per year (counts_by_year) and open-access status of every paper
+                                      in data/all_papers.csv (~215 requests) -> data/raw/works_yearly.jsonl
 
 Needs the OPENALEX_API_KEY environment variable for refyears (the free key allows 10,000 requests a day).
 """
@@ -94,10 +96,42 @@ def citerout():
             print(f"  {i}: {data['meta']['count']}  (requests left today: {left})")
 
 
+def yearly():
+    """Citations received in each year and open-access status of every paper in all_papers.csv, for
+    questions.py (richer, venues). OpenAlex gives counts_by_year for the last ten years only, so the total
+    cited_by_count is saved too: citations up to year t = total - citations after t."""
+    ids = sorted(set(pd.read_csv(os.path.join(DATA, "all_papers.csv"), usecols=["openalex_id"]).openalex_id))
+    path = os.path.join(RAW, "works_yearly.jsonl")
+    todo, have = batches(ids, path)
+    print(f"citations per year: {have} saved, {sum(map(len, todo))} to fetch in {len(todo)} requests")
+
+    def one(b):
+        data, left = get({"filter": "openalex_id:" + "|".join(b), "per_page": BATCH,
+                          "select": "id,cited_by_count,counts_by_year,open_access"})
+        got = {w["id"].rsplit("/", 1)[-1]: w for w in data["results"]}
+        out = []
+        for i in b:
+            w = got.get(i) or {}
+            oa = w.get("open_access") or {}
+            out.append(json.dumps({
+                "id": i, "found": i in got, "cited_by_count": w.get("cited_by_count"),
+                "counts_by_year": {str(c["year"]): c["cited_by_count"] for c in w.get("counts_by_year") or []},
+                "is_oa": oa.get("is_oa"), "oa_status": oa.get("oa_status"),
+                "any_repository_has_fulltext": oa.get("any_repository_has_fulltext"), "fetched": TODAY}) + "\n")
+        return "".join(out), left
+
+    with open(path, "a", encoding="utf-8") as f, ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        for k, (lines, left) in enumerate(pool.map(one, todo)):
+            f.write(lines)
+            if k % 50 == 0 or k == len(todo) - 1:
+                f.flush()
+                print(f"  batch {k + 1}/{len(todo)}  (requests left today: {left})", flush=True)
+
+
 if __name__ == "__main__":
     step = sys.argv[1] if len(sys.argv) > 1 else ""
     try:
-        {"refyears": refyears, "geo": geo, "citerout": citerout}[step]()
+        {"refyears": refyears, "geo": geo, "citerout": citerout, "yearly": yearly}[step]()
     except KeyError:
         sys.exit(__doc__)
     except LimitReached as e:
