@@ -1,0 +1,6 @@
+measure,faculty,median,p90,p99,max,flag_above,flagged
+self_share,431,0.0611,0.1596,0.3533,0.6063,0.25,13.0
+coauthor_self_share,431,0.0342,0.1141,0.2045,0.3162,,
+own_nit_share,431,0.0072,0.0267,0.0726,0.1577,,
+heavy_share,431,0.0,0.0025,0.0138,0.1032,0.05,2.0
+top_outside_author_share,431,0.0131,0.0331,0.0664,0.1538,0.1,2.0

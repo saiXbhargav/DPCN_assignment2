@@ -536,6 +536,22 @@ def questions_tables():
     t["stay"] = allcols("q25_top_papers_stay_on_top.csv")
     t["richer_summary"] = jload(QS, "richer_summary.json")
     t["sensitivity"] = allcols("q27_name_matching_sensitivity.csv")
+    t["inward_overall"] = allcols("q26_inward_overall.csv")
+    t["inward_dept"] = allcols("q26_inward_by_department.csv")
+    t["inward_year"] = allcols("q26_inward_by_year.csv")
+    t["inward_summary"] = jload(QS, "inward_summary.json")
+    t["heavy_dist"] = allcols("q28_heavy_citing_papers_distribution.csv")
+    hv = csv(QS, "q28_heavy_outside_citing_papers.csv").head(15)
+    t["heavy_papers"] = records(hv, ["title", "venue", "year", "our_papers_cited", "most_cited_faculty",
+                                     "papers_of_that_faculty_cited", "former_nit_member_on_it", "indian_institutes"])
+    t["fac_spread"] = allcols("q28_faculty_citation_source_spread.csv")
+    t["citing_inst"] = allcols("q28_citing_institutes.csv")
+    ms = jload(QS, "manipulation_summary.json")
+    t["manip_summary"] = {k: ms[k] for k in ("indian_citing_papers", "indian_citation_links", "heavy_threshold",
+                                             "min_citations", "flags", "heavy_outside_papers",
+                                             "heavy_outside_with_former_nit_member", "heavy_outside_years",
+                                             "heavy_outside_top_venues", "heavy_outside_by_faculty",
+                                             "faculty_eligible", "ranking", "institutes")}
     return t
 
 

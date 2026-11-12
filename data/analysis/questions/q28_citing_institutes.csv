@@ -1,0 +1,41 @@
+institute,type,citations_to_us,from_heavy_citing_papers,top_author_at_institute,top_author_share,top_author_is_former_nit_member,top_cited_faculty,top_faculty_share
+Vellore Institute of Technology (VIT),private,3341,0.0123,Saboor Shaik,0.0207,True,S Raghavan,0.0358
+Saveetha University,private,2624,0.0225,Yuvarajan Devarajan,0.0232,False,D Lenin Singaravelu,0.0947
+SRM Institute of Science and Technology,private,2573,0.0043,Sachin Sirohi,0.0159,False,D Lenin Singaravelu,0.041
+Manipal Academy of Higher Education,private,1505,0.0047,Gerard Deepak,0.0385,True,A Santhana Vijayan,0.0395
+Anna University,public,1223,0.0,Balasubramaniam Stalin,0.0213,False,S Anandan,0.0405
+Visvesvaraya Technological University,public,1211,0.2436,C. Durga Prasad,0.114,True,Ramesh M R,0.2169
+Chandigarh University,private,1158,0.0,Nagaraj P. Shetti,0.0328,True,S Anandan,0.0501
+IIT Roorkee,public,1109,0.0,Prasenjit Mondal,0.0216,False,S Saravanan,0.037
+Lovely Professional University,private,1088,0.1241,Hitesh Vasudev,0.1471,False,Ramesh M R,0.1209
+Amrita Vishwa Vidyapeetham,private,1063,0.0414,Nachimuthu Radhika,0.0602,False,Ramesh M R,0.0604
+IIT Madras,public,966,0.001,K. G. Vijay,0.0528,True,Debabrata Karmakar,0.0502
+IIT Delhi,public,949,0.0,Bhim Singh,0.1296,True,D Lenin Singaravelu,0.0306
+Vel Tech R&D Institute of Science and Technology,private,873,0.0,Mohamed Iqbal Shajahan,0.0481,False,S Suresh,0.0647
+IIT Kharagpur,public,871,0.0126,Makarand M. Ghangrekar,0.0563,False,S Anandan,0.0304
+Academy of Scientific and Innovative Research (CSIR),public,869,0.0127,Davuluri Syam Babu,0.0322,False,S Anandan,0.0627
+IISc Bangalore,public,866,0.1363,Vinyas Mahesh,0.1824,True,Subhaschandra Kattimani,0.1455
+Jain University,private,853,0.2438,Shrishail Basaprabhu Sollapur,0.1946,False,Ramesh M R,0.1833
+Chitkara University,private,829,0.0229,Kulbhushan Sharma,0.0531,False,Ramesh M R,0.0336
+NIT Silchar,public,820,0.0146,Vinyas Mahesh,0.1463,True,Subhaschandra Kattimani,0.0573
+Koneru Lakshmaiah Education Foundation,private,736,0.0625,M.P. Arunkumar,0.0367,True,Ramesh M R,0.036
+Graphic Era University,private,726,0.0,Manzoore Elahi M. Soudagar,0.0592,False,D Lenin Singaravelu,0.0275
+NIT Rourkela,public,723,0.0,Subrata Kumar Panda,0.0622,False,D Lenin Singaravelu,0.0433
+IIT (ISM) Dhanbad,public,707,0.0014,Amitava Mandal,0.0467,False,Tukaram Moger,0.0481
+IIT (BHU) Varanasi,public,706,0.0,Jeewan Vachan Tirkey,0.0411,False,S Anandan,0.0432
+Karpagam Academy of Higher Education,private,706,0.0368,V. Kavimani,0.0552,True,D Lenin Singaravelu,0.1076
+NIT Warangal,public,696,0.0,Kanasottu Anil Naik,0.0402,False,Tukaram Moger,0.0388
+Jadavpur University,public,694,0.0274,Shankar Chakraborty,0.0821,False,R Karvembu,0.062
+IIT Guwahati,public,685,0.0,Mihir Kumar Purkait,0.0307,False,A Gowri,0.0307
+IIT Bombay,public,664,0.0,Ansaf V. Karim,0.0482,False,S Suresh,0.0572
+Amity University,private,658,0.035,Vijay Chaudhary,0.041,False,D Lenin Singaravelu,0.0319
+University of Delhi,public,648,0.0,Monika Tomar,0.0201,False,S Anandan,0.0617
+MNIT Jaipur,public,637,0.0,N. Sandeep,0.1727,True,Udaykumar R Yaragatti,0.1962
+Delhi Technological University,public,631,0.0143,Narayana Yuvaraj,0.1078,False,Tukaram Moger,0.0499
+Savitribai Phule Pune University,public,618,0.1909,Mahesh M. Kawade,0.157,False,Ramesh M R,0.1359
+Sathyabama Institute of Science and Technology,private,615,0.0016,Helen Merina Albert,0.0374,False,D Lenin Singaravelu,0.0512
+Nitte Meenakshi Institute of Technology,private,602,0.2442,Praveen Naik,0.1229,True,Ramesh M R,0.1586
+SSN College of Engineering,private,597,0.0,P. Senthil Kumar,0.2044,False,P Sivashanmugam,0.0477
+NIT Patna,public,580,0.0,Rajib Kumar Mandal,0.0552,False,T K Radhakrishnan,0.0845
+BITS Pilani,private,572,0.0227,Bhupendra Kumar Sharma,0.0769,False,R Ponalagusamy,0.0795
+Banaras Hindu University,public,567,0.0176,Jay Singh,0.0406,False,S Anandan,0.0705

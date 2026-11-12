@@ -1,6 +1,6 @@
 # Team 12: research questions (Phase II, part 2)
 
-Phase II asks for "meaningful research questions and evidence-based conclusions". This file answers 11 of them. They are produced by [scripts/questions.py](../../../scripts/questions.py):
+Phase II asks for "meaningful research questions and evidence-based conclusions". This file answers 13 of them (items 15–28 of our list). They are produced by [scripts/questions.py](../../../scripts/questions.py):
 
 | Command | Questions |
 |---|---|
@@ -10,12 +10,14 @@ Phase II asks for "meaningful research questions and evidence-based conclusions"
 | `python questions.py venues` | 22–23 (where to publish), 24 (open access) |
 | `python questions.py richer` | 25 ("rich get richer") |
 | `python questions.py robust` | 27 (name-matching sensitivity) |
+| `python questions.py inward` | 26 (how much departments cite their own institute) |
+| `python questions.py manipulation` | 28 (citation-manipulation check) |
 
-Running `python questions.py` with no argument runs all six parts. Every number below is in the CSV and JSON files in this folder.
+Running `python questions.py` with no argument runs all eight parts. Every number below is in the CSV and JSON files in this folder.
 
 **Scope (same rule as Phase II):**
 - Questions about **papers** (15, 16, 22–25) use `data/all_papers.csv`, so they include papers by students and other NIT staff. Where it matters, the faculty-only number is given too.
-- Questions about **faculty** (17–21, 27) use faculty data only.
+- Questions about **faculty** (17–21, 26–28) use faculty data only.
 
 **How "impact" is compared.**
 - We use FWCI (citations relative to papers of the same field, year and type).
@@ -345,6 +347,52 @@ Files: `q25_attachment_kernel.csv`, `q25_alpha_by_age.csv`, `q25_top_papers_stay
 
 ---
 
+## 26. How much do departments cite their own institute?
+
+**Method.** We take every reference of every faculty paper (628,377 references, 34 per paper) and every citation the papers received (264,393). Each link is sorted into one group:
+
+| Group | Meaning |
+|---|---|
+| **Self** | The two papers share at least one author |
+| **Colleague** | No shared author, but the other paper has an author from the same NIT |
+| **Other NIT** | Trichy ↔ Surathkal |
+| **Other Indian** | Any other Indian institute |
+| **Outside India** | The rest |
+
+"Home" = self + colleague. Author and institution details come from `fetch_links.py`, which covers Indian papers only. A self-citation in a paper written abroad is therefore missed, so the home shares are lower bounds.
+
+![inward](q26_inward.png)
+
+| | NIT Trichy | NIT Surathkal | Both |
+|---|---|---|---|
+| References that are home | 6.2% | 6.2% | 6.2% (self 5.5%, colleague 0.7%) |
+| References to other Indian institutes | 12.7% | 11.2% | 12.0% |
+| References outside India | 81.0% | 82.4% | 81.7% |
+| **Citations received from home** | **11.7%** | **14.8%** | **13.2%** (self 11.9%, colleague 1.2%) |
+| Citations from other Indian institutes | 24.4% | 21.8% | 23.2% |
+| Citations per paper, all / without home | 15.3 / 13.5 | 13.6 / 11.6 | 14.5 / 12.5 |
+
+**Findings:**
+- **About one citation in eight comes from home**, and it is almost all **self-citation** (11.9%). Colleagues at the same NIT give only 1.2%. This matches the citation network: our faculty rarely cite each other's papers. "Inward-looking" here means people citing their own earlier work, not the institute citing itself.
+- **NIT Surathkal is more inward-looking** (14.8% of citations from home vs 11.7% at Trichy). It rose from 13% in 2016 to 14–16% in 2020–2024. Trichy's rose from 10–11% to 13–14% in 2022–2024.
+- **Most inward departments** (share of citations from home):
+
+  | Department | From home | Of which self |
+  |---|---|---|
+  | Surathkal Mathematics | **25%** | 24% |
+  | Surathkal Mining | 21% | 17% |
+  | Surathkal Mechanical | 20% | 18% |
+  | Trichy Mathematics | 18% | 18% |
+  | Surathkal Chemistry | 18% | 17% |
+
+  **Least inward:** Trichy Computer Applications (7%), Trichy Chemical (8%), Trichy Energy & Environment (9%) and Surathkal IT (9%).
+- **Departments that cite themselves more are also cited more by themselves** (Spearman ρ = 0.64 across 28 departments, p < 0.001). But home citations are not linked to department FWCI (ρ = −0.27, p = 0.16).
+- **Removing home citations barely changes the department ranking** by citations per paper. No department moves more than 2 places: Surathkal Chemistry goes from 2nd to 4th, Trichy Chemistry from 3rd to 2nd.
+
+Files: `q26_inward_overall.csv`, `q26_inward_by_department.csv`, `q26_inward_by_year.csv`, `inward_summary.json`, `q26_inward.png`.
+
+---
+
 ## 27. How sensitive are the results to name matching?
 
 **What counts as doubtful.** Faculty were matched to OpenAlex author IDs by name, department and ORCID (`match_faculty.py`). The weakest links are **463 name-only matches of an ID that has a single NIT paper**. A stricter set of 96 also has a department mismatch or a student with a similar name. We dropped them and re-ran the main results.
@@ -371,10 +419,82 @@ Files: `q27_name_matching_sensitivity.csv`, `robust_summary.json`.
 
 ---
 
+## 28. Citation manipulation check
+
+The professor asked us to look for citation manipulation, alongside the private-citer analysis (Phase II task 2). We look for three warning signs in the **117,909 citations from Indian papers** (77,176 citing papers):
+1. **Heavy citing papers:** papers that cite 10 or more of our papers at once.
+2. **Self-citation:** a large share of a person's citations coming from their own papers.
+3. **One-person sources:** a large share coming from a single outside author.
+
+All shares for faculty are shares of **all** their citations (2016–2026 papers). Flags apply to the 431 faculty with 100 or more citations.
+
+![checks](q28_citation_checks.png)
+
+**1. Heavy citing papers are rare.**
+
+| A citing paper cites at least … of our papers | Citing papers | Share of our Indian citations | Outside papers (no author from our NITs) | … with a former NIT member |
+|---|---|---|---|---|
+| 1 | 77,176 | 100% | 66,591 | 7% |
+| 5 | 2,847 | 17.6% | 1,065 | 43% |
+| **10** | **430** | **5.0%** | **128** | **66%** |
+| 20 | 58 | 1.1% | 35 | 66% |
+
+- Most papers that cite 10+ of ours are written **by our own NITs** (302 of 430). That is normal for a group building on its own work.
+- Only **128 outside papers** cite 10 or more of ours, giving 1,930 citations (under 1% of all citations to our papers). **Two-thirds of them have a former NIT member** as an author (someone who earlier published with an NIT affiliation).
+
+**One concentrated pattern.**
+- 57 of the 128 heavy outside papers cite mostly one faculty member: Ramesh M R (Mechanical, NIT Surathkal, #1 in the research ranking).
+- 45 of the 128 appeared in 2024 alone, against 2–13 a year before 2023.
+- 29 of the 57 are in one journal, *Journal of The Institution of Engineers (India) Series D*.
+- One author is on **33** of the 128. He is on 28 of our NIT Surathkal papers, with an NIT Surathkal affiliation from 2018, i.e. a former NIT Surathkal member.
+- In total, 10.3% of Ramesh M R's citations (and 7.8% of Sharnappa Joladarashi's, same department) come from heavy outside citing papers. No other faculty member is above 3%.
+- This looks like a **former research group citing its earlier work in bulk**, not like a citation cartel. It is a pattern worth knowing, not proof of misconduct.
+
+**2. Self-citation is moderate and concentrated in a few people.**
+
+| Faculty with 100+ citations (431) | Median | Top 10% above | Top 1% above | Flagged |
+|---|---|---|---|---|
+| Own self-citations (the person on both papers) | 6.1% | 16% | 35% | **13** above 25% |
+| Citations from heavy outside citing papers | 0% | 0.2% | 1.4% | **2** above 5% |
+| Biggest single outside citing author | 1.3% | 3.3% | 6.6% | **2** above 10% |
+
+- The 13 faculty above 25% self-citation mostly have modest totals (121–854 citations): when few others cite a person yet, their own citations weigh more. The highest is 61%. The names are in `q28_faculty_citation_sources.csv`.
+- The two "one outside author" flags are two NIT Surathkal ECE faculty, 13–15% of whose citations come from the same outside author.
+
+**3. Do these citations change any result?** No. We recomputed the faculty ranking (the 7-measure score) with citations and h-index counted:
+- **without self-citations:** the top 20 is identical (Spearman 0.999). The largest drop is from rank 166 to 220.
+- **without heavy citing papers:** the top 20 is identical (Spearman 1.000), and Ramesh M R stays #1.
+
+**4. The 40 institutes that cite us most** (extends Phase II task 2):
+
+| Institute | Type | Citations to us | From heavy citing papers | Biggest single author there | Top cited faculty |
+|---|---|---|---|---|---|
+| Visvesvaraya Technological University | public | 1,211 | **24%** | 11% (former NIT member) | Ramesh M R (22%) |
+| Jain University | private | 853 | **24%** | 19% | Ramesh M R (18%) |
+| Nitte Meenakshi Institute of Technology | private | 602 | **24%** | 12% (former NIT member) | Ramesh M R (16%) |
+| Savitribai Phule Pune University | public | 618 | 19% | 16% | Ramesh M R (14%) |
+| IISc Bangalore | public | 866 | 14% | 18% (former NIT member) | Subhaschandra Kattimani (15%) |
+| Lovely Professional University | private | 1,088 | 12% | 15% | Ramesh M R (12%) |
+
+- The **biggest citers are clean**. VIT, Saveetha, SRM and Manipal get only 0.4–2.2% of their citations to us from heavy papers, and no single author gives more than 4%.
+- The heavy pattern sits in **a few Karnataka and Pune institutes, both private and public**, and points to the same Surathkal Mechanical group.
+- Private institutes have slightly more heavy citations (median 2.3% vs 0.05%), but the difference is not significant (p = 0.06). Single-author shares are the same (5.1% vs 5.4%).
+
+**Conclusion for the report:**
+> "We find no sign that citation manipulation distorts our results. Only 5% of the citations we receive from Indian papers come from papers citing 10 or more of ours, and most of those are by our own NITs. Removing self-citations or heavy citing papers leaves the faculty ranking's top 20 unchanged. The one concentrated pattern (heavy citing papers in 2023–24 around one Surathkal Mechanical group, mostly by former NIT members) is consistent with an alumni network citing its own earlier work."
+
+**Caveats:**
+- Only citations from Indian papers carry author and institution details, so the heavy-paper and one-author measures cover about a third of all citations. Self-citations are covered almost fully, because a faculty member citing themself is almost always on an Indian paper.
+- "Former NIT member" means someone who published with an NIT affiliation in 2016–2026. That includes former PhD students and post-docs, so it is a lower bound.
+- These are statistical signals for follow-up, not judgements about any person. Citing your own or your group's earlier work is normal when it is relevant.
+
+Files:
+- `q28_heavy_citing_papers_distribution.csv`, `q28_heavy_outside_citing_papers.csv`, `q28_authors_of_heavy_citing_papers.csv`;
+- `q28_faculty_citation_sources.csv`, `q28_faculty_citation_source_spread.csv`, `q28_ranking_without_self_or_heavy_citations.csv`;
+- `q28_citing_institutes.csv`, `manipulation_summary.json`, `q28_citation_checks.png`.
+
+---
+
 ## Found while doing this (for the team)
 - **Ruben Sudhakar is on both rosters.** He moved from NIT Surathkal (S0085) to NIT Trichy (T0669), so some papers list him for both NITs. `build_networks.py` already counts him once per paper.
 - **OpenAlex's corresponding-author flag is missing for 30% of rows**, so the corresponding-author shares in question 20 are based on the other 70%.
-
-## Still to do (from our list)
-- 26: how much departments cite their own institute.
-- 28: a citation-manipulation check within the private-citer analysis.

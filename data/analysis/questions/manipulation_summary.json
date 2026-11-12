@@ -1,0 +1,525 @@
+{
+  "indian_citing_papers": 77176,
+  "indian_citation_links": 117909,
+  "heavy_threshold": 10,
+  "min_citations": 100,
+  "flags": {
+    "self_share": 0.25,
+    "heavy_share": 0.05,
+    "top_outside_author_share": 0.1
+  },
+  "distribution": [
+    {
+      "cites_at_least": 1,
+      "citing_papers": 77176,
+      "citation_links": 117909,
+      "share_of_links": 1.0,
+      "outside_papers": 66591,
+      "outside_links": 88428,
+      "outside_with_former_nit_member": 0.07094051748734814
+    },
+    {
+      "cites_at_least": 2,
+      "citing_papers": 18467,
+      "citation_links": 59200,
+      "share_of_links": 0.5020821141727942,
+      "outside_papers": 12230,
+      "outside_links": 34067,
+      "outside_with_former_nit_member": 0.174897792313982
+    },
+    {
+      "cites_at_least": 5,
+      "citing_papers": 2847,
+      "citation_links": 20805,
+      "share_of_links": 0.17644963488792204,
+      "outside_papers": 1065,
+      "outside_links": 7607,
+      "outside_with_former_nit_member": 0.4262910798122066
+    },
+    {
+      "cites_at_least": 10,
+      "citing_papers": 430,
+      "citation_links": 5841,
+      "share_of_links": 0.04953820319059614,
+      "outside_papers": 128,
+      "outside_links": 1930,
+      "outside_with_former_nit_member": 0.65625
+    },
+    {
+      "cites_at_least": 20,
+      "citing_papers": 58,
+      "citation_links": 1271,
+      "share_of_links": 0.01077949944448685,
+      "outside_papers": 35,
+      "outside_links": 751,
+      "outside_with_former_nit_member": 0.6571428571428571
+    }
+  ],
+  "heavy_outside_papers": 128,
+  "heavy_outside_with_former_nit_member": 0.65625,
+  "heavy_outside_years": {
+    "2019": 2,
+    "2020": 5,
+    "2021": 4,
+    "2022": 13,
+    "2023": 33,
+    "2024": 45,
+    "2025": 14,
+    "2026": 12
+  },
+  "heavy_outside_top_venues": {
+    "Journal of The Institution of Engineers (India) Series D": 29,
+    "International Journal on Interactive Design and Manufacturing (IJIDeM)": 13,
+    "Results in Surfaces and Interfaces": 6,
+    "Elsevier eBooks": 5,
+    "Journal of Bio- and Tribo-Corrosion": 4,
+    "Polymer Composites": 2,
+    "Proceedings of the Institution of Mechanical Engineers Part C Journal of Mechanical Engineering Science": 2,
+    "Materials horizons": 2
+  },
+  "heavy_outside_by_faculty": {
+    "Ramesh M R": 57,
+    "D Lenin Singaravelu": 11,
+    "R Karvembu": 6,
+    "Mrityunjay R Doddamani": 5,
+    "Satyabodh M Kulkarni": 4,
+    "Airody Vasudeva Adhikari": 4
+  },
+  "top_authors_of_heavy_papers": [
+    {
+      "author": "C. Durga Prasad",
+      "heavy_citing_papers": 33,
+      "former_nit_member": true,
+      "first_year_at_nit": 2018.0
+    },
+    {
+      "author": "Shrishail Basaprabhu Sollapur",
+      "heavy_citing_papers": 8,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "Hitesh Vasudev",
+      "heavy_citing_papers": 7,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "Shanthala Kollur",
+      "heavy_citing_papers": 7,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "K. B. Yogesha",
+      "heavy_citing_papers": 6,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "Saravana Bavan",
+      "heavy_citing_papers": 6,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "C. R. Aprameya",
+      "heavy_citing_papers": 5,
+      "former_nit_member": true,
+      "first_year_at_nit": 2024.0
+    },
+    {
+      "author": "Mahantesh M. Math",
+      "heavy_citing_papers": 5,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "Mahesh M. Kawade",
+      "heavy_citing_papers": 5,
+      "former_nit_member": false,
+      "first_year_at_nit": NaN
+    },
+    {
+      "author": "Mrityunjay R. Doddamani",
+      "heavy_citing_papers": 5,
+      "former_nit_member": true,
+      "first_year_at_nit": 2016.0
+    }
+  ],
+  "faculty_eligible": 431,
+  "spread": [
+    {
+      "measure": "self_share",
+      "faculty": 431,
+      "median": 0.06111111111111111,
+      "p90": 0.15960912052117263,
+      "p99": 0.3533414456072036,
+      "max": 0.6062992125984252,
+      "flag_above": 0.25,
+      "flagged": 13.0
+    },
+    {
+      "measure": "coauthor_self_share",
+      "faculty": 431,
+      "median": 0.0341726618705036,
+      "p90": 0.1141439205955335,
+      "p99": 0.20454930173508246,
+      "max": 0.3161592505854801,
+      "flag_above": NaN,
+      "flagged": NaN
+    },
+    {
+      "measure": "own_nit_share",
+      "faculty": 431,
+      "median": 0.007228915662650603,
+      "p90": 0.02666666666666667,
+      "p99": 0.07258064516129033,
+      "max": 0.15770609318996415,
+      "flag_above": NaN,
+      "flagged": NaN
+    },
+    {
+      "measure": "heavy_share",
+      "faculty": 431,
+      "median": 0.0,
+      "p90": 0.0024875621890547263,
+      "p99": 0.013796307049123189,
+      "max": 0.1031726810365706,
+      "flag_above": 0.05,
+      "flagged": 2.0
+    },
+    {
+      "measure": "top_outside_author_share",
+      "faculty": 431,
+      "median": 0.013100436681222707,
+      "p90": 0.03314917127071823,
+      "p99": 0.06638301457578566,
+      "max": 0.15384615384615385,
+      "flag_above": 0.1,
+      "flagged": 2.0
+    }
+  ],
+  "flagged_faculty": [
+    {
+      "author": "Biswajit R Bhowmik",
+      "institution": "NIT Surathkal",
+      "department": "CSE",
+      "citations": 381,
+      "self_share": 0.6062992125984252,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Jayalakshmi P. V",
+      "top_outside_author_share": 0.005249343832020997
+    },
+    {
+      "author": "Sourav Kanti Addya",
+      "institution": "NIT Surathkal",
+      "department": "CSE",
+      "citations": 241,
+      "self_share": 0.26556016597510373,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "J Shreyas",
+      "top_outside_author_share": 0.02074688796680498
+    },
+    {
+      "author": "Hari Prasad Dasari",
+      "institution": "NIT Surathkal",
+      "department": "Chemical",
+      "citations": 652,
+      "self_share": 0.25306748466257667,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Santosh K. Gupta",
+      "top_outside_author_share": 0.013803680981595092
+    },
+    {
+      "author": "Sreevalsa Kolathayar",
+      "institution": "NIT Surathkal",
+      "department": "Civil",
+      "citations": 489,
+      "self_share": 0.25766871165644173,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Dipankar Sarkar",
+      "top_outside_author_share": 0.018404907975460124
+    },
+    {
+      "author": "Pathipati Srihari",
+      "institution": "NIT Surathkal",
+      "department": "ECE",
+      "citations": 587,
+      "self_share": 0.3492333901192504,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Palaiahnakote Shivakumara",
+      "top_outside_author_share": 0.005110732538330494
+    },
+    {
+      "author": "Rekha S",
+      "institution": "NIT Surathkal",
+      "department": "ECE",
+      "citations": 195,
+      "self_share": 0.1282051282051282,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Kulbhushan Sharma",
+      "top_outside_author_share": 0.13333333333333333
+    },
+    {
+      "author": "M Shankaranarayana Bhat",
+      "institution": "NIT Surathkal",
+      "department": "ECE",
+      "citations": 143,
+      "self_share": 0.09090909090909091,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Kulbhushan Sharma",
+      "top_outside_author_share": 0.15384615384615385
+    },
+    {
+      "author": "Manjunatha Sharma K",
+      "institution": "NIT Surathkal",
+      "department": "EEE",
+      "citations": 121,
+      "self_share": 0.371900826446281,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Pravat Kumar Ray",
+      "top_outside_author_share": 0.03305785123966942
+    },
+    {
+      "author": "Shubhanga K N",
+      "institution": "NIT Surathkal",
+      "department": "EEE",
+      "citations": 124,
+      "self_share": 0.33064516129032256,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Ganesh Shivaji Pise",
+      "top_outside_author_share": 0.008064516129032258
+    },
+    {
+      "author": "Santhosh George",
+      "institution": "NIT Surathkal",
+      "department": "Mathematics",
+      "citations": 465,
+      "self_share": 0.36989247311827955,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Sanjaya Kumar Parhi",
+      "top_outside_author_share": 0.047311827956989246
+    },
+    {
+      "author": "Ramesh M R",
+      "institution": "NIT Surathkal",
+      "department": "Mechanical",
+      "citations": 4129,
+      "self_share": 0.12085250666020829,
+      "heavy_share": 0.1031726810365706,
+      "heavy_with_former_nit_member": 0.3826291079812207,
+      "top_outside_author": "Shrishail Basaprabhu Sollapur",
+      "top_outside_author_share": 0.028336158876241222
+    },
+    {
+      "author": "Sharnappa Joladarashi",
+      "institution": "NIT Surathkal",
+      "department": "Mechanical",
+      "citations": 2418,
+      "self_share": 0.11538461538461539,
+      "heavy_share": 0.07816377171215881,
+      "heavy_with_former_nit_member": 0.37566137566137564,
+      "top_outside_author": "Shrishail Basaprabhu Sollapur",
+      "top_outside_author_share": 0.022332506203473945
+    },
+    {
+      "author": "A Santhana Vijayan",
+      "institution": "NIT Trichy",
+      "department": "CSE",
+      "citations": 854,
+      "self_share": 0.29156908665105385,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Hunny Gaur",
+      "top_outside_author_share": 0.00468384074941452
+    },
+    {
+      "author": "Kamal Krishna Bera",
+      "institution": "NIT Trichy",
+      "department": "Civil",
+      "citations": 229,
+      "self_share": 0.2663755458515284,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Sondipon Adhikari",
+      "top_outside_author_share": 0.008733624454148471
+    },
+    {
+      "author": "Moses Santhakumar",
+      "institution": "NIT Trichy",
+      "department": "Civil",
+      "citations": 245,
+      "self_share": 0.3551020408163265,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Sukhjinder Singh",
+      "top_outside_author_share": 0.02857142857142857
+    },
+    {
+      "author": "Jitraj Saha",
+      "institution": "NIT Trichy",
+      "department": "Mathematics",
+      "citations": 170,
+      "self_share": 0.4176470588235294,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Mehakpreet Singh",
+      "top_outside_author_share": 0.08235294117647059
+    },
+    {
+      "author": "R Nagalakshmi",
+      "institution": "NIT Trichy",
+      "department": "Physics",
+      "citations": 317,
+      "self_share": 0.2902208201892745,
+      "heavy_share": 0.0,
+      "heavy_with_former_nit_member": NaN,
+      "top_outside_author": "Kintali Manohor Prasad",
+      "top_outside_author_share": 0.015772870662460567
+    }
+  ],
+  "ranking": {
+    "without self-citations": {
+      "spearman": 0.9992024723998484,
+      "top20_overlap": 20,
+      "left_top20": [],
+      "entered_top20": [],
+      "largest_drop": [
+        {
+          "author": "Biswajit R Bhowmik",
+          "rank": 166.0,
+          "rank_cites_no_self": 220.0
+        },
+        {
+          "author": "Santhosh George",
+          "rank": 181.0,
+          "rank_cites_no_self": 204.0
+        },
+        {
+          "author": "Hari Prasad Dasari",
+          "rank": 141.0,
+          "rank_cites_no_self": 158.0
+        }
+      ]
+    },
+    "without heavy citing papers": {
+      "spearman": 0.9999989289180103,
+      "top20_overlap": 20,
+      "left_top20": [],
+      "entered_top20": [],
+      "largest_drop": [
+        {
+          "author": "Basavaraju Manu",
+          "rank": 175.0,
+          "rank_cites_no_heavy": 176.0
+        },
+        {
+          "author": "Nagendrappa H",
+          "rank": 294.0,
+          "rank_cites_no_heavy": 295.0
+        },
+        {
+          "author": "Tukaram Moger",
+          "rank": 39.0,
+          "rank_cites_no_heavy": 40.0
+        }
+      ]
+    }
+  },
+  "institutes": {
+    "median_by_type": {
+      "from_heavy_citing_papers": {
+        "private": 0.02260601441241685,
+        "public": 0.0005175983436853002
+      },
+      "top_author_share": {
+        "private": 0.05059298040532419,
+        "public": 0.053983722424502036
+      },
+      "top_faculty_share": {
+        "private": 0.0506529339904798,
+        "public": 0.05371797750006236
+      }
+    },
+    "private_vs_public_p": {
+      "from_heavy_citing_papers": 0.055722895257316794,
+      "top_author_share": 0.6934317212042824,
+      "top_faculty_share": 0.8811393893635913
+    },
+    "most_heavy": [
+      {
+        "institute": "Nitte Meenakshi Institute of Technology",
+        "type": "private",
+        "from_heavy_citing_papers": 0.2441860465116279
+      },
+      {
+        "institute": "Jain University",
+        "type": "private",
+        "from_heavy_citing_papers": 0.24384525205158264
+      },
+      {
+        "institute": "Visvesvaraya Technological University",
+        "type": "public",
+        "from_heavy_citing_papers": 0.24360033030553263
+      },
+      {
+        "institute": "Savitribai Phule Pune University",
+        "type": "public",
+        "from_heavy_citing_papers": 0.19093851132686085
+      },
+      {
+        "institute": "IISc Bangalore",
+        "type": "public",
+        "from_heavy_citing_papers": 0.13625866050808313
+      }
+    ],
+    "most_one_author": [
+      {
+        "institute": "SSN College of Engineering",
+        "type": "private",
+        "top_author_at_institute": "P. Senthil Kumar",
+        "top_author_share": 0.20435510887772193,
+        "top_author_is_former_nit_member": false
+      },
+      {
+        "institute": "Jain University",
+        "type": "private",
+        "top_author_at_institute": "Shrishail Basaprabhu Sollapur",
+        "top_author_share": 0.19460726846424384,
+        "top_author_is_former_nit_member": false
+      },
+      {
+        "institute": "IISc Bangalore",
+        "type": "public",
+        "top_author_at_institute": "Vinyas Mahesh",
+        "top_author_share": 0.18244803695150116,
+        "top_author_is_former_nit_member": true
+      },
+      {
+        "institute": "MNIT Jaipur",
+        "type": "public",
+        "top_author_at_institute": "N. Sandeep",
+        "top_author_share": 0.1726844583987441,
+        "top_author_is_former_nit_member": true
+      },
+      {
+        "institute": "Savitribai Phule Pune University",
+        "type": "public",
+        "top_author_at_institute": "Mahesh M. Kawade",
+        "top_author_share": 0.156957928802589,
+        "top_author_is_former_nit_member": false
+      }
+    ]
+  }
+}

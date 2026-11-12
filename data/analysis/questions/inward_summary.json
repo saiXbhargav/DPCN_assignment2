@@ -1,0 +1,193 @@
+{
+  "papers": 18342,
+  "references": 630284,
+  "overall": [
+    {
+      "institution": "NIT Surathkal",
+      "papers": 9191.0,
+      "references": 312630.0,
+      "references_per_paper": 34.01479708410402,
+      "ref_self_share": 0.05584236957425711,
+      "ref_colleague_share": 0.005818379554105492,
+      "ref_other_NIT_share": 0.0019991683459680775,
+      "ref_other_Indian_share": 0.11253878386591178,
+      "ref_home_share": 0.0616607491283626,
+      "ref_outside_india_share": 0.8238012986597576,
+      "citations": 125269.0,
+      "cit_self_share": 0.135851647255107,
+      "cit_colleague_share": 0.01210195658941957,
+      "cit_other_NIT_share": 0.002466691679505704,
+      "cit_other_Indian_share": 0.21765161372725894,
+      "cit_home_share": 0.14795360384452658,
+      "cit_outside_india_share": 0.6319280907487088,
+      "citations_per_paper": 13.62952888695463,
+      "citations_per_paper_without_home": 11.612990969426614,
+      "mean_fwci": 1.3881859101294745
+    },
+    {
+      "institution": "NIT Trichy",
+      "papers": 9151.0,
+      "references": 317654.0,
+      "references_per_paper": 34.712490438203474,
+      "ref_self_share": 0.0538888224294358,
+      "ref_colleague_share": 0.008068527391438483,
+      "ref_other_NIT_share": 0.0012686759807841235,
+      "ref_other_Indian_share": 0.1267605633802817,
+      "ref_home_share": 0.06195734982087429,
+      "ref_outside_india_share": 0.8100134108180599,
+      "citations": 140016.0,
+      "cit_self_share": 0.10447377442577992,
+      "cit_colleague_share": 0.012598560164552623,
+      "cit_other_NIT_share": 0.0025068563592732258,
+      "cit_other_Indian_share": 0.24434350359958862,
+      "cit_home_share": 0.11707233459033253,
+      "cit_outside_india_share": 0.6360773054508055,
+      "citations_per_paper": 15.300622882745055,
+      "citations_per_paper_without_home": 13.509343241175827,
+      "mean_fwci": 1.3060214074964485
+    },
+    {
+      "institution": "Both",
+      "papers": 18295.0,
+      "references": 628377.0,
+      "references_per_paper": 34.34692538945067,
+      "ref_self_share": 0.05489379783155653,
+      "ref_colleague_share": 0.006971929271758832,
+      "ref_other_NIT_share": 0.001623229367083773,
+      "ref_other_Indian_share": 0.11981660690954633,
+      "ref_home_share": 0.061865727103315366,
+      "ref_outside_india_share": 0.8166944366200546,
+      "citations": 264393.0,
+      "cit_self_share": 0.11931102563229738,
+      "cit_colleague_share": 0.012375516749687019,
+      "cit_other_NIT_share": 0.0024698082021838703,
+      "cit_other_Indian_share": 0.23179509291093184,
+      "cit_home_share": 0.1316865423819844,
+      "cit_outside_india_share": 0.6340485565048999,
+      "citations_per_paper": 14.451653457228751,
+      "citations_per_paper_without_home": 12.548565181743646,
+      "mean_fwci": 1.3467887564908443
+    }
+  ],
+  "fwci_effect_10pt_more_home_refs_pct": 1.5156351308281746,
+  "fwci_effect_10pt_more_home_refs_ci": [
+    0.43335945667548614,
+    2.60957347006745
+  ],
+  "fwci_effect_10pt_more_home_refs_p": 0.00594605020464865,
+  "fwci_effect_10pt_more_self_refs_pct": 2.0039722847442043,
+  "fwci_effect_10pt_more_self_refs_p": 0.0005776827768591249,
+  "regression_papers": 16104,
+  "spearman_departments_home_citations_vs_fwci": [
+    -0.2714833059660646,
+    0.16227325990714814
+  ],
+  "spearman_departments_home_refs_vs_home_citations": [
+    0.6371100164203612,
+    0.0002665068380327038
+  ],
+  "most_inward_departments": [
+    {
+      "institution": "NIT Surathkal",
+      "department": "Mathematics",
+      "cit_home_share": 0.24686192468619247,
+      "cit_self_share": 0.2402869097429767,
+      "ref_home_share": 0.050489113284947935
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Mining",
+      "cit_home_share": 0.20517144463181564,
+      "cit_self_share": 0.16582349634626195,
+      "ref_home_share": 0.10002646202699127
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Mechanical",
+      "cit_home_share": 0.19682561401108298,
+      "cit_self_share": 0.1810563043032086,
+      "ref_home_share": 0.08656923229190723
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Mathematics",
+      "cit_home_share": 0.18223475502291153,
+      "cit_self_share": 0.17906238984843145,
+      "ref_home_share": 0.09773580612128797
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Chemistry",
+      "cit_home_share": 0.17576159672693095,
+      "cit_self_share": 0.16757892408912478,
+      "ref_home_share": 0.08652475296199794
+    }
+  ],
+  "least_inward_departments": [
+    {
+      "institution": "NIT Surathkal",
+      "department": "Chemical",
+      "cit_home_share": 0.09668949771689497
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Information Technology",
+      "cit_home_share": 0.08799617407938785
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Energy & Environment",
+      "cit_home_share": 0.08491182233834095
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Chemical",
+      "cit_home_share": 0.08291179719751149
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Computer Applications",
+      "cit_home_share": 0.07197530864197531
+    }
+  ],
+  "biggest_rank_changes": [
+    {
+      "institution": "NIT Surathkal",
+      "department": "Chemistry",
+      "rank_citations_per_paper": 2,
+      "rank_without_home": 4
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Mining",
+      "rank_citations_per_paper": 23,
+      "rank_without_home": 25
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Chemistry",
+      "rank_citations_per_paper": 3,
+      "rank_without_home": 2
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Civil",
+      "rank_citations_per_paper": 11,
+      "rank_without_home": 12
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "Energy & Environment",
+      "rank_citations_per_paper": 10,
+      "rank_without_home": 9
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Information Technology",
+      "rank_citations_per_paper": 21,
+      "rank_without_home": 20
+    }
+  ],
+  "home_citation_share_both": 0.1316865423819844,
+  "self_citation_share_both": 0.11931102563229738
+}

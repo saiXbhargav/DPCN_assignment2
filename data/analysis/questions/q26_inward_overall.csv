@@ -1,0 +1,4 @@
+institution,papers,references,references_per_paper,ref_self_share,ref_colleague_share,ref_other_NIT_share,ref_other_Indian_share,ref_home_share,ref_outside_india_share,citations,cit_self_share,cit_colleague_share,cit_other_NIT_share,cit_other_Indian_share,cit_home_share,cit_outside_india_share,citations_per_paper,citations_per_paper_without_home,mean_fwci
+NIT Surathkal,9191.0,312630.0,34.0148,0.0558,0.0058,0.002,0.1125,0.0617,0.8238,125269.0,0.1359,0.0121,0.0025,0.2177,0.148,0.6319,13.6295,11.613,1.3882
+NIT Trichy,9151.0,317654.0,34.7125,0.0539,0.0081,0.0013,0.1268,0.062,0.81,140016.0,0.1045,0.0126,0.0025,0.2443,0.1171,0.6361,15.3006,13.5093,1.306
+Both,18295.0,628377.0,34.3469,0.0549,0.007,0.0016,0.1198,0.0619,0.8167,264393.0,0.1193,0.0124,0.0025,0.2318,0.1317,0.634,14.4517,12.5486,1.3468

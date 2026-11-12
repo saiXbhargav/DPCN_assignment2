@@ -420,9 +420,9 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
 
 <section id="questions" role="tabpanel" aria-labelledby="tab-questions" hidden>
   <h2>Research questions</h2>
-  <p class="lede">Eleven questions answered with our data (scripts/questions.py, details in data/analysis/questions/QUESTIONS.md). "Adjusted" = compared with papers of the same field and year, venue type, team size and NIT (regression on log(1 + FWCI), robust errors). Bars show 95% confidence intervals; gray = not significant.</p>
+  <p class="lede">Thirteen questions answered with our data (scripts/questions.py, details in data/analysis/questions/QUESTIONS.md). "Adjusted" = compared with papers of the same field and year, venue type, team size and NIT (regression on log(1 + FWCI), robust errors). Bars show 95% confidence intervals; gray = not significant.</p>
   <div class="grid">
-    <div class="panel s12"><h3>The answers in one line each</h3><ol id="q-answers" style="margin:6px 0 0;padding-left:22px;line-height:1.7"></ol></div>
+    <div class="panel s12"><h3>The answers in one line each</h3><ol id="q-answers" start="1" style="margin:6px 0 0;padding-left:22px;line-height:1.7"></ol></div>
 
     <div class="s12"><h2 style="margin-top:8px">15 · Which countries do we work with, and does it help?</h2></div>
     <div class="panel s12"><div class="facts" id="q15-facts"></div></div>
@@ -476,10 +476,24 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s7"><h3>Attachment kernel</h3><p class="note">New citations next year (relative to papers of the same year and age) against citations already received (log–log). A slope of 1 is linear preferential attachment.</p><div class="chart tall"><canvas id="ch-q25" aria-label="Attachment kernel"></canvas></div></div>
     <div class="panel s5"><h3>Early winners stay winners</h3><p class="note">Papers in the top 10% after 2 years that are still in the top 10% after 5 years, by publication year.</p><div class="chart tall"><canvas id="ch-q25-stay" aria-label="Top papers stay on top"></canvas></div></div>
 
+    <div class="s12"><h2 style="margin-top:8px">26 · How much do departments cite their own institute?</h2></div>
+    <div class="panel s12"><div class="facts" id="q26-facts"></div></div>
+    <div class="panel s7"><h3>Citations received from home, by department</h3><p class="note">Self = the citing paper shares an author with the cited one; colleague = another person from the same NIT. Indian citing papers only, so these are lower bounds.</p><div class="chart" style="height:560px"><canvas id="ch-q26" aria-label="Home citations by department"></canvas></div></div>
+    <div class="panel s5"><h3>Home share by publication year</h3><p class="note">Solid = citations received from home; dashed = references pointing home. 2016–2025 (2026 is partial and its early citations are mostly self-citations).</p><div class="chart tall"><canvas id="ch-q26-year" aria-label="Home share by year"></canvas></div></div>
+    <div class="panel s12"><h3>Departments</h3><p class="note">Faculty papers; departments with 50+ papers. Rank = rank by citations per paper among the 28 departments.</p><div class="tablewrap"><table id="t-q26"></table></div></div>
+
     <div class="s12"><h2 style="margin-top:8px">27 · How sensitive are the results to name matching?</h2></div>
     <div class="panel s12"><h3>Main results without the doubtful faculty links</h3><p class="note" id="q27-note"></p>
       <div class="tools"><div class="seg" role="group" aria-label="Which links"><button type="button" data-q27="drop single" aria-pressed="true">463 single-paper name matches</button><button type="button" data-q27="drop only" aria-pressed="false">96 strict doubtful</button></div></div>
       <div class="tablewrap"><table id="t-q27"></table></div></div>
+
+    <div class="s12"><h2 style="margin-top:8px">28 · Citation manipulation check</h2></div>
+    <div class="panel s12"><div class="facts" id="q28-facts"></div></div>
+    <div class="panel s7"><h3>Papers that cite many of ours at once</h3><p class="note" id="q28-note"></p><div class="tablewrap"><table id="t-q28-dist"></table></div>
+      <h3 style="margin-top:16px">Where faculty citations come from</h3><p class="note">Shares of each person's citations (2016–2026 papers), faculty with 100+ citations. Names are in q28_faculty_citation_sources.csv.</p><div class="tablewrap"><table id="t-q28-spread"></table></div></div>
+    <div class="panel s5"><h3>Outside papers citing 10+ of ours, by year</h3><p class="note">Papers with no author from our NITs.</p><div class="chart tall"><canvas id="ch-q28-year" aria-label="Heavy citing papers by year"></canvas></div></div>
+    <div class="panel s12"><h3>The 40 institutes that cite us most</h3><p class="note">Share of each institute's citations to us that come from heavy citing papers (10+ of ours), from its single biggest author, and going to our single most-cited faculty member. ★ = that author published with an NIT affiliation earlier.</p><div class="tablewrap" style="max-height:440px;overflow-y:auto"><table id="t-q28-inst"></table></div></div>
+    <div class="panel s12"><h3>The heaviest outside citing papers</h3><p class="note">Outside papers that cite the most of our papers. A statistical signal for follow-up, not a judgement about anyone: citing relevant earlier work of your group is normal.</p><div class="tablewrap"><table id="t-q28-papers"></table></div></div>
   </div>
 </section>
 
@@ -1366,7 +1380,9 @@ function questionsTab() {
     `<b>Where to publish (22–23):</b> conference papers ${sp(vc["Conference, not ranked"].effect_vs_q1_journal_pct)} vs a Q1 journal paper, but better than Q3–Q4 (${sp(vc["Journal Q3-Q4"].effect_vs_q1_journal_pct)}) or unranked journals; <i>${esc(mtp.venue)}</i>, the most-used venue, ${sp(mtp.effect_vs_all_other_papers_pct)}.`,
     `<b>Open access (24):</b> ${pct(VS.q24.open_share)} of papers are open; gold and green go with higher FWCI, diamond and bronze with lower; all open papers together ${sp(VS.q24.any_open_effect_pct)} (not significant).`,
     `<b>Rich get richer (25):</b> new citations grow as k<sup>${fmt(RS.alpha, 2)}</sup> (sub-linear preferential attachment); ${pct(Math.min(...RS.stay_on_top.map((r) => r.top10_after_2y_still_top10_after_5y)))}–${pct(Math.max(...RS.stay_on_top.map((r) => r.top10_after_2y_still_top10_after_5y)))} of early top-10% papers stay on top.`,
+    `<b>Citing your own institute (26):</b> ${pct(Q.inward_summary.home_citation_share_both)} of citations come from home, almost all self-citations (${pct(Q.inward_summary.self_citation_share_both)}); colleagues at the same NIT rarely cite each other.`,
     `<b>Name matching (27):</b> dropping 463 doubtful single-paper matches moves totals by under 2% and leaves the top-20 ranking at ${fmt(sv("top-20 ranking overlap (of 20)").without_doubtful_links)} of 20.`,
+    `<b>Citation manipulation (28):</b> only ${pct(Q.heavy_dist.find((r) => r.cites_at_least === 10).share_of_links, 1)} of Indian citations come from papers citing 10+ of ours; the faculty ranking's top 20 is unchanged without self-citations or those papers. One local pattern (an alumni network around one Surathkal Mechanical group, 2023–24) is shown below.`,
   ].map((x) => `<li>${x}</li>`).join("");
 
   // 15
@@ -1481,6 +1497,47 @@ function questionsTab() {
   draw("ch-q25-stay", { type: "bar", data: { labels: RS.stay_on_top.map((r) => r.cohort), datasets: [{ label: "still top 10% after 5 years", data: RS.stay_on_top.map((r) => +(100 * r.top10_after_2y_still_top10_after_5y).toFixed(1)), backgroundColor: css("--c7"), borderRadius: 4 }] },
     options: baseOptions({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => { const r = RS.stay_on_top[c.dataIndex]; return `${c.raw}% stay on top · ρ(2 y, 5 y) = ${fmt(r.spearman_2y_vs_5y, 2)} · top 10% hold ${pct(r.share_of_cites_to_top10_after_5y)} of citations`; } } } },
       scales: { y: { min: 0, max: 100, ticks: { callback: (v) => v + "%" } } } }) });
+  // 26
+  const IO = Object.fromEntries(Q.inward_overall.map((r) => [r.institution, r])), IS = Q.inward_summary;
+  $("#q26-facts").innerHTML = [fact(pct(IO.Both.cit_home_share, 1), `of citations come from home: ${pct(IO.Both.cit_self_share, 1)} self-citations, ${pct(IO.Both.cit_colleague_share, 1)} colleagues at the same NIT`),
+    fact(`${pct(IO["NIT Surathkal"].cit_home_share, 1)} vs ${pct(IO["NIT Trichy"].cit_home_share, 1)}`, "Surathkal vs Trichy: Surathkal is more inward-looking"),
+    fact(pct(IO.Both.ref_home_share, 1), `of references point home; ${pct(IO.Both.ref_outside_india_share)} point outside India`),
+    fact(`ρ = ${fmt(IS.spearman_departments_home_refs_vs_home_citations[0], 2)}`, "departments that cite themselves more are cited more from home")].join("");
+  const idp = Q.inward_dept.filter((r) => views().includes(r.institution)).sort((a, b) => b.cit_home_share - a.cit_home_share);
+  draw("ch-q26", { type: "bar", data: { labels: idp.map((r) => `${r.department} (${r.institution === "NIT Trichy" ? "Tr" : "Su"})`), datasets: [
+      { label: "Self-citations", data: idp.map((r) => +(100 * r.cit_self_share).toFixed(1)), backgroundColor: css("--ink-2") },
+      { label: "Colleagues at the same NIT", data: idp.map((r) => +(100 * r.cit_colleague_share).toFixed(1)), backgroundColor: css("--c8") }] },
+    options: baseOptions({ indexAxis: "y", interaction: { mode: "index", axis: "y", intersect: false }, plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.raw}%` } } },
+      scales: { x: { stacked: true, ticks: { callback: (v) => v + "%" } }, y: { stacked: true, grid: { display: false }, ticks: { autoSkip: false, font: { size: 11 } } } } }) });
+  draw("ch-q26-year", { type: "line", data: { labels: YEARS.slice(0, -1), datasets: views().flatMap((i) => { const rows = Q.inward_year.filter((r) => r.institution === i && r.year < 2026), v = (k) => YEARS.slice(0, -1).map((y) => { const r = rows.find((x) => x.year === y); return r ? +(100 * r[k]).toFixed(1) : null; });
+      return [{ label: `${shortInst(i)}: citations from home`, data: v("cit_home_share"), borderColor: instColor(i), backgroundColor: instColor(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 },
+              { label: `${shortInst(i)}: references home`, data: v("ref_home_share"), borderColor: instColor(i), backgroundColor: instColor(i), borderDash: [5, 4], borderWidth: 1.8, pointRadius: 2, tension: 0.2 }]; }) },
+    options: baseOptions({ scales: { y: { beginAtZero: true, ticks: { callback: (v) => v + "%" } } } }) });
+  $("#t-q26").innerHTML = T2([["Department"], ["Papers", 1], ["References home", 1], ["Citations from home", 1], ["of which self", 1], ["Cites / paper", 1], ["… without home", 1], ["Rank → without home", 1]],
+    idp.map((r) => [`${esc(r.department)} ${chip(r.institution)}`, fmt(r.papers), pct(r.ref_home_share, 1), `<b>${pct(r.cit_home_share, 1)}</b>`, pct(r.cit_self_share, 1), fmt(r.citations_per_paper, 1), fmt(r.citations_per_paper_without_home, 1),
+      `${r.rank_citations_per_paper} → ${r.rank_without_home}`]));
+  // 28
+  const MS = Q.manip_summary, hd = Object.fromEntries(Q.heavy_dist.map((r) => [r.cites_at_least, r])), RK = MS.ranking;
+  const sp28 = Object.fromEntries(Q.fac_spread.map((r) => [r.measure, r]));
+  $("#q28-facts").innerHTML = [fact(pct(hd[10].share_of_links, 1), `of our ${fmt(MS.indian_citation_links)} Indian citations come from papers citing 10+ of ours, mostly by our own NITs`),
+    fact(fmt(MS.heavy_outside_papers), `outside papers cite 10+ of ours; ${pct(MS.heavy_outside_with_former_nit_member)} have a former NIT member as an author`),
+    fact(pct(sp28.self_share.median, 1), `median self-citation share; ${sp28.self_share.flagged} of ${MS.faculty_eligible} faculty above 25%`),
+    fact(`${RK["without self-citations"].top20_overlap} / 20`, "top-20 faculty unchanged without self-citations or heavy citing papers")].join("");
+  $("#q28-note").textContent = `${fmt(MS.indian_citing_papers)} Indian papers cite ours. "Outside" = no author from our NITs; former NIT member = published with an NIT affiliation before.`;
+  $("#t-q28-dist").innerHTML = T2([["Cites at least … of ours", 1], ["Citing papers", 1], ["Share of Indian citations", 1], ["Outside papers", 1], ["With a former NIT member", 1]],
+    Q.heavy_dist.map((r) => [r.cites_at_least, fmt(r.citing_papers), pct(r.share_of_links, 1), fmt(r.outside_papers), pct(r.outside_with_former_nit_member)]));
+  const ML28 = { self_share: "Own self-citations", coauthor_self_share: "Self-citations by co-authors", own_nit_share: "Colleagues at the same NIT", heavy_share: "Heavy outside citing papers (10+ of ours)", top_outside_author_share: "Single biggest outside author" };
+  $("#t-q28-spread").innerHTML = T2([["Source"], ["Median", 1], ["Top 10% above", 1], ["Top 1% above", 1], ["Flagged", 1]],
+    Q.fac_spread.map((r) => [ML28[r.measure], pct(r.median, 1), pct(r.p90, 1), pct(r.p99, 1), r.flagged == null ? "–" : `${r.flagged} (&gt; ${pct(r.flag_above)})`]));
+  const hy = Object.entries(MS.heavy_outside_years).sort((a, b) => +a[0] - +b[0]);
+  draw("ch-q28-year", { type: "bar", data: { labels: hy.map(([y]) => y), datasets: [{ label: "outside papers citing 10+ of ours", data: hy.map(([, n]) => n), backgroundColor: css("--c8"), borderRadius: 4 }] },
+    options: baseOptions({ plugins: { legend: { display: false } } }) });
+  $("#t-q28-inst").innerHTML = T2([["Institute"], ["Citations to us", 1], ["From heavy papers", 1], ["Biggest single author", 1], ["Top cited faculty", 1]],
+    [...Q.citing_inst].sort((a, b) => b.from_heavy_citing_papers - a.from_heavy_citing_papers).map((r) => [`${esc(r.institute)} <span class="chip ${r.type === "private" ? "warn" : ""}">${r.type}</span>`, fmt(r.citations_to_us),
+      r.from_heavy_citing_papers > 0.1 ? `<b>${pct(r.from_heavy_citing_papers, 1)}</b>` : pct(r.from_heavy_citing_papers, 1),
+      `${pct(r.top_author_share, 1)}${r.top_author_is_former_nit_member ? " ★" : ""}`, `${pct(r.top_faculty_share, 1)} <span style="color:var(--muted)">${esc(r.top_cited_faculty)}</span>`]));
+  $("#t-q28-papers").innerHTML = T2([["Citing paper"], ["Year", 1], ["Our papers cited", 1], ["Most-cited faculty", 1], ["Former NIT member?"]],
+    Q.heavy_papers.map((r) => [`${esc(r.title)}<br><span style="color:var(--muted);font-size:12px">${esc(r.venue)}</span>`, r.year, fmt(r.our_papers_cited), `${esc(r.most_cited_faculty)} (${r.papers_of_that_faculty_cited})`, r.former_nit_member_on_it ? "yes" : "no"]));
   // 27
   q27Table();
 }

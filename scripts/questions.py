@@ -1,4 +1,4 @@
-"""Research questions for Phase II (items 15-25 and 27 of the team list) -> data/analysis/questions/
+"""Research questions for Phase II (items 15-28 of the team list) -> data/analysis/questions/
 
   python questions.py collab    15 which countries we work with and whether it helps; 16 which partner types help
   python questions.py network   17 key-person risk: how the faculty network breaks when hub faculty leave
@@ -8,6 +8,9 @@
   python questions.py venues    22-23 where to publish (conference vs journal, high-volume venues); 24 open access
   python questions.py richer    25 "rich get richer": preferential attachment in citations
   python questions.py robust    27 how much the main results change without doubtful name matches
+  python questions.py inward    26 how much departments cite (and are cited by) their own institute
+  python questions.py manipulation  28 citation-manipulation check: heavy citing papers, self-citation, one-person
+                                citation sources, and the 40 institutes that cite us most
 
 `python questions.py` runs all parts. Needs data/all_papers.csv (phase2.py papers) and, for venues and richer,
 data/raw/works_yearly.jsonl (fetch_insights.py yearly).
@@ -482,7 +485,7 @@ def attack(G, how, steps, seed=None):
     'betweenness' and 'degree' are recomputed after every removal (adaptive attack)."""
     H = G.copy()
     rng = np.random.default_rng(seed)
-    order = list(rng.permutation(list(H.nodes))) if how == "random" else None
+    order = list(rng.permutation(sorted(H.nodes))) if how == "random" else None   # sorted: same order every run
     gc, cp, removed = [giant(H)], [connected_pairs(H)], []
     for k in range(steps):
         if how == "random":
@@ -568,7 +571,7 @@ def network_part():
         if cp0 == 0:
             continue
         best = None
-        for v in D.nodes:
+        for v in sorted(D.nodes):          # sorted, so ties are broken the same way every run
             H = D.copy(); H.remove_node(v)
             lost = cp0 - connected_pairs(H) - (len(nx.node_connected_component(D, v)) - 1)
             if best is None or lost > best[1]:
@@ -1245,17 +1248,7 @@ def robust_part():
         return out
 
     def ranking(gg):
-        p = gg.drop_duplicates(["faculty_id", "openalex_id"]).copy()
-        p["top_venue"] = p.quartile.isin(["Q1", "CORE A*", "CORE A"])
-        p["if5"] = p.journal_if_2yr > 5
-        p["top10"] = p.top10pct == True  # noqa: E712
-        t = p.groupby("faculty_id").agg(papers=("openalex_id", "size"), citations=("citations", "sum"),
-                                        h_index=("citations", h_index), mean_fwci=("fwci", "mean"),
-                                        top10_papers=("top10", "sum"), top_venue_papers=("top_venue", "sum"),
-                                        if5_papers=("if5", "sum"))
-        t = t.join(fac[["status"]])
-        t = t[(t.status == "current") & (t.papers >= MIN_PAPERS)]
-        return pd.DataFrame({c: 100 * t[c].rank(pct=True) for c in MEASURES}).mean(axis=1)
+        return ranking_scores(gg, fac)
 
     def graph(gg):
         Gx = nx.Graph()
@@ -1334,8 +1327,436 @@ def robust_part():
     print(res.to_string())
 
 
+
+# ================================================================ shared: citation links with Indian works
+def ranking_scores(gg, fac, cites="citations"):
+    """The team's composite faculty score (insights.py ranking: mean percentile of 7 measures, current faculty with
+    10+ papers). `cites` names the per-row citation column, so a version without self-citations can be scored."""
+    from insights import MEASURES, MIN_PAPERS
+    p = gg.drop_duplicates(["faculty_id", "openalex_id"]).copy()
+    p["top_venue"] = p.quartile.isin(["Q1", "CORE A*", "CORE A"])
+    p["if5"] = p.journal_if_2yr > 5
+    p["top10"] = p.top10pct == True  # noqa: E712
+    t = p.groupby("faculty_id").agg(papers=("openalex_id", "size"), citations=(cites, "sum"),
+                                    h_index=(cites, h_index), mean_fwci=("fwci", "mean"),
+                                    top10_papers=("top10", "sum"), top_venue_papers=("top_venue", "sum"),
+                                    if5_papers=("if5", "sum"))
+    t = t.join(fac[["status"]])
+    t = t[(t.status == "current") & (t.papers >= MIN_PAPERS)]
+    return pd.DataFrame({c: 100 * t[c].rank(pct=True) for c in MEASURES}).mean(axis=1)
+
+
+def top1(counter, default=("", 0)):
+    """The most common item of a Counter; ties go to the alphabetically first item, so every run is the same."""
+    if not counter:
+        return default
+    return sorted(counter.items(), key=lambda kv: (-kv[1], str(kv[0])))[0]
+
+
+def load_links(direction):
+    """Indian works that cite our papers ("citers") or that our papers cite ("refs"), from fetch_links.py, merged
+    by work id: Indian institutions, authors (and each author's Indian institutions), year, and which of our
+    papers they cite."""
+    out = {}
+    for line in open(os.path.join(RAW, f"links_{direction}.jsonl"), encoding="utf-8"):
+        r = json.loads(line)
+        d = out.setdefault(r["id"], {"insts": set(), "authors": set(), "auth_insts": {}, "names": {}, "author_names": {},
+                                     "year": r.get("year"), "cites": set()})
+        for a in r["authors"]:
+            ins = {i[0] for i in a["inst"] if i[2] == "IN"}
+            for i in a["inst"]:
+                if i[2] == "IN":
+                    d["names"][i[0]] = i[1]
+            d["insts"] |= ins
+            if a["id"]:
+                d["authors"].add(a["id"])
+                d["auth_insts"].setdefault(a["id"], set()).update(ins)
+                d["author_names"][a["id"]] = a["name"]
+        d["cites"].update(r.get("cites_ours") or [])
+    return out
+
+
+def authors_of(w):
+    return {short(a["author"]["id"]) for a in w["authorships"] if a["author"].get("id")}
+
+
+# ================================================================ part "inward": question 26
+def link_kind(d, auth, own, other):
+    """One citation link seen from our paper: 'self' if the two papers share an author, else 'colleague' if the
+    other paper has an author from the same NIT, 'other NIT' (Trichy <-> Surathkal) or 'other Indian'."""
+    if d["authors"] & auth:
+        return "self"
+    if own in d["insts"]:
+        return "colleague"
+    if other in d["insts"]:
+        return "other NIT"
+    return "other Indian"
+
+
+KINDS = ["self", "colleague", "other NIT", "other Indian"]
+
+
+def inward_part():
+    pp = faculty_paper_table()
+    works = raw_works()
+    refs, cit = load_links("refs"), load_links("citers")
+    by_target = collections.defaultdict(list)
+    for c, d in cit.items():
+        for t in d["cites"]:
+            by_target[t].append(c)
+    other_of = {NAME_TO_ID[a]: NAME_TO_ID[b] for a, b in (NITS, NITS[::-1])}
+    rows = []
+    for r in pp.itertuples(index=False):
+        w = works[(r.institution, r.openalex_id)]
+        own = NAME_TO_ID[r.institution]
+        auth = authors_of(w)
+        rr = {short(x) for x in w["referenced_works"]}
+        kr = collections.Counter(link_kind(refs[x], auth, own, other_of[own]) for x in rr if x in refs)
+        kc = collections.Counter(link_kind(cit[c], auth, own, other_of[own]) for c in by_target.get(r.openalex_id, []))
+        rows.append({"institution": r.institution, "openalex_id": r.openalex_id, "year": r.year, "branch": r.branch,
+                     "refs": len(rr), "citations": w["cited_by_count"],
+                     **{f"ref_{k}": kr[k] for k in KINDS}, **{f"cit_{k}": kc[k] for k in KINDS}})
+    d = pd.DataFrame(rows).merge(pp[["institution", "openalex_id", "fwci", "log_fwci", "log_authors", "surathkal",
+                                     "foreign", "indian_collab", "conference"]], on=["institution", "openalex_id"])
+    assert len(d) == len(pp)
+    d["ref_home"] = d.ref_self + d.ref_colleague
+    d["cit_home"] = d.cit_self + d.cit_colleague
+
+    def agg(x):
+        R, C, n = x.refs.sum(), x.citations.sum(), len(x)
+        out = {"papers": n, "references": R, "references_per_paper": R / n}
+        for k in KINDS:
+            out[f"ref_{k.replace(' ', '_')}_share"] = x[f"ref_{k}"].sum() / R
+        out["ref_home_share"] = x.ref_home.sum() / R
+        out["ref_outside_india_share"] = 1 - sum(x[f"ref_{k}"].sum() for k in KINDS) / R
+        out["citations"] = C
+        for k in KINDS:
+            out[f"cit_{k.replace(' ', '_')}_share"] = x[f"cit_{k}"].sum() / C if C else np.nan
+        out["cit_home_share"] = x.cit_home.sum() / C if C else np.nan
+        out["cit_outside_india_share"] = 1 - sum(x[f"cit_{k}"].sum() for k in KINDS) / C if C else np.nan
+        out["citations_per_paper"] = C / n
+        out["citations_per_paper_without_home"] = (C - x.cit_home.sum()) / n
+        out["mean_fwci"] = x.fwci.mean()
+        return pd.Series(out)
+    nit = d.groupby("institution").apply(agg).reset_index()
+    both = agg(d.drop_duplicates("openalex_id")).to_frame().T.assign(institution="Both")
+    overall = pd.concat([nit, both[nit.columns]])
+    save(overall.round(4), "q26_inward_overall.csv")
+    dep = d.groupby(["institution", "branch"]).apply(agg).reset_index().rename(columns={"branch": "department"})
+    dep = dep[dep.papers >= 50].copy()
+    dep["rank_citations_per_paper"] = dep.citations_per_paper.rank(ascending=False, method="min").astype(int)
+    dep["rank_without_home"] = dep.citations_per_paper_without_home.rank(ascending=False, method="min").astype(int)
+    dep = dep.sort_values("cit_home_share", ascending=False)
+    save(dep.round(4), "q26_inward_by_department.csv")
+    yr = d.groupby(["institution", "year"]).apply(agg).reset_index()[
+        ["institution", "year", "papers", "ref_home_share", "ref_self_share", "cit_home_share", "cit_self_share"]]
+    save(yr.round(4), "q26_inward_by_year.csv")
+    # does citing your own group more go with lower impact? (papers with 10+ references)
+    e = d[d.refs >= 10].copy()
+    e["home_refs_x10"] = 10 * e.ref_home / e.refs          # effect of +10 percentage points
+    e["self_refs_x10"] = 10 * e.ref_self / e.refs
+    t, n, _ = ols(e, "log_fwci", num=["log_authors"], cat=["year", "branch"],
+                  dummies=["surathkal", "foreign", "indian_collab", "conference", "home_refs_x10"])
+    t2, _, _ = ols(e, "log_fwci", num=["log_authors"], cat=["year", "branch"],
+                   dummies=["surathkal", "foreign", "indian_collab", "conference", "self_refs_x10"])
+    rho = stats.spearmanr(dep.cit_home_share, dep.mean_fwci)
+    rho_r = stats.spearmanr(dep.ref_home_share, dep.cit_home_share)
+    o = overall.set_index("institution")
+    summary = {"papers": len(d), "references": int(d.refs.sum()), "overall": overall.to_dict("records"),
+               "fwci_effect_10pt_more_home_refs_pct": t.loc["home_refs_x10", "effect_pct"],
+               "fwci_effect_10pt_more_home_refs_ci": [t.loc["home_refs_x10", "effect_ci_low_pct"],
+                                                     t.loc["home_refs_x10", "effect_ci_high_pct"]],
+               "fwci_effect_10pt_more_home_refs_p": t.loc["home_refs_x10", "p_value"],
+               "fwci_effect_10pt_more_self_refs_pct": t2.loc["self_refs_x10", "effect_pct"],
+               "fwci_effect_10pt_more_self_refs_p": t2.loc["self_refs_x10", "p_value"],
+               "regression_papers": n,
+               "spearman_departments_home_citations_vs_fwci": [rho.statistic, rho.pvalue],
+               "spearman_departments_home_refs_vs_home_citations": [rho_r.statistic, rho_r.pvalue],
+               "most_inward_departments": dep.head(5)[["institution", "department", "cit_home_share",
+                                                       "cit_self_share", "ref_home_share"]].to_dict("records"),
+               "least_inward_departments": dep.tail(5)[["institution", "department", "cit_home_share"]]
+               .to_dict("records"),
+               "biggest_rank_changes": dep.assign(change=dep.rank_without_home - dep.rank_citations_per_paper)
+               .sort_values("change", key=abs, ascending=False).head(6)[
+                   ["institution", "department", "rank_citations_per_paper", "rank_without_home"]].to_dict("records"),
+               "home_citation_share_both": o.loc["Both", "cit_home_share"],
+               "self_citation_share_both": o.loc["Both", "cit_self_share"]}
+    save_json(summary, "inward_summary.json")
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6.5))
+    dd = dep.sort_values("cit_home_share")
+    lab = [f"{a} ({'Tr' if i == 'NIT Trichy' else 'Su'})" for a, i in zip(dd.department, dd.institution)]
+    ax = axes[0]
+    ax.barh(lab, 100 * dd.cit_self_share, color=INK, label="self-citations (a shared author)")
+    ax.barh(lab, 100 * dd.cit_colleague_share, left=100 * dd.cit_self_share, color=AXIS,
+            label="colleagues at the same NIT")
+    ax.set_xlabel("citations received that come from home (%)")
+    ax.set_title("How much of each department's citations come from home?", fontsize=11, loc="left", color=INK)
+    ax.legend(frameon=False, fontsize=8.5, loc="lower right"); style_axes(ax); ax.grid(axis="y", visible=False)
+    ax.tick_params(axis="y", labelsize=8)
+    ax = axes[1]
+    for view in NITS:
+        y_ = yr[(yr.institution == view) & (yr.year < PARTIAL_YEAR)]       # 2026 is partial
+        ax.plot(y_.year, 100 * y_.ref_home_share, color=COLOR[view], lw=2, marker="o", ms=4, label=f"{view}: references")
+        ax.plot(y_.year, 100 * y_.cit_home_share, color=COLOR[view], lw=1.5, ls="--", label=f"{view}: citations received")
+    ax.set_ylabel("share that is self or own-NIT (%)")
+    ax.set_title("Home references and citations, by publication year (2016-2025)", fontsize=11, loc="left", color=INK)
+    ax.legend(frameon=False, fontsize=8.5); style_axes(ax)
+    savefig(fig, "q26_inward.png")
+    print(overall.round(3).T.to_string())
+    print(dep.round(3).to_string())
+    print(json.dumps({k: v for k, v in summary.items() if k not in ("overall",)}, indent=1, default=str))
+
+
+# ================================================================ part "manipulation": question 28
+HEAVY = 10          # a citing paper that cites 10 or more of our papers is a "heavy" citing paper
+MIN_CITES = 100     # faculty need at least this many citations (2016-2026 papers) to be flagged
+FLAGS = {"self_share": 0.25, "heavy_share": 0.05, "top_outside_author_share": 0.10}   # shares of ALL citations
+
+
+def manipulation_part():
+    from flow import flow_partners
+    from phase2 import CITER_LABELS
+    g = pd.read_csv(os.path.join(DATA, "group12_data.csv"), low_memory=False)
+    fac = pd.read_csv(os.path.join(DATA, "faculty.csv")).drop_duplicates("faculty_id").set_index("faculty_id")
+    works = raw_works()
+    wk = {wid: w for (_, wid), w in works.items()}
+    ours = set(wk)
+    cit = load_links("citers")
+    info = {r["id"]: r for r in map(json.loads, open(os.path.join(RAW, "citers_info.jsonl"), encoding="utf-8"))}
+    own_ids = set(NAME_TO_ID.values())
+    id_name = {v: k for k, v in NAME_TO_ID.items()}
+    paper_auth = {wid: authors_of(w) for wid, w in wk.items()}
+    # former NIT members: everyone who published with an NIT affiliation, with the first year (as in phase2.py)
+    member_since = {}
+    for w in wk.values():
+        for a in w["authorships"]:
+            aid = short(a["author"].get("id"))
+            if aid and any(short(i["id"]) in own_ids for i in a["institutions"]):
+                member_since[aid] = min(member_since.get(aid, 9999), w["publication_year"])
+    by_target = collections.defaultdict(list)
+    for c, d in cit.items():
+        d["n_ours"] = len(d["cites"] & ours)
+        d["outside"] = not (d["insts"] & own_ids)
+        d["former_member"] = any(member_since.get(a, 9999) <= (d["year"] or 9999) for a in d["authors"])
+        for t in d["cites"]:
+            by_target[t].append(c)
+    summary = {}
+
+    # ---- (a) citing papers that cite many of our papers
+    cp = pd.DataFrame([{"citing_paper": c, "year": d["year"], "our_papers_cited": d["n_ours"],
+                        "outside": d["outside"], "former_nit_member_on_it": d["former_member"]} for c, d in cit.items()])
+    links = cp.our_papers_cited.sum()
+    dist = []
+    for k in (1, 2, 5, 10, 20):
+        s_ = cp[cp.our_papers_cited >= k]
+        o = s_[s_.outside]
+        dist.append({"cites_at_least": k, "citing_papers": len(s_), "citation_links": int(s_.our_papers_cited.sum()),
+                     "share_of_links": s_.our_papers_cited.sum() / links, "outside_papers": len(o),
+                     "outside_links": int(o.our_papers_cited.sum()),
+                     "outside_with_former_nit_member": float(o.former_nit_member_on_it.mean()) if len(o) else np.nan})
+    dist = pd.DataFrame(dist)
+    save(dist.round(4), "q28_heavy_citing_papers_distribution.csv")
+    heavy = [c for c, d in cit.items() if d["outside"] and d["n_ours"] >= HEAVY]
+    fac_of = g.groupby("openalex_id").author.apply(lambda x: sorted(set(x))).to_dict()
+    hrows = []
+    for c in sorted(heavy, key=lambda c: -cit[c]["n_ours"]):
+        d = cit[c]
+        cnt = collections.Counter(a for t in d["cites"] for a in fac_of.get(t, []))
+        top, n = top1(cnt)
+        i = info.get(c, {})
+        hrows.append({"citing_paper": c, "title": i.get("title", ""), "venue": i.get("venue", ""), "year": d["year"],
+                      "our_papers_cited": d["n_ours"], "most_cited_faculty": top, "papers_of_that_faculty_cited": n,
+                      "former_nit_member_on_it": d["former_member"],
+                      "indian_institutes": "; ".join(sorted(d["names"].values()))})
+    hv = pd.DataFrame(hrows)
+    save(hv, "q28_heavy_outside_citing_papers.csv")
+    venues = hv.venue.value_counts().head(8)
+    authors_cnt = collections.Counter()
+    for c in heavy:
+        for a in cit[c]["authors"]:
+            authors_cnt[(a, cit[c]["author_names"].get(a, a))] += 1
+    top_auth = pd.DataFrame([{"author": nm, "heavy_citing_papers": n, "former_nit_member": a in member_since,
+                              "first_year_at_nit": member_since.get(a)} for (a, nm), n in sorted(authors_cnt.items(), key=lambda kv: (-kv[1], kv[0][1]))[:10]])
+    save(top_auth, "q28_authors_of_heavy_citing_papers.csv")
+
+    # ---- (b) per faculty: where do their citations come from? (shares of ALL citations of their 2016-26 papers)
+    fids = collections.defaultdict(set)
+    for f, a in zip(g.faculty_id, g.author_id):
+        if isinstance(a, str):
+            fids[f].add(a)
+    for f, ids in fac.openalex_ids.dropna().items():
+        fids[f].update(ids.split(";"))
+    fp = g.drop_duplicates(["faculty_id", "openalex_id"])
+    papers_of = fp.groupby("faculty_id").openalex_id.apply(list)
+    cites_of = fp.groupby("faculty_id").citations.sum()
+    frows, self_by_row, heavy_by_row = [], {}, {}
+    for f, plist in papers_of.items():
+        own = NAME_TO_ID.get(fac.institution.get(f))
+        tot = int(cites_of[f])
+        n_ind = n_self = n_co = n_own = n_heavy = n_heavy_alum = 0
+        outside_auth = collections.Counter()
+        for t in plist:
+            ns_ = nh_ = 0
+            for c in by_target.get(t, []):
+                d = cit[c]
+                n_ind += 1
+                if d["authors"] & fids[f]:
+                    n_self += 1; ns_ += 1
+                elif d["authors"] & paper_auth.get(t, set()):
+                    n_co += 1
+                elif own in d["insts"]:
+                    n_own += 1
+                else:
+                    if d["n_ours"] >= HEAVY and d["outside"]:
+                        n_heavy += 1; nh_ += 1
+                        n_heavy_alum += d["former_member"]
+                    for a in d["authors"]:
+                        if not (d["auth_insts"].get(a, set()) & own_ids):
+                            outside_auth[(a, d["author_names"].get(a, a))] += 1
+            self_by_row[(f, t)], heavy_by_row[(f, t)] = ns_, nh_
+        (top_a, top_name), top_n = top1(outside_auth, ((None, ""), 0))
+        sh = (lambda x: x / tot if tot else np.nan)
+        frows.append({"faculty_id": f, "author": fac.author.get(f), "institution": fac.institution.get(f),
+                      "department": fac.department.get(f), "designation": fac.designation.get(f),
+                      "status": fac.status.get(f), "papers": len(plist), "citations": tot, "indian_citations": n_ind,
+                      "self_share": sh(n_self), "coauthor_self_share": sh(n_co), "own_nit_share": sh(n_own),
+                      "heavy_share": sh(n_heavy), "heavy_with_former_nit_member": n_heavy_alum / n_heavy if n_heavy else np.nan,
+                      "top_outside_author": top_name, "top_outside_author_share": sh(top_n)})
+    fr = pd.DataFrame(frows)
+    elig = fr.citations >= MIN_CITES
+    for m, thr in FLAGS.items():
+        fr[f"flag_{m}"] = elig & (fr[m] > thr)
+    fr["n_flags"] = fr[[f"flag_{m}" for m in FLAGS]].sum(axis=1)
+    save(fr.sort_values("self_share", ascending=False).round(4), "q28_faculty_citation_sources.csv")
+    e = fr[elig]
+    spread = []
+    for m in ("self_share", "coauthor_self_share", "own_nit_share", "heavy_share", "top_outside_author_share"):
+        q = e[m].quantile([0.5, 0.9, 0.99])
+        spread.append({"measure": m, "faculty": len(e), "median": q[0.5], "p90": q[0.9], "p99": q[0.99],
+                       "max": e[m].max(), "flag_above": FLAGS.get(m), "flagged": int((e[m] > FLAGS[m]).sum()) if m in FLAGS else None})
+    spread = pd.DataFrame(spread)
+    save(spread.round(4), "q28_faculty_citation_source_spread.csv")
+
+    # does the faculty ranking change without self-citations, or without heavy citing papers?
+    gg = g.copy()
+    gg["cites_no_self"] = [r.citations - self_by_row.get((r.faculty_id, r.openalex_id), 0) for r in gg.itertuples(index=False)]
+    gg["cites_no_heavy"] = [r.citations - heavy_by_row.get((r.faculty_id, r.openalex_id), 0) for r in gg.itertuples(index=False)]
+    r0 = ranking_scores(gg, fac)
+    rk = pd.DataFrame({"author": fac.author.reindex(r0.index), "institution": fac.institution.reindex(r0.index),
+                       "rank": r0.rank(ascending=False, method="min")})
+    rsum = {}
+    for col, lab in (("cites_no_self", "without self-citations"), ("cites_no_heavy", "without heavy citing papers")):
+        r1 = ranking_scores(gg, fac, col).reindex(r0.index)
+        rk[f"rank_{col}"] = r1.rank(ascending=False, method="min")
+        t20a, t20b = set(r0.nlargest(20).index), set(r1.nlargest(20).index)
+        rsum[lab] = {"spearman": stats.spearmanr(r0, r1).statistic, "top20_overlap": len(t20a & t20b),
+                     "left_top20": sorted(fac.author.reindex(list(t20a - t20b))),
+                     "entered_top20": sorted(fac.author.reindex(list(t20b - t20a))),
+                     "largest_drop": rk.assign(ch=rk[f"rank_{col}"] - rk["rank"]).nlargest(3, "ch")[
+                         ["author", "rank", f"rank_{col}"]].to_dict("records")}
+    save(rk.sort_values("rank").reset_index().round(1), "q28_ranking_without_self_or_heavy_citations.csv")
+
+    # ---- (c) the 40 institutes that cite us most (phase2.py citers)
+    cn = pd.read_csv(os.path.join(DATA, "citation_network.csv"), usecols=["source_id", "target_id"], low_memory=False)
+    corpus = set(g.openalex_id)
+    cn = cn[cn.target_id.isin(corpus)]
+    own_of = g.groupby("openalex_id").institution.apply(lambda x: {NAME_TO_ID[v] for v in x}).to_dict()
+    fac_on = g.groupby(["institution", "openalex_id"]).author.apply(list).to_dict()
+
+    def ind(w):
+        return {short(i["id"]) for a in w["authorships"] for i in a["institutions"] if i.get("country_code") == "IN"}
+    rec = []
+    for s_, t in zip(cn.source_id, cn.target_id):
+        if s_ in wk:
+            s_ind = ind(wk[s_])
+            s_auth_inst = collections.defaultdict(set)
+            for a in wk[s_]["authorships"]:
+                if a["author"].get("id"):
+                    s_auth_inst[short(a["author"]["id"])] |= {short(i["id"]) for i in a["institutions"]}
+            n_ours_s = len({short(x) for x in wk[s_]["referenced_works"]} & ours)
+        elif s_ in cit:
+            s_ind, s_auth_inst, n_ours_s = cit[s_]["insts"], cit[s_]["auth_insts"], cit[s_]["n_ours"]
+        else:
+            continue
+        t_ind = ind(wk[t])
+        for n in own_of[t]:
+            for x in flow_partners(n, t_ind, s_ind) - own_ids:
+                if x in CITER_LABELS:
+                    rec.append((x, s_, n_ours_s, [a for a, ins in s_auth_inst.items() if x in ins],
+                                fac_on.get((id_name[n], t), [])))
+    ed = pd.DataFrame(rec, columns=["partner_id", "source", "n_ours", "authors_at_partner", "faculty"])
+    ref = pd.read_csv(os.path.join(DATA, "analysis", "phase2", "citers_by_institute.csv")).set_index("partner_id")
+    irows = []
+    for x, (name, label) in CITER_LABELS.items():
+        e_ = ed[ed.partner_id == x]
+        assert len(e_) == ref.citations_to_us.get(x), (x, len(e_), ref.citations_to_us.get(x))
+        auth_cnt = collections.Counter(a for lst in e_.authors_at_partner for a in set(lst))
+        fac_cnt = collections.Counter()
+        for lst in e_.faculty:
+            for f in lst:
+                fac_cnt[f] += 1 / len(lst)
+        n = len(e_)
+        ta, tn = top1(auth_cnt)
+        tf, tfn = top1(fac_cnt)
+        aname = next((cit[s_]["author_names"][ta] for s_ in e_.source if s_ in cit and ta in cit[s_]["author_names"]), ta)
+        irows.append({"institute": name, "type": label, "citations_to_us": n,
+                      "from_heavy_citing_papers": (e_.n_ours >= HEAVY).mean(),
+                      "top_author_at_institute": aname, "top_author_share": tn / n,
+                      "top_author_is_former_nit_member": ta in member_since,
+                      "top_cited_faculty": tf, "top_faculty_share": tfn / n})
+    ir = pd.DataFrame(irows).sort_values("citations_to_us", ascending=False)
+    save(ir.round(4), "q28_citing_institutes.csv")
+    mw = {m: stats.mannwhitneyu(ir[ir.type == "private"][m], ir[ir.type == "public"][m]).pvalue
+          for m in ("from_heavy_citing_papers", "top_author_share", "top_faculty_share")}
+    pv = ir.groupby("type")[["from_heavy_citing_papers", "top_author_share", "top_faculty_share"]].median()
+
+    summary = {"indian_citing_papers": len(cp), "indian_citation_links": int(links), "heavy_threshold": HEAVY,
+               "min_citations": MIN_CITES, "flags": FLAGS, "distribution": dist.to_dict("records"),
+               "heavy_outside_papers": len(heavy), "heavy_outside_with_former_nit_member": float(hv.former_nit_member_on_it.mean()),
+               "heavy_outside_years": hv.year.value_counts().sort_index().to_dict(),
+               "heavy_outside_top_venues": venues.to_dict(),
+               "heavy_outside_by_faculty": hv.most_cited_faculty.value_counts().head(6).to_dict(),
+               "top_authors_of_heavy_papers": top_auth.to_dict("records"),
+               "faculty_eligible": int(elig.sum()), "spread": spread.to_dict("records"),
+               "flagged_faculty": fr[fr.n_flags > 0][["author", "institution", "department", "citations", "self_share",
+                                                     "heavy_share", "heavy_with_former_nit_member", "top_outside_author",
+                                                     "top_outside_author_share"]].to_dict("records"),
+               "ranking": rsum, "institutes": {"median_by_type": pv.to_dict(), "private_vs_public_p": mw,
+                                               "most_heavy": ir.nlargest(5, "from_heavy_citing_papers")[
+                                                   ["institute", "type", "from_heavy_citing_papers"]].to_dict("records"),
+                                               "most_one_author": ir.nlargest(5, "top_author_share")[
+                                                   ["institute", "type", "top_author_at_institute", "top_author_share",
+                                                    "top_author_is_former_nit_member"]].to_dict("records")}}
+    save_json(summary, "manipulation_summary.json")
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5.4))
+    ax = axes[0]
+    for m, lab, col in (("self_share", "own self-citations", INK), ("heavy_share", f"papers citing {HEAVY}+ of ours", ORANGE),
+                        ("top_outside_author_share", "the single biggest outside citing author", BLUE)):
+        v = np.sort(100 * e[m].dropna().values)
+        ax.plot(v, 100 * (1 - np.arange(len(v)) / len(v)), color=col, lw=2, label=lab)
+    ax.set_xlabel("share of the faculty member's citations (%)"); ax.set_ylabel("faculty with at least this share (%)")
+    ax.set_yscale("log")
+    ax.set_title(f"Where do faculty citations come from? ({len(e)} faculty with {MIN_CITES}+ citations)",
+                 fontsize=11, loc="left", color=INK)
+    ax.legend(frameon=False, fontsize=9); style_axes(ax)
+    ax = axes[1]
+    yrs = sorted(hv.year.dropna().unique())
+    ax.bar([str(int(y)) for y in yrs], [int((hv.year == y).sum()) for y in yrs], color=MUTED, width=0.6)
+    ax.set_ylabel(f"outside papers citing {HEAVY}+ of our papers")
+    ax.set_title("Heavy citing papers by year", fontsize=11, loc="left", color=INK)
+    style_axes(ax)
+    savefig(fig, "q28_citation_checks.png")
+    print(dist.round(3).to_string()); print(spread.round(3).to_string()); print(top_auth.to_string())
+    print(ir.round(3).head(15).to_string())
+    print(json.dumps({k: v for k, v in summary.items() if k in ("flagged_faculty", "ranking", "institutes",
+                                                                "heavy_outside_by_faculty", "heavy_outside_top_venues",
+                                                                "heavy_outside_with_former_nit_member")}, indent=1, default=str))
+
+
 PARTS = {"collab": collab_part, "network": network_part, "people": people_part, "venues": venues_part,
-         "richer": richer_part, "robust": robust_part}
+         "richer": richer_part, "robust": robust_part, "inward": inward_part, "manipulation": manipulation_part}
 
 
 def main():

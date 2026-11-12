@@ -1,0 +1,439 @@
+faculty_id,author,institution,rank,rank_cites_no_self,rank_cites_no_heavy
+S0351,Ramesh M R,NIT Surathkal,1.0,1.0,1.0
+T0793,S Suresh,NIT Trichy,2.0,2.0,2.0
+S0100,Denthaje Krishna Bhat,NIT Surathkal,3.0,3.0,3.0
+S0105,Bibhuti Bhusan Das,NIT Surathkal,4.0,4.0,4.0
+S0097,Arun Mohan Isloor,NIT Surathkal,5.0,5.0,5.0
+T0814,A Chandra Bose,NIT Trichy,6.0,6.0,6.0
+T0495,P Sivashanmugam,NIT Trichy,7.0,7.0,7.0
+S0348,Jeyaraj P,NIT Surathkal,8.0,9.0,8.0
+T0511,R Karvembu,NIT Trichy,9.0,8.0,9.0
+T0482,G Arthanareeswaran,NIT Trichy,10.0,11.0,10.0
+T0549,S Saravanan,NIT Trichy,10.0,10.0,10.0
+S0098,Badekai Ramachandra Bhat,NIT Surathkal,12.0,12.0,12.0
+T0512,S Anandan,NIT Trichy,13.0,13.0,13.0
+S0349,Kumar G N,NIT Surathkal,14.0,14.0,14.0
+T0519,Aneesh Mathew,NIT Trichy,15.0,18.0,15.0
+S0023,Jeny Rajan,NIT Surathkal,16.0,16.0,16.0
+T0493,N Samsudeen,NIT Trichy,17.0,15.0,17.0
+T0786,N Siva Shanmugam,NIT Trichy,18.0,16.0,18.0
+S0163,Shyam Lal,NIT Surathkal,19.0,19.0,19.0
+S0356,Sharnappa Joladarashi,NIT Surathkal,20.0,20.0,20.0
+S0360,Subhaschandra Kattimani,NIT Surathkal,21.0,21.0,21.0
+T0602,P Palanisamy,NIT Trichy,22.0,22.0,22.0
+T0856,S Vinodh,NIT Trichy,23.0,23.0,23.0
+T0838,D Lenin Singaravelu,NIT Trichy,24.0,24.0,24.0
+S0046,Alwyn Roshan Pais,NIT Surathkal,25.0,25.0,25.0
+S0392,Nagaraja H S,NIT Surathkal,26.0,26.0,26.0
+S0207,Debashisha Jena,NIT Surathkal,27.0,28.0,28.0
+T0502,S Velmathi,NIT Trichy,28.0,27.0,27.0
+S0350,Narendranath S,NIT Surathkal,29.0,29.0,29.0
+T0611,Varun P Gopi,NIT Trichy,30.0,30.0,30.0
+S0252,Udaya Bhat K,NIT Surathkal,31.0,32.0,31.0
+S0359,Srikanth Bontha,NIT Surathkal,32.0,31.0,32.0
+S0092,Saikat Dutta,NIT Surathkal,33.0,40.0,33.0
+S0355,Satyabodh M Kulkarni,NIT Surathkal,34.0,36.0,34.0
+S0066,Chinta Sankar Rao,NIT Surathkal,35.0,34.0,35.0
+S0050,Shasidhar G Koolagudi,NIT Surathkal,36.0,33.0,36.0
+T0724,Siva Prasad Katakam,NIT Trichy,37.0,35.0,37.0
+T0849,P Sathiya,NIT Trichy,38.0,37.0,38.0
+S0196,Tukaram Moger,NIT Surathkal,39.0,38.0,40.0
+T0550,S T Ramesh,NIT Trichy,39.0,39.0,39.0
+S0083,Raj Mohan B,NIT Surathkal,41.0,42.0,41.0
+S0226,Sowmya Kamath S,NIT Surathkal,42.0,44.0,42.0
+T0543,R Gandhimathi,NIT Trichy,43.0,41.0,43.0
+S0093,Sib Sankar Mal,NIT Surathkal,44.0,47.0,44.0
+S0232,Ram Mohana Reddy Guddeti,NIT Surathkal,45.0,43.0,45.0
+T0501,M Matheswaran,NIT Trichy,46.0,45.0,46.0
+S0049,P Santhi Thilagam,NIT Surathkal,47.0,46.0,47.0
+S0231,Jaidhar C D,NIT Surathkal,48.0,48.0,48.0
+T0504,A Sreekanth,NIT Trichy,49.0,50.0,49.0
+T0711,N Ramesh Babu,NIT Trichy,50.0,52.0,50.0
+T0668,M Premalatha,NIT Trichy,51.0,49.0,51.0
+T0815,B Karthikeyan,NIT Trichy,52.0,51.0,52.0
+T0498,T K Radhakrishnan,NIT Trichy,53.0,53.0,53.0
+T0632,G Saravana Ilango,NIT Trichy,54.0,54.0,54.0
+T0790,R B Anand,NIT Trichy,55.0,55.0,55.0
+S0384,Kartick Tarafder,NIT Surathkal,56.0,56.0,56.0
+S0315,Ajay Kumar Yadav,NIT Surathkal,57.0,59.0,57.0
+S0346,Gangadharan K V,NIT Surathkal,58.0,58.0,58.0
+T0652,Sishaj P Simon,NIT Trichy,59.0,57.0,59.0
+S0347,Hemantha Kumar,NIT Surathkal,60.0,62.0,60.0
+T0480,A Arunagiri,NIT Trichy,61.0,60.0,61.0
+T0861,V Senthilkumar,NIT Trichy,62.0,61.0,62.0
+T0503,L Cindrella,NIT Trichy,63.0,63.0,63.0
+S0338,Mervin Arunaraj Herbert,NIT Surathkal,64.0,66.0,64.0
+T0689,G Uma,NIT Trichy,65.0,64.0,65.0
+T0637,M Jaya Bharata Reddy,NIT Trichy,66.0,65.0,66.0
+S0206,Dattatraya Narayan Gaonkar,NIT Surathkal,67.0,67.0,67.0
+S0340,N Gnanasekaran,NIT Surathkal,68.0,74.0,68.0
+S0047,Annappa,NIT Surathkal,69.0,69.0,69.0
+S0155,Pathipati Srihari,NIT Surathkal,70.0,87.0,70.0
+T0865,M Durai Selvam,NIT Trichy,71.0,68.0,71.0
+S0382,Ajith Kulangara Madam,NIT Surathkal,72.0,72.0,73.0
+S0249,Anandhan Srinivasan,NIT Surathkal,73.0,73.0,72.0
+T0578,U Srinivasulu Reddy,NIT Trichy,74.0,70.0,74.0
+S0334,Vasudeva Madav,NIT Surathkal,75.0,71.0,75.0
+S0358,Shrikantha S Rao,NIT Surathkal,76.0,79.0,76.0
+T0829,Annapureddy Venkateshwarlu,NIT Trichy,77.0,81.0,77.0
+S0398,Debabrata Karmakar,NIT Surathkal,78.0,90.0,78.0
+T0692,M Umapathy,NIT Trichy,79.0,76.0,79.0
+S0099,Darshak R Trivedi,NIT Surathkal,80.0,78.0,80.0
+S0132,Devatha C P,NIT Surathkal,81.0,75.0,81.0
+S0129,Arun Kumar Thalla,NIT Surathkal,82.0,77.0,82.0
+T0830,D Sasti Kumar,NIT Trichy,83.0,82.0,83.0
+S0405,Amba Shetty,NIT Surathkal,84.0,84.0,84.0
+T0803,V Arul Mozhi Selvan,NIT Trichy,85.0,83.0,85.0
+T0580,S Sangeetha,NIT Trichy,86.0,80.0,86.0
+T0570,G R Gangadharan,NIT Trichy,87.0,85.0,87.0
+S0223,Nagamma Patil,NIT Surathkal,88.0,86.0,88.0
+T0818,M Ashok,NIT Trichy,89.0,88.0,89.0
+S0245,Shashi Bhushan Arya,NIT Surathkal,90.0,91.0,90.0
+T0572,P J A Alphonse,NIT Trichy,91.0,89.0,90.0
+S0399,Pruthviraj U,NIT Surathkal,92.0,94.0,92.0
+T0850,P Senthil,NIT Trichy,93.0,91.0,93.0
+T0474,M Brindha,NIT Trichy,94.0,93.0,94.0
+T0592,B Naresh Kumar Reddy,NIT Trichy,95.0,98.0,95.0
+S0095,Adka Nityananda Shetty,NIT Surathkal,96.0,96.0,96.0
+T0567,B Janet,NIT Trichy,97.0,95.0,97.0
+S0138,Subhash C Yaragal,NIT Surathkal,98.0,97.0,98.0
+S0345,G C Mohan Kumar,NIT Surathkal,99.0,101.0,99.0
+S0321,Arumuga Perumal D,NIT Surathkal,100.0,99.0,100.0
+T0783,K R Balasubramanian,NIT Trichy,101.0,104.0,101.0
+T0524,Deendayal Rathod,NIT Trichy,102.0,108.0,102.0
+S0048,Chandrasekaran K,NIT Surathkal,103.0,103.0,103.0
+S0212,Udaykumar R Yaragatti,NIT Surathkal,103.0,100.0,104.0
+T0486,K M Meera Sheriffa Begum,NIT Trichy,105.0,106.0,105.0
+T0717,S P Kumaresh Babu,NIT Trichy,106.0,102.0,106.0
+T0707,B Ravisankar,NIT Trichy,107.0,105.0,107.0
+S0320,A S S Balan,NIT Surathkal,108.0,107.0,108.0
+S0343,Anish S,NIT Surathkal,109.0,109.0,109.0
+S0122,Sreevalsa Kolathayar,NIT Surathkal,110.0,115.0,110.0
+T0795,S P Sivapirakasam,NIT Trichy,111.0,116.0,111.0
+T0816,J Hemalatha,NIT Trichy,112.0,110.0,112.0
+S0361,Veershetty Gumtapure,NIT Surathkal,113.0,111.0,113.0
+T0530,K Muthukkumaran,NIT Trichy,114.0,113.0,114.0
+S0188,Kalpana R,NIT Surathkal,115.0,112.0,115.0
+T0842,K Panneerselvam,NIT Trichy,116.0,114.0,116.0
+S0391,N K Udayashankar,NIT Surathkal,117.0,118.0,117.0
+T0471,A Santhana Vijayan,NIT Trichy,118.0,122.0,118.0
+S0101,Udaya Kumar Dalimba,NIT Surathkal,119.0,117.0,119.0
+S0410,Mahesha A,NIT Surathkal,120.0,119.0,120.0
+T0819,M C Santhosh Kumar,NIT Trichy,121.0,120.0,121.0
+T0693,N Sivakumaran,NIT Trichy,122.0,124.0,122.0
+S0240,Mohammad Rizwanur Rahman,NIT Surathkal,123.0,125.0,123.0
+S0078,I Regupathi,NIT Surathkal,124.0,127.0,124.0
+T0809,V Mariappan,NIT Trichy,125.0,123.0,126.0
+S0413,Ramesh H,NIT Surathkal,126.0,121.0,125.0
+T0714,S Kumaran,NIT Trichy,127.0,133.0,127.0
+T0643,P Srinivasa Rao Nayak,NIT Trichy,128.0,126.0,128.0
+T0798,Sreejith Mohan,NIT Trichy,129.0,131.0,129.0
+T0625,S Deivalakshmi,NIT Trichy,130.0,128.0,130.0
+T0599,Karthikeyan S S,NIT Trichy,131.0,135.0,131.0
+S0151,Krishnamoorthy K,NIT Surathkal,132.0,129.0,132.0
+S0082,Prasanna Belur D,NIT Surathkal,133.0,132.0,133.0
+T0545,R Senthil Kumar,NIT Trichy,134.0,130.0,134.0
+S0368,Mangalpady Aruna,NIT Surathkal,135.0,134.0,135.0
+S0156,Prabu K,NIT Surathkal,136.0,136.0,136.0
+S0110,Babloo Chaudhary,NIT Surathkal,137.0,147.0,137.0
+T0821,N V Giridharan,NIT Trichy,138.0,138.0,138.0
+S0407,Dwarakish G S,NIT Surathkal,139.0,137.0,139.0
+S0032,Sourav Kanti Addya,NIT Surathkal,140.0,153.0,140.0
+S0077,Hari Prasad Dasari,NIT Surathkal,141.0,158.0,141.0
+T0831,N Gopala Krishnan,NIT Trichy,142.0,142.0,142.0
+T0825,S Manivannan,NIT Trichy,143.0,146.0,143.0
+S0084,Vidya Shetty K,NIT Surathkal,144.0,140.0,144.0
+T0715,S Muthukumaran,NIT Trichy,145.0,139.0,145.0
+S0243,Saumen Mandal,NIT Surathkal,146.0,151.0,146.0
+T0575,S Nickolas,NIT Trichy,147.0,141.0,147.0
+T0479,P Kalaichelvi,NIT Trichy,148.0,143.0,148.0
+S0215,Yellasiri Suresh,NIT Surathkal,149.0,149.0,149.0
+S0147,Aparna P,NIT Surathkal,150.0,144.0,150.0
+T0727,S Jerome,NIT Trichy,151.0,145.0,151.0
+S0329,Poornesh Kumar Koorata,NIT Surathkal,152.0,156.0,153.0
+S0354,Sathyabhama A,NIT Surathkal,153.0,150.0,152.0
+T0618,P Muthuchidambaranathan,NIT Trichy,154.0,154.0,154.0
+T0770,K Murugesan,NIT Trichy,155.0,148.0,155.0
+T0841,J Jerald,NIT Trichy,156.0,152.0,156.0
+S0081,P E Jagadeeshbabu,NIT Surathkal,157.0,155.0,157.0
+T0595,D Sriram Kumar,NIT Trichy,158.0,162.0,158.0
+S0096,Ampar Chitharanjan Hegde,NIT Surathkal,159.0,163.0,159.0
+T0638,M P Selvan,NIT Trichy,160.0,160.0,160.0
+T0669,Ruben Sudhakar D,NIT Trichy,161.0,157.0,161.0
+T0635,K Sundareswaran,NIT Trichy,162.0,159.0,162.0
+S0367,Mandela Govinda Raj,NIT Surathkal,163.0,175.0,163.0
+T0573,R Eswari,NIT Trichy,164.0,161.0,164.0
+S0333,Sudhakar C Jambagi,NIT Surathkal,164.0,169.0,165.0
+S0022,Biswajit R Bhowmik,NIT Surathkal,166.0,220.0,166.0
+S0251,K Narayan Prabhu,NIT Surathkal,167.0,178.0,167.0
+S0377,Harsha Vardhan,NIT Surathkal,168.0,182.0,168.0
+S0079,Keyur Raval,NIT Surathkal,169.0,170.0,169.0
+T0837,C Sathiya Narayanan,NIT Trichy,170.0,165.0,170.0
+S0298,Jidesh P,NIT Surathkal,171.0,174.0,171.0
+S0216,Anand Kumar M,NIT Surathkal,172.0,164.0,172.0
+T0553,V Sunitha,NIT Trichy,173.0,171.0,173.0
+S0218,Biju R Mohan,NIT Surathkal,174.0,166.0,174.0
+S0131,Basavaraju Manu,NIT Surathkal,175.0,172.0,176.0
+S0135,Mattur C Narasimhan,NIT Surathkal,176.0,167.0,175.0
+S0073,Vaishakh Nair,NIT Surathkal,177.0,173.0,177.0
+S0352,Ravikiran Kadoli,NIT Surathkal,178.0,168.0,178.0
+S0193,Prajof P,NIT Surathkal,179.0,183.0,179.0
+S0198,Yashwant Kashyap,NIT Surathkal,180.0,176.0,180.0
+S0306,Santhosh George,NIT Surathkal,181.0,204.0,181.0
+S0118,Rajasekaran C,NIT Surathkal,182.0,176.0,182.0
+S0390,M Nagarajan Satyanarayan,NIT Surathkal,183.0,180.0,183.0
+S0146,A Venkata Narasimhadhan,NIT Surathkal,184.0,179.0,184.0
+T0775,V Shanthi,NIT Trichy,185.0,188.0,185.0
+T0491,Muthukumar K,NIT Trichy,186.0,181.0,186.0
+T0615,G Lakshmi Narayanan,NIT Trichy,187.0,194.0,187.0
+T0574,S Domnic,NIT Trichy,188.0,184.0,188.0
+T0860,V Anandakrishnan,NIT Trichy,189.0,186.0,189.0
+T0773,V Lakshmana Gomathi Nayagam,NIT Trichy,190.0,189.0,190.0
+S0115,Palanisamy T,NIT Surathkal,191.0,193.0,191.0
+S0342,Prasad Krishna,NIT Surathkal,192.0,185.0,192.0
+T0548,S Marisamynathan,NIT Trichy,193.0,187.0,193.0
+T0463,S Selvakumar,NIT Trichy,194.0,190.0,194.0
+S0330,Ranjeet Kumar Sahu,NIT Surathkal,195.0,192.0,195.0
+T0606,R Pandeeswari,NIT Trichy,196.0,191.0,196.0
+T0806,Harish Kruthiventi Ss,NIT Trichy,197.0,202.0,197.0
+S0385,Partha Pratim Das,NIT Surathkal,198.0,203.0,198.0
+T0499,T Sivasankar,NIT Trichy,199.0,195.0,199.0
+T0863,Vimal K E K,NIT Trichy,200.0,196.0,200.0
+T0852,Prakash Kumar,NIT Trichy,201.0,197.0,201.0
+T0508,Ganesh Chandra Nandi,NIT Trichy,202.0,212.0,202.0
+T0843,Kumanan Somasundaram,NIT Trichy,203.0,198.0,203.0
+T0630,Ankur Singh Rana,NIT Trichy,204.0,199.0,204.0
+T0649,S Senthil Kumar,NIT Trichy,205.0,200.0,205.0
+T0694,P A Karthick,NIT Trichy,206.0,201.0,206.0
+T0774,V Ravichandran,NIT Trichy,207.0,209.0,207.0
+S0322,Arun Kumar Shettigar,NIT Surathkal,208.0,208.0,208.0
+S0145,Sunil B Malegole,NIT Surathkal,209.0,205.0,209.0
+S0230,Ananthanarayana V S,NIT Surathkal,210.0,210.0,210.0
+S0190,Md Waseem Ahmad,NIT Surathkal,211.0,206.0,211.0
+S0217,Bhawana Rudra,NIT Surathkal,212.0,215.0,212.0
+S0244,Selvakumar Murugesan,NIT Surathkal,213.0,207.0,213.0
+S0213,Vinatha U,NIT Surathkal,214.0,217.0,214.0
+S0353,S M Murigendrappa,NIT Surathkal,215.0,226.0,215.0
+S0176,U Shripathi Acharya,NIT Surathkal,216.0,223.0,216.0
+T0800,T Ramesh,NIT Trichy,217.0,218.0,217.0
+S0357,Shivananda Nayaka H,NIT Surathkal,218.0,222.0,218.0
+T0461,R Mohan,NIT Trichy,219.0,211.0,219.0
+S0164,Sushil Kumar Pandey,NIT Surathkal,220.0,216.0,220.0
+S0411,Manu,NIT Surathkal,221.0,213.0,221.0
+T0690,K Dhanalakshmi,NIT Trichy,222.0,219.0,222.0
+S0068,Jagannathan T K,NIT Surathkal,223.0,214.0,223.0
+T0531,Kamal Krishna Bera,NIT Trichy,224.0,239.0,224.0
+T0464,Sai Krishna Mothku,NIT Trichy,225.0,225.0,225.0
+T0576,S R Balasundaram,NIT Trichy,226.0,221.0,226.0
+S0158,Raghavendra B S,NIT Surathkal,227.0,230.0,227.0
+S0225,Shrutilipi Bhattacharjee,NIT Surathkal,228.0,240.0,228.0
+S0090,Debashree Chakraborty,NIT Surathkal,229.0,233.0,229.0
+S0205,B Venkatesa Perumal,NIT Surathkal,230.0,227.0,230.0
+T0594,B Malarkodi,NIT Trichy,231.0,224.0,231.0
+T0472,Kunwar Singh,NIT Trichy,232.0,229.0,232.0
+S0237,B Rajasekaran,NIT Surathkal,233.0,228.0,233.0
+T0823,R Nagalakshmi,NIT Trichy,234.0,246.0,234.0
+T0688,D Ezhilarasi,NIT Trichy,235.0,231.0,235.0
+T0691,K Srinivasan,NIT Trichy,236.0,244.0,236.0
+T0525,G Swaminathan,NIT Trichy,237.0,236.0,237.0
+T0462,S Mary Saira Bhanu,NIT Trichy,238.0,242.0,238.0
+S0386,V Sreenath,NIT Surathkal,238.0,238.0,238.0
+S0080,M B Saidutta,NIT Surathkal,240.0,234.0,240.0
+S0137,Sitaram Nayak,NIT Surathkal,241.0,249.0,241.0
+T0455,E Sivasankar,NIT Trichy,241.0,232.0,241.0
+T0605,R Malmathanraj,NIT Trichy,243.0,235.0,243.0
+S0014,Beerappar Chandavarkar,NIT Surathkal,244.0,237.0,244.0
+T0477,Rama Subramanian N,NIT Trichy,245.0,241.0,245.0
+T0639,M Venkata Kirthiga,NIT Trichy,246.0,245.0,246.0
+S0139,Suresha S N,NIT Surathkal,247.0,243.0,247.0
+T0604,R K Jeyachitra,NIT Trichy,248.0,252.0,248.0
+S0331,Ranjith M,NIT Surathkal,249.0,255.0,249.0
+T0822,R Justin Joseyphus,NIT Trichy,250.0,258.0,250.0
+T0752,Jitraj Saha,NIT Trichy,251.0,265.0,251.0
+S0319,Somasekhara Rao Todeti,NIT Surathkal,252.0,247.0,252.0
+S0401,Subrahmanya K,NIT Surathkal,252.0,253.0,253.0
+T0647,S Moorthi,NIT Trichy,254.0,248.0,254.0
+S0327,Navin Karanth P,NIT Surathkal,255.0,251.0,255.0
+T0847,P Asokan,NIT Trichy,256.0,250.0,256.0
+T0629,Aneesa Farhan M A,NIT Trichy,257.0,261.0,257.0
+T0557,Samson Mathew M,NIT Trichy,258.0,254.0,258.0
+T0447,R Leela Velusamy,NIT Trichy,259.0,256.0,259.0
+T0776,Veerappan,NIT Trichy,260.0,270.0,260.0
+S0152,Mandeep Singh,NIT Surathkal,261.0,259.0,261.0
+T0636,Karthik Thirumala,NIT Trichy,262.0,257.0,262.0
+S0332,Saurabh Chandraker,NIT Surathkal,263.0,260.0,263.0
+T0645,S Arul Daniel,NIT Trichy,264.0,262.0,264.0
+S0117,Prashanth M H,NIT Surathkal,265.0,266.0,265.0
+S0344,Arun M,NIT Surathkal,266.0,263.0,266.0
+S0133,Gangadhar Mahesh,NIT Surathkal,267.0,269.0,267.0
+S0210,Panduranga Vittal K,NIT Surathkal,268.0,264.0,268.0
+T0855,S Prasanna Venkatesan,NIT Trichy,269.0,267.0,269.0
+T0529,K Baskar,NIT Trichy,270.0,268.0,270.0
+S0027,Mohit P Tahiliani,NIT Surathkal,271.0,275.0,271.0
+S0408,Kiran G Shirlal,NIT Surathkal,272.0,277.0,272.0
+T0648,S Sudha,NIT Trichy,273.0,279.0,273.0
+S0406,Dodamani B M,NIT Surathkal,274.0,274.0,274.0
+S0242,Ravishankar K S,NIT Surathkal,275.0,271.0,275.0
+T0642,P Raja,NIT Trichy,276.0,272.0,276.0
+T0468,Rajeswari Sridhar,NIT Trichy,277.0,276.0,277.0
+S0130,B R Jayalekshmi,NIT Surathkal,278.0,285.0,278.0
+T0516,V M Biju,NIT Trichy,279.0,273.0,279.0
+S0194,Ravi Raushan,NIT Surathkal,280.0,283.0,280.0
+T0490,M Perumalsamy,NIT Trichy,281.0,278.0,281.0
+S0220,Geetha V,NIT Surathkal,282.0,286.0,282.0
+T0597,G Thavasi Raja,NIT Trichy,283.0,280.0,283.0
+S0174,Sumam David S,NIT Surathkal,284.0,289.0,284.0
+S0030,Saumya Hegde,NIT Surathkal,285.0,280.0,285.0
+S0328,P S Suvin,NIT Surathkal,286.0,282.0,286.0
+T0789,R Prakash,NIT Trichy,287.0,290.0,287.0
+T0848,P Parthiban,NIT Trichy,288.0,284.0,288.0
+S0282,Chandhini G,NIT Surathkal,289.0,295.0,289.0
+T0577,Selvakumar K,NIT Trichy,290.0,287.0,290.0
+S0183,A Karthikeyan,NIT Surathkal,291.0,288.0,291.0
+T0600,M Bhaskar,NIT Trichy,292.0,291.0,292.0
+S0119,Raviraj H M,NIT Surathkal,293.0,293.0,293.0
+S0191,Nagendrappa H,NIT Surathkal,294.0,292.0,295.0
+T0641,N Kumaresan,NIT Trichy,294.0,298.0,294.0
+T0705,A Muthuchamy,NIT Trichy,296.0,294.0,296.0
+S0107,Vinoth S,NIT Surathkal,297.0,296.0,297.0
+T0794,S Venkatachalapathy,NIT Trichy,298.0,300.0,298.0
+S0400,Shwetha H R,NIT Surathkal,299.0,297.0,299.0
+T0634,Josephine R L,NIT Trichy,300.0,299.0,300.0
+T0451,C Mala,NIT Trichy,301.0,301.0,301.0
+S0186,Dharavath Kishan,NIT Surathkal,302.0,302.0,302.0
+T0698,Shiraz Sohail,NIT Trichy,303.0,310.0,303.0
+S0300,A Kandasamy,NIT Surathkal,304.0,303.0,304.0
+T0427,P Gopalakrishnan,NIT Trichy,305.0,309.0,305.0
+S0192,P Parthiban,NIT Surathkal,306.0,306.0,306.0
+S0287,Kedarnath Senapathi,NIT Surathkal,307.0,307.0,307.0
+T0476,S Jaya Nirmala,NIT Trichy,308.0,304.0,308.0
+T0487,K N Sheeba,NIT Trichy,309.0,305.0,309.0
+T0663,V Sankara Narayanan,NIT Trichy,310.0,308.0,310.0
+T0513,Sarthak Mandal,NIT Trichy,311.0,311.0,311.0
+S0222,Kiran M,NIT Surathkal,312.0,312.0,312.0
+T0450,B Shameedha Begum,NIT Trichy,313.0,313.0,313.0
+T0687,C Geetha,NIT Trichy,314.0,317.0,314.0
+S0241,Preetham Kumar G V,NIT Surathkal,315.0,322.0,315.0
+T0621,B Rebekka,NIT Trichy,316.0,315.0,316.0
+S0076,Hari Mahalingam,NIT Surathkal,317.0,314.0,317.0
+S0149,Deepu Vijayasenan,NIT Surathkal,318.0,316.0,318.0
+S0021,Basavaraj Talawar,NIT Surathkal,319.0,324.0,319.0
+T0653,Suman M,NIT Trichy,320.0,323.0,320.0
+S0302,Madhusudhan R,NIT Surathkal,321.0,318.0,321.0
+T0670,Damodhar Siva Krishna Rao K,NIT Trichy,322.0,319.0,322.0
+T0457,Kamalika Bhattacharjee,NIT Trichy,323.0,326.0,323.0
+T0718,S Raman Sankaranarayanan,NIT Trichy,324.0,321.0,324.0
+T0695,R Periyasamy,NIT Trichy,325.0,320.0,325.0
+S0209,Manjunatha Sharma K,NIT Surathkal,326.0,330.0,326.0
+S0089,Beneesh P B,NIT Surathkal,327.0,325.0,327.0
+S0375,Sandi Kumar Reddy,NIT Surathkal,328.0,334.0,328.0
+T0473,B Nithya,NIT Trichy,329.0,332.0,329.0
+S0134,Katta Venkataramana,NIT Surathkal,330.0,328.0,330.0
+S0170,Ashvini Chaturvedi,NIT Surathkal,331.0,327.0,331.0
+S0208,Gururaj S Punekar,NIT Surathkal,332.0,329.0,332.0
+T0489,M Arivazhagan,NIT Trichy,333.0,331.0,333.0
+S0109,Anupama Surenjan,NIT Surathkal,334.0,335.0,334.0
+T0626,V Sudha,NIT Trichy,335.0,337.0,335.0
+T0844,Mallikarjuna,NIT Trichy,336.0,333.0,336.0
+S0371,Bijay Mihir Kunar,NIT Surathkal,337.0,338.0,338.0
+T0571,Michael Arock,NIT Trichy,338.0,336.0,337.0
+T0628,S Mageshwari,NIT Trichy,339.0,341.0,339.0
+T0720,V Karthik,NIT Trichy,340.0,340.0,340.0
+T0703,Rama Kalyan Ayyagari,NIT Trichy,341.0,339.0,341.0
+T0765,Vamsinadh Thota,NIT Trichy,342.0,343.0,342.0
+T0539,Nisha Radhakrishnan,NIT Trichy,343.0,342.0,343.0
+T0845,Matruprasad Rout,NIT Trichy,344.0,344.0,344.0
+T0858,T Jagadesh,NIT Trichy,345.0,345.0,345.0
+S0211,Shubhanga K N,NIT Surathkal,346.0,353.0,346.0
+T0515,Sunandan Sarkar,NIT Trichy,347.0,350.0,347.0
+T0614,Bukke Chandrababu Naik,NIT Trichy,348.0,346.0,348.0
+T0650,Sateesh Kumar Kuncham,NIT Trichy,349.0,352.0,349.0
+T0596,E S Gopi,NIT Trichy,350.0,348.0,350.0
+T0651,Shelas Sathyan,NIT Trichy,351.0,366.0,351.0
+T0483,J Sarat Chandra Babu,NIT Trichy,352.0,359.0,352.0
+S0254,Subray Ramachandra Hegde,NIT Surathkal,353.0,347.0,353.0
+S0402,Vadivuchezhian Kaliveeran,NIT Surathkal,354.0,358.0,354.0
+T0704,Prince Gideon Kubendran Amos,NIT Trichy,355.0,363.0,355.0
+S0370,Anup Kumar Tripathi,NIT Surathkal,356.0,349.0,356.0
+T0766,R Tamil Selvi,NIT Trichy,357.0,351.0,357.0
+T0422,D Kannamma,NIT Trichy,358.0,355.0,358.0
+T0624,R Thilagavathy,NIT Trichy,359.0,354.0,359.0
+S0246,Sumanth Govindarajan,NIT Surathkal,360.0,357.0,360.0
+T0853,R Jeyapaul,NIT Trichy,361.0,356.0,361.0
+S0024,Mahendra Pratap Singh,NIT Surathkal,362.0,360.0,362.0
+T0820,N Baskaran,NIT Trichy,363.0,361.0,363.0
+T0867,Satheeshkumar V,NIT Trichy,364.0,362.0,364.0
+S0414,Varija K,NIT Surathkal,365.0,366.0,365.0
+S0412,Nasar T,NIT Surathkal,366.0,364.0,366.0
+T0544,R Manjula,NIT Trichy,366.0,368.0,366.0
+T0590,Vinay Raj,NIT Trichy,368.0,369.0,368.0
+T0708,D Nagarajan,NIT Trichy,369.0,365.0,369.0
+S0305,Pushparaj Shetty D,NIT Surathkal,370.0,373.0,370.0
+T0808,Nanda Naik Korra,NIT Trichy,371.0,377.0,371.0
+S0116,Pavan G S,NIT Surathkal,372.0,376.0,372.0
+T0500,Virivinti Nagajyothi,NIT Trichy,373.0,382.0,373.0
+T0824,R Sankaranarayanan,NIT Trichy,374.0,371.0,374.0
+T0467,Usha Kiruthika S,NIT Trichy,375.0,370.0,375.0
+S0219,Dinesh Naik,NIT Surathkal,376.0,372.0,376.0
+S0184,Arun Dominic,NIT Surathkal,377.0,375.0,377.0
+T0662,Pinkymol Kp,NIT Trichy,377.0,374.0,377.0
+S0185,B Dastagiri Reddy,NIT Surathkal,379.0,380.0,379.0
+T0509,Jothi Lakshmi Nallasivam,NIT Trichy,380.0,378.0,380.0
+T0547,S Jayalekshmi,NIT Trichy,381.0,379.0,381.0
+S0378,Karra Ram Chandar,NIT Surathkal,382.0,381.0,382.0
+T0488,Kartikeya Shukla,NIT Trichy,383.0,383.0,383.0
+S0175,T Laxminidhi,NIT Surathkal,384.0,384.0,384.0
+S0108,A S Balu,NIT Surathkal,385.0,385.0,385.0
+S0172,Neelawar Shekar Vittal Shet,NIT Surathkal,386.0,386.0,386.0
+S0168,M Shankaranarayana Bhat,NIT Surathkal,387.0,387.0,387.0
+S0160,Rekha S,NIT Surathkal,388.0,388.0,388.0
+S0091,Lakshmi Vellanki,NIT Surathkal,389.0,389.0,389.0
+S0113,Lohitkumar Nainegali,NIT Surathkal,390.0,392.0,390.0
+S0221,Janani T,NIT Surathkal,391.0,393.0,391.0
+S0318,Parthasarathy P,NIT Surathkal,392.0,390.0,392.0
+S0304,P Sam Johnson,NIT Surathkal,393.0,394.0,393.0
+S0136,S Shrihari,NIT Surathkal,394.0,391.0,394.0
+T0686,B Vasuki,NIT Trichy,395.0,396.0,395.0
+S0393,Shajahan Thamara Kunnathu,NIT Surathkal,396.0,403.0,396.0
+T0517,Velmurugan Gunasekaran,NIT Trichy,396.0,398.0,396.0
+S0409,Lakshman Nandagiri,NIT Surathkal,398.0,395.0,398.0
+S0159,Rathnamala Rao,NIT Surathkal,399.0,397.0,399.0
+S0123,Sridhar G,NIT Surathkal,400.0,399.0,400.0
+T0666,Jaganathan Vm,NIT Trichy,401.0,400.0,401.0
+S0250,Jagannath Nayak,NIT Surathkal,402.0,402.0,402.0
+T0536,Makendran C,NIT Trichy,403.0,404.0,403.0
+T0603,Parthasarathy R,NIT Trichy,404.0,401.0,404.0
+T0434,Amalan Sigmund Kaushik,NIT Trichy,405.0,407.0,405.0
+T0425,K Thirumaran,NIT Trichy,406.0,405.0,406.0
+S0157,Prashantha Kumar H,NIT Surathkal,407.0,406.0,407.0
+T0623,R K Kavitha,NIT Trichy,408.0,408.0,408.0
+T0747,Abhijit Das,NIT Trichy,409.0,411.0,409.0
+S0031,Shridhar Sanshi,NIT Surathkal,410.0,409.0,410.0
+T0805,Ashok Kumar Nallathambi,NIT Trichy,411.0,410.0,411.0
+T0622,N Gunavathi,NIT Trichy,412.0,412.0,412.0
+T0646,S Kayalvizhi,NIT Trichy,413.0,414.0,413.0
+S0114,Mithun Mohan,NIT Surathkal,414.0,413.0,414.0
+S0154,Nikhil K S,NIT Surathkal,415.0,417.0,415.0
+S0111,J Vijaya Vengadesh Kumar,NIT Surathkal,416.0,415.0,416.0
+T0582,Balaji Banothu,NIT Trichy,417.0,418.0,417.0
+T0771,P Saikrishnan,NIT Trichy,418.0,416.0,418.0
+T0423,G Subbaiyan,NIT Trichy,419.0,420.0,419.0
+S0308,V Murugan,NIT Surathkal,420.0,422.0,420.0
+T0526,Greegar George,NIT Trichy,421.0,419.0,421.0
+T0609,Srinivasulu Jogi,NIT Trichy,422.0,421.0,422.0
+S0065,B Ashraf Ali,NIT Surathkal,423.0,423.0,423.0
+T0598,Hemant Kumar,NIT Trichy,424.0,424.0,424.0
+T0665,Aditya Kumar,NIT Trichy,425.0,425.0,425.0
+S0373,Akhil Avchar,NIT Surathkal,426.0,427.0,426.0
+T0612,Avik Hati,NIT Trichy,427.0,426.0,427.0
+T0583,Bopche Ghanshyam Sitkura,NIT Trichy,428.0,428.0,428.0
+S0224,Purushothama B R,NIT Surathkal,429.0,429.0,429.0
+S0195,Shashidhara Mecha Kotian,NIT Surathkal,430.0,437.0,430.0
+T0523,Darshana O,NIT Trichy,431.0,430.0,431.0
+S0173,Ramesh Kini M,NIT Surathkal,432.0,431.0,432.0
+S0292,Srinivasa Rao Kola,NIT Surathkal,433.0,433.0,433.0
+S0325,Mervin Joe Thomas,NIT Surathkal,434.0,434.0,434.0
+T0697,S Narayanan,NIT Trichy,435.0,432.0,435.0
+T0610,Sudharsan P,NIT Trichy,436.0,435.0,436.0
+S0301,B R Shankar,NIT Surathkal,437.0,436.0,437.0
+S0324,Khyati Verma,NIT Surathkal,438.0,438.0,438.0

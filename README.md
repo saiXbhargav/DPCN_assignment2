@@ -699,7 +699,7 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - IITs are the best-connected partner type.
 
 ### 9. Research questions (`scripts/questions.py` → [QUESTIONS.md](data/analysis/questions/QUESTIONS.md))
-Eleven questions, each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
+Thirteen questions (items 15–28 of our list), each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
 
 - **Countries (15):**
   - 17% of papers have a foreign co-author, from 94 countries;
@@ -730,6 +730,14 @@ Eleven questions, each answered with data we already had. The only extra downloa
   - new citations grow as k^0.75 (linear, α = 1, for papers 6+ years old);
   - 72–83% of the top-10% papers after 2 years are still top 10% after 5.
 - **Name-matching sensitivity (27):** dropping 463 doubtful single-paper matches moves totals by under 2% and leaves the top-20 ranking unchanged.
+- **Citing your own institute (26):**
+  - 13% of citations come from home (12% self-citations, only 1% from colleagues at the same NIT), and 6% of references point home;
+  - NIT Surathkal is more inward-looking (15% vs 12%), most of all Surathkal Mathematics (25%);
+  - removing home citations moves no department more than 2 places.
+- **Citation manipulation check (28):**
+  - only 5% of Indian citations come from papers citing 10+ of ours, mostly written by our own NITs;
+  - removing self-citations or these heavy citing papers leaves the top-20 ranking unchanged;
+  - one concentrated pattern: 2023–24 papers around one Surathkal Mechanical group, mostly by former NIT members (an alumni network).
 
 ---
 
@@ -759,7 +767,7 @@ DPCN_assignment2/
 │   ├── fetch_insights.py    ← extra downloads: reference years, institute coordinates, citing-institute size, citations per year and open access (resumable)
 │   ├── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
 │   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
-│   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check → data/analysis/questions/
+│   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
