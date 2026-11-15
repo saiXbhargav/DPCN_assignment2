@@ -1,11 +1,11 @@
 institution,department,papers,conference_share,mean_fwci_journal,mean_fwci_conference,conference_vs_journal,p_value
 NIT Surathkal,Information Technology,651,0.6805,2.1184,1.1405,0.5384,0.0
-NIT Surathkal,CSE,955,0.6272,2.3769,1.0381,0.4368,0.0
+NIT Surathkal,CSE,968,0.6219,2.3282,1.0372,0.4455,0.0
 NIT Surathkal,EEE,816,0.5233,1.3392,1.1294,0.8433,0.1055
 NIT Trichy,CSE,701,0.4437,1.2011,0.7405,0.6165,0.0
 NIT Trichy,EEE,851,0.4289,1.0243,0.8927,0.8715,0.0001
 NIT Surathkal,ECE,797,0.4266,0.9642,1.0121,1.0497,0.0004
-NIT Surathkal,Civil,1005,0.4,2.0464,1.7362,0.8484,0.0
+NIT Surathkal,Civil,992,0.4022,2.0709,1.7429,0.8416,0.0
 NIT Trichy,ECE,1114,0.3905,1.3047,0.9858,0.7556,0.0
 NIT Trichy,Computer Applications,581,0.3373,1.9448,1.0749,0.5527,0.0
 NIT Trichy,Architecture,92,0.337,0.9628,1.0288,1.0685,0.1394

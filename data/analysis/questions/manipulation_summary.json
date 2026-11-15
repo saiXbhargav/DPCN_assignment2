@@ -391,7 +391,7 @@
   ],
   "ranking": {
     "without self-citations": {
-      "spearman": 0.9992024723998484,
+      "spearman": 0.9992055340924298,
       "top20_overlap": 20,
       "left_top20": [],
       "entered_top20": [],
@@ -399,12 +399,12 @@
         {
           "author": "Biswajit R Bhowmik",
           "rank": 166.0,
-          "rank_cites_no_self": 220.0
+          "rank_cites_no_self": 221.0
         },
         {
           "author": "Santhosh George",
-          "rank": 181.0,
-          "rank_cites_no_self": 204.0
+          "rank": 180.0,
+          "rank_cites_no_self": 205.0
         },
         {
           "author": "Hari Prasad Dasari",
@@ -414,25 +414,25 @@
       ]
     },
     "without heavy citing papers": {
-      "spearman": 0.9999989289180103,
+      "spearman": 0.9999993262730349,
       "top20_overlap": 20,
       "left_top20": [],
       "entered_top20": [],
       "largest_drop": [
         {
-          "author": "Basavaraju Manu",
-          "rank": 175.0,
-          "rank_cites_no_heavy": 176.0
-        },
-        {
-          "author": "Nagendrappa H",
-          "rank": 294.0,
-          "rank_cites_no_heavy": 295.0
-        },
-        {
           "author": "Tukaram Moger",
           "rank": 39.0,
           "rank_cites_no_heavy": 40.0
+        },
+        {
+          "author": "Debashisha Jena",
+          "rank": 27.0,
+          "rank_cites_no_heavy": 28.0
+        },
+        {
+          "author": "Poornesh Kumar Koorata",
+          "rank": 152.0,
+          "rank_cites_no_heavy": 153.0
         }
       ]
     }

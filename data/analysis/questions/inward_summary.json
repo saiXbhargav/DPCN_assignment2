@@ -69,14 +69,14 @@
       "mean_fwci": 1.3467887564908443
     }
   ],
-  "fwci_effect_10pt_more_home_refs_pct": 1.5156351308281746,
+  "fwci_effect_10pt_more_home_refs_pct": 1.5163000762708156,
   "fwci_effect_10pt_more_home_refs_ci": [
-    0.43335945667548614,
-    2.60957347006745
+    0.43423600320287026,
+    2.610022152673297
   ],
-  "fwci_effect_10pt_more_home_refs_p": 0.00594605020464865,
-  "fwci_effect_10pt_more_self_refs_pct": 2.0039722847442043,
-  "fwci_effect_10pt_more_self_refs_p": 0.0005776827768591249,
+  "fwci_effect_10pt_more_home_refs_p": 0.005914238370247054,
+  "fwci_effect_10pt_more_self_refs_pct": 2.0072355939166897,
+  "fwci_effect_10pt_more_self_refs_p": 0.0005644042160185464,
   "regression_papers": 16104,
   "spearman_departments_home_citations_vs_fwci": [
     -0.2714833059660646,

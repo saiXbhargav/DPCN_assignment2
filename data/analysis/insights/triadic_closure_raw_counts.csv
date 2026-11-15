@@ -23,10 +23,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2017,distance 3 (friend of a friend of a friend),False,True,True,134,0,2
 2017,distance 3 (friend of a friend of a friend),True,False,True,6,0,0
 2017,distance 3 (friend of a friend of a friend),True,True,True,86,1,3
-2017,farther apart / not connected,False,False,True,32589,0,1
-2017,farther apart / not connected,False,True,True,31646,18,60
-2017,farther apart / not connected,True,False,True,2296,2,5
-2017,farther apart / not connected,True,True,True,2466,35,108
+2017,farther apart / not connected,False,False,True,32755,0,1
+2017,farther apart / not connected,False,True,True,31826,18,60
+2017,farther apart / not connected,True,False,True,2311,2,5
+2017,farther apart / not connected,True,True,True,2479,35,108
 2018,1 common co-author,False,False,True,17,0,0
 2018,1 common co-author,False,True,True,263,3,4
 2018,1 common co-author,True,False,True,19,0,0
@@ -38,10 +38,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2018,distance 3 (friend of a friend of a friend),False,True,True,452,2,5
 2018,distance 3 (friend of a friend of a friend),True,False,True,34,0,0
 2018,distance 3 (friend of a friend of a friend),True,True,True,184,7,14
-2018,farther apart / not connected,False,False,True,41315,0,1
-2018,farther apart / not connected,False,True,True,39724,23,63
-2018,farther apart / not connected,True,False,True,2869,0,4
-2018,farther apart / not connected,True,True,True,2931,38,93
+2018,farther apart / not connected,False,False,True,41508,0,1
+2018,farther apart / not connected,False,True,True,39923,23,63
+2018,farther apart / not connected,True,False,True,2884,0,4
+2018,farther apart / not connected,True,True,True,2945,38,93
 2019,1 common co-author,False,False,True,18,0,0
 2019,1 common co-author,False,True,True,408,3,9
 2019,1 common co-author,True,False,True,24,0,0
@@ -54,10 +54,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2019,distance 3 (friend of a friend of a friend),False,True,True,864,3,7
 2019,distance 3 (friend of a friend of a friend),True,False,True,47,0,0
 2019,distance 3 (friend of a friend of a friend),True,True,True,290,5,10
-2019,farther apart / not connected,False,False,True,48237,1,2
-2019,farther apart / not connected,False,True,True,45856,22,45
-2019,farther apart / not connected,True,False,True,3365,4,7
-2019,farther apart / not connected,True,True,True,3333,36,79
+2019,farther apart / not connected,False,False,True,48446,1,2
+2019,farther apart / not connected,False,True,True,46072,22,45
+2019,farther apart / not connected,True,False,True,3381,4,7
+2019,farther apart / not connected,True,True,True,3347,36,79
 2020,1 common co-author,False,False,True,46,0,0
 2020,1 common co-author,False,True,True,584,3,11
 2020,1 common co-author,True,False,True,59,0,0
@@ -71,10 +71,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2020,distance 3 (friend of a friend of a friend),False,True,True,1352,2,6
 2020,distance 3 (friend of a friend of a friend),True,False,True,115,0,0
 2020,distance 3 (friend of a friend of a friend),True,True,True,414,3,10
-2020,farther apart / not connected,False,False,True,58622,1,1
-2020,farther apart / not connected,False,True,True,55590,13,40
-2020,farther apart / not connected,True,False,True,4135,2,4
-2020,farther apart / not connected,True,True,True,4060,17,85
+2020,farther apart / not connected,False,False,True,58853,1,1
+2020,farther apart / not connected,False,True,True,55829,13,40
+2020,farther apart / not connected,True,False,True,4152,2,4
+2020,farther apart / not connected,True,True,True,4076,17,85
 2021,1 common co-author,False,False,True,51,0,0
 2021,1 common co-author,False,True,True,705,4,10
 2021,1 common co-author,True,False,True,67,0,0
@@ -88,10 +88,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2021,distance 3 (friend of a friend of a friend),False,True,True,1834,3,7
 2021,distance 3 (friend of a friend of a friend),True,False,True,158,0,0
 2021,distance 3 (friend of a friend of a friend),True,True,True,538,7,12
-2021,farther apart / not connected,False,False,True,66473,0,3
-2021,farther apart / not connected,False,True,True,62811,11,56
-2021,farther apart / not connected,True,False,True,4755,2,2
-2021,farther apart / not connected,True,True,True,4509,39,100
+2021,farther apart / not connected,False,False,True,66722,0,3
+2021,farther apart / not connected,False,True,True,63064,11,56
+2021,farther apart / not connected,True,False,True,4773,2,2
+2021,farther apart / not connected,True,True,True,4525,39,100
 2022,1 common co-author,False,False,True,57,0,0
 2022,1 common co-author,False,True,True,831,5,9
 2022,1 common co-author,True,False,True,74,0,0
@@ -105,12 +105,12 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2022,distance 3 (friend of a friend of a friend),False,True,True,2357,3,8
 2022,distance 3 (friend of a friend of a friend),True,False,True,184,0,0
 2022,distance 3 (friend of a friend of a friend),True,True,True,708,5,10
-2022,farther apart / not connected,False,False,True,72817,2,6
-2022,farther apart / not connected,False,True,True,68485,24,57
-2022,farther apart / not connected,True,False,True,5156,0,1
-2022,farther apart / not connected,True,True,True,4648,35,97
+2022,farther apart / not connected,False,False,True,73081,2,6
+2022,farther apart / not connected,False,True,True,68744,24,57
+2022,farther apart / not connected,True,False,True,5178,0,1
+2022,farther apart / not connected,True,True,True,4664,35,97
 2023,1 common co-author,False,False,False,83,0,0
-2023,1 common co-author,False,True,False,1076,5,7
+2023,1 common co-author,False,True,False,1074,5,7
 2023,1 common co-author,True,False,False,87,0,1
 2023,1 common co-author,True,True,False,669,10,22
 2023,2 common co-authors,False,False,False,1,0,0
@@ -120,15 +120,15 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2023,3+ common co-authors,False,True,False,16,0,0
 2023,3+ common co-authors,True,True,False,23,0,1
 2023,distance 3 (friend of a friend of a friend),False,False,False,519,0,0
-2023,distance 3 (friend of a friend of a friend),False,True,False,3377,4,6
+2023,distance 3 (friend of a friend of a friend),False,True,False,3373,4,6
 2023,distance 3 (friend of a friend of a friend),True,False,False,254,0,0
 2023,distance 3 (friend of a friend of a friend),True,True,False,909,3,10
-2023,farther apart / not connected,False,False,False,81630,3,4
-2023,farther apart / not connected,False,True,False,76547,19,41
-2023,farther apart / not connected,True,False,False,5567,0,1
-2023,farther apart / not connected,True,True,False,4973,29,78
+2023,farther apart / not connected,False,False,False,81921,3,4
+2023,farther apart / not connected,False,True,False,76816,19,41
+2023,farther apart / not connected,True,False,False,5592,0,1
+2023,farther apart / not connected,True,True,False,4989,29,78
 2024,1 common co-author,False,False,False,107,0,0
-2024,1 common co-author,False,True,False,1266,1,4
+2024,1 common co-author,False,True,False,1262,1,4
 2024,1 common co-author,True,False,False,97,0,1
 2024,1 common co-author,True,True,False,771,10,15
 2024,2 common co-authors,False,False,False,4,0,0
@@ -138,15 +138,15 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2024,3+ common co-authors,False,True,False,23,0,0
 2024,3+ common co-authors,True,True,False,29,0,1
 2024,distance 3 (friend of a friend of a friend),False,False,False,678,0,0
-2024,distance 3 (friend of a friend of a friend),False,True,False,4143,2,2
+2024,distance 3 (friend of a friend of a friend),False,True,False,4136,2,2
 2024,distance 3 (friend of a friend of a friend),True,False,False,299,0,0
 2024,distance 3 (friend of a friend of a friend),True,True,False,1058,9,11
-2024,farther apart / not connected,False,False,False,89963,1,2
-2024,farther apart / not connected,False,True,False,84036,13,21
-2024,farther apart / not connected,True,False,False,6060,1,1
-2024,farther apart / not connected,True,True,False,5349,39,50
+2024,farther apart / not connected,False,False,False,90269,1,2
+2024,farther apart / not connected,False,True,False,84323,13,21
+2024,farther apart / not connected,True,False,False,6087,1,1
+2024,farther apart / not connected,True,True,False,5365,39,50
 2025,1 common co-author,False,False,False,115,0,0
-2025,1 common co-author,False,True,False,1400,2,2
+2025,1 common co-author,False,True,False,1396,2,2
 2025,1 common co-author,True,False,False,109,1,1
 2025,1 common co-author,True,True,False,890,4,4
 2025,2 common co-authors,False,False,False,5,0,0
@@ -157,10 +157,10 @@ year,bucket,same_department,same_institute,window_3y_complete,pairs,linked_next_
 2025,3+ common co-authors,True,False,False,1,0,0
 2025,3+ common co-authors,True,True,False,42,1,1
 2025,distance 3 (friend of a friend of a friend),False,False,False,735,0,0
-2025,distance 3 (friend of a friend of a friend),False,True,False,4807,1,1
+2025,distance 3 (friend of a friend of a friend),False,True,False,4798,1,1
 2025,distance 3 (friend of a friend of a friend),True,False,False,370,0,0
 2025,distance 3 (friend of a friend of a friend),True,True,False,1233,3,3
-2025,farther apart / not connected,False,False,False,94991,1,1
-2025,farther apart / not connected,False,True,False,88620,7,7
-2025,farther apart / not connected,True,False,False,6407,0,0
-2025,farther apart / not connected,True,True,False,5403,11,11
+2025,farther apart / not connected,False,False,False,95310,1,1
+2025,farther apart / not connected,False,True,False,88913,7,7
+2025,farther apart / not connected,True,False,False,6434,0,0
+2025,farther apart / not connected,True,True,False,5420,11,11

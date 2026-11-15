@@ -35,9 +35,9 @@
     {
       "institution": "Both",
       "measure": "faculty_with_papers",
-      "with_all_links": 656.0,
-      "without_doubtful_links": 621.0,
-      "change_pct": -5.335365853658536
+      "with_all_links": 657.0,
+      "without_doubtful_links": 622.0,
+      "change_pct": -5.327245053272451
     },
     {
       "institution": "Both",
@@ -56,16 +56,16 @@
     {
       "institution": "Both",
       "measure": "faculty ranked",
-      "with_all_links": 438.0,
-      "without_doubtful_links": 431.0,
-      "change_pct": -1.5981735159817352
+      "with_all_links": 439.0,
+      "without_doubtful_links": 432.0,
+      "change_pct": -1.5945330296127562
     },
     {
       "institution": "Both",
       "measure": "ranking Spearman with the original",
       "with_all_links": 1.0,
-      "without_doubtful_links": 0.9989655832544718,
-      "change_pct": -0.10344167455281772
+      "without_doubtful_links": 0.9989878205802327,
+      "change_pct": -0.10121794197672784
     },
     {
       "institution": "Both",
@@ -92,36 +92,36 @@
       "institution": "Both",
       "measure": "degree Spearman with the original",
       "with_all_links": 1.0,
-      "without_doubtful_links": 0.9737072000360187,
-      "change_pct": -2.629279996398126
+      "without_doubtful_links": 0.9736208432275296,
+      "change_pct": -2.637915677247038
     },
     {
       "institution": "Both",
       "measure": "NIT Surathkal FWCI effect (%)",
-      "with_all_links": 1.1502095664884582,
-      "without_doubtful_links": 1.0539178424579188,
-      "change_pct": -8.37166781045945
+      "with_all_links": 1.1710433648233654,
+      "without_doubtful_links": 1.07460324923625,
+      "change_pct": -8.235400881303987
     },
     {
       "institution": "Both",
       "measure": "NIT Surathkal effect p-value",
-      "with_all_links": 0.22459217974651224,
-      "without_doubtful_links": 0.26947952635582983,
-      "change_pct": 19.986157425418842
+      "with_all_links": 0.2162302879812037,
+      "without_doubtful_links": 0.2601176158262427,
+      "change_pct": 20.296568188844116
     },
     {
       "institution": "Both",
       "measure": "foreign co-author effect (%)",
-      "with_all_links": 14.938395841944097,
-      "without_doubtful_links": 14.826927844402116,
-      "change_pct": -0.7461845215602094
+      "with_all_links": 14.96991173058031,
+      "without_doubtful_links": 14.858430078808027,
+      "change_pct": -0.7447048037334154
     },
     {
       "institution": "Both",
       "measure": "conference effect (%)",
-      "with_all_links": -14.175383846621637,
-      "without_doubtful_links": -14.358923953675262,
-      "change_pct": 1.2947805085177126
+      "with_all_links": -14.153431253316429,
+      "without_doubtful_links": -14.33554692825495,
+      "change_pct": 1.2867245523649775
     }
   ],
   "largest_change_pct": 14.285714285714286

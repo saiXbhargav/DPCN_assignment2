@@ -185,7 +185,17 @@ def load_faculty():
         for v in p.name_variants.split(";") + [p["name"]]:
             for k in block_keys(v):
                 index[(p.institution, k)].add(fid)
-    return roster, by_author, index
+    # one OpenAlex author ID that covers two of our faculty (data/reference/author_splits.csv): papers in the listed
+    # fields go to the named faculty member, the rest stay with the ID's matched faculty member
+    splits = collections.defaultdict(list)
+    path = os.path.join(REF, "author_splits.csv")
+    if os.path.exists(path):
+        for s in pd.read_csv(path, dtype=str).itertuples(index=False):
+            hit = roster.index[(roster.institution == s.institution) & (roster["name"] == s.faculty_name)]
+            if len(hit) != 1:
+                raise SystemExit(f"author_splits.csv: {s.faculty_name!r} matches {len(hit)} roster entries")
+            splits[(s.institution, s.author_id)].append((set(s.fields.split(";")), hit[0]))
+    return roster, by_author, index, splits
 
 
 def faculty_by_name(name, inst, branch, roster, index):
@@ -235,7 +245,7 @@ def main():
     qtab = load_quartiles()
     core = load_core()
     fetched, ref_insts, citer_insts = load_links()
-    roster, by_author, index = load_faculty()
+    roster, by_author, index, splits = load_faculty()
     impact = load_impact()
     journal_if = load_journal_if()
     authors = {short(a["id"]): a for a in map(json.loads, open(os.path.join(RAW, "authors.jsonl"), encoding="utf-8"))}
@@ -291,6 +301,10 @@ def main():
                     continue
                 aid = short(a["author"]["id"])
                 fid = by_author.get((inst_name, aid)) if aid else None
+                for fields, split_fid in splits.get((inst_name, aid), ()):
+                    if field in fields:
+                        fid = split_fid
+                        stats["rows_reassigned_by_author_split"] += 1
                 if fid is None and not aid:
                     # no OpenAlex author ID: accept one clear name match within the same department
                     name = a["author"].get("display_name") or a.get("raw_author_name") or ""

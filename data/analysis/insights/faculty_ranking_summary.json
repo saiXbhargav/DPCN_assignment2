@@ -1,5 +1,5 @@
 {
-  "ranked_faculty": 438,
+  "ranked_faculty": 439,
   "not_ranked": 218,
   "not_ranked_reasons": {
     "fewer than 10 papers": 119,
@@ -16,7 +16,7 @@
   },
   "min_papers": 10,
   "robustness_quality_weighted": {
-    "spearman_with_equal_weights": 0.9929813417138612,
+    "spearman_with_equal_weights": 0.9930112188636759,
     "top20_overlap": 19
   }
 }

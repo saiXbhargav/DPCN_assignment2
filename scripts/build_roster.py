@@ -297,6 +297,39 @@ def best_name(names):
     return max(names, key=lambda n: (sum(len(t) > 1 for t in tokens(n)), len(n)))
 
 
+def apply_corrections(roster):
+    """Hand-checked fixes the automatic merging misses (data/reference/roster_corrections.csv): entries that are
+    not people (a page heading, a lone "Dr") are dropped, and two entries of one person are merged into one.
+    The fixes are applied after the IDs are given out, so every other ID stays the same; each row is checked
+    against the expected name, so a rebuild that shifts the IDs stops here instead of fixing the wrong person."""
+    path = os.path.join(REF, "roster_corrections.csv")
+    if not os.path.exists(path):
+        return roster
+    fixes = pd.read_csv(path, dtype=str).fillna("")
+    roster = roster.set_index("faculty_id")
+    for f in fixes.itertuples(index=False):
+        for fid, name in ((f.faculty_id, f.name), (f.into_id, f.into_name)):
+            if fid and (fid not in roster.index or roster.at[fid, "name"] != name):
+                found = roster.at[fid, "name"] if fid in roster.index else "missing"
+                raise SystemExit(f"roster_corrections.csv: {fid} is {found!r}, expected {name!r}")
+        if f.action == "merge":
+            a, b = roster.loc[f.faculty_id], roster.loc[f.into_id]
+            for col in ("name_variants", "sources", "email"):
+                roster.at[f.into_id, col] = ";".join(sorted((set(a[col].split(";")) | set(b[col].split(";"))) - {""}))
+            for col in ("orcid", "scopus_id"):
+                roster.at[f.into_id, col] = b[col] or a[col]
+            roster.at[f.into_id, "first_seen"] = min(int(a.first_seen), int(b.first_seen))
+            roster.at[f.into_id, "last_seen"] = last = max(int(a.last_seen), int(b.last_seen))
+            roster.at[f.into_id, "status"] = "current" if last == 2026 else "former"
+            roster.at[f.into_id, "regular"] = bool(a.regular) or bool(b.regular)
+        elif f.action != "drop":
+            raise SystemExit(f"roster_corrections.csv: unknown action {f.action!r}")
+        roster = roster.drop(f.faculty_id)
+    print(f"hand-checked corrections: {(fixes.action == 'drop').sum()} entries dropped (not people), "
+          f"{(fixes.action == 'merge').sum()} duplicates merged")
+    return roster.reset_index()
+
+
 def main():
     manifest = pd.read_csv(os.path.join(PAGES, "manifest.csv"), dtype=str)
     records, scholars = [], []
@@ -360,7 +393,7 @@ def main():
             "name_variants": ";".join(sorted(set(p["names"]))),
             "sources": ";".join(sorted(p["sources"])),
         })
-    roster = pd.DataFrame(rows)
+    roster = apply_corrections(pd.DataFrame(rows))
     os.makedirs(REF, exist_ok=True)
     roster.to_csv(os.path.join(REF, "faculty_roster.csv"), index=False)
     pd.DataFrame(scholars).drop_duplicates(["institution", "name"]).to_csv(

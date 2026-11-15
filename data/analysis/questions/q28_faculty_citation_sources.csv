@@ -16,8 +16,8 @@ T0747,Abhijit Das,NIT Trichy,Mathematics,Assistant Professor,current,13,42,30,0.
 T0749,Balasubramani N,NIT Trichy,Mathematics,Assistant Professor,current,7,14,7,0.3571,0.0,0.0,0.0,,Arya K. B. Chand,0.0714,False,False,False,0
 T0535,Moses Santhakumar,NIT Trichy,Civil,Professor (HAG),former,28,245,163,0.3551,0.102,0.0041,0.0,,Sukhjinder Singh,0.0286,True,False,False,1
 S0155,Pathipati Srihari,NIT Surathkal,ECE,Associate Professor,current,90,587,266,0.3492,0.0545,0.0,0.0,,Palaiahnakote Shivakumara,0.0051,True,False,False,1
-T0750,Gautam Singh,NIT Trichy,Mathematics,Assistant Professor,current,4,3,2,0.3333,0.0,0.0,0.0,,K. Balamurugan,0.3333,False,False,False,0
 T0449,Aghila G,NIT Trichy,CSE,Director,current,5,6,4,0.3333,0.0,0.0,0.0,,Shadab Siddiqui,0.1667,False,False,False,0
+T0750,Gautam Singh,NIT Trichy,Mathematics,Assistant Professor,current,4,3,2,0.3333,0.0,0.0,0.0,,K. Balamurugan,0.3333,False,False,False,0
 S0211,Shubhanga K N,NIT Surathkal,EEE,Professor,current,34,124,60,0.3306,0.0081,0.0726,0.0,,Ganesh Shivaji Pise,0.0081,True,False,False,1
 S0393,Shajahan Thamara Kunnathu,NIT Surathkal,Physics,Assistant Professor,current,12,73,27,0.3151,0.0,0.0,0.0,,Rahul Anil Pandit,0.0274,False,False,False,0
 S0282,Chandhini G,NIT Surathkal,Mathematics,Associate Professor,current,22,86,55,0.314,0.1628,0.0233,0.0,,Akanksha Bhardwaj,0.0233,False,False,False,0
@@ -38,10 +38,10 @@ S0110,Babloo Chaudhary,NIT Surathkal,Civil,Assistant Professor,current,52,304,16
 S0398,Debabrata Karmakar,NIT Surathkal,Water Resources & Ocean,Associate Professor,current,95,667,364,0.2429,0.1124,0.006,0.0,,K. G. Vijay,0.03,False,False,False,0
 S0193,Prajof P,NIT Surathkal,EEE,Assistant Professor,current,60,232,123,0.2414,0.0216,0.0302,0.0,,Bhim Singh,0.0216,False,False,False,0
 S0225,Shrutilipi Bhattacharjee,NIT Surathkal,Information Technology,Assistant Professor,current,34,166,68,0.2289,0.0482,0.0181,0.0,,Animesh Dutta,0.0301,False,False,False,0
-T0654,Suryanarayana Gangolu,NIT Trichy,EEE,Assistant Professor,current,7,63,27,0.2222,0.0159,0.0,0.0,,Biswapriya Chatterjee,0.0952,False,False,False,0
-T0583,Bopche Ghanshyam Sitkura,NIT Trichy,Computer Applications,Assistant Professor,current,11,9,3,0.2222,0.0,0.0,0.0,,Shwetha Vittal,0.1111,False,False,False,0
 S0296,I Jeyaraman,NIT Surathkal,Mathematics,Assistant Professor,former,2,9,8,0.2222,0.4444,0.0,0.0,,Punit Kumar Yadav,0.2222,False,False,False,0
+T0583,Bopche Ghanshyam Sitkura,NIT Trichy,Computer Applications,Assistant Professor,current,11,9,3,0.2222,0.0,0.0,0.0,,Shwetha Vittal,0.1111,False,False,False,0
 S0373,Akhil Avchar,NIT Surathkal,Mining,Assistant Professor,current,11,9,3,0.2222,0.0,0.1111,0.0,,,0.0,False,False,False,0
+T0654,Suryanarayana Gangolu,NIT Trichy,EEE,Assistant Professor,current,7,63,27,0.2222,0.0159,0.0,0.0,,Biswapriya Chatterjee,0.0952,False,False,False,0
 T0432,Keerti Manisha,NIT Trichy,Architecture,Assistant Professor,current,4,23,9,0.2174,0.0,0.0,0.0,,S. A. Rana,0.0435,False,False,False,0
 S0339,Mrityunjay R Doddamani,NIT Surathkal,Mechanical,Associate Professor,former,85,3121,1367,0.216,0.0625,0.0106,0.0064,0.3,Kiran Shahapurkar,0.0096,False,False,False,0
 T0641,N Kumaresan,NIT Trichy,EEE,Professor (HAG),current,44,279,168,0.2079,0.0323,0.0108,0.0,,Himadri Sekhar Chatterjee,0.0287,False,False,False,0
@@ -68,9 +68,9 @@ S0331,Ranjith M,NIT Surathkal,Mechanical,Associate Professor,current,52,330,150,
 T0704,Prince Gideon Kubendran Amos,NIT Trichy,MME,Assistant Professor,current,20,84,18,0.1786,0.0,0.0,0.0,,Abhinav Roy,0.0119,False,False,False,0
 S0241,Preetham Kumar G V,NIT Surathkal,MME,Associate Professor,current,30,280,144,0.175,0.0714,0.0321,0.0036,0.0,Rohinikumar Chebolu,0.0107,False,False,False,0
 S0333,Sudhakar C Jambagi,NIT Surathkal,Mechanical,Associate Professor,current,22,372,165,0.1694,0.0484,0.0484,0.0027,1.0,Hitesh Vasudev,0.0161,False,False,False,0
-T0536,Makendran C,NIT Trichy,Civil,Assistant Professor,current,12,24,14,0.1667,0.0,0.1667,0.0,,Chava Venkatesh,0.0417,False,False,False,0
-S0283,Falguni Roy,NIT Surathkal,Mathematics,Assistant Professor,current,8,12,4,0.1667,0.0,0.0,0.0,,R. N. Mohapatra,0.0833,False,False,False,0
 T0751,I Jeyaraman,NIT Trichy,Mathematics,Associate Professor,current,7,12,8,0.1667,0.0,0.0,0.0,,S. Balamoorthy,0.25,False,False,False,0
+S0283,Falguni Roy,NIT Surathkal,Mathematics,Assistant Professor,current,8,12,4,0.1667,0.0,0.0,0.0,,R. N. Mohapatra,0.0833,False,False,False,0
+T0536,Makendran C,NIT Trichy,Civil,Assistant Professor,current,12,24,14,0.1667,0.0,0.1667,0.0,,Chava Venkatesh,0.0417,False,False,False,0
 T0517,Velmurugan Gunasekaran,NIT Trichy,Chemistry,Assistant Professor,current,10,6,4,0.1667,0.1667,0.0,0.0,,Rajani Kanta Mahato,0.1667,False,False,False,0
 T0484,Jyoti Sahu,NIT Trichy,Chemical,Assistant Professor,current,7,6,4,0.1667,0.1667,0.1667,0.0,,Sukanta Nandi,0.1667,False,False,False,0
 T0808,Nanda Naik Korra,NIT Trichy,Mechanical,Associate Professor,current,19,187,108,0.1658,0.0053,0.0214,0.0,,Sukhomay Pal,0.0428,False,False,False,0
@@ -89,9 +89,9 @@ S0117,Prashanth M H,NIT Surathkal,Civil,Assistant Professor,current,36,109,38,0.
 T0664,Vivek Mohan,NIT Trichy,EEE,Assistant Professor,former,13,118,37,0.1525,0.0254,0.0085,0.0,,Naran M. Pindoriya,0.0085,False,False,False,0
 S0027,Mohit P Tahiliani,NIT Surathkal,CSE,Professor,current,63,290,91,0.1517,0.0241,0.0069,0.0,,Vinesh Kumar Jain,0.0103,False,False,False,0
 T0598,Hemant Kumar,NIT Trichy,ECE,Assistant Professor,current,12,33,10,0.1515,0.0303,0.0303,0.0,,Deepak Kumar Naik,0.0303,False,False,False,0
+S0203,H Girisha Navada,NIT Surathkal,EEE,Assistant Professor,current,6,20,4,0.15,0.0,0.0,0.0,,Subhash Chandra,0.05,False,False,False,0
 T0833,Takhellambam Sonamani Singh,NIT Trichy,Physics,Assistant Professor,current,9,20,8,0.15,0.2,0.0,0.0,,Dustakar Surendra Rao,0.05,False,False,False,0
 T0579,Vishnu Priya R,NIT Trichy,Computer Applications,Assistant Professor,current,8,40,20,0.15,0.0,0.0,0.0,,Piyush Varma,0.025,False,False,False,0
-S0203,H Girisha Navada,NIT Surathkal,EEE,Assistant Professor,current,6,20,4,0.15,0.0,0.0,0.0,,Subhash Chandra,0.05,False,False,False,0
 T0511,R Karvembu,NIT Trichy,Chemistry,Professor (HAG),current,145,4126,1906,0.1493,0.0708,0.0095,0.0061,0.08,G. Kalaiarasi,0.0099,False,False,False,0
 T0650,Sateesh Kumar Kuncham,NIT Trichy,EEE,Assistant Professor,current,18,47,24,0.1489,0.0638,0.0,0.0,,Kasinath Jena,0.0426,False,False,False,0
 S0115,Palanisamy T,NIT Surathkal,Civil,Associate Professor,current,61,249,97,0.1486,0.0402,0.0723,0.004,0.0,Jan Nisar Akhtar,0.012,False,False,False,0
@@ -99,6 +99,7 @@ S0088,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,Professor,former,55,1510,
 T0519,Aneesh Mathew,NIT Trichy,Civil,Assistant Professor,current,72,1757,796,0.1474,0.0046,0.0046,0.0,,Gourav Suthar,0.0074,False,False,False,0
 T0485,K Sankar,NIT Trichy,Chemical,Assistant Professor,current,6,21,4,0.1429,0.0,0.0,0.0,,Jaya Christa Sargunar Thomas,0.0476,False,False,False,0
 T0666,Jaganathan Vm,NIT Trichy,Energy & Environment,Assistant Professor,current,12,28,12,0.1429,0.1429,0.1071,0.0,,Raktim Jyoti Barpatra Gohain,0.0357,False,False,False,0
+S0026,Manu Basavaraju,NIT Surathkal,CSE,Associate Professor,current,13,42,14,0.1429,0.0238,0.0,0.0,,Stijn Cambie,0.0476,False,False,False,0
 T0774,V Ravichandran,NIT Trichy,Mathematics,Professor,current,54,392,176,0.1429,0.051,0.0,0.0,,G. Murugusundaramoorthy,0.0383,False,False,False,0
 T0596,E S Gopi,NIT Trichy,ECE,Professor,current,23,63,18,0.1429,0.0,0.0,0.0,,Ashutosh Kumar Dubey,0.0159,False,False,False,0
 S0408,Kiran G Shirlal,NIT Surathkal,Water Resources & Ocean,Professor,current,17,176,49,0.142,0.0284,0.0625,0.0,,R. Ramesh,0.0057,False,False,False,0
@@ -114,8 +115,8 @@ S0085,Ruben Sudhakar,NIT Surathkal,Chemical,Assistant Professor,former,4,37,7,0.
 S0347,Hemantha Kumar,NIT Surathkal,Mechanical,Professor,current,99,1580,497,0.1348,0.0038,0.0,0.0,,Chiranjit Sarkar,0.0089,False,False,False,0
 S0355,Satyabodh M Kulkarni,NIT Surathkal,Mechanical,Professor,current,101,1833,772,0.1348,0.1124,0.0136,0.0,,Deepu Kumar Singh,0.0076,False,False,False,0
 S0305,Pushparaj Shetty D,NIT Surathkal,Mathematics,Professor,current,34,150,68,0.1333,0.0133,0.0,0.0,,Radhika Kavra,0.0333,False,False,False,0
-S0369,Ram Prasad Choudhary,NIT Surathkal,Mining,Assistant Professor,former,5,30,13,0.1333,0.1333,0.0667,0.0,,Kamal Sharma,0.0333,False,False,False,0
 S0111,J Vijaya Vengadesh Kumar,NIT Surathkal,Civil,Assistant Professor,current,10,15,3,0.1333,0.0,0.0,0.0,,A. Diana Andrushia,0.0667,False,False,False,0
+S0369,Ram Prasad Choudhary,NIT Surathkal,Mining,Assistant Professor,former,5,30,13,0.1333,0.1333,0.0667,0.0,,Kamal Sharma,0.0333,False,False,False,0
 T0653,Suman M,NIT Trichy,EEE,Assistant Professor,current,26,228,122,0.1316,0.0044,0.0132,0.0,,Ch. Rami Reddy,0.0482,False,False,False,0
 S0134,Katta Venkataramana,NIT Surathkal,Civil,Professor (HAG),current,40,154,80,0.1299,0.0779,0.0065,0.0,,G. Sreelekshmy Pillai,0.039,False,False,False,0
 T0786,N Siva Shanmugam,NIT Trichy,Mechanical,Professor,current,153,2560,1196,0.1297,0.0367,0.0234,0.0039,0.3,Narayana Yuvaraj,0.009,False,False,False,0
@@ -165,15 +166,15 @@ S0385,Partha Pratim Das,NIT Surathkal,Physics,Associate Professor,current,34,623
 S0093,Sib Sankar Mal,NIT Surathkal,Chemistry,Associate Professor,current,87,1535,474,0.1075,0.0417,0.0085,0.0,,Yethadka Narahari Sudhakar,0.0091,False,False,False,0
 T0852,Prakash Kumar,NIT Trichy,Production,Assistant Professor,current,19,336,170,0.1071,0.1369,0.0149,0.003,1.0,Sachin Sirohi,0.0357,False,False,False,0
 S0123,Sridhar G,NIT Surathkal,Civil,Assistant Professor,current,20,28,12,0.1071,0.0,0.0,0.0,,Sudheer Kumar Yamsani,0.0714,False,False,False,0
-S0192,P Parthiban,NIT Surathkal,EEE,Associate Professor,current,45,342,153,0.1053,0.0351,0.0,0.0,,M. Deepak,0.0175,False,False,False,0
 T0617,Murali Krishna Rajendran,NIT Trichy,ECE,Assistant Professor,current,3,19,6,0.1053,0.0,0.0,0.0,,Ashis Maity,0.1053,False,False,False,0
+S0192,P Parthiban,NIT Surathkal,EEE,Associate Professor,current,45,342,153,0.1053,0.0351,0.0,0.0,,M. Deepak,0.0175,False,False,False,0
 T0784,Kaushik P,NIT Trichy,Mechanical,Assistant Professor,former,16,248,141,0.1048,0.1653,0.0,0.0,,Srinivas Jangili,0.0645,False,False,False,0
 S0146,A Venkata Narasimhadhan,NIT Surathkal,ECE,Associate Professor,current,59,614,192,0.1042,0.0179,0.0033,0.0,,P.S. Reddy,0.0114,False,False,False,0
 T0869,Justus Panicker C T,NIT Trichy,Production,Faculty,former,13,173,68,0.104,0.052,0.0347,0.0,,Rajeev Srivastava,0.0231,False,False,False,0
 S0401,Subrahmanya K,NIT Surathkal,Water Resources & Ocean,Associate Professor,current,38,212,98,0.1038,0.033,0.0377,0.0,,Pankaj Ramji Dhote,0.0283,False,False,False,0
 S0249,Anandhan Srinivasan,NIT Surathkal,MME,Professor,current,68,1380,444,0.1036,0.0225,0.0022,0.0,,S. Wazed Ali,0.0072,False,False,False,0
-T0694,P A Karthick,NIT Trichy,ICE,Assistant Professor,current,50,310,91,0.1032,0.0677,0.0,0.0,,Divya Sasidharan,0.0161,False,False,False,0
 T0584,Gopalan N P,NIT Trichy,Computer Applications,Professor,former,46,310,149,0.1032,0.1387,0.0065,0.0065,1.0,T. Satyanarayana Murthy,0.0161,False,False,False,0
+T0694,P A Karthick,NIT Trichy,ICE,Assistant Professor,current,50,310,91,0.1032,0.0677,0.0,0.0,,Divya Sasidharan,0.0161,False,False,False,0
 T0504,A Sreekanth,NIT Trichy,Chemistry,Professor,current,68,1416,720,0.1031,0.0855,0.0261,0.0014,1.0,Paras Nath Yadav,0.0191,False,False,False,0
 T0464,Sai Krishna Mothku,NIT Trichy,CSE,Assistant Professor,current,14,224,61,0.1027,0.0179,0.0,0.0,,P. Prakasam,0.0179,False,False,False,0
 S0316,D Chakradhar,NIT Surathkal,Mechanical,Assistant Professor,former,15,566,309,0.1025,0.0477,0.0247,0.0018,0.0,Narendra Mohan Suri,0.0159,False,False,False,0
@@ -220,14 +221,14 @@ S0315,Ajay Kumar Yadav,NIT Surathkal,Mechanical,Assistant Professor,current,45,1
 S0392,Nagaraja H S,NIT Surathkal,Physics,Professor,current,83,1932,734,0.0844,0.0316,0.014,0.0,,Subrata Kundu,0.0057,False,False,False,0
 S0073,Vaishakh Nair,NIT Surathkal,Chemical,Assistant Professor,current,19,561,138,0.0838,0.0036,0.0089,0.0,,Farasha Sama,0.0053,False,False,False,0
 T0871,Murugabalaji V,NIT Trichy,Production,Faculty,former,7,48,28,0.0833,0.0,0.2292,0.0,,Dineshkumar Harursampath,0.0417,False,False,False,0
+T0646,S Kayalvizhi,NIT Trichy,EEE,Assistant Professor,current,14,12,2,0.0833,0.0,0.0,0.0,,Alivarani Mohapatra,0.0833,False,False,False,0
 S0150,Kalpana G Bhat,NIT Surathkal,ECE,Assistant Professor,current,5,12,5,0.0833,0.0,0.0,0.0,,K Maha Lakshmi,0.0833,False,False,False,0
 T0423,G Subbaiyan,NIT Trichy,Architecture,Professor (HAG),current,14,36,12,0.0833,0.0556,0.0278,0.0,,Surya Deb Chakraborty,0.0278,False,False,False,0
 T0612,Avik Hati,NIT Trichy,ECE,Assistant Professor,current,11,12,3,0.0833,0.1667,0.0,0.0,,,0.0,False,False,False,0
-T0646,S Kayalvizhi,NIT Trichy,EEE,Assistant Professor,current,14,12,2,0.0833,0.0,0.0,0.0,,Alivarani Mohapatra,0.0833,False,False,False,0
 T0515,Sunandan Sarkar,NIT Trichy,Chemistry,Assistant Professor,current,18,135,58,0.0815,0.1852,0.0,0.0,,Amitava Patra,0.0222,False,False,False,0
+S0188,Kalpana R,NIT Surathkal,EEE,Associate Professor,current,77,777,250,0.0811,0.0438,0.0039,0.0,,Bhim Singh,0.0077,False,False,False,0
 T0702,V Sridevi,NIT Trichy,ICE,Assistant Professor,current,9,74,12,0.0811,0.0,0.0,0.0,,N. Banupriya,0.027,False,False,False,0
 T0593,B Venkataramani,NIT Trichy,ECE,Professor (HAG),former,26,222,92,0.0811,0.009,0.009,0.0,,Hardev Singh Pal,0.0315,False,False,False,0
-S0188,Kalpana R,NIT Surathkal,EEE,Associate Professor,current,77,777,250,0.0811,0.0438,0.0039,0.0,,Bhim Singh,0.0077,False,False,False,0
 T0525,G Swaminathan,NIT Trichy,Civil,Professor (HAG),current,30,385,111,0.0805,0.0078,0.013,0.0,,Ravi Shankar,0.0104,False,False,False,0
 S0096,Ampar Chitharanjan Hegde,NIT Surathkal,Chemistry,Professor (HAG),current,58,944,214,0.0805,0.0191,0.0032,0.0,,Atindra Mohan Banerjee,0.0053,False,False,False,0
 S0334,Vasudeva Madav,NIT Surathkal,Mechanical,Associate Professor,current,36,624,175,0.0801,0.0112,0.0,0.0,,Rishabh Kumar,0.0144,False,False,False,0
@@ -259,7 +260,6 @@ T0557,Samson Mathew M,NIT Trichy,Civil,Professor (HAG),current,34,379,127,0.0712
 T0766,R Tamil Selvi,NIT Trichy,Mathematics,Associate Professor,current,10,127,56,0.0709,0.0236,0.0,0.0079,0.0,Sahin Ahmed,0.0394,False,False,False,0
 T0862,Vasu M,NIT Trichy,Production,Assistant Professor,current,9,85,35,0.0706,0.0471,0.0,0.0,,Mir Irfan Ul Haq,0.0353,False,False,False,0
 S0402,Vadivuchezhian Kaliveeran,NIT Surathkal,Water Resources & Ocean,Associate Professor,current,32,142,64,0.0704,0.0211,0.0352,0.0,,Akshay Chougale,0.0211,False,False,False,0
-S0131,Basavaraju Manu,NIT Surathkal,Civil,Professor,current,46,760,237,0.0697,0.0618,0.0158,0.0079,1.0,Puthiya Veetil Nidheesh,0.0105,False,False,False,0
 S0328,P S Suvin,NIT Surathkal,Mechanical,Assistant Professor,current,18,216,82,0.0694,0.037,0.0417,0.0,,H. Bharath,0.0139,False,False,False,0
 S0318,Parthasarathy P,NIT Surathkal,Mechanical,Assistant Professor,current,10,101,21,0.0693,0.0594,0.0,0.0,,Nehem Tudu,0.0198,False,False,False,0
 T0581,B Ramadoss,NIT Trichy,Computer Applications,Professor,former,30,246,72,0.0691,0.0163,0.0041,0.0,,B. Rajalingam,0.0244,False,False,False,0
@@ -271,13 +271,14 @@ S0302,Madhusudhan R,NIT Surathkal,Mathematics,Professor,current,35,192,107,0.067
 T0549,S Saravanan,NIT Trichy,Civil,Associate Professor,current,94,2455,1173,0.0676,0.0155,0.0094,0.0,,Chaitanya B. Pande,0.0057,False,False,False,0
 T0842,K Panneerselvam,NIT Trichy,Production,Professor,current,70,1072,407,0.0672,0.0103,0.0131,0.0047,0.0,Rajesh Kumar Verma,0.0103,False,False,False,0
 S0245,Shashi Bhushan Arya,NIT Surathkal,MME,Associate Professor,current,61,954,327,0.0671,0.1205,0.0073,0.0052,0.0,Ravikumar Dumpala,0.0052,False,False,False,0
-S0325,Mervin Joe Thomas,NIT Surathkal,Mechanical,Assistant Professor,current,14,15,3,0.0667,0.0,0.0,0.0,,Naresh K. Raghuwanshi,0.0667,False,False,False,0
 T0461,R Mohan,NIT Trichy,CSE,Associate Professor,current,40,270,99,0.0667,0.0407,0.0111,0.0,,Badri Narayan Subudhi,0.0111,False,False,False,0
 T0624,R Thilagavathy,NIT Trichy,ECE,Assistant Professor,current,10,90,48,0.0667,0.0,0.0111,0.0,,Hardev Singh Pal,0.0778,False,False,False,0
+S0325,Mervin Joe Thomas,NIT Surathkal,Mechanical,Assistant Professor,current,14,15,3,0.0667,0.0,0.0,0.0,,Naresh K. Raghuwanshi,0.0667,False,False,False,0
 T0806,Harish Kruthiventi Ss,NIT Trichy,Mechanical,Assistant Professor,current,25,390,150,0.0667,0.0462,0.0026,0.0,,Srinivas Jangili,0.0154,False,False,False,0
 S0135,Mattur C Narasimhan,NIT Surathkal,Civil,Professor (HAG),current,29,481,160,0.0665,0.0437,0.0291,0.0,,Poornachandra Pandit,0.0146,False,False,False,0
 S0354,Sathyabhama A,NIT Surathkal,Mechanical,Professor,current,57,607,145,0.0659,0.0148,0.0033,0.0,,Atul Sharma,0.0148,False,False,False,0
 S0161,Sandeep Kumar,NIT Surathkal,ECE,Assistant Professor,former,48,243,98,0.0658,0.1235,0.0,0.0,,Daasari Surender,0.0206,False,False,False,0
+S0131,Basavaraju Manu,NIT Surathkal,Civil,Professor,current,33,718,223,0.0655,0.0641,0.0167,0.0084,1.0,Puthiya Veetil Nidheesh,0.0111,False,False,False,0
 T0427,P Gopalakrishnan,NIT Trichy,Architecture,Associate Professor,current,12,107,20,0.0654,0.0187,0.0093,0.0,,Nand Kumar,0.0093,False,False,False,0
 T0499,T Sivasankar,NIT Trichy,Chemical,Professor,current,28,585,183,0.065,0.0291,0.0017,0.0,,Manviri Rani,0.0103,False,False,False,0
 T0830,D Sasti Kumar,NIT Trichy,Physics,Faculty,current,57,1371,506,0.0649,0.0474,0.0058,0.0,,Balusamy Renganathan,0.0146,False,False,False,0
@@ -291,8 +292,8 @@ S0137,Sitaram Nayak,NIT Surathkal,Civil,Professor (HAG),current,24,503,177,0.063
 S0252,Udaya Bhat K,NIT Surathkal,MME,Professor,current,125,2066,622,0.0634,0.0532,0.0106,0.0,,Soney Varghese,0.0024,False,False,False,0
 T0486,K M Meera Sheriffa Begum,NIT Trichy,Chemical,Professor (HAG),current,51,1539,562,0.063,0.0214,0.0039,0.0,,Navneet Kumar Gupta,0.011,False,False,False,0
 T0724,Siva Prasad Katakam,NIT Trichy,MME,Professor,current,76,1320,390,0.0629,0.0598,0.0227,0.0008,1.0,Chandan Pandey,0.0083,False,False,False,0
-S0213,Vinatha U,NIT Surathkal,EEE,Professor,current,37,320,101,0.0625,0.0031,0.0125,0.0,,Bhim Singh,0.0219,False,False,False,0
 S0301,B R Shankar,NIT Surathkal,Mathematics,Professor,current,11,16,10,0.0625,0.4375,0.0,0.0,,Santu Pal,0.0625,False,False,False,0
+S0213,Vinatha U,NIT Surathkal,EEE,Professor,current,37,320,101,0.0625,0.0031,0.0125,0.0,,Bhim Singh,0.0219,False,False,False,0
 S0050,Shasidhar G Koolagudi,NIT Surathkal,CSE,Professor,current,146,1672,738,0.0622,0.0359,0.003,0.0,,H Muralikrishna,0.009,False,False,False,0
 T0838,D Lenin Singaravelu,NIT Trichy,Production,Professor,current,72,4805,2601,0.0618,0.0545,0.0081,0.0191,0.587,Indu Sasidharan,0.0131,False,False,False,0
 S0390,M Nagarajan Satyanarayan,NIT Surathkal,Physics,Professor,current,49,669,290,0.0613,0.1584,0.006,0.0,,Predhanekar Mohamed Imran,0.0164,False,False,False,0
@@ -314,9 +315,9 @@ T0815,B Karthikeyan,NIT Trichy,Physics,Professor,current,117,2297,846,0.0562,0.0
 S0361,Veershetty Gumtapure,NIT Surathkal,Mechanical,Professor,current,42,588,133,0.0561,0.0034,0.0136,0.0,,Amit Kumar,0.0102,False,False,False,0
 T0599,Karthikeyan S S,NIT Trichy,ECE,Associate Professor,current,75,802,328,0.0561,0.0748,0.0224,0.0037,0.3333,Gunjan Srivastava,0.0237,False,False,False,0
 S0152,Mandeep Singh,NIT Surathkal,ECE,Assistant Professor,current,48,466,195,0.0558,0.0515,0.0,0.0,,Rakesh Ranjan,0.0215,False,False,False,0
-T0692,M Umapathy,NIT Trichy,ICE,Professor (HAG),current,73,1044,266,0.0556,0.0469,0.0038,0.0,,Sujan Yenuganti,0.0172,False,False,False,0
-T0526,Greegar George,NIT Trichy,Civil,Assistant Professor,current,15,18,4,0.0556,0.0,0.0,0.0,,Dhanya Sathyan,0.1111,False,False,False,0
 S0214,Sheron Figarado,NIT Surathkal,EEE,Assistant Professor,former,3,36,16,0.0556,0.1667,0.0,0.0,,Suman Halder,0.0556,False,False,False,0
+T0526,Greegar George,NIT Trichy,Civil,Assistant Professor,current,15,18,4,0.0556,0.0,0.0,0.0,,Dhanya Sathyan,0.1111,False,False,False,0
+T0692,M Umapathy,NIT Trichy,ICE,Professor (HAG),current,73,1044,266,0.0556,0.0469,0.0038,0.0,,Sujan Yenuganti,0.0172,False,False,False,0
 S0411,Manu,NIT Surathkal,Water Resources & Ocean,Professor,current,31,199,64,0.0553,0.0553,0.0151,0.0,,Chandru Muthusamy,0.0302,False,False,False,0
 S0222,Kiran M,NIT Surathkal,Information Technology,Assistant Professor,current,18,129,52,0.0543,0.0078,0.0,0.0,,Manjula K. Pawar,0.031,False,False,False,0
 S0330,Ranjeet Kumar Sahu,NIT Surathkal,Mechanical,Assistant Professor,current,33,370,205,0.0541,0.0243,0.0,0.0,,Pradeep Dixit,0.0243,False,False,False,0
@@ -345,9 +346,9 @@ S0194,Ravi Raushan,NIT Surathkal,EEE,Assistant Professor,current,21,162,98,0.049
 T0571,Michael Arock,NIT Trichy,Computer Applications,Professor,current,35,163,39,0.0491,0.0307,0.0061,0.0,,Petr Sosı́k,0.0184,False,False,False,0
 S0102,A Gowri,NIT Surathkal,Civil,Assistant Professor,former,11,449,193,0.049,0.0156,0.0,0.0,,Shriniwas Shrikant Arkatkar,0.049,False,False,False,0
 S0389,Kasturi V Bangera,NIT Surathkal,Physics,Professor,former,33,410,148,0.0488,0.0122,0.0,0.0,,Mahendra Singh Dhaka,0.0195,False,False,False,0
-T0725,T Srinivasa Rao,NIT Trichy,MME,Professor (HAG),former,12,124,53,0.0484,0.1452,0.0726,0.0,,Gudipadu Venkatesh,0.0403,False,False,False,0
 T0804,Vedharaj Sivasankaralingam,NIT Trichy,Mechanical,Assistant Professor,current,8,124,27,0.0484,0.0,0.0161,0.0,,Vijay Baburao Khajone,0.0081,False,False,False,0
 S0175,T Laxminidhi,NIT Surathkal,ECE,Professor,current,24,186,99,0.0484,0.0215,0.0215,0.0,,Dharmendar Boolchandani,0.0484,False,False,False,0
+T0725,T Srinivasa Rao,NIT Trichy,MME,Professor (HAG),former,12,124,53,0.0484,0.1452,0.0726,0.0,,Gudipadu Venkatesh,0.0403,False,False,False,0
 T0688,D Ezhilarasi,NIT Trichy,ICE,Professor,current,33,249,35,0.0482,0.012,0.0,0.0,,Loganathan Ponnarasi,0.004,False,False,False,0
 T0835,A Noorul Haq,NIT Trichy,Production,Professor (HAG),former,18,229,101,0.048,0.0917,0.0306,0.0044,0.0,U. Mohammed Iqbal,0.0131,False,False,False,0
 T0721,V Muthupandi,NIT Trichy,MME,Professor,former,43,880,332,0.0477,0.125,0.0273,0.0,,K.R. Balasubramanian,0.0102,False,False,False,0
@@ -360,8 +361,8 @@ S0183,A Karthikeyan,NIT Surathkal,EEE,Associate Professor,current,34,302,116,0.0
 T0689,G Uma,NIT Trichy,ICE,Professor (HAG),current,76,1102,281,0.0463,0.0563,0.0036,0.0,,Sujan Yenuganti,0.0163,False,False,False,0
 T0771,P Saikrishnan,NIT Trichy,Mathematics,Professor,current,14,87,54,0.046,0.1149,0.0,0.0,,Prabhugouda Mallanagouda Patil,0.1494,False,False,False,0
 T0538,Mashudha Sulthana U,NIT Trichy,Civil,Assistant Professor,current,5,22,7,0.0455,0.0,0.0909,0.0,,Padala Raja Shekar,0.1818,False,False,False,0
-T0655,V Vignesh Kumar,NIT Trichy,EEE,Assistant Professor,current,7,22,5,0.0455,0.0,0.0,0.0,,Pranav Darji,0.0455,False,False,False,0
 S0179,U Sripathi,NIT Surathkal,ECE,Professor,former,5,22,15,0.0455,0.2273,0.0,0.0,,Vinoth Babu Kumaravelu,0.3636,False,False,False,0
+T0655,V Vignesh Kumar,NIT Trichy,EEE,Assistant Professor,current,7,22,5,0.0455,0.0,0.0,0.0,,Pranav Darji,0.0455,False,False,False,0
 S0312,Suresh Manjanathhegde,NIT Surathkal,Mathematics,Professor (HAG),former,18,22,13,0.0455,0.1364,0.0,0.0,,Raja Marappan,0.0909,False,False,False,0
 T0639,M Venkata Kirthiga,NIT Trichy,EEE,Professor,current,44,441,212,0.0454,0.1134,0.0091,0.0,,Bijaya Ketan Panigrahi,0.0317,False,False,False,0
 S0076,Hari Mahalingam,NIT Surathkal,Chemical,Professor,current,13,309,84,0.0453,0.0129,0.0097,0.0,,Priya Chandulal Vithalani,0.0162,False,False,False,0
@@ -401,17 +402,17 @@ S0178,B Nagavel,NIT Surathkal,ECE,Assistant Professor,current,2,26,8,0.0385,0.0,
 S0412,Nasar T,NIT Surathkal,Water Resources & Ocean,Professor,current,28,131,40,0.0382,0.1374,0.0382,0.0,,Harekrushna Behera,0.0229,False,False,False,0
 T0576,S R Balasundaram,NIT Trichy,Computer Applications,Professor (HAG),current,50,262,87,0.0382,0.0382,0.0,0.0,,Sujan Kumar Saha,0.0115,False,False,False,0
 S0387,Govinda Rao Umesh,NIT Surathkal,Physics,Professor,former,19,289,85,0.0381,0.1073,0.0035,0.0,,Pankaj Kumar,0.0104,False,False,False,0
-T0867,Satheeshkumar V,NIT Trichy,Production,Assistant Professor,current,17,158,46,0.038,0.038,0.0127,0.0,,Vishal Gupta,0.019,False,False,False,0
 S0172,Neelawar Shekar Vittal Shet,NIT Surathkal,ECE,Professor,current,18,79,28,0.038,0.0633,0.0,0.0,,Parul Chauhan,0.0127,False,False,False,0
+T0867,Satheeshkumar V,NIT Trichy,Production,Assistant Professor,current,17,158,46,0.038,0.038,0.0127,0.0,,Vishal Gupta,0.019,False,False,False,0
 T0474,M Brindha,NIT Trichy,CSE,Associate Professor,current,78,739,246,0.0379,0.0054,0.0027,0.0,,Mohit Dua,0.0122,False,False,False,0
 T0447,R Leela Velusamy,NIT Trichy,CSE,Professor,current,33,345,159,0.0377,0.029,0.0,0.0,,Madhavi Dhingra,0.0116,False,False,False,0
 T0652,Sishaj P Simon,NIT Trichy,EEE,Professor,current,86,1358,369,0.0376,0.0133,0.0015,0.0,,Bhim Singh,0.0118,False,False,False,0
 T0662,Pinkymol Kp,NIT Trichy,EEE,Assistant Professor,current,16,80,23,0.0375,0.025,0.0,0.0,,Riya Kakkar,0.025,False,False,False,0
 T0818,M Ashok,NIT Trichy,Physics,Professor,current,72,1388,501,0.0375,0.0497,0.0115,0.0,,Ashalata Puhan,0.0043,False,False,False,0
 S0319,Somasekhara Rao Todeti,NIT Surathkal,Mechanical,Assistant Professor,current,12,401,152,0.0374,0.1721,0.015,0.0,,Mrinmoy Mondal,0.02,False,False,False,0
+S0294,Vishwanath K P,NIT Surathkal,Mathematics,Assistant Professor,current,6,27,10,0.037,0.1111,0.0,0.0,,Suman Kumar Chakraborty,0.037,False,False,False,0
 T0532,Laiju A R,NIT Trichy,Civil,Assistant Professor,current,3,27,13,0.037,0.0,0.0,0.0,,Sofia Sharief Khan,0.037,False,False,False,0
 S0326,Mruthyunjaya Swamy K B,NIT Surathkal,Mechanical,Assistant Professor,current,8,54,10,0.037,0.0,0.0,0.0,,Mohd. Zahid Ansari,0.037,False,False,False,0
-S0294,Vishwanath K P,NIT Surathkal,Mathematics,Assistant Professor,current,6,27,10,0.037,0.1111,0.0,0.0,,Suman Kumar Chakraborty,0.037,False,False,False,0
 T0785,M Udayakumar,NIT Trichy,Mechanical,Professor (HAG),former,15,272,107,0.0368,0.0147,0.0257,0.0,,Ovais Gulzar,0.011,False,False,False,0
 T0548,S Marisamynathan,NIT Trichy,Civil,Assistant Professor,current,31,464,164,0.0366,0.0108,0.0086,0.0,,Momi Deb,0.0172,False,False,False,0
 S0362,T P Ashok Babu,NIT Surathkal,Mechanical,Professor,former,35,547,199,0.0366,0.1645,0.0018,0.0,,Subrata Panda,0.0073,False,False,False,0
@@ -423,8 +424,8 @@ T0580,S Sangeetha,NIT Trichy,Computer Applications,Associate Professor,current,4
 S0406,Dodamani B M,NIT Surathkal,Water Resources & Ocean,Professor,current,33,511,208,0.0352,0.0117,0.0098,0.0,,S. K. Pramada,0.0117,False,False,False,0
 T0637,M Jaya Bharata Reddy,NIT Trichy,EEE,Professor,current,54,1052,348,0.0352,0.0475,0.0057,0.0,,Kunjabihari Swain,0.0095,False,False,False,0
 T0863,Vimal K E K,NIT Trichy,Production,Assistant Professor,current,19,402,139,0.0348,0.0373,0.0174,0.0025,0.0,Milind Akarte,0.0075,False,False,False,0
-T0614,Bukke Chandrababu Naik,NIT Trichy,ECE,Assistant Professor,current,20,29,16,0.0345,0.2069,0.0,0.0,,Yagateela Pandu Rangaiah,0.069,False,False,False,0
 S0403,Nagaraj M K,NIT Surathkal,Water Resources & Ocean,Assistant Professor,former,10,58,21,0.0345,0.0345,0.0,0.0,,K. S. Kasiviswanathan,0.0517,False,False,False,0
+T0614,Bukke Chandrababu Naik,NIT Trichy,ECE,Assistant Professor,current,20,29,16,0.0345,0.2069,0.0,0.0,,Yagateela Pandu Rangaiah,0.069,False,False,False,0
 T0602,P Palanisamy,NIT Trichy,ECE,Professor (HAG),current,108,2043,795,0.0343,0.071,0.0024,0.0,,Akella S. Narasimha Raju,0.0059,False,False,False,0
 T0790,R B Anand,NIT Trichy,Mechanical,Professor,current,66,1606,617,0.0342,0.023,0.0112,0.0,,B. Ashok,0.01,False,False,False,0
 T0720,V Karthik,NIT Trichy,MME,Assistant Professor,current,13,118,39,0.0339,0.0593,0.0,0.0,,Manik Barman,0.0424,False,False,False,0
@@ -477,8 +478,8 @@ T0841,J Jerald,NIT Trichy,Production,Professor,current,32,565,197,0.0265,0.023,0
 S0047,Annappa,NIT Surathkal,CSE,Professor,current,74,904,272,0.0265,0.0077,0.0055,0.0,,Ravi Shankar Singh,0.0044,False,False,False,0
 T0567,B Janet,NIT Trichy,Computer Applications,Associate Professor,current,61,946,347,0.0264,0.0243,0.0042,0.0,,Sanjay Kumar,0.0053,False,False,False,0
 S0080,M B Saidutta,NIT Surathkal,Chemical,Professor (HAG),current,25,740,234,0.0257,0.0297,0.0108,0.0014,1.0,Neelancherry Remya,0.0095,False,False,False,0
-T0658,C Nagamani,NIT Trichy,EEE,Professor (HAG),former,60,1209,351,0.0256,0.0273,0.0149,0.0,,Bhim Singh,0.0141,False,False,False,0
 S0370,Anup Kumar Tripathi,NIT Surathkal,Mining,Associate Professor,current,16,156,42,0.0256,0.0192,0.0385,0.0,,Ch. Vijaya Kumar,0.0128,False,False,False,0
+T0658,C Nagamani,NIT Trichy,EEE,Professor (HAG),former,60,1209,351,0.0256,0.0273,0.0149,0.0,,Bhim Singh,0.0141,False,False,False,0
 T0625,S Deivalakshmi,NIT Trichy,ECE,Associate Professor,current,67,708,279,0.0254,0.1511,0.0141,0.0,,Zahra Alizadeh Sani,0.0042,False,False,False,0
 S0103,A U Ravi Shankar,NIT Surathkal,Civil,Professor (HAG),former,54,792,283,0.0253,0.0404,0.0189,0.0,,Shriram Marathe,0.0215,False,False,False,0
 S0070,Maneesh Kumar Poddar,NIT Surathkal,Chemical,Assistant Professor,current,9,199,38,0.0251,0.0201,0.0,0.0,,Rakesh Kumar,0.0101,False,False,False,0
@@ -542,18 +543,18 @@ T0488,Kartikeya Shukla,NIT Trichy,Chemical,Assistant Professor,current,15,117,29
 T0529,K Baskar,NIT Trichy,Civil,Professor (HAG),current,34,250,94,0.008,0.088,0.012,0.0,,N. Mohankumar,0.016,False,False,False,0
 T0695,R Periyasamy,NIT Trichy,ICE,Assistant Professor,current,23,164,65,0.0061,0.0793,0.0061,0.0,,S. Prabakar,0.0244,False,False,False,0
 T0820,N Baskaran,NIT Trichy,Physics,Professor,current,19,177,61,0.0056,0.0339,0.0,0.0,,Pitcheri Rosaiah,0.0169,False,False,False,0
-T0840,Dinesh S,NIT Trichy,Production,Faculty,former,9,374,150,0.0053,0.0267,0.0027,0.0,,Rakesh Chaudhari,0.0241,False,False,False,0
 S0030,Saumya Hegde,NIT Surathkal,CSE,Assistant Professor,current,16,187,57,0.0053,0.016,0.0,0.0,,Chellamuthu Gunavathi,0.0107,False,False,False,0
+T0840,Dinesh S,NIT Trichy,Production,Faculty,former,9,374,150,0.0053,0.0267,0.0027,0.0,,Rakesh Chaudhari,0.0241,False,False,False,0
 T0514,Somenath Garai,NIT Trichy,Chemistry,Assistant Professor,former,7,241,48,0.0041,0.1162,0.0,0.0,,Neena S. John,0.0124,False,False,False,0
 T0455,E Sivasankar,NIT Trichy,CSE,Associate Professor,current,29,361,100,0.0028,0.0055,0.0055,0.0,,Joydeep Chandra,0.0111,False,False,False,0
-T0828,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,Assistant Professor,current,3,42,18,0.0,0.1667,0.0,0.0,,Anish Ghoshal,0.119,False,False,False,0
+T0797,Saurav Kumar Dutta,NIT Trichy,Mechanical,Assistant Professor,current,1,8,0,0.0,0.0,0.0,0.0,,,0.0,False,False,False,0
 T0826,Somnath Mukhopadhyay,NIT Trichy,Physics,Assistant Professor,current,6,8,4,0.0,0.125,0.25,0.0,,A. P. Beardmore,0.125,False,False,False,0
 T0781,J Sarangan,NIT Trichy,Mechanical,Professor,former,4,42,25,0.0,0.0238,0.0714,0.0238,0.0,Ashish Dubey,0.0714,False,False,False,0
-T0810,M Shahul Hameed,NIT Trichy,Mechanical,Associate Professor,current,3,55,16,0.0,0.0727,0.0,0.0,,M. Vijay,0.0182,False,False,False,0
-T0797,Saurav Kumar Dutta,NIT Trichy,Mechanical,Assistant Professor,current,1,8,0,0.0,0.0,0.0,0.0,,,0.0,False,False,False,0
-T0859,T Selvaraj,NIT Trichy,Production,Professor,former,18,339,165,0.0,0.0855,0.0118,0.0088,0.0,Ramanuj Kumar,0.0265,False,False,False,0
+T0828,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,Assistant Professor,current,3,42,18,0.0,0.1667,0.0,0.0,,Anish Ghoshal,0.119,False,False,False,0
 T0857,Santosh Kumar Mishra,NIT Trichy,Production,Assistant Professor,current,3,33,12,0.0,0.0606,0.0303,0.0,,N. Harshavardhana,0.0303,False,False,False,0
 T0778,Dudul Das,NIT Trichy,Mechanical,Assistant Professor,current,1,1,0,0.0,0.0,0.0,0.0,,,0.0,False,False,False,0
+T0859,T Selvaraj,NIT Trichy,Production,Professor,former,18,339,165,0.0,0.0855,0.0118,0.0088,0.0,Ramanuj Kumar,0.0265,False,False,False,0
+T0810,M Shahul Hameed,NIT Trichy,Mechanical,Associate Professor,current,3,55,16,0.0,0.0727,0.0,0.0,,M. Vijay,0.0182,False,False,False,0
 T0779,G Rajasekaran,NIT Trichy,Mechanical,Assistant Professor,current,5,17,3,0.0,0.0,0.0,0.0,,Ravishankar Srikanth,0.0588,False,False,False,0
 S0001,B Ravi,NIT Surathkal,,Director,current,3,8,0,0.0,0.0,0.0,0.0,,,0.0,False,False,False,0
 T0777,Bishweshwar Babu,NIT Trichy,Mechanical,Assistant Professor,current,1,2,1,0.0,0.0,0.5,0.0,,,0.0,False,False,False,0

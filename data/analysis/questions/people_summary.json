@@ -1,6 +1,6 @@
 {
   "q18": {
-    "current_with_papers": 557,
+    "current_with_papers": 558,
     "former_with_papers": 99,
     "where_former_went": {
       "Still listed at the same NIT": 60,
@@ -23,72 +23,72 @@
     "headline": [
       {
         "measure": "papers per year on the faculty list",
-        "current_median": 3.272727272727273,
+        "current_median": 3.1818181818181817,
         "former_median": 2.5,
-        "p_value": 0.012972347854900973
+        "p_value": 0.017756167507488888
       },
       {
         "measure": "citations per paper",
         "current_median": 9.0,
         "former_median": 10.666666666666666,
-        "p_value": 0.0630676063350967
+        "p_value": 0.06144377823445064
       },
       {
         "measure": "mean FWCI",
-        "current_median": 1.0655363636363637,
+        "current_median": 1.0651393356643357,
         "former_median": 0.9116825657894737,
-        "p_value": 0.11661713437676717
+        "p_value": 0.11844584689625932
       },
       {
         "measure": "h-index (2016-2026)",
         "current_median": 8.0,
         "former_median": 6.0,
-        "p_value": 0.0042328374402441395
+        "p_value": 0.004410810038345214
       },
       {
         "measure": "share of papers in Q1",
-        "current_median": 0.22727272727272727,
+        "current_median": 0.22792207792207791,
         "former_median": 0.16666666666666666,
-        "p_value": 0.0169682032921967
+        "p_value": 0.0165061816495462
       },
       {
         "measure": "share with a foreign co-author",
-        "current_median": 0.05405405405405406,
+        "current_median": 0.054804804804804805,
         "former_median": 0.0,
-        "p_value": 0.029444761065020503
+        "p_value": 0.028577037934227084
       },
       {
         "measure": "NIT faculty co-authors",
         "current_median": 2.0,
         "former_median": 2.0,
-        "p_value": 0.12582826717588433
+        "p_value": 0.13051780498893475
       },
       {
         "measure": "betweenness",
-        "current_median": 0.0002278131525535,
+        "current_median": 0.0002082526092895,
         "former_median": 0.0,
-        "p_value": 0.014665004552512479
+        "p_value": 0.01590411429706234
       },
       {
         "measure": "Indian partner institutes",
         "current_median": 4.0,
         "former_median": 2.0,
-        "p_value": 3.0135750008815823e-06
+        "p_value": 2.9587947711871423e-06
       },
       {
         "measure": "years on the faculty list",
         "current_median": 11.0,
         "former_median": 6.0,
-        "p_value": 3.453590339621485e-21
+        "p_value": 2.441818238025311e-22
       }
     ]
   },
   "q19": {
-    "gini_papers": 0.4892219570020895,
-    "gini_citations": 0.6393291233220315,
+    "gini_papers": 0.489414524557666,
+    "gini_citations": 0.639713979340852,
     "top10_share_papers": 0.3107646012857338,
     "top10_share_citations": 0.44854079790778356,
-    "bottom50_share_citations": 0.07239544392340636,
+    "bottom50_share_citations": 0.07252683311383001,
     "by_nit": [
       {
         "institution": "NIT Trichy",
@@ -105,24 +105,24 @@
       {
         "institution": "NIT Surathkal",
         "measure": "papers",
-        "gini": 0.45469565337115014,
+        "gini": 0.45535886880257737,
         "top10pct_share": 0.2913012350098443
       },
       {
         "institution": "NIT Surathkal",
         "measure": "citations",
-        "gini": 0.5940759045808983,
+        "gini": 0.5950733191679127,
         "top10pct_share": 0.4009535426667716
       }
     ],
     "lotka": [
       {
         "group": "faculty (2016-2026 papers)",
-        "authors": 656,
-        "exponent_mle": 1.2873409560296791,
-        "exponent_least_squares": 0.5157449807075223,
-        "share_with_one_paper": 0.04878048780487805,
-        "lotka_predicted_share_one_paper": 0.24522322203641592
+        "authors": 657,
+        "exponent_mle": 1.2874328820873377,
+        "exponent_least_squares": 0.5154752414181342,
+        "share_with_one_paper": 0.0487062404870624,
+        "lotka_predicted_share_one_paper": 0.24528978447404798
       },
       {
         "group": "all NIT-affiliated authors incl. students (OpenAlex author IDs)",
@@ -214,26 +214,26 @@
       },
       {
         "rank": "Associate Professor",
-        "faculty_paper_rows": 4499,
-        "faculty": 113,
-        "first_author": 0.06179150922427206,
-        "last_author": 0.5492331629250945,
-        "middle_author": 0.3778617470549011,
-        "sole_author": 0.011113580795732384,
-        "corresponding_author": 0.4481082957306491,
-        "rows_with_corresponding_info": 2881,
+        "faculty_paper_rows": 4512,
+        "faculty": 114,
+        "first_author": 0.06294326241134751,
+        "last_author": 0.5478723404255319,
+        "middle_author": 0.37810283687943264,
+        "sole_author": 0.011081560283687944,
+        "corresponding_author": 0.4469041854029748,
+        "rows_with_corresponding_info": 2891,
         "median_authors": 3.0
       },
       {
         "rank": "Professor",
-        "faculty_paper_rows": 9490,
+        "faculty_paper_rows": 9477,
         "faculty": 207,
-        "first_author": 0.03119072708113804,
-        "last_author": 0.5758693361433087,
-        "middle_author": 0.3894625922023182,
-        "sole_author": 0.003477344573234984,
-        "corresponding_author": 0.3925566804505918,
-        "rows_with_corresponding_info": 7013,
+        "first_author": 0.03060040097077134,
+        "last_author": 0.5765537617389469,
+        "middle_author": 0.38936372269705605,
+        "sole_author": 0.0034821145932257044,
+        "corresponding_author": 0.3929744395259175,
+        "rows_with_corresponding_info": 7003,
         "median_authors": 3.0
       },
       {
@@ -251,7 +251,7 @@
       {
         "rank": "All",
         "faculty_paper_rows": 21933,
-        "faculty": 656,
+        "faculty": 657,
         "first_author": 0.053891396525783064,
         "last_author": 0.5559203027401632,
         "middle_author": 0.3838964117995714,
@@ -261,63 +261,63 @@
         "median_authors": 3.0
       }
     ],
-    "chi2": 469.047862111128,
-    "chi2_p": 2.4213839385134424e-95,
+    "chi2": 475.70238362940756,
+    "chi2_p": 9.127987057706875e-97,
     "papers_led_by_nit_faculty_share": 0.7976774615636245,
     "papers_with_outside_partners_led_by_nit_faculty_share": 0.6273434510904221,
-    "fwci_effect_when_faculty_leads_pct": -1.1744400386666354,
+    "fwci_effect_when_faculty_leads_pct": -1.1708452770250233,
     "fwci_effect_ci": [
-      -3.4776122577903967,
-      1.1836894022481115
+      -3.473505765883056,
+      1.1867456780124686
     ],
-    "fwci_effect_p": 0.32613261605943533,
+    "fwci_effect_p": 0.32749778721977263,
     "corresponding_info_share": 0.6996306934755847
   },
   "q21": {
-    "faculty": 494,
+    "faculty": 495,
     "correlations": [
       {
         "measure": "mean_fwci",
-        "spearman_breadth": 0.12353180076090543,
-        "p": 0.00597385324522877,
-        "spearman_breadth_within_department": 0.09301755669502007,
-        "p_within": 0.0389646467832143,
-        "partial_spearman_controlling_papers": 0.08308414916364833,
-        "p_partial": 0.06501563138324624
+        "spearman_breadth": 0.12839533411823334,
+        "p": 0.004219806158918481,
+        "spearman_breadth_within_department": 0.10506869477734862,
+        "p_within": 0.01950057338519524,
+        "partial_spearman_controlling_papers": 0.08766032338088663,
+        "p_partial": 0.05127849099497711
       },
       {
         "measure": "median_fwci",
-        "spearman_breadth": -0.004166895942197224,
-        "p": 0.926396390055868,
-        "spearman_breadth_within_department": 0.006678899129687732,
-        "p_within": 0.8824052457987754,
-        "partial_spearman_controlling_papers": -0.04646620222806939,
-        "p_partial": 0.30267991192885846
+        "spearman_breadth": -0.002312642722208835,
+        "p": 0.9590681107749939,
+        "spearman_breadth_within_department": 0.01188142575333524,
+        "p_within": 0.792228271368215,
+        "partial_spearman_controlling_papers": -0.04504836338765844,
+        "p_partial": 0.31719595031235537
       },
       {
         "measure": "h_index",
-        "spearman_breadth": 0.15215149879197085,
-        "p": 0.0006914592517401643,
-        "spearman_breadth_within_department": 0.1208029911097667,
-        "p_within": 0.007246615173334942,
-        "partial_spearman_controlling_papers": 0.029297606542321455,
-        "p_partial": 0.515910773777792
+        "spearman_breadth": 0.15096794825310286,
+        "p": 0.0007525953229341187,
+        "spearman_breadth_within_department": 0.11799316206397063,
+        "p_within": 0.008663341699735724,
+        "partial_spearman_controlling_papers": 0.02699116137830517,
+        "p_partial": 0.5491019544283786
       },
       {
         "measure": "citations_per_paper",
-        "spearman_breadth": 0.12699189714784034,
-        "p": 0.004701000348174982,
-        "spearman_breadth_within_department": 0.08554892021068747,
-        "p_within": 0.057675864829195594,
-        "partial_spearman_controlling_papers": 0.07533666141112416,
-        "p_partial": 0.09441066449415636
+        "spearman_breadth": 0.12719098305576432,
+        "p": 0.004594266257039595,
+        "spearman_breadth_within_department": 0.08379000707142668,
+        "p_within": 0.06276090008703186,
+        "partial_spearman_controlling_papers": 0.07526964901696218,
+        "p_partial": 0.0943698698802885
       },
       {
         "measure": "papers",
-        "spearman_breadth": 0.16537867670509313,
-        "p": 0.00022261569440342477,
-        "spearman_breadth_within_department": 0.16484784531537516,
-        "p_within": 0.00023682267063946579,
+        "spearman_breadth": 0.165442730287172,
+        "p": 0.00021810210769140727,
+        "spearman_breadth_within_department": 0.16447167631026,
+        "p_within": 0.00024128561902228636,
         "partial_spearman_controlling_papers": NaN,
         "p_partial": NaN
       }
@@ -326,41 +326,41 @@
       {
         "breadth_group": "most specialised",
         "faculty": 124,
-        "median_papers": 28.5,
-        "mean_fwci": 1.1995116899260583,
+        "median_papers": 28.0,
+        "mean_fwci": 1.1893294109953116,
         "median_fwci": 1.02709,
         "median_h": 9.0,
-        "median_breadth": 0.5773215008275614,
+        "median_breadth": 0.5813661586905366,
         "median_subfields": 3.0
       },
       {
         "breadth_group": "specialised",
-        "faculty": 123,
-        "median_papers": 35.0,
-        "mean_fwci": 1.2758343729994164,
-        "median_fwci": 1.1139514285714287,
+        "faculty": 124,
+        "median_papers": 34.5,
+        "mean_fwci": 1.267428312033463,
+        "median_fwci": 1.0920270833333334,
         "median_h": 10.0,
-        "median_breadth": 1.0266004310556769,
+        "median_breadth": 1.024223771861381,
         "median_subfields": 6.0
       },
       {
         "breadth_group": "broad",
         "faculty": 123,
         "median_papers": 35.0,
-        "mean_fwci": 1.2143558171591977,
-        "median_fwci": 1.101848275862069,
+        "mean_fwci": 1.2274926056290396,
+        "median_fwci": 1.1312799999999998,
         "median_h": 10.0,
-        "median_breadth": 1.2889403391358654,
+        "median_breadth": 1.289644398031154,
         "median_subfields": 7.0
       },
       {
         "breadth_group": "broadest",
         "faculty": 124,
-        "median_papers": 41.5,
-        "mean_fwci": 1.435453611513689,
-        "median_fwci": 1.23913007518797,
+        "median_papers": 42.5,
+        "mean_fwci": 1.4368680858502845,
+        "median_fwci": 1.2505457894736842,
         "median_h": 12.0,
-        "median_breadth": 1.5971885490857887,
+        "median_breadth": 1.5997174168302803,
         "median_subfields": 11.0
       }
     ],
@@ -380,12 +380,12 @@
     ],
     "broadest_examples": [
       {
-        "author": "Bukke Chandrababu Naik",
-        "department": "ECE"
-      },
-      {
         "author": "N Sivakumaran",
         "department": "ICE"
+      },
+      {
+        "author": "Bukke Chandrababu Naik",
+        "department": "ECE"
       },
       {
         "author": "Pruthviraj U",

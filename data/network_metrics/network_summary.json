@@ -25,13 +25,13 @@
       "nit_unknown": 3709,
       "nit_nit": 55
     },
-    "nit_graph_nodes": 656,
+    "nit_graph_nodes": 657,
     "nit_graph_edges": 961,
-    "nit_graph_components": 136,
-    "largest_component": 492,
-    "louvain_communities": 161,
+    "nit_graph_components": 137,
+    "largest_component": 491,
+    "louvain_communities": 162,
     "communities_size_ge_10": 19,
-    "modularity": 0.8466,
+    "modularity": 0.8464,
     "nit_authorships_not_faculty": 21359,
     "authorships_without_id": 1238
   },

@@ -1,0 +1,2 @@
+institution,author_id,fields,faculty_name,reason
+NIT Surathkal,A5027559765,Computer Science;Mathematics,Manu Basavaraju,"OpenAlex merged two NITK people into one author ID: Manu Basavaraju (CSE, graph theory and algorithms) and Basavaraju Manu (Civil, water treatment). Its papers in these fields belong to the CSE faculty member; the rest stay with the Civil one."

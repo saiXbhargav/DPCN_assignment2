@@ -1,9 +1,9 @@
 {
   "fit": "features 2019 -> links 2020-2022",
   "test": "features 2022 -> links 2023-2026",
-  "test_candidates": 156424,
+  "test_candidates": 156985,
   "test_true_new_links": 242,
-  "fit_candidates": 102869,
+  "fit_candidates": 103324,
   "fit_true_new_links": 179,
-  "recommendation_candidates_current_faculty": 154094
+  "recommendation_candidates_current_faculty": 154651
 }

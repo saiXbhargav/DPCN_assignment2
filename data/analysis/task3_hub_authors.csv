@@ -1,21 +1,21 @@
 institution,author,branch,indian_partner_institutes,degree,betweenness_centrality,papers
-NIT Trichy,S Anandan,Chemistry,42,5,0.0157573772226672,267
-NIT Trichy,R Karvembu,Chemistry,41,6,0.0092214191818535,145
-NIT Trichy,S Suresh,Mechanical,37,14,0.021896111159727,156
-NIT Trichy,N V Giridharan,Physics,35,5,0.0140329491032951,75
-NIT Trichy,G Arthanareeswaran,Chemical,29,9,0.013354320129213,171
-NIT Trichy,P Sivashanmugam,Chemical,29,4,0.0014368332344655,77
-NIT Trichy,N Siva Shanmugam,Mechanical,27,9,0.0581283355499153,153
-NIT Trichy,S Saravanan,Civil,27,6,0.0279535061868139,94
-NIT Trichy,Siva Prasad Katakam,MME,27,10,0.0097056956530971,76
-NIT Trichy,M Ashok,Physics,26,7,0.0125649622343238,72
-NIT Surathkal,Ramesh M R,Mechanical,53,22,0.1007801220579046,180
-NIT Surathkal,Shashi Bhushan Arya,MME,37,13,0.0254471110570365,61
-NIT Surathkal,Mohammad Rizwanur Rahman,MME,36,12,0.0351106589575979,54
-NIT Surathkal,Kartick Tarafder,Physics,35,11,0.0103396789295208,69
-NIT Surathkal,Udaya Kumar Dalimba,Chemistry,33,4,0.0025535895472209,63
-NIT Surathkal,Srikanth Bontha,Mechanical,24,12,0.0084086327121223,68
-NIT Surathkal,Sib Sankar Mal,Chemistry,24,7,0.0032140104350115,87
-NIT Surathkal,Udaya Bhat K,MME,23,15,0.0384137685889088,125
-NIT Surathkal,Bibhuti Bhusan Das,Civil,23,7,0.016694834232584,123
-NIT Surathkal,Sushil Kumar Pandey,ECE,23,4,0.0006208544346627,49
+NIT Trichy,S Anandan,Chemistry,42,5,0.0156728046713298,267
+NIT Trichy,R Karvembu,Chemistry,41,6,0.0091801169900016,145
+NIT Trichy,S Suresh,Mechanical,37,14,0.0217961269469556,156
+NIT Trichy,N V Giridharan,Physics,35,5,0.0139766249896675,75
+NIT Trichy,G Arthanareeswaran,Chemical,29,9,0.0133042964851773,171
+NIT Trichy,P Sivashanmugam,Chemical,29,4,0.0014287712587651,77
+NIT Trichy,N Siva Shanmugam,Mechanical,27,9,0.0578147848864355,153
+NIT Trichy,S Saravanan,Civil,27,6,0.0277229005241179,94
+NIT Trichy,Siva Prasad Katakam,MME,27,10,0.0096656876197194,76
+NIT Trichy,M Ashok,Physics,26,7,0.0125176007173684,72
+NIT Surathkal,Ramesh M R,Mechanical,53,22,0.1001637001446481,180
+NIT Surathkal,Shashi Bhushan Arya,MME,37,13,0.0250284248343069,61
+NIT Surathkal,Mohammad Rizwanur Rahman,MME,36,12,0.0349825885867173,54
+NIT Surathkal,Kartick Tarafder,Physics,35,11,0.01029496740917,69
+NIT Surathkal,Udaya Kumar Dalimba,Chemistry,33,4,0.0025411495865366,63
+NIT Surathkal,Srikanth Bontha,Mechanical,24,12,0.0083558446477033,68
+NIT Surathkal,Sib Sankar Mal,Chemistry,24,7,0.0031917992848458,87
+NIT Surathkal,Udaya Bhat K,MME,23,15,0.038210761473247,125
+NIT Surathkal,Bibhuti Bhusan Das,Civil,23,7,0.0161935797702248,123
+NIT Surathkal,Sushil Kumar Pandey,ECE,23,4,0.0006174100435435,49
