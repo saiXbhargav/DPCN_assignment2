@@ -1,0 +1,177 @@
+{
+  "groups": [
+    {
+      "institution": "NIT Surathkal",
+      "group": "joined after 2016",
+      "faculty": 101,
+      "median_papers_per_year": 2.6666666666666665,
+      "mean_papers_per_year": 3.768191104824768,
+      "median_fwci": 0.8907301587301587,
+      "asst_prof_share": 0.7029702970297029
+    },
+    {
+      "institution": "NIT Surathkal",
+      "group": "joined and left",
+      "faculty": 6,
+      "median_papers_per_year": 1.5,
+      "mean_papers_per_year": 1.3333333333333333,
+      "median_fwci": 0.634,
+      "asst_prof_share": 0.8333333333333334
+    },
+    {
+      "institution": "NIT Surathkal",
+      "group": "left before 2026",
+      "faculty": 53,
+      "median_papers_per_year": 1.375,
+      "mean_papers_per_year": 2.18292902066487,
+      "median_fwci": 0.976525,
+      "asst_prof_share": 0.2641509433962264
+    },
+    {
+      "institution": "NIT Surathkal",
+      "group": "stayed 2016-2026",
+      "faculty": 168,
+      "median_papers_per_year": 3.6,
+      "mean_papers_per_year": 4.4488095238095235,
+      "median_fwci": 1.1568284415584413,
+      "asst_prof_share": 0.07142857142857142
+    },
+    {
+      "institution": "NIT Trichy",
+      "group": "joined after 2016",
+      "faculty": 176,
+      "median_papers_per_year": 1.0,
+      "mean_papers_per_year": 1.81758658008658,
+      "median_fwci": 0.902836842105263,
+      "asst_prof_share": 0.9375
+    },
+    {
+      "institution": "NIT Trichy",
+      "group": "joined and left",
+      "faculty": 30,
+      "median_papers_per_year": 0.125,
+      "mean_papers_per_year": 0.7983333333333333,
+      "median_fwci": 0.827,
+      "asst_prof_share": 0.7
+    },
+    {
+      "institution": "NIT Trichy",
+      "group": "left before 2026",
+      "faculty": 43,
+      "median_papers_per_year": 1.2,
+      "mean_papers_per_year": 2.1968715393134,
+      "median_fwci": 1.0427089999999999,
+      "asst_prof_share": 0.046511627906976744
+    },
+    {
+      "institution": "NIT Trichy",
+      "group": "stayed 2016-2026",
+      "faculty": 166,
+      "median_papers_per_year": 4.15,
+      "mean_papers_per_year": 4.534337349397591,
+      "median_fwci": 1.1059255578093306,
+      "asst_prof_share": 0.060240963855421686
+    }
+  ],
+  "decomposition": [
+    {
+      "institution": "NIT Trichy",
+      "faculty_2016": 209,
+      "faculty_2026": 342,
+      "joined": 206,
+      "left": 73,
+      "papers_2025_by_listed_faculty": 977,
+      "share_2025_from_joiners_pct": 37.15455475946776,
+      "papers_per_year_lost_with_leavers": 118.4154761904762,
+      "counterfactual_2025_output_if_none_had_left_pct": 12.120314860847104
+    },
+    {
+      "institution": "NIT Surathkal",
+      "faculty_2016": 221,
+      "faculty_2026": 269,
+      "joined": 107,
+      "left": 59,
+      "papers_2025_by_listed_faculty": 929,
+      "share_2025_from_joiners_pct": 44.88697524219591,
+      "papers_per_year_lost_with_leavers": 123.6952380952381,
+      "counterfactual_2025_output_if_none_had_left_pct": 13.314880311651033
+    }
+  ],
+  "largest_growth": [
+    {
+      "institution": "NIT Trichy",
+      "department": "Civil",
+      "listed_2016": 19,
+      "listed_2026": 35,
+      "joined": 29,
+      "left": 13,
+      "change": 16
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "EEE",
+      "listed_2016": 17,
+      "listed_2026": 31,
+      "joined": 20,
+      "left": 6,
+      "change": 14
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "CSE",
+      "listed_2016": 15,
+      "listed_2026": 27,
+      "joined": 15,
+      "left": 3,
+      "change": 12
+    },
+    {
+      "institution": "NIT Trichy",
+      "department": "ECE",
+      "listed_2016": 20,
+      "listed_2026": 32,
+      "joined": 16,
+      "left": 4,
+      "change": 12
+    }
+  ],
+  "largest_shrink": [
+    {
+      "institution": "NIT Surathkal",
+      "department": "Physics",
+      "listed_2016": 9,
+      "listed_2026": 8,
+      "joined": 3,
+      "left": 4,
+      "change": -1
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Water Resources & Ocean",
+      "listed_2016": 17,
+      "listed_2026": 17,
+      "joined": 5,
+      "left": 5,
+      "change": 0
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Chemical",
+      "listed_2016": 17,
+      "listed_2026": 18,
+      "joined": 5,
+      "left": 4,
+      "change": 1
+    },
+    {
+      "institution": "NIT Surathkal",
+      "department": "Chemistry",
+      "listed_2016": 12,
+      "listed_2026": 13,
+      "joined": 2,
+      "left": 1,
+      "change": 1
+    }
+  ],
+  "caveat": "years come from yearly snapshots of faculty pages; the rank is the latest one only, so promotions cannot be separated from hiring"
+}

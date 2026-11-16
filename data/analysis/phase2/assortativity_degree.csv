@@ -6,3 +6,7 @@ Citation network (internal),out-degree of citing vs in-degree of cited,out-in,11
 Citation network (internal),in-degree of citing vs in-degree of cited,in-in,11937,23822,0.4772,0.1783,0.0077,38.9587,0.0476,assortative,more assortative than random,,20
 Citation network (internal),out-degree of citing vs out-degree of cited,out-out,11937,23822,0.5013,0.2233,0.0087,31.9659,0.0476,assortative,more assortative than random,,20
 Citation network (internal),in-degree of citing vs out-degree of cited,in-out,11937,23822,0.1359,0.1189,0.0106,1.6113,0.0952,assortative,as expected from the degrees alone,,20
+"Citation network (internal, without self-citations)",out-degree of citing vs in-degree of cited,out-in,3631,3263,0.0499,0.0454,0.0061,0.7401,0.3333,neutral,as expected from the degrees alone,,20
+"Citation network (internal, without self-citations)",in-degree of citing vs in-degree of cited,in-in,3631,3263,0.1331,0.1275,0.009,0.6269,0.5714,assortative,as expected from the degrees alone,,20
+"Citation network (internal, without self-citations)",out-degree of citing vs out-degree of cited,out-out,3631,3263,0.1538,0.1431,0.0083,1.2746,0.2381,assortative,as expected from the degrees alone,,20
+"Citation network (internal, without self-citations)",in-degree of citing vs out-degree of cited,in-out,3631,3263,0.0243,0.0751,0.0112,-4.5322,0.0476,neutral,more disassortative than random,,20

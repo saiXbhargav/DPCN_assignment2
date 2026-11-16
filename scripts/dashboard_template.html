@@ -1352,7 +1352,12 @@ function phase2Assort() {
     fact(`r = ${r2(fac.r)}`, `faculty network: ${fac.sign}, vs ${r2(fac.null_mean)} when rewired (z = ${fmt(fac.z, 1)})`),
     fact(`r = ${r2(iw.r)}`, `institute network with our NITs: ${iw.sign}, ${iw.vs_degree_preserving_random} (rewired ${r2(iw.null_mean)})`),
     fact(`r = ${r2(ip.r)}`, `partners only: ${ip.sign}, but less than rewired (${r2(ip.null_mean)}, z = ${fmt(ip.z, 1)})`),
-    fact(`r = ${r2(cii.r)}`, `citations (in–in): highly cited papers are cited by highly cited papers, vs ${r2(cii.null_mean)} when rewired`)].join("");
+    fact(`r = ${r2(cii.r)}`, `citations (in–in): highly cited papers are cited by highly cited papers, vs ${r2(cii.null_mean)} when rewired`),
+    ...(() => {
+      // the same without self-citations: does the pattern come from authors citing their own work?
+      const cc = row("Citation network (internal, without self-citations)", "in-in");
+      return cc.r == null ? [] : [fact(`r = ${r2(cc.r)}`, `the same without self-citations: ${cc.vs_degree_preserving_random} (rewired ${r2(cc.null_mean)}, z = ${fmt(cc.z, 1)}), so the citation pattern comes from authors citing their own work`)];
+    })()].join("");
   $("#t-p2-assort").innerHTML = T2([["Network"], ["Which degrees"], ["Nodes", 1], ["Links", 1], ["r", 1], ["Rewired r", 1], ["z", 1], ["Verdict"]],
     A.map((r) => [esc(r.network), esc(r.variant), fmt(r.nodes), fmt(r.links), r2(r.r), r2(r.null_mean), fmt(r.z, 1),
       `<b>${esc(r.sign)}</b>; ${esc(r.vs_degree_preserving_random)}`]));
@@ -1626,8 +1631,15 @@ function keyFindings() {
 
   // 1. institutes level overall, strong in different branches
   const reg = A.regression[A.regression.length - 1];
-  const bb = A.branch_bootstrap, br = (v) => bb.filter((r) => r.verdict === v).map((r) => r.branch);
-  const sHi = br("NIT Surathkal higher"), tHi = br("NIT Trichy higher"), noDiff = br("no clear difference");
+  // a branch gap counts only if it survives a false-discovery-rate correction over the ten branches (phase2_papers.py)
+  const PP = D.pp || {}, fdr = PP.fdr || [];
+  const fdrB = fdr.filter((r) => r.family === "branch FWCI, Trichy vs Surathkal");
+  const holds = (b) => { const r = fdrB.find((x) => x.test === b); return !r || r.significant_after_fdr; };
+  const bb = A.branch_bootstrap, br = (v) => bb.filter((r) => r.verdict === v && holds(r.branch)).map((r) => r.branch);
+  const sHi = br("NIT Surathkal higher"), tHi = br("NIT Trichy higher");
+  const noDiff = bb.filter((r) => r.verdict === "no clear difference").map((r) => r.branch);
+  const weak = bb.filter((r) => r.verdict !== "no clear difference" && !holds(r.branch)).map((r) => r.branch);
+  const clu = ((PP.r || {}).fwci_sensitivity || [])[0];       // the same model, errors clustered by faculty member
   // 2. foreign co-authors
   const fe = by(Q.foreign_effect, "scope", "faculty papers"), cs = Q.collab_summary.q15;
   // 3. venues
@@ -1666,13 +1678,13 @@ function keyFindings() {
 
   const cards = [
     { tab: "analysis", area: "Who's better?", title: "Neither NIT is better overall; each leads in different branches",
-      big: `${sign(reg["approx_%_difference"])}% <small>Surathkal vs Trichy impact, ${pv(reg.p_value)}</small>`,
-      text: `Adjusted for branch, year, collaboration, venue and team size, the two NITs' papers have the same field-weighted impact. Branch by branch, Surathkal is stronger in ${sHi.join(", ")}; Trichy in ${tHi.join(", ")}; no clear difference in ${noDiff.join(", ")}.`,
-      ev: `Regression of log(1 + FWCI) on ${fmt(reg.papers)} papers with robust standard errors; per-branch 95% bootstrap intervals.` },
-    { tab: "questions", area: "Collaboration", title: "Foreign co-authors raise impact",
+      big: `${sign(reg["approx_%_difference"])}% <small>Surathkal vs Trichy impact, ${pv(clu ? clu.p_clustered : reg.p_value)}</small>`,
+      text: `Adjusted for branch, year, collaboration, venue and team size, the two NITs' papers have the same field-weighted impact. Branch by branch, Surathkal is stronger in ${sHi.join(", ")}; Trichy in ${tHi.join(", ")}${weak.length ? `; the smaller gaps in ${weak.join(" and ")} do not survive a correction for testing ${fdrB.length} branches` : ""}; no clear difference in ${noDiff.join(", ")}.`,
+      ev: `Regression of log(1 + FWCI) on ${fmt(reg.papers)} papers${clu ? `, errors clustered by faculty member (${fmt(clu.faculty_clusters)} clusters; with robust errors only, ${pv(reg.p_value)})` : " with robust standard errors"}; per-branch 95% bootstrap intervals with Benjamini–Hochberg false-discovery-rate control.` },
+    { tab: "questions", area: "Collaboration", title: "Foreign co-authors go with higher impact",
       big: `+${f1(fe.adjusted_effect_pct)}% <small>FWCI, 95% CI ${f1(fe.ci_low_pct)}–${f1(fe.ci_high_pct)}%</small>`,
-      text: `Faculty papers with a foreign co-author have higher field-weighted impact than similar papers without one, yet only ${pct(fe.foreign_share)} of faculty papers have one. Partners come from ${fmt(cs.countries)} countries, led by ${esc(cs.top5[0].country)} (${fmt(cs.top5[0].papers)} papers).`,
-      ev: `Regression with controls for field, year, NIT, venue and team size; ${fmt(fe.papers)} faculty papers, ${pv(fe.p_value)}.` },
+      text: `Faculty papers with a foreign co-author have higher field-weighted impact than similar papers without one, yet only ${pct(fe.foreign_share)} of faculty papers have one. Partners come from ${fmt(cs.countries)} countries, led by ${esc(cs.top5[0].country)} (${fmt(cs.top5[0].papers)} papers). This is an association: stronger groups may also find foreign partners more easily.`,
+      ev: `Regression with controls for field, year, NIT, venue and team size; ${fmt(fe.papers)} faculty papers, ${pv(fe.p_value)}${clu ? `; still clear with errors clustered by faculty member (${pv(clu.foreign_p_clustered)})` : ""}.` },
     { tab: "questions", area: "Where to publish", title: "Where you publish matters",
       big: `${sign(q34.effect_vs_q1_journal_pct)}% <small>impact of Q3–Q4 journal papers vs similar Q1 papers</small>`,
       text: `Compared with similar papers in Q1 journals, papers in Q2 journals have ${f1(Math.abs(q2.effect_vs_q1_journal_pct))}% lower field-weighted impact, Q3–Q4 journals ${f1(Math.abs(q34.effect_vs_q1_journal_pct))}% and unranked conferences ${f1(Math.abs(conf.effect_vs_q1_journal_pct))}%. Unranked conferences hold ${fmt(conf.papers)} of our papers.`,
@@ -1709,7 +1721,17 @@ function keyFindings() {
       big: `${fmt(gs.share_joint_papers_within_300km_pct, 0)}% vs ${fmt(gs.share_citations_within_300km_pct, 0)}% <small>of joint papers vs citations within 300 km</small>`,
       text: `Doubling the distance to a partner cuts joint papers by ${fmt(100 * (1 - Math.pow(2, gs.distance_elasticity_joint_papers)), 0)}% but citations by only ${fmt(100 * (1 - Math.pow(2, gs.distance_elasticity_citations)), 0)}%: distance matters about ${fmt(gs.distance_elasticity_joint_papers / gs.distance_elasticity_citations, 0)}× more for working together than for reading each other.`,
       ev: `Poisson gravity model (partner size, distance, NIT) on ${fmt(gs.partners_with_coordinates)} institute links, robust standard errors.` },
-    { tab: "phase2", area: "Who cites us", title: "Private universities cite us because they are big, near and growing",
+    PP.a ? (() => {
+      // who cites us, by co-authorship distance between citing and cited authors (phase2_papers.py citers)
+      const at = (g) => (PP.a.table || []).find((r) => r.group === g) || {};
+      const pr = at("from top private citers"), pu = at("from top public citers");
+      const dq = fdr.find((r) => r.family === "private vs public citers" && r.test === "distance_km");
+      const nq = fdr.filter((r) => r.family === "private vs public citers").length;
+      return { tab: "phase2", area: "Who cites us", title: "Private universities' citations are more personal, not bigger",
+        big: `${fmt(pr.within_3_steps_pct, 0)}% vs ${fmt(pu.within_3_steps_pct, 0)}% <small>of citations from people at most 3 co-authorship steps from the cited authors, private vs public citers</small>`,
+        text: `Adjusted for size, the top private citers cite us no more than public institutes do (${fmt(cSize.private_median, 0)} vs ${fmt(cSize.public_median, 0)} per 1,000 of their papers, ${pv(cSize.mann_whitney_p)}). But more of their citations come from the same people (${f1(pr.self)}% vs ${f1(pu.self)}%) and from earlier co-authors (${f1(pr["co-author (before)"])}% vs ${f1(pu["co-author (before)"])}%), and they are recent (${fmt(cNew.private_median, 0)}% since 2023 vs ${fmt(cNew.public_median, 0)}%). They are also nearer (${fmt(cDist.private_median, 0)} vs ${fmt(cDist.public_median, 0)} km), but that gap is ${dq && !dq.significant_after_fdr ? `not significant once we correct for testing ${nq} measures (adjusted p = ${fmt(dq.p_adjusted_bh, 2)})` : pv(cDist.mann_whitney_p)}.`,
+        ev: `${fmt(PP.a.indian_citations)} Indian citations, each classified by the co-authorship distance between the citing and cited authors (as in Singh et al., Scientometrics 2020); private vs public χ² ${pv(PP.a.private_vs_public_p)}. Top 40 citing institutes (18 private, 22 public), Mann–Whitney tests with false-discovery-rate control.` };
+    })() : { tab: "phase2", area: "Who cites us", title: "Private universities cite us because they are big, near and growing",
       big: `${fmt(cSize.private_median, 0)} vs ${fmt(cSize.public_median, 0)} <small>citations per 1,000 of their own papers, private vs public (${pv(cSize.mann_whitney_p)}, no difference)</small>`,
       text: `Adjusted for size, the top private citers cite us no more than public institutes do. They are much closer (median ${fmt(cDist.private_median, 0)} km vs ${fmt(cDist.public_median, 0)} km, ${pv(cDist.mann_whitney_p)}) and their citations are recent (${fmt(cNew.private_median, 0)}% since 2023 vs ${fmt(cNew.public_median, 0)}%). No general sign of citation packing.`,
       ev: `Top 40 citing institutes (18 private, 22 public), Mann–Whitney tests; recount checked against indian_connections.csv.` },

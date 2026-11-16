@@ -1,0 +1,101 @@
+{
+  "inequality": [
+    {
+      "view": "Both",
+      "faculty": 657,
+      "isolated_pct": 17.80821917808219,
+      "in_core_3plus_pct": 31.81126331811263,
+      "max_core": 4,
+      "gini_degree": 0.5110702480451457,
+      "gini_betweenness": 0.7927689911024745,
+      "gini_harmonic": 0.32752330025792387
+    },
+    {
+      "view": "NIT Trichy",
+      "faculty": 357,
+      "isolated_pct": 23.249299719887954,
+      "in_core_3plus_pct": 27.170868347338935,
+      "max_core": 3,
+      "gini_degree": 0.5394338322236343,
+      "gini_betweenness": 0.8097348227354093,
+      "gini_harmonic": 0.40602704570048553
+    },
+    {
+      "view": "NIT Surathkal",
+      "faculty": 300,
+      "isolated_pct": 11.333333333333332,
+      "in_core_3plus_pct": 37.333333333333336,
+      "max_core": 4,
+      "gini_degree": 0.47189189189189173,
+      "gini_betweenness": 0.7720534411196276,
+      "gini_harmonic": 0.2312714094787105
+    }
+  ],
+  "by_rank": [
+    {
+      "rank": "Assistant Professor",
+      "faculty": 242,
+      "mean_degree": 1.5,
+      "median_harmonic": 69.78140193140223,
+      "in_core_3plus_pct": 13.636363636363635
+    },
+    {
+      "rank": "Associate Professor",
+      "faculty": 114,
+      "mean_degree": 3.210526315789474,
+      "median_harmonic": 90.80090187590213,
+      "in_core_3plus_pct": 35.96491228070175
+    },
+    {
+      "rank": "Professor",
+      "faculty": 207,
+      "mean_degree": 3.9806763285024154,
+      "median_harmonic": 95.75010822510846,
+      "in_core_3plus_pct": 44.44444444444444
+    },
+    {
+      "rank": "Professor (HAG)",
+      "faculty": 80,
+      "mean_degree": 4.2125,
+      "median_harmonic": 93.85771312021333,
+      "in_core_3plus_pct": 48.75
+    }
+  ],
+  "spearman_core_vs_h_index": [
+    0.6167345499943592,
+    4.2443179758446314e-70
+  ],
+  "spearman_core_vs_fwci": [
+    0.2800124227013338,
+    2.7775434922264777e-13
+  ],
+  "interventions": {
+    "same department, same NIT": {
+      "candidates": 8067,
+      "efficiency_before": 0.10733061053583245,
+      "after_best_10": 0.11784929721208118,
+      "gain_pct_best_10": 9.800267252497408,
+      "gain_pct_random_10_mean": 1.6485787882517755
+    },
+    "same department, across the two NITs": {
+      "candidates": 7142,
+      "efficiency_before": 0.10733061053583245,
+      "after_best_10": 0.11835800154933689,
+      "gain_pct_best_10": 10.27422741606685,
+      "gain_pct_random_10_mean": 2.4788153003711955
+    }
+  },
+  "targeted_peripheral": {
+    "to a core member": {
+      "faculty": 119,
+      "median_gain_pct": 27.486775273978648,
+      "mean_gain_pct": 30.16011941295434
+    },
+    "to a random colleague": {
+      "faculty": 119,
+      "median_gain_pct": 11.006421000296008,
+      "mean_gain_pct": 14.361456166964642
+    }
+  },
+  "peripheral_faculty_tested": 119
+}

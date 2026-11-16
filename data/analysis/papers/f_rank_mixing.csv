@@ -1,0 +1,11 @@
+rank_a,rank_b,observed_share,expected_share,observed_vs_expected
+Assistant Professor,Assistant Professor,0.0591,0.0366,1.6144
+Assistant Professor,Associate Professor,0.0613,0.0749,0.8182
+Assistant Professor,Professor,0.1312,0.1659,0.7908
+Assistant Professor,Professor (HAG),0.072,0.0687,1.0481
+Associate Professor,Associate Professor,0.0559,0.0383,1.46
+Associate Professor,Professor,0.1527,0.1696,0.9003
+Associate Professor,Professor (HAG),0.0656,0.0703,0.9332
+Professor,Professor,0.2075,0.1878,1.1052
+Professor,Professor (HAG),0.1677,0.1556,1.0778
+Professor (HAG),Professor (HAG),0.0269,0.0322,0.8337

@@ -1,0 +1,9 @@
+institution,group,faculty,median_papers_per_year,mean_papers_per_year,median_fwci,asst_prof_share
+NIT Surathkal,joined after 2016,101,2.667,3.768,0.891,0.703
+NIT Surathkal,joined and left,6,1.5,1.333,0.634,0.833
+NIT Surathkal,left before 2026,53,1.375,2.183,0.977,0.264
+NIT Surathkal,stayed 2016-2026,168,3.6,4.449,1.157,0.071
+NIT Trichy,joined after 2016,176,1.0,1.818,0.903,0.938
+NIT Trichy,joined and left,30,0.125,0.798,0.827,0.7
+NIT Trichy,left before 2026,43,1.2,2.197,1.043,0.047
+NIT Trichy,stayed 2016-2026,166,4.15,4.534,1.106,0.06

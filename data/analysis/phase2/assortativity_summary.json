@@ -75,6 +75,46 @@
       "p_value": 0.0952,
       "sign": "assortative",
       "vs_degree_preserving_random": "as expected from the degrees alone"
+    },
+    {
+      "network": "Citation network (internal, without self-citations)",
+      "variant": "out-degree of citing vs in-degree of cited",
+      "r": 0.0499,
+      "null_mean": 0.0454,
+      "z": 0.7401,
+      "p_value": 0.3333,
+      "sign": "neutral",
+      "vs_degree_preserving_random": "as expected from the degrees alone"
+    },
+    {
+      "network": "Citation network (internal, without self-citations)",
+      "variant": "in-degree of citing vs in-degree of cited",
+      "r": 0.1331,
+      "null_mean": 0.1275,
+      "z": 0.6269,
+      "p_value": 0.5714,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "as expected from the degrees alone"
+    },
+    {
+      "network": "Citation network (internal, without self-citations)",
+      "variant": "out-degree of citing vs out-degree of cited",
+      "r": 0.1538,
+      "null_mean": 0.1431,
+      "z": 1.2746,
+      "p_value": 0.2381,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "as expected from the degrees alone"
+    },
+    {
+      "network": "Citation network (internal, without self-citations)",
+      "variant": "in-degree of citing vs out-degree of cited",
+      "r": 0.0243,
+      "null_mean": 0.0751,
+      "z": -4.5322,
+      "p_value": 0.0476,
+      "sign": "neutral",
+      "vs_degree_preserving_random": "more disassortative than random"
     }
   ]
 }

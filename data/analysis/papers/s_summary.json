@@ -1,0 +1,95 @@
+{
+  "internal_edges": 23822,
+  "self_citation_share_shared_author": 0.8630257744941651,
+  "self_citation_share_shared_faculty": 0.8793971958693645,
+  "clean_edges": 3263,
+  "spearman_pagerank_all_vs_clean": 0.4475374647821493,
+  "top10_overlap": 0,
+  "top10_2016_papers_all": 6,
+  "top10_2016_papers_clean": 2,
+  "clean_same_department_share": 0.7382776585963837,
+  "nit_flow_clean": {
+    "NIT Surathkal -> NIT Surathkal": 1287,
+    "NIT Surathkal -> NIT Trichy": 283,
+    "NIT Surathkal -> both NITs": 6,
+    "NIT Trichy -> NIT Surathkal": 267,
+    "NIT Trichy -> NIT Trichy": 1413,
+    "NIT Trichy -> both NITs": 5,
+    "both NITs -> NIT Surathkal": 0,
+    "both NITs -> NIT Trichy": 2,
+    "both NITs -> both NITs": 0
+  },
+  "nit_flow_all": {
+    "NIT Surathkal -> NIT Surathkal": 12779,
+    "NIT Surathkal -> NIT Trichy": 319,
+    "NIT Surathkal -> both NITs": 36,
+    "NIT Trichy -> NIT Surathkal": 315,
+    "NIT Trichy -> NIT Trichy": 10285,
+    "NIT Trichy -> both NITs": 34,
+    "both NITs -> NIT Surathkal": 29,
+    "both NITs -> NIT Trichy": 18,
+    "both NITs -> both NITs": 7
+  },
+  "top_cross_department_flows": [
+    {
+      "src_dept": "Mechanical",
+      "dst_dept": "MME",
+      "citations": 97
+    },
+    {
+      "src_dept": "MME",
+      "dst_dept": "Mechanical",
+      "citations": 62
+    },
+    {
+      "src_dept": "Mechanical",
+      "dst_dept": "Production",
+      "citations": 57
+    },
+    {
+      "src_dept": "Production",
+      "dst_dept": "Mechanical",
+      "citations": 53
+    },
+    {
+      "src_dept": "Production",
+      "dst_dept": "MME",
+      "citations": 46
+    },
+    {
+      "src_dept": "Civil",
+      "dst_dept": "Water Resources & Ocean",
+      "citations": 39
+    },
+    {
+      "src_dept": "Water Resources & Ocean",
+      "dst_dept": "Civil",
+      "citations": 37
+    },
+    {
+      "src_dept": "Physics",
+      "dst_dept": "Chemistry",
+      "citations": 36
+    },
+    {
+      "src_dept": "CSE",
+      "dst_dept": "Computer Applications",
+      "citations": 26
+    },
+    {
+      "src_dept": "Chemistry",
+      "dst_dept": "Physics",
+      "citations": 25
+    },
+    {
+      "src_dept": "MME",
+      "dst_dept": "Production",
+      "citations": 24
+    },
+    {
+      "src_dept": "Civil",
+      "dst_dept": "Mechanical",
+      "citations": 19
+    }
+  ]
+}

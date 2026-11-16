@@ -1,0 +1,44 @@
+{
+  "faculty": 320,
+  "rule": "on the list 2016/17 to 2025 and 10+ papers in 2016-2025",
+  "mean_change_per_year": 0.13680555555555557,
+  "sd_change_per_year": 4.0116193482837685,
+  "kurtosis_of_changes": 3.09509424076725,
+  "lag1_autocorrelation_of_changes_median": -0.3695165387078623,
+  "lag1_autocorrelation_null_median": -0.4727087964040395,
+  "change_size_grows_with_level_exponent": 0.3392078737044955,
+  "average_trajectory_shape": "flat",
+  "shapes": [
+    {
+      "shape": "peak in the middle",
+      "share_pct": 44.6875
+    },
+    {
+      "shape": "rising",
+      "share_pct": 17.5
+    },
+    {
+      "shape": "dip in the middle",
+      "share_pct": 16.875
+    },
+    {
+      "shape": "flat",
+      "share_pct": 13.125
+    },
+    {
+      "shape": "falling",
+      "share_pct": 7.8125
+    }
+  ],
+  "total_output_fit": {
+    "n": 644,
+    "powerlaw_alpha": 1.343732604625159,
+    "lognormal_mu": 2.9092381302917176,
+    "lognormal_sigma": 1.214965004721484,
+    "loglik_ratio_lognormal_minus_powerlaw": 297.91033290390635,
+    "vuong_z": 12.231010417988571,
+    "vuong_p": 2.122814740232211e-34,
+    "lognormal_ks_stat": 0.09839235026573867,
+    "lognormal_ks_p": 7.035973847949917e-06
+  }
+}

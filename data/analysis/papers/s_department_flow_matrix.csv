@@ -1,0 +1,19 @@
+src_dept,Architecture,CSE,Chemical,Chemistry,Civil,Computer Applications,ECE,EEE,Energy & Environment,ICE,Information Technology,MME,Mathematics,Mechanical,Mining,Physics,Production,Water Resources & Ocean
+Architecture,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CSE,0,54,0,0,0,26,10,0,0,0,12,0,4,0,0,0,0,1
+Chemical,0,0,78,10,4,0,1,0,8,1,0,3,0,7,0,6,3,0
+Chemistry,0,0,9,192,2,0,1,0,0,0,0,0,0,7,0,25,1,0
+Civil,0,0,15,0,302,4,0,2,0,0,0,2,1,19,1,0,3,39
+Computer Applications,0,10,0,0,0,26,5,0,0,0,5,0,0,0,0,0,0,0
+ECE,0,8,0,0,1,8,221,3,0,0,0,0,0,0,0,1,0,1
+EEE,0,1,0,0,2,0,4,224,1,3,0,0,0,0,0,0,0,0
+Energy & Environment,0,0,8,0,2,0,0,0,3,0,0,0,0,5,0,3,0,0
+ICE,0,0,1,0,0,0,1,1,0,27,1,0,0,0,0,0,0,0
+Information Technology,0,8,0,0,0,1,7,3,0,0,28,0,0,0,0,0,0,1
+MME,0,0,3,7,1,0,0,0,0,1,0,110,0,62,0,13,24,0
+Mathematics,0,3,0,0,1,1,1,0,0,0,0,0,18,1,0,1,0,3
+Mechanical,0,2,14,13,7,0,0,3,14,0,0,97,0,577,1,4,57,2
+Mining,0,0,0,0,2,0,0,2,0,0,0,0,0,0,52,0,0,0
+Physics,0,0,5,36,0,0,0,2,0,0,0,5,0,0,0,224,0,0
+Production,0,0,1,0,0,0,0,0,0,2,0,46,1,53,0,0,137,0
+Water Resources & Ocean,0,0,0,0,37,0,1,0,0,0,0,0,0,3,0,0,0,127

@@ -562,6 +562,26 @@ def questions_tables():
     return t
 
 
+PP = os.path.join(AN, "papers")
+
+
+def depth_tables():
+    """Deeper Phase II questions (scripts/phase2_papers.py -> data/analysis/papers/), when they have been run:
+    the summaries, and every test with its false-discovery-rate adjusted p-value."""
+    t = {}
+    if not os.path.isdir(PP):
+        return t
+    for key, name in (("a", "a_summary.json"), ("s", "s_summary.json"), ("r", "r_summary.json"),
+                      ("b", "b_summary.json"), ("c", "c_summary.json"), ("d", "d_summary.json"),
+                      ("e", "e_summary.json")):
+        if os.path.exists(os.path.join(PP, name)):
+            t[key] = jload(PP, name)
+    if os.path.exists(os.path.join(PP, "r_false_discovery.csv")):
+        fd = csv(PP, "r_false_discovery.csv")
+        t["fdr"] = records(fd, list(fd.columns), n=5)
+    return t
+
+
 def methods_facts():
     """Numbers for the 'How we built it' tab, counted from the reference files."""
     r = csv(DATA, "reference", "faculty_roster.csv")
@@ -588,7 +608,7 @@ def main():
     data = {"papers": papers(), "faculty": faculty(), "citation_graph": citation_graph(),
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
-            "p2": phase2_tables(), "q": questions_tables(),
+            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(),
             "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
                      "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

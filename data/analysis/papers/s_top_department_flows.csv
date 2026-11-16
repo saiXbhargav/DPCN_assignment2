@@ -1,0 +1,13 @@
+src_dept,dst_dept,citations
+Mechanical,MME,97
+MME,Mechanical,62
+Mechanical,Production,57
+Production,Mechanical,53
+Production,MME,46
+Civil,Water Resources & Ocean,39
+Water Resources & Ocean,Civil,37
+Physics,Chemistry,36
+CSE,Computer Applications,26
+Chemistry,Physics,25
+MME,Production,24
+Civil,Mechanical,19

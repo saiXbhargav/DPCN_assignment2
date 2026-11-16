@@ -938,7 +938,10 @@ def assort_part():
     def rewire_d(G, seed):
         H = G.copy()
         m = H.number_of_edges()
-        nx.directed_edge_swap(H, nswap=3 * m, max_tries=100 * m, seed=int(seed))
+        try:
+            nx.directed_edge_swap(H, nswap=3 * m, max_tries=5000 * m, seed=int(seed))
+        except nx.NetworkXAlgorithmError:      # a very sparse network may run out of valid swaps; keep what was done
+            pass
         return H
 
     # the three networks
@@ -998,16 +1001,26 @@ def assort_part():
                              "knn_null_mean": np.mean(knn_null[k]) if knn_null[k] else np.nan,
                              "nodes_with_k": sum(1 for _, d in G.degree() if d == k)})
 
-    # citation network: four directed degree pairs (source's x-degree vs target's y-degree)
+    # citation network: four directed degree pairs (source's x-degree vs target's y-degree), with all internal
+    # citations and again without self-citations (86% of internal citations share an author with the cited paper)
+    works = raw_works()
+    auth = {wid: {short(a["author"]["id"]) for a in w["authorships"] if a["author"].get("id")}
+            for (_, wid), w in works.items()}
+    clean = ce[[not (auth[s] & auth[t]) for s, t in zip(ce.source_id, ce.target_id)]]
+    C_clean = nx.DiGraph()
+    C_clean.add_edges_from(zip(clean.source_id, clean.target_id))
     nullsC = [rewire_d(C, s) for s in range(N_NULL_DIRECTED)]
-    for x, y in [("out", "in"), ("in", "in"), ("out", "out"), ("in", "out")]:
-        r = nx.degree_assortativity_coefficient(C, x=x, y=y)
-        null = [nx.degree_assortativity_coefficient(H, x=x, y=y) for H in nullsC]
-        mu, sd, z, p, sign, vs = verdict(r, null)
-        rows.append({"network": "Citation network (internal)", "variant": f"{x}-degree of citing vs {y}-degree of cited",
-                     "directed_pair": f"{x}-{y}", "nodes": C.number_of_nodes(), "links": C.number_of_edges(), "r": r,
-                     "null_mean": mu, "null_sd": sd, "z": z, "p_value": p, "sign": sign,
-                     "vs_degree_preserving_random": vs, "knn_slope_mu": np.nan, "null_samples": len(null)})
+    nullsCc = [rewire_d(C_clean, s) for s in range(N_NULL_DIRECTED)]
+    for net, G, nulls in (("Citation network (internal)", C, nullsC),
+                          ("Citation network (internal, without self-citations)", C_clean, nullsCc)):
+        for x, y in [("out", "in"), ("in", "in"), ("out", "out"), ("in", "out")]:
+            r = nx.degree_assortativity_coefficient(G, x=x, y=y)
+            null = [nx.degree_assortativity_coefficient(H, x=x, y=y) for H in nulls]
+            mu, sd, z, p, sign, vs = verdict(r, null)
+            rows.append({"network": net, "variant": f"{x}-degree of citing vs {y}-degree of cited",
+                         "directed_pair": f"{x}-{y}", "nodes": G.number_of_nodes(), "links": G.number_of_edges(), "r": r,
+                         "null_mean": mu, "null_sd": sd, "z": z, "p_value": p, "sign": sign,
+                         "vs_degree_preserving_random": vs, "knn_slope_mu": np.nan, "null_samples": len(null)})
     # k_nn for citations: papers that cite k of our papers -> average in-degree (times cited by us) of what they cite
     knnC = nx.average_degree_connectivity(C, source="out", target="in")
     knnC_null = collections.defaultdict(list)

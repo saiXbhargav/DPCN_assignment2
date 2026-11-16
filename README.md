@@ -680,7 +680,8 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - one faculty member gets most of his (few) citations from 10+-author papers;
   - for two faculty (Kunwar Singh, Aditya Kumar), career citations summed over all their OpenAlex IDs are inflated by secondary IDs whose profiles mix in same-name researchers; their NIT papers and main-ID h-index are not affected.
 - **Why private institutes cite us so much:**
-  - mainly **size, recent growth and proximity**: they're as big as the public citers, publish heavily since 2023 (74% of their citations to us) and are a median of 411 km away vs 1,664 km;
+  - mainly **size and recent growth**: they're as big as the public citers and publish heavily since 2023 (74% of their citations to us); they also tend to be nearer (411 km vs 1,664 km), but that gap is not significant after a false-discovery-rate correction;
+  - their citations are **more personal**: 31% come from people within three co-authorship steps of the cited authors, against 21% for public citers (`data/analysis/papers/`);
   - **adjusted for size they cite us no more than public institutes** (43 vs 37 per 1,000 papers);
   - somewhat more **personal ties**: former NIT members and earlier co-authors;
   - their citing papers are lower-impact;
@@ -705,7 +706,8 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
 - **Assortative or disassortative?** Degree assortativity of three networks, each against degree-preserving rewired copies, with k_nn(k) plots:
   - **faculty co-authorship: assortative**, r = 0.20 vs −0.02 at random (z = 6.9);
   - **institute co-authorship: disassortative** (r = −0.23), but exactly what the hub degrees force; among partners only it's −0.09, less disassortative than random;
-  - **internal citation network: strongly assortative**, in-in r = 0.48 vs 0.18 at random, a sign of research-group citation chains.
+  - **internal citation network: strongly assortative**, in-in r = 0.48 vs 0.18 at random, a sign of research-group citation chains;
+  - but 86% of internal citations are self-citations: without them, r is what random rewiring gives (in-in 0.13 vs 0.13), so the pattern comes from authors citing their own work.
 
 ### 9. Research questions (`scripts/questions.py` → [QUESTIONS.md](data/analysis/questions/QUESTIONS.md))
 Thirteen questions (items 15–28 of our list), each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
@@ -748,6 +750,28 @@ Thirteen questions (items 15–28 of our list), each answered with data we alrea
   - removing self-citations or these heavy citing papers leaves the top-20 ranking unchanged;
   - one concentrated pattern: 2023–24 papers around one Surathkal Mechanical group, mostly by former NIT members (an alumni network).
 
+### 10. Deeper questions from the professor's papers (`scripts/phase2_papers.py` → [PAPERS.md](data/analysis/papers/PAPERS.md))
+Ideas and methods from the ten papers the professor shared, applied to our data. No new downloads.
+
+- **Who cites us, and why (A):**
+  - 22% of the 67,114 Indian citations come from people at most 3 co-authorship steps from the cited authors (as in Singh et al. 2020);
+  - private citers 31% vs public 21%: their citations are **more personal**, not more frequent per paper.
+- **Citation network without self-citations (S):** 86% of internal citations share an author; without them, none of the top-10 PageRank papers stay, and Trichy ↔ Surathkal flows are balanced (267 / 283).
+- **Fair comparison (R):**
+  - Surathkal's per-person lead falls from +33% to +24% after rank, and exists only among Assistant and Associate Professors;
+  - the equal-impact result holds with errors clustered by faculty member (p = 0.63);
+  - a false-discovery-rate correction removes 15 weak results (e.g. the Mechanical and ECE branch gaps).
+- **Core and periphery (C):**
+  - Trichy has more isolated faculty (23% vs 11%) and a shallower core;
+  - the best 10 new links raise network efficiency by about 10%, against 2% for random ones.
+- **Productivity (B):** no common career curve (45% peak in the middle, average flat); total output is lognormal-like, not a power law.
+- **Hiring vs leaving (D):** Trichy grew 209 → 342 by hiring mostly new Assistant Professors (median 1.0 paper a year vs 2.67 for Surathkal's joiners); faculty who stayed publish about the same at both NITs.
+- **Team size (E):** FWCI rises steadily with team size (0.72 single author → 2.09 for 10–19 authors); only 1 faculty paper has 20+ authors.
+- **Assortativity (F):**
+  - assortative on degree (0.20; Surathkal 0.23, Trichy 0.11), h-index (0.26) and department (0.66);
+  - rank mixing is weak (0.07);
+  - degree assortativity grew from near random in 2017–18 to 0.20.
+
 ---
 
 ## Folder layout
@@ -777,6 +801,7 @@ DPCN_assignment2/
 │   ├── insights.py          ← growth, triadic closure, AI, citation recency, geography, link prediction → data/analysis/insights/
 │   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
 │   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
+│   ├── phase2_papers.py     ← Phase II, ideas from the professor's papers: who cites us (co-authorship distance), citations without self-citations, fair comparison (rank, clustered errors, false discovery), core and edge interventions, productivity, hiring vs leaving, team size, assortativity
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -837,6 +862,7 @@ python insights.py                  # data/analysis/insights/
 python phase2.py                    # data/all_papers.csv and data/analysis/phase2/
 python fetch_insights.py yearly     # citations per year and open-access status (213 requests)
 python questions.py                 # data/analysis/questions/
+python phase2_papers.py             # data/analysis/papers/ (uses the files above)
 python build_dashboard.py           # dashboard/index.html
 ```
 

@@ -1,0 +1,19 @@
+department,faculty_with_links,link_ends,share_of_links_inside_department
+Energy & Environment,5,20,0.3
+Chemistry,21,82,0.3415
+MME,31,131,0.5038
+Physics,21,98,0.5102
+ICE,16,43,0.5581
+Water Resources & Ocean,19,66,0.5758
+CSE,35,90,0.5778
+Information Technology,12,30,0.6
+Computer Applications,16,48,0.7083
+Production,32,96,0.7292
+Chemical,32,133,0.7368
+Mechanical,72,360,0.7389
+Mathematics,29,47,0.766
+Civil,60,166,0.7711
+Mining,13,69,0.7826
+ECE,56,194,0.7938
+EEE,57,224,0.8304
+Architecture,12,20,0.9

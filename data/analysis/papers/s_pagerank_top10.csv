@@ -1,0 +1,21 @@
+network,rank,openalex_id,title,year,institution,department,pagerank,in_degree,citations_total
+all internal citations,1,W2229181284,Effect of particle surface treatment and blending method on flexural properties of injection-molded cenosphere/HDPE syntactic foams,2016,NIT Surathkal,Mechanical,0.0016042534965947982,33,87
+all internal citations,2,W2508785198,Myo-inositol based nano-PCM for solar thermal energy storage,2016,NIT Trichy,Chemical,0.0011033516907874108,15,97
+all internal citations,3,W2886472407,"Studies on the weldability, mechanical properties and microstructural characterization of activated flux TIG welding of AISI 321 austenitic stainless steel",2018,NIT Trichy,Mechanical,0.0009250336507080942,17,55
+all internal citations,4,W2986280353,Printability of multiwalled SS 316L by wire arc additive manufacturing route with tunable texture,2019,NIT Trichy,MME,0.000880497473469709,6,74
+all internal citations,5,W2469213764,"Half-sandwich RuCl 2 (η 6 -p-cymene) core complexes containing sulfur donor aroylthiourea ligands: DNA and protein binding, DNA cleavage and cytotoxic studies",2016,NIT Trichy,Chemistry,0.0008712731857942304,40,102
+all internal citations,6,W4210333914,"Investigating the contrast diurnal relationship of land surface temperatures with various surface parameters represent vegetation, soil, water, and urbanization over Ahmedabad city in India",2022,NIT Trichy,Civil,0.0008172136646598281,21,77
+all internal citations,7,W2601475650,High Thermoelectric Performance of Co-Doped Tin Telluride Due to Synergistic Effect of Magnesium and Indium,2017,NIT Surathkal,Chemistry,0.0008016231809707536,29,92
+all internal citations,8,W2397623510,Experimental investigation on the mechanical properties ofCyperus pangoreifibers and jute fiber-based natural fiber composites,2016,NIT Trichy,Production,0.0007965518426957886,9,77
+all internal citations,9,W2511903426,Effect of Oxide Fluxes on Depth of Penetration in Flux Bounded Tungsten Inert Gas Welding of AISI 304L Stainless Steel,2016,NIT Trichy,MME,0.0007845515971669391,2,9
+all internal citations,10,W2291607027,Hydrothermally Synthesized h-MoO 3 and α-MoO 3 Nanocrystals: New Findings on Crystal-Structure-Dependent Charge Transport,2016,NIT Trichy,Physics,0.0007718627097483456,7,245
+without self-citations,1,W2578228699,Study on the enhancement of ferroelectric β phase in P(VDF-HFP) films under heating and poling conditions,2017,NIT Trichy,Physics,0.0005752763517552923,16,83
+without self-citations,2,W4294084431,Improvement in Slurry Erosion and Corrosion Resistance of Plasma-Sprayed Fly Ash Coatings for Marine Applications,2022,NIT Surathkal,Mechanical,0.000545641429917854,13,35
+without self-citations,3,W4386422463,"In Silico Studies of (Z)-3-(2-Chloro-4-Nitrophenyl)-5-(4-Nitrobenzylidene)-2-Thioxothiazolidin-4-One Derivatives as PPAR-γ Agonist: Design, Molecular Docking, MM-GBSA Assay, Toxicity Predictions, DFT Calculations and MD Simulation Studies",2023,NIT Surathkal,Chemistry,0.0005161021725195033,8,15
+without self-citations,4,W2794065186,Analysis of laterally loaded group of piles located on sloping ground,2018,NIT Trichy,Civil,0.00048232756874743484,17,46
+without self-citations,5,W2616127543,Effect of biodiesel-diesel-n-pentanol and biodiesel-diesel-n-hexanol blends on diesel engine emission and combustion characteristics,2017,NIT Trichy,Mechanical,0.0004491940519543909,7,205
+without self-citations,6,W2565018910,Effect of Earthquake on a Single Pile Located in Sloping Ground,2016,NIT Trichy,Civil,0.00044066679149430286,16,21
+without self-citations,7,W2787203953,Dynamic Power Management System Employing a Single-Stage Power Converter for Standalone Solar PV Applications,2018,NIT Trichy,EEE,0.00043479453108638056,10,88
+without self-citations,8,W2297806639,Characterization of coal blends for effective utilization in thermal power plants,2016,NIT Trichy,Chemical,0.0004243721695655715,5,36
+without self-citations,9,W2906139439,A Self-Balancing Five-Level Boosting Inverter With Reduced Components,2018,NIT Surathkal,EEE,0.00039982325633366176,10,164
+without self-citations,10,W4363650034,Effect of thermal expansion on the high temperature wear resistance of Ni-20%Cr detonation spray coating on IN718 substrate,2023,NIT Surathkal,MME,0.0003652815615786453,19,46

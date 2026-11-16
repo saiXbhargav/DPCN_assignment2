@@ -1,0 +1,14 @@
+network,measure,observed,null_mean,null_sd,z,nodes,links
+faculty (both NITs),degree,0.2035,-0.017,0.0293,7.5171,540,961
+faculty (both NITs),h_index,0.2626,-0.0093,0.0326,8.3461,540,961
+faculty (both NITs),fwci,0.1732,0.0014,0.0281,6.1245,540,961
+faculty (both NITs),department,0.6594,-0.0031,0.0093,71.3798,540,961
+faculty (both NITs),rank,0.0738,-0.0027,0.0183,4.1857,540,961
+faculty (both NITs),institution,0.9414,-0.0014,0.0331,28.4694,540,961
+faculty (NIT Trichy),degree,0.1095,-0.0156,0.051,2.4535,272,429
+faculty (NIT Trichy),h_index,0.2125,-0.0041,0.0437,4.9587,272,429
+faculty (NIT Trichy),department,0.668,-0.006,0.012,56.1757,272,429
+faculty (NIT Surathkal),degree,0.2297,-0.0231,0.0413,6.1152,263,504
+faculty (NIT Surathkal),h_index,0.3052,-0.0147,0.0409,7.8313,263,504
+faculty (NIT Surathkal),department,0.6508,-0.0076,0.0136,48.4101,263,504
+institutes without our two NITs,cluster_type,0.1491,-0.0082,0.0092,17.0713,724,2969

@@ -1,0 +1,4 @@
+model,surathkal_effect_pct,ci_low_pct,ci_high_pct,p_value,faculty
+no controls,32.7866,18.6165,48.6493,0.0,743
++ rank,24.1855,10.8763,39.0924,0.0002,743
++ rank + department,23.8351,9.4381,40.1262,0.0007,743

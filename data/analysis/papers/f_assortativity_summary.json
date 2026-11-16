@@ -1,0 +1,323 @@
+{
+  "table": [
+    {
+      "network": "faculty (both NITs)",
+      "measure": "degree",
+      "observed": 0.20348635527660397,
+      "null_mean": -0.01701529067239617,
+      "null_sd": 0.02933337183052713,
+      "z": 7.517091700979459,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (both NITs)",
+      "measure": "h_index",
+      "observed": 0.2626318598806,
+      "null_mean": -0.009256440080932106,
+      "null_sd": 0.03257680136646764,
+      "z": 8.346071086076472,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (both NITs)",
+      "measure": "fwci",
+      "observed": 0.1732050220787555,
+      "null_mean": 0.0013782593489330287,
+      "null_sd": 0.028055543699468666,
+      "z": 6.12452086369927,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (both NITs)",
+      "measure": "department",
+      "observed": 0.6594202683103915,
+      "null_mean": -0.0030987406263509355,
+      "null_sd": 0.009281598451092719,
+      "z": 71.37983962867348,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (both NITs)",
+      "measure": "rank",
+      "observed": 0.07375040507814305,
+      "null_mean": -0.0027125929782407603,
+      "null_sd": 0.018267861352030845,
+      "z": 4.185656798182531,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (both NITs)",
+      "measure": "institution",
+      "observed": 0.9413702641693613,
+      "null_mean": -0.0014377663700462903,
+      "null_sd": 0.0331165343193182,
+      "z": 28.46940508474131,
+      "nodes": 540,
+      "links": 961
+    },
+    {
+      "network": "faculty (NIT Trichy)",
+      "measure": "degree",
+      "observed": 0.10945160821941219,
+      "null_mean": -0.015637589232259722,
+      "null_sd": 0.05098352493544755,
+      "z": 2.453521948708975,
+      "nodes": 272,
+      "links": 429
+    },
+    {
+      "network": "faculty (NIT Trichy)",
+      "measure": "h_index",
+      "observed": 0.2125024601941649,
+      "null_mean": -0.004076532084576957,
+      "null_sd": 0.04367682779705947,
+      "z": 4.958670379750496,
+      "nodes": 272,
+      "links": 429
+    },
+    {
+      "network": "faculty (NIT Trichy)",
+      "measure": "department",
+      "observed": 0.6679556678842221,
+      "null_mean": -0.006043242567404639,
+      "null_sd": 0.011998047849964515,
+      "z": 56.17571448955508,
+      "nodes": 272,
+      "links": 429
+    },
+    {
+      "network": "faculty (NIT Surathkal)",
+      "measure": "degree",
+      "observed": 0.22968972626093193,
+      "null_mean": -0.02314986214822974,
+      "null_sd": 0.041346148930230885,
+      "z": 6.115190772321096,
+      "nodes": 263,
+      "links": 504
+    },
+    {
+      "network": "faculty (NIT Surathkal)",
+      "measure": "h_index",
+      "observed": 0.30522485693211276,
+      "null_mean": -0.014706511512105013,
+      "null_sd": 0.04085283983069621,
+      "z": 7.83131282354149,
+      "nodes": 263,
+      "links": 504
+    },
+    {
+      "network": "faculty (NIT Surathkal)",
+      "measure": "department",
+      "observed": 0.6508018103592781,
+      "null_mean": -0.007583215063977201,
+      "null_sd": 0.013600152265671012,
+      "z": 48.4101216340883,
+      "nodes": 263,
+      "links": 504
+    },
+    {
+      "network": "institutes without our two NITs",
+      "measure": "cluster_type",
+      "observed": 0.14905464677766359,
+      "null_mean": -0.008151150836075092,
+      "null_sd": 0.00920878125218559,
+      "z": 17.071292422808703,
+      "nodes": 724,
+      "links": 2969
+    }
+  ],
+  "same_rank_link_share": 0.3494623655913978,
+  "by_year": [
+    {
+      "year": 2016,
+      "faculty_with_links": 162,
+      "links": 135,
+      "degree_assortativity": 0.201920448332421,
+      "null_mean": -0.027239099234554504,
+      "z": 3.0761646897248083
+    },
+    {
+      "year": 2017,
+      "faculty_with_links": 241,
+      "links": 236,
+      "degree_assortativity": 0.06262976403256938,
+      "null_mean": -0.014880812676403963,
+      "z": 1.1702257959653584
+    },
+    {
+      "year": 2018,
+      "faculty_with_links": 282,
+      "links": 313,
+      "degree_assortativity": 0.009927411918046108,
+      "null_mean": -0.03432216778545415,
+      "z": 0.9969367204070462
+    },
+    {
+      "year": 2019,
+      "faculty_with_links": 323,
+      "links": 416,
+      "degree_assortativity": 0.11524662992534739,
+      "null_mean": -0.007791246202463849,
+      "z": 2.496389255535004
+    },
+    {
+      "year": 2020,
+      "faculty_with_links": 364,
+      "links": 515,
+      "degree_assortativity": 0.13305677429264398,
+      "null_mean": -0.010056903529699257,
+      "z": 3.9936774603867335
+    },
+    {
+      "year": 2021,
+      "faculty_with_links": 391,
+      "links": 572,
+      "degree_assortativity": 0.16100147560288636,
+      "null_mean": -0.011344595751466154,
+      "z": 4.136772081420641
+    },
+    {
+      "year": 2022,
+      "faculty_with_links": 430,
+      "links": 656,
+      "degree_assortativity": 0.1729486359281181,
+      "null_mean": -0.020132637706233115,
+      "z": 4.627551045767256
+    },
+    {
+      "year": 2023,
+      "faculty_with_links": 467,
+      "links": 751,
+      "degree_assortativity": 0.1816508576713559,
+      "null_mean": -0.009467664121665133,
+      "z": 5.596006077417355
+    },
+    {
+      "year": 2024,
+      "faculty_with_links": 507,
+      "links": 839,
+      "degree_assortativity": 0.20062642441823328,
+      "null_mean": -0.008862984476528607,
+      "z": 6.701501748642036
+    },
+    {
+      "year": 2025,
+      "faculty_with_links": 530,
+      "links": 923,
+      "degree_assortativity": 0.19323555607974097,
+      "null_mean": -0.010853389178240896,
+      "z": 6.579986659180169
+    },
+    {
+      "year": 2026,
+      "faculty_with_links": 540,
+      "links": 961,
+      "degree_assortativity": 0.20348635527660397,
+      "null_mean": -0.01119902481667598,
+      "z": 6.862223383812931
+    }
+  ],
+  "rank_mixing": [
+    {
+      "rank_a": "Assistant Professor",
+      "rank_b": "Assistant Professor",
+      "observed_share": 0.05913978494623656,
+      "expected_share": 0.03663313677881836,
+      "observed_vs_expected": 1.6143794975381898
+    },
+    {
+      "rank_a": "Assistant Professor",
+      "rank_b": "Associate Professor",
+      "observed_share": 0.06129032258064516,
+      "expected_share": 0.07491270667129149,
+      "observed_vs_expected": 0.8181565625385848
+    },
+    {
+      "rank_a": "Assistant Professor",
+      "rank_b": "Professor",
+      "observed_share": 0.13118279569892474,
+      "expected_share": 0.16587813620071687,
+      "observed_vs_expected": 0.790838375108038
+    },
+    {
+      "rank_a": "Assistant Professor",
+      "rank_b": "Professor (HAG)",
+      "observed_share": 0.07204301075268817,
+      "expected_share": 0.06873858249508615,
+      "observed_vs_expected": 1.048072394536769
+    },
+    {
+      "rank_a": "Associate Professor",
+      "rank_b": "Associate Professor",
+      "observed_share": 0.05591397849462366,
+      "expected_share": 0.03829806914094115,
+      "observed_vs_expected": 1.4599686028257457
+    },
+    {
+      "rank_a": "Associate Professor",
+      "rank_b": "Professor",
+      "observed_share": 0.15268817204301074,
+      "expected_share": 0.1696057347670251,
+      "observed_vs_expected": 0.9002535925612848
+    },
+    {
+      "rank_a": "Associate Professor",
+      "rank_b": "Professor (HAG)",
+      "observed_share": 0.06559139784946237,
+      "expected_share": 0.07028326974216674,
+      "observed_vs_expected": 0.9332434033032834
+    },
+    {
+      "rank_a": "Professor",
+      "rank_b": "Professor",
+      "observed_share": 0.2075268817204301,
+      "expected_share": 0.1877777777777778,
+      "observed_vs_expected": 1.1051727428898643
+    },
+    {
+      "rank_a": "Professor",
+      "rank_b": "Professor (HAG)",
+      "observed_share": 0.16774193548387098,
+      "expected_share": 0.1556272401433692,
+      "observed_vs_expected": 1.0778443113772453
+    },
+    {
+      "rank_a": "Professor (HAG)",
+      "rank_b": "Professor (HAG)",
+      "observed_share": 0.026881720430107527,
+      "expected_share": 0.03224534628280727,
+      "observed_vs_expected": 0.8336620172827994
+    }
+  ],
+  "least_inward_departments": [
+    {
+      "department": "Energy & Environment",
+      "faculty_with_links": 5,
+      "link_ends": 20,
+      "share_of_links_inside_department": 0.3
+    },
+    {
+      "department": "Chemistry",
+      "faculty_with_links": 21,
+      "link_ends": 82,
+      "share_of_links_inside_department": 0.34146341463414637
+    },
+    {
+      "department": "MME",
+      "faculty_with_links": 31,
+      "link_ends": 131,
+      "share_of_links_inside_department": 0.5038167938931297
+    },
+    {
+      "department": "Physics",
+      "faculty_with_links": 21,
+      "link_ends": 98,
+      "share_of_links_inside_department": 0.5102040816326531
+    }
+  ]
+}

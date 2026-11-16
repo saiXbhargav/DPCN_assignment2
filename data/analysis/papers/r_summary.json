@@ -1,0 +1,269 @@
+{
+  "within_rank": [
+    {
+      "rank": "Assistant Professor",
+      "faculty_trichy": 198,
+      "faculty_surathkal": 102,
+      "share_of_trichy_faculty": 0.4771084337349398,
+      "share_of_surathkal_faculty": 0.31097560975609756,
+      "median_papers_per_year_trichy": 1.05,
+      "median_papers_per_year_surathkal": 2.5,
+      "p_papers_per_year": 0.0004163338710321374,
+      "median_fwci_trichy": 0.865,
+      "median_fwci_surathkal": 0.946,
+      "p_fwci": 0.4915311289010128
+    },
+    {
+      "rank": "Associate Professor",
+      "faculty_trichy": 45,
+      "faculty_surathkal": 82,
+      "share_of_trichy_faculty": 0.10843373493975904,
+      "share_of_surathkal_faculty": 0.25,
+      "median_papers_per_year_trichy": 2.6,
+      "median_papers_per_year_surathkal": 3.45,
+      "p_papers_per_year": 0.009600418332989807,
+      "median_fwci_trichy": 1.154,
+      "median_fwci_surathkal": 1.083,
+      "p_fwci": 0.2800165376697641
+    },
+    {
+      "rank": "Professor",
+      "faculty_trichy": 111,
+      "faculty_surathkal": 107,
+      "share_of_trichy_faculty": 0.2674698795180723,
+      "share_of_surathkal_faculty": 0.32621951219512196,
+      "median_papers_per_year_trichy": 4.1,
+      "median_papers_per_year_surathkal": 3.7,
+      "p_papers_per_year": 0.7093632678923139,
+      "median_fwci_trichy": 1.0775000000000001,
+      "median_fwci_surathkal": 1.07,
+      "p_fwci": 0.6867609677919894
+    },
+    {
+      "rank": "Professor (HAG)",
+      "faculty_trichy": 46,
+      "faculty_surathkal": 34,
+      "share_of_trichy_faculty": 0.1108433734939759,
+      "share_of_surathkal_faculty": 0.10365853658536585,
+      "median_papers_per_year_trichy": 4.35,
+      "median_papers_per_year_surathkal": 4.1125,
+      "p_papers_per_year": 0.8114991275746515,
+      "median_fwci_trichy": 1.1364999999999998,
+      "median_fwci_surathkal": 1.2455,
+      "p_fwci": 0.2976774669980189
+    },
+    {
+      "rank": "All ranks",
+      "faculty_trichy": 415,
+      "faculty_surathkal": 328,
+      "share_of_trichy_faculty": 1.0,
+      "share_of_surathkal_faculty": 1.0,
+      "median_papers_per_year_trichy": 2.4,
+      "median_papers_per_year_surathkal": 3.4,
+      "p_papers_per_year": 2.3155366090136565e-06,
+      "median_fwci_trichy": 1.0165,
+      "median_fwci_surathkal": 1.0695000000000001,
+      "p_fwci": 0.15981966701901618
+    }
+  ],
+  "papers_per_year_models": [
+    {
+      "model": "no controls",
+      "surathkal_effect_pct": 32.786551311508475,
+      "ci_low_pct": 18.616548497456932,
+      "ci_high_pct": 48.64931101567078,
+      "p_value": 8.424040198563503e-07,
+      "faculty": 743
+    },
+    {
+      "model": "+ rank",
+      "surathkal_effect_pct": 24.185548747306296,
+      "ci_low_pct": 10.876271997359034,
+      "ci_high_pct": 39.09243375387772,
+      "p_value": 0.0001803387539388026,
+      "faculty": 743
+    },
+    {
+      "model": "+ rank + department",
+      "surathkal_effect_pct": 23.835126542547712,
+      "ci_low_pct": 9.438069849038877,
+      "ci_high_pct": 40.12617900665105,
+      "p_value": 0.0006982496103422685,
+      "faculty": 743
+    }
+  ],
+  "fwci_sensitivity": [
+    {
+      "papers": "all years",
+      "n": 18342,
+      "surathkal_effect_pct": 1.1710433648233654,
+      "p_robust": 0.2162302879812037,
+      "se_robust": 0.009414735576023387,
+      "se_clustered_by_faculty": 0.02442762485979144,
+      "p_clustered": 0.6336414100384222,
+      "faculty_clusters": 650,
+      "foreign_effect_pct": 14.96991173058031,
+      "foreign_p_clustered": 0.0001399168790960554,
+      "conference_effect_pct": -14.153431253316429,
+      "conference_p_clustered": 7.891271593382885e-15
+    },
+    {
+      "papers": "published up to 2024",
+      "n": 15231,
+      "surathkal_effect_pct": 0.7266882130292585,
+      "p_robust": 0.4714099990292818,
+      "se_robust": 0.010053788421463499,
+      "se_clustered_by_faculty": 0.025132610244502505,
+      "p_clustered": 0.7732732214180059,
+      "faculty_clusters": 617,
+      "foreign_effect_pct": 15.223407930136478,
+      "foreign_p_clustered": 0.00018573295387400724,
+      "conference_effect_pct": -12.080772608445367,
+      "conference_p_clustered": 2.195743108854318e-09
+    },
+    {
+      "papers": "published up to 2023",
+      "n": 13176,
+      "surathkal_effect_pct": -0.05428176506271365,
+      "p_robust": 0.9600880898094356,
+      "se_robust": 0.010849960807234348,
+      "se_clustered_by_faculty": 0.025885544025512672,
+      "p_clustered": 0.9832651132330947,
+      "faculty_clusters": 588,
+      "foreign_effect_pct": 14.178553229745393,
+      "foreign_p_clustered": 0.00044881636864670414,
+      "conference_effect_pct": -10.21511106819386,
+      "conference_p_clustered": 7.3126846346764924e-06
+    }
+  ],
+  "fdr_by_family": [
+    {
+      "family": "branch FWCI, Trichy vs Surathkal",
+      "tests": 10,
+      "significant_raw": 6,
+      "significant_after_fdr": 4
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "tests": 50,
+      "significant_raw": 22,
+      "significant_after_fdr": 14
+    },
+    {
+      "family": "partner countries (Q15)",
+      "tests": 14,
+      "significant_raw": 9,
+      "significant_after_fdr": 8
+    },
+    {
+      "family": "partner types (Q16)",
+      "tests": 10,
+      "significant_raw": 5,
+      "significant_after_fdr": 3
+    },
+    {
+      "family": "per-faculty institute tests",
+      "tests": 4,
+      "significant_raw": 3,
+      "significant_after_fdr": 3
+    },
+    {
+      "family": "private vs public citers",
+      "tests": 15,
+      "significant_raw": 6,
+      "significant_after_fdr": 4
+    }
+  ],
+  "lost_after_fdr": [
+    {
+      "family": "branch FWCI, Trichy vs Surathkal",
+      "test": "Mechanical",
+      "p_value": 0.038463851563916865,
+      "p_adjusted_bh": 0.06410641927319477
+    },
+    {
+      "family": "branch FWCI, Trichy vs Surathkal",
+      "test": "ECE",
+      "p_value": 0.03220790973088864,
+      "p_adjusted_bh": 0.06410641927319477
+    },
+    {
+      "family": "partner types (Q16)",
+      "test": "Other NIT",
+      "p_value": 0.0252,
+      "p_adjusted_bh": 0.063
+    },
+    {
+      "family": "partner types (Q16)",
+      "test": "Foreign other",
+      "p_value": 0.0361,
+      "p_adjusted_bh": 0.0722
+    },
+    {
+      "family": "partner countries (Q15)",
+      "test": "Taiwan",
+      "p_value": 0.0457,
+      "p_adjusted_bh": 0.07108888888888888
+    },
+    {
+      "family": "private vs public citers",
+      "test": "distance_km",
+      "p_value": 0.0487,
+      "p_adjusted_bh": 0.12175000000000001
+    },
+    {
+      "family": "private vs public citers",
+      "test": "median_citations_per_year_of_citing_papers",
+      "p_value": 0.0337,
+      "p_adjusted_bh": 0.10110000000000001
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "all ranks / papers per year on the faculty list",
+      "p_value": 0.0178,
+      "p_adjusted_bh": 0.05235294117647059
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "all ranks / share of papers in Q1",
+      "p_value": 0.0165,
+      "p_adjusted_bh": 0.051562500000000004
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "all ranks / share with a foreign co-author",
+      "p_value": 0.0286,
+      "p_adjusted_bh": 0.0715
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "all ranks / betweenness",
+      "p_value": 0.0159,
+      "p_adjusted_bh": 0.051562500000000004
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "Associate Professor / papers per year on the faculty list",
+      "p_value": 0.0309,
+      "p_adjusted_bh": 0.07357142857142857
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "Associate Professor / NIT faculty co-authors",
+      "p_value": 0.0344,
+      "p_adjusted_bh": 0.07818181818181819
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "Professor / share with a foreign co-author",
+      "p_value": 0.0238,
+      "p_adjusted_bh": 0.06263157894736843
+    },
+    {
+      "family": "former vs current faculty (Q18)",
+      "test": "Professor (HAG) / h-index (2016-2026)",
+      "p_value": 0.0224,
+      "p_adjusted_bh": 0.062222222222222213
+    }
+  ]
+}

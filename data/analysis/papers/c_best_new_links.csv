@@ -1,0 +1,21 @@
+set,a,a_nit,b,b_nit,department,efficiency_after
+"same department, same NIT",D Ezhilarasi,NIT Trichy,N Sivakumaran,NIT Trichy,ICE,0.10882744505729389
+"same department, same NIT",G Subbaiyan,NIT Trichy,G Sangeetha,NIT Trichy,Architecture,0.11019811454941338
+"same department, same NIT",T N Janakiraman,NIT Trichy,V Ravichandran,NIT Trichy,Mathematics,0.11145211733407107
+"same department, same NIT",G Swaminathan,NIT Trichy,S Jayalekshmi,NIT Trichy,Civil,0.11254131194982767
+"same department, same NIT",Gayathri P,NIT Surathkal,Madhusudhan R,NIT Surathkal,Mathematics,0.11350600389033816
+"same department, same NIT",N Siva Shanmugam,NIT Trichy,Ashok Kumar Nallathambi,NIT Trichy,Mechanical,0.11439383794027266
+"same department, same NIT",A Meenatchi Sundaram,NIT Trichy,G Sangeetha,NIT Trichy,Architecture,0.11527064862468997
+"same department, same NIT",Jora M Gonda,NIT Surathkal,B Venkatesa Perumal,NIT Surathkal,EEE,0.11613649904227223
+"same department, same NIT",Jose Thankachan,NIT Trichy,C Nagamani,NIT Trichy,EEE,0.11698961113654427
+"same department, same NIT",C Nagamani,NIT Trichy,Pinkymol Kp,NIT Trichy,EEE,0.11784929721208118
+"same department, across the two NITs",Gangadharan K V,NIT Surathkal,S Suresh,NIT Trichy,Mechanical,0.10904891815419154
+"same department, across the two NITs",A Senthil Thilak,NIT Surathkal,V Ravichandran,NIT Trichy,Mathematics,0.11068691372490516
+"same department, across the two NITs",Jeny Rajan,NIT Surathkal,R Leela Velusamy,NIT Trichy,CSE,0.1118790269656179
+"same department, across the two NITs",A Senthil Thilak,NIT Surathkal,Vamsinadh Thota,NIT Trichy,Mathematics,0.11291199428137005
+"same department, across the two NITs",A Venkata Narasimhadhan,NIT Surathkal,G Lakshmi Narayanan,NIT Trichy,ECE,0.11389790936058616
+"same department, across the two NITs",Gangadharan K V,NIT Surathkal,Ashok Kumar Nallathambi,NIT Trichy,Mechanical,0.11485739573708727
+"same department, across the two NITs",Ramesh M R,NIT Surathkal,K R Balasubramanian,NIT Trichy,Mechanical,0.1157442949092214
+"same department, across the two NITs",B Venkatesa Perumal,NIT Surathkal,Pinkymol Kp,NIT Trichy,EEE,0.11662286808147984
+"same department, across the two NITs",B Venkatesa Perumal,NIT Surathkal,Jose Thankachan,NIT Trichy,EEE,0.11750801523500319
+"same department, across the two NITs",Jeny Rajan,NIT Surathkal,E Sivasankar,NIT Trichy,CSE,0.11835800154933689

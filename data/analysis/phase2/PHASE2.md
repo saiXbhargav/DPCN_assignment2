@@ -235,9 +235,11 @@ Across all individual citations, private citers have a personal tie **20.8%** of
    - **Adjusted for size, private institutes cite us no more than public ones**: 43 vs 37 per 1,000 papers, no significant difference.
    - The biggest private citers are **mid-table** on this measure: VIT 62, SRM 54, Saveetha 43.
    - Their citations are **recent**: 74% since 2023 (83% for Saveetha), which follows the fast growth of private-university publishing.
-2. **They're nearby.** Private citers are a median of **411 km** away (Tamil Nadu and Karnataka), against 1,664 km for public ones. This matches what we found for co-authorship: research links are local.
-3. **Somewhat more personal ties.**
+2. **They tend to be nearby.** Private citers are a median of **411 km** away (Tamil Nadu and Karnataka), against 1,664 km for public ones, which matches what we found for co-authorship: research links are local.
+   - **But this gap is not significant** once we correct for testing all 15 measures in the table at once (Benjamini–Hochberg false-discovery rate: adjusted p = 0.12; `data/analysis/papers/f_false_discovery.csv`). Treat it as a tendency, not a finding.
+3. **More personal ties: the clearest difference.**
    - Private citers more often include an **earlier co-author** of the cited faculty (significant) or a **former NIT member** (borderline).
+   - **Checked over the whole co-authorship network** (all 67,114 Indian citations, following Singh, Vasques Filho, Jolad & O'Neale, *Scientometrics* 2020; `data/analysis/papers/a_citation_distance.csv`): **31%** of the top private citers' citations come from people at most 3 co-authorship steps from the cited authors, against **21%** for the top public citers and 17% for all other Indian citers (χ² p < 10⁻¹⁰⁰). Self-citations are 12.9% vs 10.2%, and earlier co-authors 6.8% vs 4.0%.
    - These are likely former NIT research scholars now teaching at nearby private colleges, who keep citing their supervisors' and their own NIT work.
 4. **Their citing papers are lower-impact.** They are more often in conference proceedings (15% vs 10%) and are themselves cited less (median 5 vs 8 citations). The high citation counts reflect high **volume** more than high-impact use.
 5. **No general sign of citation packing or of a few faculty being favoured.** Private citing papers cite about the same number of our papers each (1.31 vs 1.29), and their citations are spread across our faculty as widely as public ones' are.
@@ -254,7 +256,7 @@ Across all individual citations, private citers have a personal tie **20.8%** of
 These are best explained by **alumni and supervisor networks**, not by private status.
 
 **Conclusion for the report:**
-> "Private universities top our list of citers mainly because they are very large, publish heavily since 2023 and are geographically close; adjusted for size they cite us no more than public institutes. Their citations come somewhat more often through personal ties (former NIT scholars and co-authors) and appear in lower-impact papers, but we find no general evidence of citation packing or targeting of a few faculty. The few institutes with heavy packing (e.g. Nitte Meenakshi, VTU) are explained by alumni networks."
+> "Private universities top our list of citers mainly because they are very large and publish heavily since 2023; adjusted for size they cite us no more than public institutes. Their citations come more often through personal ties: 31% come from people within three co-authorship steps of the cited authors, against 21% for public citers (former NIT scholars, co-authors and the authors themselves). They also tend to be nearer, but that gap does not survive a correction for multiple tests. Their citing papers are lower-impact, and we find no general evidence of citation packing or targeting of a few faculty. The few institutes with heavy packing (e.g. Nitte Meenakshi, VTU) are explained by alumni networks."
 
 **Caveats:**
 - **Alumni are under-counted.** Only people who published with an NIT affiliation **in 2016–2026** can be detected, and authors without an OpenAlex ID are missed. The tie percentages are therefore lower bounds.
@@ -302,6 +304,12 @@ Files:
 | Citation network | in-in | **0.48** | 0.18 | 39.0 | **assortative**, more than random |
 | Citation network | out-out | **0.50** | 0.22 | 32.0 | **assortative**, more than random |
 | Citation network | in-out | 0.14 | 0.12 | 1.6 | as expected from the degrees alone |
+| Citation network, **without self-citations** | out-in | 0.05 | 0.05 | 0.7 | as expected from the degrees alone |
+| Citation network, without self-citations | in-in | 0.13 | 0.13 | 0.6 | as expected from the degrees alone |
+| Citation network, without self-citations | out-out | 0.15 | 0.14 | 1.3 | as expected from the degrees alone |
+| Citation network, without self-citations | in-out | 0.02 | 0.08 | −4.5 | near zero, *less* assortative than random |
+
+"Without self-citations" keeps only the 3,263 internal citations (of 23,822) where the citing and cited papers share no author.
 
 ### Findings
 1. **The faculty network is genuinely assortative.**
@@ -312,10 +320,10 @@ Files:
    - With our two NITs it is strongly disassortative (r = −0.23), and the rewired networks give exactly the same value. In the chart, the data sits on the rewired line.
    - This is the shape of a **hub-and-spoke** network: our NITs link to hundreds of small partners. It's not a preference.
    - Among partners only (our NITs removed), it's still slightly disassortative (−0.09), but **less** than random (−0.13). Large partners such as IITs, VIT and Manipal co-author *with each other* on our papers somewhat more than chance.
-3. **The citation network is strongly assortative.**
-   - Papers that are cited a lot by our own papers are cited by other papers that are also cited a lot (in-in r = 0.48, against 0.18 at random).
-   - Papers with long reference lists to our work cite well-cited work (out-in 0.36 vs 0.21).
-   - This is unusual: large citation networks are typically neutral or disassortative. It points to **tight research-group citation chains**, where a group's papers cite each other and build on the group's own well-cited earlier work, which fits the strong department clustering elsewhere.
+3. **The citation network looks strongly assortative, but that comes from self-citations.**
+   - With all internal citations, papers that are cited a lot by our own papers are cited by other papers that are also cited a lot (in-in r = 0.48, against 0.18 at random). Papers with long reference lists to our work cite well-cited work (out-in 0.36 vs 0.21).
+   - This is unusual: large citation networks are typically neutral or disassortative. It points to **research-group citation chains**, where a group's papers cite the group's own earlier work.
+   - **Check:** 86% of internal citations share an author with the cited paper. Without them (3,263 citations left), three of the four r values are just what random rewiring gives (in-in 0.13 vs 0.13, z = 0.6; out-in 0.05 vs 0.05), and the fourth (in-out) is slightly *below* random. So the assortativity is a **self-citation effect**, not a general preference of well-cited papers for each other.
 
 **Caveats:**
 - r is a single number. The k_nn(k) charts show the pattern is not driven by one point. In the faculty network, the highest-degree points are few people, so the right end of the curve is noisy.
@@ -325,7 +333,7 @@ Files:
 
 | File | Contents |
 |---|---|
-| `assortativity_degree.csv` | All 7 rows: r, rewired mean and SD, z, p, verdict, number of rewirings |
+| `assortativity_degree.csv` | All 11 rows: r, rewired mean and SD, z, p, verdict, number of rewirings |
 | `assortativity_knn.csv` | k_nn(k) for each network, with the rewired expectation |
 | `assortativity_summary.json` | Settings and results |
 | `assortativity_knn.png` | Chart |

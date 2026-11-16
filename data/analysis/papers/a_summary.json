@@ -1,0 +1,113 @@
+{
+  "indian_citations": 67114,
+  "internal_citations": 23822,
+  "table": [
+    {
+      "group": "all Indian citations",
+      "self": 10.04,
+      "co-author (before)": 4.23,
+      "co-author (later)": 0.54,
+      "2 steps": 2.68,
+      "3 steps": 4.2,
+      "farther": 11.21,
+      "no link": 67.11,
+      "citations": 67114.0,
+      "within_3_steps_pct": 21.68
+    },
+    {
+      "group": "from top private citers",
+      "self": 12.92,
+      "co-author (before)": 6.77,
+      "co-author (later)": 0.74,
+      "2 steps": 4.03,
+      "3 steps": 6.57,
+      "farther": 13.87,
+      "no link": 55.1,
+      "citations": 18352.0,
+      "within_3_steps_pct": 31.03
+    },
+    {
+      "group": "from top public citers",
+      "self": 10.22,
+      "co-author (before)": 4.02,
+      "co-author (later)": 0.46,
+      "2 steps": 2.46,
+      "3 steps": 3.51,
+      "farther": 12.32,
+      "no link": 67.02,
+      "citations": 14410.0,
+      "within_3_steps_pct": 20.67
+    },
+    {
+      "group": "other Indian citers",
+      "self": 8.42,
+      "co-author (before)": 2.96,
+      "co-author (later)": 0.47,
+      "2 steps": 2.04,
+      "3 steps": 3.21,
+      "farther": 9.33,
+      "no link": 73.56,
+      "citations": 34352.0,
+      "within_3_steps_pct": 17.11
+    },
+    {
+      "group": "internal citations",
+      "self": 86.3,
+      "co-author (before)": 4.98,
+      "co-author (later)": 0.71,
+      "2 steps": 2.87,
+      "3 steps": 1.62,
+      "farther": 2.96,
+      "no link": 0.56,
+      "citations": 23822.0,
+      "within_3_steps_pct": 96.48
+    },
+    {
+      "group": "Indian citations of NIT Trichy",
+      "self": 9.14,
+      "co-author (before)": 4.34,
+      "co-author (later)": 0.66,
+      "2 steps": 2.88,
+      "3 steps": 4.65,
+      "farther": 11.06,
+      "no link": 67.27,
+      "citations": 36762.0,
+      "within_3_steps_pct": 21.67
+    },
+    {
+      "group": "Indian citations of NIT Surathkal",
+      "self": 11.12,
+      "co-author (before)": 4.1,
+      "co-author (later)": 0.39,
+      "2 steps": 2.43,
+      "3 steps": 3.64,
+      "farther": 11.38,
+      "no link": 66.93,
+      "citations": 30134.0,
+      "within_3_steps_pct": 21.69
+    }
+  ],
+  "private_within_3_steps_pct": 31.026591107236268,
+  "public_within_3_steps_pct": 20.66620402498265,
+  "private_vs_public_chi2": 579.0672549181163,
+  "private_vs_public_p": 7.629766226405191e-122,
+  "coauthor_citations_by_lag": {
+    "0.0": 564,
+    "1.0": 537,
+    "2.0": 511,
+    "3.0": 470,
+    "4.0": 468,
+    "5.0": 403,
+    "6.0": 399,
+    "7.0": 305,
+    "8.0": 174,
+    "9.0": 132,
+    "10.0": 61
+  },
+  "share_of_coauthor_citations_within_2_years": 0.40059642147117297,
+  "coauthor_index": {
+    "authors": 24646,
+    "pairs": 77923,
+    "max_team": 50
+  }
+}

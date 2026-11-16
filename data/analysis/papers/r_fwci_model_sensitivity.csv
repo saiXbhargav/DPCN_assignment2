@@ -1,0 +1,4 @@
+papers,n,surathkal_effect_pct,p_robust,se_robust,se_clustered_by_faculty,p_clustered,faculty_clusters,foreign_effect_pct,foreign_p_clustered,conference_effect_pct,conference_p_clustered
+all years,18342,1.171,0.2162,0.0094,0.0244,0.6336,650,14.9699,0.0001,-14.1534,0.0
+published up to 2024,15231,0.7267,0.4714,0.0101,0.0251,0.7733,617,15.2234,0.0002,-12.0808,0.0
+published up to 2023,13176,-0.0543,0.9601,0.0108,0.0259,0.9833,588,14.1786,0.0004,-10.2151,0.0

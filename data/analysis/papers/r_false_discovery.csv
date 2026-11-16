@@ -1,0 +1,104 @@
+family,test,p_value,p_adjusted_bh,significant_raw,significant_after_fdr
+"branch FWCI, Trichy vs Surathkal",CSE,2e-05,9e-05,True,True
+"branch FWCI, Trichy vs Surathkal",EEE,0.00114,0.00379,True,True
+"branch FWCI, Trichy vs Surathkal",Civil,0.16779,0.18644,False,False
+"branch FWCI, Trichy vs Surathkal",Mechanical,0.03846,0.06411,True,False
+"branch FWCI, Trichy vs Surathkal",Chemistry,0.06849,0.09784,False,False
+"branch FWCI, Trichy vs Surathkal",Physics,0.61658,0.61658,False,False
+"branch FWCI, Trichy vs Surathkal",MME,0.11443,0.14303,False,False
+"branch FWCI, Trichy vs Surathkal",ECE,0.03221,0.06411,True,False
+"branch FWCI, Trichy vs Surathkal",Chemical,0.00466,0.01166,True,True
+"branch FWCI, Trichy vs Surathkal",Mathematics,0.0,0.0,True,True
+partner types (Q16),IIT,0.1382,0.19743,False,False
+partner types (Q16),Other NIT,0.0252,0.063,True,False
+partner types (Q16),IISER / IISc,0.0004,0.00133,True,True
+partner types (Q16),IIIT,0.2866,0.31844,False,False
+partner types (Q16),Government R&D lab,0.0002,0.001,True,True
+partner types (Q16),Indian university / college,0.5637,0.5637,False,False
+partner types (Q16),Indian hospital / medical,0.2555,0.31844,False,False
+partner types (Q16),Industry,0.0858,0.143,False,False
+partner types (Q16),Foreign university,0.0,0.0,True,True
+partner types (Q16),Foreign other,0.0361,0.0722,True,False
+partner countries (Q15),United States,0.0058,0.01015,True,True
+partner countries (Q15),South Korea,0.0,0.0,True,True
+partner countries (Q15),Saudi Arabia,0.3385,0.39492,False,False
+partner countries (Q15),United Kingdom,0.0,0.0,True,True
+partner countries (Q15),Taiwan,0.0457,0.07109,True,False
+partner countries (Q15),China,0.0052,0.01015,True,True
+partner countries (Q15),Chile,0.382,0.41138,False,False
+partner countries (Q15),Malaysia,0.0002,0.0007,True,True
+partner countries (Q15),Canada,0.0052,0.01015,True,True
+partner countries (Q15),Japan,0.6904,0.6904,False,False
+partner countries (Q15),Australia,0.001,0.0028,True,True
+partner countries (Q15),Germany,0.1525,0.2135,False,False
+partner countries (Q15),Italy,0.2785,0.35445,False,False
+partner countries (Q15),Vietnam,0.0,0.0,True,True
+private vs public citers,citations_to_us,0.2535,0.34568,False,False
+private vs public citers,their_papers_2016_2026,0.6537,0.70039,False,False
+private vs public citers,citations_per_1000_of_their_papers,0.2829,0.35362,False,False
+private vs public citers,distance_km,0.0487,0.12175,True,False
+private vs public citers,personal_tie_pct,0.0843,0.15806,False,False
+private vs public citers,same_person_pct,0.1966,0.2949,False,False
+private vs public citers,alumni_pct,0.0843,0.15806,False,False
+private vs public citers,earlier_coauthor_pct,0.0129,0.04838,True,True
+private vs public citers,our_papers_per_citing_paper,0.596,0.68769,False,False
+private vs public citers,pct_citations_from_papers_citing_5plus_of_ours,0.1058,0.17633,False,False
+private vs public citers,top3_faculty_share_pct,0.7753,0.7753,False,False
+private vs public citers,citing_papers_in_proceedings_pct,0.0007,0.0035,True,True
+private vs public citers,median_citations_of_citing_papers,0.0002,0.0015,True,True
+private vs public citers,median_citations_per_year_of_citing_papers,0.0337,0.1011,True,False
+private vs public citers,pct_citations_2023_2026,0.0,0.0,True,True
+former vs current faculty (Q18),all ranks / papers per year on the faculty list,0.0178,0.05235,True,False
+former vs current faculty (Q18),all ranks / citations per paper,0.0614,0.13348,False,False
+former vs current faculty (Q18),all ranks / mean FWCI,0.1184,0.21143,False,False
+former vs current faculty (Q18),all ranks / h-index (2016-2026),0.0044,0.01833,True,True
+former vs current faculty (Q18),all ranks / share of papers in Q1,0.0165,0.05156,True,False
+former vs current faculty (Q18),all ranks / share with a foreign co-author,0.0286,0.0715,True,False
+former vs current faculty (Q18),all ranks / NIT faculty co-authors,0.1305,0.225,False,False
+former vs current faculty (Q18),all ranks / betweenness,0.0159,0.05156,True,False
+former vs current faculty (Q18),all ranks / Indian partner institutes,0.0,0.0,True,True
+former vs current faculty (Q18),all ranks / years on the faculty list,0.0,0.0,True,True
+former vs current faculty (Q18),Assistant Professor / papers per year on the faculty list,0.7982,0.86761,False,False
+former vs current faculty (Q18),Assistant Professor / citations per paper,0.003,0.015,True,True
+former vs current faculty (Q18),Assistant Professor / mean FWCI,0.7751,0.86122,False,False
+former vs current faculty (Q18),Assistant Professor / h-index (2016-2026),0.1622,0.24576,False,False
+former vs current faculty (Q18),Assistant Professor / share of papers in Q1,0.9896,0.9896,False,False
+former vs current faculty (Q18),Assistant Professor / share with a foreign co-author,0.8849,0.90786,False,False
+former vs current faculty (Q18),Assistant Professor / NIT faculty co-authors,0.2881,0.36012,False,False
+former vs current faculty (Q18),Assistant Professor / betweenness,0.8597,0.90786,False,False
+former vs current faculty (Q18),Assistant Professor / Indian partner institutes,0.1487,0.23234,False,False
+former vs current faculty (Q18),Assistant Professor / years on the faculty list,0.0017,0.00944,True,True
+former vs current faculty (Q18),Associate Professor / papers per year on the faculty list,0.0309,0.07357,True,False
+former vs current faculty (Q18),Associate Professor / citations per paper,0.1707,0.25103,False,False
+former vs current faculty (Q18),Associate Professor / mean FWCI,0.8897,0.90786,False,False
+former vs current faculty (Q18),Associate Professor / h-index (2016-2026),0.0811,0.15596,False,False
+former vs current faculty (Q18),Associate Professor / share of papers in Q1,0.2155,0.27897,False,False
+former vs current faculty (Q18),Associate Professor / share with a foreign co-author,0.1405,0.23234,False,False
+former vs current faculty (Q18),Associate Professor / NIT faculty co-authors,0.0344,0.07818,True,False
+former vs current faculty (Q18),Associate Professor / betweenness,0.1478,0.23234,False,False
+former vs current faculty (Q18),Associate Professor / Indian partner institutes,0.0096,0.03429,True,True
+former vs current faculty (Q18),Associate Professor / years on the faculty list,0.0,0.0,True,True
+former vs current faculty (Q18),Professor / papers per year on the faculty list,0.0094,0.03429,True,True
+former vs current faculty (Q18),Professor / citations per paper,0.6782,0.77068,False,False
+former vs current faculty (Q18),Professor / mean FWCI,0.1893,0.26338,False,False
+former vs current faculty (Q18),Professor / h-index (2016-2026),0.0,0.0,True,True
+former vs current faculty (Q18),Professor / share of papers in Q1,0.0779,0.15596,False,False
+former vs current faculty (Q18),Professor / share with a foreign co-author,0.0238,0.06263,True,False
+former vs current faculty (Q18),Professor / NIT faculty co-authors,0.0042,0.01833,True,True
+former vs current faculty (Q18),Professor / betweenness,0.0005,0.00312,True,True
+former vs current faculty (Q18),Professor / Indian partner institutes,0.0,0.0,True,True
+former vs current faculty (Q18),Professor / years on the faculty list,0.0,0.0,True,True
+former vs current faculty (Q18),Professor (HAG) / papers per year on the faculty list,0.1918,0.26338,False,False
+former vs current faculty (Q18),Professor (HAG) / citations per paper,0.2176,0.27897,False,False
+former vs current faculty (Q18),Professor (HAG) / mean FWCI,0.0801,0.15596,False,False
+former vs current faculty (Q18),Professor (HAG) / h-index (2016-2026),0.0224,0.06222,True,False
+former vs current faculty (Q18),Professor (HAG) / share of papers in Q1,0.1006,0.1863,False,False
+former vs current faculty (Q18),Professor (HAG) / share with a foreign co-author,0.6407,0.745,False,False
+former vs current faculty (Q18),Professor (HAG) / NIT faculty co-authors,0.3931,0.47939,False,False
+former vs current faculty (Q18),Professor (HAG) / betweenness,0.5289,0.62964,False,False
+former vs current faculty (Q18),Professor (HAG) / Indian partner institutes,0.1949,0.26338,False,False
+former vs current faculty (Q18),Professor (HAG) / years on the faculty list,0.0,0.0,True,True
+per-faculty institute tests,papers / 19.0,0.00037,0.00147,True,True
+per-faculty institute tests,citations_in_period / 192.0,0.00622,0.01245,True,True
+per-faculty institute tests,h_index_2016_2026 / 7.0,0.0098,0.01307,True,True
+per-faculty institute tests,mean_fwci / 1.0165,0.15982,0.15982,False,False
