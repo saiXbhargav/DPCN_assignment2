@@ -1,0 +1,80 @@
+{
+  "null_model": "degree-preserving rewiring (double edge swaps; directed swaps for citations)",
+  "null_samples": {
+    "undirected": 100,
+    "citation": 20
+  },
+  "check": "faculty degree assortativity equals ns_assortativity.csv",
+  "results": [
+    {
+      "network": "Faculty co-authorship",
+      "variant": "all faculty links",
+      "r": 0.2035,
+      "null_mean": -0.0167,
+      "z": 6.9066,
+      "p_value": 0.0099,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "more assortative than random"
+    },
+    {
+      "network": "Institute co-authorship",
+      "variant": "with our two NITs",
+      "r": -0.2279,
+      "null_mean": -0.2286,
+      "z": 2.3412,
+      "p_value": 0.0198,
+      "sign": "disassortative",
+      "vs_degree_preserving_random": "as expected from the degrees alone"
+    },
+    {
+      "network": "Institute co-authorship",
+      "variant": "partner-partner links only (our NITs removed)",
+      "r": -0.0851,
+      "null_mean": -0.1268,
+      "z": 4.5059,
+      "p_value": 0.0099,
+      "sign": "disassortative",
+      "vs_degree_preserving_random": "more assortative than random"
+    },
+    {
+      "network": "Citation network (internal)",
+      "variant": "out-degree of citing vs in-degree of cited",
+      "r": 0.3641,
+      "null_mean": 0.2068,
+      "z": 17.4616,
+      "p_value": 0.0476,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "more assortative than random"
+    },
+    {
+      "network": "Citation network (internal)",
+      "variant": "in-degree of citing vs in-degree of cited",
+      "r": 0.4772,
+      "null_mean": 0.1783,
+      "z": 38.9587,
+      "p_value": 0.0476,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "more assortative than random"
+    },
+    {
+      "network": "Citation network (internal)",
+      "variant": "out-degree of citing vs out-degree of cited",
+      "r": 0.5013,
+      "null_mean": 0.2233,
+      "z": 31.9659,
+      "p_value": 0.0476,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "more assortative than random"
+    },
+    {
+      "network": "Citation network (internal)",
+      "variant": "in-degree of citing vs out-degree of cited",
+      "r": 0.1359,
+      "null_mean": 0.1189,
+      "z": 1.6113,
+      "p_value": 0.0952,
+      "sign": "assortative",
+      "vs_degree_preserving_random": "as expected from the degrees alone"
+    }
+  ]
+}

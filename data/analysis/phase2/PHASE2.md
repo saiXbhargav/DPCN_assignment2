@@ -1,13 +1,16 @@
 # Team 12: Phase II additions
 
-This file covers eleven tasks from the professor's Phase II suggestions. They are produced by [scripts/phase2.py](../../../scripts/phase2.py):
+This file covers twelve tasks from the professor's Phase II suggestions. They are produced by [scripts/phase2.py](../../../scripts/phase2.py):
 - `python phase2.py papers` covers tasks 1, 3, 4, 5 and 6;
 - `python phase2.py citers` covers task 2;
 - `python phase2.py journals` covers tasks 7 and 9;
 - `python phase2.py faculty` covers tasks 8 and 10;
-- `python phase2.py instnet` covers task 11.
+- `python phase2.py instnet` covers task 11;
+- `python phase2.py assort` covers task 12 (run `instnet` first; about 7 minutes on a CPU).
 
-Running `python phase2.py` with no argument runs all five parts.
+Running `python phase2.py` with no argument runs all six parts.
+
+**Numbers updated after the roster fix.** The team's roster fix (branch `roster-fix`) re-ran these outputs. The text below quotes the re-run values.
 
 Every number is in the CSV/JSON files in this folder.
 
@@ -160,11 +163,20 @@ The professor noted that some physics faculty reach 1 lakh (100,000) citations, 
 | Largest faculty paper | 22 authors |
 | Faculty whose citations come **mostly** (≥ 50%) from ≥ 10-author papers | **1**: Mohan Lal Meena (Chemical, Surathkal). 6 papers, of which 2 have 10+ authors, and 91.5% of his 59 citations come from them. Small numbers, so it has no effect on any ranking |
 
-**One more problem found:** two faculty have huge OpenAlex career totals that **almost entirely come from other people**:
-- **Kunwar Singh** (CSE, Trichy): 15,552 career citations, but only 201 (**1.3%**) are from his NIT papers;
+**One more problem found:** for two faculty, the career citations **added up over all their OpenAlex IDs** are huge, and almost none of them come from their NIT papers:
+- **Kunwar Singh** (CSE, Trichy): 15,552 summed career citations, of which only 201 (**1.3%**) are from his NIT papers;
 - **Aditya Kumar** (Energy & Environment, Trichy): 11,804, with only 24 (**0.2%**) from NIT papers.
 
-OpenAlex has almost certainly **merged several people with the same name** into one profile. We flag them (`flag_possible_openalex_name_merge`). **The career h-index in `faculty.csv` for these two people should not be trusted.** Our rankings use only 2016–2026 NIT papers, so they are not affected.
+The cause is a **secondary OpenAlex ID**:
+- Kunwar Singh is linked to an ID named "Kunwar Pal Singh" (231 works, h-index 53), through 3 NIT CSE papers.
+- Aditya Kumar is linked to several "Aditya Kumar" IDs, of up to 265 works each.
+
+Each of these IDs has one or a few genuine NIT papers in the person's own department. But OpenAlex's profile for the ID also contains many other papers, almost certainly by other people with the same name. We flag the two people (`flag_possible_openalex_name_merge`).
+
+**What is and isn't affected:**
+- **Not affected:** their 2016–2026 NIT papers (matched by NIT affiliation and department) and the career h-index in `faculty.csv`, which uses their main ID: 11 and 4.
+- **Inflated:** only the summed career-citation figure in our flag file.
+- **Not affected:** our rankings, which use only NIT papers.
 
 **Conclusion for the report:**
 > "The large-team and high-citation distortion seen at some physics-heavy institutes does not apply to NIT Trichy or NIT Surathkal. No faculty member has 1 lakh citations, only 1% of papers have 10 or more authors, and the only large physics collaboration paper has no faculty author."
@@ -259,12 +271,73 @@ Files:
 
 ---
 
+## Task 12: Assortative or disassortative?
+
+**The question.** In a network, do well-connected nodes link to other well-connected nodes (**assortative**, r > 0) or to poorly connected ones (**disassortative**, r < 0)?
+- Social networks are usually assortative.
+- Networks built around a few hubs are usually disassortative.
+
+**Method:**
+- **Measure:** the degree assortativity coefficient r (Newman 2002), from −1 to +1.
+- **Fair comparison:** each network is compared with **degree-preserving rewired copies**. Every node keeps its number of links and only *who links to whom* is randomised, using double edge swaps (directed swaps for citations). This separates a real preference from what the degrees alone force.
+  - 100 rewirings for each co-authorship network;
+  - 20 for the citation network, whose smallest possible p-value is therefore 1/21 ≈ 0.048.
+- **"Different from random"** requires both p < 0.05 **and** a gap of at least 0.02 in r, so a tiny but "significant" gap isn't over-read.
+- **k_nn(k):** the average degree of a node's neighbours as a function of its own degree. Rising means assortative and falling means disassortative.
+- **Built-in check:** the faculty network's r must equal the team's `ns_assortativity.csv` value (0.203). It does.
+
+**Networks:**
+1. The **faculty co-authorship network** (540 faculty, 961 links).
+2. The **institute co-authorship network** from task 11 (826 institutes), **with** our two NITs and **without** them. Our NITs are hubs by construction, since every paper in it is ours.
+3. The **internal citation network** (11,937 papers, 23,822 citations). It's directed, so there are four degree pairs (citing paper's in- or out-degree against cited paper's in- or out-degree).
+
+![k_nn](assortativity_knn.png)
+
+| Network | Which degrees | r | Rewired r | z | Verdict |
+|---|---|---|---|---|---|
+| Faculty co-authorship | all faculty links | **0.20** | −0.02 | 6.9 | **assortative**, more than random |
+| Institute co-authorship | with our two NITs | **−0.23** | −0.23 | – | **disassortative**, but exactly what the degrees force |
+| Institute co-authorship | partner–partner links only | **−0.09** | −0.13 | 4.5 | disassortative, but *less* than random |
+| Citation network | out-degree of citing vs in-degree of cited | **0.36** | 0.21 | 17.5 | **assortative**, more than random |
+| Citation network | in-in | **0.48** | 0.18 | 39.0 | **assortative**, more than random |
+| Citation network | out-out | **0.50** | 0.22 | 32.0 | **assortative**, more than random |
+| Citation network | in-out | 0.14 | 0.12 | 1.6 | as expected from the degrees alone |
+
+### Findings
+1. **The faculty network is genuinely assortative.**
+   - r = 0.20, against −0.02 for random networks with the same degrees (z = 6.9).
+   - Well-connected faculty work with other well-connected faculty, as in most social networks, which matches the rich club.
+   - In the chart, k_nn rises with k while the rewired line stays flat.
+2. **The institute network is disassortative, but only because of its hubs.**
+   - With our two NITs it is strongly disassortative (r = −0.23), and the rewired networks give exactly the same value. In the chart, the data sits on the rewired line.
+   - This is the shape of a **hub-and-spoke** network: our NITs link to hundreds of small partners. It's not a preference.
+   - Among partners only (our NITs removed), it's still slightly disassortative (−0.09), but **less** than random (−0.13). Large partners such as IITs, VIT and Manipal co-author *with each other* on our papers somewhat more than chance.
+3. **The citation network is strongly assortative.**
+   - Papers that are cited a lot by our own papers are cited by other papers that are also cited a lot (in-in r = 0.48, against 0.18 at random).
+   - Papers with long reference lists to our work cite well-cited work (out-in 0.36 vs 0.21).
+   - This is unusual: large citation networks are typically neutral or disassortative. It points to **tight research-group citation chains**, where a group's papers cite each other and build on the group's own well-cited earlier work, which fits the strong department clustering elsewhere.
+
+**Caveats:**
+- r is a single number. The k_nn(k) charts show the pattern is not driven by one point. In the faculty network, the highest-degree points are few people, so the right end of the curve is noisy.
+- The institute network includes only links visible on our papers (task 11 caveat), which by itself makes our NITs the hubs.
+
+**Files:**
+
+| File | Contents |
+|---|---|
+| `assortativity_degree.csv` | All 7 rows: r, rewired mean and SD, z, p, verdict, number of rewirings |
+| `assortativity_knn.csv` | k_nn(k) for each network, with the rewired expectation |
+| `assortativity_summary.json` | Settings and results |
+| `assortativity_knn.png` | Chart |
+
+---
+
 ## Data downloaded for Phase II
 `fetch_insights.py citerout`: the 2016–2026 paper count of each of the 40 citing institutes, 40 OpenAlex requests → `data/raw/citer_output.jsonl`. Everything else uses data already in the repo.
 
 ## Found while doing this (for the team)
 - **`clusters.py` mislabels NIT Silchar.** OpenAlex spells it "National Institute **Of** Technology Silchar", and the case-sensitive name rule labels it "University / college" instead of "NIT". Making the NIT rule case-insensitive fixes it.
-- **Two faculty career profiles are polluted by same-name researchers:** Kunwar Singh (T0472) and Aditya Kumar (T0665). See task 3.
+- **Some secondary OpenAlex IDs linked to two faculty belong to profiles mixed with same-name researchers:** Kunwar Singh (T0472) and Aditya Kumar (T0665). Their NIT papers and main-ID h-index are fine; only career totals summed over IDs are inflated. See task 3.
 - **Repository deposits counted as journal papers.** 163 papers whose OpenAlex type is "article" are in repositories (Zenodo, DOAJ) or book series; 34 of them are faculty papers. `build_dataset.py` labels them `journal`. See task 9.
 
 ---
@@ -309,7 +382,7 @@ Files:
 ## Task 8: Each faculty member's top 10 papers by journal IF
 
 `faculty_top10_papers_by_journal_if.csv`:
-- **5,100 rows** for **635 faculty**, using the same rule as task 7 (SCImago-ranked journals, ties broken by citations);
+- **5,110 rows** for **636 faculty**, using the same rule as task 7 (SCImago-ranked journals, ties broken by citations);
 - each row: rank, title, journal, IF, quartile, year, citations, FWCI, DOI;
 - the median faculty member has a full list of 10, and faculty with fewer eligible papers get all they have;
 - **21 faculty with papers have no paper in a SCImago-ranked journal**, mostly people who publish in conferences or unranked journals, so they have no list.
@@ -348,7 +421,7 @@ This file can feed a click-through on the dashboard's faculty table.
 
 ## Task 10: Collaboration in the faculty comparison
 
-**Rule (team decision):** the agreed 7-measure **research score** (insights section 7) is unchanged. Next to it is a separate **collaboration score**: the average percentile of 3 measures, for the same 438 current faculty with at least 10 papers.
+**Rule (team decision):** the agreed 7-measure **research score** (insights section 7) is unchanged. Next to it is a separate **collaboration score**: the average percentile of 3 measures, for the same 439 current faculty with at least 10 papers.
 
 | Measure | How |
 |---|---|
@@ -372,24 +445,24 @@ File: `faculty_research_and_collaboration.csv`, with both scores, both ranks, al
 | 6 | Mangalpady Aruna | Surathkal, Mining | 11 | 20 | 17 (11) | 135 |
 | 7 | Kartick Tarafder | Surathkal, Physics | 11 | 34 | 11 (9) | 56 |
 | 8 | Mohammad Rizwanur Rahman | Surathkal, MME | 12 | 37 | 10 (6) | 123 |
-| 9 | N Siva Shanmugam | Trichy, Mechanical | 9 | 30 | 14 (8) | 18 |
+| 8 | N Siva Shanmugam | Trichy, Mechanical | 9 | 30 | 14 (8) | 18 |
 | 10 | Sib Sankar Mal | Surathkal, Chemistry | 7 | 27 | 24 (13) | 44 |
 
 **Findings:**
-- **Research and collaboration go together, but not perfectly** (Spearman ρ = 0.71).
+- **Research and collaboration go together, but not perfectly** (Spearman ρ = 0.70).
   - Number of partner institutes is tied to papers and citations (ρ ≈ 0.64).
   - It is barely tied to impact per paper: FWCI against faculty co-authors gives ρ = 0.19. **Collaborating more brings more papers, not necessarily better ones.**
 - **Four profiles** (split at the median of each score):
 
   | Profile | Trichy | Surathkal |
   |---|---|---|
-  | Strong research, strong collaboration | 84 | 85 |
+  | Strong research, strong collaboration | 84 | 86 |
   | Strong research, **few collaborators** | 20 | 30 |
   | Collaborates widely, lower research score | 24 | 26 |
   | Both below median | 93 | 76 |
 
-  - **Strong research, few collaborators** is mostly **NIT Surathkal CSE and IT**: e.g. Alwyn Roshan Pais (research #25, collaboration #245), Ram Mohana Reddy Guddeti and P Santhi Thilagam. They publish strongly, mainly with their own students, and have few faculty or outside partners.
-  - **Collaborates widely, lower research score:** e.g. Sushil Kumar Pandey (ECE, Surathkal) and R Justin Joseyphus (Physics, Trichy). Many partners have not yet turned into high-impact output.
+  - **Strong research, few collaborators** is mostly **NIT Surathkal CSE and IT**: e.g. Alwyn Roshan Pais (research #25, collaboration #244), Ram Mohana Reddy Guddeti and P Santhi Thilagam. They publish strongly, mainly with their own students, and have few faculty or outside partners.
+  - **Collaborates widely, lower research score:** e.g. G Thavasi Raja (ECE, Trichy) and R Justin Joseyphus (Physics, Trichy). Many partners have not yet turned into high-impact output.
 - **Foreign reach:** G Arthanareeswaran, R Karvembu and S Anandan each have 47–69 foreign partner institutes in 22 countries.
 
 ---

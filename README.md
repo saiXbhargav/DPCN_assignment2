@@ -678,7 +678,7 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - no faculty paper with more than 22 authors;
   - the only large physics paper (48 authors) has no faculty author;
   - one faculty member gets most of his (few) citations from 10+-author papers;
-  - two career profiles (Kunwar Singh, Aditya Kumar) are polluted by same-name researchers in OpenAlex.
+  - for two faculty (Kunwar Singh, Aditya Kumar), career citations summed over all their OpenAlex IDs are inflated by secondary IDs whose profiles mix in same-name researchers; their NIT papers and main-ID h-index are not affected.
 - **Why private institutes cite us so much:**
   - mainly **size, recent growth and proximity**: they're as big as the public citers, publish heavily since 2023 (74% of their citations to us) and are a median of 411 km away vs 1,664 km;
   - **adjusted for size they cite us no more than public institutes** (43 vs 37 per 1,000 papers);
@@ -689,12 +689,12 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - SCImago-ranked journals only, ties broken by citations; one list for all papers and one for faculty papers;
   - led by three NIT papers in *IEEE Communications Surveys & Tutorials* (IF 43.6);
   - at least 12 of the 30 are reviews or surveys.
-- **Each faculty member's top 10 papers by journal IF:** 635 faculty, 5,100 rows.
+- **Each faculty member's top 10 papers by journal IF:** 636 faculty, 5,110 rows.
 - **Most-used venues** (top 25 journals and top 15 conferences, per NIT and scope):
   - *Materials Today: Proceedings* is #1 at both NITs (572 papers, mean FWCI 0.65–0.80);
   - 163 "journal" papers are really repository deposits (Zenodo, DOAJ) and are flagged.
 - **Collaboration score** (faculty co-authors, Indian and foreign partner institutes), next to the unchanged research score:
-  - the two scores correlate at ρ = 0.71;
+  - the two scores correlate at ρ = 0.70;
   - top collaborators: S Suresh, G Arthanareeswaran, Siva Prasad Katakam;
   - "strong research, few collaborators" is mostly Surathkal CSE and IT.
 - **Institute co-authorship network:**
@@ -702,6 +702,10 @@ These answer the professor's Phase II suggestions. Details, tables and caveats a
   - 353 institutes linked to both NITs;
   - two regional neighbourhoods (Karnataka around Surathkal, Tamil Nadu around Trichy);
   - IITs are the best-connected partner type.
+- **Assortative or disassortative?** Degree assortativity of three networks, each against degree-preserving rewired copies, with k_nn(k) plots:
+  - **faculty co-authorship: assortative**, r = 0.20 vs −0.02 at random (z = 6.9);
+  - **institute co-authorship: disassortative** (r = −0.23), but exactly what the hub degrees force; among partners only it's −0.09, less disassortative than random;
+  - **internal citation network: strongly assortative**, in-in r = 0.48 vs 0.18 at random, a sign of research-group citation chains.
 
 ### 9. Research questions (`scripts/questions.py` → [QUESTIONS.md](data/analysis/questions/QUESTIONS.md))
 Thirteen questions (items 15–28 of our list), each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.

@@ -1,0 +1,158 @@
+network,variant,k,knn,knn_null_mean,nodes_with_k
+Faculty co-authorship,all faculty links,1,4.4304,5.7459,158
+Faculty co-authorship,all faculty links,2,5.1576,5.8049,92
+Faculty co-authorship,all faculty links,3,5.0098,5.8304,68
+Faculty co-authorship,all faculty links,4,5.2769,5.8279,65
+Faculty co-authorship,all faculty links,5,5.851,5.8363,51
+Faculty co-authorship,all faculty links,6,5.8333,5.6598,29
+Faculty co-authorship,all faculty links,7,6.1648,5.8857,26
+Faculty co-authorship,all faculty links,8,6.5481,5.7529,13
+Faculty co-authorship,all faculty links,9,6.5667,5.6231,20
+Faculty co-authorship,all faculty links,10,5.7333,5.6958,6
+Faculty co-authorship,all faculty links,11,6.2273,5.6977,2
+Faculty co-authorship,all faculty links,12,9.0,5.6656,4
+Faculty co-authorship,all faculty links,13,6.7692,5.5827,2
+Faculty co-authorship,all faculty links,14,5.5357,5.625,2
+Faculty co-authorship,all faculty links,15,7.9333,5.55,1
+Faculty co-authorship,all faculty links,22,8.2727,5.4432,1
+Institute co-authorship,with our two NITs,1,588.0674,375.9843,89
+Institute co-authorship,with our two NITs,2,335.8228,325.2514,127
+Institute co-authorship,with our two NITs,3,245.0982,279.4612,112
+Institute co-authorship,with our two NITs,4,198.7826,238.0813,69
+Institute co-authorship,with our two NITs,5,197.2282,204.1618,71
+Institute co-authorship,with our two NITs,6,176.0737,184.3487,52
+Institute co-authorship,with our two NITs,7,169.0057,166.8627,50
+Institute co-authorship,with our two NITs,8,145.9491,153.2273,27
+Institute co-authorship,with our two NITs,9,135.2374,139.6775,22
+Institute co-authorship,with our two NITs,10,138.36,131.473,20
+Institute co-authorship,with our two NITs,11,127.376,123.1494,22
+Institute co-authorship,with our two NITs,12,116.0486,117.2517,12
+Institute co-authorship,with our two NITs,13,100.5824,109.2959,14
+Institute co-authorship,with our two NITs,14,108.256,105.3783,12
+Institute co-authorship,with our two NITs,15,96.6667,100.9551,13
+Institute co-authorship,with our two NITs,16,102.5417,98.5594,6
+Institute co-authorship,with our two NITs,17,90.9804,93.5134,9
+Institute co-authorship,with our two NITs,18,94.6389,89.1125,4
+Institute co-authorship,with our two NITs,19,86.1462,86.1056,9
+Institute co-authorship,with our two NITs,20,92.6,85.285,5
+Institute co-authorship,with our two NITs,21,79.1156,81.2252,7
+Institute co-authorship,with our two NITs,22,79.4351,80.0903,7
+Institute co-authorship,with our two NITs,23,84.6739,76.7337,2
+Institute co-authorship,with our two NITs,24,76.0917,75.8421,5
+Institute co-authorship,with our two NITs,25,77.77,73.9305,4
+Institute co-authorship,with our two NITs,26,74.0,72.2615,1
+Institute co-authorship,with our two NITs,27,75.9537,68.5833,4
+Institute co-authorship,with our two NITs,28,67.3929,68.3335,4
+Institute co-authorship,with our two NITs,29,70.1862,67.8317,5
+Institute co-authorship,with our two NITs,30,63.2417,65.8508,4
+Institute co-authorship,with our two NITs,31,68.7419,63.4645,1
+Institute co-authorship,with our two NITs,32,68.9219,62.6047,2
+Institute co-authorship,with our two NITs,33,64.803,61.425,4
+Institute co-authorship,with our two NITs,34,64.2059,58.1574,2
+Institute co-authorship,with our two NITs,35,62.4,59.9229,1
+Institute co-authorship,with our two NITs,36,61.4306,59.2639,2
+Institute co-authorship,with our two NITs,37,57.4865,57.5878,1
+Institute co-authorship,with our two NITs,39,51.8462,54.1923,1
+Institute co-authorship,with our two NITs,40,56.625,54.0175,1
+Institute co-authorship,with our two NITs,41,59.6098,55.0524,1
+Institute co-authorship,with our two NITs,42,56.869,52.5464,2
+Institute co-authorship,with our two NITs,44,60.6364,53.2511,1
+Institute co-authorship,with our two NITs,45,54.0333,50.9672,2
+Institute co-authorship,with our two NITs,47,51.9362,48.7702,1
+Institute co-authorship,with our two NITs,48,48.6667,48.8792,1
+Institute co-authorship,with our two NITs,56,48.6607,45.9866,2
+Institute co-authorship,with our two NITs,60,41.7333,43.4775,1
+Institute co-authorship,with our two NITs,62,45.3871,43.2298,1
+Institute co-authorship,with our two NITs,63,44.4127,42.854,1
+Institute co-authorship,with our two NITs,65,43.1231,41.5615,1
+Institute co-authorship,with our two NITs,73,40.9589,37.7753,1
+Institute co-authorship,with our two NITs,74,37.7838,39.1662,1
+Institute co-authorship,with our two NITs,85,38.6706,36.2547,1
+Institute co-authorship,with our two NITs,97,37.4124,33.9938,1
+Institute co-authorship,with our two NITs,107,35.2617,31.5617,1
+Institute co-authorship,with our two NITs,117,32.9231,29.9692,1
+Institute co-authorship,with our two NITs,141,28.3688,27.3894,1
+Institute co-authorship,with our two NITs,564,11.9468,11.9723,1
+Institute co-authorship,with our two NITs,615,11.2618,11.2656,1
+Institute co-authorship,partner-partner links only (our NITs removed),1,29.1654,33.1741,133
+Institute co-authorship,partner-partner links only (our NITs removed),2,27.9037,33.6128,109
+Institute co-authorship,partner-partner links only (our NITs removed),3,28.0766,32.659,87
+Institute co-authorship,partner-partner links only (our NITs removed),4,34.4596,32.6844,68
+Institute co-authorship,partner-partner links only (our NITs removed),5,29.3119,31.9056,59
+Institute co-authorship,partner-partner links only (our NITs removed),6,27.8548,31.6841,31
+Institute co-authorship,partner-partner links only (our NITs removed),7,30.2057,32.1534,25
+Institute co-authorship,partner-partner links only (our NITs removed),8,30.905,31.351,25
+Institute co-authorship,partner-partner links only (our NITs removed),9,29.1414,31.5227,22
+Institute co-authorship,partner-partner links only (our NITs removed),10,23.4385,31.4354,13
+Institute co-authorship,partner-partner links only (our NITs removed),11,31.8523,32.2136,8
+Institute co-authorship,partner-partner links only (our NITs removed),12,32.2639,31.0155,18
+Institute co-authorship,partner-partner links only (our NITs removed),13,29.3357,30.1913,11
+Institute co-authorship,partner-partner links only (our NITs removed),14,30.8254,30.225,9
+Institute co-authorship,partner-partner links only (our NITs removed),15,30.7619,29.6586,7
+Institute co-authorship,partner-partner links only (our NITs removed),16,31.2083,30.8964,6
+Institute co-authorship,partner-partner links only (our NITs removed),17,28.8235,29.5688,8
+Institute co-authorship,partner-partner links only (our NITs removed),18,34.037,30.3833,6
+Institute co-authorship,partner-partner links only (our NITs removed),19,31.5474,28.2026,5
+Institute co-authorship,partner-partner links only (our NITs removed),20,32.0688,28.9894,8
+Institute co-authorship,partner-partner links only (our NITs removed),21,32.4127,28.3825,3
+Institute co-authorship,partner-partner links only (our NITs removed),22,34.1705,29.0631,4
+Institute co-authorship,partner-partner links only (our NITs removed),23,30.4087,28.9543,5
+Institute co-authorship,partner-partner links only (our NITs removed),24,29.3333,29.8021,1
+Institute co-authorship,partner-partner links only (our NITs removed),25,33.08,28.334,4
+Institute co-authorship,partner-partner links only (our NITs removed),26,25.5096,26.6048,4
+Institute co-authorship,partner-partner links only (our NITs removed),27,29.8963,27.72,5
+Institute co-authorship,partner-partner links only (our NITs removed),28,23.9107,28.0089,4
+Institute co-authorship,partner-partner links only (our NITs removed),29,31.069,26.5914,1
+Institute co-authorship,partner-partner links only (our NITs removed),30,32.3833,28.0867,2
+Institute co-authorship,partner-partner links only (our NITs removed),31,29.1694,26.8319,4
+Institute co-authorship,partner-partner links only (our NITs removed),32,29.5469,26.9812,2
+Institute co-authorship,partner-partner links only (our NITs removed),33,28.6364,26.0045,1
+Institute co-authorship,partner-partner links only (our NITs removed),34,28.6618,26.4838,2
+Institute co-authorship,partner-partner links only (our NITs removed),35,25.3143,26.4443,1
+Institute co-authorship,partner-partner links only (our NITs removed),37,21.0811,26.3649,1
+Institute co-authorship,partner-partner links only (our NITs removed),38,26.7895,26.4539,1
+Institute co-authorship,partner-partner links only (our NITs removed),39,30.5385,26.5705,1
+Institute co-authorship,partner-partner links only (our NITs removed),40,28.325,25.8112,2
+Institute co-authorship,partner-partner links only (our NITs removed),42,33.5476,25.7393,1
+Institute co-authorship,partner-partner links only (our NITs removed),43,27.2093,24.9797,2
+Institute co-authorship,partner-partner links only (our NITs removed),45,26.2,26.4989,1
+Institute co-authorship,partner-partner links only (our NITs removed),46,23.3696,26.0424,1
+Institute co-authorship,partner-partner links only (our NITs removed),54,26.75,23.244,2
+Institute co-authorship,partner-partner links only (our NITs removed),58,21.0862,23.8034,1
+Institute co-authorship,partner-partner links only (our NITs removed),60,25.4833,23.47,1
+Institute co-authorship,partner-partner links only (our NITs removed),61,24.7213,22.9049,1
+Institute co-authorship,partner-partner links only (our NITs removed),63,24.0317,23.9286,1
+Institute co-authorship,partner-partner links only (our NITs removed),71,23.7465,22.3894,1
+Institute co-authorship,partner-partner links only (our NITs removed),72,20.7917,22.4812,1
+Institute co-authorship,partner-partner links only (our NITs removed),83,23.5663,20.7699,1
+Institute co-authorship,partner-partner links only (our NITs removed),95,23.9789,20.1784,1
+Institute co-authorship,partner-partner links only (our NITs removed),105,22.9905,19.2995,1
+Institute co-authorship,partner-partner links only (our NITs removed),115,21.5043,18.903,1
+Institute co-authorship,partner-partner links only (our NITs removed),139,18.6475,17.8795,1
+Citation network (internal),out-degree of citing vs in-degree of cited,1,4.1976,4.6096,3527
+Citation network (internal),out-degree of citing vs in-degree of cited,2,4.653,5.2757,1869
+Citation network (internal),out-degree of citing vs in-degree of cited,3,5.325,5.8196,1123
+Citation network (internal),out-degree of citing vs in-degree of cited,4,5.9589,6.6147,700
+Citation network (internal),out-degree of citing vs in-degree of cited,5,6.9075,7.4128,480
+Citation network (internal),out-degree of citing vs in-degree of cited,6,7.6655,7.6327,298
+Citation network (internal),out-degree of citing vs in-degree of cited,7,8.2245,8.2727,189
+Citation network (internal),out-degree of citing vs in-degree of cited,8,9.1367,8.7003,128
+Citation network (internal),out-degree of citing vs in-degree of cited,9,9.0317,8.3455,98
+Citation network (internal),out-degree of citing vs in-degree of cited,10,9.5113,8.6915,53
+Citation network (internal),out-degree of citing vs in-degree of cited,11,9.8788,8.7566,36
+Citation network (internal),out-degree of citing vs in-degree of cited,12,10.0698,8.7689,37
+Citation network (internal),out-degree of citing vs in-degree of cited,13,11.8775,9.3573,27
+Citation network (internal),out-degree of citing vs in-degree of cited,14,11.5867,8.6699,14
+Citation network (internal),out-degree of citing vs in-degree of cited,15,15.0,9.8786,14
+Citation network (internal),out-degree of citing vs in-degree of cited,16,10.2083,8.7781,6
+Citation network (internal),out-degree of citing vs in-degree of cited,17,8.5176,8.5188,5
+Citation network (internal),out-degree of citing vs in-degree of cited,18,16.5,8.7861,6
+Citation network (internal),out-degree of citing vs in-degree of cited,19,13.1579,9.993,3
+Citation network (internal),out-degree of citing vs in-degree of cited,20,15.2,9.4321,7
+Citation network (internal),out-degree of citing vs in-degree of cited,21,16.25,10.2905,4
+Citation network (internal),out-degree of citing vs in-degree of cited,22,20.25,9.5636,2
+Citation network (internal),out-degree of citing vs in-degree of cited,23,16.4348,10.2971,3
+Citation network (internal),out-degree of citing vs in-degree of cited,24,13.5208,10.0042,2
+Citation network (internal),out-degree of citing vs in-degree of cited,25,12.98,10.064,2
+Citation network (internal),out-degree of citing vs in-degree of cited,26,6.1538,8.3846,1
+Citation network (internal),out-degree of citing vs in-degree of cited,37,2.2703,6.3,1

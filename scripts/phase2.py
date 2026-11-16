@@ -919,8 +919,144 @@ def instnet_part():
     print(cl.round(4).to_string())
 
 
+# ================================================================ part "assort": task 12
+N_NULL_UNDIRECTED, N_NULL_DIRECTED = 100, 20     # degree-preserving rewirings per network
+
+
+def assort_part():
+    """Assortative or disassortative? Degree assortativity r of three networks, each against degree-preserving
+    rewired copies (so hubs' share of links is kept and only who-links-to-whom is randomised), plus the
+    degree-correlation function k_nn(k): the average degree of a node's neighbours as a function of its degree."""
+    import networkx as nx
+
+    def rewire_u(G, seed):
+        H = G.copy()
+        m = H.number_of_edges()
+        nx.double_edge_swap(H, nswap=10 * m, max_tries=200 * m, seed=int(seed))
+        return H
+
+    def rewire_d(G, seed):
+        H = G.copy()
+        m = H.number_of_edges()
+        nx.directed_edge_swap(H, nswap=3 * m, max_tries=100 * m, seed=int(seed))
+        return H
+
+    # the three networks
+    au = pd.read_csv(os.path.join(DATA, "authorship_network.csv"), low_memory=False)
+    fe = au[au.edge_category.isin(["same_nit", "nit_nit"])]
+    F = nx.Graph()
+    F.add_edges_from(zip(fe.author_a_id, fe.author_b_id))
+    ref = pd.read_csv(os.path.join(DATA, "analysis", "ns_assortativity.csv")).set_index("attribute").assortativity
+    assert abs(nx.degree_assortativity_coefficient(F) - ref["degree"]) < 1e-4, "faculty graph differs from network_science.py"
+
+    ie = pd.read_csv(os.path.join(OUT, "institute_coauthorship_edges.csv"))
+    I_all = nx.Graph()
+    I_all.add_edges_from(zip(ie.inst_a, ie.inst_b))
+    I_part = I_all.copy()
+    I_part.remove_nodes_from(OWN)
+    I_part.remove_nodes_from([n for n in list(I_part) if I_part.degree(n) == 0])
+
+    cit = pd.read_csv(os.path.join(DATA, "citation_network.csv"), usecols=["source_id", "target_id", "edge_type"],
+                      low_memory=False)
+    ce = cit[cit.edge_type == "internal"]
+    C = nx.DiGraph()
+    C.add_edges_from(zip(ce.source_id, ce.target_id))
+
+    def verdict(r, null):
+        mu, sd = float(np.mean(null)), float(np.std(null, ddof=1))
+        z = (r - mu) / sd if sd > 0 else np.nan
+        p = (1 + sum(abs(x - mu) >= abs(r - mu) for x in null)) / (1 + len(null))   # two-sided, empirical
+        sign = "assortative" if r > 0.05 else "disassortative" if r < -0.05 else "neutral"
+        # different from random only if significant AND not negligible (a 0.001 gap can be "significant" when the
+        # rewired networks barely vary, as for a network dominated by two hubs)
+        real = p < 0.05 and abs(r - mu) >= 0.02
+        vs = "more assortative than random" if real and r > mu else \
+            "more disassortative than random" if real and r < mu else "as expected from the degrees alone"
+        return mu, sd, z, p, sign, vs
+
+    rows, knn_rows = [], []
+    undirected = [("Faculty co-authorship", "all faculty links", F),
+                  ("Institute co-authorship", "with our two NITs", I_all),
+                  ("Institute co-authorship", "partner-partner links only (our NITs removed)", I_part)]
+    for name, variant, G in undirected:
+        r = nx.degree_assortativity_coefficient(G)
+        nulls = [rewire_u(G, s) for s in range(N_NULL_UNDIRECTED)]
+        null = [nx.degree_assortativity_coefficient(H) for H in nulls]
+        mu, sd, z, p, sign, vs = verdict(r, null)
+        knn = nx.average_degree_connectivity(G)
+        knn_null = collections.defaultdict(list)
+        for H in nulls[:20]:
+            for k, v in nx.average_degree_connectivity(H).items():
+                knn_null[k].append(v)
+        ks = sorted(knn)
+        slope = stats.linregress(np.log(ks), np.log([knn[k] for k in ks])).slope if len(ks) > 2 else np.nan
+        rows.append({"network": name, "variant": variant, "directed_pair": "", "nodes": G.number_of_nodes(),
+                     "links": G.number_of_edges(), "r": r, "null_mean": mu, "null_sd": sd, "z": z, "p_value": p,
+                     "sign": sign, "vs_degree_preserving_random": vs, "knn_slope_mu": slope, "null_samples": len(null)})
+        for k in ks:
+            knn_rows.append({"network": name, "variant": variant, "k": k, "knn": knn[k],
+                             "knn_null_mean": np.mean(knn_null[k]) if knn_null[k] else np.nan,
+                             "nodes_with_k": sum(1 for _, d in G.degree() if d == k)})
+
+    # citation network: four directed degree pairs (source's x-degree vs target's y-degree)
+    nullsC = [rewire_d(C, s) for s in range(N_NULL_DIRECTED)]
+    for x, y in [("out", "in"), ("in", "in"), ("out", "out"), ("in", "out")]:
+        r = nx.degree_assortativity_coefficient(C, x=x, y=y)
+        null = [nx.degree_assortativity_coefficient(H, x=x, y=y) for H in nullsC]
+        mu, sd, z, p, sign, vs = verdict(r, null)
+        rows.append({"network": "Citation network (internal)", "variant": f"{x}-degree of citing vs {y}-degree of cited",
+                     "directed_pair": f"{x}-{y}", "nodes": C.number_of_nodes(), "links": C.number_of_edges(), "r": r,
+                     "null_mean": mu, "null_sd": sd, "z": z, "p_value": p, "sign": sign,
+                     "vs_degree_preserving_random": vs, "knn_slope_mu": np.nan, "null_samples": len(null)})
+    # k_nn for citations: papers that cite k of our papers -> average in-degree (times cited by us) of what they cite
+    knnC = nx.average_degree_connectivity(C, source="out", target="in")
+    knnC_null = collections.defaultdict(list)
+    for H in nullsC[:10]:
+        for k, v in nx.average_degree_connectivity(H, source="out", target="in").items():
+            knnC_null[k].append(v)
+    for k in sorted(knnC):
+        if k == 0:
+            continue
+        knn_rows.append({"network": "Citation network (internal)", "variant": "out-degree of citing vs in-degree of cited",
+                         "k": k, "knn": knnC[k], "knn_null_mean": np.mean(knnC_null[k]) if knnC_null[k] else np.nan,
+                         "nodes_with_k": sum(1 for _, d in C.out_degree() if d == k)})
+    res = pd.DataFrame(rows)
+    knn = pd.DataFrame(knn_rows)
+    save(res.round(4), "assortativity_degree.csv")
+    save(knn.round(4), "assortativity_knn.csv")
+
+    # chart: k_nn(k) with the rewired expectation, one panel per network
+    panels = [("Faculty co-authorship", "all faculty links"),
+              ("Institute co-authorship", "with our two NITs"),
+              ("Institute co-authorship", "partner-partner links only (our NITs removed)"),
+              ("Citation network (internal)", "out-degree of citing vs in-degree of cited")]
+    fig, axs = plt.subplots(1, 4, figsize=(17, 4.2))
+    for ax, (name, variant) in zip(axs, panels):
+        d = knn[(knn.network == name) & (knn.variant == variant)]
+        rr = res[(res.network == name) & ((res.variant == variant) | (res.directed_pair == "out-in"))].iloc[0]
+        ax.loglog(d.k, d.knn, "o", ms=4, label=f"data (r = {rr.r:.2f})")
+        ax.loglog(d.k, d.knn_null_mean, "-", color="grey", label=f"rewired (r = {rr.null_mean:.2f})")
+        ax.set_title(f"{name}\n{variant}", fontsize=8.5)
+        ax.set_xlabel("degree k" if "Citation" not in name else "out-degree of citing paper")
+        ax.set_ylabel("average neighbour degree k_nn(k)" if "Citation" not in name else "mean in-degree of cited papers")
+        ax.legend(fontsize=7); ax.grid(alpha=0.3, which="both")
+    fig.suptitle("Assortative (k_nn rises with k) or disassortative (k_nn falls with k)? Data vs degree-preserving "
+                 "rewired networks", fontsize=10)
+    fig.tight_layout(); fig.savefig(os.path.join(OUT, "assortativity_knn.png"), dpi=150); plt.close(fig)
+
+    summary = {"null_model": "degree-preserving rewiring (double edge swaps; directed swaps for citations)",
+               "null_samples": {"undirected": N_NULL_UNDIRECTED, "citation": N_NULL_DIRECTED},
+               "check": "faculty degree assortativity equals ns_assortativity.csv",
+               "results": res[["network", "variant", "r", "null_mean", "z", "p_value", "sign",
+                               "vs_degree_preserving_random"]].round(4).to_dict(orient="records")}
+    with open(os.path.join(OUT, "assortativity_summary.json"), "w") as f:
+        json.dump(summary, f, indent=2, default=float)
+    pd.set_option("display.width", 250)
+    print(res.round(3).to_string(index=False))
+
+
 PARTS = {"papers": papers_part, "citers": citers_part, "journals": journals_part, "faculty": faculty_part,
-         "instnet": instnet_part}
+         "instnet": instnet_part, "assort": assort_part}
 
 
 def main():

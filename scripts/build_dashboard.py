@@ -484,6 +484,13 @@ def phase2_tables():
                                "linked_to_nit_trichy", "linked_to_nit_surathkal", "betweenness"], 4)
     t["inst_clusters"] = records(csv(P2, "institute_network_by_cluster.csv"),
                                  ["cluster", "institutes", "joint_papers", "mean_degree", "mean_betweenness"], 4)
+    # task 12: degree assortativity of three networks vs degree-preserving rewiring, and k_nn(k)
+    if os.path.exists(os.path.join(P2, "assortativity_degree.csv")):
+        t["assort"] = records(csv(P2, "assortativity_degree.csv"),
+                              ["network", "variant", "directed_pair", "nodes", "links", "r", "null_mean", "null_sd", "z",
+                               "p_value", "sign", "vs_degree_preserving_random", "null_samples"], 4)
+        t["assort_knn"] = records(csv(P2, "assortativity_knn.csv"),
+                                  ["network", "variant", "k", "knn", "knn_null_mean", "nodes_with_k"], 3)
     return t
 
 

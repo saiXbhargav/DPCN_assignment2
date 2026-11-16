@@ -1,0 +1,8 @@
+network,variant,directed_pair,nodes,links,r,null_mean,null_sd,z,p_value,sign,vs_degree_preserving_random,knn_slope_mu,null_samples
+Faculty co-authorship,all faculty links,,540,961,0.2035,-0.0167,0.0319,6.9066,0.0099,assortative,more assortative than random,0.1877,100
+Institute co-authorship,with our two NITs,,826,4147,-0.2279,-0.2286,0.0003,2.3412,0.0198,disassortative,as expected from the degrees alone,-0.5871,100
+Institute co-authorship,partner-partner links only (our NITs removed),,724,2969,-0.0851,-0.1268,0.0093,4.5059,0.0099,disassortative,more assortative than random,-0.0772,100
+Citation network (internal),out-degree of citing vs in-degree of cited,out-in,11937,23822,0.3641,0.2068,0.009,17.4616,0.0476,assortative,more assortative than random,,20
+Citation network (internal),in-degree of citing vs in-degree of cited,in-in,11937,23822,0.4772,0.1783,0.0077,38.9587,0.0476,assortative,more assortative than random,,20
+Citation network (internal),out-degree of citing vs out-degree of cited,out-out,11937,23822,0.5013,0.2233,0.0087,31.9659,0.0476,assortative,more assortative than random,,20
+Citation network (internal),in-degree of citing vs out-degree of cited,in-out,11937,23822,0.1359,0.1189,0.0106,1.6113,0.0952,assortative,as expected from the degrees alone,,20
