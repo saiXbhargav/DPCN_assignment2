@@ -403,7 +403,6 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
 
 <section id="phase2" role="tabpanel" aria-labelledby="tab-phase2" hidden>
   <h2>Phase II additions</h2>
-  <p class="lede">The professor's Phase II suggestions (scripts/phase2.py). Publication statistics now also count papers by students and other NIT staff (an NIT author but no faculty author); the networks and faculty rankings stay faculty-only. Panels follow the institute switch.</p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="p2-facts"></div></div>
     <div class="panel s7"><h3>Papers per year: faculty papers vs all papers</h3><p class="note">All papers = faculty papers + papers with an NIT author but no NIT faculty author. 2026 is a partial year.</p><div class="chart"><canvas id="ch-p2-trend" aria-label="Papers per year in both scopes"></canvas></div></div>
@@ -438,6 +437,18 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s4"><h3>Faculty co-authorship</h3><p class="note">Average co-author degree k<sub>nn</sub> of faculty with k co-authors (log–log). Rising = assortative.</p><div class="chart"><canvas id="ch-p2-knn-fac" aria-label="k_nn for the faculty network"></canvas></div></div>
     <div class="panel s4"><h3>Institute co-authorship</h3><p class="note">Average partner degree of institutes with k partners, with and without our two NITs. Falling = disassortative.</p><div class="chart"><canvas id="ch-p2-knn-inst" aria-label="k_nn for the institute network"></canvas></div></div>
     <div class="panel s4"><h3>Citation network</h3><p class="note">Papers that cite k of our papers: how often the papers they cite are cited by us (mean in-degree).</p><div class="chart"><canvas id="ch-p2-knn-cit" aria-label="k_nn for the citation network"></canvas></div></div>
+    <div class="panel s12" id="p2-depth-rank"><h3>Is Surathkal ahead per person? Compare like with like</h3><p class="note">Faculty only. Median papers a year while on the faculty list, by latest rank (Mann–Whitney test, bold if p &lt; 0.05). The models on the right add rank, then department, to a regression of papers a year. Both NITs.</p>
+      <div class="facts" id="p2-rank-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s8"><div class="tablewrap"><table id="t-p2-rank"></table></div></div><div class="s4"><div class="tablewrap"><table id="t-p2-rank-models"></table></div></div></div></div>
+    <div class="panel s12" id="p2-depth-hire"><h3>Hiring vs leaving, 2016 → 2026</h3><p class="note">Each person's first and last year on the yearly faculty pages. Rank is the latest one, so promotions cannot be told apart from hiring.</p>
+      <div class="facts" id="p2-hire-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s5"><div class="chart"><canvas id="ch-p2-headcount" aria-label="Faculty on the list per year"></canvas></div></div><div class="s7"><div class="tablewrap"><table id="t-p2-hire"></table></div></div></div></div>
+    <div class="panel s12" id="p2-depth-self"><h3>Most influential papers without self-citations</h3><p class="note">PageRank on citations between our own papers, keeping only citations where the citing and cited papers share no author. The list with self-citations is in the Citation network tab. Both NITs.</p>
+      <div class="facts" id="p2-self-facts" style="margin-bottom:12px"></div>
+      <div class="tablewrap"><table id="t-p2-self"></table></div></div>
+    <div class="panel s12" id="p2-depth-links"><h3>Which new links would help the faculty network most?</h3><p class="note">A what-if calculation, following Barnes et al. (2026). Network efficiency is the average of 1 / distance over all pairs of faculty. We add, one at a time, the 10 new links between faculty of the same department that raise it most, and compare with 10 random links. It shows where a link would help the network, not who wants to work together. Both NITs.</p>
+      <div class="facts" id="p2-link-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s6"><h3 style="font-size:14px">Same NIT, same department</h3><div class="tablewrap"><table id="t-p2-links-in"></table></div></div><div class="s6"><h3 style="font-size:14px">Across the two NITs, same department</h3><div class="tablewrap"><table id="t-p2-links-x"></table></div></div></div></div>
   </div>
 </section>
 
@@ -1340,6 +1351,84 @@ function phase2Tab() {
   $("#t-p2-clusters").innerHTML = T2([["Type"], ["Institutes", 1], ["Joint papers", 1], ["Mean links", 1]],
     P.inst_clusters.map((r) => [esc(r.cluster), fmt(r.institutes), fmt(r.joint_papers), fmt(r.mean_degree, 1)]));
   phase2Assort();
+  try { phase2Depth(); } catch (err) { console.error(err); }   // a missing file must not blank the tab
+}
+function phase2Depth() {
+  // deeper questions from the professor's papers (phase2_papers.py): a like-with-like comparison, hiring vs leaving,
+  // PageRank without self-citations, and which new links would help the faculty network most
+  const PP = D.pp || {};
+  if (!PP.r || !PP.d || !PP.s || !PP.c) return;
+  const pv = (p) => p == null ? "–" : p < 0.001 ? "p < 0.001" : "p = " + fmt(p, p < 0.01 ? 3 : 2);
+  const pn = (p) => p == null ? "–" : p < 0.001 ? "&lt;&nbsp;0.001" : fmt(p, p < 0.01 ? 3 : 2);
+  const sig = (p) => p < 0.05 ? `<b>${pn(p)}</b>` : pn(p);
+  const sg = (x, d = 0) => (x < 0 ? "−" : "+") + fmt(Math.abs(x), d);
+
+  // 1. like with like: within rank, and models with rank and department
+  const R = PP.r, wr = R.within_rank, M = R.papers_per_year_models, fw = R.fwci_sensitivity;
+  const rk = (n) => wr.find((r) => r.rank === n) || {}, md = (n) => M.find((r) => r.model === n) || {};
+  const fs = (n) => fw.find((r) => r.papers === n) || {};
+  const asst = rk("Assistant Professor"), prof = rk("Professor"), m0 = md("no controls"), m1 = md("+ rank");
+  $("#p2-rank-facts").innerHTML = [
+    fact(`${sg(m0.surathkal_effect_pct)}% → ${sg(m1.surathkal_effect_pct)}%`, `Surathkal's lead in papers a year per faculty member, before and after taking rank into account (95% CI ${fmt(m1.ci_low_pct)}–${fmt(m1.ci_high_pct)}%)`),
+    fact(`${pct(asst.share_of_trichy_faculty)} vs ${pct(asst.share_of_surathkal_faculty)}`, "of faculty are Assistant Professors, Trichy vs Surathkal; the gap is only among Assistant and Associate Professors"),
+    fact(`${fmt(prof.median_papers_per_year_trichy, 2)} vs ${fmt(prof.median_papers_per_year_surathkal, 2)}`, `papers a year for Professors, Trichy vs Surathkal (${pv(prof.p_papers_per_year)}): senior faculty publish the same`),
+    fact(sg(fs("all years").surathkal_effect_pct, 1) + "%", `Surathkal vs Trichy impact (FWCI), ${pv(fs("all years").p_clustered)} with errors clustered by faculty member; ${sg(fs("published up to 2023").surathkal_effect_pct, 2)}% with papers up to 2023`)].join("");
+  $("#t-p2-rank").innerHTML = T2([["Rank"], ["Faculty (T / S)", 1], ["Papers a year: Trichy", 1], ["Surathkal", 1], ["p", 1], ["FWCI: Trichy", 1], ["Surathkal", 1], ["p", 1]],
+    wr.map((r) => [r.rank === "All ranks" ? "<b>All ranks</b>" : esc(r.rank), `${fmt(r.faculty_trichy)} / ${fmt(r.faculty_surathkal)}`,
+      fmt(r.median_papers_per_year_trichy, 2), fmt(r.median_papers_per_year_surathkal, 2), sig(r.p_papers_per_year),
+      fmt(r.median_fwci_trichy, 2), fmt(r.median_fwci_surathkal, 2), sig(r.p_fwci)]));
+  $("#t-p2-rank-models").innerHTML = T2([["Model"], ["Surathkal lead", 1], ["95% CI", 1]],
+    M.map((r) => [esc(r.model), sg(r.surathkal_effect_pct) + "%", `${fmt(r.ci_low_pct)}–${fmt(r.ci_high_pct)}%`]));
+
+  // 2. hiring vs leaving
+  const dec = (i) => PP.d.decomposition.find((r) => r.institution === i) || {};
+  const grp = (i, g) => PP.d.groups.find((r) => r.institution === i && r.group === g) || {};
+  const dt = dec("NIT Trichy"), ds = dec("NIT Surathkal");
+  const jt = grp("NIT Trichy", "joined after 2016"), js = grp("NIT Surathkal", "joined after 2016");
+  const st = grp("NIT Trichy", "stayed 2016-2026"), ss = grp("NIT Surathkal", "stayed 2016-2026");
+  $("#p2-hire-facts").innerHTML = [
+    fact(`${fmt(dt.faculty_2016)} → ${fmt(dt.faculty_2026)}`, `NIT Trichy faculty on the list (${fmt(dt.joined)} joined, ${fmt(dt.left)} left)`),
+    fact(`${fmt(ds.faculty_2016)} → ${fmt(ds.faculty_2026)}`, `NIT Surathkal faculty on the list (${fmt(ds.joined)} joined, ${fmt(ds.left)} left)`),
+    fact(`${fmt(jt.median_papers_per_year, 2)} vs ${fmt(js.median_papers_per_year, 2)}`, `median papers a year of faculty who joined after 2016, Trichy vs Surathkal (${pct(jt.asst_prof_share)} vs ${pct(js.asst_prof_share)} Assistant Professors)`),
+    fact(`${fmt(st.median_papers_per_year, 2)} vs ${fmt(ss.median_papers_per_year, 2)}`, "median papers a year of faculty on the list for all of 2016–2026: no Surathkal lead here"),
+    fact(`${fmt(dt.share_2025_from_joiners_pct)}% / ${fmt(ds.share_2025_from_joiners_pct)}%`, "of 2025 papers by listed faculty came from people who joined after 2016 (Trichy / Surathkal)")].join("");
+  const H = PP.d_headcount || [];
+  draw("ch-p2-headcount", { type: "line", data: { labels: YEARS, datasets: views().map((i) => ({ label: `${shortInst(i)}: faculty on the list`,
+      data: YEARS.map((y) => (H.find((r) => r.institution === i && r.year === y) || {}).faculty_listed ?? null),
+      borderColor: instColor(i), backgroundColor: instColor(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 })) },
+    options: baseOptions() });
+  const order = ["stayed 2016-2026", "joined after 2016", "left before 2026", "joined and left"];
+  $("#t-p2-hire").innerHTML = T2([["Group"], ["NIT"], ["Faculty", 1], ["Papers a year (median)", 1], ["FWCI (median)", 1], ["Assistant Profs", 1]],
+    order.flatMap((g) => views().map((i) => grp(i, g)).filter((r) => r.group))
+      .map((r) => [esc(r.group.replace("-", "–")), chip(r.institution), fmt(r.faculty), fmt(r.median_papers_per_year, 2), fmt(r.median_fwci, 2), pct(r.asst_prof_share)]));
+
+  // 3. the most influential papers once self-citations are removed
+  const S = PP.s, fl = S.nit_flow_clean || {}, fa = S.nit_flow_all || {};
+  $("#p2-self-facts").innerHTML = [
+    fact(pct(S.self_citation_share_shared_author), `of the ${fmt(S.internal_edges)} citations between our papers share an author with the cited paper (${fmt(S.clean_edges)} left without them)`),
+    fact(`${S.top10_overlap} of 10`, `papers stay in the top 10 once self-citations are removed (Spearman ρ = ${fmt(S.spearman_pagerank_all_vs_clean, 2)} between the two rankings)`),
+    fact(`${S.top10_2016_papers_all} → ${S.top10_2016_papers_clean}`, "2016 papers in the top 10, with vs without self-citations: older papers have had longer to collect self-citations"),
+    fact(`${fmt(fl["NIT Trichy -> NIT Surathkal"])} / ${fmt(fl["NIT Surathkal -> NIT Trichy"])}`, `citations Trichy → Surathkal / Surathkal → Trichy without self-citations (${fmt(fa["NIT Trichy -> NIT Surathkal"])} / ${fmt(fa["NIT Surathkal -> NIT Trichy"])} with them): a balanced flow`),
+    fact(pct(S.clean_same_department_share), "of the remaining citations stay inside the same department")].join("");
+  $("#t-p2-self").innerHTML = T2([["#", 1], ["Paper"], ["NIT"], ["Department"], ["Year", 1], ["Cited by our papers (no shared author)", 1], ["All citations", 1]],
+    (PP.s_top10 || []).map((r) => [r.rank, `<a href="https://openalex.org/${esc(r.openalex_id)}" target="_blank" rel="noopener">${esc(r.title)}</a>`,
+      chip(r.institution), esc(r.department), r.year, fmt(r.in_degree), fmt(r.citations_total)]));
+
+  // 4. which new links would help most (edge interventions)
+  const C = PP.c, iv = C.interventions || {}, tp = C.targeted_peripheral || {};
+  const ineq = (v) => (C.inequality || []).find((r) => r.view === v) || {};
+  const a = iv["same department, same NIT"] || {}, x = iv["same department, across the two NITs"] || {};
+  const core = tp["to a core member"] || {}, rnd = tp["to a random colleague"] || {};
+  $("#p2-link-facts").innerHTML = [
+    fact(`+${fmt(a.gain_pct_best_10, 1)}% vs +${fmt(a.gain_pct_random_10_mean, 1)}%`, "network efficiency from the best 10 new links inside the NITs, vs 10 random links"),
+    fact(`+${fmt(x.gain_pct_best_10, 1)}% vs +${fmt(x.gain_pct_random_10_mean, 1)}%`, "the same with links across the two NITs"),
+    fact(`${fmt(ineq("NIT Trichy").isolated_pct)}% vs ${fmt(ineq("NIT Surathkal").isolated_pct)}%`, "of faculty with papers have no co-author among NIT faculty, Trichy vs Surathkal"),
+    fact(`+${fmt(core.median_gain_pct)}% vs +${fmt(rnd.median_gain_pct)}%`, `centrality gain for the ${fmt(core.faculty)} faculty with only one co-author, when linked to a core member of their department vs a random colleague (median)`)].join("");
+  const lt = (set, base) => T2([["#", 1], ["Faculty member"], ["Faculty member"], ["Department"], ["Efficiency gain so far", 1]],
+    (PP.c_links || []).filter((r) => r.set === set).map((r, k) => [k + 1, `${esc(r.a)} ${chip(r.a_nit)}`, `${esc(r.b)} ${chip(r.b_nit)}`, esc(r.department),
+      "+" + fmt(100 * (r.efficiency_after / base - 1), 1) + "%"]));
+  $("#t-p2-links-in").innerHTML = lt("same department, same NIT", a.efficiency_before);
+  $("#t-p2-links-x").innerHTML = lt("same department, across the two NITs", x.efficiency_before);
 }
 function phase2Assort() {
   const A = D.p2.assort, K = D.p2.assort_knn;

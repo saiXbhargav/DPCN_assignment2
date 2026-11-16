@@ -579,6 +579,18 @@ def depth_tables():
     if os.path.exists(os.path.join(PP, "r_false_discovery.csv")):
         fd = csv(PP, "r_false_discovery.csv")
         t["fdr"] = records(fd, list(fd.columns), n=5)
+    # tables for the Phase II "deeper questions" panels
+    if os.path.exists(os.path.join(PP, "s_pagerank_top10.csv")):
+        top = csv(PP, "s_pagerank_top10.csv")
+        top = top[top.network == "without self-citations"]
+        t["s_top10"] = records(top, ["rank", "openalex_id", "title", "year", "institution", "department", "in_degree",
+                                     "citations_total"])
+    if os.path.exists(os.path.join(PP, "c_best_new_links.csv")):
+        t["c_links"] = records(csv(PP, "c_best_new_links.csv"), ["set", "a", "a_nit", "b", "b_nit", "department",
+                                                                 "efficiency_after"], n=5)
+    if os.path.exists(os.path.join(PP, "d_headcount_by_year.csv")):
+        hc = csv(PP, "d_headcount_by_year.csv")
+        t["d_headcount"] = records(hc, list(hc.columns))
     return t
 
 
