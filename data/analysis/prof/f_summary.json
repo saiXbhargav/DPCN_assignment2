@@ -1,0 +1,82 @@
+{
+  "matching": [
+    {
+      "institution": "NIT Trichy",
+      "nirf_current_faculty": 348,
+      "matched_to_openalex": 298,
+      "matched_pct": 85.6,
+      "openalex_ids_used": 611
+    },
+    {
+      "institution": "NIT Surathkal",
+      "nirf_current_faculty": 279,
+      "matched_to_openalex": 255,
+      "matched_pct": 91.4,
+      "openalex_ids_used": 488
+    },
+    {
+      "institution": "NIT Warangal",
+      "nirf_current_faculty": 327,
+      "matched_to_openalex": 270,
+      "matched_pct": 82.6,
+      "openalex_ids_used": 541
+    },
+    {
+      "institution": "NIT Calicut",
+      "nirf_current_faculty": 375,
+      "matched_to_openalex": 322,
+      "matched_pct": 85.9,
+      "openalex_ids_used": 549
+    }
+  ],
+  "densification": [
+    {
+      "institution": "NIT Trichy",
+      "years": "2016-2026",
+      "exponent_a": 1.4081,
+      "r_squared": 0.9947
+    },
+    {
+      "institution": "NIT Trichy",
+      "years": "2019-2025",
+      "exponent_a": 1.3001,
+      "r_squared": 0.9862
+    },
+    {
+      "institution": "NIT Surathkal",
+      "years": "2016-2026",
+      "exponent_a": 1.7359,
+      "r_squared": 0.9945
+    },
+    {
+      "institution": "NIT Surathkal",
+      "years": "2019-2025",
+      "exponent_a": 1.639,
+      "r_squared": 0.9953
+    },
+    {
+      "institution": "NIT Warangal",
+      "years": "2016-2026",
+      "exponent_a": 1.4359,
+      "r_squared": 0.994
+    },
+    {
+      "institution": "NIT Warangal",
+      "years": "2019-2025",
+      "exponent_a": 1.5844,
+      "r_squared": 0.9984
+    },
+    {
+      "institution": "NIT Calicut",
+      "years": "2016-2026",
+      "exponent_a": 1.3894,
+      "r_squared": 0.9986
+    },
+    {
+      "institution": "NIT Calicut",
+      "years": "2019-2025",
+      "exponent_a": 1.421,
+      "r_squared": 0.9938
+    }
+  ]
+}

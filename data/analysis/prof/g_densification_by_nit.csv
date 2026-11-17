@@ -1,0 +1,13 @@
+view,years,nodes_counted,exponent_a,r_squared,avg_degree_grows_as_nodes_power
+Both NITs,2016-2026,connected_faculty,1.6545,0.9975,0.6545
+Both NITs,2016-2026,faculty_nodes,2.5477,0.997,1.5477
+Both NITs,2019-2025,connected_faculty,1.5645,0.9984,0.5645
+Both NITs,2019-2025,faculty_nodes,2.2906,0.9949,1.2906
+NIT Trichy,2016-2026,connected_faculty,1.6089,0.9929,0.6089
+NIT Trichy,2016-2026,faculty_nodes,1.9766,0.9775,0.9766
+NIT Trichy,2019-2025,connected_faculty,1.4458,0.9809,0.4458
+NIT Trichy,2019-2025,faculty_nodes,1.5604,0.9928,0.5604
+NIT Surathkal,2016-2026,connected_faculty,1.6985,0.9954,0.6985
+NIT Surathkal,2016-2026,faculty_nodes,3.2274,0.9888,2.2274
+NIT Surathkal,2019-2025,connected_faculty,1.5965,0.9871,0.5965
+NIT Surathkal,2019-2025,faculty_nodes,3.4164,0.9418,2.4164

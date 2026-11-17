@@ -772,6 +772,15 @@ Ideas and methods from the ten papers the professor shared, applied to our data.
   - rank mixing is weak (0.07);
   - degree assortativity grew from near random in 2017–18 to 0.20.
 
+### 11. Follow-ups from the professor's meeting (`scripts/phase2_prof.py` → [PROF.md](data/analysis/prof/PROF.md))
+Asked on 17 Nov. New sources: OpenAlex papers of NIT Warangal and NIT Calicut, and each NIT's NIRF 2025 data file (faculty lists; only counts are kept in the repo).
+
+- **Why 1.66:** in any one year a faculty member writes with about 1.7 colleagues, flat since 2016; the network-wide average (1.67 → 3.48) rises only because old links stay while new ones are added. The same faculty-only exponent is 1.41–1.74 at all four NITs, so 1.66 is normal.
+- **Predict and check:** giving the real latest year as input keeps the link-prediction model sharp (79% of 2025's new pairs in its top 5%, vs 60% for a model stuck on 2022, which cannot see the 22% of new links involving people who joined later).
+- **Four NITs:** papers per faculty member (Surathkal 4.7, Warangal 4.5, Trichy 3.4, Calicut 2.5 in 2024) run exactly opposite to the share of Assistant Professors; Warangal passed Trichy in yearly output in 2024; impact is about the same at Trichy, Surathkal and Warangal.
+- **Hiring:** no 2002/2003 wave among today's faculty at any of the four NITs; the waves were 2006–2009 and from 2018. Our roster matches NIRF (342 vs 348, 269 vs 279).
+- **Google Scholar:** a Scholar link for every faculty member on the dashboard, and a checklist for the most-cited faculty (Scholar blocks automated checks).
+
 ---
 
 ## Folder layout
@@ -802,6 +811,8 @@ DPCN_assignment2/
 │   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
 │   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
 │   ├── phase2_papers.py     ← Phase II, ideas from the professor's papers: who cites us (co-authorship distance), citations without self-citations, fair comparison (rank, clustered errors, false discovery), core and edge interventions, productivity, hiring vs leaving, team size, assortativity
+│   ├── fetch_peers.py       ← papers of four NITs (ours + NIT Warangal + NIT Calicut), same filter and day
+│   ├── phase2_prof.py       ← professor's meeting follow-ups: average degree and 1.66, rolling link prediction, NIRF faculty and joining years, four NITs, Google Scholar checklist
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -863,6 +874,8 @@ python phase2.py                    # data/all_papers.csv and data/analysis/phas
 python fetch_insights.py yearly     # citations per year and open-access status (213 requests)
 python questions.py                 # data/analysis/questions/
 python phase2_papers.py             # data/analysis/papers/ (uses the files above)
+python fetch_peers.py               # four NITs' papers for the comparison (about 220 requests)
+python phase2_prof.py               # data/analysis/prof/ (the nirf and nitfaculty parts need pymupdf and the NIRF files in data/raw/nirf/)
 python build_dashboard.py           # dashboard/index.html
 ```
 

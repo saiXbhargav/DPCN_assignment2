@@ -1,0 +1,124 @@
+{
+  "exponent_connected_both": 1.6545088592116437,
+  "r_squared": 0.9975059813750292,
+  "meaning": "links grow as (connected faculty)^a; average degree = 2*links/nodes grows as nodes^(a-1)",
+  "avg_degree_connected_2016": 1.6666666666666667,
+  "avg_degree_connected_2025": 3.483018867924528,
+  "avg_degree_all_2016": 0.8766233766233766,
+  "avg_degree_all_2025": 2.8664596273291925,
+  "connected_2016": 162,
+  "connected_2025": 530,
+  "links_2016": 135,
+  "links_2025": 923,
+  "year_avg_degree_active": {
+    "2016": 0.877,
+    "2017": 1.018,
+    "2018": 0.986,
+    "2019": 1.085,
+    "2020": 1.138,
+    "2021": 0.914,
+    "2022": 0.929,
+    "2023": 0.998,
+    "2024": 0.964,
+    "2025": 0.942,
+    "2026": 0.778
+  },
+  "fits": [
+    {
+      "view": "Both NITs",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6545,
+      "r_squared": 0.9975,
+      "avg_degree_grows_as_nodes_power": 0.6545
+    },
+    {
+      "view": "Both NITs",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 2.5477,
+      "r_squared": 0.997,
+      "avg_degree_grows_as_nodes_power": 1.5477
+    },
+    {
+      "view": "Both NITs",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.5645,
+      "r_squared": 0.9984,
+      "avg_degree_grows_as_nodes_power": 0.5645
+    },
+    {
+      "view": "Both NITs",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 2.2906,
+      "r_squared": 0.9949,
+      "avg_degree_grows_as_nodes_power": 1.2906
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6089,
+      "r_squared": 0.9929,
+      "avg_degree_grows_as_nodes_power": 0.6089
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 1.9766,
+      "r_squared": 0.9775,
+      "avg_degree_grows_as_nodes_power": 0.9766
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.4458,
+      "r_squared": 0.9809,
+      "avg_degree_grows_as_nodes_power": 0.4458
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 1.5604,
+      "r_squared": 0.9928,
+      "avg_degree_grows_as_nodes_power": 0.5604
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6985,
+      "r_squared": 0.9954,
+      "avg_degree_grows_as_nodes_power": 0.6985
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 3.2274,
+      "r_squared": 0.9888,
+      "avg_degree_grows_as_nodes_power": 2.2274
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.5965,
+      "r_squared": 0.9871,
+      "avg_degree_grows_as_nodes_power": 0.5965
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_nodes",
+      "exponent_a": 3.4164,
+      "r_squared": 0.9418,
+      "avg_degree_grows_as_nodes_power": 2.4164
+    }
+  ]
+}

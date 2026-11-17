@@ -137,6 +137,8 @@ a { color: var(--accent); }
 .chip { display: inline-block; font: 600 11px var(--body); padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink-2); white-space: nowrap; }
 .chip.t { background: var(--trichy-soft); color: #1b5aa6; } .chip.s { background: var(--surathkal-soft); color: #a8441a; }
 .chip.good { color: var(--good); background: #e8f5e8; } .chip.warn { color: var(--warn); }
+a.gs { font: 600 11px var(--body); color: var(--muted); text-decoration: none; white-space: nowrap; margin-left: 4px; }
+a.gs:hover { color: var(--ink); text-decoration: underline; }
 .tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
 input[type="search"], select { font: 13px var(--body); padding: 7px 10px; border: 1px solid var(--line); border-radius: 9px;
   background: var(--panel); color: var(--ink); min-width: 0; }
@@ -449,6 +451,19 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s12" id="p2-depth-links"><h3>Which new links would help the faculty network most?</h3><p class="note">A what-if calculation, following Barnes et al. (2026). Network efficiency is the average of 1 / distance over all pairs of faculty. We add, one at a time, the 10 new links between faculty of the same department that raise it most, and compare with 10 random links. It shows where a link would help the network, not who wants to work together. Both NITs.</p>
       <div class="facts" id="p2-link-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><h3 style="font-size:14px">Same NIT, same department</h3><div class="tablewrap"><table id="t-p2-links-in"></table></div></div><div class="s6"><h3 style="font-size:14px">Across the two NITs, same department</h3><div class="tablewrap"><table id="t-p2-links-x"></table></div></div></div></div>
+    <div class="panel s12" id="p2-prof-degree"><h3>Average co-authors over the years, and what 1.66 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
+      <div class="facts" id="pf-degree-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s6"><div class="chart"><canvas id="ch-pf-degree" aria-label="Average co-authors per year"></canvas></div></div><div class="s6"><div class="chart"><canvas id="ch-pf-degree4" aria-label="Average co-authors at four NITs"></canvas></div></div></div></div>
+    <div class="panel s12" id="p2-prof-predict"><h3>Predict and check: which faculty pairs will write their first paper together?</h3><p class="note">The model learns from 2016–2022 and predicts 2023. For 2024, the real 2023 network is given as input (rolling); the same for 2025. It is compared with a model that only ever sees the 2022 network (fixed). Each year about 1 in 2,000 possible pairs starts working together, so the useful check is how high the real new pairs rank: a random guess puts 5% of them in its top 5% of pairs.</p>
+      <div class="facts" id="pf-pred-facts" style="margin-bottom:12px"></div>
+      <div class="tablewrap"><table id="t-pf-pred"></table></div>
+      <h3 style="font-size:14px;margin-top:14px" id="pf-check-title"></h3><div class="tablewrap"><table id="t-pf-check"></table></div></div>
+    <div class="panel s12" id="p2-prof-four"><h3>Four NITs side by side</h3><p class="note">NIT Trichy and NIT Surathkal next to NIT Warangal and NIT Calicut. Papers: OpenAlex, the same filter and download day (17 Nov 2026) for all four, 2016–2025, any author from that NIT (students' papers included). Faculty numbers: each NIT's NIRF 2025 data file. Faculty-only network: NIRF faculty matched by name to OpenAlex authors.</p>
+      <div class="facts" id="pf-four-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s7"><div class="tablewrap"><table id="t-pf-four"></table></div></div><div class="s5"><div class="chart"><canvas id="ch-pf-four" aria-label="Papers per year at four NITs"></canvas></div></div></div></div>
+    <div class="panel s12" id="p2-prof-join"><h3>When did today's faculty join?</h3><p class="note">Joining dates of everyone listed as currently working in each NIT's NIRF 2025 data file. People who joined and then left or retired before about 2022 are not listed, so early hiring waves can look smaller than they were. Output: papers a year from the later of 2016 and the joining year, for faculty matched by name to our roster.</p>
+      <div class="facts" id="pf-join-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s7"><div class="chart"><canvas id="ch-pf-join" aria-label="Joining year of current faculty"></canvas></div></div><div class="s5"><div class="tablewrap"><table id="t-pf-cohort"></table></div></div></div></div>
   </div>
 </section>
 
@@ -550,6 +565,8 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<
 const instColor = (i) => i === "NIT Trichy" ? css("--trichy") : i === "NIT Surathkal" ? css("--surathkal") : css("--both");
 const chip = (i) => `<span class="chip ${i === "NIT Trichy" ? "t" : i === "NIT Surathkal" ? "s" : ""}">${esc(i.replace("NIT ", ""))}</span>`;
 const views = () => inst === "Both" ? INSTS : [inst];
+// a Google Scholar author search for one faculty member (name + the city/state word their profiles usually carry)
+const gs = (name, i) => `<a class="gs" href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=${encodeURIComponent(`${name} ${i === "NIT Trichy" ? "Tiruchirappalli" : "Karnataka"}`)}" target="_blank" rel="noopener" title="Look up ${esc(name)} on Google Scholar">Scholar&nbsp;↗</a>`;
 const YEARS = Array.from({ length: 11 }, (_, i) => 2016 + i);
 const charts = {};
 const MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -726,7 +743,7 @@ function facultyTable() {
   });
   $("#f-count").textContent = `${fmt(rows.length)} faculty`;
   $("#t-fac").innerHTML = `<thead><tr>${FCOLS.map(([k, l, n]) => `<th class="${n ? "num" : ""}"><button type="button" data-k="${k}" ${fstate.sort === k ? `data-dir="${fstate.dir}"` : ""}>${l}</button></th>`).join("")}</tr></thead><tbody>` +
-    rows.slice(0, fstate.limit).map((f) => `<tr><td>${esc(f.name)}</td><td>${chip(f.institution)}</td><td>${esc(f.branch)}</td><td>${esc(f.designation)}</td><td>${f.status === "current" ? '<span class="chip good">current</span>' : `<span class="chip">former · ${f.last_seen}</span>`}</td><td class="num">${fmt(f.papers)}</td><td class="num">${fmt(f.citations)}</td><td class="num">${fmt(f.h)}</td><td class="num">${fmt(f.h_career)}</td><td class="num">${fmt(f.mean_fwci, 2)}</td><td>${esc(f.top_journal || "")}</td></tr>`).join("") + "</tbody>";
+    rows.slice(0, fstate.limit).map((f) => `<tr><td>${esc(f.name)} ${gs(f.name, f.institution)}</td><td>${chip(f.institution)}</td><td>${esc(f.branch)}</td><td>${esc(f.designation)}</td><td>${f.status === "current" ? '<span class="chip good">current</span>' : `<span class="chip">former · ${f.last_seen}</span>`}</td><td class="num">${fmt(f.papers)}</td><td class="num">${fmt(f.citations)}</td><td class="num">${fmt(f.h)}</td><td class="num">${fmt(f.h_career)}</td><td class="num">${fmt(f.mean_fwci, 2)}</td><td>${esc(f.top_journal || "")}</td></tr>`).join("") + "</tbody>";
   $("#f-more").hidden = rows.length <= fstate.limit;
   $("#t-fac").querySelectorAll("th button").forEach((btn) => btn.addEventListener("click", () => {
     const k = btn.dataset.k; fstate.dir = fstate.sort === k && fstate.dir === "desc" ? "asc" : "desc"; fstate.sort = k; facultyTable(); }));
@@ -1304,7 +1321,7 @@ function phase2Tab() {
   $("#p2-flag-facts").innerHTML = [fact(fmt(lc["10+"]), `papers with 10+ authors (${fmt(lc.faculty)} with a faculty author)`), fact(fmt(S.large_team_papers_all["50+"]), "papers with 50+ authors, none by faculty"),
     fact(fmt(S.faculty_flagged_possible_name_merge.length), "faculty whose career citations, summed over their OpenAlex IDs, are inflated by a same-name profile (their NIT papers are fine)")].join("");
   $("#t-p2-career").innerHTML = T2([["Highest career citations (OpenAlex)"], ["Career", 1], ["2016–26 at NIT", 1], ["From NIT papers", 1], ["Max authors", 1]],
-    P.top_career.filter((r) => views().includes(r.institution)).map((r) => [`${esc(r.author)} ${chip(r.institution)}${r.nit_share_of_career_citations_pct < 5 ? ' <span class="chip warn">name merge?</span>' : ""}`, fmt(r.career_citations_openalex), fmt(r.citations_2016_2026), fmt(r.nit_share_of_career_citations_pct, 1) + "%", fmt(r.max_authors)]));
+    P.top_career.filter((r) => views().includes(r.institution)).map((r) => [`${esc(r.author)} ${chip(r.institution)} ${gs(r.author, r.institution)}${r.nit_share_of_career_citations_pct < 5 ? ' <span class="chip warn">name merge?</span>' : ""}`, fmt(r.career_citations_openalex), fmt(r.citations_2016_2026), fmt(r.nit_share_of_career_citations_pct, 1) + "%", fmt(r.max_authors)]));
   $("#t-p2-q1if").innerHTML = T2([["Department"], ["Journal papers", 1], ["Q1", 1], ["IF > 5", 1], ["Q1 and IF > 5", 1], ["IF > 10", 1], ["Q1 and IF > 10", 1]],
     P.q1_if_branch.filter((r) => views().includes(r.institution)).sort((a, b) => b.Q1_and_IF_gt_5 - a.Q1_and_IF_gt_5)
       .map((r) => [`${esc(r.department)} ${chip(r.institution)}`, fmt(r.journal_papers), fmt(r.Q1), fmt(r.IF_gt_5), `<b>${fmt(r.Q1_and_IF_gt_5)}</b> (${fmt(r.Q1_and_IF_gt_5_pct, 1)}%)`, fmt(r.IF_gt_10), fmt(r.Q1_and_IF_gt_10)]));
@@ -1352,6 +1369,101 @@ function phase2Tab() {
     P.inst_clusters.map((r) => [esc(r.cluster), fmt(r.institutes), fmt(r.joint_papers), fmt(r.mean_degree, 1)]));
   phase2Assort();
   try { phase2Depth(); } catch (err) { console.error(err); }   // a missing file must not blank the tab
+  try { phase2Prof(); } catch (err) { console.error(err); }
+}
+function phase2Prof() {
+  // follow-ups from the professor's meeting (phase2_prof.py): average degree and the exponent 1.66, rolling link
+  // prediction, four NITs side by side, and when today's faculty joined (NIRF 2025)
+  const F = D.pf || {};
+  if (!F.growth) return;
+  const PEER = { "NIT Warangal": "#2a9d8f", "NIT Calicut": "#9b5de5" };
+  const col = (i) => PEER[i] || instColor(i);
+  const FOUR = ["NIT Trichy", "NIT Surathkal", "NIT Warangal", "NIT Calicut"];
+  const yrs = YEARS.filter((y) => y < 2026);
+  const opt = (yTitle, title) => {         // the shared chart style plus a y-axis title (and an optional chart title)
+    const o = baseOptions();
+    o.scales.y.min = 0;
+    o.scales.y.title = { display: true, text: yTitle, color: css("--muted") };
+    if (title) o.plugins.title = { display: true, text: title, color: css("--muted") };
+    return o;
+  };
+
+  // 1. average degree and the exponent
+  const G = F.growth, dn = F.dens || [];
+  const ex = (v, ys = "2016-2026") => (dn.find((r) => r.view === v && r.years === ys && r.nodes_counted === "connected_faculty") || {}).exponent_a;
+  const gb = (y) => G.find((r) => r.view === "Both NITs" && r.year === y) || {};
+  const single = G.filter((r) => r.view === "Both NITs" && r.year < 2026).map((r) => r.year_avg_degree_connected);
+  const fd = F.fac_dens || [], fex = (i) => (fd.find((r) => r.institution === i && r.years === "2016-2026") || {}).exponent_a;
+  $("#pf-degree-facts").innerHTML = [
+    fact(`a = ${fmt(ex("Both NITs"), 2)}`, `links grow as (connected faculty)<sup>${fmt(ex("Both NITs"), 2)}</sup>, so average co-authors grow as (connected faculty)<sup>${fmt(ex("Both NITs") - 1, 2)}</sup> (${fmt(ex("Both NITs", "2019-2025"), 2)} without the start-up years)`),
+    fact(`${fmt(gb(2016).avg_degree_connected_faculty, 2)} → ${fmt(gb(2025).avg_degree_connected_faculty, 2)}`, "average co-authors per connected faculty member, network up to each year (2016 → 2025)"),
+    fact(`${fmt(Math.min(...single), 2)}–${fmt(Math.max(...single), 2)}`, "co-authors within a single year (faculty who wrote with a colleague that year), flat from 2016 to 2025: people don't work with more colleagues each year; the total rises because old links stay and new ones are added"),
+    fact(`${fmt(ex("NIT Trichy"), 2)} / ${fmt(ex("NIT Surathkal"), 2)}`, "the exponent inside NIT Trichy / inside NIT Surathkal (our roster)"),
+    ...(fd.length ? [fact(`${fmt(Math.min(...FOUR.map(fex)), 2)}–${fmt(Math.max(...FOUR.map(fex)), 2)}`, `the same faculty-only exponent at four NITs (NIRF faculty lists): ${FOUR.map((i) => `${shortInst(i)} ${fmt(fex(i), 2)}`).join(", ")}. Every NIT densifies; 1.66 is normal`)] : [])].join("");
+  const gv = inst === "Both" ? ["Both NITs", ...INSTS] : [inst];
+  draw("ch-pf-degree", { type: "line", data: { labels: yrs, datasets: gv.flatMap((v) => {
+      const rows = G.filter((r) => r.view === v), c = v === "Both NITs" ? css("--both") : instColor(v), val = (k) => yrs.map((y) => (rows.find((r) => r.year === y) || {})[k] ?? null);
+      return [{ label: `${shortInst(v)}: up to each year`, data: val("avg_degree_connected_faculty"), borderColor: c, backgroundColor: c, borderWidth: 2.5, pointRadius: 3, tension: 0.2 },
+              { label: `${shortInst(v)}: within one year`, data: val("year_avg_degree_connected"), borderColor: c, backgroundColor: c, borderDash: [5, 4], borderWidth: 1.5, pointRadius: 2, tension: 0.2 }]; }) },
+    options: opt("co-authors per connected faculty member") });
+  if (F.fac_net) draw("ch-pf-degree4", { type: "line", data: { labels: yrs, datasets: FOUR.map((i) => ({ label: `${shortInst(i)} (a = ${fmt(fex(i), 2)})`,
+      data: yrs.map((y) => (F.fac_net.find((r) => r.institution === i && r.year === y) || {}).avg_degree_connected ?? null),
+      borderColor: col(i), backgroundColor: col(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 })) },
+    options: opt("co-authors per connected faculty member", "Four NITs, faculty only (NIRF lists): up to each year") });
+
+  // 2. predict and check
+  const P = F.pred || [], ROLL = "rolling: input = network up to the year before", FIX = "fixed: input = 2022 network only";
+  const pr = (y, m) => P.find((r) => r.target_year === y && r.method === m) || {};
+  const last = Math.max(...P.map((r) => r.target_year));
+  $("#pf-pred-facts").innerHTML = [
+    fact(`${fmt(pr(last, ROLL).all_real_links_in_top_5pct)}% vs ${fmt(pr(last, FIX).all_real_links_in_top_5pct)}%`, `of the real new links of ${last} in the model's top 5% of pairs: rolling vs fixed 2022 input`),
+    fact(`${fmt(pr(last, FIX).new_links_out_of_reach_pct)}%`, `of ${last}'s new links involve faculty who had no paper yet in 2022, so the fixed model cannot predict them at all`),
+    fact(`AUC ${fmt(Math.min(...[2023, 2024, 2025].map((y) => pr(y, ROLL).auc)), 2)}–${fmt(Math.max(...[2023, 2024, 2025].map((y) => pr(y, ROLL).auc)), 2)}`, "rolling model, every year (0.5 = random); network scores alone (Adamic–Adar) reach only about 0.6")].join("");
+  $("#t-pf-pred").innerHTML = T2([["Year"], ["Method"], ["Real new links", 1], ["AUC", 1], ["In top 1%", 1], ["In top 5%", 1], ["In top 10%", 1], ["Out of reach", 1]],
+    P.map((r) => [r.target_year, esc(r.method.replace(": input = ", ": ")), fmt(r.method === FIX ? pr(r.target_year, ROLL).true_new_links : r.true_new_links), fmt(r.auc, 3), fmt(r.all_real_links_in_top_1pct) + "%",
+      `<b>${fmt(r.all_real_links_in_top_5pct)}%</b>`, fmt(r.all_real_links_in_top_10pct) + "%", r.new_links_out_of_reach_pct == null ? "–" : fmt(r.new_links_out_of_reach_pct) + "%"]));
+  const ck = (F.check || []).filter((r) => r.target_year === last).slice(0, 10);
+  $("#pf-check-title").textContent = `The rolling model's 10 most likely new pairs for ${last}, and what really happened`;
+  $("#t-pf-check").innerHTML = T2([["#", 1], ["Faculty member"], ["Faculty member"], ["Common co-authors", 1], ["Wrote together?"]],
+    ck.map((r) => [r.rank, `${esc(r.faculty_a)} ${chip(r.institute_a)} <span style="color:var(--muted)">${esc(r.department_a)}</span>`, `${esc(r.faculty_b)} ${chip(r.institute_b)} <span style="color:var(--muted)">${esc(r.department_b)}</span>`,
+      fmt(r.common_coauthors), r.wrote_together_in_target_year ? '<span class="chip good">yes, in ' + last + "</span>" : r.first_joint_paper_year ? `later (${r.first_joint_paper_year})` : "not yet"]));
+
+  // 3. four NITs
+  const S4 = F.four || [], s4 = (i) => S4.find((r) => r.institution === i) || {};
+  if (S4.length) {
+    const M = [["Papers 2016–2025", (r) => fmt(r.papers_2016_2025)], ["Papers in 2024", (r) => fmt(r.papers_2024)],
+      ["Faculty (NIRF 2025, regular)", (r) => fmt(r.faculty_nirf_2025_regular)], ["<b>Papers in 2024 per faculty member</b>", (r) => `<b>${fmt(r.papers_2024_per_regular_faculty, 2)}</b>`],
+      ["Assistant Professors", (r) => fmt(r.assistant_professor_share_pct) + "%"], ["Citations per paper", (r) => fmt(r.citations_per_paper, 1)],
+      ["FWCI: median / mean", (r) => `${fmt(r.median_fwci, 2)} / ${fmt(r.mean_fwci, 2)}`], ["With a foreign co-author", (r) => fmt(r.foreign_coauthor_share_pct, 1) + "%"],
+      ["With an industry co-author", (r) => fmt(r.industry_coauthor_share_pct, 1) + "%"], ["Partner institutions", (r) => fmt(r.partner_institutions)],
+      ["Conference papers", (r) => fmt(r.conference_share_pct) + "%"], ["Densification a: faculty only", (r) => fmt(fex(r.institution), 2)],
+      ["Densification a: all authors", (r) => fmt(r.densification_all_authors, 2)]];
+    $("#t-pf-four").innerHTML = T2([[""], ...FOUR.map((i) => [shortInst(i), 1])], M.map(([l, f]) => [l, ...FOUR.map((i) => f(s4(i)))]));
+    const ppf = FOUR.map((i) => [i, s4(i).papers_2024_per_regular_faculty, s4(i).assistant_professor_share_pct]).sort((a, b) => b[1] - a[1]);
+    $("#pf-four-facts").innerHTML = [
+      fact(ppf.map(([i, v]) => fmt(v, 1)).join(" · "), `papers in 2024 per faculty member (${ppf.map(([i]) => shortInst(i)).join(", ")})${ppf.every((x, k) => !k || x[2] > ppf[k - 1][2]) ? "; the more Assistant Professors, the fewer papers per head" : ""} (Assistant Professors: ${ppf.map(([, , a]) => fmt(a) + "%").join(", ")})`),
+      fact(`${fmt(s4("NIT Warangal").papers_2024)} vs ${fmt(s4("NIT Trichy").papers_2024)}`, "papers in 2024, NIT Warangal vs NIT Trichy: Warangal tripled its output since 2016 and passed Trichy; Trichy has been flat since 2020"),
+      fact(FOUR.map((i) => fmt(s4(i).median_fwci, 2)).join(" · "), "median FWCI (Trichy, Surathkal, Warangal, Calicut): impact is about the same at the first three")].join("");
+    const Y4 = F.four_year || [];
+    draw("ch-pf-four", { type: "line", data: { labels: yrs, datasets: FOUR.map((i) => ({ label: shortInst(i), data: yrs.map((y) => (Y4.find((r) => r.institution === i && r.year === y) || {}).papers ?? null),
+        borderColor: col(i), backgroundColor: col(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 })) },
+      options: opt("papers per year") });
+  }
+
+  // 4. when did today's faculty join
+  const N = F.nirf || {}, B = F.bands || [];
+  if (B.length) {
+    const j23 = N.joined_2002_or_2003 || {}, pk = N.biggest_hiring_year || {}, rc = F.roster || [];
+    $("#pf-join-facts").innerHTML = [
+      fact(FOUR.map((i) => fmt(j23[i] || 0)).join(" · "), "current faculty who joined in 2002–2003 (Trichy, Surathkal, Warangal, Calicut): no hiring wave then"),
+      fact(FOUR.map((i) => pk[i] ? pk[i].year : "–").join(" · "), `biggest hiring year among current faculty (${FOUR.map((i) => `${shortInst(i)} ${pk[i] ? pk[i].joined : "–"} people`).join(", ")})`),
+      ...rc.map((r) => fact(`${fmt(r.our_roster_current_2026)} vs ${fmt(r.nirf_2025_currently_working)}`, `${shortInst(r.institution)}: current faculty in our roster (2026) vs NIRF 2025 — our roster agrees with the official count`))].join("");
+    draw("ch-pf-join", { type: "bar", data: { labels: B.map((r) => r.joined), datasets: FOUR.map((i) => ({ label: shortInst(i), data: B.map((r) => r[i]), backgroundColor: col(i), borderRadius: 3 })) },
+      options: opt("current faculty who joined then") });
+    $("#t-pf-cohort").innerHTML = T2([["Joined"], ["NIT"], ["Faculty", 1], ["Papers a year", 1], ["Professors", 1]],
+      (F.cohort || []).filter((r) => views().includes(r.institution) && r.faculty >= 3).sort((a, b) => a.joined.localeCompare(b.joined) || a.institution.localeCompare(b.institution))
+        .map((r) => [esc(r.joined.replace("-", "–")), chip(r.institution), fmt(r.faculty), fmt(r.median_papers_per_year, 2), fmt(r.professors_pct) + "%"]));
+  }
 }
 function phase2Depth() {
   // deeper questions from the professor's papers (phase2_papers.py): a like-with-like comparison, hiring vs leaving,

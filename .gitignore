@@ -8,3 +8,12 @@ DPCN Research Mapping Project_n4.pptx
 DPCN_Instruction_Note (1).docx
 assignment.md
 ~$*
+
+# NIRF 2025 data files (official, public, but they list each faculty member's age and gender);
+# only the aggregate counts in data/reference/nirf_2025_*.csv go in the repo
+data/raw/nirf/
+
+# OpenAlex works of peer NITs (re-downloaded by scripts/fetch_peers.py)
+data/raw/peers/
+# Other teams' datasets, kept locally only for checking
+data/raw/friends/

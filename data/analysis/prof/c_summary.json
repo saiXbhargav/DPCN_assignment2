@@ -1,0 +1,134 @@
+{
+  "table": [
+    {
+      "institution": "NIT Trichy",
+      "papers_2016_2025": 10654,
+      "conference_share_pct": 21.166,
+      "citations": 205130,
+      "citations_per_paper": 19.254,
+      "mean_fwci": 1.542,
+      "median_fwci": 0.698,
+      "papers_with_fwci": 10653,
+      "foreign_coauthor_share_pct": 18.951,
+      "industry_coauthor_share_pct": 2.234,
+      "partner_institutions": 1745,
+      "faculty_nirf_2025_regular": 345,
+      "faculty_nirf_2025_all_current": 348,
+      "papers_2024": 1188,
+      "papers_2024_per_regular_faculty": 3.443,
+      "assistant_professor_share_pct": 46.55,
+      "top_field": "Engineering",
+      "densification_all_authors": 1.18
+    },
+    {
+      "institution": "NIT Surathkal",
+      "papers_2016_2025": 9996,
+      "conference_share_pct": 32.733,
+      "citations": 154660,
+      "citations_per_paper": 15.472,
+      "mean_fwci": 1.385,
+      "median_fwci": 0.687,
+      "papers_with_fwci": 9996,
+      "foreign_coauthor_share_pct": 15.236,
+      "industry_coauthor_share_pct": 1.511,
+      "partner_institutions": 1486,
+      "faculty_nirf_2025_regular": 279,
+      "faculty_nirf_2025_all_current": 279,
+      "papers_2024": 1312,
+      "papers_2024_per_regular_faculty": 4.703,
+      "assistant_professor_share_pct": 29.75,
+      "top_field": "Engineering",
+      "densification_all_authors": 1.194
+    },
+    {
+      "institution": "NIT Warangal",
+      "papers_2016_2025": 9230,
+      "conference_share_pct": 25.861,
+      "citations": 150525,
+      "citations_per_paper": 16.308,
+      "mean_fwci": 1.426,
+      "median_fwci": 0.691,
+      "papers_with_fwci": 9227,
+      "foreign_coauthor_share_pct": 15.688,
+      "industry_coauthor_share_pct": 0.964,
+      "partner_institutions": 1530,
+      "faculty_nirf_2025_regular": 309,
+      "faculty_nirf_2025_all_current": 327,
+      "papers_2024": 1380,
+      "papers_2024_per_regular_faculty": 4.466,
+      "assistant_professor_share_pct": 35.17,
+      "top_field": "Engineering",
+      "densification_all_authors": 1.237
+    },
+    {
+      "institution": "NIT Calicut",
+      "papers_2016_2025": 7093,
+      "conference_share_pct": 32.737,
+      "citations": 94750,
+      "citations_per_paper": 13.358,
+      "mean_fwci": 1.175,
+      "median_fwci": 0.598,
+      "papers_with_fwci": 7092,
+      "foreign_coauthor_share_pct": 11.913,
+      "industry_coauthor_share_pct": 1.353,
+      "partner_institutions": 1270,
+      "faculty_nirf_2025_regular": 370,
+      "faculty_nirf_2025_all_current": 375,
+      "papers_2024": 916,
+      "papers_2024_per_regular_faculty": 2.476,
+      "assistant_professor_share_pct": 64.8,
+      "top_field": "Engineering",
+      "densification_all_authors": 1.217
+    }
+  ],
+  "densification": [
+    {
+      "institution": "NIT Trichy",
+      "years": "2016-2026",
+      "exponent_a": 1.1802,
+      "r_squared": 0.9987
+    },
+    {
+      "institution": "NIT Trichy",
+      "years": "2019-2025",
+      "exponent_a": 1.1313,
+      "r_squared": 0.9983
+    },
+    {
+      "institution": "NIT Surathkal",
+      "years": "2016-2026",
+      "exponent_a": 1.1942,
+      "r_squared": 0.9999
+    },
+    {
+      "institution": "NIT Surathkal",
+      "years": "2019-2025",
+      "exponent_a": 1.1827,
+      "r_squared": 0.9995
+    },
+    {
+      "institution": "NIT Warangal",
+      "years": "2016-2026",
+      "exponent_a": 1.237,
+      "r_squared": 0.9997
+    },
+    {
+      "institution": "NIT Warangal",
+      "years": "2019-2025",
+      "exponent_a": 1.2522,
+      "r_squared": 0.9995
+    },
+    {
+      "institution": "NIT Calicut",
+      "years": "2016-2026",
+      "exponent_a": 1.2167,
+      "r_squared": 0.9991
+    },
+    {
+      "institution": "NIT Calicut",
+      "years": "2019-2025",
+      "exponent_a": 1.1636,
+      "r_squared": 0.9994
+    }
+  ]
+}

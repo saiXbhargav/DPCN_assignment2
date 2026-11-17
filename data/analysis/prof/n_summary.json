@@ -1,0 +1,99 @@
+{
+  "counts": [
+    {
+      "institution": "NIT Trichy",
+      "faculty_currently_working": 348,
+      "regular": 345,
+      "adhoc_or_contractual": 0,
+      "other_or_visiting": 3,
+      "professors": 136,
+      "associate_professors": 46,
+      "assistant_professors": 162,
+      "other_designation": 4,
+      "assistant_share_pct": 46.55,
+      "median_joining_year": 2008.0,
+      "listed_but_left": 7
+    },
+    {
+      "institution": "NIT Surathkal",
+      "faculty_currently_working": 279,
+      "regular": 279,
+      "adhoc_or_contractual": 0,
+      "other_or_visiting": 0,
+      "professors": 109,
+      "associate_professors": 82,
+      "assistant_professors": 83,
+      "other_designation": 5,
+      "assistant_share_pct": 29.75,
+      "median_joining_year": 2012.0,
+      "listed_but_left": 25
+    },
+    {
+      "institution": "NIT Warangal",
+      "faculty_currently_working": 327,
+      "regular": 309,
+      "adhoc_or_contractual": 17,
+      "other_or_visiting": 1,
+      "professors": 86,
+      "associate_professors": 73,
+      "assistant_professors": 115,
+      "other_designation": 53,
+      "assistant_share_pct": 35.17,
+      "median_joining_year": 2013.0,
+      "listed_but_left": 71
+    },
+    {
+      "institution": "NIT Calicut",
+      "faculty_currently_working": 375,
+      "regular": 370,
+      "adhoc_or_contractual": 5,
+      "other_or_visiting": 0,
+      "professors": 59,
+      "associate_professors": 66,
+      "assistant_professors": 243,
+      "other_designation": 7,
+      "assistant_share_pct": 64.8,
+      "median_joining_year": 2018.0,
+      "listed_but_left": 29
+    }
+  ],
+  "joined_2002_or_2003": {
+    "NIT Trichy": 0,
+    "NIT Surathkal": 4,
+    "NIT Warangal": 0,
+    "NIT Calicut": 0
+  },
+  "biggest_hiring_year": {
+    "NIT Trichy": {
+      "year": 2020,
+      "joined": 57
+    },
+    "NIT Surathkal": {
+      "year": 2019,
+      "joined": 37
+    },
+    "NIT Warangal": {
+      "year": 2018,
+      "joined": 54
+    },
+    "NIT Calicut": {
+      "year": 2022,
+      "joined": 69
+    }
+  },
+  "roster_check": [
+    {
+      "institution": "NIT Trichy",
+      "our_roster_current_2026": 342,
+      "nirf_2025_currently_working": 348,
+      "matched_by_name": 273
+    },
+    {
+      "institution": "NIT Surathkal",
+      "our_roster_current_2026": 269,
+      "nirf_2025_currently_working": 279,
+      "matched_by_name": 241
+    }
+  ],
+  "caveat": "only people still working in 2025 (and recent leavers) are listed, so early hires who left or retired before ~2022 are not visible"
+}

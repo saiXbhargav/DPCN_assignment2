@@ -594,6 +594,29 @@ def depth_tables():
     return t
 
 
+PF = os.path.join(AN, "prof")
+
+
+def prof_tables():
+    """Follow-ups from the professor's meeting (scripts/phase2_prof.py -> data/analysis/prof/), when run."""
+    t = {}
+    if not os.path.isdir(PF):
+        return t
+    tabs = {"growth": "g_average_degree_by_year.csv", "dens": "g_densification_by_nit.csv",
+            "pred": "p_rolling_link_prediction.csv", "check": "p_predict_and_check_top20.csv",
+            "four": "c_four_nits.csv", "four_year": "c_four_nits_by_year.csv",
+            "fac_net": "f_faculty_network_four_nits.csv", "fac_dens": "f_faculty_densification_four_nits.csv",
+            "match": "f_nirf_name_matching.csv", "bands": "n_joining_bands.csv", "cohort": "n_cohort_output.csv",
+            "roster": "n_roster_vs_nirf.csv"}
+    for key, name in tabs.items():
+        if os.path.exists(os.path.join(PF, name)):
+            df = csv(PF, name)
+            t[key] = records(df, list(df.columns))
+    if os.path.exists(os.path.join(PF, "n_summary.json")):
+        t["nirf"] = jload(PF, "n_summary.json")
+    return t
+
+
 def methods_facts():
     """Numbers for the 'How we built it' tab, counted from the reference files."""
     r = csv(DATA, "reference", "faculty_roster.csv")
@@ -620,7 +643,7 @@ def main():
     data = {"papers": papers(), "faculty": faculty(), "citation_graph": citation_graph(),
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
-            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(),
+            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(),
             "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
                      "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
