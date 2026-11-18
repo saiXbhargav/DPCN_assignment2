@@ -1,0 +1,383 @@
+institution,action,key,value,reason,check,source
+NIT Calicut,drop_paper,10.1504/ijads.2018.10012583,10.1504/ijads.2018.095279,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmcp.2016.10000591,10.1504/ijmcp.2016.079843,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijstm.2020.10028331,10.1504/ijstm.2020.107435,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.3934/math.20200073,10.3934/math.2020073,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijsom.2020.10031205,10.1504/ijsom.2020.109006,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijdmmm.2017.10006638,10.1504/ijdmmm.2017.085643,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmmno.2021.116686,10.1504/ijmmno.2021.10037501,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2016.10001415,10.1504/ijvcm.2016.080433,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmdm.2016.10001467,10.1504/ijmdm.2016.080706,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.18799/24056529/2016/2/52,10.1016/j.reffit.2016.07.002,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijise.2023.10054676,10.1504/ijise.2023.129755,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijpelec.2018.10014243,10.1504/ijpelec.2018.095081,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijcsm.2017.10008814,10.1504/ijcsm.2017.088014,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1007/s11760-017-1183-7,10.1007/s11760-017-1225-1,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijpelec.2020.10027754,10.1504/ijpelec.2020.106229,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijsom.2017.10002776,10.1504/ijsom.2017.081940,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2018.10012222,10.1504/ijvcm.2018.091109,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.18799/24056529/2016/5/82,10.1016/j.reffit.2016.10.002,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2018.10014601,10.1504/ijasmm.2018.093260,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1051/matecconf/201714404001,10.1051/matecconf/201814404001,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.12688/wellcomeopenres.26369.2,10.12688/wellcomeopenres.26369.1,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.31025/2611-4135/2026.20617,10.31025/2611-4135/2026.19598,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijewm.2020.10027829,10.1504/ijewm.2020.107564,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijism.2021.10034736,10.1504/ijism.2021.115679,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijex.2021.10042325,10.1504/ijex.2021.118720,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijism.2021.10037920,10.1504/ijism.2021.117240,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.21914/anziamj.v60i0.12091,10.1017/s1446181118000251,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijdmb.2018.10020343,10.1504/ijdmb.2018.098940,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijista.2018.091592,10.1504/ijista.2018.10012889,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijor.2020.107070,10.1504/ijor.2020.10027998,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijbra.2019.103789,10.1504/ijbra.2019.10025478,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmic.2022.10049323,10.1504/ijmic.2022.124728,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijpmb.2019.103415,10.1504/ijpmb.2019.10025107,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijcbdd.2019.10025251,10.1504/ijcbdd.2019.103605,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijbis.2017.10002808,10.1504/ijbis.2017.082039,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijgw.2025.10067020,10.1504/ijgw.2024.142601,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijaac.2018.10012526,10.1504/ijaac.2018.092847,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijbdi.2017.10006111,10.1504/ijbdi.2017.085521,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijise.2018.10016493,10.1504/ijise.2018.095528,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmcp.2019.10021171,10.1504/ijmcp.2019.100668,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijem.2020.10032410,10.1504/ijem.2020.110105,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1016/s1872-5805(26)61073-6,10.1016/j.carbon.2026.121626,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/ange.201710668,10.1002/anie.201710668,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1109/fleps53764.2022.9781523,10.1109/fleps53764.2022.9781513,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/ange.202317312,10.1002/anie.202317312,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2020.10031404,10.1504/ijvcm.2020.109238,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2017.10010937,10.1504/ijasmm.2017.089931,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/ange.202403214,10.1002/anie.202403214,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijvs.2021.10039036,10.1504/ijvs.2021.115923,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijise.2019.10023572,10.1504/ijise.2019.102049,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijaom.2018.10015012,10.1504/ijaom.2018.093739,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijogct.2018.10014388,10.1504/ijogct.2018.093142,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijcsm.2017.10006755,10.1504/ijcsm.2017.085851,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/ange.202110456,10.1002/anie.202110456,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijlsm.2019.10019775,10.1504/ijlsm.2019.098335,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijmdm.2019.10013542,10.1504/ijmdm.2019.096689,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijsss.2017.10008325,10.1504/ijsss.2017.087435,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijconvc.2016.10001397,10.1504/ijconvc.2016.080395,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/ange.201702760,10.1002/anie.201702760,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.18799/24056529/2016/3/57,10.1016/j.reffit.2016.07.005,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2017.10003954,10.1504/ijasmm.2017.082985,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),5,rule
+NIT Calicut,drop_paper,10.1002/9781119441632.ch140,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1002/ange.202403214,,OpenAlex type 'letter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1002/anie.202403214,,OpenAlex type 'letter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-3-031-31852-8_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-3-031-60117-0_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-3-032-07240-5_25,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-3-032-12956-7_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-3-032-12956-7_5,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-10-6847-8_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-10-6847-8_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-19-4502-1_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-95-1135-8_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-95-1135-8_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-96-9463-1_6,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-96-9904-9_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/978-981-97-1148-2_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/s13399-020-00906-8,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1007/s13399-021-01989-7,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1016/j.dib.2021.107772,,OpenAlex type 'data-paper' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,redoi,10.1016/j.ijmedinf.2026.106488,10.1530/ey.23.14.4,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1016/j.matpr.2022.05.105,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1016/j.reffit.2016.07.002,10.18799/24056529/2016/2/52,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1016/j.reffit.2016.07.005,10.18799/24056529/2016/3/57,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1016/j.reffit.2016.10.002,10.18799/24056529/2016/5/82,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1016/j.tsep.2024.102653,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1016/j.tsep.2025.104045,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1017/s1446181118000251,10.21914/anziamj.v60i0.12091,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1038/s41597-026-07171-w,,OpenAlex type 'data-paper' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1051/matecconf/201714404001,10.1051/matecconf/201814404001,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1080/01496395.2023.2187132,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1088/1757-899x/330/1/012116,,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1109/fleps53764.2022.9781523,10.1109/fleps53764.2022.9781513,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1109/vlsid.2017.100,,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1149/ma2020-015602mtgabs,,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1149/ma2022-011154mtgabs,,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.1177/09544089211022053,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.12688/f1000research.176414.1,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.12688/wellcomeopenres.26369.1,10.12688/wellcomeopenres.26369.2,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ejie.2023.130601,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,drop_paper,10.1504/ejie.2026.10066397,10.1504/ejie.2025.148084,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijaac.2018.10012526,10.1504/ijaac.2018.092847,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijaom.2018.10015012,10.1504/ijaom.2018.093739,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2017.10003954,10.1504/ijasmm.2017.082985,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2017.10010937,10.1504/ijasmm.2017.089931,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijasmm.2018.10014601,10.1504/ijasmm.2018.093260,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijbdi.2017.10006111,10.1504/ijbdi.2017.085521,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijbex.2021.111936,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,redoi,10.1504/ijbidm.2022.10037757,10.1504/ijbidm.2022.123809,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1504/ijbir.2023.130867,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,drop_paper,10.1504/ijbis.2017.10002808,10.1504/ijbis.2017.082039,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijbra.2018.10009358,10.1504/ijbra.2018.089234,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijbra.2019.10025478,10.1504/ijbra.2019.103789,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijcbdd.2019.10025251,10.1504/ijcbdd.2019.103605,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.1504/ijcbdd.2021.10036822,10.1504/ijcbdd.2021.114098,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1504/ijconvc.2016.10001397,10.1504/ijconvc.2016.080395,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.1504/ijconvc.2016.10001398,10.1504/ijconvc.2016.080396,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1504/ijconvc.2016.10001398,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,drop_paper,10.1504/ijcsm.2017.10006755,10.1504/ijcsm.2017.085851,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijcsm.2017.10008814,10.1504/ijcsm.2017.088014,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijdmb.2018.10020343,10.1504/ijdmb.2018.098940,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijdmmm.2017.10006638,10.1504/ijdmmm.2017.085643,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijem.2020.10032410,10.1504/ijem.2020.110105,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijewm.2020.10027829,10.1504/ijewm.2020.107564,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijewm.2023.10061418,10.1504/ijewm.2025.146872,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijex.2021.10042325,10.1504/ijex.2021.118720,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijicbm.2026.151571,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,drop_paper,10.1504/ijil.2025.10066660,10.1504/ijil.2025.145352,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijise.2018.10016493,10.1504/ijise.2018.095528,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijise.2019.10023572,10.1504/ijise.2019.102049,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijise.2020.10020225,10.1504/ijise.2020.108548,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijise.2023.10054676,10.1504/ijise.2023.129755,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijism.2021.10034736,10.1504/ijism.2021.115679,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijism.2021.10037920,10.1504/ijism.2021.117240,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijista.2018.10012889,10.1504/ijista.2018.091592,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijlsm.2019.10019775,10.1504/ijlsm.2019.098335,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijlsm.2020.10019481,10.1504/ijlsm.2020.108929,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijlsm.2020.10024657,10.1504/ijlsm.2020.111828,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijlt.2024.10067023,10.1504/ijlt.2025.149282,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijmcp.2016.10000591,10.1504/ijmcp.2016.079843,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijmcp.2019.10021171,10.1504/ijmcp.2019.100668,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijmdm.2019.10013542,10.1504/ijmdm.2019.096689,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijmic.2022.10049323,10.1504/ijmic.2022.124728,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.1504/ijmmm.2020.10030615,10.1504/ijmmm.2020.109849,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1504/ijmmno.2021.10037501,10.1504/ijmmno.2021.116686,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijmpt.2020.10033989,10.1504/ijmpt.2021.115200,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijogct.2018.10014388,10.1504/ijogct.2018.093142,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijor.2020.10027998,10.1504/ijor.2020.107070,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.1504/ijor.2021.10026120,10.1504/ijor.2021.117689,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1504/ijpelec.2018.10014243,10.1504/ijpelec.2018.095081,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijpelec.2020.10027754,10.1504/ijpelec.2020.106229,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijpmb.2019.10025107,10.1504/ijpmb.2019.103415,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijret.2022.120338,,OpenAlex does not list NIT Calicut on this paper,3,rule
+NIT Calicut,drop_paper,10.1504/ijsom.2017.10002776,10.1504/ijsom.2017.081940,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijsom.2020.10031205,10.1504/ijsom.2020.109006,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijsom.2023.10059122,10.1504/ijsom.2025.148832,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijsss.2017.10008325,10.1504/ijsss.2017.087435,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijstm.2020.10028331,10.1504/ijstm.2020.107435,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2016.10001415,10.1504/ijvcm.2016.080433,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2018.10012222,10.1504/ijvcm.2018.091109,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijvcm.2020.10031404,10.1504/ijvcm.2020.109238,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,drop_paper,10.1504/ijvs.2021.10039036,10.1504/ijvs.2021.115923,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.1504/wrstsd.2021.10037040,10.1504/wrstsd.2021.114683,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,redoi,10.1615/ichmt.2017.200,10.1615/ichmt.2017.cht-7.200,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.1615/multscientechn.2025060573,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.17713/ajs.v54i5.1909,,DOI not found in OpenAlex,3,rule
+NIT Calicut,drop_paper,10.2174/187152731508160909173951,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.2174/1871527317666180213143832,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.2991/978-94-6463-074-9_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.3389/fpubh.2025.1670116,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Calicut,drop_paper,10.3934/math.20200073,10.3934/math.2020073,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Calicut,redoi,10.5004/dwt.2016.0162,10.5004/dwt.2017.0162,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Calicut,drop_paper,10.56093/ft.v24i2.118279,,DOI not found in OpenAlex,3,rule
+NIT Calicut,drop_row,10.1109/icpeices.2016.7853204|Preeti Navneeth,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s00284-016-1024-x|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/ecce.2016.7855232|Sureshkumar K. S.,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/cjce.22682|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.pisc.2016.06.049|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/indicon.2016.7838928|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1504/ijrs.2016.076345|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.compbiolchem.2016.09.002|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/wispnet.2017.8299923|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1515/cppm-2017-0015|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1063/1.4984198|G. V. V. Ravi Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.engfailanal.2017.01.004|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1504/ijbdi.2017.085521|Sailaja Madhu,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1504/ijsss.2017.087435|M.N. Anish,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s10772-018-09559-5|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/00949655.2018.1445743|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1145/3271553.3271597|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/19392699.2018.1518901|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/19392699.2018.1485664|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1145/3271553.3271611|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.engfailanal.2018.03.013|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1088/1757-899x/624/1/012016|Smitha Krishnan,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/19392699.2019.1621300|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.5004/dwt.2019.24581|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.heliyon.2019.e01820|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/tencon.2019.8929532|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s13369-019-03782-1|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/catcon47128.2019.cn00113|K Madhukar D Suresh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s13369-019-04273-z|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/02664763.2019.1610162|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1088/2053-1591/abcc83|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/03610918.2020.1828919|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/yea.3537|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.22099/mbrc.2020.36298.1476|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1063/5.0029903|S. SYED SURESH BABU,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1063/5.0017250|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.2166/wst.2020.346|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/ceat.202000524|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.18502/ijm.v13i4.6978|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s10529-021-03151-9|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/21681015.2021.1992801|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.genrep.2021.101280|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/conit51480.2021.9498390|Sureshkumar K. S.,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s00034-021-01647-3|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.17912/micropub.biology.000440|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1186/s43141-021-00197-0|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/icicict54557.2022.9917889|Rahla Rabia,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s10924-022-02597-w|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.5004/dwt.2022.28270|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.5937/jaes0-40600|Rahla Rabia,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s00217-022-04170-0|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.3390/ecsa-9-13267|Anoop Varghese,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1515/cppm-2022-0018|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.medidd.2022.100137|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s00034-022-02277-z|Arun S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/tia.2023.3325210|Ashiq Muhammed P E,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s41478-023-00665-5|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1080/09593330.2023.2231142|Telagathoti Suresh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.physa.2023.128741|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s42977-023-00192-1|Md. Anaul Kabir,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1021/acsaelm.3c01428|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.cep.2024.110017|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/intermagshortpapers61879.2024.10576859|Nikhil Kumar C S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/qute.202400015|Nikhil Kumar C S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1021/acsaelm.4c01657|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1177/25726668241287601|G. Manoj Reddy,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.amc.2024.128697|Mahesh Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.surfin.2025.108386|Anoop Varghese,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1021/acsaelm.5c00681|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s10973-025-14024-y|Karthik Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/pssa.202500550|Nikhil Kumar C S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/apj.70072|Karthik Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1021/acsaem.5c02289|Anoop Varghese,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.foohum.2025.100572|Malladi V. Pavan Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/access.2025.3544895|Ajay Krishna,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1016/j.vehcom.2025.100916|Ajay Krishna,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/npec66512.2025.11450307|Ashiq Muhammed P E,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1021/acsaem.5c02858|Anoop Varghese,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1109/jestie.2026.3675331|Ashiq Muhammed P E,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1002/aocs.70103|Naja Hasoon,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,drop_row,10.1007/s10854-026-17426-2|Nikhil Kumar C S,,OpenAlex does not list this author on the paper,4,rule
+NIT Calicut,rename,A5000314891|Thangaraj Veni,Veni T.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5000426234|Shebi Alipilakkotte,Shebi Alippilakkotte,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5001459031|S. Abdul Fathaah,Abdul Fathaah Shamsuddin,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5002296793|Lakshmi Chakkumkumarath,Lakshmi C.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5002638641|Vibin Antony P.,Vibin Antony,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5002969610|P Seethalakshmi,Seethalakshmi P.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5005181058|Ramesh Krishnan L,Ramesh Krishnan Lakshmanan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5005980736|Sri Harsha Nekkanti,Nekkanti Sri Harsha,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5007553472|Jiyad Pulikkal,P. Jiyad,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5008089886|Jenny Nambikattu,Jenny Nambikkattu,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5008210048|M. Mubarak,Marutholi Mubarak,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5008782842|Chandra Shekar Bestha,Chandra Shekar Besta,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5009167502|P. A. Fathima Perveen,Fathima Perveen P. A.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5009167502|Perveen P. A. Fathima,Fathima Perveen P. A.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5009254260|Venkata Siva Midde,Midde Venkata Siva,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5010003179|Jiji Panicker K,K Jiji Panicker,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5010700513|T. V. Suchithra,Suchithra T. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5010700513|Tharamel Vasu Suchithra,Suchithra T. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5010700513|T V Suchithra,Suchithra T. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5010700513|Suchithra Tharamel Vasu,Suchithra T. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5011255038|P. Bimal,Bimal P.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5011955345|U. Abhinav,Abhinav Unniyattil,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5013989385|M. C. Lineesh,Lineesh M. C.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5014291539|V. Sivasubramanian,Sivasubramanian Velmurugan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5015031972|Sunitha Sivaraman,Sunitha S,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5016196794|Manuvel Jayan,Jayan Manuvel,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5020793599|R. Bijesh,Bijesh Raveendravarrier,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5021094691|Navya V B,V B Navya,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5021094691|V.B. Navya,V B Navya,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5021102907|Nikhil K,K. Nikhil,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5021645182|Rajanikant G.K.,Rajanikant G. K.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5021645182|Rajanikant G Krishnamurthy,Rajanikant G. K.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5022143040|R. Rohikaa Micky,Rohikaa Micky Radhakrishnan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5022935735|Nalla V Prajina,N. V. Prajina,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5023222453|Mija S J,Mija S. J.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5026419546|Mitalkumar Ladani,Ladani Mitalkumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5028271936|Abdu Rahiman V.,V. Abdu Rahiman,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5031068274|Yogesh Natesan,Natesan Yogesh,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5031448764|Jayaraj P. B,Jayaraj P. B.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5031448764|P.B. Jayaraj,Jayaraj P. B.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5032722802|Vasanthakumar Pandian,P. Vasanthakumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5036397873|Santosh G Thampi,Santosh G. Thampi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5037012042|Aiswarya Sidharthan,Aiswarya Sidharthan K.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5037012042|Sidharthan K Aiswarya,Aiswarya Sidharthan K.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5037141446|Harsha Haridas Ellathveettil Swamynathan,Harsha Haridas E.S,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5038334575|T. J. S Jothi,T. J. Sarvoththama Jothi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5039074083|Rohinikumar Bandaru,Rohini Kumar Bandaru,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5039074658|E. V. Vidya,E. V. Vidya Vijay,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5039682157|Sandhyarani Neelakandapillai,N. Sandhyarani,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5040460441|S Smitha,S. Smitha,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5041122951|P Suhailam,Suhailam Pullanikkattil,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5041535534|P. Princy,Princy Peter,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5043956379|A.P. Sudheer,A. P. Sudheer,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5045127127|Josephine Selvarani Ruth D,Deivamoney Josephine Selvarani Ruth,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5045235651|Ramesh Lavudi,L. Ramesh,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5045826157|Karuppanagounder Krishnamurthy,K. Krishnamurthy,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5045933769|Pattiyil Parameswaran,Parameswaran Pattiyil,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5046571069|K. Muhammad Shafi,Muhammed Shafi Keelath,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5047414809|Sathidevi PS,P. S. Sathidevi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5047414809|Sathidevi Puthumangalathu Savithri,P. S. Sathidevi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5047414809|Sathidevi P.S.,P. S. Sathidevi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5049139386|Binu Jose Ambrose,A. Binu Jose,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5050082983|Krishnan Jagada Suja,Suja. K .J.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5050082983|Suja K.J,Suja. K .J.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5050505641|E. Abdul Jalee,E. Abdul Jaleel,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5051979823|C. V. Raghu,Raghu C. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5051979823|Raghu C.V.,Raghu C. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5052544382|A Sivaprasad,A. Sivaprasad,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5055312821|Midhula K S,K. S. Midhula,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5055351829|P.N. Pournami,Pournami P. N.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5058326759|Neeraja P. Kovilakam,P. K. Neeraja,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5058424672|Muthukumari S.,S. Muthukumari,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5059623618|Ojus Thomas Lee Ojus,Ojus Thomas Lee,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5061276699|Soumiya Sukumar,S Soumiya,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5065343048|J. Janisha,Janisha Jayadevan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5068254906|Sudhish N George,Sudhish N. George,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5068820082|R. Sasi,Reshmi Sasi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5069199707|Mohammed Abdul Akbar,M Abdul Akbar,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5070645097|B.D. Mayureshwar,Bharat Dhage Mayureshwar,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5070707003|Arun Palatel,Arun P.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5071621923|Bindiya T.S.,Bindiya T. S.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5071906244|Kasthurba Ayikkara Kizhakkayil,Kasthurba A. K.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5074172600|Anoop C. V,C V Anoop,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5075849514|Abhinav Thirantevda,T. Abhinav,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5076162336|Shamla Beevi,Shamla Beevi A,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5076771751|Gopakumar P,Gopakumar Pathirikkat,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5078939624|Palpandi Karuppiah,K. Palpandi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5083192178|Reshmi C.R.,C. R. Reshmi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5085772659|Shamjid P. Palappra,P. Shamjid,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5086905600|R. Sridharan,Rajagopalan Sridharan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5087614136|Krishna Navami,Navami Krishna,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5088832758|J. Nandini Warrier,Nandini J. Warrier,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5090551160|S Akbar,Akbar Shanu,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5092759012|Raji Karuna,RAJI KARUNA,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5092805314|Sasidharan Renu,S. Renu,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5094282565|S. Sainudeen Shijina,Shijina S. Sainudeen,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5096996321|SN Deepa,Deepa S.N.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5100499942|Punya V P,V P Punya,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5101828700|Arjun Hari Madhu,M. Arjun Hari,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5103100753|Santhiagu Arockiasamy,A. Santhiagu,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5104207644|S. Dilraj,Dilraj Surendran,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5104648699|Chithra Kurukkanari,K. Chithra,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5106363797|GS Anantharam,G S Anantharam,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5109178864|G. Unnikrishnan Panicker,G. Unnikrishnan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5109693655|V. N. Dhilshada,Dhilshada. V. N,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5109978048|Chandrasekharan Muraleedharan,Chandrasekaran Muraleedharan,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5112171511|Shihabudheen KV,Shihabudheen K. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5112171511|Shihabudheen K.V.,Shihabudheen K. V.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5113311195|Deepthi P. P.,P. P. Deepthi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5113436942|Harikrishna M.,M Harikrishna,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5114532960|Muhammed Azeem Vadakkathintakath,Vadakkathintakath Muhammed Azeem,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5115015798|P. Aiswaria,Aiswaria Pathirikattu,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5115603481|M. A. Joseph,Matthew Joseph,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5117249215|Vinod Nirupam,V. Nirupam,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5117838096|M. Gopika,Gopika Melepalliyalil,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5118975726|Sreevidya Anilbose Krishnendu,Krishnendu Sreevidya Anilbose,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5119158372|Sreeja P.,Sreeja Pathiyar,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5120490755|Sadina Kadakkottiri,Sadina K,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5126372968|Mukharjee Ayswarya,Ayswarya Mukharjee,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5129523735|Sreelakshmi VU,V. U. Sreelakshmi,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5130202179|Naja Hasoon Kannankottu Thadayil,Naja Hasoon K.T.,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5134046295|Shyamprasad M. V.,M V Shyamprasad,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5138962860|Muhammed Shabeer,Muhammed Shabeer Ujampady,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5140863794|K Manjusha,Manjusha K,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5143644343|K. P. Adarsh Raj,Adarsh Raj K P,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5151843227|N Renu,Renu N,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,rename,A5153148038|Saranya N,N. Saranya,another spelling of the same OpenAlex author ID,4,rule
+NIT Calicut,drop_name,"Kunnathu Kandamangalam illam  Choolur(PO), N.I.T.(VIA),673601  Kozhikode,",,"not a person's name (title, number or organisation)",2,rule

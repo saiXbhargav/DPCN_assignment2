@@ -1,0 +1,32 @@
+{
+  "meaning": "new faculty co-authors in year t+1 ~ k^alpha, k = faculty co-authors at the end of year t; alpha = 1 is linear preferential attachment",
+  "fits": [
+    {
+      "view": "Both NITs",
+      "kernel_exponent": 0.3506,
+      "r_squared": 0.5381,
+      "person_years": 4386,
+      "mean_new_k0": 0.2855,
+      "mean_new_k1": 0.2558,
+      "mean_new_k9plus": 0.4684
+    },
+    {
+      "view": "NIT Trichy",
+      "kernel_exponent": 0.2604,
+      "r_squared": 0.0918,
+      "person_years": 2220,
+      "mean_new_k0": 0.248,
+      "mean_new_k1": 0.2142,
+      "mean_new_k9plus": 0.3077
+    },
+    {
+      "view": "NIT Surathkal",
+      "kernel_exponent": 0.3209,
+      "r_squared": 0.536,
+      "person_years": 2166,
+      "mean_new_k0": 0.3249,
+      "mean_new_k1": 0.2986,
+      "mean_new_k9plus": 0.5472
+    }
+  ]
+}

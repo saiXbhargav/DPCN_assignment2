@@ -1,0 +1,507 @@
+[
+  {
+    "institution": "NIT Warangal",
+    "group": "group13",
+    "split": {
+      "rows_in_file": 58317,
+      "institutes_in_file": {
+        "NIT Rourkela": 35733,
+        "NIT Warangal": 22584
+      },
+      "rows_for_this_nit": 22584,
+      "papers_for_this_nit": 10317,
+      "rows_without_doi": 127,
+      "distinct_author_names": 5487
+    },
+    "people_vs_nirf": {
+      "nirf_current_faculty": 327,
+      "nirf_matched_by_name_in_their_file": 278,
+      "nirf_matched_pct": 85.01529051987768,
+      "nirf_found_through_openalex_ids": 270,
+      "nirf_matched_to_openalex_ids_in_our_download": 270,
+      "nirf_missing_from_their_file": 49,
+      "their_names_not_on_nirf_list": 5107,
+      "names_in_capitals_only": 18,
+      "single_word_or_non_person_names": 34,
+      "junk_examples": [
+        "Anupam",
+        "Dhiraj",
+        "Dr.R.Vijaya Prakash2, Shabana Kousar1,",
+        "Fareedha",
+        "G.Sunil3, V.Pranathi1, Md.Sallauddin2,",
+        "Heena",
+        "K.Sudheer kumar2, Shamantha Pasunuti1,",
+        "Karatlapellysrinivas",
+        "L.Anjaneyulu",
+        "Mahesh",
+        "Md.Sallauddin3, Indumathi Akuthota1, Sunil.G2,",
+        "Nagarjuna"
+      ]
+    },
+    "papers_vs_openalex": {
+      "their_papers": 10317,
+      "our_papers_with_doi": 10253,
+      "in_both": 9939,
+      "only_in_theirs": 378,
+      "only_in_theirs_why": {
+        "OpenAlex does not list this NIT on the paper": 52,
+        "type outside our scope (book-chapter)": 285,
+        "real paper of this NIT that our download missed (kept)": 24,
+        "type outside our scope (editorial)": 7,
+        "type outside our scope (retraction)": 3,
+        "DOI not found in OpenAlex": 1,
+        "type outside our scope (conference-abstract)": 1,
+        "second DOI of a paper already in their file": 5
+      },
+      "only_in_theirs_doi_updated_to_openalex_main_doi": 19,
+      "only_in_ours": 314,
+      "only_in_ours_by_year": {
+        "2023": 20,
+        "2021": 20,
+        "2026": 183,
+        "2022": 15,
+        "2024": 13,
+        "2025": 22,
+        "2020": 8,
+        "2017": 6,
+        "2019": 14,
+        "2018": 7,
+        "2016": 6
+      },
+      "only_in_ours_by_type": {
+        "article": 246,
+        "review": 6,
+        "conference-paper": 62
+      },
+      "year_agrees_pct": 99.90944763054634,
+      "type_agrees_pct": 100.0,
+      "citations_theirs_minus_ours_median": 0.0,
+      "citations_theirs_higher_pct": 3.119026058959654,
+      "citations_off_by_more_than_10_pct": 1.0161988127578228,
+      "faculty_papers_in_our_download": 6721,
+      "faculty_papers_missing_from_theirs": 187,
+      "faculty_paper_coverage_pct": 97.21767594108019
+    },
+    "names_vs_ids": {
+      "rows_checkable": 21725,
+      "id_status": {
+        "this_nit": 20386,
+        "on_paper_no_author_id": 1215,
+        "not_checkable": 859,
+        "this_nit_weak_name": 60,
+        "not_on_paper": 35,
+        "other_affiliation": 29
+      },
+      "names_with_several_ids": 101,
+      "names_with_several_ids_examples": {
+        "Abhishek Kumar": 7,
+        "Anuj Kumar": 7,
+        "Amit Kumar": 7,
+        "Sujit Das": 4,
+        "A. Maha Lakshmi": 3,
+        "Karthik Balasubramanian": 3,
+        "Kunisetti V. Praveen Kumar": 3,
+        "C. Vanitha": 3
+      },
+      "ids_with_several_names": 159,
+      "ids_with_several_names_examples": [
+        [
+          "Usha Rani Malothu",
+          "Malothu Usha Rani"
+        ],
+        [
+          "Kotapati Narayana Loukika",
+          "K.N. Loukika"
+        ],
+        [
+          "Abhay Lingayat",
+          "L. Abhay"
+        ],
+        [
+          "G. Monika Rani",
+          "Golla Monika Rani",
+          "G. Monika"
+        ],
+        [
+          "Meka Kalyan Chakravarthi",
+          "M. Kalyan Chakavarthi"
+        ],
+        [
+          "Kishore Kumar T",
+          "Kishore Kumar Tappeta"
+        ],
+        [
+          "Durga Prasad Alakunta",
+          "Durga Prasad Alakunt"
+        ],
+        [
+          "Mallaiah Manjaiah",
+          "Manjaiah Mallaiah",
+          "M. Manjaiah"
+        ]
+      ],
+      "nirf_ids_that_look_like_two_people": 9
+    },
+    "duplicates_ranges": {
+      "duplicate_paper_author_rows": 6,
+      "papers_with_two_dois_same_title": 0,
+      "title_duplicate_examples": [],
+      "rows_outside_2016_2026": 0,
+      "quartile_values": {
+        "Q2": 6753,
+        "Q1": 6059,
+        "": 4561,
+        "Q3": 3065,
+        "Q4": 1790,
+        "CORE C": 233,
+        "CORE B": 74,
+        "CORE A": 36,
+        "CORE A*": 13
+      },
+      "core_ranks_written_without_CORE_prefix": 0
+    },
+    "networks": {
+      "coauthor_rows_touching_nit": 31385,
+      "coauthor_rows_both_this_nit": 18155,
+      "coauthor_rows_with_outside_partner": 13230,
+      "coauthor_self_loops": 0,
+      "coauthor_duplicate_rows": 0,
+      "coauthor_rows_paper_not_in_their_data": 94,
+      "faculty_pairs_theirs_by_name": 180,
+      "faculty_pairs_ours_by_id": 299,
+      "faculty_pairs_in_both": 173,
+      "citation_rows_touching_nit": 108601,
+      "citation_rows_with_no_dataset_paper": 17,
+      "citation_self_loops": 0,
+      "partners_listed": 2271,
+      "top30_partners_shared_papers_recount_equal_pct": 76.66666666666667,
+      "top30_partners_median_abs_difference": 0.0
+    },
+    "big_teams_spot_check": {
+      "papers_with_100_plus_authors": 0,
+      "papers_with_50_plus_authors": 1,
+      "spot_check_people": 20
+    },
+    "after_fixes": {
+      "rows_before": 22584,
+      "rows_after": 21858,
+      "papers_before": 10317,
+      "papers_after": 9957,
+      "fixes": [
+        {
+          "action": "drop_name",
+          "check": 2,
+          "n": 5
+        },
+        {
+          "action": "drop_paper",
+          "check": 3,
+          "n": 354
+        },
+        {
+          "action": "drop_row",
+          "check": 4,
+          "n": 35
+        },
+        {
+          "action": "drop_row",
+          "check": 5,
+          "n": 6
+        },
+        {
+          "action": "redoi",
+          "check": 3,
+          "n": 19
+        },
+        {
+          "action": "rename",
+          "check": 4,
+          "n": 167
+        }
+      ]
+    }
+  },
+  {
+    "institution": "NIT Calicut",
+    "group": "group14",
+    "split": {
+      "rows_in_file": 43264,
+      "institutes_in_file": {
+        "National Institute of Technology Calicut": 15917,
+        "National Institute of Technology Durgapur": 15207,
+        "National Institute of Technology Kurukshetra": 12140
+      },
+      "rows_for_this_nit": 15917,
+      "papers_for_this_nit": 7058,
+      "rows_without_doi": 28,
+      "distinct_author_names": 4753
+    },
+    "people_vs_nirf": {
+      "nirf_current_faculty": 375,
+      "nirf_matched_by_name_in_their_file": 327,
+      "nirf_matched_pct": 87.2,
+      "nirf_found_through_openalex_ids": 317,
+      "nirf_matched_to_openalex_ids_in_our_download": 322,
+      "nirf_missing_from_their_file": 48,
+      "their_names_not_on_nirf_list": 4311,
+      "names_in_capitals_only": 24,
+      "single_word_or_non_person_names": 33,
+      "junk_examples": [
+        "A.Elango",
+        "Aakash",
+        "Aniantony",
+        "Ankit",
+        "Anumeha",
+        "Arulkirubakaran",
+        "Barkha",
+        "Bharti",
+        "Dhanusmith",
+        "Dhilshana",
+        "Hiten",
+        "Jacob"
+      ]
+    },
+    "papers_vs_openalex": {
+      "their_papers": 7058,
+      "our_papers_with_doi": 7984,
+      "in_both": 6944,
+      "only_in_theirs": 114,
+      "only_in_theirs_why": {
+        "type outside our scope (book-chapter)": 15,
+        "type outside our scope (letter)": 2,
+        "type outside our scope (editorial)": 12,
+        "type outside our scope (data-paper)": 2,
+        "real paper of this NIT that our download missed (kept)": 11,
+        "second DOI of a paper already in their file": 60,
+        "type outside our scope (conference-abstract)": 4,
+        "OpenAlex does not list this NIT on the paper": 6,
+        "DOI not found in OpenAlex": 2
+      },
+      "only_in_theirs_doi_updated_to_openalex_main_doi": 9,
+      "only_in_ours": 1040,
+      "only_in_ours_by_year": {
+        "2026": 257,
+        "2019": 41,
+        "2018": 30,
+        "2020": 68,
+        "2021": 71,
+        "2022": 97,
+        "2023": 117,
+        "2024": 130,
+        "2025": 161,
+        "2016": 32,
+        "2017": 36
+      },
+      "only_in_ours_by_type": {
+        "article": 156,
+        "conference-paper": 881,
+        "review": 3
+      },
+      "year_agrees_pct": 99.81278801843318,
+      "type_agrees_pct": 97.6094470046083,
+      "citations_theirs_minus_ours_median": 0.0,
+      "citations_theirs_higher_pct": 5.414746543778802,
+      "citations_off_by_more_than_10_pct": 0.7776497695852534,
+      "faculty_papers_in_our_download": 5830,
+      "faculty_papers_missing_from_theirs": 789,
+      "faculty_paper_coverage_pct": 86.46655231560891
+    },
+    "names_vs_ids": {
+      "rows_checkable": 15645,
+      "id_status": {
+        "this_nit": 14213,
+        "on_paper_no_author_id": 938,
+        "this_nit_weak_name": 389,
+        "not_checkable": 272,
+        "not_on_paper": 83,
+        "other_affiliation": 19,
+        "ambiguous_on_paper": 3
+      },
+      "names_with_several_ids": 109,
+      "names_with_several_ids_examples": {
+        "Anil Kumar": 6,
+        "Ravindra Kumar": 6,
+        "Mahesh Kumar": 5,
+        "Sunil Kumar T. K.": 4,
+        "Rajagopalan Sridharan": 4,
+        "Suman Das": 4,
+        "Hema Rani P.": 3,
+        "S. Vishnu": 3
+      },
+      "ids_with_several_names": 114,
+      "ids_with_several_names_examples": [
+        [
+          "Veni T.",
+          "Thangaraj Veni"
+        ],
+        [
+          "Shebi Alippilakkotte",
+          "Shebi Alipilakkotte"
+        ],
+        [
+          "Abdul Fathaah Shamsuddin",
+          "S. Abdul Fathaah"
+        ],
+        [
+          "Lakshmi C.",
+          "Lakshmi Chakkumkumarath"
+        ],
+        [
+          "Vibin Antony",
+          "Vibin Antony P."
+        ],
+        [
+          "Seethalakshmi P.",
+          "P Seethalakshmi"
+        ],
+        [
+          "Ramesh Krishnan Lakshmanan",
+          "Ramesh Krishnan L"
+        ],
+        [
+          "Nekkanti Sri Harsha",
+          "Sri Harsha Nekkanti"
+        ]
+      ],
+      "nirf_ids_that_look_like_two_people": 13
+    },
+    "duplicates_ranges": {
+      "duplicate_paper_author_rows": 0,
+      "papers_with_two_dois_same_title": 61,
+      "title_duplicate_examples": [
+        [
+          [
+            "10.1504/ijads.2018.095279",
+            "International Journal of Applied Decision Sciences",
+            4
+          ],
+          [
+            "10.1504/ijads.2018.10012583",
+            "International Journal of Applied Decision Sciences",
+            2
+          ]
+        ],
+        [
+          [
+            "10.1504/ijmcp.2016.079843",
+            "International Journal of Management Concepts and Philosophy",
+            12
+          ],
+          [
+            "10.1504/ijmcp.2016.10000591",
+            "International Journal of Management Concepts and Philosophy",
+            7
+          ]
+        ],
+        [
+          [
+            "10.1504/ijstm.2020.107435",
+            "International Journal of Services Technology and Management",
+            3
+          ],
+          [
+            "10.1504/ijstm.2020.10028331",
+            "International Journal of Services Technology and Management",
+            1
+          ]
+        ],
+        [
+          [
+            "10.3934/math.2020073",
+            "AIMS Mathematics",
+            79
+          ],
+          [
+            "10.3934/math.20200073",
+            "AIMS Mathematics",
+            23
+          ]
+        ],
+        [
+          [
+            "10.1504/ijsom.2020.109006",
+            "International Journal of Services and Operations Management",
+            1
+          ],
+          [
+            "10.1504/ijsom.2020.10031205",
+            "International Journal of Services and Operations Management",
+            0
+          ]
+        ]
+      ],
+      "rows_outside_2016_2026": 0,
+      "quartile_values": {
+        "Q1": 5089,
+        "Q2": 4626,
+        "": 3975,
+        "Q3": 1493,
+        "Q4": 351,
+        "C": 296,
+        "B": 80,
+        "A": 7
+      },
+      "core_ranks_written_without_CORE_prefix": 383
+    },
+    "networks": {
+      "coauthor_rows_touching_nit": 19206,
+      "coauthor_rows_both_this_nit": 12376,
+      "coauthor_rows_with_outside_partner": 6830,
+      "coauthor_self_loops": 0,
+      "coauthor_duplicate_rows": 0,
+      "coauthor_rows_paper_not_in_their_data": 0,
+      "faculty_pairs_theirs_by_name": 276,
+      "faculty_pairs_ours_by_id": 333,
+      "faculty_pairs_in_both": 254,
+      "citation_rows_touching_nit": 65230,
+      "citation_rows_with_no_dataset_paper": 0,
+      "citation_self_loops": 0,
+      "partners_listed": 1815,
+      "top30_partners_shared_papers_recount_equal_pct": 93.33333333333333,
+      "top30_partners_median_abs_difference": 0.0
+    },
+    "big_teams_spot_check": {
+      "papers_with_100_plus_authors": 1,
+      "papers_with_50_plus_authors": 1,
+      "spot_check_people": 20
+    },
+    "after_fixes": {
+      "rows_before": 15917,
+      "rows_after": 15572,
+      "papers_before": 7058,
+      "papers_after": 6919,
+      "fixes": [
+        {
+          "action": "drop_name",
+          "check": 2,
+          "n": 1
+        },
+        {
+          "action": "drop_paper",
+          "check": 3,
+          "n": 103
+        },
+        {
+          "action": "drop_paper",
+          "check": 5,
+          "n": 61
+        },
+        {
+          "action": "drop_row",
+          "check": 4,
+          "n": 81
+        },
+        {
+          "action": "redoi",
+          "check": 3,
+          "n": 9
+        },
+        {
+          "action": "rename",
+          "check": 4,
+          "n": 127
+        }
+      ]
+    }
+  }
+]

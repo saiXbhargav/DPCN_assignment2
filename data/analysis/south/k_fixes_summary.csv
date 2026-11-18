@@ -1,0 +1,26 @@
+institution,check,action,reason,rows
+NIT Calicut,2,drop_name,"not a person's name (title, number or organisation)",1
+NIT Calicut,3,drop_paper,second DOI of a paper already in their file (OpenAlex keeps one work for both),60
+NIT Calicut,3,drop_paper,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,15
+NIT Calicut,3,drop_paper,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,12
+NIT Calicut,3,redoi,OpenAlex lists this paper under another DOI (in 'value'),9
+NIT Calicut,3,drop_paper,OpenAlex does not list NIT Calicut on this paper,6
+NIT Calicut,3,drop_paper,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,4
+NIT Calicut,3,drop_paper,DOI not found in OpenAlex,2
+NIT Calicut,3,drop_paper,OpenAlex type 'data-paper' is outside the article/review/conference-paper scope used for every NIT,2
+NIT Calicut,3,drop_paper,OpenAlex type 'letter' is outside the article/review/conference-paper scope used for every NIT,2
+NIT Calicut,4,rename,another spelling of the same OpenAlex author ID,127
+NIT Calicut,4,drop_row,OpenAlex does not list this author on the paper,81
+NIT Calicut,5,drop_paper,same title and year as another DOI (one paper with two DOIs); kept the more-cited one (in 'value'),61
+NIT Warangal,2,drop_name,"not a person's name (title, number or organisation)",5
+NIT Warangal,3,drop_paper,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,285
+NIT Warangal,3,drop_paper,OpenAlex does not list NIT Warangal on this paper,52
+NIT Warangal,3,redoi,OpenAlex lists this paper under another DOI (in 'value'),19
+NIT Warangal,3,drop_paper,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,7
+NIT Warangal,3,drop_paper,second DOI of a paper already in their file (OpenAlex keeps one work for both),5
+NIT Warangal,3,drop_paper,OpenAlex type 'retraction' is outside the article/review/conference-paper scope used for every NIT,3
+NIT Warangal,3,drop_paper,DOI not found in OpenAlex,1
+NIT Warangal,3,drop_paper,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,1
+NIT Warangal,4,rename,another spelling of the same OpenAlex author ID,167
+NIT Warangal,4,drop_row,OpenAlex does not list this author on the paper,35
+NIT Warangal,5,drop_row,the same paper and author are listed twice,6

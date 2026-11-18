@@ -1,0 +1,587 @@
+institution,action,key,value,reason,check,source
+NIT Warangal,drop_row,10.1016/j.matchemphys.2025.130662|V. Uday Kumar,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_row,10.1007/978-981-96-5863-3_13|Bovaz Livingstone Baby,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_row,10.1002/cmdc.202400324|Srilakshmi V. Patri,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_row,10.1016/j.psep.2024.09.089|Radhika Gandu,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_row,10.1016/j.ces.2023.118873|Anuj Kumar,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_row,10.1016/j.jddst.2023.104408|Chitrita Ghosh,,the same paper and author are listed twice,5,rule
+NIT Warangal,drop_paper,10.1002/sgp2.70076,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1007/978-3-030-72236-4_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-3-030-73495-4_7,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-3-030-91467-7_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-3-030-91467-7_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-3-031-16832-1_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,redoi,10.1007/978-3-031-56998-2,10.1007/978-3-032-16830-6,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1007/978-81-322-2743-4_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-81-322-3640-5_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-4765-7_5,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-6107-3_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-7329-8_54,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-7871-2_73,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-8234-4_28,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-8234-4_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-8234-4_59,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-10-8968-8_40,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1592-3_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1592-3_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1642-5_28,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1724-8_51,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1742-2_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1780-4_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1780-4_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1780-4_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_25,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_27,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_30,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_31,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_33,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_45,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_50,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_53,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_56,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_58,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_59,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_63,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_64,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_65,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_68,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_69,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_71,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_73,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-1903-7_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-2718-6_25,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-6159-3_40,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-6783-0_6,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-7082-3_45,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-7091-5_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-7166-0_61,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-7643-6_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-7643-6_33,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-8196-6_18,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-8767-8_30,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-8767-8_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-9008-1_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-13-9008-1_59,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-0214-9_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-0751-9_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1097-7_30,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_101,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_105,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_108,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_109,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_110,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_117,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_118,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_119,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_120,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_121,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_122,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_125,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_14,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_34,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_58,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_61,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_62,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_66,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_67,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_68,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_69,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_70,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_71,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_75,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_77,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_82,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_89,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_93,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_95,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1201-8_96,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1480-7_69,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1480-7_70,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1480-7_71,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1480-7_79,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-1724-2_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2188-1_44,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2662-6_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2662-6_27,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2696-1_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2696-1_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-2696-1_77,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_14,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_37,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_48,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_52,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_53,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_7,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-3215-3_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-4218-3_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-4218-3_5,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-4308-1_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-4619-8_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-4748-5_24,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-5224-3_5,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-5776-7_19,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-5788-0_66,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-5955-6_133,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-5955-6_88,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-6067-5_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7031-5_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7031-5_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7031-5_47,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7031-5_78,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7031-5_91,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7234-0_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7234-0_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7345-3_63,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7527-3_43,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7994-3_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7994-3_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-7994-3_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-8221-9_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-8221-9_302,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-8439-8_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-8815-0_31,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-8815-0_40,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-9019-1_81,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-9853-1_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-15-9853-1_44,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0186-6_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0275-7_36,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0289-4_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0698-4_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0878-0_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-0882-7_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-1740-9_28,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-1978-6_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2126-0_48,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2164-2_7,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2709-5_57,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2712-5_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2712-5_18,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2712-5_7,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-2794-1_33,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-3033-0_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-3033-0_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-3033-0_6,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-3071-2_18,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-4538-9_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-4538-9_54,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-4807-6_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-4807-6_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-5078-9_45,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-5281-3_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-5281-3_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-5529-6_63,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-5987-4_69,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-6928-6_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-7393-1_19,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-7554-6_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-7787-8_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-7794-6_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-7794-6_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-8542-2_32,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-8724-2_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-8987-1_19,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_27,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9239-0_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9539-1_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9539-1_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9539-1_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9539-1_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-16-9539-1_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-0019-8_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-0019-8_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-0095-2_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-0193-5_39,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-0840-8_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1018-0_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1018-0_37,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1018-0_42,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1018-0_45,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1018-0_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1021-0_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1122-4_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1824-7_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1824-7_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1929-9_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1976-3_40,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-1976-3_44,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-2130-8_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-2188-9_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-2764-5_9,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-2828-4_36,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-2828-4_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4162-7_6,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4364-5_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_35,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_43,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_47,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_49,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4606-6_70,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4975-3_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4975-3_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4975-3_3,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4975-3_38,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-4975-3_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-5221-0_68,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-5331-6_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-5868-7_2,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-6525-8_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-6525-8_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-6661-3_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-6661-3_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-6661-3_48,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7214-0_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7474-8_23,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7612-4_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7709-1_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7728-2_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-7788-6_6,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-9090-8_30,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-9228-5_16,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-9228-5_32,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-19-9906-2_33,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9487-5_20,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9487-5_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9487-5_35,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9775-3_53,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9775-3_62,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9775-3_73,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-32-9931-3_44,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_10,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_11,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_14,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_18,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_19,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_21,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_24,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_26,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_28,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_30,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_36,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_7,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4058-9_8,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4299-6_17,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4443-3_22,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-4466-2_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-6781-4_1,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-33-6862-0_15,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-99-0085-5_54,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-99-0189-0_4,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-99-1203-2_13,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/978-981-99-2066-2_12,,OpenAlex type 'book-chapter' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/s11356-016-7565-5,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/s11356-020-08318-x,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1007/s43538-025-00643-4,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1016/j.ccr.2026.218580,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1016/j.jallcom.2024.177732,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1016/j.matpr.2019.05.016,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,redoi,10.1016/j.matpr.2021.06.275,10.2139/ssrn.3897613,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1016/j.rechem.2025.102310,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1016/j.reffit.2016.10.009,10.18799/24056529/2016/5/72,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1016/j.reffit.2016.11.009,10.18799/24056529/2016/5/91,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1016/j.reffit.2017.04.007,10.18799/24056529/2017/4/151,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1021/acs.iecr.4c03538,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1080/01457632.2018.1546652,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1088/1361-6463/aeacee,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1108/hff-04-2026-0546,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1109/icais53314.2022.10535884,,OpenAlex type 'retraction' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.1109/icccnt54827.2022.11422415,,OpenAlex type 'retraction' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,redoi,10.1109/iccomm.2018.8430122,10.1109/iccomm.2018.8484791,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1109/iceca55336.2022.10703527,,OpenAlex type 'retraction' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,redoi,10.1109/silcon67893.2025.11327054,10.1109/silcon67893.2025.11326966,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.11113/mjce.v28n3.437,,DOI not found in OpenAlex,3,rule
+NIT Warangal,drop_paper,10.1117/12.3115701,,OpenAlex type 'conference-abstract' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,redoi,10.11591/csit.v3i1.p1-9,10.11591/csit.v3i1.pp1-9,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.14429/dsj.66.9649,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijaac.2020.108274,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijaac.2024.138245,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijaac.2025.149589,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1504/ijahuc.2020.10029731,10.1504/ijahuc.2020.107506,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1504/ijahuc.2022.123540,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijahuc.2024.10068514,10.1504/ijahuc.2025.146424,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Warangal,drop_paper,10.1504/ijahuc.2024.140032,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijbet.2022.125100,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1504/ijbex.2019.10021049,10.1504/ijbex.2019.099554,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1504/ijbis.2020.10026828,10.1504/ijbis.2020.105157,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1504/ijbm.2023.127721,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijcmsse.2022.125762,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijcnds.2020.10021259,10.1504/ijcnds.2020.108146,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Warangal,drop_paper,10.1504/ijcnds.2021.10034598,10.1504/ijcnds.2021.116463,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Warangal,drop_paper,10.1504/ijcse.2022.127187,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijcsm.2021.119898,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijef.2026.150289,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijes.2022.123304,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijes.2022.127149,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1504/ijesms.2017.10005510,10.1504/ijesms.2017.085080,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1504/ijesms.2021.10037820,10.1504/ijesms.2021.114992,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1504/ijetp.2021.119839,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijewm.2025.143497,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijex.2020.10024695,10.1504/ijex.2020.104723,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Warangal,drop_paper,10.1504/ijex.2024.136940,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijise.2020.10025954,10.1504/ijise.2020.104313,second DOI of a paper already in their file (OpenAlex keeps one work for both),3,rule
+NIT Warangal,redoi,10.1504/ijmie.2021.10040572,10.1504/ijmie.2021.117590,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1504/ijmme.2024.140699,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijmmm.2024.139059,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1504/ijscim.2016.10001984,10.1504/ijscim.2016.081075,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1504/ijsn.2022.10046974,10.1504/ijsn.2022.122544,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,redoi,10.1504/ijsn.2022.10046977,10.1504/ijsn.2022.122547,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.1504/ijsurfse.2025.144838,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijwgs.2023.135576,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.1504/ijwoe.2024.140509,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.1504/wrstsd.2021.10034901,10.1504/wrstsd.2021.114679,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.18535/jmscr/v7i9.118,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,redoi,10.2174/1389201021666201104150102,10.2174/18734316mtexamtkhx,OpenAlex lists this paper under another DOI (in 'value'),3,rule
+NIT Warangal,drop_paper,10.22037/ijmtfm.v16.53262,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.23910/welcometocbm.v5imar,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.3390/engproc2024066001,,OpenAlex type 'editorial' is outside the article/review/conference-paper scope used for every NIT,3,rule
+NIT Warangal,drop_paper,10.37917/ijeee.13.2.6,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.37992/2025.1602.018,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.47750/pnr.2022.13.s09.091,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.51699/cajmtcs.v2i9.100,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.56557/upjoz/2025/v46i165203,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.56557/upjoz/2026/v47i195888,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.61841/1bh6fe19,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.61841/jbtymk07,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.61841/tn4bk948,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.63345/jqst.v2i2.260,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64235/1z3yng59,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64252/a1tz0z18,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64252/gn1mny53,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64252/kzsf9n72,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64751/4qf8v122,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64751/bs6wfd37,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64751/cy5ga713,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64751/j4ps1w02,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.64751/y7gtt613,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.69980/sshr.v12i2.6762,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_paper,10.9734/jsrr/2026/v32i104571,,OpenAlex does not list NIT Warangal on this paper,3,rule
+NIT Warangal,drop_row,10.1007/s11356-026-38118-8|Gajulapalli Suryanarayanareddy,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1016/j.asoc.2026.115412|P. Phanindra Kumar Reddy,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1038/s41598-026-61205-2|Navneeta Pathak,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/s10115-026-02697-2|RBV Subramaanyam,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1177/14644207261423438|A. Arjuna Rao,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-981-96-7285-1_21|Shelly Dutta,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-981-96-9342-9_25|Vandith Pamuru Subramanya Rama,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1108/jfmpc-06-2024-0040|A. Yeshwanth Sai,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-981-96-2999-2_32|Sanjay Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1016/j.jelechem.2025.119404|Vikas Kumar Sharma,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1016/j.sna.2025.117436|M. Siva Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-981-96-9342-9_23|Vandith Pamuru Subramanya Rama,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.2174/0113892037390621250901052506|Navneeta Pathak,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-981-96-7779-5_2|Siti Devi,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1016/j.cej.2025.164063|S. Jessie Jancy Rani,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/978-3-031-73617-9_22|Anuj Chanderia Jain,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/sefet61574.2024.10717958|B. Sathish Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.2298/sjee2402251r|B. V. Shankara Narayana Rao,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/icepe57949.2023.10201606|K. V. V. M. Reddy,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1088/1755-1315/1280/1/012027|Nishith Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/s12088-021-00977-9|Pranjali Singh,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.32652/tmfvs.2020.4.73-77|Prabharam Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1080/15502287.2020.1718799|G. C.,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1504/ijcnds.2020.108146|Rahul Jashvantbhai Pandya,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/imicpw.2019.8933233|NVSN Sarma,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/imicpw.2019.8933229|NVSN Sarma,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/icesip46348.2019.8938326|Veeramallu V K Satyakar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.65521/oaijse.v3i5.2538|USN Raju,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.11113/mjce.v27.15931|Rama Seshu Rama Seshu,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1007/s41683-018-0020-8|Jayakumar Tammana,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1016/j.ultras.2017.11.004|Jayakumar Tammana,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/comapp.2017.8079760|Vandith Pamuru Subramanya Rama,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1515/ijcre-2016-0188|Venkatarao Chukka,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.1109/icctict.2016.7514566|Krishnaprasad Ksr,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,drop_row,10.14810/ijamse.2016.5104|K. J. Anandha Kumar,,OpenAlex does not list this author on the paper,4,rule
+NIT Warangal,rename,A5000156449|Malothu Usha Rani,Usha Rani Malothu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5003546133|K.N. Loukika,Kotapati Narayana Loukika,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5004752797|L. Abhay,Abhay Lingayat,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5005632387|Golla Monika Rani,G. Monika Rani,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5005632387|G. Monika,G. Monika Rani,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5005922283|M. Kalyan Chakavarthi,Meka Kalyan Chakravarthi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5008943507|Kishore Kumar Tappeta,Kishore Kumar T,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5009077333|Durga Prasad Alakunt,Durga Prasad Alakunta,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5009085789|Manjaiah Mallaiah,Mallaiah Manjaiah,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5009085789|M. Manjaiah,Mallaiah Manjaiah,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5009115661|KA Srinivasa Raghavan,K. A. Srinivasa Raghavan,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5010185493|Sai Virinchi P,Sai Virinchi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5010440061|Ramakrishnudu Tene,Tene Ramakrishnudu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5010669311|Ramreddy Chitteti,Chetteti RamReddy,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5010669311|Chitteti RamReddy,Chetteti RamReddy,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5011472416|S. Eswar,Eswar Sala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5014478831|G.Amba Prasad Rao,Gadale Amba Prasad Rao,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5014522580|Tadepalli Phani Swecha,Phani Swecha Tadepalli,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5016188889|Aneesha Satya Bandi,B. Aneesha Satya,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5016298694|Nandini Jali,Jali Nandini,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5016298694|N. Jali,Jali Nandini,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5018254434|Potla Durthi Chandrasai,Chandrasai Potla Durthi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5020520456|Satish Ben B.,B. Satish Ben,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5020590889|Ravi Kumar Jototh,Ravi Kumar Jatoth,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5023142292|N. V. Umamahesh,Nanduri Venkata Umamahesh,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5025528049|Gujjala Raghavendra,G. Raghavendra,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5026609819|Anand Kishore K,Anand Kishore Kola,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5027128803|T. P. Tezeswi,Tezeswi P. Tadepalli,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5027128803|Tezeswi Tadepalli,Tezeswi P. Tadepalli,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5027796754|Velpula Mahesh,Mahesh Velpula,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5028363606|Ramadevi Maguluri,M. Ramadevi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5028860465|Ragini Thatikonda,Thatikonda Ragini,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5029559090|KV Sai Srinadh,K. V. Sai Srinadh,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5031352603|Padimala Shanmuka Sai Kumar,Shanmuka Sai Kumar Padimala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5033290910|Vijaya Lakshmi Adluri,Adluri Vijaya Lakshmi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5033968027|P. Onkara,Onkara Perumal,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5037415674|R Arun Kumar,R. Arun Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5038173836|Arukonda Srinivas,Srinivas Arukonda,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5039072417|VK Hanumantha Rao Talari,V. K. Hanumantha Rao Talari,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5041944175|Veeresh Babu Alur,A. Veeresh Babu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5042035694|Kandukoori Ramesh,Ramesh Kandukoori,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5042327044|Mugada Krishna Kishore,Krishna Kishore Mugada,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5042935993|Ravali Palakurthi,Palakurthi Ravali,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5043268058|S. Priyadarshana,Sushree Priyadarshana,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5043727142|S. Sarmili,Sarmili Swain,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5045527089|Raghuram Kadali,Bhadradri Raghuram Kadali,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5046004492|Babar Pasha,Mahammod Babar Pasha,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5046299925|Srinu Banoth,Banoth Srinu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5046755088|Gouse Basha Shaik,Shaik Gouse Basha,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5047538166|Kotha Venkata Ramakrishna,Venkata Ramakrishna Kotha,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5049271660|Jayarambabu Naradala,Naradala Jayarambabu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5049373575|Nikhil Teja Kalakuntla,Kalakuntla Nikhil Teja,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5050432671|Kaladhar Kolla,Kolla Kaladhar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5050432671|K. Kaladhar,Kolla Kaladhar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5050576856|Aseem Ali Palliparambil,Aseem Ali Palliparambi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5051591232|Sujan Kumar Bashapaka,B. Sujan Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5055459800|Uma Maheswararao G.,Uma Maheswararao Gaddala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5056401764|Sharath Babu Anne,Sarath Babu Anne,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5056896715|Chaitanya Kanchibhotlaa,Chaitanya Kanchibhotla,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5057428591|Ganji Prabhakar Rao,Prabhakara Rao Ganji,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5057772696|Venu Vinod A,Venu Vinod Ananthula,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5061547307|Lakshmi Kiranmai Varanasi,Lakshmi Kiranmai.,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5062324514|Vishnu R.,R. Vishnu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5062491554|Shyam Perugu,Perugu Shyam,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5063079957|Bhaskar S S Gupta Yelamarthy,Bhaskar S S Gupta Yelamarthi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5063688936|Borade Samar Sarierao,Borade Samar Sarjerao,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5063968603|Haranath Divi,Divi Haranath,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5064613612|Rohan K. Netalkar,Netalkar Rohan Kishor,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5065578311|Shirisha Pulukuri,P. Shirisha,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5065661655|K. Geethasree,Geethasree Kommineni,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5065723980|Seshu D. Rama,Rama Seshu D.,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5067575934|Heeralal Mudavath,M. Heeralal,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5067655596|V. Dhanunjaya Naidu,Dhanunjaya Naidu Vangapandu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5067931850|Dr.Vadthiya Narendar,Narendar Vadthiya,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5070560415|Mukkera Vamshi Krishna,Vamshi Krishna Mukkera,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5073438074|Mahesh Kumar Gandla,Gandla Mahesh Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5073475473|Spoorthi Boda,B Spoorthi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5073853018|Naresh Koppula,Koppula Naresh,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5074898571|Muni Pavan Kompala,M. P. Kompala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5075556277|Challa Vijaya Madhavi Lakshmi,Vijaya Madhavi Lakshmi.Challa,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5075659264|Shiva Darshan SL,S. L. Shiva Darshan,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5075788596|Naga Srinivasulu G.,Naga Srinivasulu Golagani,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5076233987|Dhonde Krishnakumar Gunaji,Dhonde Krishnakumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5077030451|Venkata Vakamulla Mani,V V Mani,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5077173118|Kadambari K.V.,K. V. Kadambari,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5077831272|Pydi Setty Yelamarthi,Yelamarthi Pydi Setty,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5077831272|Pydi Setty Y.,Yelamarthi Pydi Setty,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5078165876|Yanamala Rama Muni Reddy,Rama Muni Reddy Yanamala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5078480116|Irrinki Gnana Sudha,Gnana Sudha Irrinki,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5078642779|N. Parimala,Parimala Neelam,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5079311173|Evangeline Ballem,B. Evangeline,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5079475933|Maheshwaram Satish,Satish Maheshwaram,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5079783558|Kota Naga Srinivasaro Batta,Kota Naga Srinivasarao Batta,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5080531571|Subramanyam R.B.V.,R. B. V. Subramanyam,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5080654403|Jhansi Rani Gundala,Gundala Jhansi Rani,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5080799856|Popuri Bangaru Babu,Bangaru Babu Popuri,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5081278826|Pranay Kumar Alladi,Alladi Pranay Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5081476268|Sujit Das,Sujit Ranjan Das,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5084699120|Lakshmi Boppanna,Lakshmi Bopanna,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5084813802|H M Shwetha,H. M. Shwetha,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5085042669|P. Subhash Chandra Bose,P. S. C. Bose,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5085457323|Pullakandam Muralidhar,P. Muralidhar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5086399590|K. V. Gobi,Kauveri Vengatajalabathy Gobi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5086527348|Farukh Hashmi,Mohammad Farukh Hashmi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5086772602|Narasimha Raju Bl,Bl Narasimha Raju,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5086976075|Madhu Murthy Kotha,Kotha Madhu Murthy,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5087117080|Komal B. Umare,Komal Baburao Umare,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5088772618|Dara Sruthilaya,Sruthilaya Dara,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5089468987|Prithvi Pothupogu,P. Prithvi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5091787712|KK Tottadi,Kiran Kumar Tottadi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5091990667|Rahul Gargay Bhamidipati,Rahul Gargay Bhamdipati,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092040277|Boddu Vijayasree,Vijayasree Boddu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092300840|Dasari Shanti Ratnam,Shanti Ratnam Dasari,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092423769|Ramana Murthy V,Ramana Murty Varudu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092450563|Srinath Surananai,Surananai Srinath,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092501725|Jawed Quamar,M. J. Quamar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5092794106|Vijay Saieesh ATS,Vijay Saieesh,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5093228861|J. Yuvashree,Yuvashree Jayavelu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5093680668|Hari Krishna Mosuru,Mosuru Hari Krishna,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5094001899|Pavan Kumar Reddy Allu,P. K. R. Allu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5094022134|Adavi Sai Sreeharsha,Sai Sreeharsha Adavi,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5094102800|Guntupalli Santhosh,Santhosh Guntupalli,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5094198884|Malothu Naresh,Naresh Malothu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5094252011|Dharma Teja Godumula,Dharma Teja Godumala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5099091701|M. Gangadhar,Gangadhar Mahar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5099853249|Ramulu Gugulothu,Gugulothu Ramulu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5101029683|Pothuganti Sanjeeva Kumar,Sanjeeva Kumar Pothuganti,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5101998532|Rakeshkumar Rajaboina,Rajaboina Rakesh Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5102773560|Ratna Rahul Tupakula,T. Ratna Rahul,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5103031301|Sonawane Shirish,Shirish H. Sonawane,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5103624504|Krishna Mohan Mantravadi,Mantravadi Krishna Mohan,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5104062924|Vijaya Kumar Kareddula,Kareddula Vijaya Kumar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5104108700|Malothu Rajeswari,Rajeswari Malothu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5104304764|Suresh Lingala,Lingala Suresh,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5104308769|Bharath Sanjeevi,Sanjeevi Bharath,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5108742983|Veeramraju Tirumala Somasekhar,V. T. Somasekhar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5108893334|C. Venkata Subbareddy,C. Venkata Subba Reddy,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5109268463|Patri Sreehari,Patri Sreehari Rao,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5109268463|Shreehari Rao Patri,Patri Sreehari Rao,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5109392162|Hari Krishna Chowduri,C. Hari Krishna,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5109450514|J. Ashish,Junuthula Ashish,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5110615656|Nallamothu Subrahmanyam,Subrahmanyam Nallamothu,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5110768981|Tagare S.G.,S. G. Tagare,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5110889480|Ramana Murthy Josyula Venkata,Ramana Murthy Venkata Josyula,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5111153664|Lavudya Srinivas,Srinivas Lavudya,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5114296503|Gundalabhagavan Amarnath,Amarnath Gundalabhagavan,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5115804783|Kalvapalli Srikanth Reddy,Srikanth Reddy Kalvapalli,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5116601825|R. Vennela,Vennela R,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5116676809|Chandmare Vaishali Prabhakarrao,Vaishali Chandmare,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5116818010|Valluru Usha Rani,Usha Rani Valluru,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5119009068|Subbash Y,Subbash Youvaraj,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5119522795|Snehasree Narlagiri,Narlagiri Snehasree,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5119704002|Shilpa Elaprolu,Elaprolu Shilpa,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5119714981|Lokeshwar Dondapati,Dondapati Lokeshwar,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5119750929|D. Rajeshwari,Dharavath Rajeshwari,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5120169671|Rameez Arhan Sk,Sk. Md. Rameez Arhan,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5120348558|Deepthi Reddy Thoutreddy,Thoutreddy Deepthi Reddy,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5120688731|Madem Sandhya,Sandhya Madem,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5124075800|Navya Thodeti,Thodeti Navya,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5124948724|Syed Shahbazuddin,Shahbazuddin Syed,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5125621427|Manchala Naveen,Naveen Manchala,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5126282521|Sanga Varsha,Varsha Sanga,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5129578661|Arun Kumar G,Arun Kumar Gande,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5134098567|Chakali Sandhya,Sandhya Chakali,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5137547234|Ajmeera Naresh,Naresh Ajmeera,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5140433113|K. V. Sriranga Abhishek,Abhishek K. V. Sriranga,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,rename,A5144223529|Mora sathyanarayana,Sathyanarayana Mora,another spelling of the same OpenAlex author ID,4,rule
+NIT Warangal,drop_name,"Dr.R.Vijaya Prakash2, Shabana Kousar1,",,"not a person's name (title, number or organisation)",2,rule
+NIT Warangal,drop_name,"G.Sunil3, V.Pranathi1, Md.Sallauddin2,",,"not a person's name (title, number or organisation)",2,rule
+NIT Warangal,drop_name,"K.Sudheer kumar2, Shamantha Pasunuti1,",,"not a person's name (title, number or organisation)",2,rule
+NIT Warangal,drop_name,"Md.Sallauddin3, Indumathi Akuthota1, Sunil.G2,",,"not a person's name (title, number or organisation)",2,rule
+NIT Warangal,drop_name,"P.Kumaraswamy2, R. Sadana Kumari1,",,"not a person's name (title, number or organisation)",2,rule

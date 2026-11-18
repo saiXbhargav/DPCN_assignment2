@@ -610,8 +610,92 @@ def scholar_part():
     print(out.drop(columns="google_scholar_search").to_string(index=False))
 
 
+# ================================================================ 7. "number of faculty, pure number"
+def puren_part():
+    """Average degree and the densification exponent with N = the plain number of faculty (every person on the
+    yearly faculty pages, with or without a co-author), next to N = connected faculty. Two versions of "plain":
+    everyone listed at least once up to year t (cumulative, like the links), and everyone listed in year t itself
+    (then only links between people who are both still listed count)."""
+    pairs, first_pub, info, _ = load()
+    fac = pd.read_csv(os.path.join(DATA, "faculty.csv")).drop_duplicates("faculty_id").set_index("faculty_id")
+    first = fac.first_seen.clip(lower=FIRST)
+    rows = []
+    for view in ["Both NITs"] + NITS:
+        ids = fac.index if view == "Both NITs" else fac.index[fac.institution == view]
+        for t in range(FIRST, PARTIAL_YEAR + 1):
+            G = graph_at(t, pairs, first_pub)
+            G = G.subgraph([v for v in G if v in ids])
+            e = G.number_of_edges()
+            conn = sum(1 for v in G if G.degree(v) > 0)
+            ever = int((first[ids] <= t).sum())
+            post = [v for v in ids if fac.first_seen[v] <= t <= fac.last_seen[v]]
+            e_post = G.subgraph([v for v in post if v in G]).number_of_edges()
+            rows.append({"view": view, "year": t, "partial_year": t == PARTIAL_YEAR, "links": e,
+                         "connected_faculty": conn, "faculty_listed_so_far": ever, "faculty_in_post": len(post),
+                         "links_between_faculty_in_post": e_post,
+                         "avg_degree_connected": 2 * e / conn if conn else np.nan,
+                         "avg_degree_all_listed_so_far": 2 * e / ever if ever else np.nan,
+                         "avg_degree_in_post": 2 * e_post / len(post) if post else np.nan})
+    g = pd.DataFrame(rows)
+    fits = []
+    for view in ["Both NITs"] + NITS:
+        d = g[g.view == view]
+        for lab, years in (("2016-2026", range(FIRST, PARTIAL_YEAR + 1)), ("2019-2025", range(2019, PARTIAL_YEAR))):
+            dd = d[d.year.isin(years)]
+            for n_col, e_col in (("connected_faculty", "links"), ("faculty_listed_so_far", "links"),
+                                 ("faculty_in_post", "links_between_faculty_in_post")):
+                a, r2 = densification(dd[n_col], dd[e_col])
+                fits.append({"view": view, "years": lab, "nodes_counted": n_col, "exponent_a": a, "r_squared": r2})
+    fits = pd.DataFrame(fits)
+    save(g.round(4), "u_pure_n_by_year.csv")
+    save(fits.round(4), "u_pure_n_densification.csv")
+    b = g[(g.view == "Both NITs") & ~g.partial_year]
+    save_json({"meaning": "N = every faculty member on the yearly pages (with or without a faculty co-author)",
+               "fits": fits.round(4).to_dict("records"),
+               "both_2016": b.iloc[0].to_dict(), "both_2025": b.iloc[-1].to_dict()}, "u_summary.json")
+    print(fits.round(3).to_string(index=False))
+    print(b.round(2).to_string(index=False))
+
+
+# ================================================================ 8. do the rich get richer? (co-authorship)
+def kernel_part():
+    """Preferential attachment in the faculty network: how many NEW faculty co-authors a person gains in year t+1,
+    against how many they already have at the end of year t (t = 2016..2024), pooled over years."""
+    pairs, first_pub, info, _ = load()
+    inst = info.institution.to_dict()
+    bins = [(0, 0), (1, 1), (2, 2), (3, 4), (5, 8), (9, 16), (17, 999)]
+    rows, fits = [], []
+    for view in ["Both NITs"] + NITS:
+        keep = (lambda v: True) if view == "Both NITs" else (lambda v, i=view: inst.get(v) == i)
+        obs = []
+        for t in range(FIRST, PARTIAL_YEAR - 1):
+            G0, G1 = graph_at(t, pairs, first_pub), graph_at(t + 1, pairs, first_pub)
+            for v in G0:
+                if keep(v):
+                    obs.append((G0.degree(v), G1.degree(v) - G0.degree(v)))
+        o = pd.DataFrame(obs, columns=["k", "new"])
+        for lo, hi in bins:
+            s = o[(o.k >= lo) & (o.k <= hi)]
+            if len(s):
+                rows.append({"view": view, "co_authors_now": f"{lo}" if lo == hi else (f"{lo}+" if hi > 100 else f"{lo}-{hi}"),
+                             "k_mean": s.k.mean(), "person_years": len(s), "mean_new_next_year": s.new.mean(),
+                             "share_gaining_any_pct": 100 * (s.new > 0).mean()})
+        pos = o[o.k > 0].groupby("k").new.mean()
+        pos = pos[pos > 0]
+        r = stats.linregress(np.log(pos.index), np.log(pos.values))
+        fits.append({"view": view, "kernel_exponent": r.slope, "r_squared": r.rvalue ** 2, "person_years": len(o),
+                     "mean_new_k0": o[o.k == 0].new.mean(), "mean_new_k1": o[o.k == 1].new.mean(),
+                     "mean_new_k9plus": o[o.k >= 9].new.mean()})
+    save(pd.DataFrame(rows).round(4), "k_kernel.csv")
+    save_json({"meaning": "new faculty co-authors in year t+1 ~ k^alpha, k = faculty co-authors at the end of year t; "
+                          "alpha = 1 is linear preferential attachment", "fits": pd.DataFrame(fits).round(4).to_dict("records")},
+              "k_summary.json")
+    print(pd.DataFrame(rows).round(3).to_string(index=False))
+    print(pd.DataFrame(fits).round(3).to_string(index=False))
+
+
 PARTS = {"growth": growth_part, "predict": predict_part, "nirf": nirf_part, "nits": nits_part,
-         "nitfaculty": nitfaculty_part, "scholar": scholar_part}
+         "nitfaculty": nitfaculty_part, "scholar": scholar_part, "puren": puren_part, "kernel": kernel_part}
 
 
 def main():

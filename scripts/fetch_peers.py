@@ -1,8 +1,10 @@
 """Download for the professor's Phase II meeting notes (17 Nov 2026). Finished files are skipped.
 
-  python fetch_peers.py   Papers 2016-2026 of four NITs (our two + NIT Warangal + NIT Calicut), same filter and same
-                          day for all four, so the comparison is fair. Compact records only (no reference lists)
-                          -> data/raw/peers/<NIT>_works.jsonl
+  python fetch_peers.py   Papers 2016-2026 of the six South Indian NITs: our two + NIT Warangal + NIT Calicut (17 Nov),
+                          then NIT Puducherry + NIT Andhra Pradesh (18 Nov). Same filter for all, so the comparison is
+                          fair. Compact records only (no reference lists) -> data/raw/peers/<NIT>_works.jsonl
+  python fetch_peers.py refs   For the same papers, the references that point to another paper of the same NIT
+                          (for the own-paper / self-citation share) -> data/raw/peers/<NIT>_internal_refs.jsonl
 
 Same source as the rest of the project (OpenAlex), same request helper as fetch_works.py. The faculty numbers for
 the comparison come from each NIT's NIRF 2025 data file instead (see phase2_prof.py nirf).
@@ -17,6 +19,8 @@ PEERS = {
     "NIT Surathkal": "I11880225",    # ror.org/01hz4v948
     "NIT Warangal": "I121750182",    # ror.org/017ebfz38
     "NIT Calicut": "I114845381",     # ror.org/03yyd7552
+    "NIT Puducherry": "I4400573194",       # ror.org/02tare285, Karaikal
+    "NIT Andhra Pradesh": "I4210153924",   # ror.org/0456pcg54, Tadepalligudem
 }
 FIELDS = ",".join(["id", "doi", "publication_year", "type", "primary_location", "authorships", "cited_by_count",
                    "fwci", "primary_topic"])
@@ -66,5 +70,34 @@ def works():
         os.replace(tmp, out)
 
 
+def refs():
+    """Reference lists of the same papers, keeping only references to another paper of the same NIT (2016-2026),
+    for the own-paper citation (self-citation) share in south_nits.py -> data/raw/peers/<NIT>_internal_refs.jsonl"""
+    for name, inst in PEERS.items():
+        out = os.path.join(OUT, name.replace(" ", "_") + "_internal_refs.jsonl")
+        if os.path.exists(out):
+            print(f"{name}: already downloaded -> {out}")
+            continue
+        with open(os.path.join(OUT, name.replace(" ", "_") + "_works.jsonl"), encoding="utf-8") as f:
+            ids = {json.loads(line)["id"] for line in f}
+        params = {"filter": f"authorships.institutions.id:{inst},publication_year:2016-2026,type:{TYPES}",
+                  "select": "id,referenced_works", "per_page": 200, "cursor": "*"}
+        n, tmp = 0, out + ".part"
+        with open(tmp, "w", encoding="utf-8") as f:
+            while params["cursor"]:
+                data, remaining = get(params)
+                for w in data["results"]:
+                    wid = w["id"].rsplit("/", 1)[-1]
+                    inside = [r.rsplit("/", 1)[-1] for r in (w.get("referenced_works") or [])
+                              if r.rsplit("/", 1)[-1] in ids]
+                    f.write(json.dumps({"id": wid, "n_refs": len(w.get("referenced_works") or []),
+                                        "internal_refs": inside}) + "\n")
+                n += len(data["results"])
+                print(f"{name} refs: {n}/{data['meta']['count']}  (requests left today: {remaining})", flush=True)
+                params["cursor"] = data["meta"].get("next_cursor")
+        os.replace(tmp, out)
+
+
 if __name__ == "__main__":
-    works()
+    import sys
+    refs() if sys.argv[1:] == ["refs"] else works()

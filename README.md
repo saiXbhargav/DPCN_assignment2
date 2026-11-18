@@ -780,6 +780,20 @@ Asked on 17 Nov. New sources: OpenAlex papers of NIT Warangal and NIT Calicut, a
 - **Four NITs:** papers per faculty member (Surathkal 4.7, Warangal 4.5, Trichy 3.4, Calicut 2.5 in 2024) run exactly opposite to the share of Assistant Professors; Warangal passed Trichy in yearly output in 2024; impact is about the same at Trichy, Surathkal and Warangal.
 - **Hiring:** no 2002/2003 wave among today's faculty at any of the four NITs; the waves were 2006–2009 and from 2018. Our roster matches NIRF (342 vs 348, 269 vs 279).
 - **Google Scholar:** a Scholar link for every faculty member on the dashboard, and a checklist for the most-cited faculty (Scholar blocks automated checks).
+- **"Number of faculty, pure number"** (part `puren`): with N = every faculty member on the yearly pages (with or without a co-author), the average number of co-authors goes 0.63 → 2.61 (2016 → 2025). The headcount grew only 1.6× while links grew 6.8×, so with this N a power law fits poorly (a ≈ 3.1, R² 0.89): the faculty body is almost fixed and fills in with links.
+- **Do the rich get richer?** (part `kernel`): people with 9+ faculty co-authors gain 0.47 new ones a year, people with one gain 0.26. New co-authors ∝ (current co-authors)<sup>0.35</sup>: a weak, sub-linear rich-get-richer effect.
+
+### 12. The six South Indian NITs (`scripts/south_nits.py` → [SOUTH.md](data/analysis/south/SOUTH.md))
+Our two NITs next to NIT Warangal, NIT Calicut, NIT Puducherry (2010) and NIT Andhra Pradesh (2015), all from the same OpenAlex download and each NIT's NIRF 2025 file. Groups 13 and 14 shared their data for Warangal and Calicut; `scripts/check_friends.py` checked it against our download and NIRF ([CHECKS.md](data/analysis/south/CHECKS.md), fixes in `data/reference/friends_corrections/`) and we use it as a cross-check.
+
+- **The professor's founding-years idea holds:** the share of today's faculty hired in 2021–2025 runs exactly opposite to the densification exponent across the six NITs (Spearman ρ = −1.00, exact p = 0.003). New hires arrive with few links, so a NIT that is still hiring adds people faster than links. Inside each NIT, 4-year windows with more hiring also have lower exponents (ρ = −0.53).
+- **Every NIT densifies** (a = 1.19–1.74 for faculty with a co-author), and at every NIT 85–92% of the citations between its own papers share an author.
+
+### 13. Dashboard layout (18 Nov)
+- A foldable sidebar groups the 15 tabs (Start, Output, Networks, Comparisons, Deep dives, About); a new Overview opens first, with the two NITs side by side and finding cards that link to the evidence.
+- Long tabs show one part at a time (chips); tables under a chart fold away and long tables show their first rows.
+- New views: the network growing year by year, average degree with both counts of N, rich-get-richer, degrees of separation, removing faculty one by one, the citation network with controls (hide self-citations, colour by field or year), the map with India's outline, co-authorship / citation layers and a click-for-details panel, partner charts and a heat map, field bubbles, conferences by department, a faculty profile with search and side-by-side comparison, and the South Indian NITs page.
+- India's outline: DataMeet's composite India map (github.com/datameet/maps), simplified to `data/reference/india_outline.json`.
 
 ---
 
@@ -811,8 +825,10 @@ DPCN_assignment2/
 │   ├── phase2.py            ← Phase II: all-papers statistics, author-count classes, Q1 × IF, collaborators per year, large-team flags, private citers, top-30 by IF, faculty top 10, most-used venues, collaboration score, institute network → data/analysis/phase2/
 │   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
 │   ├── phase2_papers.py     ← Phase II, ideas from the professor's papers: who cites us (co-authorship distance), citations without self-citations, fair comparison (rank, clustered errors, false discovery), core and edge interventions, productivity, hiring vs leaving, team size, assortativity
-│   ├── fetch_peers.py       ← papers of four NITs (ours + NIT Warangal + NIT Calicut), same filter and day
-│   ├── phase2_prof.py       ← professor's meeting follow-ups: average degree and 1.66, rolling link prediction, NIRF faculty and joining years, four NITs, Google Scholar checklist
+│   ├── fetch_peers.py       ← papers of the six South Indian NITs (ours + Warangal, Calicut, Puducherry, Andhra Pradesh), same filter
+│   ├── phase2_prof.py       ← professor's meeting follow-ups: average degree and 1.66, rolling link prediction, NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
+│   ├── check_friends.py     ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
+│   ├── south_nits.py        ← the six South Indian NITs and the founding-years test
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -876,6 +892,8 @@ python questions.py                 # data/analysis/questions/
 python phase2_papers.py             # data/analysis/papers/ (uses the files above)
 python fetch_peers.py               # four NITs' papers for the comparison (about 220 requests)
 python phase2_prof.py               # data/analysis/prof/ (the nirf and nitfaculty parts need pymupdf and the NIRF files in data/raw/nirf/)
+python check_friends.py             # needs the friends' zips unpacked in data/raw/friends/ (not in the repo)
+python south_nits.py                # data/analysis/south/
 python build_dashboard.py           # dashboard/index.html
 ```
 

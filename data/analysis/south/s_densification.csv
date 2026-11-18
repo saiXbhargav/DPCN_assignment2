@@ -1,0 +1,37 @@
+institution,years,n_definition,exponent_a,r_squared
+NIT Trichy,2016-2026,connected faculty,1.4081,0.9947
+NIT Trichy,2016-2026,all faculty in post (pure N),2.2407,0.9166
+NIT Trichy,2016-2026,all authors incl. students,1.1802,0.9987
+NIT Trichy,2019-2025,connected faculty,1.3001,0.9862
+NIT Trichy,2019-2025,all faculty in post (pure N),1.6225,0.9065
+NIT Trichy,2019-2025,all authors incl. students,1.1313,0.9983
+NIT Surathkal,2016-2026,connected faculty,1.7359,0.9945
+NIT Surathkal,2016-2026,all faculty in post (pure N),4.9925,0.9242
+NIT Surathkal,2016-2026,all authors incl. students,1.1942,0.9999
+NIT Surathkal,2019-2025,connected faculty,1.639,0.9953
+NIT Surathkal,2019-2025,all faculty in post (pure N),5.7992,0.8173
+NIT Surathkal,2019-2025,all authors incl. students,1.1827,0.9995
+NIT Warangal,2016-2026,connected faculty,1.4359,0.994
+NIT Warangal,2016-2026,all faculty in post (pure N),3.3734,0.863
+NIT Warangal,2016-2026,all authors incl. students,1.237,0.9997
+NIT Warangal,2019-2025,connected faculty,1.5844,0.9984
+NIT Warangal,2019-2025,all faculty in post (pure N),7.0374,0.932
+NIT Warangal,2019-2025,all authors incl. students,1.2522,0.9995
+NIT Calicut,2016-2026,connected faculty,1.3894,0.9986
+NIT Calicut,2016-2026,all faculty in post (pure N),2.0255,0.9343
+NIT Calicut,2016-2026,all authors incl. students,1.2167,0.9991
+NIT Calicut,2019-2025,connected faculty,1.421,0.9938
+NIT Calicut,2019-2025,all faculty in post (pure N),1.4311,0.9175
+NIT Calicut,2019-2025,all authors incl. students,1.1636,0.9994
+NIT Puducherry,2016-2026,connected faculty,1.3118,0.9974
+NIT Puducherry,2016-2026,all faculty in post (pure N),1.683,0.9373
+NIT Puducherry,2016-2026,all authors incl. students,1.2538,0.9863
+NIT Puducherry,2019-2025,connected faculty,1.2576,0.9977
+NIT Puducherry,2019-2025,all faculty in post (pure N),1.4427,0.8774
+NIT Puducherry,2019-2025,all authors incl. students,1.026,0.9989
+NIT Andhra Pradesh,2016-2026,connected faculty,1.1893,0.9908
+NIT Andhra Pradesh,2016-2026,all faculty in post (pure N),2.2459,0.7887
+NIT Andhra Pradesh,2016-2026,all authors incl. students,0.9949,0.9947
+NIT Andhra Pradesh,2019-2025,connected faculty,1.1663,0.9912
+NIT Andhra Pradesh,2019-2025,all faculty in post (pure N),2.1226,0.7625
+NIT Andhra Pradesh,2019-2025,all authors incl. students,1.0944,0.9982

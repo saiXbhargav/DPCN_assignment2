@@ -10,6 +10,7 @@ Open dashboard/index.html in any browser (the chart libraries load from cdnjs, s
 """
 import json
 import os
+import re
 
 import networkx as nx
 import numpy as np
@@ -145,9 +146,13 @@ def coauthor_graph():
     au = pd.read_csv(os.path.join(DATA, "authorship_network.csv"), low_memory=False)
     nit = au[au.edge_category.isin(["same_nit", "nit_nit"])]
     w = nit.groupby(["author_a_id", "author_b_id"]).paper_id.nunique()
+    first = {}                         # year of each pair's first joint paper (for the growth player)
+    for (a, b), y in nit.groupby(["author_a_id", "author_b_id"]).year.min().items():
+        k = tuple(sorted((a, b)))
+        first[k] = min(first.get(k, 9999), int(y))
     G = nx.Graph()
     G.add_weighted_edges_from((a, b, int(n)) for (a, b), n in w.items())
-    pos = nx.spring_layout(G, seed=42, k=1.4 / np.sqrt(len(G)), iterations=300, weight=None)
+    pos = packed_layout(G)   # components packed side by side, so the small groups do not shrink the main one
     comm_sizes = am[am.author_id.isin(G.nodes)].community.value_counts()
     big = list(comm_sizes.index[:7])  # the 7 largest communities get their own colour, the rest share one
     nodes = []
@@ -159,7 +164,7 @@ def coauthor_graph():
                       "degree": int(r.degree), "btw": round(float(r.betweenness_centrality), 5), "papers": int(r.papers),
                       "partners": int(r.indian_partner_institutes),
                       "x": round(float(x) * 1000, 1), "y": round(float(y) * 1000, 1)})
-    return {"nodes": nodes, "edges": [[a, b, d["weight"]] for a, b, d in G.edges(data=True)],
+    return {"nodes": nodes, "edges": [[a, b, d["weight"], first[tuple(sorted((a, b)))]] for a, b, d in G.edges(data=True)],
             "communities": [{"rank": i, "community": int(c), "size": int(comm_sizes[c])} for i, c in enumerate(big)],
             "isolated_faculty": int(len(am) - G.number_of_nodes())}
 
@@ -301,7 +306,8 @@ def connection_tables():
         if r.partner_id in geo:
             la, lo = geo[r.partner_id]
             pts.append([r.your_inst, r.partner_inst, la, lo, int(r.shared_papers), int(r.citations_exchanged),
-                        r.partner_cluster, int(round(r.distance_km))])
+                        r.partner_cluster, int(round(r.distance_km)), r.city if isinstance(r.city, str) else "",
+                        int(r.cites_from_partner), int(r.cites_to_partner)])
     t["geo_points"] = pts
     t["geo_home"] = {"NIT Trichy": geo.get("I122964287", (10.76, 78.81)), "NIT Surathkal": geo.get("I11880225", (13.01, 74.79))}
     t["geo_bands"] = records(csv(INS, "geo_distance_bands.csv"),
@@ -614,7 +620,180 @@ def prof_tables():
             t[key] = records(df, list(df.columns))
     if os.path.exists(os.path.join(PF, "n_summary.json")):
         t["nirf"] = jload(PF, "n_summary.json")
+    # "number of faculty, pure number" and "do the rich get richer?" (parts puren and kernel)
+    for key, name in (("u", "u_pure_n_by_year.csv"), ("u_fits", "u_pure_n_densification.csv"), ("k", "k_kernel.csv")):
+        if os.path.exists(os.path.join(PF, name)):
+            df = csv(PF, name)
+            t[key] = records(df, list(df.columns))
+    if os.path.exists(os.path.join(PF, "k_summary.json")):
+        t["k_fits"] = jload(PF, "k_summary.json")["fits"]
     return t
+
+
+# proceedings series (books of many conferences) vs named conferences
+SERIES = re.compile(r"lecture notes|conference series|conference proceedings|communications in computer|^advances in |procedia|"
+                    r"journal of physics|springer proceedings|smart innovation|algorithms for intelligent|materials today|"
+                    r"ifac-papersonline|web of conferences|engineering proceedings|^studies in |transactions on|^lecture", re.I)
+SHORT_INST = {"NIT Trichy": "T", "NIT Surathkal": "S"}
+
+
+def extra_tables():
+    """Data for the panels added on 18 Nov 2026: field bubbles, conferences by department, partner details for the map,
+    faculty profiles, a larger citation network with self-citation flags, and self-citation share by year."""
+    t = {}
+    g = pd.read_csv(os.path.join(DATA, "group12_data.csv"), low_memory=False)
+
+    # 1. which fields get the most citations (all papers incl. students' own, the paper-question rule)
+    ap = pd.read_csv(os.path.join(DATA, "all_papers.csv"), low_memory=False)
+    views = {i: ap[ap.institution == i] for i in INSTS}
+    views["Both"] = ap.drop_duplicates("openalex_id")
+    fields = {}
+    for v, p in views.items():
+        out = []
+        for f, q in p.groupby(p.field.fillna("Unknown")):
+            if len(q) < 5:
+                continue
+            top = q.nlargest(6, "citations")
+            out.append({"f": f, "n": int(len(q)), "c": rnd(q.citations.mean(), 1), "fw": rnd(q.fwci.median(), 2),
+                        "top": [[(r.title if isinstance(r.title, str) else "")[:150], int(r.year), int(r.citations),
+                                 (r.doi if isinstance(r.doi, str) else "").replace("https://doi.org/", ""),
+                                 SHORT_INST.get(r.institution, "")] for r in top.itertuples(index=False)]})
+        fields[v] = sorted(out, key=lambda x: -x["n"])
+    t["fields"] = fields
+
+    # 2. conferences by department (faculty papers): named conferences vs proceedings series
+    c = g[g.type == "conference"].drop_duplicates(["institution", "department", "openalex_id"]).copy()
+    c["series"] = c.journal_name.fillna("").str.contains(SERIES)
+    ven = {}
+    for inst in INSTS:
+        ci = c[c.institution == inst]
+        groups = {"All departments": ci.drop_duplicates("openalex_id")}
+        groups.update({d: q for d, q in ci.groupby("department") if len(q) >= 10})
+        ven[inst] = {}
+        for d, q in groups.items():
+            ven[inst][d] = {}
+            for kind, qq in (("named", q[~q.series]), ("series", q[q.series])):
+                rows = []
+                for name, z in qq.groupby("journal_name"):
+                    core = z.quartile.dropna()
+                    core = core[core.str.startswith("CORE")]
+                    rows.append([name, int(len(z)), int(z.citations.sum()), core.mode().iat[0].replace("CORE ", "") if len(core) else ""])
+                ven[inst][d][kind] = sorted(rows, key=lambda r: (-r[1], -r[2]))[:10]
+            ven[inst][d]["total"] = int(len(q))
+    t["venues_dept"] = ven
+
+    # 3. partner details for the map's side panel (faculty papers, as in indian_connections.csv)
+    gp = csv(INS, "geo_partners.csv")
+    want = set(zip(gp[gp.shared_papers > 0].your_inst, gp[gp.shared_papers > 0].partner_inst))
+    pp = g.dropna(subset=["coauthor_institutes"]).copy()
+    pp["partner"] = pp.coauthor_institutes.str.split(";")
+    x = pp.explode("partner")
+    x["partner"] = x.partner.str.strip()
+    x = x[[(i, p) in want for i, p in zip(x.institution, x.partner)]]
+    det = {}
+    for (inst, part), q in x.groupby(["institution", "partner"]):
+        papers = q.drop_duplicates("openalex_id")
+        top = papers.nlargest(3, "citations")
+        det[f"{inst}|{part}"] = {
+            "y": {int(y): int(n) for y, n in papers.year.value_counts().sort_index().items()},
+            "f": [[a, int(n)] for a, n in q.drop_duplicates(["openalex_id", "faculty_id"]).author.value_counts().head(6).items()],
+            "p": [[(r.title if isinstance(r.title, str) else "")[:140], int(r.year), int(r.citations),
+                   (r.doi if isinstance(r.doi, str) else "").replace("https://doi.org/", "")] for r in top.itertuples(index=False)]}
+    t["partner_detail"] = det
+
+    # 4. partner heat map: the top partners of each NIT, as a share of the NIT's papers
+    ic = pd.read_csv(os.path.join(DATA, "indian_connections.csv"))
+    ic = ic[~ic.partner_inst.isin(INSTS)]
+    tot = {i: int(g[g.institution == i].openalex_id.nunique()) for i in INSTS}
+    top = set()
+    for i in INSTS:
+        top |= set(ic[ic.your_inst == i].nlargest(8, "shared_papers").partner_inst)
+    heat = []
+    for p in sorted(top, key=lambda p: -ic[ic.partner_inst == p].shared_papers.sum()):
+        row = {"partner": p, "type": ic[ic.partner_inst == p].partner_cluster.iat[0]}
+        for i in INSTS:
+            s = ic[(ic.your_inst == i) & (ic.partner_inst == p)].shared_papers.sum()
+            row[i] = [int(s), rnd(100 * s / tot[i], 2)]
+        heat.append(row)
+    t["partner_heat"] = heat
+    t["partner_count"] = {i: int((ic[(ic.your_inst == i)].shared_papers > 0).sum()) for i in INSTS}
+
+    # 5. faculty profiles: papers per year, journal quartiles, lead-author share, big-team citations
+    yrs = list(range(2016, 2027))
+    prof = {}
+    for fid, q in g.groupby("faculty_id"):
+        p = q.drop_duplicates("openalex_id")
+        j = p[p.type == "journal"]
+        cites = p.citations.sum()
+        prof[fid] = {"y": [int((p.year == y).sum()) for y in yrs],
+                     "q": [int((j.quartile == k).sum()) for k in ("Q1", "Q2", "Q3", "Q4")] +
+                          [int((~j.quartile.fillna("").str.startswith("Q")).sum()), int((p.type == "conference").sum())],
+                     "fw": rnd(p.fwci.median(), 2),
+                     "lead": rnd((q.author_position == 1).mean(), 2) if "author_position" in q else None,
+                     "big": rnd(p[p.n_authors >= 10].citations.sum() / cites, 2) if cites else 0}
+    t["profiles"] = prof
+
+    # 6. a larger citation network (top papers by PageRank) with self-citation flags, and self-citation share by year
+    from phase2_papers import authors, unique_works
+    works = unique_works()
+    au = {wid: authors(w) for wid, w in works.items()}
+    pm = pd.read_csv(os.path.join(DATA, "network_metrics", "citation_paper_metrics.csv"))
+    pm = pm.sort_values(["pagerank", "openalex_id"], ascending=[False, True]).reset_index(drop=True)
+    pm["rank"] = pm.index + 1
+    cit = pd.read_csv(os.path.join(DATA, "citation_network.csv"), usecols=["source_id", "target_id", "edge_type", "year"],
+                      low_memory=False)
+    internal = cit[(cit.edge_type == "internal") & (cit.source_id != cit.target_id)].drop_duplicates(["source_id", "target_id"])
+    internal = internal.assign(selfcite=[bool(au.get(s, set()) & au.get(t_, set())) for s, t_ in zip(internal.source_id, internal.target_id)])
+    nit_of = g.groupby("openalex_id").institution.agg(lambda s: "Both" if s.nunique() > 1 else s.iat[0])
+    by = internal.assign(inst=internal.source_id.map(nit_of))
+    sy = []
+    for (inst, y), q in by.groupby(["inst", "year"]):
+        if inst in INSTS and 2016 <= y <= 2026:
+            sy.append({"institution": inst, "year": int(y), "citations": int(len(q)), "self_pct": rnd(100 * q.selfcite.mean(), 1)})
+    t["selfcite_year"] = sy
+    # the 100 most influential papers (PageRank) and every paper of ours that cites them or that they cite
+    H = 100
+    hubs = list(pm.openalex_id[:H])
+    lk = internal[internal.source_id.isin(hubs) | internal.target_id.isin(hubs)]
+    keepset = set(hubs) | set(lk.source_id) | set(lk.target_id)
+    keep = [p_ for p_ in pm.openalex_id if p_ in keepset]          # in PageRank order
+    ix = {p: k for k, p in enumerate(keep)}
+    hub_rank = {p_: k + 1 for k, p_ in enumerate(hubs)}
+    e = internal[internal.source_id.isin(ix) & internal.target_id.isin(ix)]
+    G = nx.Graph()
+    G.add_nodes_from(keep)
+    G.add_edges_from(zip(e.source_id, e.target_id))
+    pos = packed_layout(G)
+    meta = g.drop_duplicates("openalex_id").set_index("openalex_id")
+    fl = sorted(meta.field.fillna("Unknown").unique())
+    fix = {f: k for k, f in enumerate(fl)}
+    nodes = []
+    for r in pm[pm.openalex_id.isin(keepset)].itertuples(index=False):
+        m = meta.loc[r.openalex_id] if r.openalex_id in meta.index else None
+        x_, y_ = pos[r.openalex_id]
+        nodes.append([SHORT_INST.get(nit_of.get(r.openalex_id), "B"), int(r.year),
+                      fix.get(m.field if m is not None and isinstance(m.field, str) else "Unknown", fix.get("Unknown", 0)),
+                      int(m.n_authors) if m is not None and not pd.isna(m.n_authors) else 0,
+                      float(f"{r.pagerank:.3g}"), int(r.citations_total), int(r.in_degree_internal),
+                      (r.title if isinstance(r.title, str) else "")[:150],
+                      (r.doi if isinstance(r.doi, str) else "").replace("https://doi.org/", ""),
+                      round(float(x_) * 1000, 1), round(float(y_) * 1000, 1), hub_rank.get(r.openalex_id, 0), int(r.rank)])
+    t["cit_big"] = {"cols": ["inst", "year", "field", "n_authors", "pr", "citations", "indeg", "title", "doi", "x", "y", "hub", "rank"],
+                    "fields": fl, "nodes": nodes,
+                    "edges": [[ix[s], ix[t_], int(f)] for s, t_, f in zip(e.source_id, e.target_id, e.selfcite)],
+                    "total_papers": int(len(pm)), "total_edges": int(len(internal)),
+                    "self_share_all": rnd(internal.selfcite.mean(), 4)}
+    # India's outer border for the map (DataMeet, official boundary; simplified in data/reference/india_outline.json)
+    ol = os.path.join(DATA, "reference", "india_outline.json")
+    if os.path.exists(ol):
+        t["india_outline"] = jload(DATA, "reference", "india_outline.json")["rings"]
+    return t
+
+
+def south_tables():
+    """The six South Indian NITs (scripts/south_nits.py -> data/analysis/south/south_summary.json), when built."""
+    path = os.path.join(AN, "south", "south_summary.json")
+    return jload(path) if os.path.exists(path) else None
 
 
 def methods_facts():
@@ -640,10 +819,11 @@ def methods_facts():
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    data = {"papers": papers(), "faculty": faculty(), "citation_graph": citation_graph(),
+    # the citation graph on the dashboard now comes from extra_tables() (100 hub papers, with self-citation flags)
+    data = {"papers": papers(), "faculty": faculty(),
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
-            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(),
+            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(), "x": extra_tables(), "south": south_tables(),
             "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
                      "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

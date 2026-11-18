@@ -1,0 +1,157 @@
+{
+  "meaning": "N = every faculty member on the yearly pages (with or without a faculty co-author)",
+  "fits": [
+    {
+      "view": "Both NITs",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6545,
+      "r_squared": 0.9975
+    },
+    {
+      "view": "Both NITs",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 3.0663,
+      "r_squared": 0.8864
+    },
+    {
+      "view": "Both NITs",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 4.316,
+      "r_squared": 0.8254
+    },
+    {
+      "view": "Both NITs",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.5645,
+      "r_squared": 0.9984
+    },
+    {
+      "view": "Both NITs",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 2.274,
+      "r_squared": 0.9556
+    },
+    {
+      "view": "Both NITs",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 2.8947,
+      "r_squared": 0.8956
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6089,
+      "r_squared": 0.9929
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 2.0107,
+      "r_squared": 0.8784
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 2.4095,
+      "r_squared": 0.8368
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.4458,
+      "r_squared": 0.9809
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 1.6207,
+      "r_squared": 0.9215
+    },
+    {
+      "view": "NIT Trichy",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 1.66,
+      "r_squared": 0.7138
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2016-2026",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.6985,
+      "r_squared": 0.9954
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 4.5634,
+      "r_squared": 0.7569
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2016-2026",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 4.2955,
+      "r_squared": 0.3042
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2019-2025",
+      "nodes_counted": "connected_faculty",
+      "exponent_a": 1.5965,
+      "r_squared": 0.9871
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_listed_so_far",
+      "exponent_a": 2.4619,
+      "r_squared": 0.7503
+    },
+    {
+      "view": "NIT Surathkal",
+      "years": "2019-2025",
+      "nodes_counted": "faculty_in_post",
+      "exponent_a": 2.7057,
+      "r_squared": 0.6804
+    }
+  ],
+  "both_2016": {
+    "view": "Both NITs",
+    "year": 2016,
+    "partial_year": false,
+    "links": 135,
+    "connected_faculty": 162,
+    "faculty_listed_so_far": 430,
+    "faculty_in_post": 430,
+    "links_between_faculty_in_post": 124,
+    "avg_degree_connected": 1.6666666666666667,
+    "avg_degree_all_listed_so_far": 0.627906976744186,
+    "avg_degree_in_post": 0.5767441860465117
+  },
+  "both_2025": {
+    "view": "Both NITs",
+    "year": 2025,
+    "partial_year": false,
+    "links": 923,
+    "connected_faculty": 530,
+    "faculty_listed_so_far": 708,
+    "faculty_in_post": 586,
+    "links_between_faculty_in_post": 734,
+    "avg_degree_connected": 3.483018867924528,
+    "avg_degree_all_listed_so_far": 2.6073446327683616,
+    "avg_degree_in_post": 2.5051194539249146
+  }
+}

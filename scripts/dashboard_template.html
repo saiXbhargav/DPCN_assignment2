@@ -20,7 +20,7 @@
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); margin: 0; }
-.wrap { max-width: 1320px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px));
+.wrap { max-width: 1440px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px));
         padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 
 /* header */
@@ -28,11 +28,11 @@ header.hero { background:
     radial-gradient(900px 320px at 8% -10%, rgba(42, 120, 214, .20), transparent 70%),
     radial-gradient(900px 320px at 95% 0%, rgba(235, 104, 52, .20), transparent 70%),
     linear-gradient(180deg, #ffffff, var(--bg)); border-bottom: 1px solid var(--line); }
-header.hero .wrap { padding-block: 34px 26px; display: grid; gap: 22px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: end; }
+header.hero .wrap { padding-block: 24px 20px; display: grid; gap: 22px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: end; }
 @media (max-width: 900px) { header.hero .wrap { grid-template-columns: 1fr; } }
 .eyebrow { font: 600 12px var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 8px; }
 .eyebrow b { color: var(--both); }
-h1 { font: 700 clamp(30px, 4.6vw, 52px)/1.04 var(--display); margin: 0 0 12px; letter-spacing: -0.025em; text-wrap: balance; }
+h1 { font: 700 clamp(28px, 3.8vw, 44px)/1.04 var(--display); margin: 0 0 12px; letter-spacing: -0.025em; text-wrap: balance; }
 h1 .t { color: var(--trichy); } h1 .s { color: var(--surathkal); }
 .sub { color: var(--ink-2); max-width: 62ch; margin: 0; font-size: 14.5px; }
 .sub b { color: var(--ink); font-weight: 600; }
@@ -126,7 +126,7 @@ section[role="tabpanel"]:not([hidden]) { animation: rise .35s ease-out; }
 .tablewrap { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 13px; }
 th, td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; white-space: normal; vertical-align: bottom; }
 td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
 th button { all: unset; cursor: pointer; }
 th button::after { content: " ↕"; color: var(--axis); }
@@ -179,6 +179,156 @@ input[type="search"] { width: min(260px, 100%); }
 table.heat td, table.heat th { padding: 5px 6px; font-size: 12px; }
 table.heat td.num { min-width: 42px; text-align: center; }
 footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
+
+/* sidebar layout: the sections in groups on the left, the institute switch on top of them */
+.layout { display: grid; grid-template-columns: 232px minmax(0, 1fr); gap: 28px; align-items: start; }
+.layout > main { min-width: 0; }
+.side { position: sticky; top: 0; max-height: 100vh; overflow-y: auto; padding: 22px 2px 28px; scrollbar-width: thin; }
+.side .seg { display: flex; width: 100%; margin-bottom: 6px; }
+.side .seg button { flex: 1; padding: 6px 4px; font-size: 12px; }
+.side .tabs { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 1px; overflow: visible; }
+.side .grp { font: 600 10.5px var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 16px 10px 4px; }
+.side .tabs button { width: 100%; justify-content: flex-start; border-radius: 9px; padding: 7px 10px; font-size: 13.5px; white-space: normal; text-align: left; }
+.side .tabs button[aria-selected="true"] { background: var(--ink); color: #fff; }
+.fold { all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 30px; height: 28px;
+        border-radius: 8px; color: var(--muted); font: 600 16px var(--body); margin: 0 0 8px auto; }
+.fold:hover, .fold:focus-visible { background: var(--chip); color: var(--ink); }
+.layout.folded { grid-template-columns: 50px minmax(0, 1fr); gap: 18px; }
+.layout.folded .side .lbl { display: none; }
+.layout.folded .side .grp { font-size: 0; height: 1px; background: var(--line); margin: 10px 8px; }
+.layout.folded .side .tabs button { justify-content: center; padding: 8px 0; }
+.layout.folded .side .seg { flex-direction: column; border-radius: 14px; gap: 2px; }
+.layout.folded .side .seg button { padding: 7px 0; }
+.layout.folded .side .seg .dot { margin: 0; }
+.layout.folded .fold { margin: 0 auto 8px; }
+.mbar, .scrim { display: none; }
+@media (max-width: 900px) {
+  .fold { display: none; }
+  .layout, .layout.folded { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .layout.folded .side .lbl { display: inline; }
+  .layout.folded .side .grp { font-size: 10.5px; height: auto; background: none; margin: 16px 10px 4px; }
+  .layout.folded .side .tabs button { justify-content: flex-start; padding: 7px 10px; }
+  .layout.folded .side .seg { flex-direction: row; }
+  .mbar { display: flex; position: sticky; top: 0; z-index: 30; align-items: center; gap: 12px; padding: 8px max(16px, env(safe-area-inset-left, 0px));
+          background: rgba(255, 255, 255, .95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .mbar b { font: 600 15px var(--display); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .side { position: fixed; z-index: 40; left: 0; top: 0; bottom: 0; width: min(290px, 86vw); max-height: none; background: var(--panel);
+          padding: 18px 14px; box-shadow: 0 10px 40px rgba(15, 23, 42, .18); transform: translateX(-105%); transition: transform .25s ease; }
+  .side.open { transform: none; }
+  .scrim.on { display: block; position: fixed; inset: 0; z-index: 35; background: rgba(15, 23, 42, .25); }
+}
+
+/* section chips inside long tabs: one section at a time */
+.chips { position: sticky; top: 0; z-index: 15; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 10px 0 10px;
+         margin: -4px 0 10px; background: linear-gradient(var(--bg) 85%, rgba(243, 245, 250, 0)); }
+@media (max-width: 900px) { .chips { top: 49px; } }
+.chips::-webkit-scrollbar { display: none; }
+.chips button { flex: none; font: 600 12.5px var(--body); padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel);
+                color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.chips button:hover { color: var(--ink); border-color: var(--axis); }
+.chips button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.grid > .off { display: none !important; }
+.grp-h h2, .grid > .s12 > h2 { font: 700 20px/1.2 var(--display); margin: 10px 0 0; letter-spacing: -0.01em; }
+
+/* tables: big ones show their first rows, tables under a chart fold away */
+details.tbl { margin-top: 10px; }
+details.tbl > summary { cursor: pointer; list-style: none; display: inline-flex; gap: 6px; align-items: center; font: 600 12.5px var(--body); color: var(--accent); padding: 2px 0; }
+details.tbl > summary::-webkit-details-marker { display: none; }
+details.tbl > summary::before { content: "▸"; transition: transform .2s; }
+details.tbl[open] > summary::before { transform: rotate(90deg); }
+details.tbl[open] > summary { margin-bottom: 6px; }
+.tablewrap.clip:not(.open) tbody tr:nth-child(n+9) { display: none; }
+.tablewrap.clip:not(.open) { max-height: none !important; }
+.more { all: unset; cursor: pointer; color: var(--accent); font: 600 12.5px var(--body); margin-top: 8px; display: inline-block; }
+.more:hover { text-decoration: underline; }
+.flash { animation: flash 2s ease-out; }
+@keyframes flash { 0%, 35% { box-shadow: 0 0 0 3px var(--both), var(--shadow); } 100% { box-shadow: var(--shadow); } }
+
+/* overview */
+.sec-h { font: 700 19px/1.2 var(--display); margin: 14px 0 0; letter-spacing: -0.01em; }
+.sec-h small { font: 500 13px var(--body); color: var(--muted); margin-left: 8px; letter-spacing: 0; }
+.ins-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+.ins { display: flex; flex-direction: column; gap: 6px; border-top: 4px solid var(--both); }
+.ins .k { font: 600 10.5px var(--body); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.ins .big { font: 700 28px/1.05 var(--display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ins .big small { font: 600 14px var(--body); color: var(--muted); letter-spacing: 0; }
+.ins h3 { font-size: 15px; margin: 0; }
+.ins p { margin: 0; font-size: 13px; color: var(--ink-2); }
+.ins .mini { position: relative; height: 92px; margin-top: auto; }
+.explore { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.ex { all: unset; box-sizing: border-box; cursor: pointer; display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; box-shadow: var(--shadow); }
+.ex:hover, .ex:focus-visible { border-color: var(--both); outline: none; }
+.ex .g { font: 600 10.5px var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.ex b { display: block; font: 600 15px var(--display); margin: 2px 0 2px; color: var(--ink); }
+.ex span { font-size: 12.5px; color: var(--ink-2); }
+table.cmp td.win { font-weight: 700; }
+table.cmp td.win.t { color: #1b5aa6; } table.cmp td.win.s { color: #a8441a; }
+table.cmp td small { display: block; color: var(--muted); font-size: 11.5px; }
+/* controls and new panels (18 Nov) */
+.chk { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.chk input { accent-color: var(--both); }
+input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
+.pdet { background: var(--chip); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--ink-2); min-height: 120px; }
+.pdet h4 { font: 600 15px/1.25 var(--display); color: var(--ink); margin: 0 0 6px; }
+.pdet .nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 10px 0; }
+.pdet .nums b { display: block; font: 700 19px var(--display); color: var(--ink); }
+.pdet ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 6px; }
+.pdet .mini { position: relative; height: 110px; margin: 6px 0; }
+.lnk { all: unset; cursor: pointer; color: var(--ink); border-bottom: 1px dotted var(--axis); }
+.lnk:hover, .lnk:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+.cn-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.cn-card { border-left: 4px solid var(--c); padding: 2px 0 2px 14px; }
+.cn-card h4 { font: 600 16px var(--display); margin: 0 0 8px; }
+.cn-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; }
+.cn-row b { display: block; font: 700 22px/1.15 var(--display); font-variant-numeric: tabular-nums; }
+.cn-row span { font-size: 12.5px; color: var(--muted); }
+.cn-card p { margin: 8px 0 0; font-size: 13px; color: var(--ink-2); }
+.vh { font: 600 15px var(--display); margin: 4px 0 8px; display: flex; align-items: center; gap: 4px; }
+.vh small { font: 500 12px var(--body); color: var(--muted); margin-left: 6px; }
+.vlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: v; }
+.vlist li { counter-increment: v; display: grid; grid-template-columns: 22px minmax(0, 1fr); column-gap: 4px; }
+.vlist li::before { content: counter(v); grid-row: span 3; color: var(--muted); font: 500 12px var(--mono); padding-top: 2px; }
+.vt { display: flex; gap: 8px; align-items: baseline; justify-content: space-between; font-size: 13.5px; color: var(--ink); }
+.vb { height: 5px; border-radius: 99px; background: var(--grid); margin: 4px 0 2px; overflow: hidden; }
+.vb i { display: block; height: 100%; border-radius: 99px; }
+.vn { font-size: 12px; color: var(--muted); }
+.sep-n { font-size: 14px; color: var(--ink-2); margin: 4px 0 10px; }
+.sep-n b { font: 700 30px var(--display); color: var(--both); margin-right: 6px; }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pcard { all: unset; box-sizing: border-box; cursor: pointer; display: grid; gap: 2px; padding: 8px 12px; border: 1px solid var(--line); border-top: 3px solid var(--both); border-radius: 10px; background: var(--panel); min-width: 150px; }
+.pcard.t { border-top-color: var(--trichy); } .pcard.s { border-top-color: var(--surathkal); }
+.pcard b { font: 600 13.5px var(--display); } .pcard span { font-size: 12px; color: var(--muted); }
+.pcard:hover, .pcard:focus-visible { border-color: var(--both); }
+.chain .link { font: 500 11.5px/1.3 var(--mono); color: var(--muted); text-align: center; }
+.chain .link::before { content: "\2192"; display: block; font-size: 16px; color: var(--ink-2); }
+.findbtn { all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 8px; width: 100%; margin: 10px 0 0; padding: 8px 10px;
+           border: 1px solid var(--line); border-radius: 9px; background: var(--panel); color: var(--ink-2); font: 500 13px var(--body); }
+.findbtn:hover, .findbtn:focus-visible { border-color: var(--both); color: var(--ink); }
+.findbtn svg { width: 16px; height: 16px; flex: none; }
+.layout.folded .side .findbtn { justify-content: center; padding: 8px 0; }
+.drawer { position: fixed; z-index: 50; top: 0; right: 0; bottom: 0; width: min(560px, 96vw); background: var(--bg); box-shadow: -10px 0 40px rgba(15, 23, 42, .18);
+          overflow-y: auto; padding: 16px 18px 30px; }
+.drawer.wide { width: min(1040px, 98vw); }
+.drawer .dr-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; position: sticky; top: -16px; background: var(--bg); padding: 4px 0 10px; z-index: 2; }
+.drawer .dr-head input { flex: 1 1 220px; width: auto; }
+.dscrim { display: none; }
+.dscrim.on { display: block; position: fixed; inset: 0; z-index: 45; background: rgba(15, 23, 42, .25); }
+.fp-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.fp h4 { font: 700 21px/1.15 var(--display); margin: 0 0 4px; }
+.fp .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px; color: var(--muted); margin-bottom: 10px; }
+.fp .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 8px 0 12px; }
+.fp .stats div { background: var(--chip); border-radius: 10px; padding: 8px 10px; font-size: 11.5px; color: var(--muted); }
+.fp .stats b { display: block; font: 700 18px var(--display); color: var(--ink); }
+.fp .stats b.win { color: var(--good); }
+.fp h5 { font: 600 13px var(--display); margin: 14px 0 6px; color: var(--ink); }
+.fp .qbar { display: flex; height: 12px; border-radius: 99px; overflow: hidden; gap: 2px; background: var(--grid); }
+.fp .qbar i { display: block; height: 100%; }
+.fp .qleg { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+.fp .care { background: #fff7e6; border: 1px solid #f3dca6; border-radius: 10px; padding: 8px 10px; font-size: 12.5px; color: #6b4a00; margin-top: 10px; }
+.fp .co { display: flex; flex-wrap: wrap; gap: 6px; }
+.fp .co button { all: unset; cursor: pointer; font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); }
+.fp .co button:hover { border-color: var(--both); }
+.fp ol { margin: 0; padding-left: 20px; display: grid; gap: 5px; font-size: 12.5px; color: var(--ink-2); }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 
@@ -193,32 +343,57 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   <div class="herostats" id="herostats"></div>
 </div></header>
 
-<div class="bar"><div class="wrap">
-  <div class="tabs" role="tablist" aria-label="Dashboard sections">
-    <button type="button" role="tab" id="tab-keyfindings" aria-controls="keyfindings" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9Z"/></svg>Key findings</button>
-    <button type="button" role="tab" id="tab-overview" aria-controls="overview" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Overview</button>
-    <button type="button" role="tab" id="tab-publications" aria-controls="publications" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2.5Z"/><path d="M8 7h6M8 11h6"/></svg>Publications</button>
-    <button type="button" role="tab" id="tab-trends" aria-controls="trends" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>AI &amp; research trends</button>
-    <button type="button" role="tab" id="tab-faculty" aria-controls="faculty" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"/></svg>Faculty</button>
-    <button type="button" role="tab" id="tab-citation" aria-controls="citation" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.4 7.6M17.7 8.2l-4.4 7.6"/></svg>Citation network</button>
-    <button type="button" role="tab" id="tab-coauthor" aria-controls="coauthor" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M8.5 7h7M7.3 9.2l3.4 5.6M16.7 9.2l-3.4 5.6"/></svg>Co-authorship</button>
-    <button type="button" role="tab" id="tab-growth" aria-controls="growth" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Network growth</button>
-    <button type="button" role="tab" id="tab-connections" aria-controls="connections" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Indian connections</button>
-    <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="m5 7-3 7a3.5 3.5 0 0 0 6 0Z"/><path d="m19 7-3 7a3.5 3.5 0 0 0 6 0Z"/></svg>Who's better?</button>
-    <button type="button" role="tab" id="tab-phase2" aria-controls="phase2" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6l1 4H8Z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1Z"/><path d="M11 11h2M11 15h2"/></svg>Phase II</button>
-    <button type="button" role="tab" id="tab-questions" aria-controls="questions" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17.5h.01"/></svg>Research questions</button>
-    <button type="button" role="tab" id="tab-methods" aria-controls="methods" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/><path d="m20.2 18.2 1.8 1.8"/></svg>How we built it</button>
-  </div>
-  <div class="seg" role="group" aria-label="Institute">
-    <button type="button" data-inst="Both" aria-pressed="true">Both NITs</button>
-    <button type="button" data-inst="NIT Trichy" aria-pressed="false"><span class="dot" style="background:var(--trichy)"></span>Trichy</button>
-    <button type="button" data-inst="NIT Surathkal" aria-pressed="false"><span class="dot" style="background:var(--surathkal)"></span>Surathkal</button>
-  </div>
-</div></div>
+<div class="mbar"><button type="button" class="btn" id="nav-open" aria-controls="side" aria-expanded="false">☰ Sections</button><b id="mbar-title">Overview</b></div>
+<div class="scrim" id="scrim"></div>
+<div class="layout wrap">
+  <aside class="side" id="side" aria-label="Sections">
+    <button type="button" class="fold" id="fold" aria-controls="side" aria-expanded="true" aria-label="Fold the sidebar" title="Fold the sidebar">«</button>
+    <div class="seg" role="group" aria-label="Institute">
+      <button type="button" data-inst="Both" aria-pressed="true" title="Both NITs"><span class="dot" style="background:var(--both)"></span><span class="lbl">Both</span></button>
+      <button type="button" data-inst="NIT Trichy" aria-pressed="false" title="NIT Trichy"><span class="dot" style="background:var(--trichy)"></span><span class="lbl">Trichy</span></button>
+      <button type="button" data-inst="NIT Surathkal" aria-pressed="false" title="NIT Surathkal"><span class="dot" style="background:var(--surathkal)"></span><span class="lbl">Surathkal</span></button>
+    </div>
+    <button type="button" class="findbtn" id="fp-open" title="Find a faculty member"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="lbl">Find a faculty member</span></button>
+    <nav class="tabs" role="tablist" aria-label="Dashboard sections" aria-orientation="vertical">
+      <p class="grp" role="presentation">Start</p>
+      <button type="button" role="tab" id="tab-home" aria-controls="home" aria-selected="true" title="Overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg><span class="lbl">Overview</span></button>
+      <button type="button" role="tab" id="tab-keyfindings" aria-controls="keyfindings" aria-selected="false" tabindex="-1" title="Key findings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9Z"/></svg><span class="lbl">Key findings</span></button>
+      <button type="button" role="tab" id="tab-overview" aria-controls="overview" aria-selected="false" tabindex="-1" title="Head to head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span class="lbl">Head to head</span></button>
+      <p class="grp" role="presentation">Output</p>
+      <button type="button" role="tab" id="tab-publications" aria-controls="publications" aria-selected="false" tabindex="-1" title="Publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2.5Z"/><path d="M8 7h6M8 11h6"/></svg><span class="lbl">Publications</span></button>
+      <button type="button" role="tab" id="tab-trends" aria-controls="trends" aria-selected="false" tabindex="-1" title="AI & research trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg><span class="lbl">AI &amp; research trends</span></button>
+      <button type="button" role="tab" id="tab-faculty" aria-controls="faculty" aria-selected="false" tabindex="-1" title="Faculty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"/></svg><span class="lbl">Faculty</span></button>
+      <p class="grp" role="presentation">Networks</p>
+      <button type="button" role="tab" id="tab-coauthor" aria-controls="coauthor" aria-selected="false" tabindex="-1" title="Co-authorship"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M8.5 7h7M7.3 9.2l3.4 5.6M16.7 9.2l-3.4 5.6"/></svg><span class="lbl">Co-authorship</span></button>
+      <button type="button" role="tab" id="tab-citation" aria-controls="citation" aria-selected="false" tabindex="-1" title="Citation network"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.4 7.6M17.7 8.2l-4.4 7.6"/></svg><span class="lbl">Citation network</span></button>
+      <button type="button" role="tab" id="tab-growth" aria-controls="growth" aria-selected="false" tabindex="-1" title="Network growth"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span class="lbl">Network growth</span></button>
+      <button type="button" role="tab" id="tab-connections" aria-controls="connections" aria-selected="false" tabindex="-1" title="Indian connections"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="lbl">Indian connections</span></button>
+      <p class="grp" role="presentation">Comparisons</p>
+      <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1" title="Who's better?"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="m5 7-3 7a3.5 3.5 0 0 0 6 0Z"/><path d="m19 7-3 7a3.5 3.5 0 0 0 6 0Z"/></svg><span class="lbl">Who's better?</span></button>
+      <button type="button" role="tab" id="tab-south" aria-controls="south" aria-selected="false" tabindex="-1" title="South Indian NITs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg><span class="lbl">South Indian NITs</span></button>
+      <p class="grp" role="presentation">Deep dives</p>
+      <button type="button" role="tab" id="tab-phase2" aria-controls="phase2" aria-selected="false" tabindex="-1" title="Phase II"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6l1 4H8Z"/><path d="M8 7h8v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1Z"/><path d="M11 11h2M11 15h2"/></svg><span class="lbl">Phase II</span></button>
+      <button type="button" role="tab" id="tab-questions" aria-controls="questions" aria-selected="false" tabindex="-1" title="Research questions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17.5h.01"/></svg><span class="lbl">Research questions</span></button>
+      <p class="grp" role="presentation">About</p>
+      <button type="button" role="tab" id="tab-methods" aria-controls="methods" aria-selected="false" tabindex="-1" title="How we built it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/><path d="m20.2 18.2 1.8 1.8"/></svg><span class="lbl">How we built it</span></button>
+    </nav>
+  </aside>
+<main>
 
-<main class="wrap">
+<section id="home" role="tabpanel" aria-labelledby="tab-home">
+  <h2>Overview</h2>
+  <p class="lede">The two NITs side by side, the strongest things we found (each card opens the panel with the evidence), and a map of the rest of the dashboard. Pick a section on the left; the institute switch above it changes most charts.</p>
+  <div class="grid">
+    <div class="panel s12"><h3>NIT Trichy and NIT Surathkal side by side</h3><p class="note">Faculty papers, 2016–2026. The better value in each row is in bold. "Level" means the gap is under 3%.</p>
+      <div class="tablewrap" data-keep><table class="cmp" id="t-home-cmp"></table></div></div>
+    <div class="s12"><h2 class="sec-h">What we found<small>open a card for the evidence</small></h2></div>
+    <div class="s12"><div class="ins-grid" id="home-cards"></div></div>
+    <div class="s12"><h2 class="sec-h">Explore the dashboard</h2></div>
+    <div class="s12"><div class="explore" id="home-explore"></div></div>
+  </div>
+</section>
 
-<section id="keyfindings" role="tabpanel" aria-labelledby="tab-keyfindings">
+<section id="keyfindings" role="tabpanel" aria-labelledby="tab-keyfindings" hidden>
   <h2>Key findings</h2>
   <p class="lede">The twelve strongest evidence-based conclusions from all our analyses, each with its headline number and the test behind it. They cover both NITs together, so the institute switch does not change this tab. Every number is read from the same data as the rest of the dashboard; follow a card's link for the full evidence.</p>
   <div class="kf-grid" id="kf-cards"></div>
@@ -244,6 +419,11 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s6"><h3>Conference ranks (CORE)</h3><p class="note">CORE ranks mainly computing conferences, so most of our conference papers are unranked.</p><div class="chart"><canvas id="ch-core" aria-label="CORE rank breakdown"></canvas></div></div>
     <div class="panel s7"><h3>Research areas</h3><p class="note">Papers by OpenAlex field (top 11, then the rest).</p><div class="chart tall"><canvas id="ch-fields" aria-label="Research areas"></canvas></div></div>
     <div class="panel s5"><h3>Q1 share over time</h3><p class="note">Q1 papers as a share of ranked journal papers, per year.</p><div class="chart tall"><canvas id="ch-q1trend" aria-label="Q1 share by year"></canvas></div></div>
+    <div class="panel s12" id="pb-bubbles"><h3>Which fields get the most citations?</h3><p class="note">Each bubble is an OpenAlex field: papers (log scale) against mean citations per paper, all papers including students' own. Older papers have had longer to be cited. Click a bubble to list that field's most-cited papers.</p>
+      <div class="grid"><div class="s8"><div class="chart tall"><canvas id="ch-bub" aria-label="Papers against mean citations by field"></canvas></div></div><div class="s4"><div class="pdet" id="bub-detail"></div></div></div></div>
+    <div class="panel s12" id="pb-conf"><h3>Where do our conference papers appear?</h3><p class="note">Faculty papers. Named conferences are single events such as IEEE TENCON (editions of different years together). Proceedings series are book series that collect many conferences, such as Lecture Notes in Civil Engineering. Badges are CORE ranks.</p>
+      <div class="tools"><select id="cf-dept" aria-label="Department"></select><div class="seg" role="group" aria-label="Venue kind"><button type="button" data-cf="named" aria-pressed="true">Named conferences</button><button type="button" data-cf="series" aria-pressed="false">Proceedings series</button></div></div>
+      <div class="grid" id="cf-cols"></div></div>
     <div class="panel s12"><h3>Journals and conferences per year</h3><p class="note">Papers per year by venue type.</p><div class="chart"><canvas id="ch-types" aria-label="Papers per year by type"></canvas></div></div>
     <div class="panel s12"><h3>Most-cited papers</h3><p class="note">Top 10 by citations (OpenAlex), with field-weighted impact (1.0 = world average for the field and year).</p><div class="tablewrap"><table id="t-cited"></table></div></div>
   </div>
@@ -301,12 +481,17 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   <p class="lede">Papers are nodes and an arrow means "cites". Drag to pan, scroll to zoom, click a paper for details. PageRank and in-degree are computed on citations between our own papers.</p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="cit-facts"></div></div>
-    <div class="panel s7"><h3>The most influential papers and who cites them</h3><p class="note" id="cg-note"></p>
-      <div class="legend"><span><span class="dot" style="background:var(--trichy)"></span>NIT Trichy</span><span><span class="dot" style="background:var(--surathkal)"></span>NIT Surathkal</span><span><span class="dot" style="background:var(--both)"></span>Both NITs</span><span>node size = PageRank · arrow = cites</span></div>
+    <div class="panel s12"><h3>The most influential papers and who cites them</h3><p class="note" id="cg-note"></p>
+      <div class="tools"><label class="chk">Top <input type="range" id="cg-n" min="10" max="100" step="10" value="30" aria-label="Number of top papers"><b id="cg-nl">30</b> papers by PageRank, with their links</label>
+        <label class="chk"><input type="checkbox" id="cg-self"> hide self-citations</label>
+        <select id="cg-col" aria-label="Colour by"><option value="inst">Colour by institute</option><option value="field">Colour by field</option><option value="year">Colour by year</option></select>
+        <select id="cg-field" aria-label="Field"></select><label class="chk"><input type="checkbox" id="cg-big"> leave out papers with 10+ authors</label><button type="button" class="btn" id="cg-reset">Reset</button></div>
+      <div class="legend" id="cg-legend"></div>
       <div class="graph" id="g-cit" role="img" aria-label="Citation network of the most influential papers"></div>
       <div class="info" id="cg-info">Click a paper to see its details.</div>
     </div>
-    <div class="panel s5"><h3>In-degree distribution</h3><p class="note">How many of our papers cite each paper (log–log). Most are never cited from inside; a few are cited dozens of times.</p><div class="chart tall"><canvas id="ch-indeg" aria-label="In-degree distribution"></canvas></div>
+    <div class="panel s6" id="cit-selfyear"><h3>Self-citations stay high every year</h3><p class="note">Share of citations between our own papers where the citing and cited papers share an author, by year of the citing paper.</p><div class="chart tall"><canvas id="ch-selfyear" aria-label="Self-citation share by year"></canvas></div></div>
+    <div class="panel s6"><h3>In-degree distribution</h3><p class="note">How many of our papers cite each paper (log–log). Most are never cited from inside; a few are cited dozens of times.</p><div class="chart tall"><canvas id="ch-indeg" aria-label="In-degree distribution"></canvas></div>
       <h3 style="margin-top:14px">Heavy tails: power law or log-normal?</h3><p class="note">Maximum-likelihood fits (powerlaw package). R &lt; 0 means log-normal fits better.</p><div class="tablewrap"><table id="t-fits"></table></div></div>
     <div class="panel s12"><h3>Top 10 papers by PageRank</h3><p class="note">Within citations between our own papers.</p><div class="tablewrap"><table id="t-pr"></table></div></div>
   </div>
@@ -328,6 +513,15 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     </div>
     <div class="panel s5"><h3>Top 10 by degree</h3><p class="note">Most faculty co-authors.</p><div class="tablewrap"><table id="t-deg"></table></div>
       <h3 style="margin-top:14px">Top 10 by betweenness</h3><p class="note">The bridges between groups.</p><div class="tablewrap"><table id="t-btw"></table></div></div>
+    <div class="panel s12" id="co-sep"><h3>Degrees of separation</h3><p class="note">Pick two faculty members to see the shortest chain of co-authors between them (faculty only; each step is at least one joint paper). The chain is also lit up on the network above. Click a person to open their profile.</p>
+      <div class="tools"><input type="search" id="sep-a" list="sep-list" placeholder="From: faculty name" aria-label="From"><button type="button" class="btn" id="sep-swap" title="Swap the two">&#8644;</button><input type="search" id="sep-b" list="sep-list" placeholder="To: faculty name" aria-label="To"><datalist id="sep-list"></datalist>
+        <button type="button" class="btn" id="sep-r2">Random pair &middot; two NITs</button><button type="button" class="btn" id="sep-r1">Random pair &middot; same NIT</button></div>
+      <div id="sep-out"></div></div>
+    <div class="panel s12" id="co-remove"><h3>What happens when faculty are removed one by one?</h3><p class="note">Remove faculty in the chosen order and watch the network break apart: the share of connected faculty still in the largest group, the number of separate groups, and the cut vertices (people whose removal alone would split a group; pink rings). The order is fixed from the full network. Follows the institute switch.</p>
+      <div class="tools"><select id="rm-by" aria-label="Remove first"><option value="btw">Bridges first (betweenness)</option><option value="degree">Most co-authors first</option><option value="papers">Most papers first</option><option value="random">Random order</option></select>
+        <button type="button" class="btn" id="rm-m1">&minus;1</button><input type="range" id="rm-k" min="0" max="100" value="0" aria-label="Faculty removed"><button type="button" class="btn" id="rm-p1">+1</button><button type="button" class="btn" id="rm-p5">+5</button><button type="button" class="btn" id="rm-play">&#9654; Play</button><button type="button" class="btn" id="rm-reset">Reset</button></div>
+      <div class="facts" id="rm-facts" style="margin-bottom:10px"></div>
+      <div class="grid"><div class="s7"><div class="graph" id="g-rm" style="height:460px" role="img" aria-label="Faculty network with the removed faculty faded"></div></div><div class="s5"><div class="chart tall"><canvas id="ch-rm" aria-label="Largest group as faculty are removed"></canvas></div></div></div></div>
     <div class="panel s6"><h3>Degree distribution</h3><p class="note">Faculty co-authors per faculty member (log–log).</p><div class="chart"><canvas id="ch-deg" aria-label="Degree distribution"></canvas></div></div>
     <div class="panel s6"><h3>Rich club</h3><p class="note">ρ(k) &gt; 1: faculty with more than k co-authors link to each other more than in random graphs with the same degrees.</p><div class="chart"><canvas id="ch-rich" aria-label="Rich club coefficient"></canvas></div></div>
     <div class="panel s12"><h3>Communities found (Louvain)</h3><p class="note" id="comm-note"></p><div class="tablewrap"><table id="t-comm"></table></div></div>
@@ -340,6 +534,15 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   <p class="lede">The faculty co-authorship network year by year (cumulative from 2016), how new links form, and whether we can predict them. (Team insight analyses, scripts/insights.py.)</p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="gr-facts"></div></div>
+    <div class="panel s12" id="gr-play"><h3>Watch the faculty network grow</h3><p class="note">Every faculty member with a faculty co-author, each placed once on the final network so nothing jumps. A link appears in the year of the pair's first joint paper. Follows the institute switch.</p>
+      <div class="tools"><button type="button" class="btn" id="gp-play">&#9654; Play</button><input type="range" id="gp-year" min="2016" max="2026" step="1" value="2026" aria-label="Year"><span class="chip" id="gp-label"></span><label class="chk"><input type="checkbox" id="gp-new" checked> highlight the year's new links</label></div>
+      <div class="facts" id="gp-facts" style="margin-bottom:10px"></div>
+      <div class="graph" id="g-grow" style="height:520px" role="img" aria-label="Faculty co-authorship network growing year by year"></div></div>
+    <div class="panel s7" id="gr-degree"><h3>Average co-authors per faculty member, year by year</h3><p class="note" id="gd-note"></p>
+      <div class="tools"><div class="seg" role="group" aria-label="Count faculty as"><button type="button" data-gd="connected" aria-pressed="true">Faculty with a co-author</button><button type="button" data-gd="pure" aria-pressed="false">All faculty (pure number)</button></div></div>
+      <div class="facts" id="gd-facts" style="margin-bottom:10px"></div><div class="chart"><canvas id="ch-gd" aria-label="Average co-authors by year"></canvas></div></div>
+    <div class="panel s5" id="gr-kernel"><h3>Do the rich get richer?</h3><p class="note">New faculty co-authors gained the next year, by how many a person already has (2016&ndash;2025, pooled). Rising bars: well-connected faculty attract more new collaborators.</p>
+      <div class="facts" id="gk-facts" style="margin-bottom:10px"></div><div class="chart"><canvas id="ch-gk" aria-label="New co-authors by current co-authors"></canvas></div></div>
     <div class="panel s6"><h3>Faculty and links</h3><p class="note">Connected faculty (at least one faculty co-author) and links, cumulative.</p><div class="chart"><canvas id="ch-gr-size" aria-label="Network size by year"></canvas></div></div>
     <div class="panel s6"><h3>Densification</h3><p class="note">Links against faculty, log–log, one point per year. A slope above 1 means links grow faster than people.</p><div class="chart"><canvas id="ch-dens" aria-label="Densification"></canvas></div></div>
     <div class="panel s4"><h3>A giant component forms</h3><p class="note">Share of faculty in the largest connected group.</p><div class="chart short"><canvas id="ch-gr-giant" aria-label="Largest component share"></canvas></div></div>
@@ -359,17 +562,21 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   <h2>Indian connections</h2>
   <p class="lede">How each NIT links to other Indian institutes. A citation between two papers that share an institute through co-authorship is not counted as a link (e.g. NIT Trichy citing its own paper with IIT Madras).</p>
   <div class="grid">
+    <div class="panel s12" id="cn-summary"><div class="cn-cards" id="cn-cards"></div></div>
     <div class="panel s7"><h3>Citation flow with other Indian institutes</h3><p class="note">Citations received from and given to other Indian institutes, by year of the citing paper. Solid = received, dashed = given.</p><div class="chart"><canvas id="ch-flow" aria-label="Citation flow by year"></canvas></div></div>
     <div class="panel s5"><h3>Impact ratio</h3><p class="note">Citations received ÷ citations made, by publication year. Recent papers have had little time to be cited, so the ratio falls towards 2026.</p><div class="chart"><canvas id="ch-ir" aria-label="Impact ratio by year"></canvas></div></div>
     <div class="panel s6"><h3>Co-authored papers by type of partner</h3><p class="note">A paper counts once for each partner on it (log scale). All non-NIT clusters are cross-cluster links.</p><div class="chart tall"><canvas id="ch-clusters" aria-label="Partners by cluster"></canvas></div></div>
-    <div class="panel s6"><h3>Strongest co-authorship partners</h3><p class="note">Top 10 per NIT by shared papers. Joint-paper FWCI = mean field-weighted impact of the papers written with that partner; the chip shows the gap to the NIT's own average (does collaborating pay off?).</p><div class="tablewrap"><table id="t-partners"></table></div></div>
-    <div class="panel s6"><h3>Top 10 Indian institutes citing us</h3><p class="note">Citations from the partner's papers to ours (the other NIT left out).</p><div class="tablewrap"><table id="t-citing"></table></div></div>
+    <div class="panel s6"><h3>Strongest co-authorship partners</h3><p class="note">The 12 partners with the most joint papers (faculty papers). The table adds joint-paper FWCI: mean field-weighted impact of the papers written with that partner, and its gap to the NIT's own average.</p><div class="chart tall"><canvas id="ch-partners" aria-label="Top partners by joint papers"></canvas></div><div class="tablewrap"><table id="t-partners"></table></div></div>
+    <div class="panel s6"><h3>Indian institutes that cite us most</h3><p class="note">Citations from their papers to ours (the other NIT left out).</p><div class="chart tall"><canvas id="ch-citing" aria-label="Institutes citing us most"></canvas></div><div class="tablewrap"><table id="t-citing"></table></div></div>
     <div class="panel s6"><h3>Partners worth approaching</h3><p class="note">Similar research topics (Jaccard of subfields) and heavy citation exchange, but at most 5 joint papers.</p><div class="tablewrap"><table id="t-opp"></table></div></div>
+    <div class="panel s12" id="cn-heat"><h3>Who works with whom</h3><p class="note">The top 8 partners of each NIT, combined: joint papers as a share of each NIT's faculty papers (darker = bigger share; the count is in brackets).</p><div class="tablewrap" data-keep><table class="heat" id="t-heat"></table></div></div>
     <div class="panel s12"><h3>Hub faculty</h3><p class="note">Faculty who connect their NIT with the most other Indian institutes.</p><div class="tablewrap"><table id="t-hubs"></table></div></div>
     <div class="panel s12"><h3>The knowledge hierarchy</h3><p class="note" id="hier-note"></p><div class="chart"><canvas id="ch-hier" aria-label="Citations received per citation given, by cluster"></canvas></div></div>
-    <div class="panel s7"><h3>Where our partners are</h3><p class="note">Indian institutes linked to the NIT (co-authorship or 30+ citations exchanged). Bubble size = joint papers; gray = citations only. Stars = our NITs.</p><div style="position:relative"><canvas id="ch-map" aria-label="Map of partner institutes"></canvas></div></div>
+    <div class="panel s12" id="cn-map"><h3>Where our partners are</h3><p class="note">Indian institutes linked to the NIT. Tick co-authorship, citations or both: filled dots = joint papers, rings = citations exchanged (30 or more); the bigger, the more. Hover for the name, click for the details. Stars = our NITs. Outline: India's border (DataMeet).</p>
+      <div class="tools"><label class="chk"><input type="checkbox" id="mp-co" checked> Co-authorship (joint papers)</label><label class="chk"><input type="checkbox" id="mp-cit" checked> Citations exchanged</label><span class="chip" id="mp-count"></span></div>
+      <div class="grid"><div class="s7"><div style="position:relative;max-width:640px;margin:0 auto"><canvas id="ch-map" aria-label="Map of partner institutes"></canvas></div></div><div class="s5"><div class="pdet" id="mp-detail"><p>Click a dot on the map to see that partner: joint papers per year, our faculty on them, citations each way and the most-cited joint papers.</p></div></div></div></div>
     <div class="panel s5"><h3>Gravity model</h3><p class="note">Poisson regression on partner size and distance. Elasticity = % change for a 1% longer distance.</p><div class="tablewrap"><table id="t-gravity"></table></div></div>
-    <div class="panel s12"><h3>People work locally, knowledge travels</h3><p class="note">Both NITs together: the share of all joint papers and of all citations exchanged with Indian partners, by distance from the NIT.</p><div class="facts" id="local-facts" style="margin-bottom:14px"></div><div class="chart"><canvas id="ch-local" aria-label="Joint papers and citations by distance"></canvas></div></div>
+    <div class="panel s7"><h3>People work locally, knowledge travels</h3><p class="note">Both NITs together: the share of all joint papers and of all citations exchanged with Indian partners, by distance from the NIT.</p><div class="facts" id="local-facts" style="margin-bottom:14px"></div><div class="chart"><canvas id="ch-local" aria-label="Joint papers and citations by distance"></canvas></div></div>
     <div class="panel s12"><h3>Topic similarity vs joint papers</h3><p class="note">Each dot is a main partner: weighted Jaccard similarity of research subfields against shared papers (log).</p><div class="chart tall"><canvas id="ch-topic" aria-label="Topic similarity vs shared papers"></canvas></div></div>
     <div class="panel s12"><h3>Most-cited papers that cite us</h3><p class="note">Top papers from other Indian institutes that cite each NIT (retracted papers left out).</p><div class="tablewrap"><table id="t-citers"></table></div></div>
   </div>
@@ -391,6 +598,22 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   </div>
 </section>
 
+<section id="south" role="tabpanel" aria-labelledby="tab-south" hidden>
+  <h2>South Indian NITs</h2>
+  <p class="lede" id="so-lede"></p>
+  <div class="grid">
+    <div class="panel s12"><div class="facts" id="so-facts"></div></div>
+    <div class="panel s12" id="so-table-p"><h3>The six NITs side by side</h3><p class="note">Papers: OpenAlex, any author from the NIT (students' papers included), the same filter for all six. Faculty: each NIT's NIRF 2025 data file. Network: NIRF faculty matched by name to OpenAlex authors. All six are built this way, so compare them only with each other: the other tabs use our own faculty lists for each year (which also keep people who left) and hand-checked author IDs, which is why Trichy's a is 1.41 here but 1.61 there (Surathkal 1.74 here, 1.70 there).</p><div class="tablewrap" data-keep><table id="t-south"></table></div></div>
+    <div class="panel s6" id="so-found"><h3>The more a NIT hired recently, the slower its faculty network densifies</h3><p class="note" id="so-found-note"></p><div class="chart tall"><canvas id="ch-so-found" aria-label="Recent hiring against the densification exponent"></canvas></div></div>
+    <div class="panel s6" id="so-exp"><h3>Densification exponent a at each NIT</h3><p class="note">Faculty-only network, links &prop; (connected faculty)<sup>a</sup>. Above 1 = links grow faster than people.</p><div class="chart tall"><canvas id="ch-so-exp" aria-label="Densification exponent by NIT"></canvas></div></div>
+    <div class="panel s6"><h3>Papers per year</h3><p class="note">All papers with an author from the NIT. 2026 is left out (partial year).</p><div class="chart"><canvas id="ch-so-papers" aria-label="Papers per year at six NITs"></canvas></div></div>
+    <div class="panel s6" id="so-deg"><h3>Average co-authors per faculty member</h3><p class="note">Faculty-only network, up to each year.</p>
+      <div class="tools"><div class="seg" role="group" aria-label="Count faculty as"><button type="button" data-sod="connected" aria-pressed="true">Faculty with a co-author</button><button type="button" data-sod="pure" aria-pressed="false">All faculty (pure number)</button></div></div><div class="chart"><canvas id="ch-so-deg" aria-label="Average co-authors at six NITs"></canvas></div></div>
+    <div class="panel s7"><h3>When today's faculty were hired</h3><p class="note">People on each NIT's NIRF 2025 list, by joining year, 2016&ndash;2025.</p><div class="chart"><canvas id="ch-so-hires" aria-label="Hires per year at six NITs"></canvas></div></div>
+    <div class="panel s5"><h3>Hiring waves lower the exponent inside each NIT too</h3><p class="note" id="so-roll-note"></p><div class="chart"><canvas id="ch-so-roll" aria-label="Hiring against the exponent in 4-year windows"></canvas></div></div>
+  </div>
+</section>
+
 <section id="methods" role="tabpanel" aria-labelledby="tab-methods" hidden>
   <h2>How we built it</h2>
   <p class="lede">From the institutes' own faculty pages to the networks: every number on this dashboard comes from the scripts in our repository and can be re-run.</p>
@@ -406,6 +629,7 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
 <section id="phase2" role="tabpanel" aria-labelledby="tab-phase2" hidden>
   <h2>Phase II additions</h2>
   <div class="grid">
+    <div class="s12 grp-h" data-chip="Totals and students"><h2>Totals, and students' own papers</h2></div>
     <div class="panel s12"><div class="facts" id="p2-facts"></div></div>
     <div class="panel s7"><h3>Papers per year: faculty papers vs all papers</h3><p class="note">All papers = faculty papers + papers with an NIT author but no NIT faculty author. 2026 is a partial year.</p><div class="chart"><canvas id="ch-p2-trend" aria-label="Papers per year in both scopes"></canvas></div></div>
     <div class="panel s5"><h3>Students' own papers are not weaker</h3><p class="note">Papers with an NIT author but no NIT faculty author (mostly research scholars).</p><div class="tablewrap"><table id="t-p2-students"></table></div></div>
@@ -414,8 +638,10 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s6"><h3>Large teams and very high citations</h3><p class="note">The checks for physics-style large collaborations and 1-lakh-citation profiles.</p><div class="facts" id="p2-flag-facts" style="margin-bottom:12px"></div><div class="tablewrap"><table id="t-p2-career"></table></div></div>
     <div class="panel s12"><h3>Q1 papers in journals with IF &gt; 5 and IF &gt; 10, by department</h3><p class="note">Faculty papers. Sorted by Q1 and IF &gt; 5.</p><div class="tablewrap"><table id="t-p2-q1if"></table></div></div>
     <div class="panel s12"><h3>Collaborating institutions per year</h3><p class="note">Distinct other institutions on each year's papers (all papers). The other NIT counts as a partner. 2026 is partial.</p><div class="facts" id="p2-collab-facts" style="margin-bottom:12px"></div><div class="chart"><canvas id="ch-p2-collab" aria-label="Collaborating institutions per year"></canvas></div></div>
-    <div class="panel s12"><h3>Why do private universities cite us so much?</h3><p class="note">The 40 institutes that cite our faculty papers most (18 private, 22 public). Medians per institute, Mann–Whitney test.</p><div class="facts" id="p2-citer-facts" style="margin-bottom:12px"></div>
+    <div class="s12 grp-h" data-chip="Who cites us"><h2>Who cites us, and why private universities cite us so much</h2></div>
+    <div class="panel s12" id="p2-citers"><h3>Why do private universities cite us so much?</h3><p class="note">The 40 institutes that cite our faculty papers most (18 private, 22 public). Medians per institute, Mann–Whitney test.</p><div class="facts" id="p2-citer-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s5"><div class="tablewrap"><table id="t-p2-citecmp"></table></div></div><div class="s7"><div class="tablewrap" style="max-height:420px;overflow-y:auto"><table id="t-p2-citers"></table></div></div></div></div>
+    <div class="s12 grp-h" data-chip="Papers and people"><h2>Top papers, venues and people</h2></div>
     <div class="panel s12"><h3>Top 30 publications by journal impact factor</h3><p class="note">Ordered by the journal's IF, ties by the paper's citations. SCImago-ranked journals only. Both NITs.</p>
       <div class="tools"><div class="seg" role="group" aria-label="Scope"><button type="button" data-p2top="all" aria-pressed="true">All papers</button><button type="button" data-p2top="faculty" aria-pressed="false">Faculty papers</button></div></div>
       <div class="tablewrap"><table id="t-p2-top30"></table></div></div>
@@ -431,6 +657,13 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s12"><h3>Collaboration ranking</h3><p class="note">Collaboration score = mean percentile of NIT faculty co-authors, Indian partner institutes and foreign partner institutes. The research score (7 measures) is unchanged.</p>
       <div class="tools"><input type="search" id="p2-cr-search" placeholder="Search faculty" aria-label="Search faculty"><span class="chip" id="p2-cr-count"></span></div>
       <div class="tablewrap"><table id="t-p2-collab"></table></div><div class="tools" style="margin-top:10px"><button type="button" class="btn" id="p2-cr-more">Show more</button></div></div>
+    <div class="panel s12" id="p2-depth-rank"><h3>Is Surathkal ahead per person? Compare like with like</h3><p class="note">Faculty only. Median papers a year while on the faculty list, by latest rank (Mann–Whitney test, bold if p &lt; 0.05). The models on the right add rank, then department, to a regression of papers a year. Both NITs.</p>
+      <div class="facts" id="p2-rank-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s8"><div class="tablewrap"><table id="t-p2-rank"></table></div></div><div class="s4"><div class="tablewrap"><table id="t-p2-rank-models"></table></div></div></div></div>
+    <div class="panel s12" id="p2-depth-hire"><h3>Hiring vs leaving, 2016 → 2026</h3><p class="note">Each person's first and last year on the yearly faculty pages. Rank is the latest one, so promotions cannot be told apart from hiring.</p>
+      <div class="facts" id="p2-hire-facts" style="margin-bottom:12px"></div>
+      <div class="grid"><div class="s5"><div class="chart"><canvas id="ch-p2-headcount" aria-label="Faculty on the list per year"></canvas></div></div><div class="s7"><div class="tablewrap"><table id="t-p2-hire"></table></div></div></div></div>
+    <div class="s12 grp-h" data-chip="Networks"><h2>Networks: institutes, mixing, self-citations, new links</h2></div>
     <div class="panel s12"><h3>Institute-level co-authorship network</h3><p class="note">Indian institutes on our papers (students' papers included), linked when they appear on the same paper. Both NITs.</p><div class="facts" id="p2-net-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s7"><h3 style="font-size:14px">Most important partner institutes (betweenness)</h3><div class="tablewrap"><table id="t-p2-nodes"></table></div></div><div class="s5"><h3 style="font-size:14px">By institute type</h3><div class="tablewrap"><table id="t-p2-clusters"></table></div></div></div></div>
     <div class="panel s12"><h3>Assortative or disassortative?</h3><p class="note">Degree assortativity r: do well-connected nodes link to other well-connected nodes (r &gt; 0, assortative) or to poorly connected ones (r &lt; 0, disassortative)? Each network is compared with degree-preserving rewired copies, which keep every node's number of links and randomise only who links to whom. The institute network is shown with and without our two NITs, because as hubs of our own papers they make it disassortative partly by construction. Both NITs.</p>
@@ -439,18 +672,13 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
     <div class="panel s4"><h3>Faculty co-authorship</h3><p class="note">Average co-author degree k<sub>nn</sub> of faculty with k co-authors (log–log). Rising = assortative.</p><div class="chart"><canvas id="ch-p2-knn-fac" aria-label="k_nn for the faculty network"></canvas></div></div>
     <div class="panel s4"><h3>Institute co-authorship</h3><p class="note">Average partner degree of institutes with k partners, with and without our two NITs. Falling = disassortative.</p><div class="chart"><canvas id="ch-p2-knn-inst" aria-label="k_nn for the institute network"></canvas></div></div>
     <div class="panel s4"><h3>Citation network</h3><p class="note">Papers that cite k of our papers: how often the papers they cite are cited by us (mean in-degree).</p><div class="chart"><canvas id="ch-p2-knn-cit" aria-label="k_nn for the citation network"></canvas></div></div>
-    <div class="panel s12" id="p2-depth-rank"><h3>Is Surathkal ahead per person? Compare like with like</h3><p class="note">Faculty only. Median papers a year while on the faculty list, by latest rank (Mann–Whitney test, bold if p &lt; 0.05). The models on the right add rank, then department, to a regression of papers a year. Both NITs.</p>
-      <div class="facts" id="p2-rank-facts" style="margin-bottom:12px"></div>
-      <div class="grid"><div class="s8"><div class="tablewrap"><table id="t-p2-rank"></table></div></div><div class="s4"><div class="tablewrap"><table id="t-p2-rank-models"></table></div></div></div></div>
-    <div class="panel s12" id="p2-depth-hire"><h3>Hiring vs leaving, 2016 → 2026</h3><p class="note">Each person's first and last year on the yearly faculty pages. Rank is the latest one, so promotions cannot be told apart from hiring.</p>
-      <div class="facts" id="p2-hire-facts" style="margin-bottom:12px"></div>
-      <div class="grid"><div class="s5"><div class="chart"><canvas id="ch-p2-headcount" aria-label="Faculty on the list per year"></canvas></div></div><div class="s7"><div class="tablewrap"><table id="t-p2-hire"></table></div></div></div></div>
     <div class="panel s12" id="p2-depth-self"><h3>Most influential papers without self-citations</h3><p class="note">PageRank on citations between our own papers, keeping only citations where the citing and cited papers share no author. The list with self-citations is in the Citation network tab. Both NITs.</p>
       <div class="facts" id="p2-self-facts" style="margin-bottom:12px"></div>
       <div class="tablewrap"><table id="t-p2-self"></table></div></div>
     <div class="panel s12" id="p2-depth-links"><h3>Which new links would help the faculty network most?</h3><p class="note">A what-if calculation, following Barnes et al. (2026). Network efficiency is the average of 1 / distance over all pairs of faculty. We add, one at a time, the 10 new links between faculty of the same department that raise it most, and compare with 10 random links. It shows where a link would help the network, not who wants to work together. Both NITs.</p>
       <div class="facts" id="p2-link-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><h3 style="font-size:14px">Same NIT, same department</h3><div class="tablewrap"><table id="t-p2-links-in"></table></div></div><div class="s6"><h3 style="font-size:14px">Across the two NITs, same department</h3><div class="tablewrap"><table id="t-p2-links-x"></table></div></div></div></div>
+    <div class="s12 grp-h" data-chip="Professor's follow-ups"><h2>Follow-ups from the professor's meeting (17 Nov)</h2></div>
     <div class="panel s12" id="p2-prof-degree"><h3>Average co-authors over the years, and what 1.66 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
       <div class="facts" id="pf-degree-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><div class="chart"><canvas id="ch-pf-degree" aria-label="Average co-authors per year"></canvas></div></div><div class="s6"><div class="chart"><canvas id="ch-pf-degree4" aria-label="Average co-authors at four NITs"></canvas></div></div></div></div>
@@ -473,70 +701,70 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
   <div class="grid">
     <div class="panel s12"><h3>The answers in one line each</h3><ol id="q-answers" start="1" style="margin:6px 0 0;padding-left:22px;line-height:1.7"></ol></div>
 
-    <div class="s12"><h2 style="margin-top:8px">15 · Which countries do we work with, and does it help?</h2></div>
+    <div class="s12" data-chip="15 Countries"><h2 style="margin-top:8px">15 · Which countries do we work with, and does it help?</h2></div>
     <div class="panel s12"><div class="facts" id="q15-facts"></div></div>
     <div class="panel s7"><h3>Top 15 partner countries</h3><p class="note">Papers with a co-author from that country, 2016–2026 (all papers).</p><div class="chart tall"><canvas id="ch-q15-countries" aria-label="Top partner countries"></canvas></div></div>
     <div class="panel s5"><h3>Impact difference by country</h3><p class="note">Adjusted FWCI difference vs papers without that country (countries with 100+ papers).</p><div class="chart tall"><canvas id="ch-q15-ci" aria-label="FWCI difference by country"></canvas></div></div>
     <div class="panel s6"><h3>Share of papers with a foreign co-author</h3><p class="note">2026 is partial.</p><div class="chart"><canvas id="ch-q15-year" aria-label="Foreign co-author share by year"></canvas></div></div>
     <div class="panel s6"><h3>Is a country link one person's network?</h3><p class="note">The NIT faculty member on most of each country's papers.</p><div class="tablewrap" style="max-height:290px;overflow-y:auto"><table id="t-q15"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">16 · Does partnering with stronger institutes raise impact?</h2></div>
+    <div class="s12" data-chip="16 Partner strength"><h2 style="margin-top:8px">16 · Does partnering with stronger institutes raise impact?</h2></div>
     <div class="panel s7"><h3>Impact difference by partner type</h3><p class="note">Adjusted FWCI difference when this partner type is on the paper.</p><div class="chart tall"><canvas id="ch-q16" aria-label="FWCI difference by partner type"></canvas></div></div>
     <div class="panel s5"><h3>Partner types</h3><p class="note">Papers (both NITs), raw mean FWCI and adjusted difference.</p><div class="tablewrap"><table id="t-q16"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">17 · Key-person risk: what if hub faculty leave?</h2></div>
+    <div class="s12" data-chip="17 Key people"><h2 style="margin-top:8px">17 · Key-person risk: what if hub faculty leave?</h2></div>
     <div class="panel s12"><div class="facts" id="q17-facts"></div></div>
     <div class="panel s7"><h3>How the faculty network breaks</h3><p class="note">Pairs of faculty who can still reach each other as faculty are removed: bridges first (betweenness, recomputed), most-connected first, or at random (mean of 100 runs).</p><div class="chart tall"><canvas id="ch-q17" aria-label="Network robustness"></canvas></div></div>
     <div class="panel s5"><h3>Most critical people overall</h3><p class="note">Share of all connected faculty pairs cut if this one person leaves.</p><div class="tablewrap"><table id="t-q17-top"></table></div></div>
     <div class="panel s12"><h3>Who holds each department together?</h3><p class="note">Inside each department's own collaboration network: the person whose departure cuts most pairs.</p><div class="tablewrap"><table id="t-q17-dept"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">18 · Do people who left differ from those who stayed?</h2></div>
+    <div class="s12" data-chip="18 Who left"><h2 style="margin-top:8px">18 · Do people who left differ from those who stayed?</h2></div>
     <div class="panel s6"><h3>Former vs current faculty</h3><p class="note" id="q18-note">Medians, faculty with papers. Choose a rank:</p>
       <div class="tools"><select id="q18-rank" aria-label="Rank"><option value="all ranks">All ranks</option><option>Assistant Professor</option><option>Associate Professor</option><option>Professor</option><option>Professor (HAG)</option></select></div>
       <div class="tablewrap"><table id="t-q18"></table></div></div>
     <div class="panel s6"><h3>Where did they go?</h3><p class="note">Last institution on each former faculty member's OpenAlex profile.</p><div class="chart"><canvas id="ch-q18" aria-label="Where former faculty went"></canvas></div></div>
     <div class="panel s12"><h3>Faculty who moved to other institutes</h3><p class="note">The brain drain is junior: most movers were Assistant Professors.</p><div class="tablewrap"><table id="t-q18-moved"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">19 · How unequal is research output?</h2></div>
+    <div class="s12" data-chip="19 Inequality"><h2 style="margin-top:8px">19 · How unequal is research output?</h2></div>
     <div class="panel s6"><h3>Lorenz curve of citations</h3><p class="note">Faculty sorted from least to most cited. The diagonal = perfect equality.</p><div class="chart"><canvas id="ch-q19" aria-label="Lorenz curve"></canvas></div></div>
     <div class="panel s6"><h3>Inequality measures</h3><p class="note">Faculty with papers. Gini 0 = equal, 1 = one person has everything.</p><div class="tablewrap"><table id="t-q19"></table></div><p class="note" id="q19-lotka" style="margin-top:12px"></p></div>
     <div class="panel s12"><h3>By department</h3><p class="note">Departments with 8+ faculty with papers, most unequal first.</p><div class="tablewrap"><table id="t-q19-dept"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">20 · Who leads the research: senior or junior faculty?</h2></div>
+    <div class="s12" data-chip="20 Who leads"><h2 style="margin-top:8px">20 · Who leads the research: senior or junior faculty?</h2></div>
     <div class="panel s6"><h3>Position in the author list, by rank</h3><p class="note" id="q20-note"></p><div class="chart"><canvas id="ch-q20" aria-label="Author position by rank"></canvas></div></div>
     <div class="panel s6"><h3>Junior faculty are becoming supervisors</h3><p class="note">Share of each rank's papers where the faculty member is first author. 2026 is partial.</p><div class="chart"><canvas id="ch-q20-year" aria-label="First-author share by year"></canvas></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">21 · Do specialists or generalists have more impact?</h2></div>
+    <div class="s12" data-chip="21 Specialists"><h2 style="margin-top:8px">21 · Do specialists or generalists have more impact?</h2></div>
     <div class="panel s6"><h3>Impact by research breadth</h3><p class="note">Faculty with 10+ papers in four equal groups by the variety of their subfields (10 random papers each).</p><div class="chart"><canvas id="ch-q21" aria-label="FWCI by breadth group"></canvas></div></div>
     <div class="panel s6"><h3>Correlation with breadth (Spearman)</h3><p class="note">Weak overall, and mostly gone once the number of papers is accounted for.</p><div class="tablewrap"><table id="t-q21"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">22–23 · Where to publish?</h2></div>
+    <div class="s12" data-chip="22–23 Where to publish"><h2 style="margin-top:8px">22–23 · Where to publish?</h2></div>
     <div class="panel s6"><h3>Impact by venue type</h3><p class="note">Adjusted FWCI difference vs a paper in a Q1 journal.</p><div class="chart"><canvas id="ch-q22" aria-label="FWCI by venue type"></canvas></div></div>
     <div class="panel s6"><h3>Conference papers as a share of all papers</h3><p class="note">2026 is partial.</p><div class="chart"><canvas id="ch-q22-year" aria-label="Conference share by year"></canvas></div></div>
     <div class="panel s12"><h3>The most-used venues (100+ papers)</h3><p class="note">Adjusted FWCI difference vs all other papers of the same field and year.</p><div class="tablewrap"><table id="t-q23"></table></div></div>
     <div class="panel s12"><h3>Conference papers by department</h3><p class="note">Faculty papers; departments with 50+ papers, most conference-heavy first.</p><div class="tablewrap"><table id="t-q22-dept"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">24 · Does open access raise citations?</h2></div>
+    <div class="s12" data-chip="24 Open access"><h2 style="margin-top:8px">24 · Does open access raise citations?</h2></div>
     <div class="panel s6"><h3>Impact by open-access status</h3><p class="note">Adjusted FWCI difference vs closed papers; dark = same field, year and team; light = also the same venue type.</p><div class="chart"><canvas id="ch-q24" aria-label="FWCI by open-access status"></canvas></div></div>
     <div class="panel s6"><h3>Open-access share by year</h3><p class="note" id="q24-note"></p><div class="chart"><canvas id="ch-q24-year" aria-label="Open-access share by year"></canvas></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">25 · "Rich get richer": do well-cited papers gain citations faster?</h2></div>
+    <div class="s12" data-chip="25 Rich get richer"><h2 style="margin-top:8px">25 · "Rich get richer": do well-cited papers gain citations faster?</h2></div>
     <div class="panel s12"><div class="facts" id="q25-facts"></div></div>
     <div class="panel s7"><h3>Attachment kernel</h3><p class="note">New citations next year (relative to papers of the same year and age) against citations already received (log–log). A slope of 1 is linear preferential attachment.</p><div class="chart tall"><canvas id="ch-q25" aria-label="Attachment kernel"></canvas></div></div>
     <div class="panel s5"><h3>Early winners stay winners</h3><p class="note">Papers in the top 10% after 2 years that are still in the top 10% after 5 years, by publication year.</p><div class="chart tall"><canvas id="ch-q25-stay" aria-label="Top papers stay on top"></canvas></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">26 · How much do departments cite their own institute?</h2></div>
+    <div class="s12" data-chip="26 Home citations"><h2 style="margin-top:8px">26 · How much do departments cite their own institute?</h2></div>
     <div class="panel s12"><div class="facts" id="q26-facts"></div></div>
     <div class="panel s7"><h3>Citations received from home, by department</h3><p class="note">Self = the citing paper shares an author with the cited one; colleague = another person from the same NIT. Indian citing papers only, so these are lower bounds.</p><div class="chart" style="height:560px"><canvas id="ch-q26" aria-label="Home citations by department"></canvas></div></div>
     <div class="panel s5"><h3>Home share by publication year</h3><p class="note">Solid = citations received from home; dashed = references pointing home. 2016–2025 (2026 is partial and its early citations are mostly self-citations).</p><div class="chart tall"><canvas id="ch-q26-year" aria-label="Home share by year"></canvas></div></div>
     <div class="panel s12"><h3>Departments</h3><p class="note">Faculty papers; departments with 50+ papers. Rank = rank by citations per paper among the 28 departments.</p><div class="tablewrap"><table id="t-q26"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">27 · How sensitive are the results to name matching?</h2></div>
+    <div class="s12" data-chip="27 Name matching"><h2 style="margin-top:8px">27 · How sensitive are the results to name matching?</h2></div>
     <div class="panel s12"><h3>Main results without the doubtful faculty links</h3><p class="note" id="q27-note"></p>
       <div class="tools"><div class="seg" role="group" aria-label="Which links"><button type="button" data-q27="drop single" aria-pressed="true">463 single-paper name matches</button><button type="button" data-q27="drop only" aria-pressed="false">96 strict doubtful</button></div></div>
       <div class="tablewrap"><table id="t-q27"></table></div></div>
 
-    <div class="s12"><h2 style="margin-top:8px">28 · Citation manipulation check</h2></div>
+    <div class="s12" data-chip="28 Citation checks"><h2 style="margin-top:8px">28 · Citation manipulation check</h2></div>
     <div class="panel s12"><div class="facts" id="q28-facts"></div></div>
     <div class="panel s7"><h3>Papers that cite many of ours at once</h3><p class="note" id="q28-note"></p><div class="tablewrap"><table id="t-q28-dist"></table></div>
       <h3 style="margin-top:16px">Where faculty citations come from</h3><p class="note">Shares of each person's citations (2016–2026 papers), faculty with 100+ citations. Names are in q28_faculty_citation_sources.csv.</p><div class="tablewrap"><table id="t-q28-spread"></table></div></div>
@@ -547,6 +775,13 @@ footer { color: var(--muted); font-size: 12.5px; padding-block: 0 30px; }
 </section>
 
 </main>
+</div>
+
+<aside class="drawer" id="fp" aria-label="Faculty profile" hidden>
+  <div class="dr-head"><input type="search" id="fp-q" list="fp-list" placeholder="Type a faculty name" aria-label="Faculty member"><input type="search" id="fp-q2" list="fp-list" placeholder="Compare with (optional)" aria-label="Compare with"><datalist id="fp-list"></datalist><button type="button" class="btn" id="fp-close">Close</button></div>
+  <div id="fp-body"></div>
+</aside>
+<div class="dscrim" id="fp-scrim"></div>
 
 <footer><div class="wrap">Built from the Team 12 repository (scripts/build_dashboard.py). Sources: OpenAlex, institute faculty pages (current and archived), SCImago (quartiles), CORE (conference ranks).</div></footer>
 
@@ -560,6 +795,8 @@ try { const s = localStorage.getItem("dpcn-inst"); if (s && ["Both", ...INSTS].i
 const $ = (s) => document.querySelector(s);
 const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const fmt = (n, d = 0) => n == null || Number.isNaN(n) ? "–" : Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+// exponents come with 4 decimals (1.6545); round them as the full value would (1.65), not up from the stored digit
+const fa = (x, d = 2) => x == null || Number.isNaN(x) ? "–" : fmt(x - 1e-9 * Math.sign(x), d);
 const pct = (x, d = 0) => x == null ? "–" : (100 * x).toFixed(d) + "%";
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const instColor = (i) => i === "NIT Trichy" ? css("--trichy") : i === "NIT Surathkal" ? css("--surathkal") : css("--both");
@@ -604,13 +841,11 @@ function hero() {
   $("#herostats").innerHTML = items.map(([, l]) => `<div class="hs"><div class="v">0</div><div class="l">${l}</div></div>`).join("");
   $("#herostats").querySelectorAll(".v").forEach((el, k) => countUp(el, items[k][0]));
 }
-function overview() {
+function scoreMeasures() {
+  // the twelve head-to-head measures, shared by the Overview table and the Head to head scoreboard
   const a = D.analysis, R = Object.fromEntries(a.institutes.map((r) => [r.institution, r]));
   const T = (i) => D.papers[i].totals;
-  $("#ov-lede").innerHTML = `Both NITs publish about the same number of papers. NIT Trichy gets more citations per paper; NIT Surathkal
-    faculty publish more each. After adjusting for branch, year and collaboration, their field-weighted impact is <b>statistically the same</b>,
-    and the real differences show up branch by branch.`;
-  const M = [
+  return [
     ["Papers", "2016–2026", (i) => T(i).papers, 0],
     ["Citations received", "to these papers", (i) => T(i).citations, 0],
     ["Citations per paper", "mean", (i) => R[i].cites_per_paper, 1],
@@ -624,6 +859,170 @@ function overview() {
     ["Papers per faculty member", "productivity", (i) => R[i].papers_per_faculty, 1],
     ["Median h-index", "faculty, 2016–2026 papers", (i) => R[i].median_h_index_2016_2026, 1],
   ];
+}
+
+/* ---------------- overview (landing page) ---------------- */
+function miniChart(id, type, labels, datasets, o = {}) {
+  // a small chart for an Overview card: no gridlines, tiny labels, the value axis hidden
+  const tick = { color: css("--muted"), font: { size: 10 } };
+  const cat = { grid: { display: false }, ticks: tick, stacked: !!o.stacked, border: { display: false } };
+  const val = { display: false, beginAtZero: true, stacked: !!o.stacked, min: o.min, max: o.max };
+  draw(id, { type, data: { labels, datasets }, options: { responsive: true, maintainAspectRatio: false, animation: false, indexAxis: o.horizontal ? "y" : "x",
+    layout: { padding: { top: 4 } },
+    plugins: { legend: { display: !!o.legend, position: "bottom", labels: { boxWidth: 8, boxHeight: 8, color: css("--ink-2"), font: { size: 10 } } },
+               tooltip: Object.assign({}, baseOptions().plugins.tooltip, o.tooltip || {}) },
+    scales: o.horizontal ? { y: cat, x: val } : { x: cat, y: val } } });
+}
+function homeTab() {
+  // 1. the two NITs side by side, the better value in bold
+  const show = (v, d, kind) => kind === "pct" ? pct(v, d) : fmt(v, d);
+  $("#t-home-cmp").innerHTML = `<thead><tr><th>Measure</th><th class="num">NIT Trichy</th><th class="num">NIT Surathkal</th><th>Ahead</th></tr></thead><tbody>` +
+    scoreMeasures().map(([label, small, f, d, kind]) => {
+      const t = f("NIT Trichy"), s = f("NIT Surathkal"), gap = (t - s) / Math.max(t, s), w = Math.abs(gap) < 0.03 ? "" : gap > 0 ? "t" : "s";
+      const v = w === "" ? '<span class="verdict e">Level</span>' : `<span class="verdict ${w}">${w === "t" ? "Trichy" : "Surathkal"} +${Math.round(100 * Math.abs(t - s) / Math.min(t, s))}%</span>`;
+      return `<tr><td>${label}<small>${small}</small></td><td class="num ${w === "t" ? "win t" : ""}">${show(t, d, kind)}</td><td class="num ${w === "s" ? "win s" : ""}">${show(s, d, kind)}</td><td>${v}</td></tr>`;
+    }).join("") + "</tbody>";
+
+  // 2. what we found: one card per finding, each with a small chart and a link to the evidence
+  if (!$("#home-cards").dataset.done) {
+    const PP = D.pp || {}, F = D.pf || {}, C = D.conn, cards = [];
+    const add = (k, big, title, text, go, link, draw_) => cards.push({ k, big, title, text, go, link, draw_ });
+    const T = "NIT Trichy", S = "NIT Surathkal", tc = () => css("--trichy"), sc = () => css("--surathkal");
+    if (PP.s) {
+      const s = PP.s, sh = s.self_citation_share_shared_author;
+      add("Citation network", pct(sh), "Most citations between our own papers are self-citations",
+        `Of ${fmt(s.internal_edges)} citations from one of our papers to another, ${pct(sh)} go to a paper with a shared author. Without them, ${s.top10_overlap ? s.top10_overlap + " of the old top-10 PageRank papers stay" : "none of the old top-10 PageRank papers stays"} in the top 10.`,
+        "phase2/p2-depth-self", "Without self-citations",
+        (id) => miniChart(id, "bar", [""], [{ label: "shared author", data: [+(100 * sh).toFixed(1)], backgroundColor: css("--c4"), borderRadius: 3 },
+          { label: "no shared author", data: [+(100 * (1 - sh)).toFixed(1)], backgroundColor: css("--c8"), borderRadius: 3 }],
+          { horizontal: true, stacked: true, legend: true, max: 100, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.raw}%` } } }));
+    }
+    const at = PP.a && PP.a.table, cm = Object.fromEntries(((D.p2 || {}).citers_cmp || []).map((r) => [r.measure, r]));
+    if (at && cm.citations_per_1000_of_their_papers) {
+      const pv = at.find((r) => r.group === "from top private citers"), pu = at.find((r) => r.group === "from top public citers"), k = cm.citations_per_1000_of_their_papers;
+      add("Who cites us", `${fmt(pv.within_3_steps_pct)}% <small>vs</small> ${fmt(pu.within_3_steps_pct)}%`, "Private universities cite us through personal ties, not size",
+        `For their size they cite us about as often as public institutes (${fmt(k.private_median)} vs ${fmt(k.public_median)} per 1,000 of their papers). But more of their citations come from people within three co-author steps of the cited author.`,
+        "phase2/p2-citers", "Who cites us",
+        (id) => miniChart(id, "bar", ["private citers", "public citers"], [{ label: "within 3 co-author steps", data: [pv.within_3_steps_pct, pu.within_3_steps_pct], backgroundColor: [css("--c4"), css("--c8")], borderRadius: 3 }],
+          { horizontal: true, min: 0, tooltip: { callbacks: { label: (c) => `${fmt(c.raw, 1)}% within 3 steps` } } }));
+    }
+    const rm = PP.r && PP.r.papers_per_year_models, wr = PP.r && PP.r.within_rank;
+    if (rm && wr) {
+      const asst = wr.find((r) => r.rank === "Assistant Professor") || {};
+      add("Productivity", `+${fmt(rm[0].surathkal_effect_pct)}% <small>→</small> +${fmt(rm[1].surathkal_effect_pct)}%`, "Surathkal's lead per person is partly rank mix",
+        `Surathkal faculty write more papers a year. Comparing people of the same rank shrinks the gap: ${pct(asst.share_of_trichy_faculty)} of Trichy's faculty are Assistant Professors, against ${pct(asst.share_of_surathkal_faculty)} at Surathkal.`,
+        "phase2/p2-depth-rank", "Like with like",
+        (id) => miniChart(id, "bar", rm.map((r) => r.model.replace("no controls", "raw")), [{ label: "Surathkal ahead by", data: rm.map((r) => +r.surathkal_effect_pct.toFixed(1)), backgroundColor: sc(), borderRadius: 3 }],
+          { min: 0, tooltip: { callbacks: { label: (c) => `Surathkal +${c.raw}% papers a year` } } }));
+    }
+    const fs = PP.r && PP.r.fwci_sensitivity;
+    if (fs) {
+      add("Impact", `${sp(fs[0].surathkal_effect_pct, 1)} <small>p = ${fmt(fs[0].p_clustered, 2)}</small>`, "Impact per paper is the same at both NITs",
+        `Surathkal papers against Trichy papers of the same field, year and venue type (FWCI), with errors grouped by faculty member. A foreign co-author goes with +${fmt(fs[0].foreign_effect_pct)}% (p < 0.001).`,
+        "analysis", "Who's better?",
+        (id) => miniChart(id, "bar", ["Surathkal vs Trichy", "foreign co-author"], [{ label: "FWCI difference", data: [+fs[0].surathkal_effect_pct.toFixed(1), +fs[0].foreign_effect_pct.toFixed(1)], backgroundColor: [css("--c8"), css("--c3")], borderRadius: 3 }],
+          { horizontal: true, min: 0, tooltip: { callbacks: { label: (c) => `${sp(c.raw, 1)} FWCI` } } }));
+    }
+    const dn = D.ins.densification.connected_faculty_2016_2026, G = (F.growth || []).filter((r) => r.view === "Both NITs" && r.year < 2026);
+    if (G.length) {
+      const sy = G.map((r) => r.year_avg_degree_connected);
+      add("Network growth", `a = ${fa(dn.exponent_a)}`, "Links grow faster than people",
+        `Links ∝ (connected faculty)<sup>a</sup>. Within any one year faculty write with only ${fmt(Math.min(...sy), 1)}–${fmt(Math.max(...sy), 1)} colleagues; the average climbs from ${fmt(G[0].avg_degree_connected_faculty, 1)} to ${fmt(G[G.length - 1].avg_degree_connected_faculty, 1)} because old links stay while new ones are added.`,
+        "growth/gr-degree", "Average degree",
+        (id) => miniChart(id, "line", G.map((r) => r.year), [
+          { label: "up to each year", data: G.map((r) => r.avg_degree_connected_faculty), borderColor: css("--both"), backgroundColor: css("--both"), borderWidth: 2, pointRadius: 0, tension: 0.25 },
+          { label: "within one year", data: sy, borderColor: css("--c8"), backgroundColor: css("--c8"), borderDash: [4, 3], borderWidth: 2, pointRadius: 0, tension: 0.25 }],
+          { legend: true, min: 0, tooltip: { mode: "index", intersect: false } }));
+    }
+    const P = F.pred || [];
+    if (P.length) {
+      const ROLL = "rolling: input = network up to the year before", FIX = "fixed: input = 2022 network only";
+      const yrs = [...new Set(P.map((r) => r.target_year))].sort(), last = yrs[yrs.length - 1], pr = (y, m) => P.find((r) => r.target_year === y && r.method === m) || {};
+      add("Link prediction", `${fmt(pr(last, ROLL).all_real_links_in_top_5pct)}% <small>vs</small> ${fmt(pr(last, FIX).all_real_links_in_top_5pct)}%`, "Updating the network every year predicts new collaborations better",
+        `Real new faculty pairs of ${last} found in the model's top 5% of pairs: fed the latest network every year vs trained once on 2022. ${fmt(pr(last, FIX).new_links_out_of_reach_pct)}% of ${last}'s new links involve people the 2022 model never saw.`,
+        "phase2/p2-prof-predict", "Predict and check",
+        (id) => miniChart(id, "bar", yrs, [{ label: "rolling", data: yrs.map((y) => pr(y, ROLL).all_real_links_in_top_5pct), backgroundColor: css("--c3"), borderRadius: 3 },
+          { label: "fixed 2022", data: yrs.map((y) => pr(y, FIX).all_real_links_in_top_5pct), backgroundColor: css("--c8"), borderRadius: 3 }],
+          { legend: true, min: 0, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmt(c.raw)}% in the top 5%` } } }));
+    }
+    const dec = PP.d && PP.d.decomposition, hc = PP.d_headcount || [];
+    if (dec && hc.length) {
+      const dt = dec.find((r) => r.institution === T), ds = dec.find((r) => r.institution === S), j23 = ((F.nirf || {}).joined_2002_or_2003) || {};
+      const hy = [...new Set(hc.map((r) => r.year))].filter((y) => y < 2026).sort();
+      add("Hiring", `${fmt(dt.faculty_2016)} <small>→</small> ${fmt(dt.faculty_2026)}`, "Trichy grew by hiring; there was no 2002–03 wave",
+        `NIT Trichy's faculty list grew from ${fmt(dt.faculty_2016)} to ${fmt(dt.faculty_2026)} (Surathkal ${fmt(ds.faculty_2016)} → ${fmt(ds.faculty_2026)}), mostly new Assistant Professors. Of today's faculty at four NITs, ${Object.values(j23).reduce((s, x) => s + x, 0)} joined in 2002–03.`,
+        "phase2/p2-depth-hire", "Hiring vs leaving",
+        (id) => miniChart(id, "line", hy, [T, S].map((i) => ({ label: shortInst(i), data: hy.map((y) => (hc.find((r) => r.institution === i && r.year === y) || {}).faculty_listed ?? null),
+          borderColor: instColor(i), backgroundColor: instColor(i), borderWidth: 2, pointRadius: 0, tension: 0.2 })), { legend: true, tooltip: { mode: "index", intersect: false } }));
+    }
+    const gs = C.geo_summary, bands = C.geo_bands.filter((r) => r.your_inst === "both NITs");
+    if (gs && bands.length) {
+      add("Distance", `${fmt(gs.share_joint_papers_within_300km_pct)}% <small>vs</small> ${fmt(gs.share_citations_within_300km_pct)}%`, "People work locally, knowledge travels",
+        `of joint papers vs of citations exchanged are with Indian institutes within 300 km. When the distance doubles, joint papers fall by ${fmt(100 * (1 - 2 ** gs.distance_elasticity_joint_papers))}% but citations only by ${fmt(100 * (1 - 2 ** gs.distance_elasticity_citations))}%.`,
+        "connections/ch-local", "Indian connections",
+        (id) => miniChart(id, "bar", bands.map((r) => r.band.replace(" km", "")), [{ label: "joint papers", data: bands.map((r) => r.pct_of_all_shared_papers), backgroundColor: css("--c7"), borderRadius: 2 },
+          { label: "citations", data: bands.map((r) => r.pct_of_all_citations_exchanged), backgroundColor: css("--c4"), borderRadius: 2 }],
+          { legend: true, min: 0, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmt(c.raw, 1)}%` } } }));
+    }
+    const S4 = F.four || [];
+    if (S4.length) {
+      const PEER = { "NIT Warangal": "#2a9d8f", "NIT Calicut": "#9b5de5" }, r4 = [...S4].sort((a, b) => b.papers_2024_per_regular_faculty - a.papers_2024_per_regular_faculty);
+      add("Four NITs", r4.map((r) => fmt(r.papers_2024_per_regular_faculty, 1)).join(" · "), "More Assistant Professors, fewer papers per head",
+        `Papers in 2024 per regular faculty member at ${r4.map((r) => shortInst(r.institution)).join(", ")}. The order is exactly the reverse of the share of Assistant Professors (${r4.map((r) => fmt(r.assistant_professor_share_pct) + "%").join(", ")}).`,
+        "phase2/p2-prof-four", "Four NITs side by side",
+        (id) => miniChart(id, "bar", r4.map((r) => shortInst(r.institution)), [{ label: "papers per faculty member, 2024", data: r4.map((r) => r.papers_2024_per_regular_faculty),
+          backgroundColor: r4.map((r) => PEER[r.institution] || instColor(r.institution)), borderRadius: 3 }], { min: 0, tooltip: { callbacks: { label: (c) => `${fmt(c.raw, 2)} papers per faculty member` } } }));
+    }
+    const SO = D.south;
+    if (SO && SO.table) {
+      const ft = SO.founding_test["hired_2021_2025_pct vs a_connected_2016-2026"] || {}, rows = [...SO.table].sort((a, b) => a.hired_2021_2025_pct - b.hired_2021_2025_pct);
+      add("Six South Indian NITs", `ρ = ${fmt(ft.spearman_rho, 2)}`, "The more a NIT hired recently, the slower its network densifies",
+        `Across Trichy, Surathkal, Warangal, Calicut, Puducherry and Andhra Pradesh, the share of faculty hired in 2021–25 runs exactly opposite to the densification exponent (exact p = ${fmt(ft.p_exact != null ? ft.p_exact : ft.p, 3)}). This is the professor's founding-years idea.`,
+        "south/so-found", "South Indian NITs",
+        (id) => miniChart(id, "bar", rows.map((r) => r.institution.replace("NIT ", "").replace("Andhra Pradesh", "AP")), [{ label: "exponent a", data: rows.map((r) => r["a_connected_2016-2026"]),
+          backgroundColor: rows.map((r) => nitColor(r.institution)), borderRadius: 3 }], { min: 0, tooltip: { callbacks: { label: (c) => `a = ${fa(c.raw)} (hired ${fmt(rows[c.dataIndex].hired_2021_2025_pct)}% in 2021–25)` } } }));
+    }
+    $("#home-cards").innerHTML = cards.map((c, k) => `<div class="panel ins"><span class="k">${c.k}</span><div class="big">${c.big}</div><h3>${c.title}</h3><p>${c.text}</p>` +
+      `<div class="mini"><canvas id="mini-${k}" aria-label="${esc(c.title)}"></canvas></div><button type="button" class="go" data-go="${c.go}">${c.link} →</button></div>`).join("");
+    cards.forEach((c, k) => c.draw_("mini-" + k));
+    $("#home-cards").querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => selectTab(b.dataset.go, true)));
+    $("#home-cards").dataset.done = "1";
+  }
+
+  // 3. the rest of the dashboard, one line each
+  if (!$("#home-explore").dataset.done) {
+    const tb = D.papers.Both.totals, ai = D.ins.ai_year, yrs = [...new Set(ai.map((r) => r.year))].sort();
+    const aiShare = (y) => { const r = ai.filter((x) => x.year === y); return 100 * r.reduce((s, x) => s + x.ai_papers, 0) / r.reduce((s, x) => s + x.papers, 0); };
+    const g = D.coauthor_graph, partners = new Set(D.conn.geo_points.filter((p) => p[4] > 0).map((p) => p[1])).size;
+    const EX = [
+      ["Start", "keyfindings", "Key findings", "Twelve conclusions, each with the test behind it"],
+      ["Start", "overview", "Head to head", "Twelve measures, Trichy against Surathkal"],
+      ["Output", "publications", "Publications", `${fmt(tb.papers)} papers; ${pct(tb.q1_share)} of ranked journal papers in Q1`],
+      ["Output", "trends", "AI & research trends", `AI papers: ${fmt(aiShare(yrs[0]))}% of all in ${yrs[0]}, ${fmt(aiShare(2025))}% in 2025`],
+      ["Output", "faculty", "Faculty", `${fmt(D.faculty.length)} faculty: rankings, search and the top 3 of each NIT`],
+      ["Networks", "coauthor", "Co-authorship", `${fmt(g.nodes.length)} faculty, ${fmt(g.edges.length)} links, communities and bridges`],
+      ["Networks", "citation", "Citation network", `${fmt(D.analysis.network_summary.citation_network.internal_graph_edges)} citations between our own papers`],
+      ["Networks", "growth", "Network growth", `Links ∝ faculty<sup>${fa(D.ins.densification.connected_faculty_2016_2026.exponent_a)}</sup>, and who will work together next`],
+      ["Networks", "connections", "Indian connections", `${fmt(partners)} Indian partner institutes on a map; who cites us`],
+      ["Comparisons", "analysis", "Who's better?", "Branch by branch, with statistical tests"],
+      ["Comparisons", "south", "South Indian NITs", "Six NITs: output, hiring and how their faculty networks densify"],
+      ["Deep dives", "phase2", "Phase II", "The professor's list and the meeting follow-ups"],
+      ["Deep dives", "questions", "Research questions", "Thirteen questions, Q15–Q28"],
+      ["About", "methods", "How we built it", "From the faculty pages to the networks"],
+    ];
+    $("#home-explore").innerHTML = EX.map(([gp, t, title, line]) => `<button type="button" class="ex" data-go="${t}"><span class="g">${gp}</span><b>${esc(title)}</b><span>${line}</span></button>`).join("");
+    $("#home-explore").querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => selectTab(b.dataset.go, true)));
+    $("#home-explore").dataset.done = "1";
+  }
+}
+
+function overview() {
+  const a = D.analysis, R = Object.fromEntries(a.institutes.map((r) => [r.institution, r]));
+  const T = (i) => D.papers[i].totals;
+  $("#ov-lede").innerHTML = `Both NITs publish about the same number of papers. NIT Trichy gets more citations per paper; NIT Surathkal
+    faculty publish more each. After adjusting for branch, year and collaboration, their field-weighted impact is <b>statistically the same</b>,
+    and the real differences show up branch by branch.`;
+  const M = scoreMeasures();
   const wins = { "NIT Trichy": 0, "NIT Surathkal": 0, level: 0 };
   const show = (v, d, kind) => kind === "pct" ? pct(v, d) : fmt(v, d);
   const rows = M.map(([label, small, f, d, kind]) => {
@@ -743,8 +1142,9 @@ function facultyTable() {
   });
   $("#f-count").textContent = `${fmt(rows.length)} faculty`;
   $("#t-fac").innerHTML = `<thead><tr>${FCOLS.map(([k, l, n]) => `<th class="${n ? "num" : ""}"><button type="button" data-k="${k}" ${fstate.sort === k ? `data-dir="${fstate.dir}"` : ""}>${l}</button></th>`).join("")}</tr></thead><tbody>` +
-    rows.slice(0, fstate.limit).map((f) => `<tr><td>${esc(f.name)} ${gs(f.name, f.institution)}</td><td>${chip(f.institution)}</td><td>${esc(f.branch)}</td><td>${esc(f.designation)}</td><td>${f.status === "current" ? '<span class="chip good">current</span>' : `<span class="chip">former · ${f.last_seen}</span>`}</td><td class="num">${fmt(f.papers)}</td><td class="num">${fmt(f.citations)}</td><td class="num">${fmt(f.h)}</td><td class="num">${fmt(f.h_career)}</td><td class="num">${fmt(f.mean_fwci, 2)}</td><td>${esc(f.top_journal || "")}</td></tr>`).join("") + "</tbody>";
+    rows.slice(0, fstate.limit).map((f) => `<tr><td><button type="button" class="lnk" data-fid="${f.faculty_id}">${esc(f.name)}</button> ${gs(f.name, f.institution)}</td><td>${chip(f.institution)}</td><td>${esc(f.branch)}</td><td>${esc(f.designation)}</td><td>${f.status === "current" ? '<span class="chip good">current</span>' : `<span class="chip">former · ${f.last_seen}</span>`}</td><td class="num">${fmt(f.papers)}</td><td class="num">${fmt(f.citations)}</td><td class="num">${fmt(f.h)}</td><td class="num">${fmt(f.h_career)}</td><td class="num">${fmt(f.mean_fwci, 2)}</td><td>${esc(f.top_journal || "")}</td></tr>`).join("") + "</tbody>";
   $("#f-more").hidden = rows.length <= fstate.limit;
+  $("#t-fac").querySelectorAll("[data-fid]").forEach((b) => b.addEventListener("click", () => openProfile(b.dataset.fid)));
   $("#t-fac").querySelectorAll("th button").forEach((btn) => btn.addEventListener("click", () => {
     const k = btn.dataset.k; fstate.dir = fstate.sort === k && fstate.dir === "desc" ? "asc" : "desc"; fstate.sort = k; facultyTable(); }));
 }
@@ -770,33 +1170,12 @@ function facultyCharts() {
 /* ---------------- networks ---------------- */
 let cyCit, cyAu, auMode = "inst";
 const COMM = ["--c1", "--c2", "--c3", "--c4", "--c5", "--c6", "--c7", "--c8"];
-function citationGraph() {
-  const g = D.citation_graph, prMax = Math.max(...g.nodes.map((n) => n.pr));
-  $("#cg-note").textContent = `The ${g.hubs} most influential papers by PageRank (large, outlined) and every paper of ours that cites them or that they cite: ${fmt(g.nodes.length)} of our ${fmt(g.total_papers)} papers, ${fmt(g.edges.length)} of ${fmt(g.total_internal_edges)} citations between our papers.`;
-  cyCit = cytoscape({ container: $("#g-cit"), layout: { name: "preset" }, wheelSensitivity: 0.25,
-    elements: [...g.nodes.map((n) => ({ data: { ...n, size: n.hub ? 14 + 26 * Math.sqrt(n.pr / prMax) : 5 + 10 * Math.sqrt(n.pr / prMax) }, position: { x: n.x, y: n.y } })),
-               ...g.edges.map(([s, t], k) => ({ data: { id: "c" + k, source: s, target: t } }))],
-    style: citStyle() });
-  cyCit.on("tap", "node", (e) => { const n = e.target.data();
-    $("#cg-info").innerHTML = `<b>${esc(n.title)}</b><br>${chip(n.inst)} ${n.year} · ${fmt(n.citations)} citations · cited by ${n.indeg} of our papers · PageRank rank ${fmt(n.rank)} of ${fmt(g.total_papers)}${n.doi ? ` · <a href="${esc(n.doi)}" target="_blank" rel="noopener">DOI</a>` : ""}`; });
-  cyCit.fit(undefined, 16);
-  filterCitation();
-}
-function citStyle() {
-  return [{ selector: "node", style: { width: "data(size)", height: "data(size)", "background-color": (e) => instColor(e.data("inst").includes(";") ? "Both" : e.data("inst")), "border-width": 1, "border-color": css("--bg") } },
-          { selector: "edge", style: { width: 0.7, "line-color": css("--axis"), "target-arrow-color": css("--axis"), "target-arrow-shape": "triangle", "arrow-scale": 0.6, "curve-style": "straight", opacity: 0.55 } },
-          { selector: "node[?hub]", style: { "border-width": 2, "border-color": css("--ink") } },
-          { selector: ".dim", style: { opacity: 0.12 } }, { selector: "node:selected", style: { "border-width": 3, "border-color": css("--ink") } }];
-}
-function filterCitation() {
-  if (!cyCit) return;
-  cyCit.batch(() => cyCit.nodes().forEach((n) => n.toggleClass("dim", inst !== "Both" && !n.data("inst").split(";").includes(inst))));
-}
 function auColor(n) { return auMode === "inst" ? instColor(n.data("inst")) : css(COMM[n.data("comm_rank")]); }
 function auStyle() {
   return [{ selector: "node", style: { width: "data(size)", height: "data(size)", "background-color": (n) => auColor(n), "border-width": 1, "border-color": css("--bg") } },
           { selector: "edge", style: { width: (e) => Math.min(4, 0.6 + 0.5 * e.data("w")), "line-color": css("--axis"), opacity: 0.8, "curve-style": "straight" } },
-          { selector: ".dim", style: { opacity: 0.1 } }, { selector: ".hit", style: { "border-width": 3, "border-color": css("--ink") } }];
+          { selector: ".dim", style: { opacity: 0.1 } }, { selector: ".hit", style: { "border-width": 3, "border-color": css("--ink") } },
+          { selector: "node.path", style: { "border-width": 3, "border-color": css("--ink"), opacity: 1 } }, { selector: "edge.path", style: { width: 4, "line-color": css("--c4"), opacity: 1 } }];
 }
 function auLegend() {
   const g = D.coauthor_graph;
@@ -816,7 +1195,8 @@ function coauthorGraph() {
     style: auStyle() });
   cyAu.on("tap", "node", (e) => { const n = e.target.data(), nb = e.target.neighborhood("node").map((x) => x.data("name"));
     cyAu.elements().addClass("dim"); e.target.closedNeighborhood().removeClass("dim");
-    $("#ag-info").innerHTML = `<b>${esc(n.name)}</b> ${chip(n.inst)} ${esc(n.branch)} · ${n.degree} faculty co-authors · ${n.papers} papers · links to ${n.partners} other Indian institutes · betweenness ${n.btw.toFixed(4)}<br>Co-authors: ${esc(nb.slice(0, 14).join(", "))}${nb.length > 14 ? " …" : ""}`; });
+    $("#ag-info").innerHTML = `<b>${esc(n.name)}</b> ${chip(n.inst)} ${esc(n.branch)} · ${n.degree} faculty co-authors · ${n.papers} papers · links to ${n.partners} other Indian institutes · betweenness ${n.btw.toFixed(4)} · <button type="button" class="lnk" id="ag-prof">open profile</button><br>Co-authors: ${esc(nb.slice(0, 14).join(", "))}${nb.length > 14 ? " …" : ""}`;
+    $("#ag-prof").addEventListener("click", () => openProfile(n.id)); });
   cyAu.on("tap", (e) => { if (e.target === cyAu) { filterCoauthor(); $("#ag-info").textContent = "Click a faculty member to see their links."; } });
   cyAu.fit(undefined, 16);
   auLegend(); filterCoauthor();
@@ -1091,7 +1471,7 @@ function growthTab() {
   const peak = g.reduce((a, r) => r.effective_diameter_90pct > a.effective_diameter_90pct ? r : a, g[0]);
   const cc = I.closure_common, one = cc.find((r) => r.bucket.startsWith("1 "));
   $("#gr-facts").innerHTML = [
-    fact(`links ∝ faculty<sup>${fmt(dn.exponent_a, 2)}</sup>`, `densification (R² = ${fmt(dn.r_squared, 3)}): links grow faster than people`),
+    fact(`links ∝ faculty<sup>${fa(dn.exponent_a)}</sup>`, `densification (R² = ${fmt(dn.r_squared, 3)}): links grow faster than people`),
     fact(`${pct(g[1].largest_component_share)} → ${pct(g[2].largest_component_share)}`, "faculty in the largest group, 2017 → 2018: a giant component appears"),
     fact(`${fmt(peak.effective_diameter_90pct)} → ${fmt(g[g.length - 1].effective_diameter_90pct)}`, `effective diameter, ${peak.year} → ${g[g.length - 1].year}: the network gets smaller`),
     fact(`${fmt(one.times_more_likely_than_far_pairs)}×`, "more likely to start collaborating with one common co-author"),
@@ -1157,17 +1537,6 @@ function connectionsExtras() {
       backgroundColor: cf.map((r) => r.ratio < 0.9 ? css("--c4") : r.ratio > 1.1 ? css("--c3") : css("--c8")), borderRadius: 4 }] },
     options: baseOptions({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => { const r = cf[c.dataIndex]; return `${fmt(r.ratio, 2)}: they cite us ${fmt(r.they_cite_us)}, we cite them ${fmt(r.we_cite_them)}`; } } } },
       scales: { x: { grid: { display: false }, ticks: { autoSkip: false } }, y: { beginAtZero: true, grid: { color: (c) => c.tick.value === 1 ? css("--ink-2") : css("--grid") } } } }) });
-  const pts = C.geo_points.filter((p) => views().includes(p[0]));
-  const ds = views().map((i) => ({ label: `${i} partners`, data: pts.filter((p) => p[0] === i && p[4] > 0).map((p) => ({ x: p[3], y: p[2], r: 2 + 1.3 * Math.sqrt(p[4]), p })),
-    backgroundColor: instColor(i) + "66", borderColor: instColor(i), borderWidth: 1 }));
-  ds.push({ label: "citations only", data: pts.filter((p) => p[4] === 0).map((p) => ({ x: p[3], y: p[2], r: 2, p })), backgroundColor: css("--c8") + "88", borderWidth: 0 });
-  ds.unshift({ label: "our NITs", data: views().map((i) => ({ x: C.geo_home[i][1], y: C.geo_home[i][0], r: 11, home: i })), backgroundColor: views().map(instColor),
-    borderColor: css("--ink"), borderWidth: 1.5, pointStyle: "star" });
-  draw("ch-map", { type: "bubble", data: { datasets: ds },
-    options: baseOptions({ interaction: { mode: "nearest", intersect: true }, maintainAspectRatio: true, aspectRatio: 1.05,
-      plugins: { tooltip: { callbacks: { label: (c) => { const d = c.raw; if (d.home) return d.home; const p = d.p;
-        return `${p[1]} (${p[6]}): ${fmt(p[4])} joint papers, ${fmt(p[5])} citations exchanged, ${fmt(p[7])} km from ${p[0].replace("NIT ", "")}`; } } } },
-      scales: { x: { min: 68, max: 97.5, title: { display: true, text: "longitude", color: css("--muted") } }, y: { min: 7, max: 35.5, title: { display: true, text: "latitude", color: css("--muted") } } } }) });
   const gs = C.geo_summary, bothB = C.geo_bands.filter((r) => r.your_inst === "both NITs");
   const md = gs.median_distance_km_weighted_by_joint_papers, mc = gs.median_distance_km_weighted_by_citations;
   $("#local-facts").innerHTML = [
@@ -1395,18 +1764,18 @@ function phase2Prof() {
   const single = G.filter((r) => r.view === "Both NITs" && r.year < 2026).map((r) => r.year_avg_degree_connected);
   const fd = F.fac_dens || [], fex = (i) => (fd.find((r) => r.institution === i && r.years === "2016-2026") || {}).exponent_a;
   $("#pf-degree-facts").innerHTML = [
-    fact(`a = ${fmt(ex("Both NITs"), 2)}`, `links grow as (connected faculty)<sup>${fmt(ex("Both NITs"), 2)}</sup>, so average co-authors grow as (connected faculty)<sup>${fmt(ex("Both NITs") - 1, 2)}</sup> (${fmt(ex("Both NITs", "2019-2025"), 2)} without the start-up years)`),
+    fact(`a = ${fa(ex("Both NITs"))}`, `links grow as (connected faculty)<sup>${fa(ex("Both NITs"))}</sup>, so average co-authors grow as (connected faculty)<sup>${fa(ex("Both NITs") - 1)}</sup> (${fa(ex("Both NITs", "2019-2025"))} without the start-up years)`),
     fact(`${fmt(gb(2016).avg_degree_connected_faculty, 2)} → ${fmt(gb(2025).avg_degree_connected_faculty, 2)}`, "average co-authors per connected faculty member, network up to each year (2016 → 2025)"),
     fact(`${fmt(Math.min(...single), 2)}–${fmt(Math.max(...single), 2)}`, "co-authors within a single year (faculty who wrote with a colleague that year), flat from 2016 to 2025: people don't work with more colleagues each year; the total rises because old links stay and new ones are added"),
-    fact(`${fmt(ex("NIT Trichy"), 2)} / ${fmt(ex("NIT Surathkal"), 2)}`, "the exponent inside NIT Trichy / inside NIT Surathkal (our roster)"),
-    ...(fd.length ? [fact(`${fmt(Math.min(...FOUR.map(fex)), 2)}–${fmt(Math.max(...FOUR.map(fex)), 2)}`, `the same faculty-only exponent at four NITs (NIRF faculty lists): ${FOUR.map((i) => `${shortInst(i)} ${fmt(fex(i), 2)}`).join(", ")}. Every NIT densifies; 1.66 is normal`)] : [])].join("");
+    fact(`${fa(ex("NIT Trichy"))} / ${fa(ex("NIT Surathkal"))}`, "the exponent inside NIT Trichy / inside NIT Surathkal (our roster)"),
+    ...(fd.length ? [fact(`${fa(Math.min(...FOUR.map(fex)))}–${fa(Math.max(...FOUR.map(fex)))}`, `the same faculty-only exponent at four NITs (NIRF faculty lists): ${FOUR.map((i) => `${shortInst(i)} ${fa(fex(i))}`).join(", ")}. Every NIT densifies; 1.66 is normal`)] : [])].join("");
   const gv = inst === "Both" ? ["Both NITs", ...INSTS] : [inst];
   draw("ch-pf-degree", { type: "line", data: { labels: yrs, datasets: gv.flatMap((v) => {
       const rows = G.filter((r) => r.view === v), c = v === "Both NITs" ? css("--both") : instColor(v), val = (k) => yrs.map((y) => (rows.find((r) => r.year === y) || {})[k] ?? null);
       return [{ label: `${shortInst(v)}: up to each year`, data: val("avg_degree_connected_faculty"), borderColor: c, backgroundColor: c, borderWidth: 2.5, pointRadius: 3, tension: 0.2 },
               { label: `${shortInst(v)}: within one year`, data: val("year_avg_degree_connected"), borderColor: c, backgroundColor: c, borderDash: [5, 4], borderWidth: 1.5, pointRadius: 2, tension: 0.2 }]; }) },
     options: opt("co-authors per connected faculty member") });
-  if (F.fac_net) draw("ch-pf-degree4", { type: "line", data: { labels: yrs, datasets: FOUR.map((i) => ({ label: `${shortInst(i)} (a = ${fmt(fex(i), 2)})`,
+  if (F.fac_net) draw("ch-pf-degree4", { type: "line", data: { labels: yrs, datasets: FOUR.map((i) => ({ label: `${shortInst(i)} (a = ${fa(fex(i))})`,
       data: yrs.map((y) => (F.fac_net.find((r) => r.institution === i && r.year === y) || {}).avg_degree_connected ?? null),
       borderColor: col(i), backgroundColor: col(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 })) },
     options: opt("co-authors per connected faculty member", "Four NITs, faculty only (NIRF lists): up to each year") });
@@ -1436,8 +1805,8 @@ function phase2Prof() {
       ["Assistant Professors", (r) => fmt(r.assistant_professor_share_pct) + "%"], ["Citations per paper", (r) => fmt(r.citations_per_paper, 1)],
       ["FWCI: median / mean", (r) => `${fmt(r.median_fwci, 2)} / ${fmt(r.mean_fwci, 2)}`], ["With a foreign co-author", (r) => fmt(r.foreign_coauthor_share_pct, 1) + "%"],
       ["With an industry co-author", (r) => fmt(r.industry_coauthor_share_pct, 1) + "%"], ["Partner institutions", (r) => fmt(r.partner_institutions)],
-      ["Conference papers", (r) => fmt(r.conference_share_pct) + "%"], ["Densification a: faculty only", (r) => fmt(fex(r.institution), 2)],
-      ["Densification a: all authors", (r) => fmt(r.densification_all_authors, 2)]];
+      ["Conference papers", (r) => fmt(r.conference_share_pct) + "%"], ["Densification a: faculty only", (r) => fa(fex(r.institution))],
+      ["Densification a: all authors", (r) => fa(r.densification_all_authors)]];
     $("#t-pf-four").innerHTML = T2([[""], ...FOUR.map((i) => [shortInst(i), 1])], M.map(([l, f]) => [l, ...FOUR.map((i) => f(s4(i)))]));
     const ppf = FOUR.map((i) => [i, s4(i).papers_2024_per_regular_faculty, s4(i).assistant_professor_share_pct]).sort((a, b) => b[1] - a[1]);
     $("#pf-four-facts").innerHTML = [
@@ -1950,45 +2319,748 @@ function keyFindings() {
   $("#kf-cards").dataset.done = "1";
 }
 
+/* ================= views added on 18 Nov 2026 ================= */
+const INSTN = { T: "NIT Trichy", S: "NIT Surathkal", B: "Both" };
+const nitColor = (i) => i === "NIT Trichy" ? css("--trichy") : i === "NIT Surathkal" ? css("--surathkal")
+  : (((D.south || {}).nits || []).find((n) => n.institution === i) || {}).color || css("--c8");
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/* the faculty co-authorship graph as an adjacency list (shared by the chain finder, removal and profiles) */
+let ADJ = null, NODE = null;
+function graphIndex() {
+  if (ADJ) return;
+  NODE = {}; ADJ = {};
+  D.coauthor_graph.nodes.forEach((n) => { NODE[n.id] = n; ADJ[n.id] = []; });
+  D.coauthor_graph.edges.forEach(([a, b, w, y]) => { ADJ[a].push([b, w, y]); ADJ[b].push([a, w, y]); });
+}
+
+/* ---------- network growth: the player ---------- */
+let cyGrow = null, growTimer = null;
+function growthPlayer() {
+  const g = D.coauthor_graph;
+  if (!cyGrow) {
+    const dMax = Math.max(...g.nodes.map((n) => n.degree));
+    cyGrow = cytoscape({ container: $("#g-grow"), layout: { name: "preset" }, wheelSensitivity: 0.25,
+      elements: [...g.nodes.map((n) => ({ data: { id: n.id, name: n.name, inst: n.inst, size: 4 + 14 * Math.sqrt(n.degree / dMax) }, position: { x: n.x, y: n.y } })),
+                 ...g.edges.map(([a, b, , y], k) => ({ data: { id: "g" + k, source: a, target: b, y } }))],
+      style: [{ selector: "node", style: { width: "data(size)", height: "data(size)", "background-color": (n) => instColor(n.data("inst")), "border-width": 0 } },
+              { selector: "edge", style: { width: 0.8, "line-color": css("--axis"), opacity: 0.75, "curve-style": "straight" } },
+              { selector: "edge.new", style: { width: 2.4, "line-color": css("--c4"), opacity: 1, "z-index": 9 } },
+              { selector: "node.new", style: { "border-width": 2, "border-color": css("--c4") } },
+              { selector: ".off", style: { display: "none" } }, { selector: ".dim", style: { opacity: 0.12 } }] });
+    cyGrow.on("tap", "node", (e) => { $("#gp-label").textContent = `${$("#gp-year").value} · ${e.target.data("name")}`; });
+    cyGrow.fit(undefined, 16);
+  }
+  growShow(+$("#gp-year").value);
+}
+function growShow(y) {
+  if (!cyGrow) return;
+  const hl = $("#gp-new").checked, inView = (id) => inst === "Both" || (NODE[id] || {}).inst === inst;
+  graphIndex();
+  const on = new Set(), firstSeen = {};
+  let links = 0, fresh = 0;
+  cyGrow.batch(() => {
+    cyGrow.edges().forEach((e) => {
+      const show = e.data("y") <= y, s = e.data("source"), t = e.data("target");
+      e.toggleClass("off", !show); e.toggleClass("new", show && hl && e.data("y") === y);
+      if (show) { on.add(s); on.add(t); if (inView(s) && inView(t)) { links++; if (e.data("y") === y) fresh++; } }
+    });
+    cyGrow.nodes().forEach((n) => { n.toggleClass("off", !on.has(n.id())); n.toggleClass("dim", !inView(n.id()));
+      n.toggleClass("new", hl && on.has(n.id()) && !n.connectedEdges().some((e) => e.data("y") < y)); });
+  });
+  const people = [...on].filter(inView).length;
+  $("#gp-label").textContent = String(y);
+  $("#gp-facts").innerHTML = [fact(fmt(people), `faculty with a faculty co-author by ${y}`), fact(fmt(links), "links: pairs with at least one joint paper"),
+    fact(fmt(fresh), `new links in ${y}${y === 2026 ? " (partial year)" : ""}`), fact(fmt(2 * links / Math.max(1, people), 2), "average co-authors per connected faculty member")].join("");
+}
+function growPlay() {
+  if (growTimer) { clearInterval(growTimer); growTimer = null; $("#gp-play").innerHTML = "&#9654; Play"; return; }
+  if (+$("#gp-year").value >= 2026) $("#gp-year").value = 2016;
+  $("#gp-play").innerHTML = "&#10073;&#10073; Pause";
+  growShow(+$("#gp-year").value);
+  growTimer = setInterval(() => {
+    const y = +$("#gp-year").value + 1;
+    if (y > 2026) { growPlay(); return; }
+    $("#gp-year").value = y; growShow(y);
+  }, 1100);
+}
+
+/* ---------- network growth: average degree with both counts of N ---------- */
+let gdMode = "connected";
+function growthDegree() {
+  const F = D.pf || {}, G = F.growth || [], U = F.u || [], fits = F.u_fits || [];
+  if (!G.length) return;
+  const yrs = YEARS.filter((y) => y < 2026), vw = inst === "Both" ? ["Both NITs", ...INSTS] : [inst];
+  const col = (v) => v === "Both NITs" ? css("--both") : instColor(v);
+  const ex = (v, n, ys = "2016-2026") => (fits.find((r) => r.view === v && r.years === ys && r.nodes_counted === n) || {});
+  const line = (label, data, c, dash) => ({ label, data, borderColor: c, backgroundColor: c, borderWidth: dash ? 1.6 : 2.5, borderDash: dash ? [5, 4] : [], pointRadius: dash ? 2 : 3, tension: 0.2 });
+  const ser = (rows, k) => yrs.map((y) => (rows.find((r) => r.year === y) || {})[k] ?? null);
+  let ds;
+  if (gdMode === "connected") {
+    ds = vw.flatMap((v) => { const rows = G.filter((r) => r.view === v);
+      return [line(`${shortInst(v)}: up to each year`, ser(rows, "avg_degree_connected_faculty"), col(v)), line(`${shortInst(v)}: within one year`, ser(rows, "year_avg_degree_connected"), col(v), true)]; });
+    $("#gd-note").innerHTML = "N = faculty with at least one faculty co-author. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers. 2026 is left out (partial year).";
+  } else {
+    ds = vw.flatMap((v) => { const rows = U.filter((r) => r.view === v);
+      return [line(`${shortInst(v)}: everyone listed so far`, ser(rows, "avg_degree_all_listed_so_far"), col(v)), line(`${shortInst(v)}: faculty in post that year`, ser(rows, "avg_degree_in_post"), col(v), true)]; });
+    $("#gd-note").innerHTML = "N = the plain number of faculty on the yearly faculty pages, with or without a co-author. <b>Everyone listed so far</b>: all links so far over everyone who has been on the list. <b>In post that year</b>: links between people still on the list that year.";
+  }
+  const b = (k, n, ys) => ex("Both NITs", n, ys)[k];
+  const u0 = U.find((r) => r.view === "Both NITs" && r.year === 2016) || {}, u1 = U.find((r) => r.view === "Both NITs" && r.year === 2025) || {};
+  $("#gd-facts").innerHTML = gdMode === "connected" ? [
+    fact(`a = ${fa(b("exponent_a", "connected_faculty"))}`, `links ∝ (connected faculty)<sup>a</sup>, 2016–2026 (${fa(b("exponent_a", "connected_faculty", "2019-2025"))} for 2019–2025); R² ${fmt(b("r_squared", "connected_faculty"), 3)}`),
+    fact(`${fmt(u0.avg_degree_connected, 2)} → ${fmt(u1.avg_degree_connected, 2)}`, "co-authors per connected faculty member, 2016 → 2025")].join("") : [
+    fact(`${fmt(u0.faculty_listed_so_far)} → ${fmt(u1.faculty_listed_so_far)}`, `faculty on the lists so far (×${fmt(u1.faculty_listed_so_far / u0.faculty_listed_so_far, 1)}), while links grew ${fmt(u0.links)} → ${fmt(u1.links)} (×${fmt(u1.links / u0.links, 1)})`),
+    fact(`${fmt(u0.avg_degree_all_listed_so_far, 2)} → ${fmt(u1.avg_degree_all_listed_so_far, 2)}`, "co-authors per faculty member, everyone counted (2016 → 2025)"),
+    fact(`a ≈ ${fmt(b("exponent_a", "faculty_listed_so_far"), 1)}`, `with the plain headcount (R² ${fmt(b("r_squared", "faculty_listed_so_far"), 2)}): the faculty body hardly grows and fills in with links, so a power law fits poorly`)].join("");
+  const o = baseOptions(); o.scales.y.title = { display: true, text: "co-authors per faculty member", color: css("--muted") };
+  draw("ch-gd", { type: "line", data: { labels: yrs, datasets: ds }, options: o });
+}
+
+/* ---------- network growth: preferential attachment ---------- */
+function growthKernel() {
+  const K = (D.pf || {}).k || [], fits = (D.pf || {}).k_fits || [];
+  if (!K.length) return;
+  const vw = inst === "Both" ? ["Both NITs"] : [inst], bins = [...new Set(K.map((r) => r.co_authors_now))];
+  const fit = (v) => fits.find((r) => r.view === v) || {}, f = fit(vw[0]);
+  $("#gk-facts").innerHTML = [fact(`α = ${fmt(f.kernel_exponent, 2)}`, "new co-authors ∝ (current co-authors)<sup>α</sup>; α below 1 = a weak rich-get-richer effect"),
+    fact(`${fmt(f.mean_new_k9plus, 2)} vs ${fmt(f.mean_new_k1, 2)}`, "new co-authors a year for people with 9+ co-authors vs with one")].join("");
+  draw("ch-gk", { type: "bar", data: { labels: bins, datasets: vw.map((v) => ({ label: shortInst(v), backgroundColor: v === "Both NITs" ? css("--both") : instColor(v), borderRadius: 4,
+      data: bins.map((b) => (K.find((r) => r.view === v && r.co_authors_now === b) || {}).mean_new_next_year ?? null) })) },
+    options: baseOptions({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => { const r = K.find((x) => x.view === vw[c.datasetIndex] && x.co_authors_now === bins[c.dataIndex]) || {};
+        return `${fmt(c.raw, 2)} new co-authors a year (${fmt(r.person_years)} person-years; ${fmt(r.share_gaining_any_pct)}% gained at least one)`; } } } },
+      scales: { x: { title: { display: true, text: "faculty co-authors now", color: css("--muted") }, grid: { display: false } },
+                y: { beginAtZero: true, title: { display: true, text: "new co-authors next year", color: css("--muted") } } } }) });
+}
+
+/* ---------- co-authorship: degrees of separation ---------- */
+const nodeLabel = (n) => `${n.name} · ${n.branch || "–"} · ${shortInst(n.inst)}`;
+function findNode(v) {
+  v = String(v || "").trim().toLowerCase();
+  if (!v) return null;
+  const all = Object.values(NODE);
+  return all.find((n) => nodeLabel(n).toLowerCase() === v) || all.find((n) => n.name.toLowerCase() === v) || all.find((n) => n.name.toLowerCase().startsWith(v)) || null;
+}
+function bfsPath(a, b) {
+  const prev = { [a]: null }, q = [a];
+  for (let i = 0; i < q.length; i++) { const u = q[i]; if (u === b) break; for (const [v] of ADJ[u]) if (!(v in prev)) { prev[v] = u; q.push(v); } }
+  if (!(b in prev)) return null;
+  const p = [];
+  for (let x = b; x != null; x = prev[x]) p.push(x);
+  return p.reverse();
+}
+function sepSetup() {
+  graphIndex();
+  if ($("#sep-list").dataset.done) return;
+  $("#sep-list").innerHTML = Object.values(NODE).sort((a, b) => a.name.localeCompare(b.name)).map((n) => `<option value="${esc(nodeLabel(n))}"></option>`).join("");
+  $("#sep-list").dataset.done = "1";
+  sepRandom(true);
+}
+function sepRandom(cross) {
+  const all = Object.values(NODE);
+  for (let i = 0; i < 400; i++) {
+    const a = all[Math.floor(Math.random() * all.length)], b = all[Math.floor(Math.random() * all.length)];
+    if (a === b || (cross ? a.inst === b.inst : a.inst !== b.inst)) continue;
+    const p = bfsPath(a.id, b.id);
+    if (p && p.length > 2) { $("#sep-a").value = nodeLabel(a); $("#sep-b").value = nodeLabel(b); sepRun(); return; }
+  }
+}
+function sepRun() {
+  graphIndex();
+  const A = findNode($("#sep-a").value), B = findNode($("#sep-b").value), out = $("#sep-out");
+  if (cyAu) cyAu.elements().removeClass("path");
+  if (!A || !B) { out.innerHTML = '<p class="note">Type or pick two faculty names from the list.</p>'; return; }
+  const p = bfsPath(A.id, B.id);
+  if (!p) { out.innerHTML = `<p class="sep-n"><b>&infin;</b>No chain: ${esc(A.name)} and ${esc(B.name)} are in separate groups of the faculty network.</p>`; return; }
+  const edge = (u, v) => ADJ[u].find(([x]) => x === v) || [];
+  out.innerHTML = `<div class="sep-n"><b>${p.length - 1}</b>${p.length - 1 === 1 ? "step" : "steps"} from ${esc(A.name)} to ${esc(B.name)}</div><div class="chain">` +
+    p.map((id, k) => { const n = NODE[id];
+      const card = `<button type="button" class="pcard ${n.inst === "NIT Trichy" ? "t" : "s"}" data-fid="${id}"><b>${esc(n.name)}</b><span>${esc(shortInst(n.inst))} · ${esc(n.branch || "–")}</span></button>`;
+      if (!k) return card;
+      const [, w, y] = edge(p[k - 1], id);
+      return `<span class="link">${w} ${w === 1 ? "paper" : "papers"}<br>since ${y}</span>${card}`; }).join("") + "</div>";
+  out.querySelectorAll("[data-fid]").forEach((b) => b.addEventListener("click", () => openProfile(b.dataset.fid)));
+  if (cyAu) cyAu.batch(() => { cyAu.elements().addClass("dim");
+    p.forEach((id, k) => { const n = cyAu.getElementById(id); n.removeClass("dim").addClass("path");
+      if (k) n.edgesWith(cyAu.getElementById(p[k - 1])).removeClass("dim").addClass("path"); }); });
+}
+
+/* ---------- co-authorship: removing faculty one by one ---------- */
+let cyRm = null, rmTimer = null;
+const rm = { ids: [], orders: {}, curves: {}, links0: 0 };
+function rmOrder(by, nodes) {
+  const a = [...nodes];
+  if (by === "random") { let s = 42; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a.map((n) => n.id); }
+  const key = by === "btw" ? "btw" : by;
+  return a.sort((x, y) => y[key] - x[key] || x.id.localeCompare(y.id)).map((n) => n.id);
+}
+function percolation(order, ids) {
+  // add people back in reverse removal order (union-find): the largest group and the number of groups (2+ people) after k removals
+  const keep = new Set(ids), N = order.length, parent = {}, size = {}, lcc = new Array(N + 1), grp = new Array(N + 1);
+  const find = (x) => { while (parent[x] !== x) { parent[x] = parent[parent[x]]; x = parent[x]; } return x; };
+  let big = 0, groups = 0;
+  lcc[N] = 0; grp[N] = 0;
+  for (let k = N - 1; k >= 0; k--) {
+    const u = order[k]; parent[u] = u; size[u] = 1; big = Math.max(big, 1);
+    for (const [v] of ADJ[u]) {
+      if (!(v in parent) || !keep.has(v)) continue;
+      let a = find(u), b = find(v);
+      if (a === b) continue;
+      if (size[a] >= 2) groups--; if (size[b] >= 2) groups--;
+      if (size[a] < size[b]) [a, b] = [b, a];
+      parent[b] = a; size[a] += size[b]; groups++; big = Math.max(big, size[a]);
+    }
+    lcc[k] = big; grp[k] = groups;
+  }
+  return { lcc, grp };
+}
+function cutVertices(alive) {
+  const disc = {}, low = {}, cut = new Set();
+  let t = 0;
+  const dfs = (u, parent) => {
+    disc[u] = low[u] = ++t; let kids = 0;
+    for (const [v] of ADJ[u]) {
+      if (!alive.has(v)) continue;
+      if (!(v in disc)) { kids++; dfs(v, u); low[u] = Math.min(low[u], low[v]); if (parent !== null && low[v] >= disc[u]) cut.add(u); }
+      else if (v !== parent) low[u] = Math.min(low[u], disc[v]);
+    }
+    if (parent === null && kids > 1) cut.add(u);
+  };
+  alive.forEach((u) => { if (!(u in disc)) dfs(u, null); });
+  return cut;
+}
+const RM_LABEL = { btw: "Bridges first", degree: "Most co-authors first", papers: "Most papers first", random: "Random order" };
+function removalSetup() {
+  graphIndex();
+  const nodes = Object.values(NODE).filter((n) => inst === "Both" || n.inst === inst);
+  rm.ids = nodes.map((n) => n.id);
+  const inSet = new Set(rm.ids);
+  rm.links0 = 0; rm.ids.forEach((u) => ADJ[u].forEach(([v]) => { if (inSet.has(v) && u < v) rm.links0++; }));
+  Object.keys(RM_LABEL).forEach((b) => { rm.orders[b] = rmOrder(b, nodes); rm.curves[b] = percolation(rm.orders[b], rm.ids); });
+  $("#rm-k").max = rm.ids.length;
+  if (+$("#rm-k").value > rm.ids.length) $("#rm-k").value = 0;
+  if (!cyRm) {
+    const g = D.coauthor_graph, dMax = Math.max(...g.nodes.map((n) => n.degree));
+    cyRm = cytoscape({ container: $("#g-rm"), layout: { name: "preset" }, wheelSensitivity: 0.25,
+      elements: [...g.nodes.map((n) => ({ data: { id: n.id, inst: n.inst, name: n.name, size: 4 + 14 * Math.sqrt(n.degree / dMax) }, position: { x: n.x, y: n.y } })),
+                 ...g.edges.map(([a, b], k) => ({ data: { id: "r" + k, source: a, target: b } }))],
+      style: [{ selector: "node", style: { width: "data(size)", height: "data(size)", "background-color": (n) => instColor(n.data("inst")), "border-width": 0 } },
+              { selector: "edge", style: { width: 0.7, "line-color": css("--axis"), opacity: 0.8, "curve-style": "straight" } },
+              { selector: "node.cut", style: { "border-width": 2.5, "border-color": css("--c5") } },
+              { selector: ".gone", style: { opacity: 0.07 } }, { selector: ".off", style: { display: "none" } }] });
+    cyRm.on("tap", "node", (e) => openProfile(e.target.id()));
+    cyRm.fit(undefined, 12);
+  }
+  cyRm.batch(() => cyRm.elements().forEach((el) => {
+    const ids = el.isNode() ? [el.id()] : [el.data("source"), el.data("target")];
+    el.toggleClass("off", !ids.every((x) => inSet.has(x))); }));
+  rmShow();
+}
+function rmShow() {
+  if (!rm.ids.length) return;
+  const by = $("#rm-by").value, k = +$("#rm-k").value, N = rm.ids.length, gone = new Set(rm.orders[by].slice(0, k));
+  const alive = new Set(rm.ids.filter((x) => !gone.has(x))), cut = cutVertices(alive), c = rm.curves[by];
+  let links = 0; alive.forEach((u) => ADJ[u].forEach(([v]) => { if (alive.has(v) && u < v) links++; }));
+  cyRm.batch(() => {
+    cyRm.nodes().forEach((n) => { n.toggleClass("gone", gone.has(n.id())); n.toggleClass("cut", cut.has(n.id())); });
+    cyRm.edges().forEach((e) => e.toggleClass("gone", gone.has(e.data("source")) || gone.has(e.data("target"))));
+  });
+  const last = k ? NODE[rm.orders[by][k - 1]] : null;
+  $("#rm-facts").innerHTML = [fact(`${fmt(k)} of ${fmt(N)}`, `faculty removed${last ? ` (last: ${esc(last.name)}, ${esc(shortInst(last.inst))})` : ""}`),
+    fact(fmt(links), `links left of ${fmt(rm.links0)}`), fact(`${fmt(100 * c.lcc[k] / N, 1)}%`, `of the ${fmt(N)} connected faculty still in the largest group`),
+    fact(fmt(c.grp[k]), "separate groups of 2 or more"), fact(fmt(cut.size), "cut vertices: one more removal splits a group")].join("");
+  const cols = { btw: css("--c5"), degree: css("--c7"), papers: css("--c4"), random: css("--c8") };
+  draw("ch-rm", { type: "line", data: { datasets: [
+      ...Object.keys(RM_LABEL).map((b) => ({ label: RM_LABEL[b], data: rm.curves[b].lcc.map((v, i) => ({ x: i, y: +(100 * v / N).toFixed(1) })),
+        borderColor: cols[b], backgroundColor: cols[b], borderWidth: b === by ? 3 : 1.4, borderDash: b === "random" ? [5, 4] : [], pointRadius: 0, tension: 0 })),
+      { label: "now", type: "scatter", data: [{ x: k, y: +(100 * c.lcc[k] / N).toFixed(1) }], backgroundColor: css("--ink"), pointRadius: 5 }] },
+    options: baseOptions({ animation: false, interaction: { mode: "nearest", intersect: false, axis: "x" },
+      plugins: { legend: { labels: { filter: (i) => i.text !== "now" } }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.raw.y}% after ${c.raw.x} removed` } } },
+      scales: { x: { type: "linear", min: 0, max: N, title: { display: true, text: "faculty removed", color: css("--muted") } },
+                y: { min: 0, max: 100, title: { display: true, text: "largest group (% of connected faculty)", color: css("--muted") }, ticks: { callback: (v) => v + "%" } } } }) });
+}
+function rmStep(d) { const k = Math.max(0, Math.min(rm.ids.length, +$("#rm-k").value + d)); $("#rm-k").value = k; rmShow(); }
+function rmPlay() {
+  if (rmTimer) { clearInterval(rmTimer); rmTimer = null; $("#rm-play").innerHTML = "&#9654; Play"; return; }
+  if (+$("#rm-k").value >= rm.ids.length) $("#rm-k").value = 0;
+  $("#rm-play").innerHTML = "&#10073;&#10073; Pause";
+  const step = Math.max(1, Math.round(rm.ids.length / 120));
+  rmTimer = setInterval(() => { if (+$("#rm-k").value >= rm.ids.length) { rmPlay(); return; } rmStep(step); }, 90);
+}
+
+/* ---------- citation network with controls ---------- */
+const cg = { n: 30, self: false, col: "inst", field: "", big: false, ego: null };
+let CG = null;
+function citColor(n) {
+  if (cg.col === "field") { const k = CG.fieldRank[n.data("field")]; return k != null && k < 7 ? css(["--c1", "--c2", "--c3", "--c4", "--c5", "--c6", "--c7"][k]) : css("--c8"); }
+  if (cg.col === "year") { const t = (n.data("year") - 2016) / 10, a = [214, 210, 245], b = [46, 31, 153];
+    return `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * t)).join(",")})`; }
+  return instColor(INSTN[n.data("inst")]);
+}
+function citStyle() {
+  return [{ selector: "node", style: { width: "data(size)", height: "data(size)", "background-color": (n) => citColor(n), "border-width": 1, "border-color": css("--bg") } },
+          { selector: "edge", style: { width: 0.8, "line-color": (e) => e.data("self") ? css("--c4") : css("--ink-2"), "target-arrow-color": (e) => e.data("self") ? css("--c4") : css("--ink-2"),
+                                       "target-arrow-shape": "triangle", "arrow-scale": 0.6, "curve-style": "straight", opacity: (e) => e.data("self") ? 0.45 : 0.75 } },
+          { selector: "node[hub > 0]", style: { "border-width": 2, "border-color": css("--ink") } },
+          { selector: ".off", style: { display: "none" } }, { selector: ".dim", style: { opacity: 0.12 } }, { selector: "node:selected", style: { "border-width": 3, "border-color": css("--ink") } }];
+}
+function citationGraph() {
+  const C = D.x.cit_big, I = Object.fromEntries(C.cols.map((c, k) => [c, k])), prMax = Math.max(...C.nodes.map((n) => n[I.pr]));
+  const cnt = {}; C.nodes.forEach((n) => { cnt[n[I.field]] = (cnt[n[I.field]] || 0) + 1; });
+  const order = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a]);
+  CG = { C, I, fieldRank: Object.fromEntries(order.map((f, k) => [f, k])), order, cnt };
+  $("#cg-field").innerHTML = `<option value="">All fields</option>` + order.map((f) => `<option value="${f}">${esc(C.fields[f])} (${cnt[f]})</option>`).join("");
+  cyCit = cytoscape({ container: $("#g-cit"), layout: { name: "preset" }, wheelSensitivity: 0.25,
+    elements: [...C.nodes.map((n, k) => ({ data: { id: "p" + k, inst: n[I.inst], year: n[I.year], field: String(n[I.field]), na: n[I.n_authors], pr: n[I.pr], cites: n[I.citations],
+        indeg: n[I.indeg], title: n[I.title], doi: n[I.doi], hub: n[I.hub], rank: n[I.rank], size: n[I.hub] ? 12 + 24 * Math.sqrt(n[I.pr] / prMax) : 4 + 9 * Math.sqrt(n[I.pr] / prMax) },
+        position: { x: n[I.x], y: n[I.y] } })),
+      ...C.edges.map(([s, t, f], k) => ({ data: { id: "c" + k, source: "p" + s, target: "p" + t, self: f } }))],
+    style: citStyle() });
+  cyCit.on("tap", "node", (e) => { cg.ego = e.target.id(); filterCitation(); showCitInfo(e.target); });
+  cyCit.on("tap", (e) => { if (e.target === cyCit && cg.ego) { cg.ego = null; filterCitation(); $("#cg-info").textContent = "Click a paper to see its details and only its links."; } });
+  cyCit.fit(undefined, 16);
+  filterCitation();
+}
+function showCitInfo(n) {
+  const d = n.data(), C = CG.C;
+  $("#cg-info").innerHTML = `<b>${esc(d.title)}</b><br>${chip(INSTN[d.inst])} ${d.year} · ${esc(C.fields[+d.field])} · ${fmt(d.na)} authors · ${fmt(d.cites)} citations · cited by ${fmt(d.indeg)} of our papers · PageRank rank ${fmt(d.rank)} of ${fmt(C.total_papers)}${d.doi ? ` · <a href="https://doi.org/${esc(d.doi)}" target="_blank" rel="noopener">DOI</a>` : ""}<br><span style="color:var(--muted)">Showing only this paper and its links. Click the background to go back.</span>`;
+}
+function filterCitation() {
+  if (!cyCit) return;
+  const ok = (n) => (!cg.field || n.data("field") === cg.field) && (!cg.big || n.data("na") < 10);
+  const edgeOk = (e) => !(cg.self && e.data("self"));
+  let show = cyCit.collection();
+  if (cg.ego) { const eg = cyCit.getElementById(cg.ego); show = eg.union(eg.connectedEdges().filter(edgeOk).connectedNodes()); }
+  else cyCit.nodes().filter((n) => n.data("hub") > 0 && n.data("hub") <= cg.n && ok(n)).forEach((h) => {
+    show = show.union(h);
+    h.connectedEdges().filter(edgeOk).forEach((e) => { const o = e.source().same(h) ? e.target() : e.source(); if (ok(o)) show = show.union(o); }); });
+  let nE = 0, nSelf = 0;
+  cyCit.batch(() => {
+    cyCit.nodes().forEach((n) => { n.toggleClass("off", !show.has(n)); n.toggleClass("dim", inst !== "Both" && n.data("inst") !== "B" && INSTN[n.data("inst")] !== inst); });
+    cyCit.edges().forEach((e) => { const on = edgeOk(e) && show.has(e.source()) && show.has(e.target()); e.toggleClass("off", !on); if (on) { nE++; if (e.data("self")) nSelf++; } });
+  });
+  const C = CG.C;
+  $("#cg-note").innerHTML = `${fmt(show.length)} of our ${fmt(C.total_papers)} papers and ${fmt(nE)} citations between them${nE ? `; <b>${pct(nSelf / nE)}</b> of these citations share an author (amber)` : ""}. Over all ${fmt(C.total_edges)} citations between our papers the share is ${pct(C.self_share_all)}. Node size = PageRank; outlined = one of the top papers.`;
+  const leg = cg.col === "inst" ? [...INSTS, "Both"].map((i) => `<span><span class="dot" style="background:${instColor(i)}"></span>${i === "Both" ? "Both NITs" : i}</span>`).join("")
+    : cg.col === "field" ? CG.order.slice(0, 7).map((f, k) => `<span><span class="dot" style="background:${css(["--c1", "--c2", "--c3", "--c4", "--c5", "--c6", "--c7"][k])}"></span>${esc(C.fields[+f])}</span>`).join("") + `<span><span class="dot" style="background:${css("--c8")}"></span>other fields</span>`
+    : `<span><span class="dot" style="background:rgb(214,210,245)"></span>2016</span><span>→</span><span><span class="dot" style="background:rgb(46,31,153)"></span>2026</span>`;
+  $("#cg-legend").innerHTML = leg + `<span><span class="dot" style="background:${css("--c4")}"></span>self-citation (shared author)</span><span><span class="dot" style="background:${css("--ink-2")}"></span>other citation</span>`;
+}
+function selfYear() {
+  const S = (D.x || {}).selfcite_year || [];
+  draw("ch-selfyear", { type: "line", data: { labels: YEARS, datasets: views().map((i) => ({ label: i, borderColor: instColor(i), backgroundColor: instColor(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2,
+      data: YEARS.map((y) => (S.find((r) => r.institution === i && r.year === y) || {}).self_pct ?? null) })) },
+    options: baseOptions({ plugins: { tooltip: { callbacks: { label: (c) => { const r = S.find((x) => x.institution === views()[c.datasetIndex] && x.year === YEARS[c.dataIndex]) || {};
+        return `${c.dataset.label}: ${fmt(c.raw, 1)}% of ${fmt(r.citations)} citations`; } } } },
+      scales: { y: { min: 0, max: 100, ticks: { callback: (v) => v + "%" } } } }) });
+}
+
+/* ---------- Indian connections: summary cards, partner charts, heat map ---------- */
+function cnCards() {
+  const a = D.analysis, X = D.x || {}, tot = (i, k) => a.flow_year.filter((r) => r.institution === i).reduce((s, r) => s + (r[k] || 0), 0);
+  $("#cn-cards").innerHTML = views().map((i) => { const ir = a.indian_ratio[i];
+    return `<div class="cn-card" style="--c:${instColor(i)}"><h4>${i}</h4><div class="cn-row">` +
+      `<div><b>${fmt((X.partner_count || {})[i])}</b><span>Indian partner institutes (joint papers)</span></div><div><b>${fmt(ir, 2)}</b><span>impact ratio: citations in ÷ out</span></div>` +
+      `<div><b>${fmt(tot(i, "received"))}</b><span>citations received from Indian institutes</span></div><div><b>${fmt(tot(i, "given"))}</b><span>citations given to them</span></div></div>` +
+      `<p>${ir >= 1 ? "Cited by other Indian institutes more than it cites them." : "Cites other Indian institutes more than it is cited by them."}</p></div>`; }).join("");
+}
+function partnerBars(id, k, label) {
+  const pts = D.conn.geo_points.filter((p) => views().includes(p[0]) && !INSTS.includes(p[1])), tot = {};
+  pts.forEach((p) => { tot[p[1]] = (tot[p[1]] || 0) + p[k]; });
+  const names = Object.keys(tot).sort((x, y) => tot[y] - tot[x]).slice(0, 12);
+  draw(id, { type: "bar", data: { labels: names.map((n) => n.length > 38 ? n.slice(0, 36) + "…" : n), datasets: views().map((i) => ({ label: shortInst(i), backgroundColor: instColor(i), borderRadius: 3,
+      data: names.map((n) => (pts.find((p) => p[0] === i && p[1] === n) || [])[k] || 0) })) },
+    options: baseOptions({ indexAxis: "y", plugins: { legend: { display: views().length > 1 }, tooltip: { callbacks: { title: (c) => names[c[0].dataIndex], label: (c) => `${c.dataset.label}: ${fmt(c.raw)} ${label}` } } },
+      scales: { x: { stacked: true, beginAtZero: true, title: { display: true, text: label, color: css("--muted") } }, y: { stacked: true, grid: { display: false }, ticks: { autoSkip: false, font: { size: 11 } } } } }) });
+}
+function heatTable() {
+  const H = (D.x || {}).partner_heat || [];
+  const mx = Math.max(...H.flatMap((r) => INSTS.map((i) => r[i][1])));
+  $("#t-heat").innerHTML = `<thead><tr><th>Partner</th><th>Type</th>${INSTS.map((i) => `<th class="num">${i}</th>`).join("")}</tr></thead><tbody>` +
+    H.map((r) => `<tr><td>${esc(r.partner)}</td><td><span class="chip">${esc(r.type)}</span></td>${INSTS.map((i) => { const [n, s] = r[i];
+      return `<td class="num" style="background:rgba(98,80,214,${(0.75 * s / mx).toFixed(2)});${s / mx > 0.55 ? "color:#fff" : ""}">${n ? `${fmt(s, 1)}% <span style="opacity:.75">(${fmt(n)})</span>` : "·"}</td>`; }).join("")}</tr>`).join("") + "</tbody>";
+}
+
+/* ---------- Indian connections: the map ---------- */
+const mapLayers = { co: true, cit: true };
+const outlinePlugin = { id: "outline", beforeDatasetsDraw(ch) {
+  const R = (D.x || {}).india_outline; if (!R) return;
+  const { ctx, scales: { x, y } } = ch;
+  ctx.save(); ctx.beginPath();
+  R.forEach((ring) => { ring.forEach(([lo, la], k) => { const px = x.getPixelForValue(lo), py = y.getPixelForValue(la); if (k) ctx.lineTo(px, py); else ctx.moveTo(px, py); }); ctx.closePath(); });
+  ctx.fillStyle = "rgba(15, 23, 42, 0.03)"; ctx.fill("evenodd");
+  ctx.strokeStyle = "rgba(15, 23, 42, 0.2)"; ctx.lineWidth = 1; ctx.lineJoin = "round"; ctx.stroke();
+  ctx.restore(); } };
+function drawMap() {
+  const C = D.conn, pts = C.geo_points.filter((p) => views().includes(p[0]) && !INSTS.includes(p[1]));
+  const ds = [{ label: "our NITs", data: views().map((i) => ({ x: C.geo_home[i][1], y: C.geo_home[i][0], r: 11, home: i })), backgroundColor: views().map(instColor),
+    borderColor: css("--ink"), borderWidth: 1.5, pointStyle: "star" }];
+  if (mapLayers.cit) views().forEach((i) => ds.push({ label: `${shortInst(i)}: citations exchanged`, data: pts.filter((p) => p[0] === i && p[5] >= 30).map((p) => ({ x: p[3], y: p[2], r: 2 + 0.34 * Math.sqrt(p[5]), p })),
+    backgroundColor: "rgba(255, 255, 255, 0)", borderColor: instColor(i) + "b0", borderWidth: 1.3 }));
+  if (mapLayers.co) views().forEach((i) => ds.push({ label: `${shortInst(i)}: joint papers`, data: pts.filter((p) => p[0] === i && p[4] > 0).map((p) => ({ x: p[3], y: p[2], r: 2 + 1.2 * Math.sqrt(p[4]), p })),
+    backgroundColor: instColor(i) + "70", borderColor: instColor(i), borderWidth: 1 }));
+  const nCo = new Set(pts.filter((p) => p[4] > 0).map((p) => p[1])).size, nCit = new Set(pts.filter((p) => p[5] >= 30).map((p) => p[1])).size;
+  $("#mp-count").textContent = `${fmt(nCo)} partners with joint papers · ${fmt(nCit)} with 30+ citations exchanged`;
+  draw("ch-map", { type: "bubble", data: { datasets: ds }, plugins: [outlinePlugin],
+    options: baseOptions({ interaction: { mode: "nearest", intersect: true }, maintainAspectRatio: true, aspectRatio: 0.92, animation: false,
+      onClick: (e, els, ch) => { if (!els.length) return; const d = ch.data.datasets[els[0].datasetIndex].data[els[0].index]; if (d.p) mapDetail(d.p); },
+      onHover: (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : "default"; },
+      plugins: { legend: { position: "bottom", labels: { boxWidth: 10, usePointStyle: true } },
+        tooltip: { displayColors: false, callbacks: { title: (c) => c[0].raw.home || c[0].raw.p[1], label: (c) => c.raw.home ? "" : (c.raw.p[8] ? c.raw.p[8] + " · " : "") + "click for details" } } },
+      scales: { x: { display: false, min: 67.5, max: 98 }, y: { display: false, min: 6, max: 37.5 } } }) });
+  const lc = charts["ch-local"];
+  if (lc) { lc.setDatasetVisibility(0, mapLayers.co); lc.setDatasetVisibility(1, mapLayers.cit); lc.update(); }
+}
+function mapDetail(p) {
+  const det = ((D.x || {}).partner_detail || {})[`${p[0]}|${p[1]}`] || {}, other = D.conn.geo_points.find((q) => q[1] === p[1] && q[0] !== p[0]);
+  const yrs = YEARS.filter((y) => y < 2026);
+  $("#mp-detail").innerHTML = `<h4>${esc(p[1])}</h4><div><span class="chip">${esc(p[6])}</span> ${p[8] ? `<span class="chip">${esc(p[8])}</span>` : ""} <span class="chip">${fmt(p[7])} km from ${esc(shortInst(p[0]))}</span></div>` +
+    `<div class="nums"><div><b>${fmt(p[4])}</b>joint papers with ${esc(shortInst(p[0]))}</div><div><b>${fmt(p[9])}</b>times they cite us</div><div><b>${fmt(p[10])}</b>times we cite them</div></div>` +
+    (other ? `<p class="note" style="margin:0 0 6px">Also linked to ${esc(other[0])}: ${fmt(other[4])} joint papers, ${fmt(other[5])} citations exchanged.</p>` : "") +
+    (det.y ? `<div class="mini"><canvas id="ch-mp-year" aria-label="Joint papers per year"></canvas></div>` : "") +
+    (det.f && det.f.length ? `<b style="color:var(--ink)">Our faculty on these papers</b><div class="co" style="display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px">${det.f.map(([n, c]) => { const f = D.faculty.find((x) => x.name === n && x.institution === p[0]);
+      return f ? `<button type="button" class="lnk" data-fid="${f.faculty_id}">${esc(n)} (${c})</button>` : `<span>${esc(n)} (${c})</span>`; }).join(" · ")}</div>` : "") +
+    (det.p && det.p.length ? `<b style="color:var(--ink)">Most-cited joint papers</b><ul>${det.p.map(([t, y, c, d]) => `<li>${d ? `<a href="https://doi.org/${esc(d)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t)} <span style="color:var(--muted)">${y} · ${fmt(c)} citations</span></li>`).join("")}</ul>` : "");
+  $("#mp-detail").querySelectorAll("[data-fid]").forEach((b) => b.addEventListener("click", () => openProfile(b.dataset.fid)));
+  if (det.y) miniChart("ch-mp-year", "bar", yrs, [{ label: "joint papers", data: yrs.map((y) => det.y[y] || 0), backgroundColor: instColor(p[0]), borderRadius: 2 }],
+    { min: 0, tooltip: { callbacks: { label: (c) => `${fmt(c.raw)} joint papers` } } });
+}
+
+/* ---------- publications: field bubbles and conferences by department ---------- */
+let bubSel = null;
+const bubLabels = { id: "bubLabels", afterDatasetsDraw(ch) {
+  const ds = ch.data.datasets[0], meta = ch.getDatasetMeta(0), ctx = ch.ctx;
+  const pick = new Set([...ds.data].sort((a, b) => b.f.n - a.f.n).slice(0, 5).concat([...ds.data].sort((a, b) => b.f.c - a.f.c).slice(0, 3)).map((d) => d.f.f));
+  ctx.save(); ctx.font = `600 11px ${css("--body")}`; ctx.fillStyle = css("--ink-2"); ctx.textAlign = "center";
+  meta.data.forEach((el, k) => { const d = ds.data[k]; if (pick.has(d.f.f)) ctx.fillText(d.f.f.replace(" and ", " & "), el.x, el.y - el.options.radius - 5); });
+  ctx.restore(); } };
+function pubBubbles() {
+  const v = inst === "Both" ? "Both" : inst, F = ((D.x || {}).fields || {})[v] || [];
+  if (!F.length) return;
+  const c = instColor(v), nMax = Math.max(...F.map((f) => f.n));
+  draw("ch-bub", { type: "bubble", data: { datasets: [{ label: "fields", data: F.map((f) => ({ x: f.n, y: f.c, r: 4 + 20 * Math.sqrt(f.n / nMax), f })), backgroundColor: c + "80", borderColor: c, borderWidth: 1 }] },
+    plugins: [bubLabels],
+    options: baseOptions({ interaction: { mode: "nearest", intersect: true },
+      onClick: (e, els) => { if (els.length) { bubSel = F[els[0].index].f; bubDetail(F[els[0].index]); } },
+      onHover: (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : "default"; },
+      plugins: { legend: { display: false }, tooltip: { displayColors: false, callbacks: { title: (c) => c[0].raw.f.f, label: (c) => `${fmt(c.raw.f.n)} papers · ${fmt(c.raw.f.c, 1)} citations per paper · median FWCI ${fmt(c.raw.f.fw, 2)}` } } },
+      scales: { x: { type: "logarithmic", title: { display: true, text: "papers in the field (log scale)", color: css("--muted") } },
+                y: { beginAtZero: true, title: { display: true, text: "mean citations per paper", color: css("--muted") } } } }) });
+  bubDetail(F.find((f) => f.f === bubSel) || F.filter((f) => f.n >= 50).sort((a, b) => b.c - a.c)[0] || F[0]);
+}
+function bubDetail(f) {
+  if (!f) return;
+  $("#bub-detail").innerHTML = `<h4>${esc(f.f)}</h4><div class="nums"><div><b>${fmt(f.n)}</b>papers</div><div><b>${fmt(f.c, 1)}</b>citations per paper</div><div><b>${fmt(f.fw, 2)}</b>median FWCI</div></div>` +
+    `<b style="color:var(--ink)">Most-cited papers</b><ul>${f.top.map(([t, y, c, d, i]) => `<li>${d ? `<a href="https://doi.org/${esc(d)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t)} <span style="color:var(--muted)">${y} · ${fmt(c)} citations${i ? " · " + INSTN[i].replace("NIT ", "") : ""}</span></li>`).join("")}</ul>`;
+}
+let cfKind = "named";
+function pubConf() {
+  const V = (D.x || {}).venues_dept || {};
+  if (!$("#cf-dept").options.length) {
+    const depts = [...new Set(INSTS.flatMap((i) => Object.keys(V[i] || {})))].sort((a, b) => a === "All departments" ? -1 : b === "All departments" ? 1 : a.localeCompare(b));
+    $("#cf-dept").innerHTML = depts.map((d) => `<option>${esc(d)}</option>`).join("");
+  }
+  const d = $("#cf-dept").value || "All departments", wide = views().length > 1 ? "s6" : "s12";
+  $("#cf-cols").innerHTML = views().map((i) => { const g = (V[i] || {})[d];
+    if (!g) return `<div class="${wide}"><h4 class="vh"><span class="dot" style="background:${instColor(i)}"></span>${i}</h4><p class="note">Fewer than 10 conference papers in this department.</p></div>`;
+    const rows = g[cfKind], mx = Math.max(1, ...rows.map((r) => r[1]));
+    return `<div class="${wide}"><h4 class="vh"><span class="dot" style="background:${instColor(i)}"></span>${i}<small>${fmt(g.total)} conference papers</small></h4><ol class="vlist">` +
+      (rows.length ? rows.map((r) => `<li><div class="vt"><span>${esc(r[0])}</span>${r[3] ? `<span class="chip">CORE ${esc(r[3])}</span>` : ""}</div><div class="vb"><i style="width:${(100 * r[1] / mx).toFixed(1)}%;background:${instColor(i)}"></i></div><div class="vn">${fmt(r[1])} papers · ${fmt(r[2])} citations</div></li>`).join("")
+        : '<li><span></span><span class="note">None.</span></li>') + "</ol></div>"; }).join("");
+}
+
+/* ---------- faculty profile drawer ---------- */
+const FAC = {};
+D.faculty.forEach((f) => { FAC[f.faculty_id] = f; });
+const facLab = (f) => `${f.name} · ${f.branch || "–"} · ${shortInst(f.institution)}`;
+let fpIds = [];
+function fpSetup() {
+  if ($("#fp-list").dataset.done) return;
+  $("#fp-list").innerHTML = [...D.faculty].sort((a, b) => a.name.localeCompare(b.name)).map((f) => `<option value="${esc(facLab(f))}"></option>`).join("");
+  $("#fp-list").dataset.done = "1";
+}
+function findFac(v) {
+  v = String(v || "").trim().toLowerCase();
+  if (!v) return null;
+  return D.faculty.find((f) => facLab(f).toLowerCase() === v) || D.faculty.find((f) => f.name.toLowerCase() === v) || D.faculty.find((f) => f.name.toLowerCase().startsWith(v)) || null;
+}
+function openProfile(id, second) {
+  fpSetup(); graphIndex();
+  fpIds = second ? [fpIds[0], id].filter(Boolean) : [id].filter(Boolean);
+  $("#fp").hidden = false; $("#fp-scrim").classList.add("on");
+  renderProfile();
+  if (!id) setTimeout(() => $("#fp-q").focus(), 50);
+}
+function closeProfile() { $("#fp").hidden = true; $("#fp-scrim").classList.remove("on"); }
+function profileHTML(id, k, ids) {
+  const f = FAC[id], x = ((D.x || {}).profiles || {})[id] || {}, T10 = (D.p2.fac_top10 || {}), top = (T10.faculty || {})[id];
+  const other = ids.length > 1 ? FAC[ids[1 - k]] : null, ox = other ? (((D.x || {}).profiles || {})[other.faculty_id] || {}) : null;
+  const win = (a, b) => other && a != null && b != null && a > b ? "win" : "";
+  const stat = (v, ov, label, d = 0) => `<div><b class="${win(v, ov)}">${fmt(v, d)}</b>${label}</div>`;
+  const tc = (D.p2.top_career || []).find((r) => r.author === f.name && r.institution === f.institution);
+  const care = [];
+  if (x.big >= 0.3) care.push(`${pct(x.big)} of this person's citations come from papers with 10 or more authors.`);
+  if (tc && tc.nit_share_of_career_citations_pct < 5) care.push("OpenAlex career totals look merged with a same-name profile; the NIT papers here are fine.");
+  const co = (ADJ && ADJ[id] ? [...ADJ[id]] : []).sort((a, b) => b[1] - a[1]);
+  const qc = [css("--c1"), css("--c3"), css("--c4"), css("--c2"), css("--c8"), css("--c7")], qn = ["Q1", "Q2", "Q3", "Q4", "other journal", "conference"], q = x.q || [], qs = q.reduce((s, v) => s + v, 0) || 1;
+  return `<div class="panel fp"><h4>${esc(f.name)}</h4><div class="meta">${chip(f.institution)}<span>${esc(f.branch || "–")}</span>·<span>${esc(f.designation || "")}</span>·` +
+    `${f.status === "current" ? '<span class="chip good">current</span>' : `<span class="chip">former · last listed ${f.last_seen}</span>`} ${gs(f.name, f.institution)}</div>` +
+    `<div class="stats">${stat(f.papers, other && other.papers, "papers 2016–26")}${stat(f.citations, other && other.citations, "citations")}${stat(f.h, other && other.h, "h-index 2016–26")}` +
+    `${stat(f.h_career, other && other.h_career, "career h-index")}${stat(f.mean_fwci, other && other.mean_fwci, "mean FWCI", 2)}${stat(x.fw, ox && ox.fw, "median FWCI", 2)}</div>` +
+    `<h5>Papers per year</h5><div style="position:relative;height:120px"><canvas id="fp-y${k}" aria-label="Papers per year"></canvas></div>` +
+    `<h5>Where the papers appear</h5><div class="qbar">${q.map((v, j) => v ? `<i style="width:${(100 * v / qs).toFixed(1)}%;background:${qc[j]}" title="${qn[j]}: ${v}"></i>` : "").join("")}</div>` +
+    `<div class="qleg">${q.map((v, j) => v ? `<span><span class="dot" style="background:${qc[j]}"></span>${qn[j]} ${v}</span>` : "").join("")}</div>` +
+    (x.lead != null ? `<p class="note" style="margin:8px 0 0">First author on ${pct(x.lead)} of their papers.</p>` : "") +
+    (care.length ? `<div class="care"><b>Read with care.</b> ${care.join(" ")}</div>` : "") +
+    `<h5>Faculty co-authors (${co.length})</h5>${co.length ? `<div class="co">${co.slice(0, 24).map(([v, w]) => `<button type="button" data-fid="${v}" title="${w} joint papers">${esc((NODE[v] || {}).name || v)} · ${w}</button>`).join("")}${co.length > 24 ? `<span class="note">+${co.length - 24} more</span>` : ""}</div>` : '<p class="note">No joint paper with another faculty member of the two NITs.</p>'}` +
+    `<h5>Top 10 papers by journal impact factor</h5>${top ? `<ol>${top.p.map(([t, j, iF, qq, y, c, d]) => `<li>${d ? `<a href="https://doi.org/${esc(d)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t)} <span style="color:var(--muted)">${esc(T10.journals[j])} · IF ${fmt(iF, 1)}${qq ? " · " + esc(qq) : ""} · ${y} · ${fmt(c)} citations</span></li>`).join("")}</ol>` : '<p class="note">No papers in SCImago-ranked journals.</p>'}</div>`;
+}
+function renderProfile() {
+  const ids = fpIds.filter((id) => FAC[id]);
+  $("#fp").classList.toggle("wide", ids.length > 1);
+  $("#fp-q").value = ids[0] ? facLab(FAC[ids[0]]) : ""; $("#fp-q2").value = ids[1] ? facLab(FAC[ids[1]]) : "";
+  if (!ids.length) { $("#fp-body").innerHTML = `<p class="note">Type a name above and pick from the list (${fmt(D.faculty.length)} faculty, current and former). Add a second name to compare two people side by side.</p>`; return; }
+  $("#fp-body").innerHTML = `<div class="fp-cols">${ids.map((id, k) => profileHTML(id, k, ids)).join("")}</div>`;
+  const yrs = YEARS;
+  ids.forEach((id, k) => { const y = (((D.x || {}).profiles || {})[id] || {}).y || [];
+    miniChart(`fp-y${k}`, "bar", yrs.map((v) => v === 2026 ? "26*" : String(v).slice(2)), [{ label: "papers", data: y, backgroundColor: instColor(FAC[id].institution), borderRadius: 2 }],
+      { min: 0, tooltip: { callbacks: { title: (c) => String(yrs[c[0].dataIndex]), label: (c) => `${fmt(c.raw)} papers` } } }); });
+  $("#fp-body").querySelectorAll("[data-fid]").forEach((b) => b.addEventListener("click", () => openProfile(b.dataset.fid)));
+}
+
+/* ---------- South Indian NITs ---------- */
+let sodMode = "connected";
+const labelPlugin = (key) => ({ id: "ptLabels" + key, afterDatasetsDraw(ch) {
+  const ctx = ch.ctx; ctx.save(); ctx.font = `600 11px ${css("--body")}`; ctx.fillStyle = css("--ink-2"); ctx.textAlign = "left";
+  ch.data.datasets.forEach((ds, di) => { const meta = ch.getDatasetMeta(di); if (meta.hidden) return;
+    meta.data.forEach((el, k) => { const d = ds.data[k]; if (!d || !d[key]) return;
+      const left = el.x + 10 + ctx.measureText(d[key]).width > ch.chartArea.right;   // near the right edge: put the name on the left of the dot
+      ctx.textAlign = left ? "right" : "left"; ctx.fillText(d[key], left ? el.x - 10 : el.x + 8, el.y + 4); }); });
+  ctx.restore(); } });
+function southTab() {
+  const S = D.south;
+  if (!S) { $("#so-lede").textContent = "The South Indian NIT comparison has not been built yet (scripts/south_nits.py)."; return; }
+  const NITS = S.nits.map((n) => n.institution), T = Object.fromEntries(S.table.map((r) => [r.institution, r])), short = (i) => i.replace("NIT ", "");
+  const ft = S.founding_test, f1 = ft["hired_2021_2025_pct vs a_connected_2016-2026"] || {}, f2 = ft["founded vs a_connected_2016-2026"] || {},
+        fr = ft["rolling 4-year windows: share of faculty hired in the window vs exponent"] || {};
+  $("#so-lede").innerHTML = `Our two NITs next to the other four NITs of South India: Warangal, Calicut, Puducherry and Andhra Pradesh. Puducherry (2010) and Andhra Pradesh (2015) are young NITs still building their faculty.`;
+  const pv = (r) => r.p_exact != null ? r.p_exact : r.p;
+  $("#so-facts").innerHTML = [
+    fact(`ρ = ${fmt(f1.spearman_rho, 2)}`, `recent hiring (2021–25) against the exponent a, six NITs (exact p = ${fmt(pv(f1), 3)}): the more a NIT hired recently, the lower its a`),
+    fact(`ρ = ${fmt(f2.spearman_rho, 2)}`, `founding year against a (p = ${fmt(pv(f2), 3)}): younger NITs densify more slowly`),
+    fact(`${fa(Math.min(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}–${fa(Math.max(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}`, "exponent a at the six NITs (faculty with a co-author): every NIT densifies"),
+    fact(`${fmt(Math.min(...NITS.map((i) => T[i].self_citation_share_pct)))}–${fmt(Math.max(...NITS.map((i) => T[i].self_citation_share_pct)))}%`, "of citations between a NIT's own papers share an author, at every NIT"),
+  ].join("");
+  const M = [["Founded", (r) => r.founded], ["Faculty on the NIRF 2025 list (regular)", (r) => `${fmt(r.nirf_faculty_current)} (${fmt(r.nirf_regular)})`], ["Assistant Professors", (r) => fmt(r.assistant_pct) + "%"],
+    ["Hired 2021–2025", (r) => fmt(r.hired_2021_2025_pct) + "%"], ["Papers 2016–2025", (r) => fmt(r.papers_2016_2025)], ["Papers in 2024", (r) => fmt(r.papers_2024)],
+    ["<b>Papers in 2024 per faculty member</b>", (r) => `<b>${fmt(r.papers_2024_per_faculty, 1)}</b>`], ["Median FWCI", (r) => fmt(r.median_fwci, 2)],
+    ["Q1 share of journal papers", (r) => fmt(r.q1_share_of_journal_papers_pct) + "%"], ["Foreign co-author", (r) => fmt(r.foreign_coauthor_share_pct) + "%"],
+    ["<b>a, faculty with a co-author, 2016–26</b>", (r) => `<b>${fa(r["a_connected_2016-2026"])}</b>`], ["a, 2019–2025", (r) => fa(r["a_connected_2019-2025"])],
+    ["a, all authors incl. students", (r) => fa(r["a_all_authors_2016-2026"])], ["Co-authors per connected faculty, 2025", (r) => fmt(r.avg_degree_connected_2025, 2)],
+    ["Co-authors within 2025 alone", (r) => fmt(r.single_year_coauthors_2025, 2)], ["Self-citations between own papers", (r) => fmt(r.self_citation_share_pct) + "%"],
+    ["Faculty matched to OpenAlex", (r) => fmt(r.faculty_matched_pct) + "%"]];
+  $("#t-south").innerHTML = T2([[""], ...NITS.map((i) => [`<span class="dot" style="background:${nitColor(i)}"></span>${esc(short(i))}`, 1])], M.map(([l, f]) => [l, ...NITS.map((i) => f(T[i]))]));
+  $("#so-found-note").innerHTML = `Each dot is a NIT: the share of today's faculty hired in 2021–2025 against the exponent a (2016–2026). Spearman ρ = ${fmt(f1.spearman_rho, 2)}, exact p = ${fmt(pv(f1), 3)} (n = 6). New hires arrive with few links, so a NIT that is still hiring adds people faster than links.`;
+  draw("ch-so-found", { type: "scatter", data: { datasets: NITS.map((i) => ({ label: short(i), data: [{ x: T[i].hired_2021_2025_pct, y: T[i]["a_connected_2016-2026"], lab: short(i) }], backgroundColor: nitColor(i), pointRadius: 7, pointHoverRadius: 9 })) },
+    plugins: [labelPlugin("lab")],
+    options: baseOptions({ interaction: { mode: "nearest", intersect: true }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: hired ${fmt(c.raw.x)}% in 2021–25, a = ${fa(c.raw.y)}` } } },
+      scales: { x: { title: { display: true, text: "faculty hired 2021–2025 (% of today's faculty)", color: css("--muted") }, ticks: { callback: (v) => v + "%" } },
+                y: { beginAtZero: false, title: { display: true, text: "densification exponent a", color: css("--muted") } } } }) });
+  draw("ch-so-exp", { type: "bar", data: { labels: NITS.map(short), datasets: [
+      { label: "2016–2026", data: NITS.map((i) => T[i]["a_connected_2016-2026"]), backgroundColor: NITS.map(nitColor), borderRadius: 4 },
+      { label: "2019–2025", data: NITS.map((i) => T[i]["a_connected_2019-2025"]), backgroundColor: NITS.map((i) => nitColor(i) + "70"), borderRadius: 4 }] },
+    options: baseOptions({ plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label}: a = ${fa(c.raw)}` } } },
+      scales: { x: { grid: { display: false } }, y: { min: 0, title: { display: true, text: "exponent a", color: css("--muted") }, grid: { color: (c) => c.tick.value === 1 ? css("--ink-2") : css("--grid") } } } }) });
+  const yrs = YEARS.filter((y) => y < 2026), by = (i, y) => S.by_year.find((r) => r.institution === i && r.year === y) || {};
+  const lines = (k) => NITS.map((i) => ({ label: short(i), data: yrs.map((y) => by(i, y)[k] ?? null), borderColor: nitColor(i), backgroundColor: nitColor(i), borderWidth: 2.2, pointRadius: 2, tension: 0.2 }));
+  draw("ch-so-papers", { type: "line", data: { labels: yrs, datasets: lines("papers") }, options: baseOptions() });
+  const od = baseOptions(); od.scales.y.title = { display: true, text: "co-authors per faculty member", color: css("--muted") };
+  draw("ch-so-deg", { type: "line", data: { labels: yrs, datasets: lines(sodMode === "connected" ? "avg_degree_connected" : "avg_degree_pure_n") }, options: od });
+  const H = S.hires_by_year_2016_2025 || {};
+  draw("ch-so-hires", { type: "bar", data: { labels: yrs, datasets: NITS.map((i) => ({ label: short(i), data: (H[i] || []), backgroundColor: nitColor(i), borderRadius: 2 })) },
+    options: baseOptions({ scales: { x: { grid: { display: false } }, y: { beginAtZero: true, title: { display: true, text: "faculty hired (still there in 2025)", color: css("--muted") } } } }) });
+  const RE = S.rolling_exponent || [];
+  $("#so-roll-note").innerHTML = `Each dot is one NIT in one 4-year window: the share of faculty hired in the window against the exponent in that window. Spearman ρ = ${fmt(fr.spearman_rho, 2)} (n = ${fr.n}, overlapping windows, so the p-value is optimistic).`;
+  draw("ch-so-roll", { type: "scatter", data: { datasets: NITS.map((i) => ({ label: short(i), backgroundColor: nitColor(i) + "cc", pointRadius: 5,
+      data: RE.filter((r) => r.institution === i && r.exponent_a != null).map((r) => ({ x: r.hired_in_window_pct, y: r.exponent_a, w: r.window })) })) },
+    options: baseOptions({ interaction: { mode: "nearest", intersect: true }, plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label} ${c.raw.w}: hired ${fmt(c.raw.x)}%, a = ${fa(c.raw.y)}` } } },
+      scales: { x: { title: { display: true, text: "faculty hired in the window (%)", color: css("--muted") } }, y: { beginAtZero: false, title: { display: true, text: "exponent a in the window", color: css("--muted") } } } }) });
+}
+
 /* ---------------- tabs and wiring ---------------- */
-const TABS = ["keyfindings", "overview", "publications", "trends", "faculty", "citation", "coauthor", "growth", "connections", "analysis", "phase2", "questions", "methods"];
-let tab = "keyfindings";
+const TABS = ["home", "keyfindings", "overview", "publications", "trends", "faculty", "coauthor", "citation", "growth", "connections", "analysis", "south", "phase2", "questions", "methods"];
+const safe = (f) => { try { f(); } catch (err) { console.error(err); } };   // one broken panel must not blank a tab
+let tab = "home";
 const rendered = {};  // the institute view each tab was last drawn for; tabs are drawn when first shown
+
+/* long tabs: a row of chips shows one section at a time (sections start at a grid child with data-chip) */
+function setupChips(sec) {
+  if (!sec || sec.dataset.chips) return;
+  const grid = sec.querySelector(":scope > .grid");
+  if (!grid) return;
+  let g = null;
+  const names = [];
+  [...grid.children].forEach((el) => { if (el.dataset.chip) { g = el.dataset.chip; names.push(g); } if (g) el.dataset.grp = g; });
+  sec.dataset.chips = "1";
+  if (!names.length) return;
+  const bar = document.createElement("div");
+  bar.className = "chips"; bar.setAttribute("role", "group"); bar.setAttribute("aria-label", "Parts of this section");
+  bar.innerHTML = names.map((n) => `<button type="button" data-g="${esc(n)}">${esc(n)}</button>`).join("") + `<button type="button" data-g="*">Show all</button>`;
+  grid.before(bar);
+  bar.addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return;
+    setGroup(sec, b.dataset.g);
+    window.scrollTo({ top: Math.max(0, sec.getBoundingClientRect().top + window.scrollY - 8), behavior: "auto" }); });
+  setGroup(sec, names[0]);
+}
+function setGroup(sec, g) {
+  sec.querySelectorAll(":scope > .grid > [data-grp]").forEach((el) => el.classList.toggle("off", g !== "*" && el.dataset.grp !== g));
+  sec.querySelectorAll(":scope > .chips button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.g === g)));
+}
+
+/* tables: under a chart they fold away; long ones show their first 8 rows. Tables with their own search or
+   "Show more" button, and tables marked data-keep, are left as they are. */
+function tidyLabel(w) {
+  const hidden = [...w.querySelectorAll("tbody")].reduce((s, tb) => s + Math.max(0, tb.rows.length - 8), 0);
+  if (w.dataset.tidy === "fold") {
+    const n = w.querySelectorAll("tbody tr").length;
+    w.parentElement.querySelector("summary").textContent = `Show the table (${fmt(n)} ${n === 1 ? "row" : "rows"})`;
+  } else {
+    const b = w.nextElementSibling;
+    b.hidden = hidden === 0;
+    b.textContent = w.classList.contains("open") ? "Show fewer rows" : `Show all rows (${fmt(hidden)} more)`;
+  }
+}
+function tidyTables(sec) {
+  sec.querySelectorAll(".tablewrap").forEach((w) => {
+    if (w.dataset.tidy) { tidyLabel(w); return; }
+    if (w.hasAttribute("data-keep")) return;
+    const panel = w.closest(".panel");
+    if (!panel || panel.querySelector('input[type="search"], .btn')) return;
+    const n = w.querySelectorAll("tbody tr").length;
+    if (panel.querySelector("canvas, .graph") && n > 6) {
+      const d = document.createElement("details");
+      d.className = "tbl"; d.innerHTML = "<summary></summary>";
+      w.before(d); d.appendChild(w); w.dataset.tidy = "fold";
+    } else if (n > 12) {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "more";
+      w.after(b); w.classList.add("clip"); w.dataset.tidy = "clip";
+      b.addEventListener("click", () => { w.classList.toggle("open"); tidyLabel(w); });
+    } else return;
+    new MutationObserver(() => tidyLabel(w)).observe(w, { childList: true, subtree: true });
+    tidyLabel(w);
+  });
+}
+function showPanel(id) {
+  // scroll to one panel (a deep link such as #phase2/p2-depth-self), opening its chip section first
+  let el = document.getElementById(id);
+  if (!el) return;
+  el = el.closest(".panel") || el;
+  const sec = el.closest('section[role="tabpanel"]');
+  if (el.classList.contains("off") && sec) setGroup(sec, el.dataset.grp);
+  // charts drawn just now can still change the page height, so settle the scroll a few times (64 px leaves room for the chips)
+  const go = () => window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 64), behavior: "auto" });
+  go(); [150, 600, 1200].forEach((ms) => setTimeout(go, ms));
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+}
+const closeNav = () => { $("#side").classList.remove("open"); $("#scrim").classList.remove("on"); $("#nav-open").setAttribute("aria-expanded", "false"); };
 function renderTab(name) {
   if (rendered[name] === inst) return;
+  if (name === "home") homeTab();
   if (name === "keyfindings") keyFindings();
   if (name === "overview") overview();
-  if (name === "publications") { publications(); pubTypes(); }
+  if (name === "publications") { publications(); pubTypes(); safe(pubBubbles); safe(pubConf); }
   if (name === "trends") trends();
   if (name === "faculty") { podium(); facultyCharts(); facultyTable(); ranking(); }
-  if (name === "citation") { if (!cyCit) citationGraph(); filterCitation(); citationExtras(); }
-  if (name === "coauthor") { if (!cyAu) { coauthorGraph(); netFacts(); } filterCoauthor(); coauthorExtras(); }
-  if (name === "growth") growthTab();
-  if (name === "connections") { connections(); connectionsExtras(); }
+  if (name === "citation") { if (!cyCit) citationGraph(); filterCitation(); citationExtras(); safe(selfYear); }
+  if (name === "coauthor") { if (!cyAu) { coauthorGraph(); netFacts(); } filterCoauthor(); coauthorExtras(); safe(sepSetup); safe(removalSetup); }
+  if (name === "growth") { growthTab(); safe(growthPlayer); safe(growthDegree); safe(growthKernel); }
+  if (name === "connections") { connections(); connectionsExtras(); safe(cnCards); safe(() => partnerBars("ch-partners", 4, "joint papers"));
+    safe(() => partnerBars("ch-citing", 9, "citations to us")); safe(heatTable); safe(drawMap); }
+  if (name === "south") safe(southTab);
   if (name === "analysis") { analysis(); analysisExtras(); }
   if (name === "phase2") phase2Tab();
   if (name === "questions") questionsTab();
   if (name === "methods") methodsTab();
   rendered[name] = inst;
+  const sec = document.getElementById(name);
+  setupChips(sec);
+  tidyTables(sec);
 }
-function selectTab(name, scroll) {
-  if (!TABS.includes(name)) name = "keyfindings";
+let here = "";   // the current hash, "tab" or "tab/panel"
+function selectTab(target, scroll) {
+  let [name, panel] = String(target || "").split("/");
+  if (!TABS.includes(name)) { name = "home"; panel = null; }
   tab = name;
   TABS.forEach((t) => { const on = t === name, b = $("#tab-" + t);
     b.setAttribute("aria-selected", String(on)); b.tabIndex = on ? 0 : -1; document.getElementById(t).hidden = !on; });
+  $("#mbar-title").textContent = $("#tab-" + name).textContent.trim();
+  closeNav();
   renderTab(name);
   if (cyCit && name === "citation") cyCit.resize();
   if (cyAu && name === "coauthor") cyAu.resize();
-  try { history.replaceState(null, "", "#" + name); } catch (e) {}
-  if (scroll) window.scrollTo({ top: Math.max(0, $("main").offsetTop - 70), behavior: MOTION ? "smooth" : "auto" });
+  if (cyGrow && name === "growth") cyGrow.resize();
+  if (cyRm && name === "coauthor") cyRm.resize();
+  here = name + (panel ? "/" + panel : "");
+  try { history.replaceState(null, "", "#" + here); } catch (e) {}
+  if (panel) requestAnimationFrame(() => showPanel(panel));
+  else if (scroll) window.scrollTo({ top: Math.max(0, $("main").getBoundingClientRect().top + window.scrollY - 8), behavior: MOTION ? "smooth" : "auto" });
 }
-document.querySelectorAll('[role="tab"]').forEach((b) => b.addEventListener("click", () => selectTab(b.getAttribute("aria-controls"))));
+document.querySelectorAll('[role="tab"]').forEach((b) => b.addEventListener("click", () => selectTab(b.getAttribute("aria-controls"), true)));
 $(".tabs").addEventListener("keydown", (e) => {
-  if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-  const n = TABS[(TABS.indexOf(tab) + (e.key === "ArrowRight" ? 1 : TABS.length - 1)) % TABS.length];
+  const fwd = e.key === "ArrowDown" || e.key === "ArrowRight", back = e.key === "ArrowUp" || e.key === "ArrowLeft";
+  if (!fwd && !back) return;
+  const n = TABS[(TABS.indexOf(tab) + (fwd ? 1 : TABS.length - 1)) % TABS.length];
   selectTab(n); $("#tab-" + n).focus(); e.preventDefault();
 });
-window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (h !== tab) selectTab(h); });
+window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (h !== here) selectTab(h); });
+$("#nav-open").addEventListener("click", () => { $("#side").classList.add("open"); $("#scrim").classList.add("on"); $("#nav-open").setAttribute("aria-expanded", "true"); });
+$("#scrim").addEventListener("click", closeNav);
+// the sidebar folds to a strip of icons (the choice is remembered; it starts folded on narrower screens)
+function setFold(f) {
+  $(".layout").classList.toggle("folded", f);
+  const b = $("#fold"); b.textContent = f ? "»" : "«"; b.setAttribute("aria-expanded", String(!f));
+  b.title = f ? "Show the section names" : "Fold the sidebar"; b.setAttribute("aria-label", b.title);
+  setTimeout(() => { if (cyCit) cyCit.resize(); if (cyAu) cyAu.resize(); }, 80);
+}
+{ let saved = null; try { saved = localStorage.getItem("dpcn-side"); } catch (e) {}
+  setFold(saved ? saved === "folded" : window.innerWidth < 1280); }
+$("#fold").addEventListener("click", () => { const f = !$(".layout").classList.contains("folded"); setFold(f);
+  try { localStorage.setItem("dpcn-side", f ? "folded" : "open"); } catch (e) {} });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") { closeNav(); closeProfile(); } });
+$("#gp-year").addEventListener("input", () => growShow(+$("#gp-year").value));
+$("#gp-new").addEventListener("change", () => growShow(+$("#gp-year").value));
+$("#gp-play").addEventListener("click", growPlay);
+document.querySelectorAll("[data-gd]").forEach((b) => b.addEventListener("click", () => { gdMode = b.dataset.gd; segPress("data-gd", gdMode); growthDegree(); }));
+["#sep-a", "#sep-b"].forEach((x) => $(x).addEventListener("change", sepRun));
+$("#sep-swap").addEventListener("click", () => { const a = $("#sep-a").value; $("#sep-a").value = $("#sep-b").value; $("#sep-b").value = a; sepRun(); });
+$("#sep-r2").addEventListener("click", () => sepRandom(true));
+$("#sep-r1").addEventListener("click", () => sepRandom(false));
+$("#rm-by").addEventListener("change", rmShow);
+$("#rm-k").addEventListener("input", rmShow);
+$("#rm-m1").addEventListener("click", () => rmStep(-1));
+$("#rm-p1").addEventListener("click", () => rmStep(1));
+$("#rm-p5").addEventListener("click", () => rmStep(5));
+$("#rm-play").addEventListener("click", rmPlay);
+$("#rm-reset").addEventListener("click", () => { if (rmTimer) rmPlay(); $("#rm-k").value = 0; rmShow(); });
+$("#cg-n").addEventListener("input", () => { cg.n = +$("#cg-n").value; $("#cg-nl").textContent = cg.n; cg.ego = null; filterCitation(); });
+$("#cg-self").addEventListener("change", () => { cg.self = $("#cg-self").checked; filterCitation(); });
+$("#cg-col").addEventListener("change", () => { cg.col = $("#cg-col").value; if (cyCit) cyCit.style(citStyle()); filterCitation(); });
+$("#cg-field").addEventListener("change", () => { cg.field = $("#cg-field").value; cg.ego = null; filterCitation(); });
+$("#cg-big").addEventListener("change", () => { cg.big = $("#cg-big").checked; filterCitation(); });
+$("#cg-reset").addEventListener("click", () => { Object.assign(cg, { n: 30, self: false, col: "inst", field: "", big: false, ego: null });
+  $("#cg-n").value = 30; $("#cg-nl").textContent = "30"; $("#cg-self").checked = false; $("#cg-col").value = "inst"; $("#cg-field").value = ""; $("#cg-big").checked = false;
+  if (cyCit) { cyCit.style(citStyle()); cyCit.fit(undefined, 16); } filterCitation(); });
+["#mp-co", "#mp-cit"].forEach((x) => $(x).addEventListener("change", () => { mapLayers.co = $("#mp-co").checked; mapLayers.cit = $("#mp-cit").checked; drawMap(); }));
+$("#cf-dept").addEventListener("change", pubConf);
+document.querySelectorAll("[data-cf]").forEach((b) => b.addEventListener("click", () => { cfKind = b.dataset.cf; segPress("data-cf", cfKind); pubConf(); }));
+document.querySelectorAll("[data-sod]").forEach((b) => b.addEventListener("click", () => { sodMode = b.dataset.sod; segPress("data-sod", sodMode); southTab(); }));
+$("#fp-open").addEventListener("click", () => openProfile(fpIds[0] || null));
+$("#fp-close").addEventListener("click", closeProfile);
+$("#fp-scrim").addEventListener("click", closeProfile);
+$("#fp-q").addEventListener("change", () => { const f = findFac($("#fp-q").value); if (f) { fpIds = [f.faculty_id, fpIds[1]].filter(Boolean); renderProfile(); } });
+$("#fp-q2").addEventListener("change", () => { const f = findFac($("#fp-q2").value); fpIds = [fpIds[0], f && f.faculty_id].filter(Boolean); renderProfile(); });
 const markInst = () => document.querySelectorAll(".seg [data-inst]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.inst === inst)));
 document.querySelectorAll(".seg [data-inst]").forEach((b) => b.addEventListener("click", () => {
   inst = b.dataset.inst; try { localStorage.setItem("dpcn-inst", inst); } catch (e) {}
@@ -2024,4 +3096,6 @@ Chart.defaults.font.family = css("--body");
 Chart.defaults.color = css("--ink-2");
 Chart.defaults.borderColor = css("--grid");
 markInst(); hero(); selectTab(location.hash.slice(1));
+// charts drawn before the web fonts arrive measure their labels too narrow: redraw once the fonts are in
+if (document.fonts) document.fonts.ready.then(() => Object.values(charts).forEach((c) => c.update("none")));
 </script>
