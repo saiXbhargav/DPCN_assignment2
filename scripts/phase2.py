@@ -1,4 +1,4 @@
-"""Phase II additions asked for by the professor.
+"""Phase II additions.
 
   python phase2.py [papers] [citers]          (no argument = both)
 

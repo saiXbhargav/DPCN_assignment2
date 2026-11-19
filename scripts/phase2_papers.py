@@ -1,4 +1,4 @@
-"""Phase II, deeper questions inspired by the papers the professor shared -> data/analysis/papers/
+"""Phase II, deeper questions inspired by published science-of-science papers -> data/analysis/papers/
 
   python phase2_papers.py citers        A. Who cites us, and why? Every Indian citation of our papers classified by how
                                            far the citing and cited authors are in the co-authorship network

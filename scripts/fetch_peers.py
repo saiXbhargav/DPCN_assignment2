@@ -1,4 +1,4 @@
-"""Download for the professor's Phase II meeting notes (17 Nov 2026). Finished files are skipped.
+"""Downloads for the comparison with other NITs (17 Nov 2026). Finished files are skipped.
 
   python fetch_peers.py   Papers 2016-2026 of the six South Indian NITs: our two + NIT Warangal + NIT Calicut (17 Nov),
                           then NIT Puducherry + NIT Andhra Pradesh (18 Nov). Same filter for all, so the comparison is

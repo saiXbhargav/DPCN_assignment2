@@ -1,6 +1,6 @@
 # The six South Indian NITs (18 Nov 2026)
 
-At the 17 Nov meeting, the professor asked two things:
+This file asks two questions:
 1. Do the other South Indian NITs give results like Trichy and Surathkal?
 2. Does hiring change the network, for example when an NIT is new and recruits many faculty at once?
 
@@ -50,7 +50,7 @@ How we checked the other teams' files is in CHECKS.md.
 - **Puducherry is the exception.** 70% of its faculty are Assistant Professors, yet it has 4.4 papers per head. It is the smallest NIT (76 faculty), so a few very active groups count for a lot.
 - **The Q1 shares need care.** For the four other NITs, quartiles are known for only 50–63% of journal papers, because we only have quartiles for journals our own two NITs also used. Group 13's and Group 14's own quartiles give almost the same Q1 shares: 38.6% for Warangal and 44.0% for Calicut.
 
-## 2. Average degree over the years (the professor's "nodes" and "pure number")
+## 2. Average degree over the years (connected faculty and the "pure number" of faculty)
 
 | Co-authors per faculty member in 2025 | Trichy | Surathkal | Warangal | Calicut | Puducherry | Andhra Pradesh |
 |---|---|---|---|---|---|---|
@@ -74,7 +74,7 @@ How we checked the other teams' files is in CHECKS.md.
 - **With N = faculty in post, a becomes very large and unstable** (up to 5–7 in the shorter window). The headcount hardly changes while links keep growing. That simply says links grow much faster than people, not that a clean law holds. Also, the NIRF list misses people who left, so the early headcounts are too low.
 - **With students included, a falls to about 1.0–1.25 everywhere,** as on 17 Nov. Densifying at 1.4–1.7 is a property of the closed faculty group.
 
-## 4. The professor's founding-years idea: does hiring lower the exponent?
+## 4. Founding years and hiring: does hiring lower the exponent?
 
 **Yes, and clearly.** The more of an NIT's faculty were hired recently, the lower its exponent:
 

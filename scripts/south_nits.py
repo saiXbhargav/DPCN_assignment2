@@ -1,4 +1,4 @@
-"""The six South Indian NITs side by side (professor's request, 18 Nov 2026) -> data/analysis/south/
+"""The six South Indian NITs side by side (18 Nov 2026) -> data/analysis/south/
 
   python south_nits.py
 

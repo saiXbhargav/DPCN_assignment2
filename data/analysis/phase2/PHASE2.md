@@ -1,6 +1,6 @@
 # Team 12: Phase II additions
 
-This file covers twelve tasks from the professor's Phase II suggestions. They are produced by [scripts/phase2.py](../../../scripts/phase2.py):
+This file covers twelve Phase II tasks. They are produced by [scripts/phase2.py](../../../scripts/phase2.py):
 - `python phase2.py papers` covers tasks 1, 3, 4, 5 and 6;
 - `python phase2.py citers` covers task 2;
 - `python phase2.py journals` covers tasks 7 and 9;
@@ -16,7 +16,7 @@ Every number is in the CSV/JSON files in this folder.
 
 **Scope decisions (agreed as a team):**
 - **Publication statistics** now also count papers by **students and other NIT staff**, meaning papers with an NIT author but no faculty author. The science and engineering subject filter is unchanged.
-- These papers are in a separate file, `data/all_papers.csv`. **`group12_data.csv`, the faculty networks, the faculty rankings and the 44 checks stay faculty-only**, as the professor asked ("exclude students only from faculty-only networks").
+- These papers are in a separate file, `data/all_papers.csv`. **`group12_data.csv`, the faculty networks, the faculty rankings and the 44 checks stay faculty-only**, as the Phase II note says ("exclude students only from faculty-only networks").
 
 **Built-in checks:**
 - The faculty part of `all_papers.csv` must be identical to `group12_data.csv`: the same papers, quartiles, IF, type and citations. It is.
@@ -151,7 +151,7 @@ Files: `collaborating_institutions_by_year.csv` and `collaborating_institutions_
 
 ## Task 3: Flags for large-team papers and very high citations
 
-The professor noted that some physics faculty reach 1 lakh (100,000) citations, or have papers with 10–100 authors, and asked us to detect and flag them. **We checked, and there is no such case at our two NITs.**
+Some physics faculty reach 1 lakh (100,000) citations or have papers with 10–100 authors, and such cases need a flag. **We checked, and there is no such case at our two NITs.**
 
 | Check | Result |
 |---|---|

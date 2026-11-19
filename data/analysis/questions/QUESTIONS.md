@@ -421,7 +421,7 @@ Files: `q27_name_matching_sensitivity.csv`, `robust_summary.json`.
 
 ## 28. Citation manipulation check
 
-The professor asked us to look for citation manipulation, alongside the private-citer analysis (Phase II task 2). We look for three warning signs in the **117,909 citations from Indian papers** (77,176 citing papers):
+This part looks for citation manipulation, alongside the private-citer analysis (Phase II task 2). We look for three warning signs in the **117,909 citations from Indian papers** (77,176 citing papers):
 1. **Heavy citing papers:** papers that cite 10 or more of our papers at once.
 2. **Self-citation:** a large share of a person's citations coming from their own papers.
 3. **One-person sources:** a large share coming from a single outside author.

@@ -1,6 +1,6 @@
-# Follow-ups from the Phase II meeting with the professor (17 Nov 2026)
+# Network growth, link prediction and other NITs (17 Nov 2026)
 
-Made by `scripts/phase2_prof.py`, which writes to this folder. On the dashboard, these are the last four panels of the **Phase II** tab, plus a "Scholar ↗" link next to every name in the **Faculty** tab.
+Made by `scripts/phase2_prof.py`, which writes to this folder. On the dashboard, these are the last four panels of the **Phase II** tab ("Growth and other NITs"), plus a "Scholar ↗" link next to every name in the **Faculty** tab.
 
 ```
 python scripts/fetch_peers.py                 # papers of four NITs from OpenAlex (data/raw/peers/)
@@ -9,16 +9,16 @@ python scripts/phase2_prof.py nirf nitfaculty # needs pymupdf: NIRF faculty list
 python scripts/phase2_prof.py nits scholar    # four NITs side by side; Google Scholar checklist
 ```
 
-| Professor's note | What we did | Section |
+| Question | What we did | Section |
 |---|---|---|
-| "Nodes – plot the average degree; check how it changes across the years" | Average co-authors per year, counted two ways, per NIT | [1](#1-average-degree-over-the-years-and-why-166) |
-| "Network – why 1.66?" | What the exponent means, and the same number at three other NITs | [1](#1-average-degree-over-the-years-and-why-166) |
-| "2016–2022 → 2023, 2024 & 2025; give 2023 as input when predicting 2024, and the same for 2025"; "machine will predict and check" | Rolling link prediction, checked against the links that really appeared | [2](#2-predict-and-check-rolling-link-prediction) |
-| "Actual comparisons – two more NITs"; "number of faculty, pure number" | NIT Warangal and NIT Calicut next to our two NITs, with official faculty numbers | [3](#3-four-nits-side-by-side) |
-| "Check if more faculty were recruited then – 2002/2003" | The joining year of every current faculty member, from NIRF 2025 | [4](#4-when-did-todays-faculty-join) |
-| "Physics guy – physics reality"; "link it to Google Scholar" | Scholar links on the dashboard, and a checklist for the most-cited faculty | [5](#5-google-scholar-reality-check) |
+| How does the average degree change across the years? | Average co-authors per year, counted two ways, per NIT | [1](#1-average-degree-over-the-years-and-why-166) |
+| Why is the exponent 1.66? | What the exponent means, and the same number at three other NITs | [1](#1-average-degree-over-the-years-and-why-166) |
+| Train on 2016–2022 and predict 2023; then give 2023 as input to predict 2024, and the same for 2025. Does the model predict well? | Rolling link prediction, checked against the links that really appeared | [2](#2-predict-and-check-rolling-link-prediction) |
+| How do two more NITs compare, and how many faculty does each have? | NIT Warangal and NIT Calicut next to our two NITs, with official faculty numbers | [3](#3-four-nits-side-by-side) |
+| Were many faculty hired in 2002–03, when the RECs became NITs? | The joining year of every current faculty member, from NIRF 2025 | [4](#4-when-did-todays-faculty-join) |
+| Do the citation numbers match reality? Link every faculty member to Google Scholar | Scholar links on the dashboard, and a checklist for the most-cited faculty | [5](#5-google-scholar-reality-check) |
 
-**New sources.** Both were approved by the user on 17 Nov.
+**New sources.** Both were added on 17 Nov.
 - **OpenAlex:** papers of NIT Warangal (`I121750182`) and NIT Calicut (`I114845381`), plus a fresh copy of our two NITs. All four use the same filter and the same day.
 - **NIRF 2025 data files:** each NIT's own copy of its "Overall" NIRF 2025 submission.
   - Trichy: [nitt.edu](https://www.nitt.edu/home/academics/nirf/1.%20NIRF%202025_IR-O-U-0467_Overall.pdf)

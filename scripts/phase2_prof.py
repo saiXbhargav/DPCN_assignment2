@@ -1,4 +1,4 @@
-"""Follow-ups from the Phase II meeting with the professor (17 Nov 2026) -> data/analysis/prof/
+"""Network growth, link prediction and other NITs (17 Nov 2026) -> data/analysis/prof/
 
   python phase2_prof.py growth    Average degree of the faculty co-authorship network year by year (cumulative and
                                     single-year), per NIT, and what the densification exponent 1.66 means

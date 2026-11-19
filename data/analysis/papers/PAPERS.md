@@ -1,6 +1,6 @@
-# Phase II: deeper questions from the professor's papers
+# Phase II: deeper questions from published studies
 
-The professor shared ten papers with the Phase II note. Five come from the same "science of science" group (Clauset, Larremore and co-authors). We used them to choose **better questions and fairer methods**, not to copy them. The gender and race parts need data we don't have, so we left them out; their methods carry over.
+Ten papers came with the Phase II note. Five come from the same "science of science" group (Clauset, Larremore and co-authors). We used them to choose **better questions and fairer methods**, not to copy them. The gender and race parts need data we don't have, so we left them out; their methods carry over.
 
 Everything here is made by `scripts/phase2_papers.py`, which writes to this folder:
 
@@ -22,7 +22,7 @@ python scripts/phase2_papers.py citers     # or one part: citers, selfcite, adju
 | [C](#c-core-periphery-and-which-new-links-would-help) | Who is in the core, and which new links would help most? | Barnes et al., ACM FAccT 2026 |
 | [B](#b-is-productivity-a-random-walk) | Do careers follow a rise-and-fall curve? | Zhang, LaBerge, Way, Larremore & Clauset, *npj Complexity* 2026 |
 | [D](#d-hiring-vs-leaving) | How much of the change comes from hiring, how much from leaving? | LaBerge, Wapman, Clauset & Larremore, *eLife* 2024 |
-| [E](#e-team-size-in-finer-bands) | Team size beyond "<10 vs ≥10 authors" | (professor's 10–100-author note) |
+| [E](#e-team-size-in-finer-bands) | Team size beyond "<10 vs ≥10 authors" | (the Phase II note on 10–100-author papers) |
 | [F](#f-assortative-or-disassortative) | Assortative or disassortative, and on what? | Newman 2002/2003; Li et al., *Nat Comput Sci* 2025 (null models) |
 
 ---
@@ -53,7 +53,7 @@ python scripts/phase2_papers.py citers     # or one part: citers, selfcite, adju
 
 - **About one Indian citation in five comes from someone at most three co-authorship steps away.**
 - **Private universities' citations are more personal:** 31% within three steps vs 21% for public ones (χ² p = 7.6 × 10⁻¹²²). They have more self-citations (12.9% vs 10.2%) and more citations from earlier co-authors (6.8% vs 4.0%).
-- Together with the size result in PHASE2.md task 2, the answer to the professor's question is:
+- Together with the size result in PHASE2.md task 2, the answer to the private-citer question is:
   - private citers cite us no more *per paper* than public ones;
   - their citations come more often from people who already work with our authors, such as former students, former faculty and co-authors.
 - **Co-author citations follow the first joint paper:** 40% come within 2 years of it, then they fade (`a_coauthor_citation_lag.csv`). The same rise-then-fade pattern is in Singh et al.
@@ -271,7 +271,7 @@ python scripts/phase2_papers.py citers     # or one part: citers, selfcite, adju
 
 ## E. Team size in finer bands
 
-**Question.** The professor asked about papers with 10 to 100 authors. Beyond "<10 vs ≥10 authors", how does impact change with team size, and is there any "big science" here?
+**Question.** The Phase II note asks about papers with 10 to 100 authors. Beyond "<10 vs ≥10 authors", how does impact change with team size, and is there any "big science" here?
 
 **Method:**
 - Faculty papers were put into bands by number of authors.

@@ -604,7 +604,7 @@ PF = os.path.join(AN, "prof")
 
 
 def prof_tables():
-    """Follow-ups from the professor's meeting (scripts/phase2_prof.py -> data/analysis/prof/), when run."""
+    """Network growth, link prediction and other NITs (scripts/phase2_prof.py -> data/analysis/prof/), when run."""
     t = {}
     if not os.path.isdir(PF):
         return t
