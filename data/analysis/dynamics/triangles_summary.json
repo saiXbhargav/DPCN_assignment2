@@ -1,0 +1,14 @@
+{
+  "triangles": 314,
+  "kind_counts": {
+    "pairwise only (never a three-person paper)": 132,
+    "built pair by pair, sealed later": 117,
+    "born as a team": 65
+  },
+  "filled_share_pct": 57.961783439490446,
+  "born_as_team_share_of_filled_pct": 35.714285714285715,
+  "faculty_joint_papers": 3278,
+  "papers_with_3plus_faculty": 288,
+  "papers_with_3plus_faculty_pct": 8.785845027455766,
+  "global_clustering": 0.2057217733129504
+}

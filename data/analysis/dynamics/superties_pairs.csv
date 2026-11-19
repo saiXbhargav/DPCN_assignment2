@@ -1,0 +1,962 @@
+author_a_id,author_b_id,joint_papers,first_year,last_year,super_tie,faculty_a,faculty_b,same_department,institutes,years_active
+T0689,T0692,69,2016,2026,True,G Uma,M Umapathy,True,NIT Trichy,11
+S0338,S0358,48,2016,2025,True,Mervin Arunaraj Herbert,Shrikantha S Rao,True,NIT Surathkal,10
+S0355,S0356,45,2017,2026,True,Satyabodh M Kulkarni,Sharnappa Joladarashi,True,NIT Surathkal,10
+T0632,T0658,45,2016,2025,True,G Saravana Ilango,C Nagamani,True,NIT Trichy,10
+T0635,T0652,42,2016,2026,True,K Sundareswaran,Sishaj P Simon,True,NIT Trichy,11
+S0196,S0207,38,2021,2026,True,Tukaram Moger,Debashisha Jena,True,NIT Surathkal,6
+T0776,T0786,36,2016,2022,True,Veerappan,N Siva Shanmugam,True,NIT Trichy,7
+S0298,S0306,35,2016,2026,True,Jidesh P,Santhosh George,True,NIT Surathkal,11
+T0602,T0611,34,2018,2026,True,P Palanisamy,Varun P Gopi,True,NIT Trichy,9
+T0635,T0643,30,2016,2026,True,K Sundareswaran,P Srinivasa Rao Nayak,True,NIT Trichy,11
+T0543,T0550,29,2016,2026,True,R Gandhimathi,S T Ramesh,True,NIT Trichy,11
+S0078,S0082,28,2016,2025,True,I Regupathi,Prasanna Belur D,True,NIT Surathkal,10
+T0643,T0652,28,2016,2026,True,P Srinivasa Rao Nayak,Sishaj P Simon,True,NIT Trichy,11
+T0795,T0798,27,2017,2026,True,S P Sivapirakasam,Sreejith Mohan,True,NIT Trichy,10
+S0347,S0356,26,2019,2024,True,Hemantha Kumar,Sharnappa Joladarashi,True,NIT Surathkal,6
+S0130,S0141,25,2017,2026,True,B R Jayalekshmi,R Shivashankar,True,NIT Surathkal,10
+S0351,S0356,24,2018,2026,True,Ramesh M R,Sharnappa Joladarashi,True,NIT Surathkal,9
+S0320,S0359,23,2022,2026,True,A S S Balan,Srikanth Bontha,True,NIT Surathkal,5
+S0093,S0385,23,2017,2026,True,Sib Sankar Mal,Partha Pratim Das,False,NIT Surathkal,10
+T0602,T0605,22,2018,2026,True,P Palanisamy,R Malmathanraj,True,NIT Trichy,9
+T0721,T0724,22,2017,2022,True,V Muthupandi,Siva Prasad Katakam,True,NIT Trichy,6
+T0450,T0477,22,2016,2026,True,B Shameedha Begum,Rama Subramanian N,True,NIT Trichy,11
+S0146,S0158,21,2020,2026,True,A Venkata Narasimhadhan,Raghavendra B S,True,NIT Surathkal,7
+S0130,S0134,21,2019,2026,True,B R Jayalekshmi,Katta Venkataramana,True,NIT Surathkal,8
+S0322,S0338,20,2020,2026,True,Arun Kumar Shettigar,Mervin Arunaraj Herbert,True,NIT Surathkal,7
+T0486,T0492,20,2016,2021,True,K M Meera Sheriffa Begum,N Anantharaman,True,NIT Trichy,6
+S0399,S0405,19,2019,2024,True,Pruthviraj U,Amba Shetty,True,NIT Surathkal,6
+T0498,T0693,19,2016,2026,True,T K Radhakrishnan,N Sivakumaran,False,NIT Trichy,11
+T0553,T0557,19,2019,2025,True,V Sunitha,Samson Mathew M,True,NIT Trichy,7
+S0346,S0347,18,2016,2025,True,Gangadharan K V,Hemantha Kumar,True,NIT Surathkal,10
+S0367,S0377,18,2019,2025,True,Mandela Govinda Raj,Harsha Vardhan,True,NIT Surathkal,7
+S0241,S0252,18,2017,2026,True,Preetham Kumar G V,Udaya Bhat K,True,NIT Surathkal,10
+S0346,S0399,18,2018,2026,True,Gangadharan K V,Pruthviraj U,False,NIT Surathkal,9
+T0479,T0498,17,2016,2025,True,P Kalaichelvi,T K Radhakrishnan,True,NIT Trichy,10
+S0184,S0193,17,2022,2025,True,Arun Dominic,Prajof P,True,NIT Surathkal,4
+S0388,S0392,17,2018,2026,True,H D Shashikala,Nagaraja H S,True,NIT Surathkal,9
+S0149,S0174,17,2019,2026,True,Deepu Vijayasenan,Sumam David S,True,NIT Surathkal,8
+S0322,S0358,16,2020,2025,True,Arun Kumar Shettigar,Shrikantha S Rao,True,NIT Surathkal,6
+S0344,S0347,16,2017,2026,True,Arun M,Hemantha Kumar,True,NIT Surathkal,10
+T0783,T0795,16,2019,2026,True,K R Balasubramanian,S P Sivapirakasam,True,NIT Trichy,8
+S0351,S0363,16,2017,2024,True,Ramesh M R,Vijay Desai,True,NIT Surathkal,8
+T0786,T0798,15,2018,2021,True,N Siva Shanmugam,Sreejith Mohan,True,NIT Trichy,4
+S0346,S0348,15,2016,2026,True,Gangadharan K V,Jeyaraj P,True,NIT Surathkal,11
+T0606,T0607,15,2016,2023,True,R Pandeeswari,S Raghavan,True,NIT Trichy,8
+S0387,S0390,14,2016,2021,True,Govinda Rao Umesh,M Nagarajan Satyanarayan,True,NIT Surathkal,6
+S0411,S0417,14,2018,2026,True,Manu,Subba Rao,True,NIT Surathkal,9
+T0524,T0530,14,2016,2024,True,Deendayal Rathod,K Muthukkumaran,True,NIT Trichy,9
+S0218,S0232,14,2022,2026,True,Biju R Mohan,Ram Mohana Reddy Guddeti,True,NIT Surathkal,5
+T0493,T0501,14,2016,2020,True,N Samsudeen,M Matheswaran,True,NIT Trichy,5
+S0092,S0093,14,2019,2023,True,Saikat Dutta,Sib Sankar Mal,True,NIT Surathkal,5
+S0103,S0119,14,2018,2026,True,A U Ravi Shankar,Raviraj H M,True,NIT Surathkal,9
+S0186,S0188,13,2022,2025,True,Dharavath Kishan,Kalpana R,True,NIT Surathkal,4
+S0398,S0411,13,2024,2026,True,Debabrata Karmakar,Manu,True,NIT Surathkal,3
+S0146,S0405,13,2020,2023,True,A Venkata Narasimhadhan,Amba Shetty,False,NIT Surathkal,4
+T0606,T0625,13,2017,2023,True,R Pandeeswari,S Deivalakshmi,True,NIT Trichy,7
+T0493,T0498,13,2016,2025,True,N Samsudeen,T K Radhakrishnan,True,NIT Trichy,10
+S0110,S0145,13,2021,2024,True,Babloo Chaudhary,Sunil B Malegole,True,NIT Surathkal,4
+T0638,T0647,13,2016,2024,True,M P Selvan,S Moorthi,True,NIT Trichy,9
+T0642,T0647,13,2017,2025,True,P Raja,S Moorthi,True,NIT Trichy,9
+T0782,T0786,13,2016,2025,True,K Sankaranarayanasamy,N Siva Shanmugam,True,NIT Trichy,10
+S0048,S0300,12,2016,2025,True,Chandrasekaran K,A Kandasamy,False,NIT Surathkal,10
+T0717,T0718,12,2019,2026,True,S P Kumaresh Babu,S Raman Sankaranarayanan,True,NIT Trichy,8
+T0502,T0814,12,2016,2024,True,S Velmathi,A Chandra Bose,False,NIT Trichy,9
+T0480,T0491,12,2018,2026,True,A Arunagiri,Muthukumar K,True,NIT Trichy,9
+S0400,S0407,12,2023,2025,True,Shwetha H R,Dwarakish G S,True,NIT Surathkal,3
+S0351,S0359,12,2016,2025,True,Ramesh M R,Srikanth Bontha,True,NIT Surathkal,10
+S0353,S0360,12,2018,2025,True,S M Murigendrappa,Subhaschandra Kattimani,True,NIT Surathkal,8
+S0193,S0209,12,2023,2026,True,Prajof P,Manjunatha Sharma K,True,NIT Surathkal,4
+S0321,S0340,12,2018,2023,True,Arumuga Perumal D,N Gnanasekaran,True,NIT Surathkal,6
+S0287,S0306,12,2019,2025,True,Kedarnath Senapathi,Santhosh George,True,NIT Surathkal,7
+S0339,S0348,12,2018,2021,True,Mrityunjay R Doddamani,Jeyaraj P,True,NIT Surathkal,4
+S0327,S0355,12,2017,2024,True,Navin Karanth P,Satyabodh M Kulkarni,True,NIT Surathkal,8
+T0835,T0849,11,2016,2021,True,A Noorul Haq,P Sathiya,True,NIT Trichy,6
+S0077,S0080,11,2019,2025,True,Hari Prasad Dasari,M B Saidutta,True,NIT Surathkal,7
+S0151,S0153,11,2019,2021,True,Krishnamoorthy K,Muralidhar Kulkarni,True,NIT Surathkal,3
+T0707,T0724,11,2016,2025,True,B Ravisankar,Siva Prasad Katakam,True,NIT Trichy,10
+S0282,S0306,11,2019,2026,True,Chandhini G,Santhosh George,True,NIT Surathkal,8
+S0352,S0356,11,2019,2025,True,Ravikiran Kadoli,Sharnappa Joladarashi,True,NIT Surathkal,7
+S0155,S0176,10,2016,2026,True,Pathipati Srihari,U Shripathi Acharya,True,NIT Surathkal,11
+S0315,S0349,10,2017,2022,True,Ajay Kumar Yadav,Kumar G N,True,NIT Surathkal,6
+S0158,S0405,10,2020,2023,True,Raghavendra B S,Amba Shetty,False,NIT Surathkal,4
+S0247,S0252,10,2016,2019,True,K Rajendra Udupa,Udaya Bhat K,True,NIT Surathkal,4
+T0641,T0660,10,2016,2019,True,N Kumaresan,N Ammmasai Goundan,True,NIT Trichy,4
+T0479,T0493,10,2020,2025,True,P Kalaichelvi,N Samsudeen,True,NIT Trichy,6
+S0366,S0371,10,2018,2025,True,Chivukula Suryanarayana Murthy,Bijay Mihir Kunar,True,NIT Surathkal,8
+S0345,S0348,10,2018,2023,True,G C Mohan Kumar,Jeyaraj P,True,NIT Surathkal,6
+S0315,S0343,10,2020,2024,True,Ajay Kumar Yadav,Anish S,True,NIT Surathkal,5
+S0240,S0252,10,2018,2026,True,Mohammad Rizwanur Rahman,Udaya Bhat K,True,NIT Surathkal,9
+S0095,S0099,10,2016,2024,True,Adka Nityananda Shetty,Darshak R Trivedi,True,NIT Surathkal,9
+T0716,T0717,10,2017,2023,True,S Natarajan,S P Kumaresh Babu,True,NIT Trichy,7
+T0707,T0711,10,2017,2022,True,B Ravisankar,N Ramesh Babu,True,NIT Trichy,6
+T0638,T0642,10,2016,2024,True,M P Selvan,P Raja,True,NIT Trichy,9
+S0099,S0390,9,2018,2022,True,Darshak R Trivedi,M Nagarajan Satyanarayan,False,NIT Surathkal,5
+T0499,T0512,9,2016,2024,True,T Sivasankar,S Anandan,False,NIT Trichy,9
+T0639,T0653,9,2017,2019,True,M Venkata Kirthiga,Suman M,True,NIT Trichy,3
+S0081,S0083,9,2018,2023,True,P E Jagadeeshbabu,Raj Mohan B,True,NIT Surathkal,6
+S0330,S0350,9,2020,2026,True,Ranjeet Kumar Sahu,Narendranath S,True,NIT Surathkal,7
+S0321,S0361,9,2018,2020,True,Arumuga Perumal D,Veershetty Gumtapure,True,NIT Surathkal,3
+S0315,S0321,9,2017,2023,True,Ajay Kumar Yadav,Arumuga Perumal D,True,NIT Surathkal,7
+T0841,T0847,9,2016,2021,True,J Jerald,P Asokan,True,NIT Trichy,6
+T0716,T0865,9,2016,2019,True,S Natarajan,M Durai Selvam,False,NIT Trichy,4
+T0761,T0766,9,2019,2026,True,R Ponalagusamy,R Tamil Selvi,True,NIT Trichy,8
+T0840,T0861,9,2016,2021,True,Dinesh S,V Senthilkumar,True,NIT Trichy,6
+T0861,T0869,9,2021,2025,True,V Senthilkumar,Justus Panicker C T,True,NIT Trichy,5
+S0366,S0367,9,2018,2021,True,Chivukula Suryanarayana Murthy,Mandela Govinda Raj,True,NIT Surathkal,4
+S0401,S0402,9,2019,2025,True,Subrahmanya K,Vadivuchezhian Kaliveeran,True,NIT Surathkal,7
+T0462,T0575,9,2020,2025,True,S Mary Saira Bhanu,S Nickolas,False,NIT Trichy,6
+S0240,S0356,9,2019,2024,True,Mohammad Rizwanur Rahman,Sharnappa Joladarashi,False,NIT Surathkal,6
+S0331,S0343,9,2020,2026,True,Ranjith M,Anish S,True,NIT Surathkal,7
+S0129,S0132,9,2016,2026,True,Arun Kumar Thalla,Devatha C P,True,NIT Surathkal,11
+T0668,T0809,8,2021,2022,False,M Premalatha,V Mariappan,False,NIT Trichy,2
+T0512,T0820,8,2019,2024,False,S Anandan,N Baskaran,False,NIT Trichy,6
+S0186,S0190,8,2022,2026,False,Dharavath Kishan,Md Waseem Ahmad,True,NIT Surathkal,5
+S0245,S0250,8,2020,2026,False,Shashi Bhushan Arya,Jagannath Nayak,True,NIT Surathkal,7
+S0245,S0351,8,2016,2022,False,Shashi Bhushan Arya,Ramesh M R,False,NIT Surathkal,7
+S0183,T0658,8,2016,2018,False,A Karthikeyan,C Nagamani,True,NIT Surathkal & NIT Trichy,3
+S0245,S0357,8,2016,2021,False,Shashi Bhushan Arya,Shivananda Nayaka H,False,NIT Surathkal,6
+T0693,T0694,8,2021,2024,False,N Sivakumaran,P A Karthick,True,NIT Trichy,4
+S0382,S0391,8,2016,2021,False,Ajith Kulangara Madam,N K Udayashankar,True,NIT Surathkal,6
+T0842,T0849,8,2016,2025,False,K Panneerselvam,P Sathiya,True,NIT Trichy,10
+T0641,T0649,8,2016,2022,False,N Kumaresan,S Senthil Kumar,True,NIT Trichy,7
+T0498,T0525,8,2017,2024,False,T K Radhakrishnan,G Swaminathan,False,NIT Trichy,8
+S0097,S0319,8,2019,2026,False,Arun Mohan Isloor,Somasekhara Rao Todeti,False,NIT Surathkal,8
+T0592,T0609,8,2024,2026,False,B Naresh Kumar Reddy,Srinivasulu Jogi,True,NIT Trichy,3
+T0525,T0693,8,2017,2024,False,G Swaminathan,N Sivakumaran,False,NIT Trichy,8
+S0367,S0375,8,2022,2026,False,Mandela Govinda Raj,Sandi Kumar Reddy,True,NIT Surathkal,5
+S0226,S0230,7,2016,2026,False,Sowmya Kamath S,Ananthanarayana V S,True,NIT Surathkal,11
+T0845,T0871,7,2023,2026,False,Matruprasad Rout,Murugabalaji V,True,NIT Trichy,4
+S0339,S0345,7,2017,2020,False,Mrityunjay R Doddamani,G C Mohan Kumar,True,NIT Surathkal,4
+S0339,S0351,7,2017,2022,False,Mrityunjay R Doddamani,Ramesh M R,True,NIT Surathkal,6
+S0342,S0359,7,2019,2025,False,Prasad Krishna,Srikanth Bontha,True,NIT Surathkal,7
+S0240,S0347,7,2019,2022,False,Mohammad Rizwanur Rahman,Hemantha Kumar,False,NIT Surathkal,4
+S0186,S0191,7,2020,2024,False,Dharavath Kishan,Nagendrappa H,True,NIT Surathkal,5
+S0192,S0207,7,2016,2020,False,P Parthiban,Debashisha Jena,True,NIT Surathkal,5
+S0160,S0168,7,2018,2021,False,Rekha S,M Shankaranarayana Bhat,True,NIT Surathkal,4
+S0328,S0359,7,2023,2026,False,P S Suvin,Srikanth Bontha,True,NIT Surathkal,4
+S0345,S0351,7,2018,2020,False,G C Mohan Kumar,Ramesh M R,True,NIT Surathkal,3
+S0348,S0353,7,2016,2018,False,Jeyaraj P,S M Murigendrappa,True,NIT Surathkal,3
+S0147,S0155,7,2018,2022,False,Aparna P,Pathipati Srihari,True,NIT Surathkal,5
+S0367,S0368,7,2019,2023,False,Mandela Govinda Raj,Mangalpady Aruna,True,NIT Surathkal,5
+T0793,T0794,7,2017,2024,False,S Suresh,S Venkatachalapathy,True,NIT Trichy,8
+T0714,T0725,7,2017,2022,False,S Kumaran,T Srinivasa Rao,True,NIT Trichy,6
+T0835,T0842,7,2016,2021,False,A Noorul Haq,K Panneerselvam,True,NIT Trichy,6
+T0692,T0698,7,2022,2026,False,M Umapathy,Shiraz Sohail,True,NIT Trichy,5
+T0689,T0698,7,2022,2026,False,G Uma,Shiraz Sohail,True,NIT Trichy,5
+T0800,T0849,7,2016,2019,False,T Ramesh,P Sathiya,False,NIT Trichy,4
+S0088,S0390,7,2017,2020,False,Airody Vasudeva Adhikari,M Nagarajan Satyanarayan,False,NIT Surathkal,4
+S0092,S0334,7,2019,2026,False,Saikat Dutta,Vasudeva Madav,False,NIT Surathkal,8
+T0570,T0572,7,2023,2026,False,G R Gangadharan,P J A Alphonse,True,NIT Trichy,4
+T0492,T0668,7,2018,2025,False,N Anantharaman,M Premalatha,False,NIT Trichy,8
+T0504,T0511,7,2016,2019,False,A Sreekanth,R Karvembu,True,NIT Trichy,4
+S0160,S0175,7,2016,2025,False,Rekha S,T Laxminidhi,True,NIT Surathkal,10
+S0351,S0352,7,2016,2026,False,Ramesh M R,Ravikiran Kadoli,True,NIT Surathkal,11
+S0351,S0357,7,2016,2019,False,Ramesh M R,Shivananda Nayaka H,True,NIT Surathkal,4
+T0451,T0557,7,2017,2023,False,C Mala,Samson Mathew M,False,NIT Trichy,7
+S0368,S0377,7,2016,2025,False,Mangalpady Aruna,Harsha Vardhan,True,NIT Surathkal,10
+S0350,S0351,7,2017,2024,False,Narendranath S,Ramesh M R,True,NIT Surathkal,8
+S0080,S0084,6,2016,2023,False,M B Saidutta,Vidya Shetty K,True,NIT Surathkal,8
+T0752,T0765,6,2023,2026,False,Jitraj Saha,Vamsinadh Thota,True,NIT Trichy,4
+T0815,T0830,6,2017,2020,False,B Karthikeyan,D Sasti Kumar,True,NIT Trichy,4
+S0074,S0084,6,2017,2023,False,G Srinikethan,Vidya Shetty K,True,NIT Surathkal,7
+T0495,T0512,6,2017,2023,False,P Sivashanmugam,S Anandan,False,NIT Trichy,7
+T0724,T0854,6,2016,2019,False,Siva Prasad Katakam,R Narayanasamy,False,NIT Trichy,4
+T0575,T0582,6,2024,2025,False,S Nickolas,Balaji Banothu,True,NIT Trichy,2
+S0097,S0345,6,2018,2025,False,Arun Mohan Isloor,G C Mohan Kumar,False,NIT Surathkal,8
+T0611,T0613,6,2024,2026,False,Varun P Gopi,Bibin Francis,True,NIT Trichy,3
+T0628,T0647,6,2021,2023,False,S Mageshwari,S Moorthi,True,NIT Trichy,3
+T0567,T0589,6,2016,2022,False,B Janet,Venkataswamy Reddy,True,NIT Trichy,7
+S0190,S0194,6,2022,2026,False,Md Waseem Ahmad,Ravi Raushan,True,NIT Surathkal,5
+S0198,S0209,6,2023,2026,False,Yashwant Kashyap,Manjunatha Sharma K,True,NIT Surathkal,4
+S0183,S0205,6,2016,2020,False,A Karthikeyan,B Venkatesa Perumal,True,NIT Surathkal,5
+S0244,S0249,6,2021,2026,False,Selvakumar Murugesan,Anandhan Srinivasan,True,NIT Surathkal,6
+S0203,S0211,6,2017,2022,False,H Girisha Navada,Shubhanga K N,True,NIT Surathkal,6
+S0240,S0368,6,2019,2021,False,Mohammad Rizwanur Rahman,Mangalpady Aruna,False,NIT Surathkal,3
+S0242,S0355,6,2017,2019,False,Ravishankar K S,Satyabodh M Kulkarni,False,NIT Surathkal,3
+S0223,S0231,6,2020,2026,False,Nagamma Patil,Jaidhar C D,True,NIT Surathkal,7
+S0327,S0358,6,2017,2024,False,Navin Karanth P,Shrikantha S Rao,True,NIT Surathkal,8
+S0316,S0350,6,2016,2021,False,D Chakradhar,Narendranath S,True,NIT Surathkal,6
+S0164,S0385,6,2024,2026,False,Sushil Kumar Pandey,Partha Pratim Das,False,NIT Surathkal,3
+T0447,T0463,6,2020,2022,False,R Leela Velusamy,S Selvakumar,True,NIT Trichy,3
+S0399,S0408,6,2020,2024,False,Pruthviraj U,Kiran G Shirlal,True,NIT Surathkal,5
+S0388,S0391,6,2017,2024,False,H D Shashikala,N K Udayashankar,True,NIT Surathkal,8
+S0366,S0377,6,2019,2026,False,Chivukula Suryanarayana Murthy,Harsha Vardhan,True,NIT Surathkal,8
+S0347,S0368,6,2019,2021,False,Hemantha Kumar,Mangalpady Aruna,False,NIT Surathkal,3
+T0491,T0493,6,2019,2023,False,Muthukumar K,N Samsudeen,True,NIT Trichy,5
+T0474,T0693,6,2024,2026,False,M Brindha,N Sivakumaran,False,NIT Trichy,3
+S0122,S0399,6,2025,2026,False,Sreevalsa Kolathayar,Pruthviraj U,False,NIT Surathkal,2
+T0493,T0838,6,2022,2026,False,N Samsudeen,D Lenin Singaravelu,False,NIT Trichy,5
+T0575,T0580,6,2018,2025,False,S Nickolas,S Sangeetha,True,NIT Trichy,8
+T0649,T0660,5,2016,2021,False,S Senthil Kumar,N Ammmasai Goundan,True,NIT Trichy,6
+T0784,T0806,5,2020,2025,False,Kaushik P,Harish Kruthiventi Ss,True,NIT Trichy,6
+S0032,S0050,5,2023,2024,False,Sourav Kanti Addya,Shasidhar G Koolagudi,True,NIT Surathkal,2
+T0639,T0642,5,2019,2026,False,M Venkata Kirthiga,P Raja,True,NIT Trichy,8
+T0783,T0793,5,2017,2021,False,K R Balasubramanian,S Suresh,True,NIT Trichy,5
+T0693,T0697,5,2016,2026,False,N Sivakumaran,S Narayanan,True,NIT Trichy,11
+T0632,T0636,5,2023,2025,False,G Saravana Ilango,Karthik Thirumala,True,NIT Trichy,3
+T0628,T0645,5,2017,2025,False,S Mageshwari,S Arul Daniel,True,NIT Trichy,9
+T0594,T0621,5,2016,2019,False,B Malarkodi,B Rebekka,True,NIT Trichy,4
+T0593,T0624,5,2017,2022,False,B Venkataramani,R Thilagavathy,True,NIT Trichy,6
+S0098,S0252,5,2016,2018,False,Badekai Ramachandra Bhat,Udaya Bhat K,False,NIT Surathkal,3
+T0488,T0491,5,2022,2026,False,Kartikeya Shukla,Muthukumar K,True,NIT Trichy,5
+S0117,S0135,5,2024,2026,False,Prashanth M H,Mattur C Narasimhan,True,NIT Surathkal,3
+T0492,T0493,5,2022,2026,False,N Anantharaman,N Samsudeen,True,NIT Trichy,5
+T0498,T0501,5,2016,2020,False,T K Radhakrishnan,M Matheswaran,True,NIT Trichy,5
+T0571,T0578,5,2020,2025,False,Michael Arock,U Srinivasulu Reddy,True,NIT Trichy,6
+T0571,T0583,5,2024,2026,False,Michael Arock,Bopche Ghanshyam Sitkura,True,NIT Trichy,3
+T0549,T0557,5,2019,2023,False,S Saravanan,Samson Mathew M,True,NIT Trichy,5
+S0098,S0391,5,2023,2025,False,Badekai Ramachandra Bhat,N K Udayashankar,False,NIT Surathkal,3
+T0632,T0637,5,2017,2025,False,G Saravana Ilango,M Jaya Bharata Reddy,True,NIT Trichy,9
+T0636,T0664,5,2020,2022,False,Karthik Thirumala,Vivek Mohan,True,NIT Trichy,3
+T0611,T0615,5,2024,2026,False,Varun P Gopi,G Lakshmi Narayanan,True,NIT Trichy,3
+T0480,T0668,5,2018,2021,False,A Arunagiri,M Premalatha,False,NIT Trichy,4
+T0471,T0576,5,2017,2019,False,A Santhana Vijayan,S R Balasundaram,False,NIT Trichy,3
+S0408,S0417,5,2016,2020,False,Kiran G Shirlal,Subba Rao,True,NIT Surathkal,5
+T0486,T0790,5,2016,2023,False,K M Meera Sheriffa Begum,R B Anand,False,NIT Trichy,8
+T0483,T0498,5,2016,2021,False,J Sarat Chandra Babu,T K Radhakrishnan,True,NIT Trichy,6
+S0347,S0350,5,2016,2018,False,Hemantha Kumar,Narendranath S,True,NIT Surathkal,3
+S0151,S0240,5,2022,2024,False,Krishnamoorthy K,Mohammad Rizwanur Rahman,False,NIT Surathkal,3
+S0350,S0352,5,2016,2018,False,Narendranath S,Ravikiran Kadoli,True,NIT Surathkal,3
+S0148,S0298,5,2024,2026,False,Bini A A,Jidesh P,False,NIT Surathkal,3
+S0366,S0370,5,2017,2018,False,Chivukula Suryanarayana Murthy,Anup Kumar Tripathi,True,NIT Surathkal,2
+S0366,S0368,5,2017,2022,False,Chivukula Suryanarayana Murthy,Mangalpady Aruna,True,NIT Surathkal,6
+S0406,S0407,5,2018,2021,False,Dodamani B M,Dwarakish G S,True,NIT Surathkal,4
+S0136,S0405,5,2019,2022,False,S Shrihari,Amba Shetty,False,NIT Surathkal,4
+S0173,S0174,5,2016,2022,False,Ramesh Kini M,Sumam David S,True,NIT Surathkal,7
+S0158,S0163,5,2020,2025,False,Raghavendra B S,Shyam Lal,True,NIT Surathkal,6
+S0249,S0252,5,2016,2021,False,Anandhan Srinivasan,Udaya Bhat K,True,NIT Surathkal,6
+S0185,S0193,5,2022,2025,False,B Dastagiri Reddy,Prajof P,True,NIT Surathkal,4
+S0219,S0231,5,2021,2023,False,Dinesh Naik,Jaidhar C D,True,NIT Surathkal,3
+S0220,S0226,5,2017,2026,False,Geetha V,Sowmya Kamath S,True,NIT Surathkal,10
+S0185,S0186,5,2021,2024,False,B Dastagiri Reddy,Dharavath Kishan,True,NIT Surathkal,4
+S0216,S0225,5,2023,2025,False,Anand Kumar M,Shrutilipi Bhattacharjee,True,NIT Surathkal,3
+S0027,S0399,4,2024,2025,False,Mohit P Tahiliani,Pruthviraj U,False,NIT Surathkal,2
+T0791,T0795,4,2025,2026,False,Raghu Ram Karthik Desu,S P Sivapirakasam,True,NIT Trichy,2
+T0763,T0774,4,2022,2026,False,Somya,V Ravichandran,True,NIT Trichy,5
+T0818,T0819,4,2019,2024,False,M Ashok,M C Santhosh Kumar,True,NIT Trichy,6
+T0771,T0774,4,2022,2026,False,P Saikrishnan,V Ravichandran,True,NIT Trichy,5
+T0791,T0798,4,2025,2026,False,Raghu Ram Karthik Desu,Sreejith Mohan,True,NIT Trichy,2
+S0078,T0480,4,2018,2019,False,I Regupathi,A Arunagiri,True,NIT Surathkal & NIT Trichy,2
+T0690,T0696,4,2023,2026,False,K Dhanalakshmi,Rahul Kumar Sharma,True,NIT Trichy,4
+S0050,S0405,4,2023,2025,False,Shasidhar G Koolagudi,Amba Shetty,False,NIT Surathkal,3
+T0717,T0825,4,2016,2021,False,S P Kumaresh Babu,S Manivannan,False,NIT Trichy,6
+T0641,T0650,4,2024,2025,False,N Kumaresan,Sateesh Kumar Kuncham,True,NIT Trichy,2
+S0079,S0083,4,2018,2019,False,Keyur Raval,Raj Mohan B,True,NIT Surathkal,2
+S0080,S0081,4,2017,2021,False,M B Saidutta,P E Jagadeeshbabu,True,NIT Surathkal,5
+T0668,T0670,4,2017,2018,False,M Premalatha,Damodhar Siva Krishna Rao K,True,NIT Trichy,2
+S0191,S0205,4,2023,2024,False,Nagendrappa H,B Venkatesa Perumal,True,NIT Surathkal,2
+S0197,S0205,4,2021,2024,False,Vignesh Kumar V,B Venkatesa Perumal,True,NIT Surathkal,4
+S0156,S0176,4,2020,2022,False,Prabu K,U Shripathi Acharya,True,NIT Surathkal,3
+S0382,S0392,4,2016,2018,False,Ajith Kulangara Madam,Nagaraja H S,True,NIT Surathkal,3
+S0324,S0345,4,2024,2025,False,Khyati Verma,G C Mohan Kumar,True,NIT Surathkal,2
+S0155,S0157,4,2021,2023,False,Pathipati Srihari,Prashantha Kumar H,True,NIT Surathkal,3
+S0119,S0131,4,2024,2025,False,Raviraj H M,Basavaraju Manu,True,NIT Surathkal,2
+S0118,S0138,4,2018,2023,False,Rajasekaran C,Subhash C Yaragal,True,NIT Surathkal,6
+S0122,S0137,4,2024,2026,False,Sreevalsa Kolathayar,Sitaram Nayak,True,NIT Surathkal,3
+T0427,T0430,4,2023,2024,False,P Gopalakrishnan,T Srinivas,True,NIT Trichy,2
+T0419,T0664,4,2020,2022,False,Mini Shaji Thomas,Vivek Mohan,False,NIT Trichy,3
+S0395,S0417,4,2017,2020,False,Arkal Vittal Hegde,Subba Rao,True,NIT Surathkal,4
+T0526,T0562,4,2024,2025,False,Greegar George,Anjuna,True,NIT Trichy,2
+T0527,T0555,4,2019,2020,False,J Karthikeyan,Jayabalan P,True,NIT Trichy,2
+T0485,T0693,4,2025,2026,False,K Sankar,N Sivakumaran,False,NIT Trichy,2
+S0168,S0175,4,2018,2020,False,M Shankaranarayana Bhat,T Laxminidhi,True,NIT Surathkal,3
+T0482,T0486,4,2017,2019,False,G Arthanareeswaran,K M Meera Sheriffa Begum,True,NIT Trichy,3
+T0485,T0498,4,2025,2026,False,K Sankar,T K Radhakrishnan,True,NIT Trichy,2
+T0499,T0668,4,2019,2022,False,T Sivasankar,M Premalatha,False,NIT Trichy,4
+T0526,T0539,4,2024,2025,False,Greegar George,Nisha Radhakrishnan,True,NIT Trichy,2
+T0520,T0527,4,2018,2021,False,C Natarajan,J Karthikeyan,True,NIT Trichy,4
+T0509,T0516,4,2025,2026,False,Jothi Lakshmi Nallasivam,V M Biju,True,NIT Trichy,2
+T0567,T0578,4,2020,2024,False,B Janet,U Srinivasulu Reddy,True,NIT Trichy,5
+S0282,S0287,4,2024,2025,False,Chandhini G,Kedarnath Senapathi,True,NIT Surathkal,2
+T0539,T0562,4,2024,2025,False,Nisha Radhakrishnan,Anjuna,True,NIT Trichy,2
+T0595,T0597,4,2018,2021,False,D Sriram Kumar,G Thavasi Raja,True,NIT Trichy,4
+T0570,T0575,4,2019,2021,False,G R Gangadharan,S Nickolas,True,NIT Trichy,3
+T0578,T0589,4,2020,2023,False,U Srinivasulu Reddy,Venkataswamy Reddy,True,NIT Trichy,4
+T0573,T0575,4,2016,2021,False,R Eswari,S Nickolas,True,NIT Trichy,6
+S0094,S0101,4,2024,2026,False,Vijayendra S Shetti,Udaya Kumar Dalimba,True,NIT Surathkal,3
+S0092,S0243,4,2021,2025,False,Saikat Dutta,Saumen Mandal,False,NIT Surathkal,5
+T0629,T0630,4,2023,2024,False,Aneesa Farhan M A,Ankur Singh Rana,True,NIT Trichy,2
+T0611,T0614,4,2025,2026,False,Varun P Gopi,Bukke Chandrababu Naik,True,NIT Trichy,2
+S0093,S0164,4,2024,2026,False,Sib Sankar Mal,Sushil Kumar Pandey,False,NIT Surathkal,3
+T0637,T0658,4,2017,2021,False,M Jaya Bharata Reddy,C Nagamani,True,NIT Trichy,5
+T0636,T0659,4,2022,2023,False,Karthik Thirumala,Manoranjan Sahoo,True,NIT Trichy,2
+S0187,S0199,4,2021,2026,False,Jora M Gonda,I Raghavendra Rao,True,NIT Surathkal,6
+S0226,S0399,4,2023,2026,False,Sowmya Kamath S,Pruthviraj U,False,NIT Surathkal,4
+S0356,S0368,4,2019,2021,False,Sharnappa Joladarashi,Mangalpady Aruna,False,NIT Surathkal,3
+S0366,S0369,4,2018,2020,False,Chivukula Suryanarayana Murthy,Ram Prasad Choudhary,True,NIT Surathkal,3
+S0370,S0373,4,2023,2025,False,Anup Kumar Tripathi,Akhil Avchar,True,NIT Surathkal,3
+S0322,S0327,4,2022,2024,False,Arun Kumar Shettigar,Navin Karanth P,True,NIT Surathkal,3
+S0153,S0170,4,2025,2026,False,Muralidhar Kulkarni,Ashvini Chaturvedi,True,NIT Surathkal,2
+S0351,T0786,4,2020,2022,False,Ramesh M R,N Siva Shanmugam,True,NIT Surathkal & NIT Trichy,3
+S0350,S0363,4,2019,2022,False,Narendranath S,Vijay Desai,True,NIT Surathkal,4
+S0147,S0174,4,2017,2020,False,Aparna P,Sumam David S,True,NIT Surathkal,4
+S0048,S0172,4,2017,2018,False,Chandrasekaran K,Neelawar Shekar Vittal Shet,False,NIT Surathkal,2
+S0046,S0049,4,2016,2026,False,Alwyn Roshan Pais,P Santhi Thilagam,True,NIT Surathkal,11
+S0023,T0602,4,2016,2018,False,Jeny Rajan,P Palanisamy,False,NIT Surathkal & NIT Trichy,3
+S0031,S0231,4,2017,2019,False,Shridhar Sanshi,Jaidhar C D,False,NIT Surathkal,3
+S0334,S0361,4,2023,2025,False,Vasudeva Madav,Veershetty Gumtapure,True,NIT Surathkal,3
+S0347,S0363,4,2019,2020,False,Hemantha Kumar,Vijay Desai,True,NIT Surathkal,2
+S0338,S0349,4,2018,2026,False,Mervin Arunaraj Herbert,Kumar G N,True,NIT Surathkal,9
+S0339,S0359,4,2019,2021,False,Mrityunjay R Doddamani,Srikanth Bontha,True,NIT Surathkal,3
+S0368,S0370,4,2017,2018,False,Mangalpady Aruna,Anup Kumar Tripathi,True,NIT Surathkal,2
+S0368,S0375,4,2023,2026,False,Mangalpady Aruna,Sandi Kumar Reddy,True,NIT Surathkal,4
+S0371,S0378,4,2023,2025,False,Bijay Mihir Kunar,Karra Ram Chandar,True,NIT Surathkal,3
+S0079,S0082,3,2016,2023,False,Keyur Raval,Prasanna Belur D,True,NIT Surathkal,8
+T0639,T0647,3,2016,2023,False,M Venkata Kirthiga,S Moorthi,True,NIT Trichy,8
+T0642,T0645,3,2022,2024,False,P Raja,S Arul Daniel,True,NIT Trichy,3
+T0651,T0659,3,2018,2019,False,Shelas Sathyan,Manoranjan Sahoo,True,NIT Trichy,2
+T0850,T0859,3,2019,2020,False,P Senthil,T Selvaraj,True,NIT Trichy,2
+T0793,T0801,3,2020,2023,False,S Suresh,T Suthakar,True,NIT Trichy,4
+T0793,T0809,3,2018,2020,False,S Suresh,V Mariappan,True,NIT Trichy,3
+T0793,T0810,3,2018,2026,False,S Suresh,M Shahul Hameed,True,NIT Trichy,9
+T0846,T0847,3,2022,2023,False,N S Balaji,P Asokan,True,NIT Trichy,2
+T0785,T0793,3,2016,2020,False,M Udayakumar,S Suresh,True,NIT Trichy,5
+T0786,T0790,3,2021,2023,False,N Siva Shanmugam,R B Anand,True,NIT Trichy,3
+T0782,T0798,3,2019,2021,False,K Sankaranarayanasamy,Sreejith Mohan,True,NIT Trichy,3
+S0205,T0658,3,2016,2017,False,B Venkatesa Perumal,C Nagamani,True,NIT Surathkal & NIT Trichy,2
+S0021,S0023,3,2016,2026,False,Basavaraj Talawar,Jeny Rajan,True,NIT Surathkal,11
+T0841,T0867,3,2020,2023,False,J Jerald,Satheeshkumar V,True,NIT Trichy,4
+T0822,T0830,3,2019,2022,False,R Justin Joseyphus,D Sasti Kumar,True,NIT Trichy,4
+S0024,S0163,3,2024,2026,False,Mahendra Pratap Singh,Shyam Lal,False,NIT Surathkal,3
+S0079,S0099,3,2017,2024,False,Keyur Raval,Darshak R Trivedi,False,NIT Surathkal,8
+S0212,S0215,3,2021,2022,False,Udaykumar R Yaragatti,Yellasiri Suresh,True,NIT Surathkal,2
+T0668,T0669,3,2022,2025,False,M Premalatha,Ruben Sudhakar D,True,NIT Trichy,4
+T0666,T0793,3,2024,2026,False,Jaganathan Vm,S Suresh,False,NIT Trichy,3
+S0225,S0226,3,2023,2026,False,Shrutilipi Bhattacharjee,Sowmya Kamath S,True,NIT Surathkal,4
+S0225,S0346,3,2023,2026,False,Shrutilipi Bhattacharjee,Gangadharan K V,False,NIT Surathkal,4
+S0209,S0398,3,2023,2026,False,Manjunatha Sharma K,Debabrata Karmakar,False,NIT Surathkal,4
+T0715,T0717,3,2018,2019,False,S Muthukumaran,S P Kumaresh Babu,True,NIT Trichy,2
+T0711,T0724,3,2019,2023,False,N Ramesh Babu,Siva Prasad Katakam,True,NIT Trichy,5
+T0707,T0717,3,2021,2023,False,B Ravisankar,S P Kumaresh Babu,True,NIT Trichy,3
+T0691,T0702,3,2017,2018,False,K Srinivasan,V Sridevi,True,NIT Trichy,2
+S0225,S0399,3,2023,2026,False,Shrutilipi Bhattacharjee,Pruthviraj U,False,NIT Surathkal,4
+S0198,S0398,3,2023,2026,False,Yashwant Kashyap,Debabrata Karmakar,False,NIT Surathkal,4
+T0724,T0865,3,2019,2021,False,Siva Prasad Katakam,M Durai Selvam,False,NIT Trichy,3
+S0191,S0212,3,2020,2023,False,Nagendrappa H,Udaykumar R Yaragatti,True,NIT Surathkal,4
+T0720,T0829,3,2024,2026,False,V Karthik,Annapureddy Venkateshwarlu,False,NIT Trichy,3
+T0717,T0724,3,2016,2018,False,S P Kumaresh Babu,Siva Prasad Katakam,True,NIT Trichy,3
+T0714,T0803,3,2019,2019,False,S Kumaran,V Arul Mozhi Selvan,False,NIT Trichy,1
+T0818,T0830,3,2020,2021,False,M Ashok,D Sasti Kumar,True,NIT Trichy,2
+T0572,T0577,3,2023,2026,False,P J A Alphonse,Selvakumar K,True,NIT Trichy,4
+T0570,T0611,3,2024,2025,False,G R Gangadharan,Varun P Gopi,False,NIT Trichy,2
+T0570,T0615,3,2024,2025,False,G R Gangadharan,G Lakshmi Narayanan,False,NIT Trichy,2
+T0621,T0622,3,2019,2019,False,B Rebekka,N Gunavathi,True,NIT Trichy,1
+T0602,T0625,3,2016,2017,False,P Palanisamy,S Deivalakshmi,True,NIT Trichy,2
+T0602,T0613,3,2025,2026,False,P Palanisamy,Bibin Francis,True,NIT Trichy,2
+S0226,S0346,3,2023,2026,False,Sowmya Kamath S,Gangadharan K V,False,NIT Surathkal,4
+T0638,T0641,3,2016,2019,False,M P Selvan,N Kumaresan,True,NIT Trichy,4
+S0188,S0192,3,2020,2025,False,Kalpana R,P Parthiban,True,NIT Surathkal,6
+T0480,T0488,3,2022,2026,False,A Arunagiri,Kartikeya Shukla,True,NIT Trichy,5
+T0480,T0490,3,2017,2020,False,A Arunagiri,M Perumalsamy,True,NIT Trichy,4
+T0480,T0495,3,2019,2020,False,A Arunagiri,P Sivashanmugam,True,NIT Trichy,2
+T0480,T0499,3,2019,2020,False,A Arunagiri,T Sivasankar,True,NIT Trichy,2
+T0482,T0814,3,2016,2020,False,G Arthanareeswaran,A Chandra Bose,False,NIT Trichy,5
+S0183,S0209,3,2023,2026,False,A Karthikeyan,Manjunatha Sharma K,True,NIT Surathkal,4
+S0183,S0398,3,2023,2026,False,A Karthikeyan,Debabrata Karmakar,False,NIT Surathkal,4
+S0164,S0382,3,2024,2026,False,Sushil Kumar Pandey,Ajith Kulangara Madam,False,NIT Surathkal,3
+S0183,T0655,3,2025,2026,False,A Karthikeyan,V Vignesh Kumar,True,NIT Surathkal & NIT Trichy,2
+S0183,S0198,3,2023,2026,False,A Karthikeyan,Yashwant Kashyap,True,NIT Surathkal,4
+S0105,S0245,3,2018,2020,False,Bibhuti Bhusan Das,Shashi Bhushan Arya,False,NIT Surathkal,3
+T0549,T0550,3,2023,2025,False,S Saravanan,S T Ramesh,True,NIT Trichy,3
+T0529,T0556,3,2017,2020,False,K Baskar,Krishnan P A,True,NIT Trichy,4
+T0530,T0544,3,2022,2025,False,K Muthukkumaran,R Manjula,True,NIT Trichy,4
+S0098,S0387,3,2017,2019,False,Badekai Ramachandra Bhat,Govinda Rao Umesh,False,NIT Surathkal,3
+T0516,T0550,3,2019,2021,False,V M Biju,S T Ramesh,False,NIT Trichy,3
+T0567,T0693,3,2021,2023,False,B Janet,N Sivakumaran,False,NIT Trichy,3
+S0099,S0384,3,2016,2018,False,Darshak R Trivedi,Kartick Tarafder,False,NIT Surathkal,3
+S0105,S0118,3,2024,2026,False,Bibhuti Bhusan Das,Rajasekaran C,True,NIT Surathkal,3
+T0632,T0649,3,2020,2023,False,G Saravana Ilango,S Senthil Kumar,True,NIT Trichy,4
+T0633,T0665,3,2023,2025,False,Jose Thankachan,Aditya Kumar,False,NIT Trichy,3
+T0595,T0626,3,2017,2018,False,D Sriram Kumar,V Sudha,True,NIT Trichy,2
+S0237,S0359,3,2023,2025,False,B Rajasekaran,Srikanth Bontha,False,NIT Surathkal,3
+S0240,S0351,3,2023,2024,False,Mohammad Rizwanur Rahman,Ramesh M R,False,NIT Surathkal,2
+T0578,T0689,3,2021,2023,False,U Srinivasulu Reddy,G Uma,False,NIT Trichy,3
+T0578,T0692,3,2021,2023,False,U Srinivasulu Reddy,M Umapathy,False,NIT Trichy,3
+T0594,T0622,3,2019,2019,False,B Malarkodi,N Gunavathi,True,NIT Trichy,1
+S0096,S0100,3,2016,2018,False,Ampar Chitharanjan Hegde,Denthaje Krishna Bhat,True,NIT Surathkal,3
+T0576,T0585,3,2024,2024,False,S R Balasundaram,Jitendra Kumar,True,NIT Trichy,1
+S0403,S0405,3,2019,2022,False,Nagaraj M K,Amba Shetty,True,NIT Surathkal,4
+T0425,T0426,3,2024,2025,False,K Thirumaran,L Saikala,True,NIT Trichy,2
+S0412,S0413,3,2023,2024,False,Nasar T,Ramesh H,True,NIT Surathkal,2
+S0329,S0360,3,2023,2024,False,Poornesh Kumar Koorata,Subhaschandra Kattimani,True,NIT Surathkal,2
+S0368,S0371,3,2023,2024,False,Mangalpady Aruna,Bijay Mihir Kunar,True,NIT Surathkal,2
+S0382,S0383,3,2018,2020,False,Ajith Kulangara Madam,Deepak Vaid,True,NIT Surathkal,3
+S0378,S0381,3,2016,2022,False,Karra Ram Chandar,Vedala Rama Sastry,True,NIT Surathkal,7
+S0325,S0346,3,2025,2026,False,Mervin Joe Thomas,Gangadharan K V,True,NIT Surathkal,2
+S0385,S0390,3,2019,2020,False,Partha Pratim Das,M Nagarajan Satyanarayan,True,NIT Surathkal,2
+S0125,S0145,3,2020,2022,False,K S Babu Narayan,Sunil B Malegole,True,NIT Surathkal,3
+T0479,T0480,3,2016,2017,False,P Kalaichelvi,A Arunagiri,True,NIT Trichy,2
+S0125,S0138,3,2017,2023,False,K S Babu Narayan,Subhash C Yaragal,True,NIT Surathkal,7
+S0320,S0351,3,2023,2024,False,A S S Balan,Ramesh M R,True,NIT Surathkal,2
+S0126,S0138,3,2023,2023,False,K Swaminathan,Subhash C Yaragal,True,NIT Surathkal,1
+T0447,T0547,3,2021,2023,False,R Leela Velusamy,S Jayalekshmi,False,NIT Trichy,3
+T0423,T0430,3,2023,2025,False,G Subbaiyan,T Srinivas,True,NIT Trichy,3
+S0146,S0163,3,2018,2021,False,A Venkata Narasimhadhan,Shyam Lal,True,NIT Surathkal,4
+S0156,S0163,3,2022,2026,False,Prabu K,Shyam Lal,True,NIT Surathkal,5
+S0327,S0363,3,2021,2022,False,Navin Karanth P,Vijay Desai,True,NIT Surathkal,2
+S0150,S0168,3,2019,2020,False,Kalpana G Bhat,M Shankaranarayana Bhat,True,NIT Surathkal,2
+S0150,S0175,3,2019,2020,False,Kalpana G Bhat,T Laxminidhi,True,NIT Surathkal,2
+S0151,S0155,3,2023,2025,False,Krishnamoorthy K,Pathipati Srihari,True,NIT Surathkal,3
+S0347,S0353,3,2017,2019,False,Hemantha Kumar,S M Murigendrappa,True,NIT Surathkal,3
+S0348,S0360,3,2024,2025,False,Jeyaraj P,Subhaschandra Kattimani,True,NIT Surathkal,2
+S0348,S0351,3,2020,2023,False,Jeyaraj P,Ramesh M R,True,NIT Surathkal,4
+S0351,S0360,3,2024,2026,False,Ramesh M R,Subhaschandra Kattimani,True,NIT Surathkal,3
+S0338,S0350,3,2016,2021,False,Mervin Arunaraj Herbert,Narendranath S,True,NIT Surathkal,6
+T0837,T0838,3,2024,2025,False,C Sathiya Narayanan,D Lenin Singaravelu,True,NIT Trichy,2
+T0837,T0843,3,2016,2017,False,C Sathiya Narayanan,Kumanan Somasundaram,True,NIT Trichy,2
+T0837,T0854,3,2018,2020,False,C Sathiya Narayanan,R Narayanasamy,True,NIT Trichy,3
+S0030,S0032,3,2025,2026,False,Saumya Hegde,Sourav Kanti Addya,True,NIT Surathkal,2
+S0023,S0147,3,2017,2019,False,Jeny Rajan,Aparna P,False,NIT Surathkal,3
+S0023,S0146,3,2017,2023,False,Jeny Rajan,A Venkata Narasimhadhan,False,NIT Surathkal,7
+S0023,S0050,3,2018,2023,False,Jeny Rajan,Shasidhar G Koolagudi,True,NIT Surathkal,6
+S0023,S0042,3,2023,2026,False,Jeny Rajan,Vani M,True,NIT Surathkal,4
+S0014,S0027,2,2017,2018,False,Beerappar Chandavarkar,Mohit P Tahiliani,True,NIT Surathkal,2
+T0858,T0865,2,2023,2023,False,T Jagadesh,M Durai Selvam,True,NIT Trichy,1
+T0856,T0863,2,2016,2016,False,S Vinodh,Vimal K E K,True,NIT Trichy,1
+T0847,T0861,2,2016,2019,False,P Asokan,V Senthilkumar,True,NIT Trichy,4
+T0846,T0861,2,2022,2022,False,N S Balaji,V Senthilkumar,True,NIT Trichy,1
+T0798,T0819,2,2017,2017,False,Sreejith Mohan,M C Santhosh Kumar,False,NIT Trichy,1
+T0795,T0819,2,2017,2017,False,S P Sivapirakasam,M C Santhosh Kumar,False,NIT Trichy,1
+S0340,S0402,2,2019,2020,False,N Gnanasekaran,Vadivuchezhian Kaliveeran,False,NIT Surathkal,2
+S0340,S0401,2,2019,2020,False,N Gnanasekaran,Subrahmanya K,False,NIT Surathkal,2
+S0340,S0344,2,2019,2019,False,N Gnanasekaran,Arun M,True,NIT Surathkal,1
+S0336,S0359,2,2025,2025,False,H Suresh Hebbar,Srikanth Bontha,True,NIT Surathkal,1
+S0334,S0413,2,2020,2021,False,Vasudeva Madav,Ramesh H,False,NIT Surathkal,2
+S0334,S0362,2,2023,2024,False,Vasudeva Madav,T P Ashok Babu,True,NIT Surathkal,2
+T0790,T0865,2,2025,2026,False,R B Anand,M Durai Selvam,False,NIT Trichy,2
+T0787,T0798,2,2021,2022,False,Nivish George,Sreejith Mohan,True,NIT Trichy,2
+T0779,T0806,2,2025,2026,False,G Rajasekaran,Harish Kruthiventi Ss,True,NIT Trichy,2
+S0209,S0210,2,2024,2025,False,Manjunatha Sharma K,Panduranga Vittal K,True,NIT Surathkal,2
+S0207,S0347,2,2026,2026,False,Debashisha Jena,Hemantha Kumar,False,NIT Surathkal,1
+S0207,S0330,2,2026,2026,False,Debashisha Jena,Ranjeet Kumar Sahu,False,NIT Surathkal,1
+S0205,S0346,2,2023,2024,False,B Venkatesa Perumal,Gangadharan K V,False,NIT Surathkal,2
+S0205,S0249,2,2023,2023,False,B Venkatesa Perumal,Anandhan Srinivasan,False,NIT Surathkal,1
+S0198,S0210,2,2025,2026,False,Yashwant Kashyap,Panduranga Vittal K,True,NIT Surathkal,2
+S0153,S0172,2,2022,2023,False,Muralidhar Kulkarni,Neelawar Shekar Vittal Shet,True,NIT Surathkal,2
+S0152,S0390,2,2022,2023,False,Mandeep Singh,M Nagarajan Satyanarayan,False,NIT Surathkal,2
+S0151,S0156,2,2023,2024,False,Krishnamoorthy K,Prabu K,True,NIT Surathkal,2
+S0346,S0349,2,2021,2024,False,Gangadharan K V,Kumar G N,True,NIT Surathkal,4
+S0342,S0345,2,2017,2017,False,Prasad Krishna,G C Mohan Kumar,True,NIT Surathkal,1
+T0721,T0727,2,2021,2023,False,V Muthupandi,S Jerome,True,NIT Trichy,3
+S0076,T0669,2,2025,2025,False,Hari Mahalingam,Ruben Sudhakar D,False,NIT Surathkal & NIT Trichy,1
+S0064,S0079,2,2020,2023,False,D V R Murthy,Keyur Raval,True,NIT Surathkal,4
+T0716,T0825,2,2017,2017,False,S Natarajan,S Manivannan,False,NIT Trichy,1
+T0715,T0830,2,2019,2019,False,S Muthukumaran,D Sasti Kumar,False,NIT Trichy,1
+T0714,T0715,2,2019,2019,False,S Kumaran,S Muthukumaran,True,NIT Trichy,1
+T0708,T0724,2,2020,2020,False,D Nagarajan,Siva Prasad Katakam,True,NIT Trichy,1
+T0707,T0708,2,2026,2026,False,B Ravisankar,D Nagarajan,True,NIT Trichy,1
+T0688,T0703,2,2023,2024,False,D Ezhilarasi,Rama Kalyan Ayyagari,True,NIT Trichy,2
+S0146,S0161,2,2020,2023,False,A Venkata Narasimhadhan,Sandeep Kumar,True,NIT Surathkal,4
+S0141,S0381,2,2016,2017,False,R Shivashankar,Vedala Rama Sastry,False,NIT Surathkal,2
+S0348,T0787,2,2021,2022,False,Jeyaraj P,Nivish George,True,NIT Surathkal & NIT Trichy,2
+S0153,S0179,2,2019,2022,False,Muralidhar Kulkarni,U Sripathi,True,NIT Surathkal,4
+S0216,S0226,2,2022,2026,False,Anand Kumar M,Sowmya Kamath S,True,NIT Surathkal,5
+S0081,T0669,2,2021,2022,False,P E Jagadeeshbabu,Ruben Sudhakar D,False,NIT Surathkal & NIT Trichy,2
+S0080,S0097,2,2017,2017,False,M B Saidutta,Arun Mohan Isloor,False,NIT Surathkal,1
+S0080,S0083,2,2019,2019,False,M B Saidutta,Raj Mohan B,True,NIT Surathkal,1
+S0078,S0085,2,2020,2021,False,I Regupathi,Ruben Sudhakar,True,NIT Surathkal,2
+T0659,T0664,2,2022,2022,False,Manoranjan Sahoo,Vivek Mohan,True,NIT Trichy,1
+T0652,T0655,2,2016,2016,False,Sishaj P Simon,V Vignesh Kumar,True,NIT Trichy,1
+T0644,T0654,2,2025,2025,False,Rakesh Kumar Panda,Suryanarayana Gangolu,True,NIT Trichy,1
+T0642,T0654,2,2018,2019,False,P Raja,Suryanarayana Gangolu,True,NIT Trichy,2
+T0641,T0647,2,2016,2018,False,N Kumaresan,S Moorthi,True,NIT Trichy,3
+T0639,T0645,2,2017,2020,False,M Venkata Kirthiga,S Arul Daniel,True,NIT Trichy,4
+S0334,S0349,2,2025,2026,False,Vasudeva Madav,Kumar G N,True,NIT Surathkal,2
+S0330,S0347,2,2026,2026,False,Ranjeet Kumar Sahu,Hemantha Kumar,True,NIT Surathkal,1
+S0330,S0342,2,2026,2026,False,Ranjeet Kumar Sahu,Prasad Krishna,True,NIT Surathkal,1
+S0156,S0178,2,2024,2024,False,Prabu K,B Nagavel,True,NIT Surathkal,1
+S0155,S0171,2,2021,2024,False,Pathipati Srihari,John D Souza,True,NIT Surathkal,4
+S0155,S0158,2,2021,2022,False,Pathipati Srihari,Raghavendra B S,True,NIT Surathkal,2
+S0236,S0247,2,2016,2017,False,A O Surendranathan,K Rajendra Udupa,True,NIT Surathkal,2
+S0186,T0592,2,2023,2024,False,Dharavath Kishan,B Naresh Kumar Reddy,False,NIT Surathkal & NIT Trichy,2
+S0186,S0193,2,2022,2024,False,Dharavath Kishan,Prajof P,True,NIT Surathkal,3
+S0185,S0191,2,2021,2024,False,B Dastagiri Reddy,Nagendrappa H,True,NIT Surathkal,4
+T0638,T0639,2,2016,2019,False,M P Selvan,M Venkata Kirthiga,True,NIT Trichy,4
+T0637,T0809,2,2021,2022,False,M Jaya Bharata Reddy,V Mariappan,False,NIT Trichy,2
+T0635,T0655,2,2016,2016,False,K Sundareswaran,V Vignesh Kumar,True,NIT Trichy,1
+S0092,S0349,2,2025,2026,False,Saikat Dutta,Kumar G N,False,NIT Surathkal,2
+S0090,S0097,2,2022,2023,False,Debashree Chakraborty,Arun Mohan Isloor,True,NIT Surathkal,2
+S0088,S0098,2,2023,2024,False,Airody Vasudeva Adhikari,Badekai Ramachandra Bhat,True,NIT Surathkal,2
+T0634,T0647,2,2022,2023,False,Josephine R L,S Moorthi,True,NIT Trichy,2
+T0632,T0693,2,2017,2020,False,G Saravana Ilango,N Sivakumaran,False,NIT Trichy,4
+S0373,S0374,2,2025,2025,False,Akhil Avchar,Amrites Senapati,True,NIT Surathkal,1
+S0366,S0375,2,2025,2026,False,Chivukula Suryanarayana Murthy,Sandi Kumar Reddy,True,NIT Surathkal,2
+S0356,S0377,2,2021,2022,False,Sharnappa Joladarashi,Harsha Vardhan,False,NIT Surathkal,2
+S0356,S0360,2,2018,2019,False,Sharnappa Joladarashi,Subhaschandra Kattimani,True,NIT Surathkal,2
+T0630,T0652,2,2022,2022,False,Ankur Singh Rana,Sishaj P Simon,True,NIT Trichy,1
+S0245,S0246,2,2023,2026,False,Shashi Bhushan Arya,Sumanth Govindarajan,True,NIT Surathkal,4
+S0243,S0384,2,2017,2020,False,Saumen Mandal,Kartick Tarafder,False,NIT Surathkal,4
+S0242,S0334,2,2021,2025,False,Ravishankar K S,Vasudeva Madav,False,NIT Surathkal,5
+S0241,S0247,2,2016,2018,False,Preetham Kumar G V,K Rajendra Udupa,True,NIT Surathkal,3
+S0240,S0390,2,2024,2025,False,Mohammad Rizwanur Rahman,M Nagarajan Satyanarayan,False,NIT Surathkal,2
+S0240,S0377,2,2021,2022,False,Mohammad Rizwanur Rahman,Harsha Vardhan,False,NIT Surathkal,2
+S0240,S0245,2,2020,2021,False,Mohammad Rizwanur Rahman,Shashi Bhushan Arya,True,NIT Surathkal,2
+S0237,S0342,2,2024,2025,False,B Rajasekaran,Prasad Krishna,False,NIT Surathkal,2
+S0136,S0145,2,2019,2020,False,S Shrihari,Sunil B Malegole,True,NIT Surathkal,2
+S0129,S0348,2,2021,2026,False,Arun Kumar Thalla,Jeyaraj P,False,NIT Surathkal,6
+T0594,T0821,2,2024,2024,False,B Malarkodi,N V Giridharan,False,NIT Trichy,1
+T0593,T0623,2,2019,2019,False,B Venkataramani,R K Kavitha,True,NIT Trichy,1
+T0592,T0614,2,2023,2026,False,B Naresh Kumar Reddy,Bukke Chandrababu Naik,True,NIT Trichy,4
+T0582,T0584,2,2023,2023,False,Balaji Banothu,Gopalan N P,True,NIT Trichy,1
+S0098,S0101,2,2024,2024,False,Badekai Ramachandra Bhat,Udaya Kumar Dalimba,True,NIT Surathkal,1
+S0096,S0249,2,2019,2019,False,Ampar Chitharanjan Hegde,Anandhan Srinivasan,False,NIT Surathkal,1
+S0093,S0390,2,2020,2020,False,Sib Sankar Mal,M Nagarajan Satyanarayan,False,NIT Surathkal,1
+T0575,T0589,2,2016,2016,False,S Nickolas,Venkataswamy Reddy,True,NIT Trichy,1
+T0572,T0764,2,2016,2017,False,P J A Alphonse,T N Janakiraman,False,NIT Trichy,2
+T0571,T0589,2,2020,2020,False,Michael Arock,Venkataswamy Reddy,True,NIT Trichy,1
+S0252,S0392,2,2016,2016,False,Udaya Bhat K,Nagaraja H S,False,NIT Surathkal,1
+S0252,S0390,2,2024,2025,False,Udaya Bhat K,M Nagarajan Satyanarayan,False,NIT Surathkal,2
+S0246,S0254,2,2020,2024,False,Sumanth Govindarajan,Subray Ramachandra Hegde,True,NIT Surathkal,5
+S0245,S0359,2,2018,2018,False,Shashi Bhushan Arya,Srikanth Bontha,False,NIT Surathkal,1
+S0245,S0252,2,2020,2026,False,Shashi Bhushan Arya,Udaya Bhat K,True,NIT Surathkal,7
+S0324,S0346,2,2023,2024,False,Khyati Verma,Gangadharan K V,True,NIT Surathkal,2
+S0384,S0389,2,2020,2022,False,Kartick Tarafder,Kasturi V Bangera,True,NIT Surathkal,3
+S0382,S0385,2,2025,2026,False,Ajith Kulangara Madam,Partha Pratim Das,True,NIT Surathkal,2
+T0545,T0555,2,2019,2023,False,R Senthil Kumar,Jayabalan P,True,NIT Trichy,5
+T0545,T0550,2,2024,2025,False,R Senthil Kumar,S T Ramesh,True,NIT Trichy,2
+S0105,S0119,2,2020,2022,False,Bibhuti Bhusan Das,Raviraj H M,True,NIT Surathkal,3
+S0101,S0391,2,2024,2024,False,Udaya Kumar Dalimba,N K Udayashankar,False,NIT Surathkal,1
+S0100,S0252,2,2018,2019,False,Denthaje Krishna Bhat,Udaya Bhat K,False,NIT Surathkal,2
+S0098,S0349,2,2026,2026,False,Badekai Ramachandra Bhat,Kumar G N,False,NIT Surathkal,1
+S0098,S0338,2,2026,2026,False,Badekai Ramachandra Bhat,Mervin Arunaraj Herbert,False,NIT Surathkal,1
+T0536,T0537,2,2024,2024,False,Makendran C,Manthiram Karthik R,True,NIT Trichy,1
+T0527,T0848,2,2019,2019,False,J Karthikeyan,P Parthiban,False,NIT Trichy,1
+T0525,T0668,2,2023,2024,False,G Swaminathan,M Premalatha,False,NIT Trichy,2
+T0520,T0530,2,2017,2017,False,C Natarajan,K Muthukkumaran,True,NIT Trichy,1
+T0519,T0611,2,2023,2023,False,Aneesh Mathew,Varun P Gopi,False,NIT Trichy,1
+T0512,T0830,2,2021,2021,False,S Anandan,D Sasti Kumar,False,NIT Trichy,1
+T0419,T0636,2,2020,2021,False,Mini Shaji Thomas,Karthik Thirumala,False,NIT Trichy,2
+S0405,S0413,2,2016,2017,False,Amba Shetty,Ramesh H,True,NIT Surathkal,2
+S0405,S0409,2,2016,2017,False,Amba Shetty,Lakshman Nandagiri,True,NIT Surathkal,2
+S0403,S0404,2,2020,2021,False,Nagaraj M K,Paresh Chandra Deka,True,NIT Surathkal,2
+S0398,S0412,2,2016,2016,False,Debabrata Karmakar,Nasar T,True,NIT Surathkal,1
+S0327,S0338,2,2017,2018,False,Navin Karanth P,Mervin Arunaraj Herbert,True,NIT Surathkal,2
+S0305,S0307,2,2022,2022,False,Pushparaj Shetty D,Shyam S Kamath,True,NIT Surathkal,1
+S0175,S0176,2,2018,2020,False,T Laxminidhi,U Shripathi Acharya,True,NIT Surathkal,3
+T0511,T0516,2,2019,2021,False,R Karvembu,V M Biju,True,NIT Trichy,3
+T0502,T0550,2,2018,2020,False,S Velmathi,S T Ramesh,False,NIT Trichy,3
+T0502,T0543,2,2018,2020,False,S Velmathi,R Gandhimathi,False,NIT Trichy,3
+T0492,T0793,2,2016,2017,False,N Anantharaman,S Suresh,False,NIT Trichy,2
+S0114,S0121,2,2024,2025,False,Mithun Mohan,Sreekumar M,True,NIT Surathkal,2
+S0105,S0417,2,2024,2026,False,Bibhuti Bhusan Das,Subba Rao,False,NIT Surathkal,3
+T0486,T0493,2,2023,2024,False,K M Meera Sheriffa Begum,N Samsudeen,True,NIT Trichy,2
+T0451,T0473,2,2020,2023,False,C Mala,B Nithya,True,NIT Trichy,4
+T0451,T0471,2,2020,2024,False,C Mala,A Santhana Vijayan,True,NIT Trichy,5
+T0450,T0597,2,2025,2026,False,B Shameedha Begum,G Thavasi Raja,False,NIT Trichy,2
+T0436,T0530,2,2020,2021,False,G Sangeetha,K Muthukkumaran,False,NIT Trichy,2
+T0427,T0434,2,2022,2026,False,P Gopalakrishnan,Amalan Sigmund Kaushik,True,NIT Trichy,5
+T0423,T0434,2,2022,2026,False,G Subbaiyan,Amalan Sigmund Kaushik,True,NIT Trichy,5
+T0423,T0427,2,2022,2026,False,G Subbaiyan,P Gopalakrishnan,True,NIT Trichy,5
+T0422,T0539,2,2022,2024,False,D Kannamma,Nisha Radhakrishnan,False,NIT Trichy,3
+T0484,T0511,2,2025,2026,False,Jyoti Sahu,R Karvembu,False,NIT Trichy,2
+T0482,T0818,2,2020,2024,False,G Arthanareeswaran,M Ashok,False,NIT Trichy,5
+T0482,T0793,2,2023,2024,False,G Arthanareeswaran,S Suresh,False,NIT Trichy,2
+T0482,T0492,2,2018,2021,False,G Arthanareeswaran,N Anantharaman,True,NIT Trichy,4
+T0479,T0490,2,2017,2017,False,P Kalaichelvi,M Perumalsamy,True,NIT Trichy,1
+T0479,T0487,2,2016,2016,False,P Kalaichelvi,K N Sheeba,True,NIT Trichy,1
+T0477,T0615,2,2020,2022,False,Rama Subramanian N,G Lakshmi Narayanan,False,NIT Trichy,3
+T0471,T0585,2,2019,2022,False,A Santhana Vijayan,Jitendra Kumar,False,NIT Trichy,4
+T0471,T0567,2,2020,2022,False,A Santhana Vijayan,B Janet,False,NIT Trichy,3
+T0462,T0476,2,2016,2016,False,S Mary Saira Bhanu,S Jaya Nirmala,True,NIT Trichy,1
+T0461,T0597,2,2019,2019,False,R Mohan,G Thavasi Raja,False,NIT Trichy,1
+S0127,S0141,2,2017,2021,False,K N Lokesh,R Shivashankar,True,NIT Surathkal,5
+S0120,S0123,2,2024,2024,False,Saranya P,Sridhar G,True,NIT Surathkal,1
+S0119,S0140,2,2021,2024,False,Raviraj H M,Varghese George,True,NIT Surathkal,4
+T0458,T0602,2,2019,2020,False,Karthick S,P Palanisamy,False,NIT Trichy,2
+S0320,S0350,2,2024,2026,False,A S S Balan,Narendranath S,True,NIT Surathkal,3
+S0320,S0321,2,2023,2025,False,A S S Balan,Arumuga Perumal D,True,NIT Surathkal,3
+S0315,S0354,2,2022,2022,False,Ajay Kumar Yadav,Sathyabhama A,True,NIT Surathkal,1
+S0315,S0344,2,2020,2023,False,Ajay Kumar Yadav,Arun M,True,NIT Surathkal,4
+T0474,T0660,2,2016,2020,False,M Brindha,N Ammmasai Goundan,False,NIT Trichy,5
+T0840,T0847,2,2016,2019,False,Dinesh S,P Asokan,True,NIT Trichy,4
+T0838,T0861,2,2019,2022,False,D Lenin Singaravelu,V Senthilkumar,True,NIT Trichy,4
+S0026,S0312,2,2023,2024,False,Manu Basavaraju,Suresh Manjanathhegde,False,NIT Surathkal,2
+T0835,T0853,2,2019,2022,False,A Noorul Haq,R Jeyapaul,True,NIT Trichy,4
+T0821,T0825,2,2019,2022,False,N V Giridharan,S Manivannan,True,NIT Trichy,4
+T0818,T0821,2,2016,2016,False,M Ashok,N V Giridharan,True,NIT Trichy,1
+T0814,T0830,2,2019,2021,False,A Chandra Bose,D Sasti Kumar,True,NIT Trichy,3
+S0190,T0592,2,2023,2024,False,Md Waseem Ahmad,B Naresh Kumar Reddy,False,NIT Surathkal & NIT Trichy,2
+S0032,S0048,2,2025,2026,False,Sourav Kanti Addya,Chandrasekaran K,True,NIT Surathkal,2
+S0030,S0050,2,2017,2017,False,Saumya Hegde,Shasidhar G Koolagudi,True,NIT Surathkal,1
+S0024,S0030,2,2024,2025,False,Mahendra Pratap Singh,Saumya Hegde,True,NIT Surathkal,2
+T0843,T0867,1,2024,2024,False,Kumanan Somasundaram,Satheeshkumar V,True,NIT Trichy,1
+S0021,S0042,1,2026,2026,False,Basavaraj Talawar,Vani M,True,NIT Surathkal,1
+S0022,S0382,1,2023,2023,False,Biswajit R Bhowmik,Ajith Kulangara Madam,False,NIT Surathkal,1
+S0023,S0039,1,2021,2021,False,Jeny Rajan,M Venkatesan,True,NIT Surathkal,1
+S0023,S0048,1,2024,2024,False,Jeny Rajan,Chandrasekaran K,True,NIT Surathkal,1
+S0023,S0158,1,2023,2023,False,Jeny Rajan,Raghavendra B S,False,NIT Surathkal,1
+S0023,S0216,1,2022,2022,False,Jeny Rajan,Anand Kumar M,False,NIT Surathkal,1
+S0024,S0031,1,2025,2025,False,Mahendra Pratap Singh,Shridhar Sanshi,True,NIT Surathkal,1
+S0024,S0158,1,2024,2024,False,Mahendra Pratap Singh,Raghavendra B S,False,NIT Surathkal,1
+T0844,T0862,1,2024,2024,False,Mallikarjuna,Vasu M,True,NIT Trichy,1
+T0844,T0865,1,2026,2026,False,Mallikarjuna,M Durai Selvam,True,NIT Trichy,1
+S0030,S0047,1,2024,2024,False,Saumya Hegde,Annappa,True,NIT Surathkal,1
+S0340,S0363,1,2022,2022,False,N Gnanasekaran,Vijay Desai,True,NIT Surathkal,1
+S0338,S0342,1,2026,2026,False,Mervin Arunaraj Herbert,Prasad Krishna,True,NIT Surathkal,1
+S0336,S0355,1,2019,2019,False,H Suresh Hebbar,Satyabodh M Kulkarni,True,NIT Surathkal,1
+S0334,S0364,1,2020,2020,False,Vasudeva Madav,Vijaykumar H,True,NIT Surathkal,1
+T0838,T0847,1,2022,2022,False,D Lenin Singaravelu,P Asokan,True,NIT Trichy,1
+T0838,T0846,1,2022,2022,False,D Lenin Singaravelu,N S Balaji,True,NIT Trichy,1
+T0837,T0853,1,2016,2016,False,C Sathiya Narayanan,R Jeyapaul,True,NIT Trichy,1
+S0047,S0050,1,2023,2023,False,Annappa,Shasidhar G Koolagudi,True,NIT Surathkal,1
+T0793,T0861,1,2017,2017,False,S Suresh,V Senthilkumar,False,NIT Trichy,1
+T0790,T0801,1,2018,2018,False,R B Anand,T Suthakar,True,NIT Trichy,1
+T0787,T0795,1,2021,2021,False,Nivish George,S P Sivapirakasam,True,NIT Trichy,1
+T0786,T0860,1,2018,2018,False,N Siva Shanmugam,V Anandakrishnan,False,NIT Trichy,1
+T0786,T0837,1,2020,2020,False,N Siva Shanmugam,C Sathiya Narayanan,False,NIT Trichy,1
+T0785,T0804,1,2022,2022,False,M Udayakumar,Vedharaj Sivasankaralingam,True,NIT Trichy,1
+T0784,T0791,1,2024,2024,False,Kaushik P,Raghu Ram Karthik Desu,True,NIT Trichy,1
+T0783,T0861,1,2022,2022,False,K R Balasubramanian,V Senthilkumar,False,NIT Trichy,1
+T0479,T0693,1,2025,2025,False,P Kalaichelvi,N Sivakumaran,False,NIT Trichy,1
+T0479,T0501,1,2020,2020,False,P Kalaichelvi,M Matheswaran,True,NIT Trichy,1
+T0479,T0485,1,2025,2025,False,P Kalaichelvi,K Sankar,True,NIT Trichy,1
+S0320,T0705,1,2024,2024,False,A S S Balan,A Muthuchamy,False,NIT Surathkal & NIT Trichy,1
+T0474,T0632,1,2024,2024,False,M Brindha,G Saravana Ilango,False,NIT Trichy,1
+T0464,T0468,1,2026,2026,False,Sai Krishna Mothku,Rajeswari Sridhar,True,NIT Trichy,1
+S0128,S0131,1,2019,2019,False,K S Babunarayana,Basavaraju Manu,True,NIT Surathkal,1
+S0125,S0377,1,2017,2017,False,K S Babu Narayan,Harsha Vardhan,False,NIT Surathkal,1
+S0119,S0122,1,2025,2025,False,Raviraj H M,Sreevalsa Kolathayar,True,NIT Surathkal,1
+S0118,S0417,1,2016,2016,False,Rajasekaran C,Subba Rao,False,NIT Surathkal,1
+S0118,S0408,1,2016,2016,False,Rajasekaran C,Kiran G Shirlal,False,NIT Surathkal,1
+S0118,S0134,1,2018,2018,False,Rajasekaran C,Katta Venkataramana,True,NIT Surathkal,1
+S0320,S0342,1,2024,2024,False,A S S Balan,Prasad Krishna,True,NIT Surathkal,1
+S0320,S0336,1,2025,2025,False,A S S Balan,H Suresh Hebbar,True,NIT Surathkal,1
+S0319,S0392,1,2020,2020,False,Somasekhara Rao Todeti,Nagaraja H S,False,NIT Surathkal,1
+S0318,S0359,1,2021,2021,False,Parthasarathy P,Srikanth Bontha,True,NIT Surathkal,1
+T0488,T0858,1,2023,2023,False,Kartikeya Shukla,T Jagadesh,False,NIT Trichy,1
+T0488,T0857,1,2024,2024,False,Kartikeya Shukla,Santosh Kumar Mishra,False,NIT Trichy,1
+T0488,T0790,1,2023,2023,False,Kartikeya Shukla,R B Anand,False,NIT Trichy,1
+T0457,T0691,1,2024,2024,False,Kamalika Bhattacharjee,K Srinivasan,False,NIT Trichy,1
+T0455,T0472,1,2026,2026,False,E Sivasankar,Kunwar Singh,True,NIT Trichy,1
+T0451,T0648,1,2018,2018,False,C Mala,S Sudha,False,NIT Trichy,1
+T0450,T0702,1,2026,2026,False,B Shameedha Begum,V Sridevi,False,NIT Trichy,1
+T0450,T0615,1,2022,2022,False,B Shameedha Begum,G Lakshmi Narayanan,False,NIT Trichy,1
+T0423,T0445,1,2016,2016,False,G Subbaiyan,Ramprasad V,True,NIT Trichy,1
+T0420,T0441,1,2023,2023,False,A Meenatchi Sundaram,Saurabh Kumar,True,NIT Trichy,1
+T0420,T0428,1,2025,2025,False,A Meenatchi Sundaram,S Monika,True,NIT Trichy,1
+T0486,T0488,1,2023,2023,False,K M Meera Sheriffa Begum,Kartikeya Shukla,True,NIT Trichy,1
+T0482,T0668,1,2022,2022,False,G Arthanareeswaran,M Premalatha,False,NIT Trichy,1
+T0482,T0514,1,2020,2020,False,G Arthanareeswaran,Somenath Garai,False,NIT Trichy,1
+T0482,T0493,1,2024,2024,False,G Arthanareeswaran,N Samsudeen,True,NIT Trichy,1
+T0480,T0487,1,2016,2016,False,A Arunagiri,K N Sheeba,True,NIT Trichy,1
+T0491,T0501,1,2020,2020,False,Muthukumar K,M Matheswaran,True,NIT Trichy,1
+T0491,T0498,1,2020,2020,False,Muthukumar K,T K Radhakrishnan,True,NIT Trichy,1
+T0490,T0499,1,2020,2020,False,M Perumalsamy,T Sivasankar,True,NIT Trichy,1
+S0117,S0375,1,2026,2026,False,Prashanth M H,Sandi Kumar Reddy,False,NIT Surathkal,1
+S0117,S0138,1,2025,2025,False,Prashanth M H,Subhash C Yaragal,True,NIT Surathkal,1
+S0117,S0122,1,2025,2025,False,Prashanth M H,Sreevalsa Kolathayar,True,NIT Surathkal,1
+S0116,S0126,1,2024,2024,False,Pavan G S,K Swaminathan,True,NIT Surathkal,1
+S0116,S0122,1,2025,2025,False,Pavan G S,Sreevalsa Kolathayar,True,NIT Surathkal,1
+S0116,S0117,1,2025,2025,False,Pavan G S,Prashanth M H,True,NIT Surathkal,1
+S0114,S0210,1,2019,2019,False,Mithun Mohan,Panduranga Vittal K,False,NIT Surathkal,1
+S0111,S0126,1,2022,2022,False,J Vijaya Vengadesh Kumar,K Swaminathan,True,NIT Surathkal,1
+S0109,S0131,1,2024,2024,False,Anupama Surenjan,Basavaraju Manu,True,NIT Surathkal,1
+S0108,S0128,1,2025,2025,False,A S Balu,K S Babunarayana,True,NIT Surathkal,1
+S0106,S0141,1,2018,2018,False,D Venkat Reddy,R Shivashankar,True,NIT Surathkal,1
+S0105,S0411,1,2026,2026,False,Bibhuti Bhusan Das,Manu,False,NIT Surathkal,1
+T0490,T0495,1,2020,2020,False,M Perumalsamy,P Sivashanmugam,True,NIT Trichy,1
+S0287,S0298,1,2020,2020,False,Kedarnath Senapathi,Jidesh P,True,NIT Surathkal,1
+S0183,S0206,1,2023,2023,False,A Karthikeyan,Dattatraya Narayan Gaonkar,True,NIT Surathkal,1
+S0172,T0618,1,2022,2022,False,Neelawar Shekar Vittal Shet,P Muthuchidambaranathan,True,NIT Surathkal & NIT Trichy,1
+S0170,S0171,1,2025,2025,False,Ashvini Chaturvedi,John D Souza,True,NIT Surathkal,1
+T0511,T0790,1,2018,2018,False,R Karvembu,R B Anand,False,NIT Trichy,1
+T0511,T0515,1,2023,2023,False,R Karvembu,Sunandan Sarkar,True,NIT Trichy,1
+T0508,T0815,1,2021,2021,False,Ganesh Chandra Nandi,B Karthikeyan,False,NIT Trichy,1
+T0504,T0724,1,2017,2017,False,A Sreekanth,Siva Prasad Katakam,False,NIT Trichy,1
+T0504,T0721,1,2017,2017,False,A Sreekanth,V Muthupandi,False,NIT Trichy,1
+T0502,T0515,1,2025,2025,False,S Velmathi,Sunandan Sarkar,True,NIT Trichy,1
+T0502,T0514,1,2020,2020,False,S Velmathi,Somenath Garai,True,NIT Trichy,1
+T0501,T0865,1,2022,2022,False,M Matheswaran,M Durai Selvam,False,NIT Trichy,1
+T0495,T0499,1,2020,2020,False,P Sivashanmugam,T Sivasankar,True,NIT Trichy,1
+T0493,T0793,1,2024,2024,False,N Samsudeen,S Suresh,False,NIT Trichy,1
+T0493,T0497,1,2024,2024,False,N Samsudeen,S Saravanan,True,NIT Trichy,1
+T0492,T0790,1,2016,2016,False,N Anantharaman,R B Anand,False,NIT Trichy,1
+T0515,T0516,1,2025,2025,False,Sunandan Sarkar,V M Biju,True,NIT Trichy,1
+T0511,T0831,1,2021,2021,False,R Karvembu,N Gopala Krishnan,False,NIT Trichy,1
+T0419,T0658,1,2018,2018,False,Mini Shaji Thomas,C Nagamani,False,NIT Trichy,1
+T0419,T0639,1,2018,2018,False,Mini Shaji Thomas,M Venkata Kirthiga,False,NIT Trichy,1
+T0419,T0630,1,2019,2019,False,Mini Shaji Thomas,Ankur Singh Rana,False,NIT Trichy,1
+S0410,S0415,1,2022,2022,False,Mahesha A,S Ganapathi Mayya,True,NIT Surathkal,1
+S0407,S0410,1,2025,2025,False,Dwarakish G S,Mahesha A,True,NIT Surathkal,1
+S0404,T0549,1,2020,2020,False,Paresh Chandra Deka,S Saravanan,False,NIT Surathkal & NIT Trichy,1
+S0403,S0417,1,2018,2018,False,Nagaraj M K,Subba Rao,True,NIT Surathkal,1
+S0402,S0403,1,2019,2019,False,Vadivuchezhian Kaliveeran,Nagaraj M K,True,NIT Surathkal,1
+S0392,T0512,1,2016,2016,False,Nagaraja H S,S Anandan,False,NIT Surathkal & NIT Trichy,1
+S0391,S0392,1,2019,2019,False,N K Udayashankar,Nagaraja H S,True,NIT Surathkal,1
+S0307,S0341,1,2020,2020,False,Shyam S Kamath,P Mohanan,False,NIT Surathkal,1
+S0301,S0305,1,2024,2024,False,B R Shankar,Pushparaj Shetty D,True,NIT Surathkal,1
+S0294,S0300,1,2026,2026,False,Vishwanath K P,A Kandasamy,True,NIT Surathkal,1
+S0287,S0301,1,2020,2020,False,Kedarnath Senapathi,B R Shankar,True,NIT Surathkal,1
+S0105,S0138,1,2020,2020,False,Bibhuti Bhusan Das,Subhash C Yaragal,True,NIT Surathkal,1
+S0105,S0133,1,2022,2022,False,Bibhuti Bhusan Das,Gangadhar Mahesh,True,NIT Surathkal,1
+S0101,S0328,1,2025,2025,False,Udaya Kumar Dalimba,P S Suvin,False,NIT Surathkal,1
+S0098,S0392,1,2016,2016,False,Badekai Ramachandra Bhat,Nagaraja H S,False,NIT Surathkal,1
+T0539,T0557,1,2022,2022,False,Nisha Radhakrishnan,Samson Mathew M,True,NIT Trichy,1
+T0535,T0553,1,2025,2025,False,Moses Santhakumar,V Sunitha,True,NIT Trichy,1
+T0532,T0543,1,2022,2022,False,Laiju A R,R Gandhimathi,True,NIT Trichy,1
+T0530,T0555,1,2021,2021,False,K Muthukkumaran,Jayabalan P,True,NIT Trichy,1
+T0529,T0543,1,2016,2016,False,K Baskar,R Gandhimathi,True,NIT Trichy,1
+T0525,T0822,1,2021,2021,False,G Swaminathan,R Justin Joseyphus,False,NIT Trichy,1
+T0525,T0549,1,2019,2019,False,G Swaminathan,S Saravanan,True,NIT Trichy,1
+T0520,T0566,1,2017,2017,False,C Natarajan,R Jayasankar,True,NIT Trichy,1
+T0519,T0625,1,2024,2024,False,Aneesh Mathew,S Deivalakshmi,False,NIT Trichy,1
+T0519,T0550,1,2022,2022,False,Aneesh Mathew,S T Ramesh,True,NIT Trichy,1
+T0519,T0543,1,2022,2022,False,Aneesh Mathew,R Gandhimathi,True,NIT Trichy,1
+T0519,T0539,1,2026,2026,False,Aneesh Mathew,Nisha Radhakrishnan,True,NIT Trichy,1
+T0549,T0625,1,2023,2023,False,S Saravanan,S Deivalakshmi,False,NIT Trichy,1
+T0546,T0555,1,2022,2022,False,Raghavan Ramalingam,Jayabalan P,True,NIT Trichy,1
+S0326,S0346,1,2025,2025,False,Mruthyunjaya Swamy K B,Gangadharan K V,True,NIT Surathkal,1
+S0324,S0357,1,2024,2024,False,Khyati Verma,Shivananda Nayaka H,True,NIT Surathkal,1
+S0323,S0360,1,2021,2021,False,Deepak Kumar,Subhaschandra Kattimani,True,NIT Surathkal,1
+S0323,S0340,1,2021,2021,False,Deepak Kumar,N Gnanasekaran,True,NIT Surathkal,1
+S0323,S0332,1,2021,2021,False,Deepak Kumar,Saurabh Chandraker,True,NIT Surathkal,1
+S0322,S0333,1,2026,2026,False,Arun Kumar Shettigar,Sudhakar C Jambagi,True,NIT Surathkal,1
+S0321,S0392,1,2023,2023,False,Arumuga Perumal D,Nagaraja H S,False,NIT Surathkal,1
+S0321,S0359,1,2023,2023,False,Arumuga Perumal D,Srikanth Bontha,True,NIT Surathkal,1
+S0321,S0323,1,2021,2021,False,Arumuga Perumal D,Deepak Kumar,True,NIT Surathkal,1
+S0320,T0786,1,2026,2026,False,A S S Balan,N Siva Shanmugam,True,NIT Surathkal & NIT Trichy,1
+S0385,S0387,1,2019,2019,False,Partha Pratim Das,Govinda Rao Umesh,True,NIT Surathkal,1
+S0384,S0390,1,2017,2017,False,Kartick Tarafder,M Nagarajan Satyanarayan,True,NIT Surathkal,1
+S0384,S0387,1,2017,2017,False,Kartick Tarafder,Govinda Rao Umesh,True,NIT Surathkal,1
+T0543,T0549,1,2025,2025,False,R Gandhimathi,S Saravanan,True,NIT Trichy,1
+S0095,S0384,1,2016,2016,False,Adka Nityananda Shetty,Kartick Tarafder,False,NIT Surathkal,1
+T0576,T0581,1,2018,2018,False,S R Balasundaram,B Ramadoss,True,NIT Trichy,1
+T0567,T0625,1,2019,2019,False,B Janet,S Deivalakshmi,False,NIT Trichy,1
+T0567,T0573,1,2019,2019,False,B Janet,R Eswari,True,NIT Trichy,1
+T0555,T0818,1,2020,2020,False,Jayabalan P,M Ashok,False,NIT Trichy,1
+S0163,S0226,1,2024,2024,False,Shyam Lal,Sowmya Kamath S,False,NIT Surathkal,1
+S0163,S0176,1,2022,2022,False,Shyam Lal,U Shripathi Acharya,True,NIT Surathkal,1
+S0284,T0765,1,2026,2026,False,Gayathri P,Vamsinadh Thota,True,NIT Surathkal & NIT Trichy,1
+S0280,S0304,1,2025,2025,False,A Senthil Thilak,P Sam Johnson,True,NIT Surathkal,1
+S0252,S0357,1,2018,2018,False,Udaya Bhat K,Shivananda Nayaka H,False,NIT Surathkal,1
+S0252,S0351,1,2018,2018,False,Udaya Bhat K,Ramesh M R,False,NIT Surathkal,1
+S0249,S0384,1,2019,2019,False,Anandhan Srinivasan,Kartick Tarafder,False,NIT Surathkal,1
+S0249,S0251,1,2022,2022,False,Anandhan Srinivasan,K Narayan Prabhu,True,NIT Surathkal,1
+S0245,S0356,1,2022,2022,False,Shashi Bhushan Arya,Sharnappa Joladarashi,False,NIT Surathkal,1
+S0245,S0247,1,2019,2019,False,Shashi Bhushan Arya,K Rajendra Udupa,True,NIT Surathkal,1
+T0555,T0782,1,2016,2016,False,Jayabalan P,K Sankaranarayanasamy,False,NIT Trichy,1
+S0373,S0378,1,2025,2025,False,Akhil Avchar,Karra Ram Chandar,True,NIT Surathkal,1
+T0597,T0695,1,2022,2022,False,G Thavasi Raja,R Periyasamy,False,NIT Trichy,1
+T0597,T0603,1,2025,2025,False,G Thavasi Raja,Parthasarathy R,True,NIT Trichy,1
+T0595,T0622,1,2022,2022,False,D Sriram Kumar,N Gunavathi,True,NIT Trichy,1
+T0594,T0596,1,2018,2018,False,B Malarkodi,E S Gopi,True,NIT Trichy,1
+T0593,T0600,1,2017,2017,False,B Venkataramani,M Bhaskar,True,NIT Trichy,1
+T0593,T0594,1,2021,2021,False,B Venkataramani,B Malarkodi,True,NIT Trichy,1
+T0592,T0615,1,2026,2026,False,B Naresh Kumar Reddy,G Lakshmi Narayanan,True,NIT Trichy,1
+T0584,T0793,1,2016,2016,False,Gopalan N P,S Suresh,False,NIT Trichy,1
+T0583,T0762,1,2026,2026,False,Bopche Ghanshyam Sitkura,R Ravindran,False,NIT Trichy,1
+T0576,T0697,1,2024,2024,False,S R Balasundaram,S Narayanan,False,NIT Trichy,1
+S0097,S0406,1,2025,2025,False,Arun Mohan Isloor,Dodamani B M,False,NIT Surathkal,1
+S0097,S0392,1,2020,2020,False,Arun Mohan Isloor,Nagaraja H S,False,NIT Surathkal,1
+S0097,S0252,1,2024,2024,False,Arun Mohan Isloor,Udaya Bhat K,False,NIT Surathkal,1
+S0096,S0384,1,2019,2019,False,Ampar Chitharanjan Hegde,Kartick Tarafder,False,NIT Surathkal,1
+S0096,S0252,1,2016,2016,False,Ampar Chitharanjan Hegde,Udaya Bhat K,False,NIT Surathkal,1
+S0240,S0315,1,2023,2023,False,Mohammad Rizwanur Rahman,Ajay Kumar Yadav,False,NIT Surathkal,1
+T0599,T0649,1,2025,2025,False,Karthikeyan S S,S Senthil Kumar,False,NIT Trichy,1
+T0598,T0691,1,2022,2022,False,Hemant Kumar,K Srinivasan,False,NIT Trichy,1
+S0139,S0359,1,2019,2019,False,Suresha S N,Srikanth Bontha,False,NIT Surathkal,1
+S0139,S0339,1,2019,2019,False,Suresha S N,Mrityunjay R Doddamani,False,NIT Surathkal,1
+S0138,S0377,1,2017,2017,False,Subhash C Yaragal,Harsha Vardhan,False,NIT Surathkal,1
+S0137,S0375,1,2025,2025,False,Sitaram Nayak,Sandi Kumar Reddy,False,NIT Surathkal,1
+S0136,S0413,1,2020,2020,False,S Shrihari,Ramesh H,False,NIT Surathkal,1
+S0135,S0409,1,2022,2022,False,Mattur C Narasimhan,Lakshman Nandagiri,False,NIT Surathkal,1
+S0131,S0136,1,2019,2019,False,Basavaraju Manu,S Shrihari,True,NIT Surathkal,1
+S0130,S0381,1,2017,2017,False,B R Jayalekshmi,Vedala Rama Sastry,False,NIT Surathkal,1
+S0129,S0136,1,2022,2022,False,Arun Kumar Thalla,S Shrihari,True,NIT Surathkal,1
+S0128,S0136,1,2019,2019,False,K S Babunarayana,S Shrihari,True,NIT Surathkal,1
+S0377,S0380,1,2024,2024,False,Harsha Vardhan,Rajib Pal,True,NIT Surathkal,1
+S0374,S0378,1,2025,2025,False,Amrites Senapati,Karra Ram Chandar,True,NIT Surathkal,1
+S0374,S0377,1,2025,2025,False,Amrites Senapati,Harsha Vardhan,True,NIT Surathkal,1
+T0613,T0615,1,2026,2026,False,Bibin Francis,G Lakshmi Narayanan,True,NIT Trichy,1
+T0611,T0625,1,2021,2021,False,Varun P Gopi,S Deivalakshmi,True,NIT Trichy,1
+T0609,T0615,1,2026,2026,False,Srinivasulu Jogi,G Lakshmi Narayanan,True,NIT Trichy,1
+T0607,T0625,1,2017,2017,False,S Raghavan,S Deivalakshmi,True,NIT Trichy,1
+T0606,T0622,1,2022,2022,False,R Pandeeswari,N Gunavathi,True,NIT Trichy,1
+T0605,T0612,1,2026,2026,False,R Malmathanraj,Avik Hati,True,NIT Trichy,1
+T0602,T0860,1,2018,2018,False,P Palanisamy,V Anandakrishnan,False,NIT Trichy,1
+T0602,T0624,1,2022,2022,False,P Palanisamy,R Thilagavathy,True,NIT Trichy,1
+T0602,T0612,1,2026,2026,False,P Palanisamy,Avik Hati,True,NIT Trichy,1
+T0602,T0606,1,2017,2017,False,P Palanisamy,R Pandeeswari,True,NIT Trichy,1
+T0600,T0624,1,2017,2017,False,M Bhaskar,R Thilagavathy,True,NIT Trichy,1
+S0241,S0351,1,2018,2018,False,Preetham Kumar G V,Ramesh M R,False,NIT Surathkal,1
+S0241,S0350,1,2019,2019,False,Preetham Kumar G V,Narendranath S,False,NIT Surathkal,1
+S0241,S0245,1,2026,2026,False,Preetham Kumar G V,Shashi Bhushan Arya,True,NIT Surathkal,1
+S0240,S0369,1,2019,2019,False,Mohammad Rizwanur Rahman,Ram Prasad Choudhary,False,NIT Surathkal,1
+S0240,S0336,1,2022,2022,False,Mohammad Rizwanur Rahman,H Suresh Hebbar,False,NIT Surathkal,1
+S0373,S0377,1,2025,2025,False,Akhil Avchar,Harsha Vardhan,True,NIT Surathkal,1
+S0371,S0374,1,2025,2025,False,Bijay Mihir Kunar,Amrites Senapati,True,NIT Surathkal,1
+S0371,S0373,1,2025,2025,False,Bijay Mihir Kunar,Akhil Avchar,True,NIT Surathkal,1
+S0368,S0374,1,2025,2025,False,Mangalpady Aruna,Amrites Senapati,True,NIT Surathkal,1
+S0368,S0373,1,2025,2025,False,Mangalpady Aruna,Akhil Avchar,True,NIT Surathkal,1
+S0364,S0413,1,2020,2020,False,Vijaykumar H,Ramesh H,False,NIT Surathkal,1
+S0361,S0364,1,2020,2020,False,Veershetty Gumtapure,Vijaykumar H,True,NIT Surathkal,1
+S0360,T0849,1,2024,2024,False,Subhaschandra Kattimani,P Sathiya,False,NIT Surathkal & NIT Trichy,1
+S0360,S0413,1,2022,2022,False,Subhaschandra Kattimani,Ramesh H,False,NIT Surathkal,1
+S0359,T0705,1,2024,2024,False,Srikanth Bontha,A Muthuchamy,False,NIT Surathkal & NIT Trichy,1
+S0356,S0363,1,2018,2018,False,Sharnappa Joladarashi,Vijay Desai,True,NIT Surathkal,1
+S0355,S0363,1,2021,2021,False,Satyabodh M Kulkarni,Vijay Desai,True,NIT Surathkal,1
+T0630,T0698,1,2021,2021,False,Ankur Singh Rana,Shiraz Sohail,False,NIT Trichy,1
+T0628,T0660,1,2017,2017,False,S Mageshwari,N Ammmasai Goundan,True,NIT Trichy,1
+T0628,T0658,1,2022,2022,False,S Mageshwari,C Nagamani,True,NIT Trichy,1
+T0628,T0632,1,2022,2022,False,S Mageshwari,G Saravana Ilango,True,NIT Trichy,1
+S0186,S0212,1,2025,2025,False,Dharavath Kishan,Udaykumar R Yaragatti,True,NIT Surathkal,1
+S0186,S0194,1,2022,2022,False,Dharavath Kishan,Ravi Raushan,True,NIT Surathkal,1
+S0185,S0329,1,2022,2022,False,B Dastagiri Reddy,Poornesh Kumar Koorata,False,NIT Surathkal,1
+T0635,T0663,1,2017,2017,False,K Sundareswaran,V Sankara Narayanan,True,NIT Trichy,1
+T0634,T0652,1,2025,2025,False,Josephine R L,Sishaj P Simon,True,NIT Trichy,1
+S0093,S0384,1,2023,2023,False,Sib Sankar Mal,Kartick Tarafder,False,NIT Surathkal,1
+S0093,S0382,1,2026,2026,False,Sib Sankar Mal,Ajith Kulangara Madam,False,NIT Surathkal,1
+S0093,S0243,1,2017,2017,False,Sib Sankar Mal,Saumen Mandal,False,NIT Surathkal,1
+S0092,S0384,1,2023,2023,False,Saikat Dutta,Kartick Tarafder,False,NIT Surathkal,1
+S0092,S0361,1,2020,2020,False,Saikat Dutta,Veershetty Gumtapure,False,NIT Surathkal,1
+S0088,S0387,1,2017,2017,False,Airody Vasudeva Adhikari,Govinda Rao Umesh,False,NIT Surathkal,1
+S0088,S0384,1,2017,2017,False,Airody Vasudeva Adhikari,Kartick Tarafder,False,NIT Surathkal,1
+S0088,S0159,1,2020,2020,False,Airody Vasudeva Adhikari,Rathnamala Rao,False,NIT Surathkal,1
+T0634,T0643,1,2025,2025,False,Josephine R L,P Srinivasa Rao Nayak,True,NIT Trichy,1
+T0634,T0635,1,2025,2025,False,Josephine R L,K Sundareswaran,True,NIT Trichy,1
+T0632,T0783,1,2020,2020,False,G Saravana Ilango,K R Balasubramanian,False,NIT Trichy,1
+T0638,T0654,1,2019,2019,False,M P Selvan,Suryanarayana Gangolu,True,NIT Trichy,1
+S0237,S0320,1,2023,2023,False,B Rajasekaran,A S S Balan,False,NIT Surathkal,1
+S0351,T0798,1,2020,2020,False,Ramesh M R,Sreejith Mohan,True,NIT Surathkal & NIT Trichy,1
+S0333,S0342,1,2018,2018,False,Sudhakar C Jambagi,Prasad Krishna,True,NIT Surathkal,1
+S0161,S0163,1,2024,2024,False,Sandeep Kumar,Shyam Lal,True,NIT Surathkal,1
+S0158,S0176,1,2026,2026,False,Raghavendra B S,U Shripathi Acharya,True,NIT Surathkal,1
+S0156,T0618,1,2021,2021,False,Prabu K,P Muthuchidambaranathan,True,NIT Surathkal & NIT Trichy,1
+S0156,S0172,1,2026,2026,False,Prabu K,Neelawar Shekar Vittal Shet,True,NIT Surathkal,1
+S0155,S0381,1,2016,2016,False,Pathipati Srihari,Vedala Rama Sastry,False,NIT Surathkal,1
+S0351,T0782,1,2020,2020,False,Ramesh M R,K Sankaranarayanasamy,True,NIT Surathkal & NIT Trichy,1
+S0351,S0371,1,2020,2020,False,Ramesh M R,Bijay Mihir Kunar,False,NIT Surathkal,1
+S0351,S0366,1,2020,2020,False,Ramesh M R,Chivukula Suryanarayana Murthy,False,NIT Surathkal,1
+S0237,S0246,1,2025,2025,False,B Rajasekaran,Sumanth Govindarajan,True,NIT Surathkal,1
+S0237,S0241,1,2024,2024,False,B Rajasekaran,Preetham Kumar G V,True,NIT Surathkal,1
+S0189,S0210,1,2017,2017,False,Krishnan C M C,Panduranga Vittal K,True,NIT Surathkal,1
+S0186,S0215,1,2024,2024,False,Dharavath Kishan,Yellasiri Suresh,True,NIT Surathkal,1
+T0666,T0668,1,2022,2022,False,Jaganathan Vm,M Premalatha,True,NIT Trichy,1
+T0662,T0755,1,2025,2025,False,Pinkymol Kp,M Sivanesan,False,NIT Trichy,1
+T0658,T0693,1,2017,2017,False,C Nagamani,N Sivakumaran,False,NIT Trichy,1
+T0653,T0654,1,2025,2025,False,Suman M,Suryanarayana Gangolu,True,NIT Trichy,1
+T0647,T0660,1,2016,2016,False,S Moorthi,N Ammmasai Goundan,True,NIT Trichy,1
+T0645,T0853,1,2023,2023,False,S Arul Daniel,R Jeyapaul,False,NIT Trichy,1
+T0645,T0660,1,2017,2017,False,S Arul Daniel,N Ammmasai Goundan,True,NIT Trichy,1
+T0645,T0653,1,2017,2017,False,S Arul Daniel,Suman M,True,NIT Trichy,1
+T0644,T0653,1,2025,2025,False,Rakesh Kumar Panda,Suman M,True,NIT Trichy,1
+T0642,T0670,1,2026,2026,False,P Raja,Damodhar Siva Krishna Rao K,False,NIT Trichy,1
+T0641,T0658,1,2023,2023,False,N Kumaresan,C Nagamani,True,NIT Trichy,1
+T0641,T0644,1,2025,2025,False,N Kumaresan,Rakesh Kumar Panda,True,NIT Trichy,1
+T0639,T0693,1,2026,2026,False,M Venkata Kirthiga,N Sivakumaran,False,NIT Trichy,1
+T0639,T0658,1,2018,2018,False,M Venkata Kirthiga,C Nagamani,True,NIT Trichy,1
+T0639,T0654,1,2019,2019,False,M Venkata Kirthiga,Suryanarayana Gangolu,True,NIT Trichy,1
+T0638,T0660,1,2016,2016,False,M P Selvan,N Ammmasai Goundan,True,NIT Trichy,1
+S0221,T0474,1,2026,2026,False,Janani T,M Brindha,False,NIT Surathkal & NIT Trichy,1
+S0217,S0226,1,2022,2022,False,Bhawana Rudra,Sowmya Kamath S,True,NIT Surathkal,1
+S0216,S0399,1,2026,2026,False,Anand Kumar M,Pruthviraj U,False,NIT Surathkal,1
+S0210,S0211,1,2025,2025,False,Panduranga Vittal K,Shubhanga K N,True,NIT Surathkal,1
+S0209,T0638,1,2018,2018,False,Manjunatha Sharma K,M P Selvan,True,NIT Surathkal & NIT Trichy,1
+S0209,S0218,1,2024,2024,False,Manjunatha Sharma K,Biju R Mohan,False,NIT Surathkal,1
+S0209,S0215,1,2025,2025,False,Manjunatha Sharma K,Yellasiri Suresh,True,NIT Surathkal,1
+S0209,S0211,1,2025,2025,False,Manjunatha Sharma K,Shubhanga K N,True,NIT Surathkal,1
+T0686,T0689,1,2016,2016,False,B Vasuki,G Uma,True,NIT Trichy,1
+T0669,T0809,1,2022,2022,False,Ruben Sudhakar D,V Mariappan,False,NIT Trichy,1
+T0666,T0809,1,2022,2022,False,Jaganathan Vm,V Mariappan,False,NIT Trichy,1
+S0084,S0245,1,2023,2023,False,Vidya Shetty K,Shashi Bhushan Arya,False,NIT Surathkal,1
+S0083,S0252,1,2016,2016,False,Raj Mohan B,Udaya Bhat K,False,NIT Surathkal,1
+S0083,S0249,1,2016,2016,False,Raj Mohan B,Anandhan Srinivasan,False,NIT Surathkal,1
+S0081,S0090,1,2020,2020,False,P E Jagadeeshbabu,Debashree Chakraborty,False,NIT Surathkal,1
+T0666,T0790,1,2023,2023,False,Jaganathan Vm,R B Anand,False,NIT Trichy,1
+T0687,T0805,1,2025,2025,False,C Geetha,Ashok Kumar Nallathambi,False,NIT Trichy,1
+S0150,S0161,1,2023,2023,False,Kalpana G Bhat,Sandeep Kumar,True,NIT Surathkal,1
+S0149,S0162,1,2024,2024,False,Deepu Vijayasenan,Shikha Baghel,True,NIT Surathkal,1
+S0149,S0158,1,2024,2024,False,Deepu Vijayasenan,Raghavendra B S,True,NIT Surathkal,1
+S0146,S0347,1,2021,2021,False,A Venkata Narasimhadhan,Hemantha Kumar,False,NIT Surathkal,1
+S0146,S0346,1,2021,2021,False,A Venkata Narasimhadhan,Gangadharan K V,False,NIT Surathkal,1
+S0146,S0151,1,2020,2020,False,A Venkata Narasimhadhan,Krishnamoorthy K,True,NIT Surathkal,1
+S0145,S0406,1,2025,2025,False,Sunil B Malegole,Dodamani B M,False,NIT Surathkal,1
+S0349,S0364,1,2020,2020,False,Kumar G N,Vijaykumar H,True,NIT Surathkal,1
+S0348,S0355,1,2025,2025,False,Jeyaraj P,Satyabodh M Kulkarni,True,NIT Surathkal,1
+S0154,S0164,1,2025,2025,False,Nikhil K S,Sushil Kumar Pandey,True,NIT Surathkal,1
+S0154,S0159,1,2025,2025,False,Nikhil K S,Rathnamala Rao,True,NIT Surathkal,1
+S0153,T0618,1,2022,2022,False,Muralidhar Kulkarni,P Muthuchidambaranathan,True,NIT Surathkal & NIT Trichy,1
+T0686,T0692,1,2016,2016,False,B Vasuki,M Umapathy,True,NIT Trichy,1
+S0226,S0280,1,2020,2020,False,Sowmya Kamath S,A Senthil Thilak,False,NIT Surathkal,1
+S0221,T0653,1,2024,2024,False,Janani T,Suman M,False,NIT Surathkal & NIT Trichy,1
+S0066,S0073,1,2024,2024,False,Chinta Sankar Rao,Vaishakh Nair,True,NIT Surathkal,1
+S0050,S0146,1,2018,2018,False,Shasidhar G Koolagudi,A Venkata Narasimhadhan,False,NIT Surathkal,1
+S0048,S0358,1,2023,2023,False,Chandrasekaran K,Shrikantha S Rao,False,NIT Surathkal,1
+S0048,S0303,1,2018,2018,False,Chandrasekaran K,Murulidhar N N,False,NIT Surathkal,1
+T0717,T0865,1,2018,2018,False,S P Kumaresh Babu,M Durai Selvam,False,NIT Trichy,1
+T0717,T0786,1,2018,2018,False,S P Kumaresh Babu,N Siva Shanmugam,False,NIT Trichy,1
+T0715,T0837,1,2019,2019,False,S Muthukumaran,C Sathiya Narayanan,False,NIT Trichy,1
+T0711,T0818,1,2017,2017,False,N Ramesh Babu,M Ashok,False,NIT Trichy,1
+T0707,T0854,1,2020,2020,False,B Ravisankar,R Narayanasamy,False,NIT Trichy,1
+T0707,T0837,1,2020,2020,False,B Ravisankar,C Sathiya Narayanan,False,NIT Trichy,1
+T0707,T0782,1,2017,2017,False,B Ravisankar,K Sankaranarayanasamy,False,NIT Trichy,1
+T0707,T0714,1,2022,2022,False,B Ravisankar,S Kumaran,True,NIT Trichy,1
+T0706,T0793,1,2021,2021,False,Anand S,S Suresh,False,NIT Trichy,1
+T0693,T0783,1,2020,2020,False,N Sivakumaran,K R Balasubramanian,False,NIT Trichy,1
+T0693,T0700,1,2026,2026,False,N Sivakumaran,Ram Shankar Rajadurai,True,NIT Trichy,1
+T0688,T0696,1,2023,2023,False,D Ezhilarasi,Rahul Kumar Sharma,True,NIT Trichy,1
+S0151,S0302,1,2023,2023,False,Krishnamoorthy K,Madhusudhan R,False,NIT Surathkal,1
+S0151,S0172,1,2025,2025,False,Krishnamoorthy K,Neelawar Shekar Vittal Shet,True,NIT Surathkal,1
+S0347,S0349,1,2021,2021,False,Hemantha Kumar,Kumar G N,True,NIT Surathkal,1
+S0346,S0361,1,2025,2025,False,Gangadharan K V,Veershetty Gumtapure,True,NIT Surathkal,1
+S0346,S0356,1,2020,2020,False,Gangadharan K V,Sharnappa Joladarashi,True,NIT Surathkal,1
+S0346,S0353,1,2019,2019,False,Gangadharan K V,S M Murigendrappa,True,NIT Surathkal,1
+S0345,S0356,1,2020,2020,False,G C Mohan Kumar,Sharnappa Joladarashi,True,NIT Surathkal,1
+S0343,S0352,1,2023,2023,False,Anish S,Ravikiran Kadoli,True,NIT Surathkal,1
+S0343,S0344,1,2023,2023,False,Anish S,Arun M,True,NIT Surathkal,1
+S0342,S0357,1,2020,2020,False,Prasad Krishna,Shivananda Nayaka H,True,NIT Surathkal,1
+S0078,S0079,1,2023,2023,False,I Regupathi,Keyur Raval,True,NIT Surathkal,1
+S0077,S0252,1,2017,2017,False,Hari Prasad Dasari,Udaya Bhat K,False,NIT Surathkal,1
+S0077,S0249,1,2017,2017,False,Hari Prasad Dasari,Anandhan Srinivasan,False,NIT Surathkal,1
+S0077,S0245,1,2022,2022,False,Hari Prasad Dasari,Shashi Bhushan Arya,False,NIT Surathkal,1
+S0074,S0079,1,2020,2020,False,G Srinikethan,Keyur Raval,True,NIT Surathkal,1
+S0066,T0482,1,2020,2020,False,Chinta Sankar Rao,G Arthanareeswaran,True,NIT Surathkal & NIT Trichy,1
+T0783,T0808,1,2019,2019,False,K R Balasubramanian,Nanda Naik Korra,True,NIT Trichy,1
+T0782,T0795,1,2018,2018,False,K Sankaranarayanasamy,S P Sivapirakasam,True,NIT Trichy,1
+T0781,T0793,1,2016,2016,False,J Sarangan,S Suresh,True,NIT Trichy,1
+T0776,T0787,1,2022,2022,False,Veerappan,Nivish George,True,NIT Trichy,1
+T0770,T0774,1,2024,2024,False,K Murugesan,V Ravichandran,True,NIT Trichy,1
+T0747,T0774,1,2024,2024,False,Abhijit Das,V Ravichandran,True,NIT Trichy,1
+S0206,S0360,1,2024,2024,False,Dattatraya Narayan Gaonkar,Subhaschandra Kattimani,False,NIT Surathkal,1
+S0206,S0329,1,2024,2024,False,Dattatraya Narayan Gaonkar,Poornesh Kumar Koorata,False,NIT Surathkal,1
+S0205,S0213,1,2025,2025,False,B Venkatesa Perumal,Vinatha U,True,NIT Surathkal,1
+S0198,S0399,1,2023,2023,False,Yashwant Kashyap,Pruthviraj U,False,NIT Surathkal,1
+S0198,S0211,1,2025,2025,False,Yashwant Kashyap,Shubhanga K N,True,NIT Surathkal,1
+T0724,T0850,1,2019,2019,False,Siva Prasad Katakam,P Senthil,False,NIT Trichy,1
+T0723,T0724,1,2017,2017,False,Puppala Laxman Mani Kanta,Siva Prasad Katakam,True,NIT Trichy,1
+T0721,T0865,1,2019,2019,False,V Muthupandi,M Durai Selvam,False,NIT Trichy,1
+T0721,T0850,1,2019,2019,False,V Muthupandi,P Senthil,False,NIT Trichy,1
+S0152,S0154,1,2024,2024,False,Mandeep Singh,Nikhil K S,True,NIT Surathkal,1
+S0039,S0048,1,2022,2022,False,M Venkatesan,Chandrasekaran K,True,NIT Surathkal,1
+T0843,T0855,1,2022,2022,False,Kumanan Somasundaram,S Prasanna Venkatesan,True,NIT Trichy,1
+T0842,T0873,1,2024,2024,False,K Panneerselvam,S John Vincent Jesuraj,True,NIT Trichy,1
+T0842,T0847,1,2021,2021,False,K Panneerselvam,P Asokan,True,NIT Trichy,1
+S0021,S0027,1,2020,2020,False,Basavaraj Talawar,Mohit P Tahiliani,True,NIT Surathkal,1
+T0860,T0865,1,2020,2020,False,V Anandakrishnan,M Durai Selvam,True,NIT Trichy,1
+T0856,T0859,1,2016,2016,False,S Vinodh,T Selvaraj,True,NIT Trichy,1
+T0853,T0872,1,2026,2026,False,R Jeyapaul,Rajesh R,True,NIT Trichy,1
+T0850,T0861,1,2019,2019,False,P Senthil,V Senthilkumar,True,NIT Trichy,1
+T0850,T0856,1,2017,2017,False,P Senthil,S Vinodh,True,NIT Trichy,1
+T0846,T0874,1,2019,2019,False,N S Balaji,Simson D,True,NIT Trichy,1
+T0814,T0818,1,2023,2023,False,A Chandra Bose,M Ashok,True,NIT Trichy,1
+T0795,T0861,1,2022,2022,False,S P Sivapirakasam,V Senthilkumar,False,NIT Trichy,1
+T0794,T0819,1,2019,2019,False,S Venkatachalapathy,M C Santhosh Kumar,False,NIT Trichy,1
+S0340,T0844,1,2023,2023,False,N Gnanasekaran,Mallikarjuna,False,NIT Surathkal & NIT Trichy,1
+S0340,S0392,1,2023,2023,False,N Gnanasekaran,Nagaraja H S,False,NIT Surathkal,1
+S0317,S0325,1,2025,2025,False,Abhilash Singh,Mervin Joe Thomas,True,NIT Surathkal,1
+S0316,S0351,1,2018,2018,False,D Chakradhar,Ramesh M R,True,NIT Surathkal,1
+S0315,S0352,1,2023,2023,False,Ajay Kumar Yadav,Ravikiran Kadoli,True,NIT Surathkal,1
+S0315,S0351,1,2026,2026,False,Ajay Kumar Yadav,Ramesh M R,True,NIT Surathkal,1
+S0315,S0340,1,2024,2024,False,Ajay Kumar Yadav,N Gnanasekaran,True,NIT Surathkal,1
+S0308,S0313,1,2016,2016,False,V Murugan,Satyanarayana Engu,True,NIT Surathkal,1
+T0475,T0649,1,2025,2025,False,M Sridevi,S Senthil Kumar,False,NIT Trichy,1
+S0027,S0341,1,2020,2020,False,Mohit P Tahiliani,P Mohanan,False,NIT Surathkal,1
+S0027,S0307,1,2020,2020,False,Mohit P Tahiliani,Shyam S Kamath,False,NIT Surathkal,1
+T0821,T0829,1,2025,2025,False,N V Giridharan,Annapureddy Venkateshwarlu,True,NIT Trichy,1
+T0819,T0821,1,2020,2020,False,M C Santhosh Kumar,N V Giridharan,True,NIT Trichy,1
+T0814,T0822,1,2020,2020,False,A Chandra Bose,R Justin Joseyphus,True,NIT Trichy,1
+T0814,T0820,1,2023,2023,False,A Chandra Bose,N Baskaran,True,NIT Trichy,1
+S0189,S0325,1,2025,2025,False,Krishnan C M C,Mervin Joe Thomas,False,NIT Surathkal,1
+S0189,S0317,1,2025,2025,False,Krishnan C M C,Abhilash Singh,False,NIT Surathkal,1
+S0047,S0049,1,2026,2026,False,Annappa,P Santhi Thilagam,True,NIT Surathkal,1

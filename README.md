@@ -795,6 +795,22 @@ Our two NITs next to NIT Warangal, NIT Calicut, NIT Puducherry (2010) and NIT An
 - New views: the network growing year by year, average degree with both counts of N, rich-get-richer, degrees of separation, removing faculty one by one, the citation network with controls (hide self-citations, colour by field or year), the map with India's outline, co-authorship / citation layers and a click-for-details panel, partner charts and a heat map, field bubbles, conferences by department, a faculty profile with search and side-by-side comparison, and the South Indian NITs page.
 - India's outline: DataMeet's composite India map (github.com/datameet/maps), simplified to `data/reference/india_outline.json`.
 
+### 14. Network dynamics (`scripts/dynamics.py` → [DYNAMICS.md](data/analysis/dynamics/DYNAMICS.md))
+How things move through the faculty co-authorship network (faculty-to-faculty links only). Team choices: SIR spreading plus the epidemic threshold; super-tie = top 10% of pairs by joint papers; newcomer = first listed on the faculty pages in 2017 or later. Shown in the dashboard's **Network dynamics** tab.
+
+- **Spreading:**
+  - the epidemic threshold 1/λ₁ is 0.127 at NIT Surathkal vs 0.165 at NIT Trichy, so ideas take off more easily at Surathkal;
+  - both real networks have a larger λ₁ than degree-preserving rewired copies;
+  - at β = 0.2, five hubs reach 8.6% of NIT Trichy faculty vs 3.9% for five random faculty; at β = 0.5 the starting people no longer matter.
+- **Triangles:** 58% of the 314 faculty triangles are filled by a three-person paper, but most of those were built pair by pair and sealed later (only 36% were born as a team). Cross-department triangles are more often real teams (67% filled vs 52%).
+- **Super-ties:** 11% of faculty pairs (9+ joint papers) write 52% of all joint faculty papers; 89% are within one department; their papers have a slightly higher median FWCI (0.80 vs 0.70, p = 0.003).
+- **Newcomers:** 46% of newcomers with 3 full years still have no faculty co-author in their NIT (52% at Trichy, 30% at Surathkal); first partners come from the same department (76%) and are often newcomers themselves (37%), not hubs.
+- **Brokers (Burt):** brokers are mostly the hubs (constraint vs degree ρ = −0.97), bridge departments (43% vs 14% of co-authors in other departments), plus 5 hidden brokers with few but bridging links.
+- **Kuramoto synchronisation** (ω ~ N(0,1), unweighted, largest connected group): synchrony starts at the theoretical K_c ≈ 0.2–0.26, but the real networks are much harder to bring into one rhythm than rewired ones (Laplacian eigenratio 670 vs 130; r = 0.5 at K ≈ 1.2 vs 0.7): departments synchronise inside and drift apart from each other. The best-connected faculty lock first (88% vs 47% at K = 1).
+- **Do collaborations last?** 57% of faculty pairs write together again within 3 years, but only 27% of the pairs that started in 2016–2018 were still active in 2023–2025. Renewal rises with time together (51% after one year, 81% after 5+), is more likely for same-department pairs (odds ×2.6) and pairs whose first papers had FWCI ≥ 1 (×2.4), and pairs write steadily rather than in bursts (yearly data).
+- **Research groups over time** (Louvain in 3-year sliding windows, matched by Jaccard ≥ 0.3): 112 groups, 36% living one window, 22 lasting 5+ windows and 4 all nine; 9 of the long-lived ones changed their main department. Groups did not become more mixed (about 74% from the main department throughout). Large groups that keep a stable core live longer (ρ = 0.45, p = 0.006), unlike Palla et al. (2007).
+- **Key findings:** every card on the dashboard's Key findings tab now ends with a recommendation and who should act on it.
+
 ---
 
 ## Folder layout
@@ -829,6 +845,7 @@ DPCN_assignment2/
 │   ├── phase2_prof.py       ← professor's meeting follow-ups: average degree and 1.66, rolling link prediction, NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
 │   ├── check_friends.py     ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
 │   ├── south_nits.py        ← the six South Indian NITs and the founding-years test
+│   ├── dynamics.py          ← network dynamics: SIR spreading and epidemic threshold, Kuramoto synchronisation, team triangles, super-ties, tie renewal and burstiness, newcomers, research groups over time, Burt brokers → data/analysis/dynamics/
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -894,6 +911,7 @@ python fetch_peers.py               # four NITs' papers for the comparison (abou
 python phase2_prof.py               # data/analysis/prof/ (the nirf and nitfaculty parts need pymupdf and the NIRF files in data/raw/nirf/)
 python check_friends.py             # needs the friends' zips unpacked in data/raw/friends/ (not in the repo)
 python south_nits.py                # data/analysis/south/
+python dynamics.py                  # data/analysis/dynamics/
 python build_dashboard.py           # dashboard/index.html
 ```
 

@@ -1,0 +1,113 @@
+dynamic_group,first_window,last_window,lifetime_windows,size_first,size_last,size_mean,stationarity,ever_members,main_unit_first,main_unit_last,key_members_first,key_members_last,drifted,alive_in_last_window
+7,2016–2018,2024–2026,9,14,7,13.555555555555555,0.6721010623148781,28,Trichy EEE,Trichy EEE,N Ammmasai Goundan; M P Selvan; M Venkata Kirthiga,P Raja; M P Selvan; M Venkata Kirthiga,False,True
+3,2016–2018,2024–2026,9,16,4,8.444444444444445,0.5809953526865291,32,Trichy ECE,Trichy Computer Applications,P Palanisamy; Jeny Rajan; Shasidhar G Koolagudi,S Nickolas; S Mary Saira Bhanu; S Sangeetha,True,True
+4,2016–2018,2024–2026,9,16,3,6.666666666666667,0.7539390756302521,22,Surathkal Mining,Surathkal Civil,Chivukula Suryanarayana Murthy; Subba Rao; Rajasekaran C,B R Jayalekshmi; Katta Venkataramana; R Shivashankar,True,True
+17,2016–2018,2024–2026,9,5,4,4.111111111111111,0.825,8,Trichy EEE,Trichy EEE,K Sundareswaran; Sishaj P Simon; P Srinivasa Rao Nayak,Josephine R L; K Sundareswaran; P Srinivasa Rao Nayak,False,True
+31,2017–2019,2024–2026,8,20,31,23.125,0.5033805192503349,73,Surathkal Water Resources & Ocean,Surathkal ECE,Amba Shetty; S Shrihari; N Gnanasekaran,Raghavendra B S; Shyam Lal; Mahendra Pratap Singh,True,True
+33,2017–2019,2024–2026,8,12,16,18.375,0.5158106575963719,52,Surathkal Mechanical,Surathkal Mining,Hemantha Kumar; Sharnappa Joladarashi; Mervin Arunaraj Herbert,Akhil Avchar; Harsha Vardhan; Prashanth M H,True,True
+1,2016–2018,2023–2025,8,18,6,16.125,0.6614035087719298,35,Trichy MME,Trichy MME,S P Kumaresh Babu; Siva Prasad Katakam; A Sreekanth,S P Kumaresh Babu; B Ravisankar; Siva Prasad Katakam,False,False
+35,2017–2019,2024–2026,8,4,5,4.5,0.85,6,Surathkal Mathematics,Surathkal Mathematics,Santhosh George; Chandhini G; Kedarnath Senapathi,Santhosh George; Chandhini G; Kedarnath Senapathi,False,True
+45,2018–2020,2024–2026,7,3,20,14.142857142857142,0.5335826210826211,33,Surathkal EEE,Surathkal EEE,Nagendrappa H; Dharavath Kishan; Udaykumar R Yaragatti,Dharavath Kishan; Manjunatha Sharma K; Yashwant Kashyap,False,True
+10,2016–2018,2022–2024,7,7,13,10.571428571428571,0.6241681929181929,26,Trichy Mechanical,Trichy Chemical,N Siva Shanmugam; K Sankaranarayanasamy; S P Sivapirakasam,Kartikeya Shukla; N Siva Shanmugam; R B Anand,True,False
+48,2018–2020,2024–2026,7,3,3,5.0,0.6783730158730158,10,Trichy Civil,Trichy Civil,K Muthukkumaran; G Sangeetha; Deendayal Rathod,K Muthukkumaran; Deendayal Rathod; R Manjula,False,True
+39,2018–2020,2023–2025,6,12,20,15.0,0.5042406015037594,37,Surathkal Mechanical,Surathkal Mechanical,Ajay Kumar Yadav; N Gnanasekaran; Vijaykumar H,A S S Balan; Srikanth Bontha; B Rajasekaran,False,False
+19,2016–2018,2021–2023,6,4,29,11.333333333333334,0.678656056587091,30,Trichy Production,Trichy Production,P Asokan; V Senthilkumar; Dinesh S,M Premalatha; N Samsudeen; V Senthilkumar,False,False
+44,2018–2020,2023–2025,6,3,3,3.1666666666666665,0.9,4,Surathkal Information Technology,Surathkal Information Technology,Jaidhar C D; Shridhar Sanshi; Nagamma Patil,Jaidhar C D; Dinesh Naik; Nagamma Patil,False,False
+57,2020–2022,2024–2026,5,9,27,24.0,0.4770408163265306,54,Trichy Computer Applications,Trichy Chemical,U Srinivasulu Reddy; B Janet; A Santhana Vijayan,N Sivakumaran; N Samsudeen; T K Radhakrishnan,True,True
+12,2016–2018,2020–2022,5,5,4,6.8,0.6345238095238095,11,Surathkal Chemical,Surathkal Chemical,M B Saidutta; P E Jagadeeshbabu; Vidya Shetty K,G Srinikethan; Keyur Raval; D V R Murthy,False,False
+25,2016–2018,2020–2022,5,3,7,6.6,0.5852272727272727,13,Trichy Computer Applications,Trichy Civil,S R Balasundaram; A Santhana Vijayan; B Ramadoss,Samson Mathew M; C Mala; Nisha Radhakrishnan,True,False
+63,2020–2022,2024–2026,5,3,3,5.2,0.5416666666666666,10,Surathkal Chemical,Surathkal Chemistry,I Regupathi; Prasanna Belur D; Ruben Sudhakar,Darshak R Trivedi; Keyur Raval; Adka Nityananda Shetty,True,True
+34,2017–2019,2021–2023,5,5,3,5.0,0.7035714285714286,8,Surathkal Physics,Surathkal Chemistry,Ajith Kulangara Madam; N K Udayashankar; Nagaraja H S,Arun Mohan Isloor; Debashree Chakraborty; Somasekhara Rao Todeti,True,False
+22,2016–2018,2020–2022,5,3,9,4.4,0.6375,10,Surathkal Information Technology,Surathkal Information Technology,Sowmya Kamath S; Geetha V; Ananthanarayana V S,Sowmya Kamath S; Jeny Rajan; M Venkatesan,False,False
+69,2020–2022,2024–2026,5,3,5,4.2,0.9,5,Trichy Mathematics,Trichy Mathematics,V Ravichandran; Somya; P Saikrishnan,V Ravichandran; Abhijit Das; Somya,False,True
+68,2020–2022,2024–2026,5,3,4,3.6,0.8125,4,Trichy Architecture,Trichy Architecture,G Subbaiyan; P Gopalakrishnan; Amalan Sigmund Kaushik,G Subbaiyan; P Gopalakrishnan; T Srinivas,False,True
+6,2016–2018,2019–2021,4,14,25,19.25,0.402014652014652,41,Trichy Chemical,Trichy Physics,A Arunagiri; T K Radhakrishnan; N Sivakumaran,A Arunagiri; G Arthanareeswaran; D Sasti Kumar,True,False
+9,2016–2018,2019–2021,4,9,17,13.75,0.45,29,Surathkal Chemistry,Surathkal MME,Kartick Tarafder; Darshak R Trivedi; Govinda Rao Umesh,Shashi Bhushan Arya; Udaya Bhat K; Anandhan Srinivasan,True,False
+71,2021–2023,2024–2026,4,15,7,12.5,0.5281862745098039,22,Surathkal Mechanical,Surathkal ECE,Vasudeva Madav; Saikat Dutta; Subhaschandra Kattimani,Sushil Kumar Pandey; Sib Sankar Mal; Nikhil K S,True,True
+40,2018–2020,2021–2023,4,8,5,10.0,0.48534798534798534,18,Surathkal Chemistry,Surathkal Chemistry,M Nagarajan Satyanarayan; Saikat Dutta; Sib Sankar Mal,M Nagarajan Satyanarayan; Darshak R Trivedi; Adka Nityananda Shetty,False,False
+73,2021–2023,2024–2026,4,9,5,8.75,0.6296296296296297,14,Trichy Physics,Trichy Chemistry,S Anandan; A Chandra Bose; D Sasti Kumar,S Velmathi; Sunandan Sarkar; V M Biju,True,True
+64,2020–2022,2023–2025,4,3,5,7.5,0.40952380952380946,15,Surathkal Civil,Surathkal Civil,Sunil B Malegole; Babloo Chaudhary; K S Babu Narayan,Raviraj H M; Basavaraju Manu; A U Ravi Shankar,False,False
+54,2019–2021,2022–2024,4,3,5,6.25,0.4777777777777778,12,Surathkal ECE,Surathkal ECE,Krishnamoorthy K; Muralidhar Kulkarni; U Sripathi,Pathipati Srihari; U Shripathi Acharya; Aparna P,False,False
+27,2016–2018,2019–2021,4,3,6,4.0,0.6666666666666666,7,Trichy ECE,Trichy ECE,B Venkataramani; M Bhaskar; R Thilagavathy,B Venkataramani; B Malarkodi; B Rebekka,False,False
+29,2016–2018,2019–2021,4,3,3,3.5,0.8333333333333334,4,Trichy ECE,Trichy ECE,D Sriram Kumar; G Thavasi Raja; V Sudha,G Thavasi Raja; R Mohan; D Sriram Kumar,False,False
+49,2018–2020,2021–2023,4,3,3,3.0,1.0,3,Trichy CSE,Trichy CSE,Rama Subramanian N; B Shameedha Begum; G Lakshmi Narayanan,B Shameedha Begum; Rama Subramanian N; G Lakshmi Narayanan,False,False
+56,2019–2021,2022–2024,4,3,3,3.0,1.0,3,Trichy CSE,Trichy CSE,R Leela Velusamy; S Selvakumar; S Jayalekshmi,R Leela Velusamy; S Selvakumar; S Jayalekshmi,False,False
+0,2016–2018,2018–2020,3,26,20,21.0,0.6223316912972086,33,Surathkal Mechanical,Surathkal Mechanical,Ramesh M R; G C Mohan Kumar; Narendranath S,Ramesh M R; Shashi Bhushan Arya; Narendranath S,False,False
+70,2021–2023,2023–2025,3,28,14,20.333333333333332,0.4295125164690382,35,Trichy ECE,Trichy Civil,S T Ramesh; Samson Mathew M; R Karvembu,S Saravanan; C Mala; S T Ramesh,True,False
+41,2018–2020,2020–2022,3,8,27,14.666666666666666,0.611111111111111,27,Trichy Chemical,Trichy Chemical,T K Radhakrishnan; Muthukumar K; N Samsudeen,T K Radhakrishnan; M Premalatha; A Arunagiri,False,False
+78,2022–2024,2024–2026,3,12,12,11.333333333333334,0.6318681318681318,17,Trichy ECE,Trichy ECE,Varun P Gopi; G Lakshmi Narayanan; G R Gangadharan,B Naresh Kumar Reddy; Varun P Gopi; G Lakshmi Narayanan,False,True
+74,2021–2023,2023–2025,3,8,8,6.666666666666667,0.5,9,Surathkal Chemical,Surathkal Chemical,Shashi Bhushan Arya; M B Saidutta; Vidya Shetty K,Vidya Shetty K; Shashi Bhushan Arya; Sumanth Govindarajan,False,False
+72,2021–2023,2023–2025,3,11,4,6.333333333333333,0.6818181818181819,11,Surathkal Mechanical,Surathkal Mechanical,Vijay Desai; Navin Karanth P; Narendranath S,Shrikantha S Rao; Arun Kumar Shettigar; Navin Karanth P,False,False
+88,2022–2024,2024–2026,3,3,7,5.333333333333333,0.6785714285714286,7,Trichy Mechanical,Trichy Mechanical,Kaushik P; Raghu Ram Karthik Desu; Harish Kruthiventi Ss,Raghu Ram Karthik Desu; S P Sivapirakasam; Kaushik P,False,True
+20,2016–2018,2018–2020,3,4,5,4.666666666666667,0.9,5,Trichy Production,Trichy Production,P Sathiya; A Noorul Haq; K Panneerselvam,A Noorul Haq; P Sathiya; K Panneerselvam,False,False
+43,2018–2020,2020–2022,3,5,5,4.666666666666667,0.8,6,Surathkal CSE,Surathkal CSE,Mohit P Tahiliani; Shyam S Kamath; P Mohanan,Mohit P Tahiliani; Shyam S Kamath; P Mohanan,False,False
+53,2019–2021,2021–2023,3,5,4,4.333333333333333,0.75,6,Trichy EEE,Trichy EEE,Mini Shaji Thomas; Ankur Singh Rana; Karthik Thirumala,Karthik Thirumala; Vivek Mohan; Mini Shaji Thomas,False,False
+18,2016–2018,2018–2020,3,4,4,4.0,1.0,4,Surathkal Mathematics,Surathkal Mathematics,Chandrasekaran K; Neelawar Shekar Vittal Shet; A Kandasamy,Chandrasekaran K; Neelawar Shekar Vittal Shet; A Kandasamy,False,False
+75,2021–2023,2023–2025,3,4,4,4.0,1.0,4,Trichy ICE,Trichy ICE,D Ezhilarasi; Rahul Kumar Sharma; K Dhanalakshmi,D Ezhilarasi; Rahul Kumar Sharma; K Dhanalakshmi,False,False
+28,2016–2018,2018–2020,3,3,4,3.6666666666666665,0.875,4,Trichy ECE,Trichy ECE,B Malarkodi; E S Gopi; B Rebekka,B Malarkodi; B Rebekka; N Gunavathi,False,False
+87,2022–2024,2024–2026,3,3,4,3.6666666666666665,0.7,5,Trichy Physics,Trichy Physics,N V Giridharan; B Malarkodi; S Manivannan,N V Giridharan; Annapureddy Venkateshwarlu; B Malarkodi,False,True
+65,2020–2022,2022–2024,3,3,4,3.3333333333333335,0.875,4,Surathkal ECE,Surathkal ECE,Sumam David S; Deepu Vijayasenan; Ramesh Kini M,Deepu Vijayasenan; Sumam David S; Shikha Baghel,False,False
+47,2018–2020,2020–2022,3,3,3,3.0,1.0,3,Surathkal Mechanical,Surathkal Mechanical,Mervin Arunaraj Herbert; Shrikantha S Rao; Arun Kumar Shettigar,Arun Kumar Shettigar; Mervin Arunaraj Herbert; Shrikantha S Rao,False,False
+89,2023–2025,2024–2026,2,34,30,32.0,0.5609756097560976,41,Surathkal Mechanical,Surathkal Civil,Gangadharan K V; Pruthviraj U; Sowmya Kamath S,Gangadharan K V; Pruthviraj U; Sowmya Kamath S,True,True
+77,2022–2024,2023–2025,2,30,25,27.5,0.34146341463414637,41,Surathkal Mechanical,Surathkal ECE,Ramesh M R; Mohammad Rizwanur Rahman; A S S Balan,Ramesh M R; Mohammad Rizwanur Rahman; Ajay Kumar Yadav,True,False
+50,2019–2021,2020–2022,2,8,20,14.0,0.3333333333333333,21,Trichy Chemistry,Trichy Physics,S Velmathi; R Karvembu; S T Ramesh,G Arthanareeswaran; D Sasti Kumar; S Velmathi,True,False
+32,2017–2019,2018–2020,2,15,12,13.5,0.35,20,Surathkal ECE,Surathkal ECE,Jeny Rajan; T Laxminidhi; Shasidhar G Koolagudi,P Palanisamy; Jeny Rajan; Aparna P,False,False
+79,2022–2024,2023–2025,2,11,12,11.5,0.6428571428571429,14,Surathkal EEE,Surathkal EEE,Manjunatha Sharma K; A Karthikeyan; Prajof P,Manjunatha Sharma K; Yashwant Kashyap; A Karthikeyan,False,False
+42,2018–2020,2019–2021,2,6,16,11.0,0.375,16,Surathkal ECE,Surathkal ECE,T Laxminidhi; M Shankaranarayana Bhat; Kalpana G Bhat,Pathipati Srihari; T Laxminidhi; Aparna P,False,False
+90,2023–2025,2024–2026,2,14,6,10.0,0.42857142857142855,14,Trichy EEE,Trichy EEE,G Saravana Ilango; N Kumaresan; Rakesh Kumar Panda,Rakesh Kumar Panda; Suman M; Janani T,False,True
+51,2019–2021,2020–2022,2,7,7,7.0,0.4,10,Trichy ECE,Trichy ECE,P Palanisamy; S Deivalakshmi; R Pandeeswari,P Palanisamy; B Venkataramani; Varun P Gopi,False,False
+92,2023–2025,2024–2026,2,6,8,7.0,0.5555555555555556,9,Surathkal Chemistry,Surathkal Mechanical,Arun Mohan Isloor; Sunil B Malegole; Dodamani B M,Arun Mohan Isloor; Khyati Verma; Sunil B Malegole,True,True
+15,2016–2018,2017–2019,2,5,8,6.5,0.625,8,Trichy Civil,Trichy Civil,C Natarajan; K Muthukkumaran; Deendayal Rathod,C Natarajan; J Karthikeyan; K Muthukkumaran,False,False
+91,2023–2025,2024–2026,2,8,5,6.5,0.4444444444444444,9,Trichy Computer Applications,Trichy Computer Applications,U Srinivasulu Reddy; G Uma; M Umapathy,Michael Arock; U Srinivasulu Reddy; Bopche Ghanshyam Sitkura,False,True
+13,2016–2018,2017–2019,2,5,7,6.0,0.7142857142857143,7,Trichy EEE,Trichy EEE,C Nagamani; G Saravana Ilango; A Karthikeyan,C Nagamani; Mini Shaji Thomas; G Saravana Ilango,False,False
+11,2016–2018,2017–2019,2,6,5,5.5,0.5714285714285714,7,Trichy Civil,Trichy Chemistry,S Velmathi; R Gandhimathi; K Baskar,S Velmathi; S T Ramesh; V M Biju,True,False
+60,2020–2022,2021–2023,2,5,5,5.0,0.6666666666666666,6,Surathkal Civil,Surathkal Civil,Bibhuti Bhusan Das; Raviraj H M; Gangadhar Mahesh,Raviraj H M; Bibhuti Bhusan Das; A U Ravi Shankar,False,False
+94,2023–2025,2024–2026,2,4,6,5.0,0.6666666666666666,6,Trichy Civil,Trichy Civil,Nisha Radhakrishnan; Greegar George; Anjuna,Nisha Radhakrishnan; Aneesh Mathew; Greegar George,False,True
+93,2023–2025,2024–2026,2,4,5,4.5,0.8,5,Trichy CSE,Trichy CSE,B Shameedha Begum; G Thavasi Raja; Rama Subramanian N,B Shameedha Begum; G Thavasi Raja; Rama Subramanian N,False,True
+16,2016–2018,2017–2019,2,5,3,4.0,0.3333333333333333,6,Trichy Computer Applications,Trichy Computer Applications,S Nickolas; Venkataswamy Reddy; B Janet,S Nickolas; G R Gangadharan; S Sangeetha,False,False
+66,2020–2022,2021–2023,2,3,5,4.0,0.3333333333333333,6,Surathkal Physics,Surathkal Chemistry,Ajith Kulangara Madam; Deepak Vaid; N K Udayashankar,Badekai Ramachandra Bhat; Ajith Kulangara Madam; N K Udayashankar,True,False
+46,2018–2020,2019–2021,2,3,4,3.5,0.75,4,Surathkal EEE,Surathkal EEE,P Parthiban; Kalpana R; Debashisha Jena,P Parthiban; Debashisha Jena; Kalpana R,False,False
+62,2020–2022,2021–2023,2,4,3,3.5,0.75,4,Surathkal ECE,Surathkal ECE,T Laxminidhi; M Shankaranarayana Bhat; Kalpana G Bhat,Rekha S; M Shankaranarayana Bhat; T Laxminidhi,False,False
+83,2022–2024,2023–2025,2,4,3,3.5,0.75,4,Trichy Production,Trichy Production,Kumanan Somasundaram; Satheeshkumar V; J Jerald,Satheeshkumar V; J Jerald; Kumanan Somasundaram,False,False
+55,2019–2021,2020–2022,2,3,3,3.0,1.0,3,Surathkal EEE,Surathkal EEE,B Venkatesa Perumal; A Karthikeyan; Vignesh Kumar V,B Venkatesa Perumal; A Karthikeyan; Vignesh Kumar V,False,False
+95,2023–2025,2024–2026,2,3,3,3.0,1.0,3,Surathkal Water Resources & Ocean,Surathkal Water Resources & Ocean,Dwarakish G S; Shwetha H R; Mahesha A,Dwarakish G S; Shwetha H R; Mahesha A,False,True
+38,2018–2020,2018–2020,1,25,25,25.0,,25,Trichy Physics,Trichy Physics,G Arthanareeswaran; D Sasti Kumar; S Velmathi,G Arthanareeswaran; D Sasti Kumar; S Velmathi,False,False
+97,2024–2026,2024–2026,1,23,23,23.0,,23,Surathkal Mechanical,Surathkal Mechanical,Ramesh M R; A S S Balan; Srikanth Bontha,Ramesh M R; A S S Balan; Srikanth Bontha,False,True
+98,2024–2026,2024–2026,1,19,19,19.0,,19,Surathkal Mechanical,Surathkal Mechanical,Badekai Ramachandra Bhat; Vasudeva Madav; Mervin Arunaraj Herbert,Badekai Ramachandra Bhat; Vasudeva Madav; Mervin Arunaraj Herbert,False,True
+2,2016–2018,2016–2018,1,17,17,17.0,,17,Surathkal MME,Surathkal MME,Udaya Bhat K; Nagaraja H S; Raj Mohan B,Udaya Bhat K; Nagaraja H S; Raj Mohan B,False,False
+5,2016–2018,2016–2018,1,15,15,15.0,,15,Trichy Mechanical,Trichy Mechanical,S Suresh; N Anantharaman; R B Anand,S Suresh; N Anantharaman; R B Anand,False,False
+8,2016–2018,2016–2018,1,11,11,11.0,,11,Surathkal ECE,Surathkal ECE,R Shivashankar; Vedala Rama Sastry; Pathipati Srihari,R Shivashankar; Vedala Rama Sastry; Pathipati Srihari,False,False
+58,2020–2022,2020–2022,1,7,7,7.0,,7,Trichy ECE,Trichy ECE,R Pandeeswari; D Sriram Kumar; G Thavasi Raja,R Pandeeswari; D Sriram Kumar; G Thavasi Raja,False,False
+80,2022–2024,2022–2024,1,7,7,7.0,,7,Surathkal Mechanical,Surathkal Mechanical,Subhaschandra Kattimani; Dattatraya Narayan Gaonkar; Poornesh Kumar Koorata,Subhaschandra Kattimani; Dattatraya Narayan Gaonkar; Poornesh Kumar Koorata,False,False
+81,2022–2024,2022–2024,1,7,7,7.0,,7,Trichy Production,Trichy Production,V Senthilkumar; S P Sivapirakasam; N S Balaji,V Senthilkumar; S P Sivapirakasam; N S Balaji,False,False
+59,2020–2022,2020–2022,1,6,6,6.0,,6,Trichy Mechanical,Trichy Mechanical,S Suresh; M Udayakumar; Anand S,S Suresh; M Udayakumar; Anand S,False,False
+99,2024–2026,2024–2026,1,6,6,6.0,,6,Surathkal Mechanical,Surathkal Mechanical,Hemantha Kumar; Ranjeet Kumar Sahu; Debashisha Jena,Hemantha Kumar; Ranjeet Kumar Sahu; Debashisha Jena,False,True
+14,2016–2018,2016–2018,1,5,5,5.0,,5,Surathkal Mechanical,Surathkal Mechanical,Arumuga Perumal D; Ajay Kumar Yadav; Kumar G N,Arumuga Perumal D; Ajay Kumar Yadav; Kumar G N,False,False
+52,2019–2021,2019–2021,1,5,5,5.0,,5,Surathkal Mining,Surathkal Mining,Chivukula Suryanarayana Murthy; Harsha Vardhan; Mandela Govinda Raj,Chivukula Suryanarayana Murthy; Harsha Vardhan; Mandela Govinda Raj,False,False
+61,2020–2022,2020–2022,1,5,5,5.0,,5,Surathkal MME,Surathkal MME,Udaya Bhat K; Anandhan Srinivasan; Preetham Kumar G V,Udaya Bhat K; Anandhan Srinivasan; Preetham Kumar G V,False,False
+100,2024–2026,2024–2026,1,5,5,5.0,,5,Surathkal Water Resources & Ocean,Surathkal Water Resources & Ocean,Debabrata Karmakar; Bibhuti Bhusan Das; Manu,Debabrata Karmakar; Bibhuti Bhusan Das; Manu,False,True
+21,2016–2018,2016–2018,1,4,4,4.0,,4,Trichy Production,Trichy Production,S Vinodh; P Senthil; T Selvaraj,S Vinodh; P Senthil; T Selvaraj,False,False
+82,2022–2024,2022–2024,1,4,4,4.0,,4,Surathkal ECE,Surathkal ECE,Muralidhar Kulkarni; Neelawar Shekar Vittal Shet; P Muthuchidambaranathan,Muralidhar Kulkarni; Neelawar Shekar Vittal Shet; P Muthuchidambaranathan,False,False
+101,2024–2026,2024–2026,1,4,4,4.0,,4,Surathkal Mechanical,Surathkal Mechanical,Ajay Kumar Yadav; Anish S; Ranjith M,Ajay Kumar Yadav; Anish S; Ranjith M,False,True
+102,2024–2026,2024–2026,1,4,4,4.0,,4,Trichy EEE,Trichy EEE,G Saravana Ilango; Karthik Thirumala; M Jaya Bharata Reddy,G Saravana Ilango; Karthik Thirumala; M Jaya Bharata Reddy,False,True
+103,2024–2026,2024–2026,1,4,4,4.0,,4,Trichy Chemical,Trichy Chemical,Kartikeya Shukla; A Arunagiri; Muthukumar K,Kartikeya Shukla; A Arunagiri; Muthukumar K,False,True
+104,2024–2026,2024–2026,1,4,4,4.0,,4,Trichy Civil,Trichy Civil,S T Ramesh; R Gandhimathi; S Saravanan,S T Ramesh; R Gandhimathi; S Saravanan,False,True
+105,2024–2026,2024–2026,1,4,4,4.0,,4,Trichy Production,Trichy Production,Mallikarjuna; M Durai Selvam; R B Anand,Mallikarjuna; M Durai Selvam; R B Anand,False,True
+23,2016–2018,2016–2018,1,3,3,3.0,,3,Surathkal Water Resources & Ocean,Surathkal Water Resources & Ocean,Amba Shetty; Lakshman Nandagiri; Ramesh H,Amba Shetty; Lakshman Nandagiri; Ramesh H,False,False
+24,2016–2018,2016–2018,1,3,3,3.0,,3,Trichy CSE,Trichy CSE,C Mala; Samson Mathew M; S Sudha,C Mala; Samson Mathew M; S Sudha,False,False
+26,2016–2018,2016–2018,1,3,3,3.0,,3,Trichy Chemical,Trichy Chemical,S Anandan; P Sivashanmugam; T Sivasankar,S Anandan; P Sivashanmugam; T Sivasankar,False,False
+30,2016–2018,2016–2018,1,3,3,3.0,,3,Trichy ICE,Trichy ICE,B Vasuki; G Uma; M Umapathy,B Vasuki; G Uma; M Umapathy,False,False
+36,2017–2019,2017–2019,1,3,3,3.0,,3,Surathkal EEE,Surathkal EEE,Panduranga Vittal K; Mithun Mohan; Krishnan C M C,Panduranga Vittal K; Mithun Mohan; Krishnan C M C,False,False
+37,2017–2019,2017–2019,1,3,3,3.0,,3,Surathkal ECE,Surathkal ECE,Muralidhar Kulkarni; Krishnamoorthy K; U Sripathi,Muralidhar Kulkarni; Krishnamoorthy K; U Sripathi,False,False
+67,2020–2022,2020–2022,1,3,3,3.0,,3,Surathkal Water Resources & Ocean,Surathkal Water Resources & Ocean,Subba Rao; Arkal Vittal Hegde; Manu,Subba Rao; Arkal Vittal Hegde; Manu,False,False
+76,2021–2023,2021–2023,1,3,3,3.0,,3,Surathkal Water Resources & Ocean,Surathkal Water Resources & Ocean,Dwarakish G S; Shwetha H R; Dodamani B M,Dwarakish G S; Shwetha H R; Dodamani B M,False,False
+84,2022–2024,2022–2024,1,3,3,3.0,,3,Surathkal Civil,Surathkal Civil,Mattur C Narasimhan; Prashanth M H; Lakshman Nandagiri,Mattur C Narasimhan; Prashanth M H; Lakshman Nandagiri,False,False
+85,2022–2024,2022–2024,1,3,3,3.0,,3,Surathkal Mathematics,Surathkal Mathematics,Pushparaj Shetty D; B R Shankar; Shyam S Kamath,Pushparaj Shetty D; B R Shankar; Shyam S Kamath,False,False
+86,2022–2024,2022–2024,1,3,3,3.0,,3,Trichy CSE,Trichy CSE,K Srinivasan; Kamalika Bhattacharjee; Hemant Kumar,K Srinivasan; Kamalika Bhattacharjee; Hemant Kumar,False,False
+96,2023–2025,2023–2025,1,3,3,3.0,,3,Trichy Architecture,Trichy Architecture,A Meenatchi Sundaram; S Monika; Saurabh Kumar,A Meenatchi Sundaram; S Monika; Saurabh Kumar,False,False
+106,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy CSE,Trichy CSE,S Senthil Kumar; M Sridevi; Karthikeyan S S,S Senthil Kumar; M Sridevi; Karthikeyan S S,False,True
+107,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy Chemical,Trichy Chemical,S Anandan; T Sivasankar; N Baskaran,S Anandan; T Sivasankar; N Baskaran,False,True
+108,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy Civil,Trichy Civil,V Sunitha; Moses Santhakumar; Samson Mathew M,V Sunitha; Moses Santhakumar; Samson Mathew M,False,True
+109,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy ICE,Trichy ICE,G Uma; M Umapathy; Shiraz Sohail,G Uma; M Umapathy; Shiraz Sohail,False,True
+110,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy MME,Trichy MME,B Ravisankar; D Nagarajan; Siva Prasad Katakam,B Ravisankar; D Nagarajan; Siva Prasad Katakam,False,True
+111,2024–2026,2024–2026,1,3,3,3.0,,3,Trichy Mathematics,Trichy Mathematics,Vamsinadh Thota; Gayathri P; Jitraj Saha,Vamsinadh Thota; Gayathri P; Jitraj Saha,False,True

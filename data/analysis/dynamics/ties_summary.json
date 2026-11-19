@@ -1,0 +1,39 @@
+{
+  "pairs": 961,
+  "pairs_with_3_years_followup": 656,
+  "renewed_within_1_pct": 40.286054827175214,
+  "renewed_within_3_pct": 56.55487804878049,
+  "renewed_by_2026_pct_of_followup_pairs": 60.97560975609756,
+  "gaps": 1304,
+  "consecutive_year_gaps_pct": 74.30981595092024,
+  "comeback_gaps_3plus_pct": 10.582822085889571,
+  "pairs_started_2016_2018": 313,
+  "of_those_active_2023_2025_pct": 27.476038338658146,
+  "pairs_5plus_papers": 232,
+  "burstiness_median": 0.09107567293759686,
+  "burstiness_null_median": 0.07369706095898783,
+  "bursty_pairs_pct": 40.94827586206897,
+  "burstiness_wilcoxon_p": 0.46795641117588527,
+  "busiest_year_share_median": 0.375,
+  "active_share_of_span_median": 0.8333333333333334,
+  "logit_renewed_within_3": {
+    "same_department": {
+      "odds_ratio": 2.5624807568392813,
+      "p": 6.78560396147887e-07
+    },
+    "same_nit": {
+      "odds_ratio": 1.6747254970023129,
+      "p": 0.32495740149075414
+    },
+    "first_papers_fwci_ge_1": {
+      "odds_ratio": 2.377789773081259,
+      "p": 6.156123568813509e-07
+    },
+    "log_team_size": {
+      "odds_ratio": 0.4562527002356349,
+      "p": 0.008110346631727366
+    },
+    "pairs": 654,
+    "controls": "first-year fixed effects"
+  }
+}

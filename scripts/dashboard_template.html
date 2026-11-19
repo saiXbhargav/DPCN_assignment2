@@ -174,6 +174,8 @@ input[type="search"] { width: min(260px, 100%); }
 .kf .kf-big small { font: 500 13px/1.3 var(--body); color: var(--muted); letter-spacing: 0; }
 .kf p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
 .kf .kf-ev { margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.kf .kf-rec { margin: 0; padding: 6px 0 0 10px; border-left: 3px solid var(--both); font-size: 13px; color: var(--ink); }
+.kf .kf-who { margin: 0; padding-left: 13px; font-size: 12px; color: var(--muted); }
 .kf .kf-go { align-self: flex-start; margin-top: 2px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink-2); font: 500 12px/1.3 var(--body); cursor: pointer; }
 .kf .kf-go:hover, .kf .kf-go:focus-visible { border-color: var(--both); color: var(--ink); }
 table.heat td, table.heat th { padding: 5px 6px; font-size: 12px; }
@@ -367,6 +369,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
       <button type="button" role="tab" id="tab-coauthor" aria-controls="coauthor" aria-selected="false" tabindex="-1" title="Co-authorship"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M8.5 7h7M7.3 9.2l3.4 5.6M16.7 9.2l-3.4 5.6"/></svg><span class="lbl">Co-authorship</span></button>
       <button type="button" role="tab" id="tab-citation" aria-controls="citation" aria-selected="false" tabindex="-1" title="Citation network"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.3 8.2l4.4 7.6M17.7 8.2l-4.4 7.6"/></svg><span class="lbl">Citation network</span></button>
       <button type="button" role="tab" id="tab-growth" aria-controls="growth" aria-selected="false" tabindex="-1" title="Network growth"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span class="lbl">Network growth</span></button>
+      <button type="button" role="tab" id="tab-dynamics" aria-controls="dynamics" aria-selected="false" tabindex="-1" title="Network dynamics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><circle cx="4.5" cy="6" r="1.8"/><circle cx="19.5" cy="6" r="1.8"/><circle cx="12" cy="20.5" r="1.8"/><path d="M10.2 10.6 5.9 7.2M13.8 10.6l4.3-3.4M12 14.5v4.2"/></svg><span class="lbl">Network dynamics</span></button>
       <button type="button" role="tab" id="tab-connections" aria-controls="connections" aria-selected="false" tabindex="-1" title="Indian connections"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="lbl">Indian connections</span></button>
       <p class="grp" role="presentation">Comparisons</p>
       <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1" title="Who's better?"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="m5 7-3 7a3.5 3.5 0 0 0 6 0Z"/><path d="m19 7-3 7a3.5 3.5 0 0 0 6 0Z"/></svg><span class="lbl">Who's better?</span></button>
@@ -555,6 +558,48 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
     <div class="panel s7"><h3>Precision of the top-k predictions</h3><p class="note">Share of the k highest-scored pairs that really started collaborating in 2023–2026.</p><div class="chart"><canvas id="ch-lp-curve" aria-label="Precision at k"></canvas></div></div>
     <div class="panel s5"><h3>What the learned model relies on</h3><p class="note">Standardised logistic-regression coefficients.</p><div class="chart"><canvas id="ch-lp-coef" aria-label="Model coefficients"></canvas></div></div>
     <div class="panel s12"><h3>Most likely future collaborations (top 50)</h3><p class="note">Faculty pairs with no joint paper yet, ranked by the learned model.</p><div class="tablewrap"><table id="t-lp-pairs"></table></div></div>
+  </div>
+</section>
+
+<section id="dynamics" role="tabpanel" aria-labelledby="tab-dynamics" hidden>
+  <h2>Network dynamics</h2>
+  <p class="lede">How things move through the faculty co-authorship network: how far an idea can spread, whether the network can fall into one rhythm, whether groups form as teams or pair by pair, which partnerships last and renew, how newcomers join, how research groups are born, merge and die, and who bridges separate groups. Both NITs; faculty-to-faculty links only. (scripts/dynamics.py)</p>
+  <div class="grid">
+    <div class="panel s12"><h3>How far can an idea spread?</h3><p class="note">SIR spreading: an idea starts with 5 faculty and each co-author passes it on with probability β (one chance per link). The epidemic threshold 1/λ₁ is the β above which spreading can take off; IPR measures how concentrated the network's leading eigenvector is (high = spreading depends on a small core). Real networks are compared with degree-preserving rewired copies; simulations are the mean of 500 runs.</p>
+      <div class="facts" id="dy-spread-facts"></div></div>
+    <div class="panel s6"><h3>NIT Trichy: faculty reached</h3><p class="note">Seeding with the 5 best-connected (hubs), the 5 best bridges (betweenness), or 5 random faculty.</p><div class="chart"><canvas id="ch-dy-spread-t" aria-label="Spreading reach, NIT Trichy"></canvas></div></div>
+    <div class="panel s6"><h3>NIT Surathkal: faculty reached</h3><p class="note">Same seeds and β values.</p><div class="chart"><canvas id="ch-dy-spread-s" aria-label="Spreading reach, NIT Surathkal"></canvas></div></div>
+    <div class="panel s12"><h3>Threshold and the spreading core</h3><div class="tablewrap"><table id="t-dy-spread"></table></div></div>
+
+    <div class="panel s12"><h3>Can the network fall into one rhythm? (Kuramoto)</h3><p class="note">Each faculty member is an oscillator with their own natural rhythm ω (drawn from a standard normal distribution), pulled towards their co-authors' rhythm with strength K. The order parameter r runs from 0 (everyone on their own beat) to 1 (one common rhythm). Largest connected group of each network, unweighted links, 8 frequency draws per K, compared with connected degree-preserving rewired copies. Read it as how easily the network could align on a shared agenda: a model, not a measurement.</p>
+      <div class="facts" id="dy-sync-facts"></div></div>
+    <div class="panel s7"><h3>Synchrony as coupling grows</h3><p class="note">Solid: real network; dashed: rewired copies with the same degrees.</p><div class="chart"><canvas id="ch-dy-sync" aria-label="Kuramoto order parameter against coupling"></canvas></div></div>
+    <div class="panel s5"><h3>Who locks first</h3><p class="note">Share of faculty running at the common rhythm at K = 1, by number of faculty co-authors (both NITs).</p><div class="chart"><canvas id="ch-dy-lock" aria-label="Locked share by degree"></canvas></div></div>
+    <div class="panel s12"><h3>Synchronisability</h3><p class="note">λ₂ (algebraic connectivity) and the eigenratio λ_N/λ₂ of the Laplacian: a lower eigenratio means the network synchronises more easily. Theoretical onset K_c = 2/(π g(0) λ₁) for normal frequencies; K for r = 0.5 is read from the simulations.</p><div class="tablewrap"><table id="t-dy-sync"></table></div></div>
+
+    <div class="panel s5"><h3>Teams or pairs? Faculty triangles</h3><p class="note">A triangle is three faculty who have all co-authored with each other. It is filled if one paper has all three on it (a team), and we check whether that team paper came first ("born as a team") or after the pairwise papers ("sealed later").</p><div class="facts" id="dy-tri-facts"></div></div>
+    <div class="panel s7"><h3>Triangles by department mix</h3><p class="note">Share of triangles of each kind.</p><div class="chart"><canvas id="ch-dy-tri" aria-label="Triangles by department mix"></canvas></div></div>
+
+    <div class="panel s5"><h3>Super-ties: a few durable pairs</h3><p class="note">Super-tie = the top 10% of faculty pairs by number of joint papers.</p><div class="facts" id="dy-st-facts"></div></div>
+    <div class="panel s7"><h3>Joint papers per faculty pair</h3><p class="note">Most pairs write once; the coloured bars are the super-ties.</p><div class="chart"><canvas id="ch-dy-st" aria-label="Joint papers per pair"></canvas></div></div>
+    <div class="panel s12"><h3>The 15 most durable pairs</h3><div class="tablewrap"><table id="t-dy-st"></table></div></div>
+
+    <div class="panel s5"><h3>Do collaborations last?</h3><p class="note">A faculty pair renews when it writes together again in a later year. Years only (OpenAlex gives publication years, not dates). Renewal within 3 years uses the pairs that started by 2022.</p><div class="facts" id="dy-ti-facts"></div></div>
+    <div class="panel s7"><h3>The longer a pair lasts, the more likely it continues</h3><p class="note">Share writing again within 2 years, by years already active together.</p><div class="chart"><canvas id="ch-dy-ti" aria-label="Renewal by years together"></canvas></div></div>
+    <div class="panel s6"><h3>Gaps between a pair's active years</h3><p class="note">1 = consecutive years.</p><div class="chart"><canvas id="ch-dy-gap" aria-label="Gaps between active years"></canvas></div></div>
+    <div class="panel s6"><h3>Which pairs renew?</h3><p class="note">Pairs that started by 2022: share writing together again within 3 years.</p><div class="tablewrap"><table id="t-dy-ti"></table></div></div>
+
+    <div class="panel s5"><h3>How newcomers join</h3><p class="note">Newcomers = faculty first listed on the institute pages in 2017 or later (archived pages are yearly, so joining years are approximate).</p><div class="facts" id="dy-nc-facts"></div><div class="tablewrap"><table id="t-dy-nc"></table></div></div>
+    <div class="panel s7"><h3>Years to a first co-author inside the NIT</h3><p class="note">0 = in the year they were first listed, or earlier (e.g. they did their PhD at the NIT).</p><div class="chart"><canvas id="ch-dy-nc" aria-label="Years to first internal co-author"></canvas></div></div>
+
+    <div class="panel s12"><h3>Research groups over time</h3><p class="note">Louvain communities (3+ faculty) in 3-year sliding windows of the faculty co-authorship network. A group continues into the next window when the members overlap by Jaccard ≥ 0.3; with no match it is born or dies, and with two matches it merges or splits.</p><div class="facts" id="dy-gr-facts"></div></div>
+    <div class="panel s12"><h3>How groups flow from window to window</h3><p class="note">Each block is a group (height = members); bands show faculty shared between groups in consecutive windows (2 or more). Hover for the main department and key members.</p><div id="dy-gr-flow"></div></div>
+    <div class="panel s6"><h3>Births, deaths, merges and splits</h3><div class="chart"><canvas id="ch-dy-gr" aria-label="Group events per window"></canvas></div></div>
+    <div class="panel s6"><h3>How mixed are the groups?</h3><div class="chart"><canvas id="ch-dy-mix" aria-label="Department mix of groups"></canvas></div></div>
+    <div class="panel s12"><h3>Groups that lasted 5 or more windows</h3><p class="note">Stability = mean overlap (Jaccard) of the members from one window to the next.</p><div class="tablewrap"><table id="t-dy-gr"></table></div></div>
+
+    <div class="panel s12"><h3>Brokers (Burt's structural holes)</h3><p class="note">Constraint is low when a person's co-authors are not connected to each other, so the person bridges separate groups. Effective size counts their non-redundant contacts. Faculty with at least 3 faculty co-authors.</p>
+      <div class="facts" id="dy-br-facts"></div><div class="tablewrap"><table id="t-dy-br"></table></div></div>
   </div>
 </section>
 
@@ -995,7 +1040,7 @@ function homeTab() {
     const aiShare = (y) => { const r = ai.filter((x) => x.year === y); return 100 * r.reduce((s, x) => s + x.ai_papers, 0) / r.reduce((s, x) => s + x.papers, 0); };
     const g = D.coauthor_graph, partners = new Set(D.conn.geo_points.filter((p) => p[4] > 0).map((p) => p[1])).size;
     const EX = [
-      ["Start", "keyfindings", "Key findings", "Twelve conclusions, each with the test behind it"],
+      ["Start", "keyfindings", "Key findings", "Twelve conclusions, the test behind each, and who should act on it"],
       ["Start", "overview", "Head to head", "Twelve measures, Trichy against Surathkal"],
       ["Output", "publications", "Publications", `${fmt(tb.papers)} papers; ${pct(tb.q1_share)} of ranked journal papers in Q1`],
       ["Output", "trends", "AI & research trends", `AI papers: ${fmt(aiShare(yrs[0]))}% of all in ${yrs[0]}, ${fmt(aiShare(2025))}% in 2025`],
@@ -1003,6 +1048,7 @@ function homeTab() {
       ["Networks", "coauthor", "Co-authorship", `${fmt(g.nodes.length)} faculty, ${fmt(g.edges.length)} links, communities and bridges`],
       ["Networks", "citation", "Citation network", `${fmt(D.analysis.network_summary.citation_network.internal_graph_edges)} citations between our own papers`],
       ["Networks", "growth", "Network growth", `Links ∝ faculty<sup>${fa(D.ins.densification.connected_faculty_2016_2026.exponent_a)}</sup>, and who will work together next`],
+      ["Networks", "dynamics", "Network dynamics", D.dyn && D.dyn.newcomers ? `Spreading, synchrony, team triangles, lasting pairs, newcomers, research groups over time and brokers; ${fmt(D.dyn.newcomers.isolated_after_3_years_pct, 0)}% of newcomers have no faculty co-author after 3 years` : "Spreading, synchrony, team triangles, lasting pairs, newcomers, research groups over time and brokers"],
       ["Networks", "connections", "Indian connections", `${fmt(partners)} Indian partner institutes on a map; who cites us`],
       ["Comparisons", "analysis", "Who's better?", "Branch by branch, with statistical tests"],
       ["Comparisons", "south", "South Indian NITs", "Six NITs: output, hiring and how their faculty networks densify"],
@@ -2192,6 +2238,206 @@ function q27Table() {
 }
 
 /* ---------------- key findings ---------------- */
+/* ---------------- network dynamics ---------------- */
+function dynamicsTab() {
+  const Y = D.dyn;
+  if (!Y || !Y.spread_threshold) return;
+  const f1 = (x) => fmt(x, 1), f3 = (x) => fmt(x, 3);
+  const th = (n) => Y.spread_threshold.find((r) => r.network === n) || {};
+  const T = th("NIT Trichy"), S = th("NIT Surathkal");
+  const sim = (n, s, b) => (Y.spread_sims.find((r) => r.network === n && r.seeds === s && r.beta === b) || {}).mean_reach_pct;
+  $("#dy-spread-facts").innerHTML = [
+    fact(`${f3(T.threshold_1_over_lambda)} vs ${f3(S.threshold_1_over_lambda)}`, "epidemic threshold 1/λ₁, Trichy vs Surathkal: ideas take off more easily at Surathkal"),
+    fact(`${f1(T.lambda_1)} / ${f1(S.lambda_1)}`, `λ₁, against ${f1(T.rewired_lambda_1)} / ${f1(S.rewired_lambda_1)} in rewired networks: the real networks spread more easily than random ones`),
+    fact(`${f1(sim("NIT Trichy", "top hubs (degree)", 0.2))}% vs ${f1(sim("NIT Trichy", "random 5", 0.2))}%`, "of NIT Trichy faculty reached at β = 0.2, seeding with 5 hubs vs 5 random faculty"),
+    fact(`${f1(sim("NIT Surathkal", "top hubs (degree)", 0.5))}% vs ${f1(sim("NIT Surathkal", "random 5", 0.5))}%`, "at β = 0.5 at Surathkal: when ideas pass easily, the starting people stop mattering"),
+  ].join("");
+  const seedCol = { "top hubs (degree)": css("--trichy"), "top brokers (betweenness)": css("--surathkal"), "random 5": css("--muted") };
+  [["ch-dy-spread-t", "NIT Trichy"], ["ch-dy-spread-s", "NIT Surathkal"]].forEach(([id, n]) => {
+    const betas = [...new Set(Y.spread_sims.filter((r) => r.network === n).map((r) => r.beta))].sort((a, b) => a - b);
+    draw(id, { type: "line", data: { labels: betas.map((b) => "β = " + b), datasets: Object.keys(seedCol).map((s) => ({
+      label: s, data: betas.map((b) => sim(n, s, b)), borderColor: seedCol[s], backgroundColor: seedCol[s], tension: 0.25,
+      borderDash: s === "random 5" ? [5, 4] : [] })) },
+      options: baseOptions({ plugins: { legend: { position: "bottom" }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${f1(c.raw)}% reached` } } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: "faculty reached (%)", color: css("--muted") } } } }) });
+  });
+  $("#t-dy-spread").innerHTML = T2([["Network"], ["Faculty", 1], ["Links", 1], ["λ₁", 1], ["Rewired λ₁", 1], ["1/λ₁", 1], ["IPR", 1], ["Rewired IPR", 1], ["Top of the leading eigenvector"]],
+    Y.spread_threshold.map((r) => [esc(r.network), fmt(r.faculty), fmt(r.links), f1(r.lambda_1), f1(r.rewired_lambda_1), f3(r.threshold_1_over_lambda),
+      f3(r.ipr), f3(r.rewired_ipr), esc(r.top_eigenvector_faculty)]));
+
+  const tr = Y.triangles, K = tr.kind_counts;
+  const PW = "pairwise only (never a three-person paper)", BT = "born as a team", SL = "built pair by pair, sealed later";
+  $("#dy-tri-facts").innerHTML = [
+    fact(fmt(tr.triangles), "faculty triangles (three faculty who all co-authored with each other)"),
+    fact(`${f1(tr.filled_share_pct)}%`, `are filled by a three-person paper; ${f1(100 - tr.filled_share_pct)}% never had one`),
+    fact(`${f1(tr.born_as_team_share_of_filled_pct)}%`, "of the filled ones were born as a team; the rest were built pair by pair and sealed later"),
+    fact(`${f1(tr.papers_with_3plus_faculty_pct)}%`, `of joint faculty papers have 3 or more faculty (${fmt(tr.papers_with_3plus_faculty)} of ${fmt(tr.faculty_joint_papers)})`),
+  ].join("");
+  const kinds = [[BT, css("--trichy")], [SL, css("--surathkal")], [PW, css("--muted")]];
+  draw("ch-dy-tri", { type: "bar", data: { labels: Y.triangles_mix.map((r) => r.mix), datasets: kinds.map(([k, c]) => ({
+    label: k, backgroundColor: c, data: Y.triangles_mix.map((r) => +(100 * r[k] / r.triangles).toFixed(1)) })) },
+    options: baseOptions({ indexAxis: "y", plugins: { legend: { position: "bottom" }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.raw}%` } } },
+      scales: { x: { stacked: true, max: 100, title: { display: true, text: "% of triangles", color: css("--muted") } }, y: { stacked: true } } }) });
+
+  const st = Y.superties;
+  $("#dy-st-facts").innerHTML = [
+    fact(`${fmt(st.super_tie_pairs)} pairs (${f1(st.super_tie_pairs_pct)}%)`, `with ${fmt(st.cutoff_joint_papers)}+ joint papers write ${f1(st.joint_papers_with_a_super_tie_pct)}% of all joint faculty papers`),
+    fact(`${f1(st.one_paper_pairs_pct)}%`, "of faculty pairs wrote only one paper together"),
+    fact(`${f1(st.super_ties_same_department_pct)}% vs ${f1(st.other_pairs_same_department_pct)}%`, "of super-ties vs other pairs are in the same department"),
+    fact(`${fmt(st.fwci_median_super_tie_papers, 2)} vs ${fmt(st.fwci_median_other_joint_papers, 2)}`, `median FWCI of papers by super-ties vs other joint papers (Mann–Whitney p = ${fmt(st.fwci_mann_whitney_p, 3)}); means ${fmt(st.fwci_mean_super_tie_papers, 2)} vs ${fmt(st.fwci_mean_other_joint_papers, 2)}`),
+  ].join("");
+  const dist = Object.entries(st.distribution_joint_papers_per_pair);
+  draw("ch-dy-st", { type: "bar", data: { labels: dist.map(([k]) => k), datasets: [{ label: "faculty pairs", data: dist.map(([, v]) => v),
+    backgroundColor: dist.map(([k]) => (k === "10+" || +k >= st.cutoff_joint_papers) ? css("--trichy") : css("--muted")) }] },
+    options: baseOptions({ plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: "joint papers per pair", color: css("--muted") } },
+      y: { title: { display: true, text: "faculty pairs", color: css("--muted") } } } }) });
+  $("#t-dy-st").innerHTML = T2([["Faculty"], ["Faculty"], ["Joint papers", 1], ["Years"], ["Same department"], ["NIT"]],
+    Y.superties_top.map((r) => [esc(r.faculty_a), esc(r.faculty_b), fmt(r.joint_papers), `${r.first_year}–${r.last_year}`, esc(r.same_department), esc(r.institutes)]));
+
+  const nc = Y.newcomers;
+  $("#dy-nc-facts").innerHTML = [
+    fact(`${fmt(nc.newcomers_with_internal_link_by_2026)} of ${fmt(nc.newcomers)}`, "newcomers (since 2017) have a co-author inside their NIT by 2026"),
+    fact(`${f1(nc.isolated_after_3_years_pct)}%`, `still have no internal faculty co-author 3 years after joining (${fmt(nc.newcomers_with_3_full_years)} with 3 full years)`),
+    fact(`${f1(nc.first_partner_same_department_pct)}%`, `of first partners are from the newcomer's own department; ${f1(nc.first_partner_is_newcomer_pct)}% are newcomers themselves`),
+    fact(`${fmt(nc.first_partner_degree_mean, 1)} vs ${fmt(nc.colleagues_degree_mean, 1)}`, "faculty co-authors of the first partner vs the average colleague: newcomers do not attach to hubs"),
+  ].join("");
+  $("#t-dy-nc").innerHTML = T2([["NIT"], ["Newcomers", 1], ["Linked by 2026", 1], ["Isolated after 3 years", 1], ["Median years to first link", 1]],
+    Y.newcomers_inst.map((r) => [chip(r.institution), fmt(r.newcomers), f1(r.with_internal_link_by_2026_pct) + "%", f1(r.isolated_after_3_years_pct) + "%", f1(r.median_years_to_first_link)]));
+  draw("ch-dy-nc", { type: "bar", data: { labels: Y.newcomers_years.map((r) => r.years), datasets: [{ label: "newcomers", data: Y.newcomers_years.map((r) => r.newcomers), backgroundColor: css("--both") }] },
+    options: baseOptions({ plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: "years from first listed to first internal co-author", color: css("--muted") } },
+      y: { title: { display: true, text: "newcomers", color: css("--muted") } } } }) });
+
+  const br = Y.brokers;
+  $("#dy-br-facts").innerHTML = [
+    fact(`ρ = ${fmt(br.spearman_constraint_vs_degree, 2)}`, "between constraint and number of co-authors: in this network the brokers are mostly the hubs"),
+    fact(`${fmt(br.top20_brokers_also_top20_degree)} of 20`, "of the top brokers are also among the 20 best-connected faculty"),
+    fact(`${f1(br.brokers_median_other_department_pct)}% vs ${f1(br.all_median_other_department_pct)}%`, "of co-authors in other departments: top brokers vs everyone (median)"),
+    fact(fmt(br.hidden_brokers.length), `hidden brokers (top-30 brokers who are not among the 50 best-connected): ${esc(br.hidden_brokers.join(", "))}`),
+  ].join("");
+  $("#t-dy-br").innerHTML = T2([["Faculty"], ["NIT"], ["Department"], ["Co-authors", 1], ["Rank by co-authors", 1], ["Constraint", 1], ["Effective size", 1], ["Departments among co-authors", 1], ["Other-department co-authors", 1]],
+    Y.brokers_top.map((r) => [esc(r.author), chip(r.institution), esc(r.department || "–"), fmt(r.degree), fmt(r.degree_rank), fmt(r.constraint, 3), fmt(r.effective_size, 1),
+      fmt(r.coauthor_departments), fmt(r.other_department_coauthors_pct, 0) + "%"]));
+
+  const sy = Y.sync;
+  if (sy) {
+    const sT = sy.find((r) => r.network === "NIT Trichy"), sS = sy.find((r) => r.network === "NIT Surathkal"), sB = sy.find((r) => r.network === "Both NITs");
+    const kh = (x) => (x == null || Number.isNaN(x) ? "> 2" : fmt(x, 1));
+    const easier = (r) => r.eigenratio < r.rewired_eigenratio;
+    $("#dy-sync-facts").innerHTML = [
+      fact(`${fmt(sT.eigenratio, 0)} vs ${fmt(sS.eigenratio, 0)}`, `Laplacian eigenratio λ_N/λ₂, Trichy vs Surathkal (lower = full synchrony is easier): ${sT.eigenratio < sS.eigenratio ? "NIT Trichy" : "NIT Surathkal"} has fewer thin bridges, yet ${sT.K_half_real > sS.K_half_real ? "NIT Surathkal" : "NIT Trichy"} reaches partial synchrony (r = 0.5) at lower coupling (K ≈ ${kh(Math.min(sT.K_half_real, sS.K_half_real))} vs ${kh(Math.max(sT.K_half_real, sS.K_half_real))}) because of its hubs`),
+      fact(`${fmt(sB.eigenratio, 0)} vs ${fmt(sB.rewired_eigenratio, 0)}`, `eigenratio of both NITs together vs rewired copies with the same degrees: the real network is ${easier(sB) ? "easier" : "harder"} to synchronise than a random one (λ₂ ${fmt(sB.lambda_2, 4)} vs ${fmt(sB.rewired_lambda_2, 4)}: ${sB.lambda_2 < sB.rewired_lambda_2 ? "departments are joined by thin bridges" : "well knit"})`),
+      fact(`K_c ≈ ${fmt(sT.Kc_theory, 2)} / ${fmt(sS.Kc_theory, 2)}`, `theoretical onset of synchrony (Trichy / Surathkal), set by the hubs through λ₁; in the simulations r reaches 0.5 only at K ≈ ${kh(sT.K_half_real)} / ${kh(sS.K_half_real)}, against ${kh(sT.K_half_rewired)} / ${kh(sS.K_half_rewired)} in rewired copies: departments synchronise inside but drift apart from each other`),
+      fact(`${f1(Y.sync_locked.find((r) => r.network === "Both NITs" && r.K === 1 && r.degree_class === "10+").locked_pct)}% vs ${f1(Y.sync_locked.find((r) => r.network === "Both NITs" && r.K === 1 && r.degree_class === "1").locked_pct)}%`, `of faculty with 10+ vs 1 faculty co-author are locked to the common rhythm at K = 1 (r = ${fmt(sB.r_at_K1_real, 2)}, against ${fmt(sB.r_at_K1_rewired, 2)} when rewired): the core locks first and the edge follows`),
+    ].join("");
+    const scol = { "NIT Trichy": css("--trichy"), "NIT Surathkal": css("--surathkal"), "Both NITs": css("--both") };
+    const Ks = [...new Set(Y.sync_curves.map((r) => r.K))].sort((a, b) => a - b);
+    const ds = [];
+    Object.keys(scol).forEach((n) => ["real", "rewired"].forEach((g) => ds.push({ label: `${n} (${g})`, borderColor: scol[n], backgroundColor: scol[n],
+      borderDash: g === "rewired" ? [5, 4] : [], pointRadius: 0, tension: 0.2,
+      data: Ks.map((k) => (Y.sync_curves.find((r) => r.network === n && r.graph === g && r.K === k) || {}).r_mean) })));
+    draw("ch-dy-sync", { type: "line", data: { labels: Ks.map((k) => fmt(k, 1)), datasets: ds },
+      options: baseOptions({ plugins: { legend: { position: "bottom" }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: r = ${fmt(c.raw, 2)}` } } },
+        scales: { x: { title: { display: true, text: "coupling K", color: css("--muted") } }, y: { beginAtZero: true, max: 1, title: { display: true, text: "order parameter r", color: css("--muted") } } } }) });
+    const lk = Y.sync_locked.filter((r) => r.network === "Both NITs" && r.K === 1);
+    draw("ch-dy-lock", { type: "bar", data: { labels: lk.map((r) => r.degree_class), datasets: [{ label: "locked", data: lk.map((r) => r.locked_pct), backgroundColor: css("--both") }] },
+      options: baseOptions({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${f1(c.raw)}% of ${fmt(lk[c.dataIndex].faculty)} faculty` } } },
+        scales: { x: { title: { display: true, text: "faculty co-authors", color: css("--muted") } }, y: { beginAtZero: true, max: 100, title: { display: true, text: "% locked to the common rhythm", color: css("--muted") } } } }) });
+    $("#t-dy-sync").innerHTML = T2([["Network"], ["Faculty", 1], ["Links", 1], ["λ₁", 1], ["K_c theory", 1], ["λ₂", 1], ["Rewired λ₂", 1], ["Eigenratio", 1], ["Rewired eigenratio", 1], ["K for r = 0.5", 1], ["Rewired", 1]],
+      sy.map((r) => [esc(r.network), fmt(r.faculty_in_largest_group), fmt(r.links), f1(r.lambda_1), fmt(r.Kc_theory, 2), fmt(r.lambda_2, 4), fmt(r.rewired_lambda_2, 4),
+        fmt(r.eigenratio, 0), fmt(r.rewired_eigenratio, 0), kh(r.K_half_real), kh(r.K_half_rewired)]));
+  }
+
+  const pv = (p) => (p < 0.001 ? "p &lt; 0.001" : `p = ${fmt(p, 3)}`);
+  const ti = Y.ties;
+  if (ti) {
+    const lg = ti.logit_renewed_within_3;
+    $("#dy-ti-facts").innerHTML = [
+      fact(`${f1(ti.renewed_within_3_pct)}%`, `of faculty pairs write together again within 3 years (${fmt(ti.pairs_with_3_years_followup)} pairs that started by 2022); ${f1(ti.renewed_within_1_pct)}% do so the very next year`),
+      fact(`${f1(ti.of_those_active_2023_2025_pct)}%`, `of the ${fmt(ti.pairs_started_2016_2018)} pairs that started in 2016–2018 still wrote together in 2023–2025`),
+      fact(`×${fmt(lg.same_department.odds_ratio, 1)} and ×${fmt(lg.first_papers_fwci_ge_1.odds_ratio, 1)}`, `odds of renewing for same-department pairs (${pv(lg.same_department.p)}) and for pairs whose first joint papers beat the world average, FWCI ≥ 1 (${pv(lg.first_papers_fwci_ge_1.p)}); bigger first teams renew less (×${fmt(Math.pow(lg.log_team_size.odds_ratio, Math.LN2), 2)} per doubling of the first team's size, ${pv(lg.log_team_size.p)}). Logistic regression with start-year controls`),
+      fact(`${f1(ti.consecutive_year_gaps_pct)}%`, `of gaps between a pair's active years are a single year. Pairs write steadily, not in bursts: burstiness ${fmt(ti.burstiness_median, 2)} vs ${fmt(ti.burstiness_null_median, 2)} for random timing (${pv(ti.burstiness_wilcoxon_p)}, ${fmt(ti.pairs_5plus_papers)} pairs with 5+ papers)`),
+    ].join("");
+    draw("ch-dy-ti", { type: "bar", data: { labels: Y.ties_experience.map((r) => r.years_together), datasets: [{ label: "write again within 2 years",
+      data: Y.ties_experience.map((r) => r.renewed_within_2_pct), backgroundColor: css("--both") }] },
+      options: baseOptions({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${f1(c.raw)}% (${fmt(Y.ties_experience[c.dataIndex].cases)} cases)` } } },
+        scales: { x: { title: { display: true, text: "years the pair has already been active together", color: css("--muted") } },
+          y: { beginAtZero: true, max: 100, title: { display: true, text: "% writing again within 2 years", color: css("--muted") } } } }) });
+    draw("ch-dy-gap", { type: "bar", data: { labels: Y.ties_gaps.map((r) => r.gap_years), datasets: [{ label: "gaps", data: Y.ties_gaps.map((r) => r.gaps), backgroundColor: css("--muted") }] },
+      options: baseOptions({ plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: "years between active years", color: css("--muted") } },
+        y: { title: { display: true, text: "gaps", color: css("--muted") } } } }) });
+    const FL = { same_department: "Department", same_nit: "NIT", fwci_class: "Impact of first joint papers", team_class: "Team size of first joint papers" };
+    $("#t-dy-ti").innerHTML = T2([["Factor"], ["Pairs of type"], ["Pairs", 1], ["Write again within 3 years", 1]],
+      Y.ties_groups.map((r) => [esc(FL[r.factor] || r.factor), esc(r.group), fmt(r.pairs), f1(r.renewed_within_3_pct) + "%"]));
+  }
+
+  const gr = Y.groups;
+  if (gr) {
+    const W0 = Y.groups_windows[0], WL = Y.groups_windows[Y.groups_windows.length - 1], PL = gr.palla;
+    $("#dy-gr-facts").innerHTML = [
+      fact(fmt(gr.dynamic_groups), `research groups tracked across ${gr.windows.length} windows; ${f1(gr.one_window_groups_pct)}% appear in only one window`),
+      fact(`${fmt(gr.groups_lasting_5plus_windows)} and ${fmt(gr.groups_lasting_all_windows)}`, `groups last 5+ windows (7+ years) and all ${gr.windows.length}; ${fmt(gr.long_lived_5plus_that_changed_main_department)} of the 5+ changed their main department along the way`),
+      fact(`${f1(W0.main_unit_share_pct)}% → ${f1(WL.main_unit_share_pct)}%`, `of a group's members come from its main department, ${W0.window} vs ${WL.window}: the network fused by linking groups to each other, not by mixing them`),
+      fact(`ρ = ${fmt(PL.large.spearman_stationarity_vs_lifetime, 2)}`, `stability vs lifetime for large groups (${pv(PL.large.p)}; small groups ρ = ${fmt(PL.small.spearman_stationarity_vs_lifetime, 2)}, ${pv(PL.small.p)}). Large groups that keep their members last longer, unlike Palla et al. (2007), where large groups survive by changing`),
+    ].join("");
+    groupFlow($("#dy-gr-flow"), Y);
+    const ev = Y.groups_windows.slice(1);
+    draw("ch-dy-gr", { type: "bar", data: { labels: ev.map((r) => r.window), datasets: [["births", "--trichy"], ["deaths", "--surathkal"], ["merges", "--both"], ["splits", "--muted"]]
+      .map(([k, c]) => ({ label: k, data: ev.map((r) => r[k]), backgroundColor: css(c) })) },
+      options: baseOptions({ plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, title: { display: true, text: "groups (vs the previous window)", color: css("--muted") } } } }) });
+    draw("ch-dy-mix", { type: "line", data: { labels: Y.groups_windows.map((r) => r.window), datasets: [
+      { label: "members from the main department (%)", data: Y.groups_windows.map((r) => r.main_unit_share_pct), borderColor: css("--trichy"), backgroundColor: css("--trichy") },
+      { label: "groups with 2+ departments (%)", data: Y.groups_windows.map((r) => r.multi_department_groups_pct), borderColor: css("--surathkal"), backgroundColor: css("--surathkal") }] },
+      options: baseOptions({ plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true, max: 100 } } }) });
+    $("#t-dy-gr").innerHTML = T2([["Years"], ["Windows", 1], ["Members, first → last"], ["Stability", 1], ["Main department, first → last"], ["Changed department"], ["Key members (last window)"]],
+      Y.groups_long.map((r) => [`${r.first_window.slice(0, 4)}–${r.last_window.slice(-4)}`, fmt(r.lifetime_windows), `${fmt(r.size_first)} → ${fmt(r.size_last)}`, fmt(r.stationarity, 2),
+        esc(r.main_unit_first === r.main_unit_last ? r.main_unit_first : `${r.main_unit_first} → ${r.main_unit_last}`), esc(r.drifted), esc(r.key_members_last)]));
+  }
+}
+
+/* research groups as an alluvial flow: one column per 3-year window, one block per group, bands = shared faculty */
+function groupFlow(el, Y) {
+  const nW = Y.groups_windows.length, W = 1000, H = 620, top = 26, colW = 18, pad = 4;
+  const cols = Array.from({ length: nW }, () => []);
+  Y.groups_nodes.forEach((g) => cols[g.window_index].push(g));
+  cols.forEach((a) => a.sort((x, y) => x.dynamic_group - y.dynamic_group || y.size - x.size));
+  const sc = Math.min(...cols.map((a) => (H - top - pad * (a.length - 1)) / a.reduce((s, g) => s + g.size, 0)));
+  const X = (w) => 40 + w * (W - 80 - colW) / (nW - 1), pos = {};
+  cols.forEach((a, w) => { let y = top; a.forEach((g) => { pos[w + "-" + g.group_index] = { g, x: X(w), y, h: g.size * sc, out: 0, inn: 0 }; y += g.size * sc + pad; }); });
+  const col = (g) => (g.cross_nit ? "var(--both)" : g.main_unit.startsWith("Trichy") ? "var(--trichy)" : "var(--surathkal)");
+  const links = [...Y.groups_links].sort((a, b) => a.from_window - b.from_window || pos[a.from_window + "-" + a.from_group].y - pos[b.from_window + "-" + b.from_group].y
+    || pos[a.to_window + "-" + a.to_group].y - pos[b.to_window + "-" + b.to_group].y);
+  const bands = links.map((l) => {
+    const s = pos[l.from_window + "-" + l.from_group], t = pos[l.to_window + "-" + l.to_group];
+    if (!s || !t) return "";
+    const th = l.shared_faculty * sc, x1 = s.x + colW, x2 = t.x, xm = (x1 + x2) / 2, y1 = s.y + s.out, y2 = t.y + t.inn;
+    s.out += th; t.inn += th;
+    const same = s.g.dynamic_group === t.g.dynamic_group;
+    return `<path d="M${x1},${y1}C${xm},${y1} ${xm},${y2} ${x2},${y2}L${x2},${y2 + th}C${xm},${y2 + th} ${xm},${y1 + th} ${x1},${y1 + th}Z" style="fill:${same ? col(s.g) : "var(--muted)"};opacity:${same ? 0.35 : 0.18}"><title>${l.shared_faculty} faculty: ${esc(s.g.main_unit)} → ${esc(t.g.main_unit)}${same ? " (same group continues)" : ""}</title></path>`;
+  }).join("");
+  const blocks = Object.values(pos).map((p) => `<rect x="${p.x}" y="${p.y}" width="${colW}" height="${Math.max(p.h, 1)}" rx="2" style="fill:${col(p.g)}"><title>${Y.groups_windows[p.g.window_index].window}: ${p.g.size} faculty, ${esc(p.g.main_unit)} (${fmt(p.g.main_unit_share_pct, 0)}% of members)
+${esc(p.g.key_members)}</title></rect>`).join("");
+  const labels = Y.groups_windows.map((r, w) => `<text x="${X(w) + colW / 2}" y="14" text-anchor="middle" style="fill:var(--muted);font-size:12px">${r.window}</text>`).join("");
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Research groups flowing between 3-year windows">${labels}${bands}${blocks}</svg>
+    <p class="note"><span style="color:var(--trichy)">■</span> NIT Trichy group · <span style="color:var(--surathkal)">■</span> NIT Surathkal group · <span style="color:var(--both)">■</span> group with both NITs · coloured band = the same group continuing, grey band = faculty moving to a different group.</p>`;
+}
+
+/* recommendation and who acts, for each Key findings card (matched by title) */
+const KF_REC = {
+  "Neither NIT is better overall; each leads in different branches": ["Compare departments, not institutes: pair each NIT's stronger branches with the other's weaker ones (Surathkal CSE, EEE, Mechanical with Trichy Mathematics, Chemical, ECE) through joint seminars and co-supervised PhDs.", "Deans of research of both NITs; heads of the paired departments"],
+  "Foreign co-authors go with higher impact": ["Fund short research visits abroad and joint PhD supervision with foreign partners, starting with departments that have few foreign co-authors.", "International relations offices; department heads; faculty applying to international-collaboration schemes"],
+  "Where you publish matters": ["Move proceedings and unranked-journal output toward Q1/Q2 journals, and report Q1 share and FWCI rather than paper counts in reviews.", "Faculty and PhD supervisors; promotion and annual-review committees"],
+  "A strong small world with a rich club": ["Use the well-connected core to carry institute-wide initiatives, and add newcomers to core members' projects instead of forming hub-only consortia.", "Research office; principal investigators"],
+  "Collaboration stays inside the branch and the NIT": ["Create cross-department and NIT Trichy–NIT Surathkal seed grants and a joint annual workshop: only a few dozen links connect the two NITs.", "Deans of research (both NITs); the NIT Council for an NIT-to-NIT scheme"],
+  "The faculty network fused in 2018 and keeps densifying": ["Track the network every year (largest connected group, share of isolated faculty) as a research-health indicator.", "IQAC / research office"],
+  "Friends of friends become co-authors": ["Introductions work: when a faculty member works with two colleagues separately, invite all three to a joint proposal.", "Department heads; research office (seed-grant calls)"],
+  "Future collaborations are predictable": ["Use the model's top pairs as a match-making shortlist for seed grants and workshops, not as a forecast about individuals.", "Research office"],
+  "A few people hold the faculty network together": ["Recognise bridging roles in workload and promotion, and plan succession (co-supervision, a second faculty member per sub-area) for the top bridges.", "Directors; promotion committees; department heads"],
+  "AI more than doubled, as a tool across engineering": ["Offer cross-department AI-methods training and joint CSE–domain projects, extending to Chemistry, Physics and MME where AI is still rare.", "CSE / IT departments with domain departments; training cell"],
+  "People collaborate locally; knowledge travels far": ["Use nearby partners for joint labs and students, and build distant partnerships (IITs, IISc) deliberately through visiting positions, because distance will not build them by itself.", "Research office; department heads"],
+  "Private universities' citations are more personal, not bigger": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from nearby private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
+  "Private universities cite us because they are big, near and growing": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from nearby private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
+};
+
 function keyFindings() {
   if ($("#kf-cards").dataset.done) return;   // the same for every institute view, so drawn once
   const A = D.analysis, I = D.ins, Q = D.q, P = D.p2, C = D.conn;
@@ -2313,6 +2559,7 @@ function keyFindings() {
       <div class="kf-big">${c.big}</div>
       <p>${c.text}</p>
       <p class="kf-ev">${c.ev}</p>
+      ${KF_REC[c.title] ? `<p class="kf-rec"><b>What to do:</b> ${KF_REC[c.title][0]}</p><p class="kf-who"><b>Who acts:</b> ${KF_REC[c.title][1]}</p>` : ""}
       <button type="button" class="kf-go" data-go="${c.tab}">Full evidence: ${esc(tabName(c.tab))} →</button>
     </article>`).join("");
   $("#kf-cards").querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => selectTab(b.dataset.go, true)));
@@ -2889,7 +3136,7 @@ function southTab() {
 }
 
 /* ---------------- tabs and wiring ---------------- */
-const TABS = ["home", "keyfindings", "overview", "publications", "trends", "faculty", "coauthor", "citation", "growth", "connections", "analysis", "south", "phase2", "questions", "methods"];
+const TABS = ["home", "keyfindings", "overview", "publications", "trends", "faculty", "coauthor", "citation", "growth", "dynamics", "connections", "analysis", "south", "phase2", "questions", "methods"];
 const safe = (f) => { try { f(); } catch (err) { console.error(err); } };   // one broken panel must not blank a tab
 let tab = "home";
 const rendered = {};  // the institute view each tab was last drawn for; tabs are drawn when first shown
@@ -2976,6 +3223,7 @@ function renderTab(name) {
   if (name === "citation") { if (!cyCit) citationGraph(); filterCitation(); citationExtras(); safe(selfYear); }
   if (name === "coauthor") { if (!cyAu) { coauthorGraph(); netFacts(); } filterCoauthor(); coauthorExtras(); safe(sepSetup); safe(removalSetup); }
   if (name === "growth") { growthTab(); safe(growthPlayer); safe(growthDegree); safe(growthKernel); }
+  if (name === "dynamics") safe(dynamicsTab);
   if (name === "connections") { connections(); connectionsExtras(); safe(cnCards); safe(() => partnerBars("ch-partners", 4, "joint papers"));
     safe(() => partnerBars("ch-citing", 9, "citations to us")); safe(heatTable); safe(drawMap); }
   if (name === "south") safe(southTab);

@@ -1,0 +1,4 @@
+network,faculty,links,mean_degree,lambda_1,threshold_1_over_lambda,rewired_lambda_1,ipr,rewired_ipr,ipr_if_fully_spread,top_eigenvector_faculty
+NIT Trichy,357,429,2.4034,6.0547,0.1652,5.4094,0.0332,0.0255,0.0028,N Samsudeen; N Sivakumaran; S Suresh; T K Radhakrishnan; P Kalaichelvi
+NIT Surathkal,300,504,3.36,7.8755,0.127,6.4768,0.0506,0.0248,0.0033,Ramesh M R; Sharnappa Joladarashi; Mohammad Rizwanur Rahman; Shashi Bhushan Arya; Udaya Bhat K
+Both NITs,657,961,2.9254,8.018,0.1247,6.2574,0.0533,0.0212,0.0015,Ramesh M R; Sharnappa Joladarashi; Mohammad Rizwanur Rahman; Shashi Bhushan Arya; Udaya Bhat K

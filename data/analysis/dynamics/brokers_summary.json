@@ -1,0 +1,15 @@
+{
+  "faculty_with_links": 540,
+  "spearman_constraint_vs_degree": -0.9696379083268906,
+  "spearman_effective_size_vs_betweenness": 0.9341916566890726,
+  "top20_brokers_also_top20_degree": 14,
+  "hidden_brokers": [
+    "B Venkatesa Perumal",
+    "Pathipati Srihari",
+    "C Sathiya Narayanan",
+    "S Nickolas",
+    "Jayabalan P"
+  ],
+  "brokers_median_other_department_pct": 42.85714285714286,
+  "all_median_other_department_pct": 14.285714285714285
+}

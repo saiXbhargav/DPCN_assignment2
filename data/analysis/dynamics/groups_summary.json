@@ -1,0 +1,66 @@
+{
+  "windows": [
+    "2016\u20132018",
+    "2017\u20132019",
+    "2018\u20132020",
+    "2019\u20132021",
+    "2020\u20132022",
+    "2021\u20132023",
+    "2022\u20132024",
+    "2023\u20132025",
+    "2024\u20132026"
+  ],
+  "min_group_size": 3,
+  "jaccard_match": 0.3,
+  "dynamic_groups": 112,
+  "groups_lasting_all_windows": 4,
+  "groups_lasting_5plus_windows": 22,
+  "one_window_groups_pct": 35.714285714285715,
+  "median_lifetime_windows_of_multiwindow_groups": 3.0,
+  "long_lived_5plus_that_changed_main_department": 9,
+  "size_split_mean_members": 6.291666666666666,
+  "palla": {
+    "small": {
+      "groups": 36,
+      "spearman_stationarity_vs_lifetime": 0.1355046594542366,
+      "p": 0.43070881652100457,
+      "median_stationarity": 0.775
+    },
+    "large": {
+      "groups": 36,
+      "spearman_stationarity_vs_lifetime": 0.44771317716655123,
+      "p": 0.006180347137639948,
+      "median_stationarity": 0.5308844477962125
+    }
+  },
+  "first_window": {
+    "window": "2016\u20132018",
+    "groups": 31,
+    "faculty_in_groups": 242,
+    "largest": 26,
+    "mean_size": 7.806451612903226,
+    "main_unit_share_pct": 74.4555478782234,
+    "multi_department_groups_pct": 61.29032258064516,
+    "cross_nit_groups": 4,
+    "births": NaN,
+    "deaths": NaN,
+    "merges": NaN,
+    "splits": NaN,
+    "continued": NaN
+  },
+  "last_window": {
+    "window": "2024\u20132026",
+    "groups": 40,
+    "faculty_in_groups": 321,
+    "largest": 31,
+    "mean_size": 8.025,
+    "main_unit_share_pct": 74.24277125970997,
+    "multi_department_groups_pct": 67.5,
+    "cross_nit_groups": 6,
+    "births": 14.0,
+    "deaths": 11.0,
+    "merges": 1.0,
+    "splits": 1.0,
+    "continued": 23.0
+  }
+}

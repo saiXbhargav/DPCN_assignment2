@@ -1,0 +1,315 @@
+a,b,c,kind,team_papers,departments,mix,institutes,names
+S0287,S0298,S0306,pairwise only (never a three-person paper),0,1,same department,1,Kedarnath Senapathi; Jidesh P; Santhosh George
+S0282,S0287,S0306,"built pair by pair, sealed later",4,1,same department,1,Chandhini G; Kedarnath Senapathi; Santhosh George
+S0348,S0351,S0360,pairwise only (never a three-person paper),0,1,same department,1,Jeyaraj P; Ramesh M R; Subhaschandra Kattimani
+S0339,S0348,S0351,pairwise only (never a three-person paper),0,1,same department,1,Mrityunjay R Doddamani; Jeyaraj P; Ramesh M R
+S0345,S0348,S0351,pairwise only (never a three-person paper),0,1,same department,1,G C Mohan Kumar; Jeyaraj P; Ramesh M R
+S0245,S0252,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Shashi Bhushan Arya; Udaya Bhat K; Ramesh M R
+S0240,S0252,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Mohammad Rizwanur Rahman; Udaya Bhat K; Ramesh M R
+S0252,S0351,S0357,pairwise only (never a three-person paper),0,2,cross-department,1,Udaya Bhat K; Ramesh M R; Shivananda Nayaka H
+S0241,S0252,S0351,"built pair by pair, sealed later",1,2,cross-department,1,Preetham Kumar G V; Udaya Bhat K; Ramesh M R
+S0351,S0356,S0360,pairwise only (never a three-person paper),0,1,same department,1,Ramesh M R; Sharnappa Joladarashi; Subhaschandra Kattimani
+S0245,S0351,S0356,"built pair by pair, sealed later",1,2,cross-department,1,Shashi Bhushan Arya; Ramesh M R; Sharnappa Joladarashi
+S0345,S0351,S0356,"built pair by pair, sealed later",1,1,same department,1,G C Mohan Kumar; Ramesh M R; Sharnappa Joladarashi
+S0240,S0351,S0356,"built pair by pair, sealed later",2,2,cross-department,1,Mohammad Rizwanur Rahman; Ramesh M R; Sharnappa Joladarashi
+S0351,S0352,S0356,pairwise only (never a three-person paper),0,1,same department,1,Ramesh M R; Ravikiran Kadoli; Sharnappa Joladarashi
+S0351,S0356,S0363,"built pair by pair, sealed later",1,1,same department,1,Ramesh M R; Sharnappa Joladarashi; Vijay Desai
+S0350,S0351,S0352,pairwise only (never a three-person paper),0,1,same department,1,Narendranath S; Ramesh M R; Ravikiran Kadoli
+S0320,S0350,S0351,pairwise only (never a three-person paper),0,1,same department,1,A S S Balan; Narendranath S; Ramesh M R
+S0350,S0351,S0363,pairwise only (never a three-person paper),0,1,same department,1,Narendranath S; Ramesh M R; Vijay Desai
+S0241,S0350,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Preetham Kumar G V; Narendranath S; Ramesh M R
+S0316,S0350,S0351,pairwise only (never a three-person paper),0,1,same department,1,D Chakradhar; Narendranath S; Ramesh M R
+S0339,S0351,S0359,pairwise only (never a three-person paper),0,1,same department,1,Mrityunjay R Doddamani; Ramesh M R; Srikanth Bontha
+S0339,S0345,S0351,pairwise only (never a three-person paper),0,1,same department,1,Mrityunjay R Doddamani; G C Mohan Kumar; Ramesh M R
+S0245,S0351,S0359,"built pair by pair, sealed later",2,2,cross-department,1,Shashi Bhushan Arya; Ramesh M R; Srikanth Bontha
+S0320,S0351,S0359,pairwise only (never a three-person paper),0,1,same department,1,A S S Balan; Ramesh M R; Srikanth Bontha
+S0240,S0245,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Mohammad Rizwanur Rahman; Shashi Bhushan Arya; Ramesh M R
+S0245,S0351,S0357,born as a team,5,2,cross-department,1,Shashi Bhushan Arya; Ramesh M R; Shivananda Nayaka H
+S0241,S0245,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Preetham Kumar G V; Shashi Bhushan Arya; Ramesh M R
+S0240,S0315,S0351,pairwise only (never a three-person paper),0,2,cross-department,1,Mohammad Rizwanur Rahman; Ajay Kumar Yadav; Ramesh M R
+S0315,S0351,S0352,pairwise only (never a three-person paper),0,1,same department,1,Ajay Kumar Yadav; Ramesh M R; Ravikiran Kadoli
+S0320,S0351,T0786,pairwise only (never a three-person paper),0,1,same department,2,A S S Balan; Ramesh M R; N Siva Shanmugam
+S0351,S0366,S0371,"built pair by pair, sealed later",1,2,cross-department,1,Ramesh M R; Chivukula Suryanarayana Murthy; Bijay Mihir Kunar
+S0351,T0786,T0798,"built pair by pair, sealed later",1,1,same department,2,Ramesh M R; N Siva Shanmugam; Sreejith Mohan
+S0351,T0782,T0786,"built pair by pair, sealed later",1,1,same department,2,Ramesh M R; K Sankaranarayanasamy; N Siva Shanmugam
+S0351,T0782,T0798,"built pair by pair, sealed later",1,1,same department,2,Ramesh M R; K Sankaranarayanasamy; Sreejith Mohan
+S0050,S0146,S0405,pairwise only (never a three-person paper),0,3,cross-department,1,Shasidhar G Koolagudi; A Venkata Narasimhadhan; Amba Shetty
+S0030,S0047,S0050,pairwise only (never a three-person paper),0,1,same department,1,Saumya Hegde; Annappa; Shasidhar G Koolagudi
+S0023,S0050,S0146,"built pair by pair, sealed later",1,2,cross-department,1,Jeny Rajan; Shasidhar G Koolagudi; A Venkata Narasimhadhan
+S0030,S0032,S0050,pairwise only (never a three-person paper),0,1,same department,1,Saumya Hegde; Sourav Kanti Addya; Shasidhar G Koolagudi
+S0346,S0348,S0353,pairwise only (never a three-person paper),0,1,same department,1,Gangadharan K V; Jeyaraj P; S M Murigendrappa
+S0348,S0353,S0360,pairwise only (never a three-person paper),0,1,same department,1,Jeyaraj P; S M Murigendrappa; Subhaschandra Kattimani
+S0339,S0345,S0348,pairwise only (never a three-person paper),0,1,same department,1,Mrityunjay R Doddamani; G C Mohan Kumar; Jeyaraj P
+S0023,S0039,S0048,pairwise only (never a three-person paper),0,1,same department,1,Jeny Rajan; M Venkatesan; Chandrasekaran K
+S0096,S0100,S0252,pairwise only (never a three-person paper),0,2,cross-department,1,Ampar Chitharanjan Hegde; Denthaje Krishna Bhat; Udaya Bhat K
+S0097,S0252,S0392,pairwise only (never a three-person paper),0,3,cross-department,1,Arun Mohan Isloor; Udaya Bhat K; Nagaraja H S
+S0098,S0252,S0392,born as a team,1,3,cross-department,1,Badekai Ramachandra Bhat; Udaya Bhat K; Nagaraja H S
+S0096,S0249,S0252,pairwise only (never a three-person paper),0,2,cross-department,1,Ampar Chitharanjan Hegde; Anandhan Srinivasan; Udaya Bhat K
+S0083,S0249,S0252,born as a team,1,2,cross-department,1,Raj Mohan B; Anandhan Srinivasan; Udaya Bhat K
+S0077,S0249,S0252,"built pair by pair, sealed later",1,2,cross-department,1,Hari Prasad Dasari; Anandhan Srinivasan; Udaya Bhat K
+S0240,S0245,S0252,pairwise only (never a three-person paper),0,1,same department,1,Mohammad Rizwanur Rahman; Shashi Bhushan Arya; Udaya Bhat K
+S0245,S0252,S0357,pairwise only (never a three-person paper),0,2,cross-department,1,Shashi Bhushan Arya; Udaya Bhat K; Shivananda Nayaka H
+S0077,S0245,S0252,pairwise only (never a three-person paper),0,2,cross-department,1,Hari Prasad Dasari; Shashi Bhushan Arya; Udaya Bhat K
+S0241,S0245,S0252,"built pair by pair, sealed later",1,1,same department,1,Preetham Kumar G V; Shashi Bhushan Arya; Udaya Bhat K
+S0245,S0247,S0252,pairwise only (never a three-person paper),0,1,same department,1,Shashi Bhushan Arya; K Rajendra Udupa; Udaya Bhat K
+S0240,S0252,S0390,"built pair by pair, sealed later",2,2,cross-department,1,Mohammad Rizwanur Rahman; Udaya Bhat K; M Nagarajan Satyanarayan
+S0241,S0247,S0252,pairwise only (never a three-person paper),0,1,same department,1,Preetham Kumar G V; K Rajendra Udupa; Udaya Bhat K
+S0105,S0118,S0417,pairwise only (never a three-person paper),0,2,cross-department,1,Bibhuti Bhusan Das; Rajasekaran C; Subba Rao
+S0105,S0118,S0138,pairwise only (never a three-person paper),0,1,same department,1,Bibhuti Bhusan Das; Rajasekaran C; Subhash C Yaragal
+S0105,S0411,S0417,"built pair by pair, sealed later",1,2,cross-department,1,Bibhuti Bhusan Das; Manu; Subba Rao
+S0346,S0347,S0356,pairwise only (never a three-person paper),0,1,same department,1,Gangadharan K V; Hemantha Kumar; Sharnappa Joladarashi
+S0355,S0356,S0363,pairwise only (never a three-person paper),0,1,same department,1,Satyabodh M Kulkarni; Sharnappa Joladarashi; Vijay Desai
+S0240,S0347,S0356,born as a team,5,2,cross-department,1,Mohammad Rizwanur Rahman; Hemantha Kumar; Sharnappa Joladarashi
+S0347,S0356,S0368,born as a team,4,2,cross-department,1,Hemantha Kumar; Sharnappa Joladarashi; Mangalpady Aruna
+S0347,S0356,S0363,pairwise only (never a three-person paper),0,1,same department,1,Hemantha Kumar; Sharnappa Joladarashi; Vijay Desai
+S0240,S0245,S0356,pairwise only (never a three-person paper),0,2,cross-department,1,Mohammad Rizwanur Rahman; Shashi Bhushan Arya; Sharnappa Joladarashi
+S0240,S0356,S0368,born as a team,4,3,cross-department,1,Mohammad Rizwanur Rahman; Sharnappa Joladarashi; Mangalpady Aruna
+S0240,S0356,S0377,"built pair by pair, sealed later",2,3,cross-department,1,Mohammad Rizwanur Rahman; Sharnappa Joladarashi; Harsha Vardhan
+S0356,S0368,S0377,pairwise only (never a three-person paper),0,2,cross-department,1,Sharnappa Joladarashi; Mangalpady Aruna; Harsha Vardhan
+S0226,S0346,S0399,"built pair by pair, sealed later",3,3,cross-department,1,Sowmya Kamath S; Gangadharan K V; Pruthviraj U
+S0225,S0226,S0346,born as a team,3,2,cross-department,1,Shrutilipi Bhattacharjee; Sowmya Kamath S; Gangadharan K V
+S0216,S0226,S0399,"built pair by pair, sealed later",1,2,cross-department,1,Anand Kumar M; Sowmya Kamath S; Pruthviraj U
+S0216,S0225,S0226,pairwise only (never a three-person paper),0,1,same department,1,Anand Kumar M; Shrutilipi Bhattacharjee; Sowmya Kamath S
+S0225,S0226,S0399,born as a team,3,2,cross-department,1,Shrutilipi Bhattacharjee; Sowmya Kamath S; Pruthviraj U
+S0346,S0347,S0349,"built pair by pair, sealed later",1,1,same department,1,Gangadharan K V; Hemantha Kumar; Kumar G N
+S0146,S0346,S0347,"built pair by pair, sealed later",1,2,cross-department,1,A Venkata Narasimhadhan; Gangadharan K V; Hemantha Kumar
+S0346,S0347,S0353,pairwise only (never a three-person paper),0,1,same department,1,Gangadharan K V; Hemantha Kumar; S M Murigendrappa
+S0225,S0346,S0399,"built pair by pair, sealed later",3,3,cross-department,1,Shrutilipi Bhattacharjee; Gangadharan K V; Pruthviraj U
+S0207,S0330,S0347,born as a team,2,2,cross-department,1,Debashisha Jena; Ranjeet Kumar Sahu; Hemantha Kumar
+S0330,S0347,S0350,pairwise only (never a three-person paper),0,1,same department,1,Ranjeet Kumar Sahu; Hemantha Kumar; Narendranath S
+S0347,S0350,S0363,pairwise only (never a three-person paper),0,1,same department,1,Hemantha Kumar; Narendranath S; Vijay Desai
+S0327,S0355,S0363,"built pair by pair, sealed later",1,1,same department,1,Navin Karanth P; Satyabodh M Kulkarni; Vijay Desai
+S0240,S0347,S0368,born as a team,6,3,cross-department,1,Mohammad Rizwanur Rahman; Hemantha Kumar; Mangalpady Aruna
+S0116,S0117,S0122,born as a team,1,1,same department,1,Pavan G S; Prashanth M H; Sreevalsa Kolathayar
+S0198,S0209,S0398,born as a team,3,2,cross-department,1,Yashwant Kashyap; Manjunatha Sharma K; Debabrata Karmakar
+S0183,S0209,S0398,born as a team,3,2,cross-department,1,A Karthikeyan; Manjunatha Sharma K; Debabrata Karmakar
+S0183,S0198,S0398,born as a team,3,2,cross-department,1,A Karthikeyan; Yashwant Kashyap; Debabrata Karmakar
+S0155,S0158,S0176,pairwise only (never a three-person paper),0,1,same department,1,Pathipati Srihari; Raghavendra B S; U Shripathi Acharya
+S0092,S0093,S0384,"built pair by pair, sealed later",1,2,cross-department,1,Saikat Dutta; Sib Sankar Mal; Kartick Tarafder
+S0092,S0093,S0243,pairwise only (never a three-person paper),0,2,cross-department,1,Saikat Dutta; Sib Sankar Mal; Saumen Mandal
+S0093,S0243,S0384,pairwise only (never a three-person paper),0,3,cross-department,1,Sib Sankar Mal; Saumen Mandal; Kartick Tarafder
+S0093,S0384,S0390,pairwise only (never a three-person paper),0,2,cross-department,1,Sib Sankar Mal; Kartick Tarafder; M Nagarajan Satyanarayan
+S0093,S0164,S0382,"built pair by pair, sealed later",1,3,cross-department,1,Sib Sankar Mal; Sushil Kumar Pandey; Ajith Kulangara Madam
+S0093,S0382,S0385,"built pair by pair, sealed later",1,2,cross-department,1,Sib Sankar Mal; Ajith Kulangara Madam; Partha Pratim Das
+S0093,S0164,S0385,"built pair by pair, sealed later",4,3,cross-department,1,Sib Sankar Mal; Sushil Kumar Pandey; Partha Pratim Das
+S0093,S0385,S0390,"built pair by pair, sealed later",2,2,cross-department,1,Sib Sankar Mal; Partha Pratim Das; M Nagarajan Satyanarayan
+S0097,S0319,S0392,"built pair by pair, sealed later",1,3,cross-department,1,Arun Mohan Isloor; Somasekhara Rao Todeti; Nagaraja H S
+S0206,S0329,S0360,"built pair by pair, sealed later",1,2,cross-department,1,Dattatraya Narayan Gaonkar; Poornesh Kumar Koorata; Subhaschandra Kattimani
+S0139,S0339,S0359,born as a team,1,2,cross-department,1,Suresha S N; Mrityunjay R Doddamani; Srikanth Bontha
+S0092,S0334,S0349,"built pair by pair, sealed later",2,2,cross-department,1,Saikat Dutta; Vasudeva Madav; Kumar G N
+S0092,S0243,S0384,pairwise only (never a three-person paper),0,3,cross-department,1,Saikat Dutta; Saumen Mandal; Kartick Tarafder
+S0092,S0334,S0361,pairwise only (never a three-person paper),0,2,cross-department,1,Saikat Dutta; Vasudeva Madav; Veershetty Gumtapure
+S0156,S0163,S0176,"built pair by pair, sealed later",1,1,same department,1,Prabu K; Shyam Lal; U Shripathi Acharya
+S0146,S0161,S0163,pairwise only (never a three-person paper),0,1,same department,1,A Venkata Narasimhadhan; Sandeep Kumar; Shyam Lal
+S0146,S0158,S0163,pairwise only (never a three-person paper),0,1,same department,1,A Venkata Narasimhadhan; Raghavendra B S; Shyam Lal
+S0158,S0163,S0176,pairwise only (never a three-person paper),0,1,same department,1,Raghavendra B S; Shyam Lal; U Shripathi Acharya
+S0024,S0158,S0163,"built pair by pair, sealed later",1,2,cross-department,1,Mahendra Pratap Singh; Raghavendra B S; Shyam Lal
+S0098,S0391,S0392,pairwise only (never a three-person paper),0,2,cross-department,1,Badekai Ramachandra Bhat; N K Udayashankar; Nagaraja H S
+S0382,S0391,S0392,pairwise only (never a three-person paper),0,1,same department,1,Ajith Kulangara Madam; N K Udayashankar; Nagaraja H S
+S0388,S0391,S0392,pairwise only (never a three-person paper),0,1,same department,1,H D Shashikala; N K Udayashankar; Nagaraja H S
+S0321,S0340,S0392,"built pair by pair, sealed later",1,2,cross-department,1,Arumuga Perumal D; N Gnanasekaran; Nagaraja H S
+S0146,S0158,S0405,born as a team,10,2,cross-department,1,A Venkata Narasimhadhan; Raghavendra B S; Amba Shetty
+S0136,S0405,S0413,pairwise only (never a three-person paper),0,2,cross-department,1,S Shrihari; Amba Shetty; Ramesh H
+S0098,S0338,S0349,"built pair by pair, sealed later",2,2,cross-department,1,Badekai Ramachandra Bhat; Mervin Arunaraj Herbert; Kumar G N
+S0098,S0101,S0391,"built pair by pair, sealed later",1,2,cross-department,1,Badekai Ramachandra Bhat; Udaya Kumar Dalimba; N K Udayashankar
+S0088,S0098,S0387,pairwise only (never a three-person paper),0,2,cross-department,1,Airody Vasudeva Adhikari; Badekai Ramachandra Bhat; Govinda Rao Umesh
+S0151,S0156,S0172,pairwise only (never a three-person paper),0,1,same department,1,Krishnamoorthy K; Prabu K; Neelawar Shekar Vittal Shet
+S0151,S0153,S0172,pairwise only (never a three-person paper),0,1,same department,1,Krishnamoorthy K; Muralidhar Kulkarni; Neelawar Shekar Vittal Shet
+S0334,S0349,S0364,pairwise only (never a three-person paper),0,1,same department,1,Vasudeva Madav; Kumar G N; Vijaykumar H
+S0216,S0225,S0399,pairwise only (never a three-person paper),0,2,cross-department,1,Anand Kumar M; Shrutilipi Bhattacharjee; Pruthviraj U
+S0315,S0321,S0340,pairwise only (never a three-person paper),0,1,same department,1,Ajay Kumar Yadav; Arumuga Perumal D; N Gnanasekaran
+S0321,S0323,S0340,"built pair by pair, sealed later",1,1,same department,1,Arumuga Perumal D; Deepak Kumar; N Gnanasekaran
+S0320,S0321,S0359,"built pair by pair, sealed later",1,1,same department,1,A S S Balan; Arumuga Perumal D; Srikanth Bontha
+S0023,S0146,S0158,"built pair by pair, sealed later",1,2,cross-department,1,Jeny Rajan; A Venkata Narasimhadhan; Raghavendra B S
+S0021,S0023,S0042,"built pair by pair, sealed later",1,1,same department,1,Basavaraj Talawar; Jeny Rajan; Vani M
+S0130,S0141,S0381,"built pair by pair, sealed later",1,2,cross-department,1,B R Jayalekshmi; R Shivashankar; Vedala Rama Sastry
+S0156,S0172,T0618,pairwise only (never a three-person paper),0,1,same department,2,Prabu K; Neelawar Shekar Vittal Shet; P Muthuchidambaranathan
+S0315,S0340,S0344,pairwise only (never a three-person paper),0,1,same department,1,Ajay Kumar Yadav; N Gnanasekaran; Arun M
+S0340,S0401,S0402,born as a team,2,2,cross-department,1,N Gnanasekaran; Subrahmanya K; Vadivuchezhian Kaliveeran
+S0096,S0249,S0384,born as a team,1,3,cross-department,1,Ampar Chitharanjan Hegde; Anandhan Srinivasan; Kartick Tarafder
+S0095,S0099,S0384,born as a team,1,2,cross-department,1,Adka Nityananda Shetty; Darshak R Trivedi; Kartick Tarafder
+S0099,S0384,S0390,pairwise only (never a three-person paper),0,2,cross-department,1,Darshak R Trivedi; Kartick Tarafder; M Nagarajan Satyanarayan
+S0088,S0384,S0390,born as a team,1,2,cross-department,1,Airody Vasudeva Adhikari; Kartick Tarafder; M Nagarajan Satyanarayan
+S0088,S0384,S0387,born as a team,1,2,cross-department,1,Airody Vasudeva Adhikari; Kartick Tarafder; Govinda Rao Umesh
+S0384,S0387,S0390,"built pair by pair, sealed later",1,1,same department,1,Kartick Tarafder; Govinda Rao Umesh; M Nagarajan Satyanarayan
+S0320,S0342,S0359,pairwise only (never a three-person paper),0,1,same department,1,A S S Balan; Prasad Krishna; Srikanth Bontha
+S0237,S0320,S0359,"built pair by pair, sealed later",1,2,cross-department,1,B Rajasekaran; A S S Balan; Srikanth Bontha
+S0320,S0336,S0359,"built pair by pair, sealed later",1,1,same department,1,A S S Balan; H Suresh Hebbar; Srikanth Bontha
+S0320,S0359,T0705,"built pair by pair, sealed later",1,2,cross-department,2,A S S Balan; Srikanth Bontha; A Muthuchamy
+S0237,S0342,S0359,"built pair by pair, sealed later",2,2,cross-department,1,B Rajasekaran; Prasad Krishna; Srikanth Bontha
+S0322,S0338,S0358,"built pair by pair, sealed later",13,1,same department,1,Arun Kumar Shettigar; Mervin Arunaraj Herbert; Shrikantha S Rao
+S0327,S0338,S0358,"built pair by pair, sealed later",2,1,same department,1,Navin Karanth P; Mervin Arunaraj Herbert; Shrikantha S Rao
+S0322,S0327,S0338,pairwise only (never a three-person paper),0,1,same department,1,Arun Kumar Shettigar; Navin Karanth P; Mervin Arunaraj Herbert
+S0027,S0307,S0341,born as a team,1,3,cross-department,1,Mohit P Tahiliani; Shyam S Kamath; P Mohanan
+S0241,S0245,S0247,pairwise only (never a three-person paper),0,1,same department,1,Preetham Kumar G V; Shashi Bhushan Arya; K Rajendra Udupa
+S0322,S0327,S0358,"built pair by pair, sealed later",1,1,same department,1,Arun Kumar Shettigar; Navin Karanth P; Shrikantha S Rao
+S0185,S0186,S0193,"built pair by pair, sealed later",2,1,same department,1,B Dastagiri Reddy; Dharavath Kishan; Prajof P
+S0078,S0079,S0082,"built pair by pair, sealed later",1,1,same department,1,I Regupathi; Keyur Raval; Prasanna Belur D
+S0088,S0387,S0390,"built pair by pair, sealed later",1,2,cross-department,1,Airody Vasudeva Adhikari; Govinda Rao Umesh; M Nagarajan Satyanarayan
+S0240,S0368,S0377,pairwise only (never a three-person paper),0,2,cross-department,1,Mohammad Rizwanur Rahman; Mangalpady Aruna; Harsha Vardhan
+S0164,S0382,S0385,"built pair by pair, sealed later",2,2,cross-department,1,Sushil Kumar Pandey; Ajith Kulangara Madam; Partha Pratim Das
+S0186,S0212,S0215,pairwise only (never a three-person paper),0,1,same department,1,Dharavath Kishan; Udaykumar R Yaragatti; Yellasiri Suresh
+S0186,S0191,S0212,pairwise only (never a three-person paper),0,1,same department,1,Dharavath Kishan; Nagendrappa H; Udaykumar R Yaragatti
+S0185,S0186,S0191,"built pair by pair, sealed later",2,1,same department,1,B Dastagiri Reddy; Dharavath Kishan; Nagendrappa H
+S0186,S0190,S0194,pairwise only (never a three-person paper),0,1,same department,1,Dharavath Kishan; Md Waseem Ahmad; Ravi Raushan
+S0186,S0190,T0592,"built pair by pair, sealed later",2,2,cross-department,2,Dharavath Kishan; Md Waseem Ahmad; B Naresh Kumar Reddy
+S0315,S0343,S0352,"built pair by pair, sealed later",1,1,same department,1,Ajay Kumar Yadav; Anish S; Ravikiran Kadoli
+S0367,S0368,S0377,pairwise only (never a three-person paper),0,1,same department,1,Mandela Govinda Raj; Mangalpady Aruna; Harsha Vardhan
+S0366,S0368,S0377,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mangalpady Aruna; Harsha Vardhan
+S0368,S0373,S0377,"built pair by pair, sealed later",1,1,same department,1,Mangalpady Aruna; Akhil Avchar; Harsha Vardhan
+S0368,S0374,S0377,"built pair by pair, sealed later",1,1,same department,1,Mangalpady Aruna; Amrites Senapati; Harsha Vardhan
+S0366,S0367,S0368,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mandela Govinda Raj; Mangalpady Aruna
+S0367,S0368,S0375,pairwise only (never a three-person paper),0,1,same department,1,Mandela Govinda Raj; Mangalpady Aruna; Sandi Kumar Reddy
+S0366,S0368,S0371,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mangalpady Aruna; Bijay Mihir Kunar
+S0366,S0368,S0375,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mangalpady Aruna; Sandi Kumar Reddy
+S0366,S0368,S0370,born as a team,4,1,same department,1,Chivukula Suryanarayana Murthy; Mangalpady Aruna; Anup Kumar Tripathi
+S0368,S0371,S0373,pairwise only (never a three-person paper),0,1,same department,1,Mangalpady Aruna; Bijay Mihir Kunar; Akhil Avchar
+S0368,S0371,S0374,pairwise only (never a three-person paper),0,1,same department,1,Mangalpady Aruna; Bijay Mihir Kunar; Amrites Senapati
+S0368,S0370,S0373,pairwise only (never a three-person paper),0,1,same department,1,Mangalpady Aruna; Anup Kumar Tripathi; Akhil Avchar
+S0368,S0373,S0374,born as a team,1,1,same department,1,Mangalpady Aruna; Akhil Avchar; Amrites Senapati
+S0385,S0387,S0390,"built pair by pair, sealed later",1,1,same department,1,Partha Pratim Das; Govinda Rao Umesh; M Nagarajan Satyanarayan
+S0080,S0081,S0083,pairwise only (never a three-person paper),0,1,same department,1,M B Saidutta; P E Jagadeeshbabu; Raj Mohan B
+S0315,S0343,S0344,pairwise only (never a three-person paper),0,1,same department,1,Ajay Kumar Yadav; Anish S; Arun M
+S0366,S0367,S0377,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mandela Govinda Raj; Harsha Vardhan
+S0125,S0138,S0377,born as a team,1,2,cross-department,1,K S Babu Narayan; Subhash C Yaragal; Harsha Vardhan
+S0373,S0374,S0377,born as a team,1,1,same department,1,Akhil Avchar; Amrites Senapati; Harsha Vardhan
+S0118,S0408,S0417,born as a team,1,2,cross-department,1,Rajasekaran C; Kiran G Shirlal; Subba Rao
+S0237,S0320,S0342,pairwise only (never a three-person paper),0,2,cross-department,1,B Rajasekaran; A S S Balan; Prasad Krishna
+S0366,S0367,S0375,pairwise only (never a three-person paper),0,1,same department,1,Chivukula Suryanarayana Murthy; Mandela Govinda Raj; Sandi Kumar Reddy
+S0183,S0198,S0209,born as a team,3,1,same department,1,A Karthikeyan; Yashwant Kashyap; Manjunatha Sharma K
+S0198,S0209,S0211,"built pair by pair, sealed later",1,1,same department,1,Yashwant Kashyap; Manjunatha Sharma K; Shubhanga K N
+S0198,S0209,S0210,"built pair by pair, sealed later",1,1,same department,1,Yashwant Kashyap; Manjunatha Sharma K; Panduranga Vittal K
+S0209,S0210,S0211,"built pair by pair, sealed later",1,1,same department,1,Manjunatha Sharma K; Panduranga Vittal K; Shubhanga K N
+S0334,S0361,S0364,pairwise only (never a three-person paper),0,1,same department,1,Vasudeva Madav; Veershetty Gumtapure; Vijaykumar H
+S0334,S0364,S0413,born as a team,1,2,cross-department,1,Vasudeva Madav; Vijaykumar H; Ramesh H
+S0198,S0210,S0211,born as a team,1,1,same department,1,Yashwant Kashyap; Panduranga Vittal K; Shubhanga K N
+S0153,S0172,T0618,born as a team,1,1,same department,2,Muralidhar Kulkarni; Neelawar Shekar Vittal Shet; P Muthuchidambaranathan
+S0160,S0168,S0175,pairwise only (never a three-person paper),0,1,same department,1,Rekha S; M Shankaranarayana Bhat; T Laxminidhi
+S0183,S0205,T0658,born as a team,3,1,same department,2,A Karthikeyan; B Venkatesa Perumal; C Nagamani
+S0128,S0131,S0136,born as a team,1,1,same department,1,K S Babunarayana; Basavaraju Manu; S Shrihari
+S0150,S0168,S0175,"built pair by pair, sealed later",3,1,same department,1,Kalpana G Bhat; M Shankaranarayana Bhat; T Laxminidhi
+S0371,S0373,S0378,"built pair by pair, sealed later",1,1,same department,1,Bijay Mihir Kunar; Akhil Avchar; Karra Ram Chandar
+S0371,S0374,S0378,"built pair by pair, sealed later",1,1,same department,1,Bijay Mihir Kunar; Amrites Senapati; Karra Ram Chandar
+S0373,S0374,S0378,born as a team,1,1,same department,1,Akhil Avchar; Amrites Senapati; Karra Ram Chandar
+S0371,S0373,S0374,born as a team,1,1,same department,1,Bijay Mihir Kunar; Akhil Avchar; Amrites Senapati
+S0189,S0317,S0325,born as a team,1,2,cross-department,1,Krishnan C M C; Abhilash Singh; Mervin Joe Thomas
+T0495,T0499,T0512,pairwise only (never a three-person paper),0,2,cross-department,1,P Sivashanmugam; T Sivasankar; S Anandan
+T0482,T0493,T0793,"built pair by pair, sealed later",1,2,cross-department,1,G Arthanareeswaran; N Samsudeen; S Suresh
+T0482,T0492,T0793,pairwise only (never a three-person paper),0,2,cross-department,1,G Arthanareeswaran; N Anantharaman; S Suresh
+T0482,T0814,T0818,pairwise only (never a three-person paper),0,2,cross-department,1,G Arthanareeswaran; A Chandra Bose; M Ashok
+T0482,T0492,T0668,pairwise only (never a three-person paper),0,2,cross-department,1,G Arthanareeswaran; N Anantharaman; M Premalatha
+T0482,T0486,T0493,pairwise only (never a three-person paper),0,1,same department,1,G Arthanareeswaran; K M Meera Sheriffa Begum; N Samsudeen
+T0482,T0492,T0493,pairwise only (never a three-person paper),0,1,same department,1,G Arthanareeswaran; N Anantharaman; N Samsudeen
+T0482,T0486,T0492,pairwise only (never a three-person paper),0,1,same department,1,G Arthanareeswaran; K M Meera Sheriffa Begum; N Anantharaman
+T0492,T0493,T0793,pairwise only (never a three-person paper),0,2,cross-department,1,N Anantharaman; N Samsudeen; S Suresh
+T0783,T0793,T0861,pairwise only (never a three-person paper),0,2,cross-department,1,K R Balasubramanian; S Suresh; V Senthilkumar
+T0666,T0793,T0809,pairwise only (never a three-person paper),0,2,cross-department,1,Jaganathan Vm; S Suresh; V Mariappan
+T0782,T0786,T0798,"built pair by pair, sealed later",3,1,same department,1,K Sankaranarayanasamy; N Siva Shanmugam; Sreejith Mohan
+T0511,T0515,T0516,pairwise only (never a three-person paper),0,1,same department,1,R Karvembu; Sunandan Sarkar; V M Biju
+T0606,T0607,T0625,"built pair by pair, sealed later",1,1,same department,1,R Pandeeswari; S Raghavan; S Deivalakshmi
+T0602,T0611,T0625,pairwise only (never a three-person paper),0,1,same department,1,P Palanisamy; Varun P Gopi; S Deivalakshmi
+T0602,T0611,T0613,"built pair by pair, sealed later",3,1,same department,1,P Palanisamy; Varun P Gopi; Bibin Francis
+T0602,T0606,T0625,"built pair by pair, sealed later",1,1,same department,1,P Palanisamy; R Pandeeswari; S Deivalakshmi
+T0602,T0605,T0612,"built pair by pair, sealed later",1,1,same department,1,P Palanisamy; R Malmathanraj; Avik Hati
+T0502,T0543,T0550,"built pair by pair, sealed later",2,2,cross-department,1,S Velmathi; R Gandhimathi; S T Ramesh
+T0835,T0842,T0849,born as a team,6,1,same department,1,A Noorul Haq; K Panneerselvam; P Sathiya
+T0814,T0818,T0830,pairwise only (never a three-person paper),0,1,same department,1,A Chandra Bose; M Ashok; D Sasti Kumar
+T0814,T0822,T0830,pairwise only (never a three-person paper),0,1,same department,1,A Chandra Bose; R Justin Joseyphus; D Sasti Kumar
+T0471,T0576,T0585,pairwise only (never a three-person paper),0,2,cross-department,1,A Santhana Vijayan; S R Balasundaram; Jitendra Kumar
+T0543,T0549,T0550,pairwise only (never a three-person paper),0,1,same department,1,R Gandhimathi; S Saravanan; S T Ramesh
+T0717,T0724,T0865,pairwise only (never a three-person paper),0,2,cross-department,1,S P Kumaresh Babu; Siva Prasad Katakam; M Durai Selvam
+T0707,T0717,T0724,pairwise only (never a three-person paper),0,1,same department,1,B Ravisankar; S P Kumaresh Babu; Siva Prasad Katakam
+T0716,T0717,T0865,"built pair by pair, sealed later",1,2,cross-department,1,S Natarajan; S P Kumaresh Babu; M Durai Selvam
+T0716,T0717,T0825,"built pair by pair, sealed later",2,2,cross-department,1,S Natarajan; S P Kumaresh Babu; S Manivannan
+T0635,T0643,T0652,born as a team,26,1,same department,1,K Sundareswaran; P Srinivasa Rao Nayak; Sishaj P Simon
+T0634,T0643,T0652,"built pair by pair, sealed later",1,1,same department,1,Josephine R L; P Srinivasa Rao Nayak; Sishaj P Simon
+T0634,T0635,T0652,"built pair by pair, sealed later",1,1,same department,1,Josephine R L; K Sundareswaran; Sishaj P Simon
+T0635,T0652,T0655,born as a team,2,1,same department,1,K Sundareswaran; Sishaj P Simon; V Vignesh Kumar
+T0570,T0611,T0615,born as a team,3,2,cross-department,1,G R Gangadharan; Varun P Gopi; G Lakshmi Narayanan
+T0611,T0613,T0615,"built pair by pair, sealed later",1,1,same department,1,Varun P Gopi; Bibin Francis; G Lakshmi Narayanan
+T0450,T0477,T0615,"built pair by pair, sealed later",1,2,cross-department,1,B Shameedha Begum; Rama Subramanian N; G Lakshmi Narayanan
+T0592,T0609,T0615,"built pair by pair, sealed later",1,1,same department,1,B Naresh Kumar Reddy; Srinivasulu Jogi; G Lakshmi Narayanan
+T0474,T0632,T0693,pairwise only (never a three-person paper),0,3,cross-department,1,M Brindha; G Saravana Ilango; N Sivakumaran
+T0519,T0611,T0625,pairwise only (never a three-person paper),0,2,cross-department,1,Aneesh Mathew; Varun P Gopi; S Deivalakshmi
+T0480,T0495,T0499,"built pair by pair, sealed later",1,1,same department,1,A Arunagiri; P Sivashanmugam; T Sivasankar
+T0480,T0490,T0495,"built pair by pair, sealed later",1,1,same department,1,A Arunagiri; M Perumalsamy; P Sivashanmugam
+T0490,T0495,T0499,born as a team,1,1,same department,1,M Perumalsamy; P Sivashanmugam; T Sivasankar
+T0632,T0693,T0783,"built pair by pair, sealed later",1,3,cross-department,1,G Saravana Ilango; N Sivakumaran; K R Balasubramanian
+T0632,T0658,T0693,"built pair by pair, sealed later",1,2,cross-department,1,G Saravana Ilango; C Nagamani; N Sivakumaran
+T0632,T0637,T0658,"built pair by pair, sealed later",4,1,same department,1,G Saravana Ilango; M Jaya Bharata Reddy; C Nagamani
+T0628,T0632,T0658,"built pair by pair, sealed later",1,1,same department,1,S Mageshwari; G Saravana Ilango; C Nagamani
+T0479,T0498,T0693,"built pair by pair, sealed later",1,2,cross-department,1,P Kalaichelvi; T K Radhakrishnan; N Sivakumaran
+T0498,T0525,T0693,"built pair by pair, sealed later",8,3,cross-department,1,T K Radhakrishnan; G Swaminathan; N Sivakumaran
+T0485,T0498,T0693,"built pair by pair, sealed later",4,2,cross-department,1,K Sankar; T K Radhakrishnan; N Sivakumaran
+T0639,T0658,T0693,pairwise only (never a three-person paper),0,2,cross-department,1,M Venkata Kirthiga; C Nagamani; N Sivakumaran
+T0479,T0485,T0693,born as a team,1,2,cross-department,1,P Kalaichelvi; K Sankar; N Sivakumaran
+T0795,T0798,T0819,born as a team,2,2,cross-department,1,S P Sivapirakasam; Sreejith Mohan; M C Santhosh Kumar
+T0783,T0795,T0861,"built pair by pair, sealed later",1,2,cross-department,1,K R Balasubramanian; S P Sivapirakasam; V Senthilkumar
+T0782,T0795,T0798,pairwise only (never a three-person paper),0,1,same department,1,K Sankaranarayanasamy; S P Sivapirakasam; Sreejith Mohan
+T0791,T0795,T0798,"built pair by pair, sealed later",3,1,same department,1,Raghu Ram Karthik Desu; S P Sivapirakasam; Sreejith Mohan
+T0787,T0795,T0798,"built pair by pair, sealed later",1,1,same department,1,Nivish George; S P Sivapirakasam; Sreejith Mohan
+T0578,T0689,T0692,"built pair by pair, sealed later",3,2,cross-department,1,U Srinivasulu Reddy; G Uma; M Umapathy
+T0686,T0689,T0692,born as a team,1,1,same department,1,B Vasuki; G Uma; M Umapathy
+T0689,T0692,T0698,"built pair by pair, sealed later",7,1,same department,1,G Uma; M Umapathy; Shiraz Sohail
+T0721,T0724,T0865,"built pair by pair, sealed later",1,2,cross-department,1,V Muthupandi; Siva Prasad Katakam; M Durai Selvam
+T0504,T0721,T0724,born as a team,1,2,cross-department,1,A Sreekanth; V Muthupandi; Siva Prasad Katakam
+T0707,T0711,T0724,"built pair by pair, sealed later",1,1,same department,1,B Ravisankar; N Ramesh Babu; Siva Prasad Katakam
+T0707,T0724,T0854,pairwise only (never a three-person paper),0,2,cross-department,1,B Ravisankar; Siva Prasad Katakam; R Narayanasamy
+T0707,T0708,T0724,pairwise only (never a three-person paper),0,1,same department,1,B Ravisankar; D Nagarajan; Siva Prasad Katakam
+T0721,T0724,T0850,"built pair by pair, sealed later",1,2,cross-department,1,V Muthupandi; Siva Prasad Katakam; P Senthil
+T0850,T0856,T0859,pairwise only (never a three-person paper),0,1,same department,1,P Senthil; S Vinodh; T Selvaraj
+T0818,T0819,T0821,pairwise only (never a three-person paper),0,1,same department,1,M Ashok; M C Santhosh Kumar; N V Giridharan
+T0493,T0498,T0501,born as a team,5,1,same department,1,N Samsudeen; T K Radhakrishnan; M Matheswaran
+T0479,T0493,T0498,pairwise only (never a three-person paper),0,1,same department,1,P Kalaichelvi; N Samsudeen; T K Radhakrishnan
+T0491,T0493,T0498,"built pair by pair, sealed later",1,1,same department,1,Muthukumar K; N Samsudeen; T K Radhakrishnan
+T0479,T0498,T0501,pairwise only (never a three-person paper),0,1,same department,1,P Kalaichelvi; T K Radhakrishnan; M Matheswaran
+T0491,T0498,T0501,pairwise only (never a three-person paper),0,1,same department,1,Muthukumar K; T K Radhakrishnan; M Matheswaran
+T0479,T0485,T0498,"built pair by pair, sealed later",1,1,same department,1,P Kalaichelvi; K Sankar; T K Radhakrishnan
+T0519,T0543,T0550,"built pair by pair, sealed later",1,1,same department,1,Aneesh Mathew; R Gandhimathi; S T Ramesh
+T0838,T0847,T0861,pairwise only (never a three-person paper),0,1,same department,1,D Lenin Singaravelu; P Asokan; V Senthilkumar
+T0838,T0846,T0861,pairwise only (never a three-person paper),0,1,same department,1,D Lenin Singaravelu; N S Balaji; V Senthilkumar
+T0838,T0846,T0847,born as a team,1,1,same department,1,D Lenin Singaravelu; N S Balaji; P Asokan
+T0480,T0499,T0668,"built pair by pair, sealed later",2,2,cross-department,1,A Arunagiri; T Sivasankar; M Premalatha
+T0668,T0669,T0809,"built pair by pair, sealed later",1,2,cross-department,1,M Premalatha; Ruben Sudhakar D; V Mariappan
+T0666,T0668,T0809,"built pair by pair, sealed later",1,2,cross-department,1,Jaganathan Vm; M Premalatha; V Mariappan
+T0486,T0492,T0790,born as a team,1,2,cross-department,1,K M Meera Sheriffa Begum; N Anantharaman; R B Anand
+T0486,T0488,T0790,"built pair by pair, sealed later",1,2,cross-department,1,K M Meera Sheriffa Begum; Kartikeya Shukla; R B Anand
+T0707,T0837,T0854,"built pair by pair, sealed later",1,2,cross-department,1,B Ravisankar; C Sathiya Narayanan; R Narayanasamy
+T0486,T0492,T0493,pairwise only (never a three-person paper),0,1,same department,1,K M Meera Sheriffa Begum; N Anantharaman; N Samsudeen
+T0479,T0493,T0501,"built pair by pair, sealed later",1,1,same department,1,P Kalaichelvi; N Samsudeen; M Matheswaran
+T0491,T0493,T0501,pairwise only (never a three-person paper),0,1,same department,1,Muthukumar K; N Samsudeen; M Matheswaran
+T0638,T0639,T0647,born as a team,1,1,same department,1,M P Selvan; M Venkata Kirthiga; S Moorthi
+T0638,T0641,T0647,born as a team,2,1,same department,1,M P Selvan; N Kumaresan; S Moorthi
+T0638,T0642,T0647,"built pair by pair, sealed later",2,1,same department,1,M P Selvan; P Raja; S Moorthi
+T0638,T0647,T0660,born as a team,1,1,same department,1,M P Selvan; S Moorthi; N Ammmasai Goundan
+T0638,T0639,T0642,"built pair by pair, sealed later",1,1,same department,1,M P Selvan; M Venkata Kirthiga; P Raja
+T0638,T0639,T0654,"built pair by pair, sealed later",1,1,same department,1,M P Selvan; M Venkata Kirthiga; Suryanarayana Gangolu
+T0638,T0641,T0660,born as a team,1,1,same department,1,M P Selvan; N Kumaresan; N Ammmasai Goundan
+T0638,T0642,T0654,"built pair by pair, sealed later",1,1,same department,1,M P Selvan; P Raja; Suryanarayana Gangolu
+T0567,T0578,T0589,pairwise only (never a three-person paper),0,1,same department,1,B Janet; U Srinivasulu Reddy; Venkataswamy Reddy
+T0419,T0639,T0658,born as a team,1,2,cross-department,1,Mini Shaji Thomas; M Venkata Kirthiga; C Nagamani
+T0571,T0578,T0589,born as a team,2,1,same department,1,Michael Arock; U Srinivasulu Reddy; Venkataswamy Reddy
+T0634,T0635,T0643,"built pair by pair, sealed later",1,1,same department,1,Josephine R L; K Sundareswaran; P Srinivasa Rao Nayak
+T0840,T0847,T0861,born as a team,2,1,same department,1,Dinesh S; P Asokan; V Senthilkumar
+T0846,T0847,T0861,pairwise only (never a three-person paper),0,1,same department,1,N S Balaji; P Asokan; V Senthilkumar
+T0641,T0649,T0660,born as a team,2,1,same department,1,N Kumaresan; S Senthil Kumar; N Ammmasai Goundan
+T0639,T0642,T0647,"built pair by pair, sealed later",2,1,same department,1,M Venkata Kirthiga; P Raja; S Moorthi
+T0641,T0647,T0660,born as a team,1,1,same department,1,N Kumaresan; S Moorthi; N Ammmasai Goundan
+T0628,T0647,T0660,pairwise only (never a three-person paper),0,1,same department,1,S Mageshwari; S Moorthi; N Ammmasai Goundan
+T0593,T0600,T0624,born as a team,1,1,same department,1,B Venkataramani; M Bhaskar; R Thilagavathy
+T0594,T0621,T0622,"built pair by pair, sealed later",3,1,same department,1,B Malarkodi; B Rebekka; N Gunavathi
+T0639,T0642,T0645,pairwise only (never a three-person paper),0,1,same department,1,M Venkata Kirthiga; P Raja; S Arul Daniel
+T0639,T0642,T0654,"built pair by pair, sealed later",1,1,same department,1,M Venkata Kirthiga; P Raja; Suryanarayana Gangolu
+T0639,T0645,T0653,born as a team,1,1,same department,1,M Venkata Kirthiga; S Arul Daniel; Suman M
+T0639,T0653,T0654,pairwise only (never a three-person paper),0,1,same department,1,M Venkata Kirthiga; Suman M; Suryanarayana Gangolu
+T0479,T0480,T0490,"built pair by pair, sealed later",2,1,same department,1,P Kalaichelvi; A Arunagiri; M Perumalsamy
+T0479,T0480,T0487,born as a team,1,1,same department,1,P Kalaichelvi; A Arunagiri; K N Sheeba
+T0480,T0488,T0491,"built pair by pair, sealed later",3,1,same department,1,A Arunagiri; Kartikeya Shukla; Muthukumar K
+T0480,T0490,T0499,"built pair by pair, sealed later",1,1,same department,1,A Arunagiri; M Perumalsamy; T Sivasankar
+T0419,T0636,T0664,born as a team,2,2,cross-department,1,Mini Shaji Thomas; Karthik Thirumala; Vivek Mohan
+T0636,T0659,T0664,"built pair by pair, sealed later",2,1,same department,1,Karthik Thirumala; Manoranjan Sahoo; Vivek Mohan
+T0628,T0645,T0660,born as a team,1,1,same department,1,S Mageshwari; S Arul Daniel; N Ammmasai Goundan
+T0644,T0653,T0654,born as a team,1,1,same department,1,Rakesh Kumar Panda; Suman M; Suryanarayana Gangolu
+T0423,T0427,T0434,born as a team,2,1,same department,1,G Subbaiyan; P Gopalakrishnan; Amalan Sigmund Kaushik
+T0526,T0539,T0562,born as a team,4,1,same department,1,Greegar George; Nisha Radhakrishnan; Anjuna
+T0423,T0427,T0430,pairwise only (never a three-person paper),0,1,same department,1,G Subbaiyan; P Gopalakrishnan; T Srinivas

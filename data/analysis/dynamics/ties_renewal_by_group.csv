@@ -1,0 +1,10 @@
+factor,group,pairs,renewed_within_3_pct
+same_department,different departments,196,40.816326530612244
+same_department,same department,460,63.26086956521739
+same_nit,Trichy–Surathkal,16,43.75
+same_nit,same NIT,640,56.875
+fwci_class,first papers FWCI < 1,326,46.93251533742331
+fwci_class,first papers FWCI ≥ 1,328,66.46341463414635
+team_class,first papers ≤3 authors,237,64.9789029535865
+team_class,4–6 authors,371,51.75202156334232
+team_class,7+ authors,48,52.083333333333336

@@ -1,0 +1,30 @@
+{
+  "pairs": 961,
+  "cutoff_joint_papers": 9.0,
+  "super_tie_pairs": 110,
+  "super_tie_pairs_pct": 11.446409989594173,
+  "pair_paper_events_from_super_ties_pct": 46.87260658667348,
+  "joint_papers_with_a_super_tie_pct": 52.10494203782794,
+  "joint_papers": 3278,
+  "one_paper_pairs_pct": 39.54214360041624,
+  "super_ties_same_department_pct": 89.0909090909091,
+  "other_pairs_same_department_pct": 66.3924794359577,
+  "super_tie_median_years_active": 7.0,
+  "fwci_median_super_tie_papers": 0.7994,
+  "fwci_median_other_joint_papers": 0.7017,
+  "fwci_mean_super_tie_papers": 1.496475835777126,
+  "fwci_mean_other_joint_papers": 1.4698183386581471,
+  "fwci_mann_whitney_p": 0.0025199858825964835,
+  "distribution_joint_papers_per_pair": {
+    "1": 380,
+    "2": 169,
+    "3": 109,
+    "4": 71,
+    "5": 43,
+    "6": 32,
+    "7": 31,
+    "8": 16,
+    "9": 18,
+    "10+": 92
+  }
+}

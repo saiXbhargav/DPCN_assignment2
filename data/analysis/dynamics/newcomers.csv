@@ -1,0 +1,258 @@
+faculty_id,author,institution,department,first_listed,first_internal_link_year,years_to_first_link,linked_before_listed,isolated_after_3_years,first_partner,first_partner_same_department,first_partner_is_newcomer,first_partner_degree,colleagues_mean_degree
+S0105,Bibhuti Bhusan Das,NIT Surathkal,Civil,2017,2018.0,1.0,False,False,Shashi Bhushan Arya,0.0,0.0,2.0,0.934
+S0356,Sharnappa Joladarashi,NIT Surathkal,Mechanical,2017,2017.0,0.0,False,False,Satyabodh M Kulkarni,1.0,0.0,0.0,0.489
+S0122,Sreevalsa Kolathayar,NIT Surathkal,Civil,2024,2024.0,0.0,False,,Sitaram Nayak; Sitaram Nayak,1.0,0.0,0.0,2.586
+S0398,Debabrata Karmakar,NIT Surathkal,Water Resources & Ocean,2017,2016.0,0.0,True,False,Nasar T; Nasar T,1.0,1.0,0.0,0.0
+S0022,Biswajit R Bhowmik,NIT Surathkal,CSE,2020,2023.0,3.0,False,False,Ajith Kulangara Madam,0.0,0.0,3.0,2.516
+S0216,Anand Kumar M,NIT Surathkal,Information Technology,2019,2022.0,3.0,False,False,Jeny Rajan; Sowmya Kamath S,0.5,0.0,4.0,2.267
+S0321,Arumuga Perumal D,NIT Surathkal,Mechanical,2017,2017.0,0.0,False,False,Ajay Kumar Yadav,1.0,0.0,0.0,0.489
+S0156,Prabu K,NIT Surathkal,ECE,2024,2020.0,0.0,True,,U Shripathi Acharya; U Shripathi Acharya; U Shripathi Acharya,1.0,1.0,2.0,1.636
+S0384,Kartick Tarafder,NIT Surathkal,Physics,2017,2016.0,0.0,True,False,Adka Nityananda Shetty; Darshak R Trivedi; Darshak R Trivedi,0.0,0.0,0.0,0.0
+S0115,Palanisamy T,NIT Surathkal,Civil,2024,,,False,,,,,,2.586
+S0193,Prajof P,NIT Surathkal,EEE,2020,2022.0,2.0,False,False,B Dastagiri Reddy; Dharavath Kishan; Arun Dominic,1.0,1.0,1.333,2.267
+S0110,Babloo Chaudhary,NIT Surathkal,Civil,2024,2021.0,0.0,True,,Sunil B Malegole,1.0,0.0,2.0,2.057
+S0217,Bhawana Rudra,NIT Surathkal,Information Technology,2019,2022.0,3.0,False,False,Sowmya Kamath S,1.0,0.0,3.0,2.267
+S0243,Saumen Mandal,NIT Surathkal,MME,2017,2017.0,0.0,False,False,Sib Sankar Mal; Kartick Tarafder,0.0,0.5,1.0,0.489
+S0331,Ranjith M,NIT Surathkal,Mechanical,2017,2020.0,3.0,False,False,Anish S,1.0,0.0,0.0,1.636
+S0032,Sourav Kanti Addya,NIT Surathkal,CSE,2020,2023.0,3.0,False,False,Shasidhar G Koolagudi; Shasidhar G Koolagudi,1.0,0.0,3.0,2.516
+S0164,Sushil Kumar Pandey,NIT Surathkal,ECE,2024,2024.0,0.0,False,,Ajith Kulangara Madam; Partha Pratim Das; Sib Sankar Mal; Partha Pratim Das,0.0,0.0,3.75,2.586
+S0186,Dharavath Kishan,NIT Surathkal,EEE,2020,2020.0,0.0,False,False,Nagendrappa H,1.0,0.0,0.0,1.636
+S0066,Chinta Sankar Rao,NIT Surathkal,Chemical,2024,2024.0,0.0,False,,Vaishakh Nair,1.0,1.0,0.0,2.586
+S0152,Mandeep Singh,NIT Surathkal,ECE,2024,2022.0,0.0,True,,M Nagarajan Satyanarayan,0.0,0.0,6.0,2.267
+S0161,Sandeep Kumar,NIT Surathkal,ECE,2024,2020.0,0.0,True,,A Venkata Narasimhadhan,1.0,0.0,3.0,1.636
+S0215,Yellasiri Suresh,NIT Surathkal,EEE,2017,2021.0,4.0,False,True,Udaykumar R Yaragatti,1.0,0.0,1.0,2.057
+S0320,A S S Balan,NIT Surathkal,Mechanical,2024,2022.0,0.0,True,,Srikanth Bontha,1.0,0.0,6.0,2.267
+S0198,Yashwant Kashyap,NIT Surathkal,EEE,2019,2023.0,4.0,False,True,Pruthviraj U; A Karthikeyan; Manjunatha Sharma K; Debabrata Karmakar; A Karthikeyan; Manjunatha Sharma K; Debabrata Karmakar,0.571,0.286,1.0,2.516
+S0205,B Venkatesa Perumal,NIT Surathkal,EEE,2017,2016.0,0.0,True,False,A Karthikeyan; A Karthikeyan,1.0,0.0,0.0,0.0
+S0225,Shrutilipi Bhattacharjee,NIT Surathkal,Information Technology,2020,2023.0,3.0,False,False,Anand Kumar M; Sowmya Kamath S; Gangadharan K V; Pruthviraj U,0.5,0.25,4.25,2.516
+S0322,Arun Kumar Shettigar,NIT Surathkal,Mechanical,2024,2020.0,0.0,True,,Mervin Arunaraj Herbert; Shrikantha S Rao; Mervin Arunaraj Herbert; Shrikantha S Rao,1.0,0.0,3.0,1.636
+S0330,Ranjeet Kumar Sahu,NIT Surathkal,Mechanical,2024,2020.0,0.0,True,,Narendranath S,1.0,0.0,7.0,1.636
+S0176,U Shripathi Acharya,NIT Surathkal,ECE,2017,2016.0,0.0,True,False,Pathipati Srihari,1.0,0.0,0.0,0.0
+S0329,Poornesh Kumar Koorata,NIT Surathkal,Mechanical,2024,2022.0,0.0,True,,B Dastagiri Reddy,0.0,1.0,2.0,2.267
+S0190,Md Waseem Ahmad,NIT Surathkal,EEE,2020,2022.0,2.0,False,False,Ravi Raushan; Dharavath Kishan,1.0,1.0,1.0,2.267
+S0412,Nasar T,NIT Surathkal,Water Resources & Ocean,2017,2016.0,0.0,True,False,Debabrata Karmakar; Debabrata Karmakar,1.0,1.0,0.0,0.0
+S0116,Pavan G S,NIT Surathkal,Civil,2024,2024.0,0.0,False,,K Swaminathan,1.0,0.0,2.0,2.586
+S0400,Shwetha H R,NIT Surathkal,Water Resources & Ocean,2024,2023.0,0.0,True,,Dwarakish G S; Dwarakish G S; Dwarakish G S,1.0,0.0,1.0,2.516
+S0159,Rathnamala Rao,NIT Surathkal,ECE,2017,2020.0,3.0,False,False,Airody Vasudeva Adhikari,0.0,0.0,3.0,1.636
+S0375,Sandi Kumar Reddy,NIT Surathkal,Mining,2020,2022.0,2.0,False,False,Mandela Govinda Raj,1.0,0.0,3.0,2.267
+S0237,B Rajasekaran,NIT Surathkal,MME,2024,2023.0,0.0,True,,A S S Balan; Srikanth Bontha,0.0,0.5,4.0,2.516
+S0287,Kedarnath Senapathi,NIT Surathkal,Mathematics,2017,2019.0,2.0,False,False,Santhosh George,1.0,0.0,1.0,1.3
+S0194,Ravi Raushan,NIT Surathkal,EEE,2020,2022.0,2.0,False,False,Md Waseem Ahmad; Dharavath Kishan,1.0,1.0,1.0,2.267
+S0123,Sridhar G,NIT Surathkal,Civil,2024,2024.0,0.0,False,,Saranya P; Saranya P,1.0,1.0,0.0,2.586
+S0039,M Venkatesan,NIT Surathkal,CSE,2018,2021.0,3.0,False,False,Jeny Rajan,1.0,0.0,4.0,2.057
+S0073,Vaishakh Nair,NIT Surathkal,Chemical,2024,2024.0,0.0,False,,Chinta Sankar Rao,1.0,1.0,0.0,2.586
+S0184,Arun Dominic,NIT Surathkal,EEE,2020,2022.0,2.0,False,False,Prajof P,1.0,1.0,0.0,2.267
+S0222,Kiran M,NIT Surathkal,Information Technology,2019,,,False,True,,,,,1.3
+S0328,P S Suvin,NIT Surathkal,Mechanical,2024,2023.0,0.0,True,,Srikanth Bontha,1.0,0.0,7.0,2.516
+S0031,Shridhar Sanshi,NIT Surathkal,CSE,2024,2017.0,0.0,True,,Jaidhar C D,0.0,0.0,0.0,0.489
+S0114,Mithun Mohan,NIT Surathkal,Civil,2024,2019.0,0.0,True,,Panduranga Vittal K,0.0,0.0,1.0,1.3
+S0244,Selvakumar Murugesan,NIT Surathkal,MME,2024,2021.0,0.0,True,,Anandhan Srinivasan,1.0,0.0,5.0,2.057
+S0246,Sumanth Govindarajan,NIT Surathkal,MME,2024,2020.0,0.0,True,,Subray Ramachandra Hegde,1.0,0.0,0.0,1.636
+S0154,Nikhil K S,NIT Surathkal,ECE,2024,2024.0,0.0,False,,Mandeep Singh,1.0,1.0,1.0,2.586
+S0224,Purushothama B R,NIT Surathkal,Information Technology,2024,,,False,,,,,,2.586
+S0332,Saurabh Chandraker,NIT Surathkal,Mechanical,2024,2021.0,0.0,True,,Deepak Kumar,1.0,1.0,0.0,2.057
+S0325,Mervin Joe Thomas,NIT Surathkal,Mechanical,2024,2025.0,1.0,False,,Krishnan C M C; Abhilash Singh; Gangadharan K V,0.667,0.667,4.0,2.9
+S0386,V Sreenath,NIT Surathkal,Physics,2024,,,False,,,,,,2.586
+S0107,Vinoth S,NIT Surathkal,Civil,2024,,,False,,,,,,2.586
+S0113,Lohitkumar Nainegali,NIT Surathkal,Civil,2025,,,False,,,,,,2.9
+S0319,Somasekhara Rao Todeti,NIT Surathkal,Mechanical,2017,2019.0,2.0,False,False,Arun Mohan Isloor,0.0,0.0,2.0,1.3
+S0393,Shajahan Thamara Kunnathu,NIT Surathkal,Physics,2017,,,False,True,,,,,0.489
+S0109,Anupama Surenjan,NIT Surathkal,Civil,2024,2024.0,0.0,False,,Basavaraju Manu,1.0,0.0,2.0,2.586
+S0185,B Dastagiri Reddy,NIT Surathkal,EEE,2020,2021.0,1.0,False,False,Dharavath Kishan; Nagendrappa H,1.0,0.5,1.5,2.057
+S0195,Shashidhara Mecha Kotian,NIT Surathkal,EEE,2020,,,False,True,,,,,1.636
+S0221,Janani T,NIT Surathkal,Information Technology,2024,,,False,,,,,,2.586
+S0373,Akhil Avchar,NIT Surathkal,Mining,2023,2023.0,0.0,False,,Anup Kumar Tripathi,1.0,0.0,2.0,2.516
+S0091,Lakshmi Vellanki,NIT Surathkal,Chemistry,2020,,,False,True,,,,,1.636
+S0111,J Vijaya Vengadesh Kumar,NIT Surathkal,Civil,2024,2022.0,0.0,True,,K Swaminathan,1.0,0.0,0.0,2.267
+S0318,Parthasarathy P,NIT Surathkal,Mechanical,2024,2021.0,0.0,True,,Srikanth Bontha,1.0,0.0,5.0,2.057
+S0324,Khyati Verma,NIT Surathkal,Mechanical,2024,2023.0,0.0,True,,Gangadharan K V,1.0,0.0,7.0,2.516
+S0070,Maneesh Kumar Poddar,NIT Surathkal,Chemical,2024,,,False,,,,,,2.586
+S0094,Vijayendra S Shetti,NIT Surathkal,Chemistry,2020,2024.0,4.0,False,True,Udaya Kumar Dalimba,1.0,0.0,0.0,2.586
+S0121,Sreekumar M,NIT Surathkal,Civil,2024,2024.0,0.0,False,,Mithun Mohan,1.0,1.0,1.0,2.586
+S0286,Jothi Ramalingam,NIT Surathkal,Mathematics,2020,,,False,True,,,,,1.636
+S0238,Kumkum Banerjee,NIT Surathkal,MME,2017,,,False,True,,,,,0.489
+S0283,Falguni Roy,NIT Surathkal,Mathematics,2020,,,False,True,,,,,1.636
+S0326,Mruthyunjaya Swamy K B,NIT Surathkal,Mechanical,2024,2025.0,1.0,False,,Gangadharan K V,1.0,0.0,11.0,2.9
+S0071,Mohan Lal Meena,NIT Surathkal,Chemical,2024,,,False,,,,,,2.586
+S0148,Bini A A,NIT Surathkal,ECE,2024,2024.0,0.0,False,,Jidesh P,0.0,0.0,2.0,2.586
+S0197,Vignesh Kumar V,NIT Surathkal,EEE,2020,2021.0,1.0,False,False,B Venkatesa Perumal,1.0,1.0,1.0,2.057
+S0374,Amrites Senapati,NIT Surathkal,Mining,2024,2025.0,1.0,False,,Mangalpady Aruna; Akhil Avchar; Harsha Vardhan; Bijay Mihir Kunar; Akhil Avchar; Karra Ram Chandar,1.0,0.333,4.167,2.9
+S0323,Deepak Kumar,NIT Surathkal,Mechanical,2024,2021.0,0.0,True,,Saurabh Chandraker; Arumuga Perumal D; N Gnanasekaran; Subhaschandra Kattimani,1.0,0.5,2.25,2.057
+S0001,B Ravi,NIT Surathkal,,2024,,,False,,,,,,2.586
+S0120,Saranya P,NIT Surathkal,Civil,2024,2024.0,0.0,False,,Sridhar G; Sridhar G,1.0,1.0,0.0,2.586
+S0202,L Padmavathi,NIT Surathkal,EEE,2020,,,False,True,,,,,1.636
+S0214,Sheron Figarado,NIT Surathkal,EEE,2017,,,False,True,,,,,0.489
+S0239,Lipak Kumar Sahoo,NIT Surathkal,MME,2024,,,False,,,,,,2.586
+S0025,Manjanna B,NIT Surathkal,CSE,2024,,,False,,,,,,2.586
+S0189,Krishnan C M C,NIT Surathkal,EEE,2017,2017.0,0.0,False,False,Panduranga Vittal K,1.0,0.0,0.0,0.489
+S0069,M Rajasekaran,NIT Surathkal,Chemical,2024,,,False,,,,,,2.586
+S0162,Shikha Baghel,NIT Surathkal,ECE,2024,2024.0,0.0,False,,Deepu Vijayasenan,1.0,0.0,1.0,2.586
+S0284,Gayathri P,NIT Surathkal,Mathematics,2025,,,False,,,,,,2.9
+S0290,Pushpajit Khaire,NIT Surathkal,Mathematics,2024,,,False,,,,,,2.586
+S0293,Vidyadhar Upadhya,NIT Surathkal,Mathematics,2024,,,False,,,,,,2.586
+S0317,Abhilash Singh,NIT Surathkal,Mechanical,2024,2025.0,1.0,False,,Krishnan C M C; Mervin Joe Thomas,0.5,1.0,0.5,2.9
+S0380,Rajib Pal,NIT Surathkal,Mining,2026,2024.0,0.0,True,,Harsha Vardhan,1.0,0.0,7.0,2.586
+T0611,Varun P Gopi,NIT Trichy,ECE,2019,2018.0,0.0,True,False,P Palanisamy; P Palanisamy,1.0,0.0,2.0,1.249
+T0599,Karthikeyan S S,NIT Trichy,ECE,2019,2025.0,6.0,False,True,S Senthil Kumar,0.0,0.0,3.0,2.193
+T0519,Aneesh Mathew,NIT Trichy,Civil,2021,2022.0,1.0,False,False,R Gandhimathi; S T Ramesh,1.0,0.0,3.0,1.802
+T0592,B Naresh Kumar Reddy,NIT Trichy,ECE,2023,2023.0,0.0,False,,Bukke Chandrababu Naik,1.0,1.0,0.0,1.897
+T0774,V Ravichandran,NIT Trichy,Mathematics,2019,2022.0,3.0,False,False,Somya; Somya; P Saikrishnan,1.0,0.667,0.0,1.802
+T0694,P A Karthick,NIT Trichy,ICE,2019,2021.0,2.0,False,False,N Sivakumaran; N Sivakumaran,1.0,0.0,6.0,1.642
+T0798,Sreejith Mohan,NIT Trichy,Mechanical,2021,2017.0,0.0,True,False,S P Sivapirakasam; M C Santhosh Kumar; S P Sivapirakasam; M C Santhosh Kumar,0.5,0.0,0.0,0.762
+T0829,Annapureddy Venkateshwarlu,NIT Trichy,Physics,2019,2024.0,5.0,False,True,V Karthik,0.0,1.0,0.0,2.085
+T0630,Ankur Singh Rana,NIT Trichy,EEE,2021,2019.0,0.0,True,False,Mini Shaji Thomas,0.0,0.0,2.0,1.273
+T0508,Ganesh Chandra Nandi,NIT Trichy,Chemistry,2019,2021.0,2.0,False,False,B Karthikeyan,0.0,0.0,1.0,1.642
+T0545,R Senthil Kumar,NIT Trichy,Civil,2019,2019.0,0.0,False,False,Jayabalan P,1.0,0.0,1.0,1.273
+T0570,G R Gangadharan,NIT Trichy,Computer Applications,2019,2019.0,0.0,False,False,S Nickolas; S Nickolas,1.0,0.0,3.0,1.273
+T0636,Karthik Thirumala,NIT Trichy,EEE,2019,2020.0,1.0,False,False,Mini Shaji Thomas; Vivek Mohan,0.5,0.5,1.5,1.634
+T0629,Aneesa Farhan M A,NIT Trichy,EEE,2021,2023.0,2.0,False,False,Ankur Singh Rana; Ankur Singh Rana,1.0,1.0,3.0,1.897
+T0752,Jitraj Saha,NIT Trichy,Mathematics,2019,2023.0,4.0,False,True,Vamsinadh Thota; Vamsinadh Thota,1.0,1.0,0.0,1.897
+T0531,Kamal Krishna Bera,NIT Trichy,Civil,2021,,,False,True,,,,,1.642
+T0548,S Marisamynathan,NIT Trichy,Civil,2019,,,False,True,,,,,1.273
+T0634,Josephine R L,NIT Trichy,EEE,2019,2022.0,3.0,False,False,S Moorthi,1.0,0.0,6.0,1.802
+T0491,Muthukumar K,NIT Trichy,Chemical,2019,2018.0,0.0,True,False,A Arunagiri,1.0,0.0,3.0,1.249
+T0577,Selvakumar K,NIT Trichy,Computer Applications,2021,2023.0,2.0,False,False,P J A Alphonse,1.0,0.0,1.0,1.897
+T0651,Shelas Sathyan,NIT Trichy,EEE,2019,2018.0,0.0,True,False,Manoranjan Sahoo,1.0,1.0,0.0,1.249
+T0653,Suman M,NIT Trichy,EEE,2025,2017.0,0.0,True,,M Venkata Kirthiga; S Arul Daniel; M Venkata Kirthiga; M Venkata Kirthiga,1.0,0.0,1.5,0.762
+T0434,Amalan Sigmund Kaushik,NIT Trichy,Architecture,2019,2022.0,3.0,False,False,G Subbaiyan; P Gopalakrishnan,1.0,0.0,0.5,1.802
+T0806,Harish Kruthiventi Ss,NIT Trichy,Mechanical,2019,2020.0,1.0,False,False,Kaushik P; Kaushik P,1.0,1.0,0.0,1.634
+T0457,Kamalika Bhattacharjee,NIT Trichy,CSE,2021,2024.0,3.0,False,False,K Srinivasan,0.0,0.0,2.0,2.085
+T0468,Rajeswari Sridhar,NIT Trichy,CSE,2019,2026.0,7.0,False,True,Sai Krishna Mothku,1.0,1.0,0.0,2.314
+T0695,R Periyasamy,NIT Trichy,ICE,2019,2022.0,3.0,False,False,G Thavasi Raja,0.0,0.0,2.0,1.802
+T0669,Ruben Sudhakar D,NIT Trichy,Energy & Environment,2019,2022.0,3.0,False,False,M Premalatha; V Mariappan,0.5,0.0,4.0,1.802
+T0614,Bukke Chandrababu Naik,NIT Trichy,ECE,2023,2023.0,0.0,False,,B Naresh Kumar Reddy,1.0,1.0,0.0,1.897
+T0704,Prince Gideon Kubendran Amos,NIT Trichy,MME,2021,,,False,True,,,,,1.642
+T0687,C Geetha,NIT Trichy,ICE,2019,2025.0,6.0,False,True,Ashok Kumar Nallathambi,0.0,1.0,0.0,2.193
+T0698,Shiraz Sohail,NIT Trichy,ICE,2020,2021.0,1.0,False,False,Ankur Singh Rana,0.0,1.0,1.0,1.642
+T0852,Prakash Kumar,NIT Trichy,Production,2021,,,False,True,,,,,1.642
+T0863,Vimal K E K,NIT Trichy,Production,2023,2016.0,0.0,True,,S Vinodh; S Vinodh,1.0,0.0,0.0,0.0
+T0515,Sunandan Sarkar,NIT Trichy,Chemistry,2019,2023.0,4.0,False,True,R Karvembu,1.0,0.0,4.0,1.897
+T0590,Vinay Raj,NIT Trichy,Computer Applications,2023,,,False,,,,,,1.897
+T0603,Parthasarathy R,NIT Trichy,ECE,2023,2025.0,2.0,False,,G Thavasi Raja,1.0,0.0,3.0,2.193
+T0650,Sateesh Kumar Kuncham,NIT Trichy,EEE,2023,2024.0,1.0,False,,N Kumaresan,1.0,0.0,5.0,2.085
+T0705,A Muthuchamy,NIT Trichy,MME,2021,,,False,True,,,,,1.642
+T0845,Matruprasad Rout,NIT Trichy,Production,2021,2023.0,2.0,False,False,Murugabalaji V; Murugabalaji V,1.0,1.0,0.0,1.897
+T0867,Satheeshkumar V,NIT Trichy,Production,2019,2020.0,1.0,False,False,J Jerald; J Jerald,1.0,0.0,1.0,1.634
+T0582,Balaji Banothu,NIT Trichy,Computer Applications,2021,2023.0,2.0,False,False,Gopalan N P; Gopalan N P,1.0,0.0,1.0,1.897
+T0662,Pinkymol Kp,NIT Trichy,EEE,2021,2025.0,4.0,False,True,M Sivanesan,0.0,1.0,0.0,2.193
+T0784,Kaushik P,NIT Trichy,Mechanical,2019,2020.0,1.0,False,False,Harish Kruthiventi Ss; Harish Kruthiventi Ss,1.0,1.0,0.0,1.634
+T0789,R Prakash,NIT Trichy,Mechanical,2021,,,False,True,,,,,1.642
+T0488,Kartikeya Shukla,NIT Trichy,Chemical,2021,2022.0,1.0,False,False,A Arunagiri; Muthukumar K,1.0,0.5,5.5,1.802
+T0513,Sarthak Mandal,NIT Trichy,Chemistry,2019,,,False,True,,,,,1.273
+T0526,Greegar George,NIT Trichy,Civil,2021,2024.0,3.0,False,False,Nisha Radhakrishnan; Anjuna,1.0,0.5,1.0,2.085
+T0585,Jitendra Kumar,NIT Trichy,Computer Applications,2021,2019.0,0.0,True,False,A Santhana Vijayan,0.0,0.0,1.0,1.273
+T0464,Sai Krishna Mothku,NIT Trichy,CSE,2021,2026.0,5.0,False,True,Rajeswari Sridhar,1.0,1.0,0.0,2.314
+T0609,Srinivasulu Jogi,NIT Trichy,ECE,2023,2024.0,1.0,False,,B Naresh Kumar Reddy; B Naresh Kumar Reddy,1.0,1.0,1.0,2.085
+T0646,S Kayalvizhi,NIT Trichy,EEE,2021,,,False,True,,,,,1.642
+T0858,T Jagadesh,NIT Trichy,Production,2021,2023.0,2.0,False,False,M Durai Selvam; M Durai Selvam; Kartikeya Shukla,0.667,0.333,4.667,1.897
+T0500,Virivinti Nagajyothi,NIT Trichy,Chemical,2019,,,False,True,,,,,1.273
+T0664,Vivek Mohan,NIT Trichy,EEE,2019,2020.0,1.0,False,False,Mini Shaji Thomas; Karthik Thirumala,0.5,0.5,1.5,1.634
+T0708,D Nagarajan,NIT Trichy,MME,2019,2020.0,1.0,False,False,Siva Prasad Katakam; Siva Prasad Katakam,1.0,0.0,9.0,1.634
+T0720,V Karthik,NIT Trichy,MME,2019,2024.0,5.0,False,True,Annapureddy Venkateshwarlu,0.0,1.0,0.0,2.085
+T0747,Abhijit Das,NIT Trichy,Mathematics,2021,2024.0,3.0,False,False,V Ravichandran,1.0,1.0,2.0,2.085
+T0765,Vamsinadh Thota,NIT Trichy,Mathematics,2019,2023.0,4.0,False,True,Jitraj Saha; Jitraj Saha,1.0,1.0,0.0,1.897
+T0805,Ashok Kumar Nallathambi,NIT Trichy,Mechanical,2019,2025.0,6.0,False,True,C Geetha,0.0,1.0,0.0,2.193
+T0869,Justus Panicker C T,NIT Trichy,Production,2019,2021.0,2.0,False,False,V Senthilkumar; V Senthilkumar,1.0,0.0,5.0,1.642
+T0467,Usha Kiruthika S,NIT Trichy,CSE,2023,,,False,,,,,,1.897
+T0536,Makendran C,NIT Trichy,Civil,2023,2024.0,1.0,False,,Manthiram Karthik R; Manthiram Karthik R,1.0,1.0,0.0,2.085
+T0598,Hemant Kumar,NIT Trichy,ECE,2020,2022.0,2.0,False,False,K Srinivasan,0.0,0.0,1.0,1.802
+T0610,Sudharsan P,NIT Trichy,ECE,2020,,,False,True,,,,,1.634
+T0666,Jaganathan Vm,NIT Trichy,Energy & Environment,2021,2022.0,1.0,False,False,M Premalatha; V Mariappan,0.5,0.0,4.0,1.802
+T0670,Damodhar Siva Krishna Rao K,NIT Trichy,Energy & Environment,2023,2017.0,0.0,True,,M Premalatha,1.0,0.0,0.0,0.762
+T0509,Jothi Lakshmi Nallasivam,NIT Trichy,Chemistry,2021,2025.0,4.0,False,True,V M Biju; V M Biju; V M Biju,1.0,0.0,2.0,2.193
+T0523,Darshana O,NIT Trichy,Civil,2021,,,False,True,,,,,1.642
+T0583,Bopche Ghanshyam Sitkura,NIT Trichy,Computer Applications,2021,2024.0,3.0,False,False,Michael Arock; Michael Arock,1.0,0.0,2.0,2.085
+T0612,Avik Hati,NIT Trichy,ECE,2023,2026.0,3.0,False,,P Palanisamy; R Malmathanraj,1.0,0.0,4.5,2.314
+T0517,Velmurugan Gunasekaran,NIT Trichy,Chemistry,2026,,,False,,,,,,2.314
+T0659,Manoranjan Sahoo,NIT Trichy,EEE,2019,2018.0,0.0,True,False,Shelas Sathyan,1.0,1.0,0.0,1.249
+T0665,Aditya Kumar,NIT Trichy,Energy & Environment,2023,2023.0,0.0,False,,Jose Thankachan,0.0,1.0,0.0,1.897
+T0844,Mallikarjuna,NIT Trichy,Production,2023,2024.0,1.0,False,,Vasu M,1.0,1.0,0.0,2.085
+T0748,Atul Kumar Verma,NIT Trichy,Mathematics,2021,,,False,True,,,,,1.642
+T0791,Raghu Ram Karthik Desu,NIT Trichy,Mechanical,2021,2024.0,3.0,False,False,Kaushik P,1.0,1.0,1.0,2.085
+T0833,Takhellambam Sonamani Singh,NIT Trichy,Physics,2021,,,False,True,,,,,1.642
+T0840,Dinesh S,NIT Trichy,Production,2019,2016.0,0.0,True,False,P Asokan; V Senthilkumar; V Senthilkumar,1.0,0.0,0.0,0.0
+T0862,Vasu M,NIT Trichy,Production,2021,2024.0,3.0,False,False,Mallikarjuna,1.0,1.0,0.0,2.085
+T0528,Jeevan Joseph,NIT Trichy,Civil,2019,,,False,True,,,,,1.273
+T0546,Raghavan Ramalingam,NIT Trichy,Civil,2019,2022.0,3.0,False,False,Jayabalan P,1.0,0.0,5.0,1.802
+T0579,Vishnu Priya R,NIT Trichy,Computer Applications,2023,,,False,,,,,,1.897
+T0601,Maheswaran P,NIT Trichy,ECE,2020,,,False,True,,,,,1.634
+T0613,Bibin Francis,NIT Trichy,ECE,2023,2024.0,1.0,False,,Varun P Gopi,1.0,1.0,3.0,2.085
+T0787,Nivish George,NIT Trichy,Mechanical,2021,2021.0,0.0,False,False,S P Sivapirakasam; Sreejith Mohan,1.0,0.5,4.0,1.642
+T0804,Vedharaj Sivasankaralingam,NIT Trichy,Mechanical,2019,2022.0,3.0,False,False,M Udayakumar,1.0,0.0,1.0,1.802
+T0864,Vineet Kumar Yadav,NIT Trichy,Production,2021,,,False,True,,,,,1.642
+T0466,Sitara K,NIT Trichy,CSE,2021,,,False,True,,,,,1.642
+T0484,Jyoti Sahu,NIT Trichy,Chemical,2021,2025.0,4.0,False,True,R Karvembu,0.0,0.0,5.0,2.193
+T0514,Somenath Garai,NIT Trichy,Chemistry,2019,2020.0,1.0,False,False,G Arthanareeswaran; S Velmathi,0.5,0.0,3.0,1.634
+T0654,Suryanarayana Gangolu,NIT Trichy,EEE,2025,2018.0,0.0,True,,P Raja,1.0,0.0,2.0,1.249
+T0655,V Vignesh Kumar,NIT Trichy,EEE,2025,2016.0,0.0,True,,K Sundareswaran; Sishaj P Simon; K Sundareswaran; Sishaj P Simon,1.0,0.0,0.0,0.0
+T0696,Rahul Kumar Sharma,NIT Trichy,ICE,2023,2023.0,0.0,False,,D Ezhilarasi; K Dhanalakshmi,1.0,0.0,0.0,1.897
+T0749,Balasubramani N,NIT Trichy,Mathematics,2023,,,False,,,,,,1.897
+T0751,I Jeyaraman,NIT Trichy,Mathematics,2019,,,False,True,,,,,1.273
+T0846,N S Balaji,NIT Trichy,Production,2019,2019.0,0.0,False,False,Simson D,1.0,1.0,0.0,1.273
+T0871,Murugabalaji V,NIT Trichy,Production,2019,2023.0,4.0,False,True,Matruprasad Rout; Matruprasad Rout,1.0,1.0,0.0,1.897
+T0485,K Sankar,NIT Trichy,Chemical,2021,2025.0,4.0,False,True,T K Radhakrishnan; N Sivakumaran; P Kalaichelvi; T K Radhakrishnan; N Sivakumaran,0.6,0.0,7.6,2.193
+T0494,Nandlal Pingua,NIT Trichy,Chemical,2025,,,False,,,,,,2.193
+T0586,Saroja S,NIT Trichy,Computer Applications,2023,,,False,,,,,,1.897
+T0633,Jose Thankachan,NIT Trichy,EEE,2023,2023.0,0.0,False,,Aditya Kumar,0.0,1.0,0.0,1.897
+T0826,Somnath Mukhopadhyay,NIT Trichy,Physics,2021,,,False,True,,,,,1.642
+T0449,Aghila G,NIT Trichy,CSE,2023,,,False,,,,,,1.897
+T0496,Rupam Sinha,NIT Trichy,Chemical,2025,,,False,,,,,,2.193
+T0506,Baby Viswambharan,NIT Trichy,Chemistry,2021,,,False,True,,,,,1.642
+T0538,Mashudha Sulthana U,NIT Trichy,Civil,2021,,,False,True,,,,,1.642
+T0540,Prabha Mohandoss,NIT Trichy,Civil,2021,,,False,True,,,,,1.642
+T0712,Nimu Chand Reger,NIT Trichy,MME,2020,,,False,True,,,,,1.634
+T0779,G Rajasekaran,NIT Trichy,Mechanical,2021,2025.0,4.0,False,True,Harish Kruthiventi Ss,1.0,1.0,1.0,2.193
+T0432,Keerti Manisha,NIT Trichy,Architecture,2025,,,False,,,,,,2.193
+T0458,Karthick S,NIT Trichy,CSE,2026,2019.0,0.0,True,,P Palanisamy,0.0,0.0,5.0,1.273
+T0562,Anjuna,NIT Trichy,Civil,2019,2024.0,5.0,False,True,Greegar George; Nisha Radhakrishnan,1.0,0.5,1.0,2.085
+T0631,Dipanshu Naware,NIT Trichy,EEE,2025,,,False,,,,,,2.193
+T0709,Illa Mani Pujitha,NIT Trichy,MME,2023,,,False,,,,,,1.897
+T0750,Gautam Singh,NIT Trichy,Mathematics,2023,,,False,,,,,,1.897
+T0756,N Prakash,NIT Trichy,Mathematics,2019,,,False,True,,,,,1.273
+T0763,Somya,NIT Trichy,Mathematics,2026,2022.0,0.0,True,,V Ravichandran; V Ravichandran,1.0,1.0,0.0,1.802
+T0452,C Oswald,NIT Trichy,CSE,2023,,,False,,,,,,1.897
+T0453,Chandra Priya J,NIT Trichy,CSE,2026,,,False,,,,,,2.314
+T0460,R Bala Krishnan,NIT Trichy,CSE,2021,,,False,True,,,,,1.642
+T0521,Chandaluri Vinaykumar,NIT Trichy,Civil,2023,,,False,,,,,,1.897
+T0532,Laiju A R,NIT Trichy,Civil,2023,2022.0,0.0,True,,R Gandhimathi,1.0,0.0,3.0,1.802
+T0537,Manthiram Karthik R,NIT Trichy,Civil,2026,2024.0,0.0,True,,Makendran C; Makendran C,1.0,1.0,0.0,2.085
+T0554,Vanama Raghava Kumar,NIT Trichy,Civil,2023,,,False,,,,,,1.897
+T0587,Sindhia Lingaswamy,NIT Trichy,Computer Applications,2023,,,False,,,,,,1.897
+T0617,Murali Krishna Rajendran,NIT Trichy,ECE,2023,,,False,,,,,,1.897
+T0644,Rakesh Kumar Panda,NIT Trichy,EEE,2025,2025.0,0.0,False,,Suryanarayana Gangolu; Suman M; Suryanarayana Gangolu; N Kumaresan,1.0,0.75,3.5,2.193
+T0661,Naveenyalla,NIT Trichy,EEE,2021,,,False,True,,,,,1.642
+T0828,Venkata Suryanarayana Mummidi,NIT Trichy,Physics,2021,,,False,True,,,,,1.642
+T0857,Santosh Kumar Mishra,NIT Trichy,Production,2021,2024.0,3.0,False,False,Kartikeya Shukla,0.0,1.0,5.0,2.085
+T0459,Madhukrishna Priyadarsini,NIT Trichy,CSE,2023,,,False,,,,,,1.897
+T0469,Jakkepalli Pavan Kumar,NIT Trichy,CSE,2023,,,False,,,,,,1.897
+T0505,Arivazhagan C,NIT Trichy,Chemistry,2023,,,False,,,,,,1.897
+T0510,Projesh Kumar Roy,NIT Trichy,Chemistry,2025,,,False,,,,,,2.193
+T0534,Lekshmi Mohan V,NIT Trichy,Civil,2025,,,False,,,,,,2.193
+T0551,Santhosh L,NIT Trichy,Civil,2025,,,False,,,,,,2.193
+T0608,Sovanjyoti Giri,NIT Trichy,ECE,2025,,,False,,,,,,2.193
+T0619,Padala Surya Teja Naga Srinivas,NIT Trichy,ECE,2026,,,False,,,,,,2.314
+T0657,Ashokkumar,NIT Trichy,EEE,2021,,,False,True,,,,,1.642
+T0700,Ram Shankar Rajadurai,NIT Trichy,ICE,2023,2026.0,3.0,False,,N Sivakumaran,1.0,0.0,11.0,2.314
+T0706,Anand S,NIT Trichy,MME,2023,2021.0,0.0,True,,S Suresh,0.0,0.0,10.0,1.642
+T0755,M Sivanesan,NIT Trichy,Mathematics,2021,2025.0,4.0,False,True,Pinkymol Kp,0.0,1.0,0.0,2.193
+T0428,S Monika,NIT Trichy,Architecture,2026,2025.0,0.0,True,,A Meenatchi Sundaram,1.0,0.0,1.0,2.193
+T0437,K Bhagyasri,NIT Trichy,Architecture,2021,,,False,True,,,,,1.642
+T0441,Saurabh Kumar,NIT Trichy,Architecture,2021,2023.0,2.0,False,False,A Meenatchi Sundaram,1.0,0.0,0.0,1.897
+T0454,Chandramani Chaudhary,NIT Trichy,CSE,2021,,,False,True,,,,,1.642
+T0470,Priyanka Panigrahi,NIT Trichy,CSE,2026,,,False,,,,,,2.314
+T0552,Sevugan Rajkannu J,NIT Trichy,Civil,2023,,,False,,,,,,1.897
+T0568,Ashwinth Janarthanan,NIT Trichy,Computer Applications,2025,,,False,,,,,,2.193
+T0569,Aswani Devi Aguru,NIT Trichy,Computer Applications,2026,,,False,,,,,,2.314
+T0620,R R Manikandan,NIT Trichy,ECE,2025,,,False,,,,,,2.193
+T0713,P Anbarasi,NIT Trichy,MME,2025,,,False,,,,,,2.193
+T0723,Puppala Laxman Mani Kanta,NIT Trichy,MME,2025,2017.0,0.0,True,,Siva Prasad Katakam,1.0,0.0,3.0,0.762
+T0726,Vinothkumar Govindaraj,NIT Trichy,MME,2023,,,False,,,,,,1.897
+T0757,N Shivaranjani,NIT Trichy,Mathematics,2021,,,False,True,,,,,1.642
+T0777,Bishweshwar Babu,NIT Trichy,Mechanical,2021,,,False,True,,,,,1.642
+T0778,Dudul Das,NIT Trichy,Mechanical,2026,,,False,,,,,,2.314
+T0797,Saurav Kumar Dutta,NIT Trichy,Mechanical,2025,,,False,,,,,,2.193
+T0836,Alwin Varghese,NIT Trichy,Production,2025,,,False,,,,,,2.193
+T0851,Pintu Kumar,NIT Trichy,Production,2023,,,False,,,,,,1.897
+T0872,Rajesh R,NIT Trichy,Production,2019,2026.0,7.0,False,True,R Jeyapaul,1.0,0.0,3.0,2.314
+T0873,S John Vincent Jesuraj,NIT Trichy,Production,2019,2024.0,5.0,False,True,K Panneerselvam,1.0,0.0,3.0,2.085
+T0874,Simson D,NIT Trichy,Production,2019,2019.0,0.0,False,False,N S Balaji,1.0,1.0,0.0,1.273

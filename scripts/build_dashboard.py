@@ -790,6 +790,70 @@ def extra_tables():
     return t
 
 
+DY = os.path.join(AN, "dynamics")
+
+
+def dynamics_tables():
+    """Network dynamics (scripts/dynamics.py -> data/analysis/dynamics/): spreading, triangles, super-ties,
+    newcomers and brokers."""
+    if not os.path.exists(os.path.join(DY, "spread_threshold.csv")):
+        return {}
+    t = {}
+    t["spread_threshold"] = records(csv(DY, "spread_threshold.csv"),
+                                    ["network", "faculty", "links", "mean_degree", "lambda_1", "threshold_1_over_lambda",
+                                     "rewired_lambda_1", "ipr", "rewired_ipr", "ipr_if_fully_spread",
+                                     "top_eigenvector_faculty"], 4)
+    t["spread_sims"] = records(csv(DY, "spread_simulations.csv"),
+                               ["network", "beta", "seeds", "mean_reach_pct", "p90_reach_pct"], 2)
+    t["triangles"] = jload(DY, "triangles_summary.json")
+    t["triangles_mix"] = records(csv(DY, "triangles_by_mix.csv"),
+                                 ["mix", "born as a team", "built pair by pair, sealed later",
+                                  "pairwise only (never a three-person paper)", "triangles"], 0)
+    t["superties"] = jload(DY, "superties_summary.json")
+    sp = csv(DY, "superties_pairs.csv").head(15).copy()
+    sp["same_department"] = np.where(sp.same_department, "yes", "no")
+    t["superties_top"] = records(sp, ["faculty_a", "faculty_b", "joint_papers", "first_year", "last_year",
+                                      "same_department", "institutes"], 0)
+    t["newcomers"] = jload(DY, "newcomers_summary.json")
+    t["newcomers_inst"] = records(csv(DY, "newcomers_by_institute.csv"),
+                                  ["institution", "newcomers", "with_internal_link_by_2026_pct",
+                                   "median_years_to_first_link", "isolated_after_3_years_pct"], 1)
+    nd = csv(DY, "newcomers.csv")
+    yt = nd.years_to_first_link.dropna().clip(upper=6).astype(int).value_counts().sort_index()
+    t["newcomers_years"] = [{"years": ("6+" if k == 6 else str(k)), "newcomers": int(v)} for k, v in yt.items()]
+    t["brokers"] = jload(DY, "brokers_summary.json")
+    b = csv(DY, "brokers.csv")
+    b = b[b.degree >= 3].nsmallest(15, "constraint")
+    t["brokers_top"] = records(b, ["author", "institution", "department", "degree", "degree_rank", "constraint",
+                                   "effective_size", "coauthor_departments", "other_department_coauthors_pct"], 3)
+    if os.path.exists(os.path.join(DY, "sync_summary.csv")):
+        t["sync"] = records(csv(DY, "sync_summary.csv"), ["network", "faculty_in_largest_group", "links", "lambda_1",
+                            "Kc_theory", "lambda_2", "eigenratio", "rewired_lambda_2", "rewired_eigenratio",
+                            "K_half_real", "K_half_rewired", "r_at_K1_real", "r_at_K1_rewired"], 4)
+        t["sync_curves"] = records(csv(DY, "sync_curves.csv"), ["network", "graph", "K", "r_mean", "r_sd"], 3)
+        t["sync_locked"] = records(csv(DY, "sync_locked.csv"), ["network", "K", "degree_class", "faculty", "locked_pct"], 1)
+    if os.path.exists(os.path.join(DY, "ties_summary.json")):
+        t["ties"] = jload(DY, "ties_summary.json")
+        t["ties_experience"] = records(csv(DY, "ties_renewal_by_experience.csv"),
+                                       ["years_together", "renewed_within_2_pct", "cases"], 1)
+        t["ties_gaps"] = records(csv(DY, "ties_gaps.csv"), ["gap_years", "gaps"], 0)
+        t["ties_groups"] = records(csv(DY, "ties_renewal_by_group.csv"), ["factor", "group", "pairs", "renewed_within_3_pct"], 1)
+    if os.path.exists(os.path.join(DY, "groups_summary.json")):
+        t["groups"] = jload(DY, "groups_summary.json")
+        t["groups_windows"] = records(csv(DY, "groups_per_window.csv"), ["window", "groups", "faculty_in_groups", "largest",
+                                      "mean_size", "main_unit_share_pct", "multi_department_groups_pct", "cross_nit_groups",
+                                      "births", "deaths", "merges", "splits", "continued"], 1)
+        t["groups_nodes"] = records(csv(DY, "groups_by_window.csv"), ["window_index", "group_index", "dynamic_group", "size",
+                                    "main_unit", "main_unit_share_pct", "cross_nit", "key_members"], 0)
+        t["groups_links"] = records(csv(DY, "groups_links.csv"), ["from_window", "from_group", "to_window", "to_group",
+                                    "shared_faculty"], 0)
+        lt = csv(DY, "groups_lifetimes.csv")
+        t["groups_long"] = records(lt[lt.lifetime_windows >= 5].copy().assign(drifted=lambda d: np.where(d.drifted, "yes", "no")),
+                                   ["first_window", "last_window", "lifetime_windows", "size_first", "size_last",
+                                    "stationarity", "main_unit_first", "main_unit_last", "drifted", "key_members_last"], 2)
+    return t
+
+
 def south_tables():
     """The six South Indian NITs (scripts/south_nits.py -> data/analysis/south/south_summary.json), when built."""
     path = os.path.join(AN, "south", "south_summary.json")
@@ -823,7 +887,7 @@ def main():
     data = {"papers": papers(), "faculty": faculty(),
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
-            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(), "x": extra_tables(), "south": south_tables(),
+            "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(), "x": extra_tables(), "south": south_tables(), "dyn": dynamics_tables(),
             "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
                      "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

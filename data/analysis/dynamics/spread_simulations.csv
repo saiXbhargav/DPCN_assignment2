@@ -1,0 +1,46 @@
+network,beta,seeds,mean_reach_pct,p90_reach_pct,seed_names
+NIT Trichy,0.05,top hubs (degree),2.303,3.081,S Suresh; N Sivakumaran; N Samsudeen; Siva Prasad Katakam; P Palanisamy
+NIT Trichy,0.05,top brokers (betweenness),1.947,2.521,N Sivakumaran; B Janet; S Deivalakshmi; K R Balasubramanian; P Palanisamy
+NIT Trichy,0.05,random 5,1.613,1.961,
+NIT Trichy,0.1,top hubs (degree),3.603,5.042,S Suresh; N Sivakumaran; N Samsudeen; Siva Prasad Katakam; P Palanisamy
+NIT Trichy,0.1,top brokers (betweenness),2.804,4.202,N Sivakumaran; B Janet; S Deivalakshmi; K R Balasubramanian; P Palanisamy
+NIT Trichy,0.1,random 5,1.932,2.801,
+NIT Trichy,0.2,top hubs (degree),8.6,12.325,S Suresh; N Sivakumaran; N Samsudeen; Siva Prasad Katakam; P Palanisamy
+NIT Trichy,0.2,top brokers (betweenness),6.285,9.804,N Sivakumaran; B Janet; S Deivalakshmi; K R Balasubramanian; P Palanisamy
+NIT Trichy,0.2,random 5,3.862,7.563,
+NIT Trichy,0.3,top hubs (degree),17.96,23.277,S Suresh; N Sivakumaran; N Samsudeen; Siva Prasad Katakam; P Palanisamy
+NIT Trichy,0.3,top brokers (betweenness),15.569,22.969,N Sivakumaran; B Janet; S Deivalakshmi; K R Balasubramanian; P Palanisamy
+NIT Trichy,0.3,random 5,10.127,21.569,
+NIT Trichy,0.5,top hubs (degree),39.296,43.978,S Suresh; N Sivakumaran; N Samsudeen; Siva Prasad Katakam; P Palanisamy
+NIT Trichy,0.5,top brokers (betweenness),39.748,44.006,N Sivakumaran; B Janet; S Deivalakshmi; K R Balasubramanian; P Palanisamy
+NIT Trichy,0.5,random 5,36.0,45.658,
+NIT Surathkal,0.05,top hubs (degree),2.994,4.033,Ramesh M R; Udaya Bhat K; Gangadharan K V; Shashi Bhushan Arya; Mohammad Rizwanur Rahman
+NIT Surathkal,0.05,top brokers (betweenness),2.872,4.0,Gangadharan K V; Pruthviraj U; Mohammad Rizwanur Rahman; A Venkata Narasimhadhan; Udaya Bhat K
+NIT Surathkal,0.05,random 5,2.01,2.667,
+NIT Surathkal,0.1,top hubs (degree),5.094,7.333,Ramesh M R; Udaya Bhat K; Gangadharan K V; Shashi Bhushan Arya; Mohammad Rizwanur Rahman
+NIT Surathkal,0.1,top brokers (betweenness),5.066,7.333,Gangadharan K V; Pruthviraj U; Mohammad Rizwanur Rahman; A Venkata Narasimhadhan; Udaya Bhat K
+NIT Surathkal,0.1,random 5,2.838,4.667,
+NIT Surathkal,0.2,top hubs (degree),13.622,18.033,Ramesh M R; Udaya Bhat K; Gangadharan K V; Shashi Bhushan Arya; Mohammad Rizwanur Rahman
+NIT Surathkal,0.2,top brokers (betweenness),14.899,20.667,Gangadharan K V; Pruthviraj U; Mohammad Rizwanur Rahman; A Venkata Narasimhadhan; Udaya Bhat K
+NIT Surathkal,0.2,random 5,8.387,17.333,
+NIT Surathkal,0.3,top hubs (degree),28.895,35.667,Ramesh M R; Udaya Bhat K; Gangadharan K V; Shashi Bhushan Arya; Mohammad Rizwanur Rahman
+NIT Surathkal,0.3,top brokers (betweenness),30.536,37.0,Gangadharan K V; Pruthviraj U; Mohammad Rizwanur Rahman; A Venkata Narasimhadhan; Udaya Bhat K
+NIT Surathkal,0.3,random 5,24.843,37.333,
+NIT Surathkal,0.5,top hubs (degree),56.903,62.0,Ramesh M R; Udaya Bhat K; Gangadharan K V; Shashi Bhushan Arya; Mohammad Rizwanur Rahman
+NIT Surathkal,0.5,top brokers (betweenness),56.878,61.333,Gangadharan K V; Pruthviraj U; Mohammad Rizwanur Rahman; A Venkata Narasimhadhan; Udaya Bhat K
+NIT Surathkal,0.5,random 5,57.297,62.333,
+Both NITs,0.05,top hubs (degree),1.431,1.979,Ramesh M R; Udaya Bhat K; Gangadharan K V; S Suresh; Shashi Bhushan Arya
+Both NITs,0.05,top brokers (betweenness),1.443,1.979,Ramesh M R; P Palanisamy; Gangadharan K V; N Sivakumaran; Jeny Rajan
+Both NITs,0.05,random 5,0.897,1.065,
+Both NITs,0.1,top hubs (degree),2.69,3.805,Ramesh M R; Udaya Bhat K; Gangadharan K V; S Suresh; Shashi Bhushan Arya
+Both NITs,0.1,top brokers (betweenness),2.646,3.957,Ramesh M R; P Palanisamy; Gangadharan K V; N Sivakumaran; Jeny Rajan
+Both NITs,0.1,random 5,1.166,1.674,
+Both NITs,0.2,top hubs (degree),8.402,11.72,Ramesh M R; Udaya Bhat K; Gangadharan K V; S Suresh; Shashi Bhushan Arya
+Both NITs,0.2,top brokers (betweenness),9.037,12.785,Ramesh M R; P Palanisamy; Gangadharan K V; N Sivakumaran; Jeny Rajan
+Both NITs,0.2,random 5,3.588,8.371,
+Both NITs,0.3,top hubs (degree),21.875,27.565,Ramesh M R; Udaya Bhat K; Gangadharan K V; S Suresh; Shashi Bhushan Arya
+Both NITs,0.3,top brokers (betweenness),23.066,28.615,Ramesh M R; P Palanisamy; Gangadharan K V; N Sivakumaran; Jeny Rajan
+Both NITs,0.3,random 5,15.301,26.788,
+Both NITs,0.5,top hubs (degree),48.997,52.359,Ramesh M R; Udaya Bhat K; Gangadharan K V; S Suresh; Shashi Bhushan Arya
+Both NITs,0.5,top brokers (betweenness),49.082,52.055,Ramesh M R; P Palanisamy; Gangadharan K V; N Sivakumaran; Jeny Rajan
+Both NITs,0.5,random 5,48.449,52.664,

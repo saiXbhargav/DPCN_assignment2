@@ -1,0 +1,14 @@
+{
+  "newcomers": 257,
+  "newcomers_with_internal_link_by_2026": 163,
+  "with_internal_link_pct": 63.42412451361868,
+  "linked_before_first_listed_pct": 17.898832684824903,
+  "newcomers_with_3_full_years": 140,
+  "isolated_after_3_years_pct": 45.714285714285715,
+  "median_years_to_first_link": 1.0,
+  "first_partner_same_department_pct": 76.0765410458662,
+  "first_partner_is_newcomer_pct": 36.985100788781764,
+  "first_partner_degree_vs_colleagues_ratio": 0.7734374999999999,
+  "first_partner_degree_mean": 2.033844580777096,
+  "colleagues_degree_mean": 1.8340809873373356
+}
