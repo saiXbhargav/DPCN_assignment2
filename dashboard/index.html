@@ -685,18 +685,18 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
     <div class="panel s12" id="p2-depth-links"><h3>Which new links would help the faculty network most?</h3><p class="note">A what-if calculation, following Barnes et al. (2026). Network efficiency is the average of 1 / distance over all pairs of faculty. We add, one at a time, the 10 new links between faculty of the same department that raise it most, and compare with 10 random links. It shows where a link would help the network, not who wants to work together. Both NITs.</p>
       <div class="facts" id="p2-link-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><h3 style="font-size:14px">Same NIT, same department</h3><div class="tablewrap"><table id="t-p2-links-in"></table></div></div><div class="s6"><h3 style="font-size:14px">Across the two NITs, same department</h3><div class="tablewrap"><table id="t-p2-links-x"></table></div></div></div></div>
-    <div class="s12 grp-h" data-chip="Professor's follow-ups"><h2>Follow-ups from the professor's meeting (17 Nov)</h2></div>
-    <div class="panel s12" id="p2-prof-degree"><h3>Average co-authors over the years, and what 1.66 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
+    <div class="s12 grp-h" data-chip="Growth and other NITs"><h2>Network growth, link prediction and other NITs</h2></div>
+    <div class="panel s12" id="p2-grow-degree"><h3>Average co-authors over the years, and what 1.66 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
       <div class="facts" id="pf-degree-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><div class="chart"><canvas id="ch-pf-degree" aria-label="Average co-authors per year"></canvas></div></div><div class="s6"><div class="chart"><canvas id="ch-pf-degree4" aria-label="Average co-authors at four NITs"></canvas></div></div></div></div>
-    <div class="panel s12" id="p2-prof-predict"><h3>Predict and check: which faculty pairs will write their first paper together?</h3><p class="note">The model learns from 2016–2022 and predicts 2023. For 2024, the real 2023 network is given as input (rolling); the same for 2025. It is compared with a model that only ever sees the 2022 network (fixed). Each year about 1 in 2,000 possible pairs starts working together, so the useful check is how high the real new pairs rank: a random guess puts 5% of them in its top 5% of pairs.</p>
+    <div class="panel s12" id="p2-grow-predict"><h3>Predict and check: which faculty pairs will write their first paper together?</h3><p class="note">The model learns from 2016–2022 and predicts 2023. For 2024, the real 2023 network is given as input (rolling); the same for 2025. It is compared with a model that only ever sees the 2022 network (fixed). Each year about 1 in 2,000 possible pairs starts working together, so the useful check is how high the real new pairs rank: a random guess puts 5% of them in its top 5% of pairs.</p>
       <div class="facts" id="pf-pred-facts" style="margin-bottom:12px"></div>
       <div class="tablewrap"><table id="t-pf-pred"></table></div>
       <h3 style="font-size:14px;margin-top:14px" id="pf-check-title"></h3><div class="tablewrap"><table id="t-pf-check"></table></div></div>
-    <div class="panel s12" id="p2-prof-four"><h3>Four NITs side by side</h3><p class="note">NIT Trichy and NIT Surathkal next to NIT Warangal and NIT Calicut. Papers: OpenAlex, the same filter and download day (17 Nov 2026) for all four, 2016–2025, any author from that NIT (students' papers included). Faculty numbers: each NIT's NIRF 2025 data file. Faculty-only network: NIRF faculty matched by name to OpenAlex authors.</p>
+    <div class="panel s12" id="p2-grow-four"><h3>Four NITs side by side</h3><p class="note">NIT Trichy and NIT Surathkal next to NIT Warangal and NIT Calicut. Papers: OpenAlex, the same filter and download day (17 Nov 2026) for all four, 2016–2025, any author from that NIT (students' papers included). Faculty numbers: each NIT's NIRF 2025 data file. Faculty-only network: NIRF faculty matched by name to OpenAlex authors.</p>
       <div class="facts" id="pf-four-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s7"><div class="tablewrap"><table id="t-pf-four"></table></div></div><div class="s5"><div class="chart"><canvas id="ch-pf-four" aria-label="Papers per year at four NITs"></canvas></div></div></div></div>
-    <div class="panel s12" id="p2-prof-join"><h3>When did today's faculty join?</h3><p class="note">Joining dates of everyone listed as currently working in each NIT's NIRF 2025 data file. People who joined and then left or retired before about 2022 are not listed, so early hiring waves can look smaller than they were. Output: papers a year from the later of 2016 and the joining year, for faculty matched by name to our roster.</p>
+    <div class="panel s12" id="p2-grow-join"><h3>When did today's faculty join?</h3><p class="note">Joining dates of everyone listed as currently working in each NIT's NIRF 2025 data file. People who joined and then left or retired before about 2022 are not listed, so early hiring waves can look smaller than they were. Output: papers a year from the later of 2016 and the joining year, for faculty matched by name to our roster.</p>
       <div class="facts" id="pf-join-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s7"><div class="chart"><canvas id="ch-pf-join" aria-label="Joining year of current faculty"></canvas></div></div><div class="s5"><div class="tablewrap"><table id="t-pf-cohort"></table></div></div></div></div>
   </div>
@@ -947,7 +947,7 @@ function homeTab() {
       const yrs = [...new Set(P.map((r) => r.target_year))].sort(), last = yrs[yrs.length - 1], pr = (y, m) => P.find((r) => r.target_year === y && r.method === m) || {};
       add("Link prediction", `${fmt(pr(last, ROLL).all_real_links_in_top_5pct)}% <small>vs</small> ${fmt(pr(last, FIX).all_real_links_in_top_5pct)}%`, "Updating the network every year predicts new collaborations better",
         `Real new faculty pairs of ${last} found in the model's top 5% of pairs: fed the latest network every year vs trained once on 2022. ${fmt(pr(last, FIX).new_links_out_of_reach_pct)}% of ${last}'s new links involve people the 2022 model never saw.`,
-        "phase2/p2-prof-predict", "Predict and check",
+        "phase2/p2-grow-predict", "Predict and check",
         (id) => miniChart(id, "bar", yrs, [{ label: "rolling", data: yrs.map((y) => pr(y, ROLL).all_real_links_in_top_5pct), backgroundColor: css("--c3"), borderRadius: 3 },
           { label: "fixed 2022", data: yrs.map((y) => pr(y, FIX).all_real_links_in_top_5pct), backgroundColor: css("--c8"), borderRadius: 3 }],
           { legend: true, min: 0, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmt(c.raw)}% in the top 5%` } } }));
@@ -976,7 +976,7 @@ function homeTab() {
       const PEER = { "NIT Warangal": "#2a9d8f", "NIT Calicut": "#9b5de5" }, r4 = [...S4].sort((a, b) => b.papers_2024_per_regular_faculty - a.papers_2024_per_regular_faculty);
       add("Four NITs", r4.map((r) => fmt(r.papers_2024_per_regular_faculty, 1)).join(" · "), "More Assistant Professors, fewer papers per head",
         `Papers in 2024 per regular faculty member at ${r4.map((r) => shortInst(r.institution)).join(", ")}. The order is exactly the reverse of the share of Assistant Professors (${r4.map((r) => fmt(r.assistant_professor_share_pct) + "%").join(", ")}).`,
-        "phase2/p2-prof-four", "Four NITs side by side",
+        "phase2/p2-grow-four", "Four NITs side by side",
         (id) => miniChart(id, "bar", r4.map((r) => shortInst(r.institution)), [{ label: "papers per faculty member, 2024", data: r4.map((r) => r.papers_2024_per_regular_faculty),
           backgroundColor: r4.map((r) => PEER[r.institution] || instColor(r.institution)), borderRadius: 3 }], { min: 0, tooltip: { callbacks: { label: (c) => `${fmt(c.raw, 2)} papers per faculty member` } } }));
     }
@@ -984,7 +984,7 @@ function homeTab() {
     if (SO && SO.table) {
       const ft = SO.founding_test["hired_2021_2025_pct vs a_connected_2016-2026"] || {}, rows = [...SO.table].sort((a, b) => a.hired_2021_2025_pct - b.hired_2021_2025_pct);
       add("Six South Indian NITs", `ρ = ${fmt(ft.spearman_rho, 2)}`, "The more a NIT hired recently, the slower its network densifies",
-        `Across Trichy, Surathkal, Warangal, Calicut, Puducherry and Andhra Pradesh, the share of faculty hired in 2021–25 runs exactly opposite to the densification exponent (exact p = ${fmt(ft.p_exact != null ? ft.p_exact : ft.p, 3)}). This is the professor's founding-years idea.`,
+        `Across Trichy, Surathkal, Warangal, Calicut, Puducherry and Andhra Pradesh, the share of faculty hired in 2021–25 runs exactly opposite to the densification exponent (exact p = ${fmt(ft.p_exact != null ? ft.p_exact : ft.p, 3)}).`,
         "south/so-found", "South Indian NITs",
         (id) => miniChart(id, "bar", rows.map((r) => r.institution.replace("NIT ", "").replace("Andhra Pradesh", "AP")), [{ label: "exponent a", data: rows.map((r) => r["a_connected_2016-2026"]),
           backgroundColor: rows.map((r) => nitColor(r.institution)), borderRadius: 3 }], { min: 0, tooltip: { callbacks: { label: (c) => `a = ${fa(c.raw)} (hired ${fmt(rows[c.dataIndex].hired_2021_2025_pct)}% in 2021–25)` } } }));
@@ -1013,7 +1013,7 @@ function homeTab() {
       ["Networks", "connections", "Indian connections", `${fmt(partners)} Indian partner institutes on a map; who cites us`],
       ["Comparisons", "analysis", "Who's better?", "Branch by branch, with statistical tests"],
       ["Comparisons", "south", "South Indian NITs", "Six NITs: output, hiring and how their faculty networks densify"],
-      ["Deep dives", "phase2", "Phase II", "The professor's list and the meeting follow-ups"],
+      ["Deep dives", "phase2", "Phase II", "More analyses: who cites us, fair comparisons, network growth"],
       ["Deep dives", "questions", "Research questions", "Thirteen questions, Q15–Q28"],
       ["About", "methods", "How we built it", "From the faculty pages to the networks"],
     ];
@@ -1748,7 +1748,7 @@ function phase2Tab() {
   try { phase2Prof(); } catch (err) { console.error(err); }
 }
 function phase2Prof() {
-  // follow-ups from the professor's meeting (phase2_prof.py): average degree and the exponent 1.66, rolling link
+  // network growth, link prediction and other NITs (phase2_prof.py): average degree and the exponent 1.66, rolling link
   // prediction, four NITs side by side, and when today's faculty joined (NIRF 2025)
   const F = D.pf || {};
   if (!F.growth) return;
@@ -1842,7 +1842,7 @@ function phase2Prof() {
   }
 }
 function phase2Depth() {
-  // deeper questions from the professor's papers (phase2_papers.py): a like-with-like comparison, hiring vs leaving,
+  // deeper questions (phase2_papers.py): a like-with-like comparison, hiring vs leaving,
   // PageRank without self-citations, and which new links would help the faculty network most
   const PP = D.pp || {};
   if (!PP.r || !PP.d || !PP.s || !PP.c) return;
