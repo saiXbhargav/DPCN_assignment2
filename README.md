@@ -810,6 +810,7 @@ How things move through the faculty co-authorship network (faculty-to-faculty li
 - **Do collaborations last?** 57% of faculty pairs write together again within 3 years, but only 27% of the pairs that started in 2016–2018 were still active in 2023–2025. Renewal rises with time together (51% after one year, 81% after 5+), is more likely for same-department pairs (odds ×2.6) and pairs whose first papers had FWCI ≥ 1 (×2.4), and pairs write steadily rather than in bursts (yearly data).
 - **Research groups over time** (Louvain in 3-year sliding windows, matched by Jaccard ≥ 0.3): 112 groups, 36% living one window, 22 lasting 5+ windows and 4 all nine; 9 of the long-lived ones changed their main department. Groups did not become more mixed (about 74% from the main department throughout). Large groups that keep a stable core live longer (ρ = 0.45, p = 0.006), unlike Palla et al. (2007).
 - **Key findings:** every card on the dashboard's Key findings tab now ends with a recommendation and who should act on it.
+- **How the thresholds are calculated:** [dashboard/docs/threshold_calculations.pdf](dashboard/docs/threshold_calculations.pdf) (built by `scripts/threshold_note.py`, linked from the Network dynamics tab) works through the SIR thresholds (mean-field, 1/λ₁ and the non-backtracking 1/λ_NB, which is the right one for SIR: 0.211 Trichy, 0.156 Surathkal) and the Kuramoto onset K_c = K₀/λ₁ with K₀ = 2/(πg(0)) = 1.596, and checks each against the simulations.
 
 ---
 
@@ -846,6 +847,7 @@ DPCN_assignment2/
 │   ├── check_friends.py     ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
 │   ├── south_nits.py        ← the six South Indian NITs and the founding-years test
 │   ├── dynamics.py          ← network dynamics: SIR spreading and epidemic threshold, Kuramoto synchronisation, team triangles, super-ties, tie renewal and burstiness, newcomers, research groups over time, Burt brokers → data/analysis/dynamics/
+│   ├── threshold_note.py    ← the PDF dashboard/docs/threshold_calculations.pdf: spreading and Kuramoto thresholds worked out (needs Chrome or Edge)
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -912,6 +914,7 @@ python phase2_prof.py               # data/analysis/prof/ (the nirf and nitfacul
 python check_friends.py             # needs the friends' zips unpacked in data/raw/friends/ (not in the repo)
 python south_nits.py                # data/analysis/south/
 python dynamics.py                  # data/analysis/dynamics/
+python threshold_note.py            # dashboard/docs/threshold_calculations.pdf (uses dynamics.py's outputs)
 python build_dashboard.py           # dashboard/index.html
 ```
 

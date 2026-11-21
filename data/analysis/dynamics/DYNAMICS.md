@@ -20,7 +20,7 @@ The team agreed on these choices:
 | 7. Do collaborations last? | `ties_pairs.csv`, `ties_renewal_by_experience.csv`, `ties_renewal_by_group.csv`, `ties_gaps.csv`, `ties_summary.json`, `ties.png` |
 | 8. Research groups over time | `groups_by_window.csv`, `groups_per_window.csv`, `groups_links.csv`, `groups_lifetimes.csv`, `groups_summary.json`, `groups.png` |
 
-The dashboard shows all eight in the **Network dynamics** tab.
+The dashboard shows all eight in the **Network dynamics** tab. The step-by-step calculation of the spreading and Kuramoto thresholds, with every formula and number, is in [threshold_calculations.pdf](../../../dashboard/docs/threshold_calculations.pdf) (`scripts/threshold_note.py`). Note: for our SIR model the threshold is 1/λ_NB (non-backtracking matrix): 0.211 for Trichy and 0.156 for Surathkal. 1/λ₁ in section 1 is the SIS value and a lower bound.
 
 ## 1. How far can an idea spread?
 

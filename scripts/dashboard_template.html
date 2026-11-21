@@ -174,6 +174,7 @@ input[type="search"] { width: min(260px, 100%); }
 .kf .kf-big small { font: 500 13px/1.3 var(--body); color: var(--muted); letter-spacing: 0; }
 .kf p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
 .kf .kf-ev { margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.doclink a { font-weight: 600; color: var(--both); }
 .kf .kf-rec { margin: 0; padding: 6px 0 0 10px; border-left: 3px solid var(--both); font-size: 13px; color: var(--ink); }
 .kf .kf-who { margin: 0; padding-left: 13px; font-size: 12px; color: var(--muted); }
 .kf .kf-go { align-self: flex-start; margin-top: 2px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink-2); font: 500 12px/1.3 var(--body); cursor: pointer; }
@@ -566,12 +567,14 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
   <p class="lede">How things move through the faculty co-authorship network: how far an idea can spread, whether the network can fall into one rhythm, whether groups form as teams or pair by pair, which partnerships last and renew, how newcomers join, how research groups are born, merge and die, and who bridges separate groups. Both NITs; faculty-to-faculty links only. (scripts/dynamics.py)</p>
   <div class="grid">
     <div class="panel s12"><h3>How far can an idea spread?</h3><p class="note">SIR spreading: an idea starts with 5 faculty and each co-author passes it on with probability β (one chance per link). The epidemic threshold 1/λ₁ is the β above which spreading can take off; IPR measures how concentrated the network's leading eigenvector is (high = spreading depends on a small core). Real networks are compared with degree-preserving rewired copies; simulations are the mean of 500 runs.</p>
+      <p class="note doclink"><a href="docs/threshold_calculations.pdf" target="_blank" rel="noopener">How the thresholds are calculated (PDF, with the formulas worked out step by step)</a></p>
       <div class="facts" id="dy-spread-facts"></div></div>
     <div class="panel s6"><h3>NIT Trichy: faculty reached</h3><p class="note">Seeding with the 5 best-connected (hubs), the 5 best bridges (betweenness), or 5 random faculty.</p><div class="chart"><canvas id="ch-dy-spread-t" aria-label="Spreading reach, NIT Trichy"></canvas></div></div>
     <div class="panel s6"><h3>NIT Surathkal: faculty reached</h3><p class="note">Same seeds and β values.</p><div class="chart"><canvas id="ch-dy-spread-s" aria-label="Spreading reach, NIT Surathkal"></canvas></div></div>
     <div class="panel s12"><h3>Threshold and the spreading core</h3><div class="tablewrap"><table id="t-dy-spread"></table></div></div>
 
     <div class="panel s12"><h3>Can the network fall into one rhythm? (Kuramoto)</h3><p class="note">Each faculty member is an oscillator with their own natural rhythm ω (drawn from a standard normal distribution), pulled towards their co-authors' rhythm with strength K. The order parameter r runs from 0 (everyone on their own beat) to 1 (one common rhythm). Largest connected group of each network, unweighted links, 8 frequency draws per K, compared with connected degree-preserving rewired copies. Read it as how easily the network could align on a shared agenda: a model, not a measurement.</p>
+      <p class="note doclink"><a href="docs/threshold_calculations.pdf" target="_blank" rel="noopener">How the thresholds are calculated (PDF, K_c, the eigenratio and the worked numbers)</a></p>
       <div class="facts" id="dy-sync-facts"></div></div>
     <div class="panel s7"><h3>Synchrony as coupling grows</h3><p class="note">Solid: real network; dashed: rewired copies with the same degrees.</p><div class="chart"><canvas id="ch-dy-sync" aria-label="Kuramoto order parameter against coupling"></canvas></div></div>
     <div class="panel s5"><h3>Who locks first</h3><p class="note">Share of faculty running at the common rhythm at K = 1, by number of faculty co-authors (both NITs).</p><div class="chart"><canvas id="ch-dy-lock" aria-label="Locked share by degree"></canvas></div></div>
