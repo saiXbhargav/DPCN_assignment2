@@ -1,15 +1,15 @@
-"""Network growth, link prediction and other NITs (17 Nov 2026) -> data/analysis/prof/
+"""Network growth, link prediction and other NITs (17 Nov 2026) -> data/analysis/growth/
 
-  python phase2_prof.py growth    Average degree of the faculty co-authorship network year by year (cumulative and
+  python phase2_growth.py growth    Average degree of the faculty co-authorship network year by year (cumulative and
                                     single-year), per NIT, and what the densification exponent 1.65 means
-  python phase2_prof.py predict   Link prediction, two models kept apart. Fixed: trained once on 2016-2022 and given
+  python phase2_growth.py predict   Link prediction, two models kept apart. Fixed: trained once on 2016-2022 and given
                                     only the 2022 network, it predicts 2023, 2024 and 2025 (correct matches in its top
                                     1% are saved). Updated: re-trained every year with the network of the year before
-  python phase2_prof.py joining   When did today's faculty join? First year each person published with the NIT
+  python phase2_growth.py joining   When did today's faculty join? First year each person published with the NIT
                                     (OpenAlex affiliation history), checked against NITK's own "Date of Joining"
-  python phase2_prof.py nits      Our two NITs next to NIT Warangal and NIT Calicut: papers, citations, impact,
+  python phase2_growth.py nits      Our two NITs next to NIT Warangal and NIT Calicut: papers, citations, impact,
                                     collaboration, faculty numbers (NIRF), and the same network-growth measures
-  python phase2_prof.py scholar   Most-cited faculty: OpenAlex numbers next to their Google Scholar profiles
+  python phase2_growth.py scholar   Most-cited faculty: OpenAlex numbers next to their Google Scholar profiles
 
 Needs fetch_peers.py (works, affiliations) for the joining and nits parts. Fixed seeds: each run gives the same numbers.
 """
@@ -33,7 +33,7 @@ from insights import (expected_precision_at_k, graph_at, label, link_features, l
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 RAW = os.path.join(DATA, "raw")
-OUT = os.path.join(DATA, "analysis", "prof")
+OUT = os.path.join(DATA, "analysis", "growth")
 FIRST, PARTIAL_YEAR = 2016, 2026
 SEED = 42
 NITS = ["NIT Trichy", "NIT Surathkal"]

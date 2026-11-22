@@ -214,7 +214,7 @@
    "real_world": "Leskovec et al. (2005) found shrinking diameters in real growing networks, largest when the giant component first appears; Barabási et al. (2002) found that in co-authorship networks the separation falls and the average degree rises over time.",
    "caveat": "Counts are cumulative from 2016, so early years are short of history.",
    "tab": "growth",
-   "evidence": "data/analysis/insights/growth_by_year.csv, prof/g_average_degree_by_year.csv",
+   "evidence": "data/analysis/insights/growth_by_year.csv, growth/g_average_degree_by_year.csv",
    "sources": [
     {
      "label": "Leskovec, Kleinberg & Faloutsos 2005",
@@ -235,7 +235,7 @@
    "real_world": "Barabási et al. (2002) measured a stronger attachment for co-authorship, k^0.8 (mathematics) and k^0.75 (neuroscience). Our collaborator effect is weaker; our citation effect is close to theirs.",
    "caveat": "Busier people may simply write more papers; the fits are pooled over years.",
    "tab": "growth",
-   "evidence": "data/analysis/prof/k_summary.json, questions/richer_summary.json",
+   "evidence": "data/analysis/growth/k_summary.json, questions/richer_summary.json",
    "sources": [
     {
      "label": "Barabási et al. 2002",
@@ -264,7 +264,7 @@
    "real_world": "Real co-authorship networks behave the same: a random prediction is right 0.15–0.48% of the time and the best methods do up to about 55× better than random, with low raw precision (Liben-Nowell & Kleinberg 2007).",
    "caveat": "Their task used only well-connected authors; ours scores all faculty pairs. New faculty (27% of 2025's new pairs) are invisible to a 2022 model.",
    "tab": "phase2/p2-grow-predict",
-   "evidence": "data/analysis/prof/p_link_prediction.csv, p_fixed_correct_matches.csv",
+   "evidence": "data/analysis/growth/p_link_prediction.csv, p_fixed_correct_matches.csv",
    "sources": [
     {
      "label": "Liben-Nowell & Kleinberg 2007",
@@ -383,7 +383,7 @@
    "real_world": "All exponents lie near the 1.08–1.68 range of real growing networks (Leskovec et al. 2005).",
    "caveat": "Recent hiring, a young NIT and many Assistant Professors go together; inside single NITs the link is not consistent.",
    "tab": "south",
-   "evidence": "data/analysis/south/south_summary.json, s_six_nits.csv, s_friends_vs_ours.csv",
+   "evidence": "data/analysis/south/south_summary.json, s_six_nits.csv, s_second_dataset_vs_ours.csv",
    "sources": [
     {
      "label": "Leskovec, Kleinberg & Faloutsos 2005",

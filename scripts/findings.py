@@ -7,7 +7,7 @@ Key findings tab).
 Every number about our NITs is read here from the analysis outputs (nothing is typed by hand), so re-running the
 analyses and then this script keeps FINDINGS.md and the dashboard in step. The numbers about other networks are
 fixed values quoted from the papers in SOURCES below (each one was read in the paper itself).
-Needs the outputs of analysis.py, network_science.py, insights.py, phase2.py, phase2_papers.py, phase2_prof.py,
+Needs the outputs of analysis.py, network_science.py, insights.py, phase2.py, phase2_papers.py, phase2_growth.py,
 questions.py, south_nits.py and dynamics.py.
 """
 import itertools
@@ -232,7 +232,7 @@ def build():
         "Ours and five of the six NITs are inside this range; Surathkal is just above it.",
         "With every author counted (students too) a falls to about 1.2, so strong densification is a property of the closed faculty group.",
         "growth", "data/analysis/insights/insights_summary.json, south/s_six_nits.csv", ("leskovec",))
-    gd = rd("prof", "g_average_degree_by_year.csv")
+    gd = rd("growth", "g_average_degree_by_year.csv")
     gd = gd[(gd.view == "Both NITs") & ~gd.partial_year].set_index("year")
     peak = gr.loc[gr.index < last, "effective_diameter_90pct"].idxmax()
     add(G, "Phase I + II", "Distances shrink as the network grows",
@@ -245,8 +245,8 @@ def build():
         "Leskovec et al. (2005) found shrinking diameters in real growing networks, largest when the giant component first appears; "
         "Barabási et al. (2002) found that in co-authorship networks the separation falls and the average degree rises over time.",
         "Counts are cumulative from 2016, so early years are short of history.", "growth",
-        "data/analysis/insights/growth_by_year.csv, prof/g_average_degree_by_year.csv", ("leskovec", "barabasi02"))
-    ks = {r["view"]: r for r in js("prof", "k_summary.json")["fits"]}
+        "data/analysis/insights/growth_by_year.csv, growth/g_average_degree_by_year.csv", ("leskovec", "barabasi02"))
+    ks = {r["view"]: r for r in js("growth", "k_summary.json")["fits"]}
     rich = js("questions", "richer_summary.json")
     add(G, "Phase II", "Rich get richer: weak for collaborators, stronger for citations",
         f"new faculty co-authors ∝ (current co-authors)^{ks['Both NITs']['kernel_exponent']:.2f} (Trichy {ks[T]['kernel_exponent']:.2f}, Surathkal {ks[S]['kernel_exponent']:.2f}); "
@@ -255,7 +255,7 @@ def build():
         f"Barabási et al. (2002) measured a stronger attachment for co-authorship, k^{LIT['nu_high']} (mathematics) and k^{LIT['nu_low']} (neuroscience). "
         "Our collaborator effect is weaker; our citation effect is close to theirs.",
         "Busier people may simply write more papers; the fits are pooled over years.", "growth",
-        "data/analysis/prof/k_summary.json, questions/richer_summary.json", ("barabasi02",))
+        "data/analysis/growth/k_summary.json, questions/richer_summary.json", ("barabasi02",))
     tc = rd("insights", "triadic_closure_by_common_coauthors.csv").set_index("bucket")
     nl = rd("insights", "new_link_sources_by_year.csv")
     nl = nl[(nl.year > 2016) & ~nl.partial_year.astype(bool)]
@@ -266,10 +266,10 @@ def build():
         f"yet only {f(closed)} of {f(tot)} new links ({pct(closed / tot)}) closed a triangle (2017–2025)",
         "Common colleagues matter, but most new collaborations start between people with no shared co-author, usually in the same department.",
         "–", "Observational: we did not test introductions.", "growth", "data/analysis/insights/triadic_closure_by_common_coauthors.csv")
-    lp = rd("prof", "p_link_prediction.csv")
+    lp = rd("growth", "p_link_prediction.csv")
     fx = lp[lp.model.str.startswith("fixed")].set_index("target_year")
     ys = list(fx.index)
-    mt = rd("prof", "p_fixed_correct_matches.csv")
+    mt = rd("growth", "p_fixed_correct_matches.csv")
     aucs = " / ".join("{:.2f}".format(fx.loc[y, "auc"]) for y in ys)
     add(G, "Phase II", "New collaborations can be predicted, but exact hits are rare",
         f"a model trained once on 2016–2022 and given only the 2022 network: AUC {aucs} for {', '.join(map(str, ys))}; "
@@ -280,7 +280,7 @@ def build():
         f"Real co-authorship networks behave the same: a random prediction is right {LIT['lp_rand_low']}–{LIT['lp_rand_high']}% of the time and the best "
         f"methods do up to about {LIT['lp_best']}× better than random, with low raw precision (Liben-Nowell & Kleinberg 2007).",
         f"Their task used only well-connected authors; ours scores all faculty pairs. New faculty ({fx.loc[ys[-1], 'out_of_reach_pct']:.0f}% of {ys[-1]}'s new pairs) "
-        "are invisible to a 2022 model.", "phase2/p2-grow-predict", "data/analysis/prof/p_link_prediction.csv, p_fixed_correct_matches.csv", ("liben07",))
+        "are invisible to a 2022 model.", "phase2/p2-grow-predict", "data/analysis/growth/p_link_prediction.csv, p_fixed_correct_matches.csv", ("liben07",))
 
     # ============================================================ D. how things move through the network (theory vs simulation)
     G = "How things move through the network: theory vs simulation"
@@ -356,7 +356,7 @@ def build():
     # ============================================================ F. the six South Indian NITs
     G = "The six South Indian NITs"
     ftest = js("south", "south_summary.json")["founding_test"]["hired_2021_2025_pct vs a_connected_2016-2026"]
-    fr = rd("south", "s_friends_vs_ours.csv")
+    fr = rd("south", "s_second_dataset_vs_ours.csv")
     fr = fr[fr.years == "2016-2026"].set_index("institution").a_connected_their_cleaned_data
     alt = six.set_index("institution")["a_connected_2016-2026"].copy()
     for k, v in fr.items():
@@ -370,7 +370,7 @@ def build():
         "but with six NITs this is a pattern, not a law.",
         f"All exponents lie near the {LIT['dens_low']}–{LIT['dens_high']} range of real growing networks (Leskovec et al. 2005).",
         "Recent hiring, a young NIT and many Assistant Professors go together; inside single NITs the link is not consistent.",
-        "south", "data/analysis/south/south_summary.json, s_six_nits.csv, s_friends_vs_ours.csv", ("leskovec",))
+        "south", "data/analysis/south/south_summary.json, s_six_nits.csv, s_second_dataset_vs_ours.csv", ("leskovec",))
     rk = six.set_index("institution")
     pph = ", ".join("{} {:.1f}".format(i.replace("NIT ", ""), rk.loc[i, "papers_2024_per_faculty"]) for i in rk.index)
     asst = ", ".join("{:.0f}%".format(rk.loc[i, "assistant_pct"]) for i in rk.index)

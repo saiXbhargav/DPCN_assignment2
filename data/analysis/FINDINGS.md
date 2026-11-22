@@ -123,7 +123,7 @@ Every number about our NITs is computed by `scripts/findings.py` from the analys
 - **What it means:** The giant group formed in 2018 through thin bridges (long paths); new links then acted as shortcuts. People do not write with more colleagues each year; the totals rise because old links stay.
 - **Compared with real networks:** Leskovec et al. (2005) found shrinking diameters in real growing networks, largest when the giant component first appears; Barabási et al. (2002) found that in co-authorship networks the separation falls and the average degree rises over time.
 - **Read with care:** Counts are cumulative from 2016, so early years are short of history.
-- **Evidence:** `data/analysis/insights/growth_by_year.csv, prof/g_average_degree_by_year.csv`
+- **Evidence:** `data/analysis/insights/growth_by_year.csv, growth/g_average_degree_by_year.csv`
 
 ### 17. Rich get richer: weak for collaborators, stronger for citations (Phase II)
 
@@ -131,7 +131,7 @@ Every number about our NITs is computed by `scripts/findings.py` from the analys
 - **What it means:** Well-connected faculty gain new collaborators only a little faster than others; highly cited papers gain citations much faster.
 - **Compared with real networks:** Barabási et al. (2002) measured a stronger attachment for co-authorship, k^0.8 (mathematics) and k^0.75 (neuroscience). Our collaborator effect is weaker; our citation effect is close to theirs.
 - **Read with care:** Busier people may simply write more papers; the fits are pooled over years.
-- **Evidence:** `data/analysis/prof/k_summary.json, questions/richer_summary.json`
+- **Evidence:** `data/analysis/growth/k_summary.json, questions/richer_summary.json`
 
 ### 18. Friends of friends become co-authors, but most new links are new contacts (Phase I)
 
@@ -146,7 +146,7 @@ Every number about our NITs is computed by `scripts/findings.py` from the analys
 - **What it means:** Who will work together next is fairly predictable (same department, active people, common colleagues), but only about 1 candidate pair in 2,000 starts each year, so most predicted pairs do not happen yet.
 - **Compared with real networks:** Real co-authorship networks behave the same: a random prediction is right 0.15–0.48% of the time and the best methods do up to about 55× better than random, with low raw precision (Liben-Nowell & Kleinberg 2007).
 - **Read with care:** Their task used only well-connected authors; ours scores all faculty pairs. New faculty (27% of 2025's new pairs) are invisible to a 2022 model.
-- **Evidence:** `data/analysis/prof/p_link_prediction.csv, p_fixed_correct_matches.csv`
+- **Evidence:** `data/analysis/growth/p_link_prediction.csv, p_fixed_correct_matches.csv`
 
 ## How things move through the network: theory vs simulation
 
@@ -211,7 +211,7 @@ Every number about our NITs is computed by `scripts/findings.py` from the analys
 - **What it means:** Every NIT's faculty network densifies like a real growing network. NITs that hired more recently tend to have lower exponents, but with six NITs this is a pattern, not a law.
 - **Compared with real networks:** All exponents lie near the 1.08–1.68 range of real growing networks (Leskovec et al. 2005).
 - **Read with care:** Recent hiring, a young NIT and many Assistant Professors go together; inside single NITs the link is not consistent.
-- **Evidence:** `data/analysis/south/south_summary.json, s_six_nits.csv, s_friends_vs_ours.csv`
+- **Evidence:** `data/analysis/south/south_summary.json, s_six_nits.csv, s_second_dataset_vs_ours.csv`
 
 ### 28. Papers per head follow the rank mix at every NIT (Phase II)
 

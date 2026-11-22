@@ -3,7 +3,7 @@
   python south_nits.py
 
 NIT Trichy and NIT Surathkal (ours), NIT Warangal and NIT Calicut (also checked against Groups 13 and 14, see
-check_friends.py), and the two young NITs, NIT Puducherry (2010) and NIT Andhra Pradesh (2015).
+check_second_dataset.py), and the two young NITs, NIT Puducherry (2010) and NIT Andhra Pradesh (2015).
 Every number uses the same sources for all six, so the comparison is fair:
   - papers: our OpenAlex download (fetch_peers.py, same filter for all six), plus the references that point to
     another paper of the same NIT (fetch_peers.py refs) for the self-citation share;
@@ -13,7 +13,7 @@ cumulative from 2016. Average degree uses two N's: connected faculty (at least o
 number of faculty in post that year ("pure number": NIRF faculty who had joined by then).
 The founding-years test asks whether hiring waves (a young NIT still hiring its first faculty, or a big recruitment
 drive) lower the densification exponent.
-Needs: fetch_peers.py (works + refs), the six NIRF files in data/raw/nirf/, check_friends.py run first. pymupdf.
+Needs: fetch_peers.py (works + refs), the six NIRF files in data/raw/nirf/, check_second_dataset.py run first. pymupdf.
 """
 import collections
 import json
@@ -29,8 +29,8 @@ import pandas as pd  # noqa: E402
 from scipy import stats  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import check_friends as K  # noqa: E402  (also registers the two new NIRF files)
-import phase2_prof as P  # noqa: E402
+import check_second_dataset as K  # noqa: E402  (also registers the two new NIRF files)
+import phase2_growth as P  # noqa: E402
 
 DATA, RAW, OUT = K.DATA, K.RAW, K.OUT
 FIRST, PARTIAL_YEAR = P.FIRST, P.PARTIAL_YEAR
@@ -259,10 +259,10 @@ def main():
 
     # ---- Groups 13 and 14's cleaned data as a second source for Warangal and Calicut
     fvo = []
-    for nit in K.FRIENDS:
+    for nit in K.SECOND_DATASET:
         iid = SOUTH[nit]
-        fr = pd.read_csv(os.path.join(OUT, f"friends_{K.slug(nit)}_faculty_rows.csv"))
-        pp = pd.read_csv(os.path.join(OUT, f"friends_{K.slug(nit)}_papers.csv"))
+        fr = pd.read_csv(os.path.join(OUT, f"second_dataset_{K.slug(nit)}_faculty_rows.csv"))
+        pp = pd.read_csv(os.path.join(OUT, f"second_dataset_{K.slug(nit)}_papers.csv"))
         small = set(pp[pp.n_authors_openalex.fillna(0) <= P.MAX_TEAM].doi)
         people = nf[(nf.institution == nit) & nf.current].reset_index(drop=True)
         links = {}
@@ -298,20 +298,20 @@ def main():
     K.save(by_year.round(4), "s_by_year.csv")
     K.save(dens.round(4), "s_densification.csv")
     K.save(rolling.round(4), "s_rolling_exponent.csv")
-    K.save(fvo.round(4), "s_friends_vs_ours.csv")
+    K.save(fvo.round(4), "s_second_dataset_vs_ours.csv")
     hires = by_year.pivot(index="year", columns="institution", values="hired")
     summary = {
         "nits": [{"institution": n, "founded": FOUNDED[n][0], "founded_source": FOUNDED[n][1], "color": COLOR[n],
                   "openalex_id": SOUTH[n]} for n in SOUTH],
         "data_sources": {n: ("our OpenAlex download + NIRF 2025 (cleaned data of Groups 13 and 14 used as a cross-check)"
-                             if n in K.FRIENDS else "our OpenAlex download + NIRF 2025") for n in SOUTH},
+                             if n in K.SECOND_DATASET else "our OpenAlex download + NIRF 2025") for n in SOUTH},
         "table": table.round(4).to_dict("records"),
         "by_year": by_year.round(4).to_dict("records"),
         "densification": dens.round(4).to_dict("records"),
         "rolling_exponent": rolling.round(4).to_dict("records"),
         "founding_test": {k: {kk: (round(vv, 4) if isinstance(vv, float) else vv) for kk, vv in v.items()}
                           for k, v in tests.items()},
-        "friends_vs_ours": fvo.round(4).to_dict("records"),
+        "second_dataset_vs_ours": fvo.round(4).to_dict("records"),
         "hires_by_year_2016_2025": hires.loc[FIRST:2025].to_dict("list"),
         "caveats": ["NIRF lists only people working in 2025 (and recent leavers), so the pure-N headcount of earlier "
                     "years misses people who left before ~2022",

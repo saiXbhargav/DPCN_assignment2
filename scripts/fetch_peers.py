@@ -7,7 +7,7 @@
                           (for the own-paper / self-citation share) -> data/raw/peers/<NIT>_internal_refs.jsonl
 
 Same source as the rest of the project (OpenAlex), same request helper as fetch_works.py. The faculty numbers for
-the comparison come from each NIT's NIRF 2025 data file instead (see phase2_prof.py nirf).
+the comparison come from each NIT's NIRF 2025 data file instead (see phase2_growth.py nirf).
 """
 import json
 import os

@@ -1,12 +1,12 @@
 # Network growth, link prediction and other NITs (17 Nov 2026)
 
-Made by `scripts/phase2_prof.py`, which writes to this folder. On the dashboard, these are the last four panels of the **Phase II** tab ("Growth and other NITs"), plus a "Scholar ↗" link next to every name in the **Faculty** tab.
+Made by `scripts/phase2_growth.py`, which writes to this folder. On the dashboard, these are the last four panels of the **Phase II** tab ("Growth and other NITs"), plus a "Scholar ↗" link next to every name in the **Faculty** tab.
 
 ```
 python scripts/fetch_peers.py                 # papers of four NITs from OpenAlex (data/raw/peers/)
-python scripts/phase2_prof.py growth predict  # average degree and 1.65; link prediction (fixed and updated models)
-python scripts/phase2_prof.py nirf nitfaculty # needs pymupdf: NIRF faculty lists, joining years, faculty-only networks
-python scripts/phase2_prof.py nits scholar    # four NITs side by side; Google Scholar checklist
+python scripts/phase2_growth.py growth predict  # average degree and 1.65; link prediction (fixed and updated models)
+python scripts/phase2_growth.py nirf nitfaculty # needs pymupdf: NIRF faculty lists, joining years, faculty-only networks
+python scripts/phase2_growth.py nits scholar    # four NITs side by side; Google Scholar checklist
 ```
 
 | Question | What we did | Section |
@@ -173,7 +173,7 @@ Joining dates of everyone listed as currently working in the NIRF 2025 files (`n
 
 - **Dashboard:** every name in the Faculty tab, and in Phase II's "highest career citations" table, now has a **Scholar ↗** link. It opens a Google Scholar author search for that name and the NIT's city or state.
 - **Checklist** (`s_scholar_check.csv`): the 15 faculty with the highest OpenAlex career citations, plus the three most-cited physicists (A Chandra Bose, B Karthikeyan, Nagaraja H S). For each it gives the OpenAlex citations and h-index, and how much of those citations come from their NIT papers.
-- **Scholar columns are filled in by hand.** Google Scholar blocks automated access (it showed a robot check), so the Scholar columns must be filled in from a browser. Re-running `phase2_prof.py scholar` keeps whatever was typed in.
+- **Scholar columns are filled in by hand.** Google Scholar blocks automated access (it showed a robot check), so the Scholar columns must be filled in from a browser. Re-running `phase2_growth.py scholar` keeps whatever was typed in.
 - **Already suspicious from OpenAlex alone:** Kunwar Singh (1.3% of career citations from NIT papers), Aditya Kumar (0.2%), Sandeep Kumar (3%) and S Selvakumar (7%). These look like one OpenAlex profile merging several people of the same name. Their Scholar profiles should settle it.
 
 ---

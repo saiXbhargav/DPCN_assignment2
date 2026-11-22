@@ -59,7 +59,7 @@ How we checked the other teams' files is in CHECKS.md.
 | in that **single year** only | 1.53 | 1.62 | 1.61 | 1.50 | 1.24 | 1.76 |
 
 - **Both versions rise from 2016 to 2025 at every NIT**, with small dips in some hiring years (`s_by_year.csv`, figure `s_six_nits.png`).
-- **Within a single year, a faculty member writes with about 1.2–1.8 faculty colleagues at all six NITs.** This number is flat since 2016. The averages grow only because old links stay while new ones are added. This is the same explanation as for our 1.65 (PROF.md §1), now seen at six NITs.
+- **Within a single year, a faculty member writes with about 1.2–1.8 faculty colleagues at all six NITs.** This number is flat since 2016. The averages grow only because old links stay while new ones are added. This is the same explanation as for our 1.65 (GROWTH.md §1), now seen at six NITs.
 
 ## 3. The densification exponent a (links ∝ N^a)
 
@@ -125,10 +125,10 @@ Between two papers of the same NIT, **85–92% of citations share at least one a
 | `s_by_year.csv` | NIT × year: papers, faculty network (connected and pure N), single-year co-authors, hires, all-author network |
 | `s_densification.csv` | a and R² per NIT, for three N's and two windows |
 | `s_rolling_exponent.csv` | 4-year windows: a and the share of faculty hired in the window |
-| `s_friends_vs_ours.csv` | §6 |
+| `s_second_dataset_vs_ours.csv` | §6 |
 | `south_summary.json` | All of the above in one file for the dashboard |
 | `s_six_nits.png` | The figure |
-| `CHECKS.md`, `k_*`, `friends_*` | The checks of Group 13's and Group 14's data and the cleaned tables (`friends_*.csv` stay on the laptop only, git-ignored) |
+| `CHECKS.md`, `k_*`, `second_dataset_*` | The checks of Group 13's and Group 14's data and the cleaned tables (`second_dataset_*.csv` stay on the laptop only, git-ignored) |
 
 New downloads:
 - the OpenAlex works of NIT Puducherry (`I4400573194`) and NIT Andhra Pradesh (`I4210153924`);

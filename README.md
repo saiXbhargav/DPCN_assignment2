@@ -775,7 +775,7 @@ Ideas and methods from ten published papers on the science of science, applied t
   - rank mixing is weak (0.07);
   - degree assortativity dipped to near random in 2017–18 (0.06, 0.01) after 0.20 in the small 2016 network, and has been 0.17–0.20 since 2022.
 
-### 11. Network growth, link prediction and other NITs (`scripts/phase2_prof.py` → [PROF.md](data/analysis/prof/PROF.md))
+### 11. Network growth, link prediction and other NITs (`scripts/phase2_growth.py` → [GROWTH.md](data/analysis/growth/GROWTH.md))
 Added on 17 Nov. New sources: OpenAlex papers of NIT Warangal and NIT Calicut, and each NIT's NIRF 2025 data file (faculty lists; only counts are kept in the repo).
 
 - **Why 1.65:** in any one year a faculty member writes with about 1.7 colleagues, flat since 2016; the network-wide average (1.67 → 3.48) rises only because old links stay while new ones are added. The same faculty-only exponent is 1.39–1.74 at the four NITs (NIRF faculty lists; with our own roster Trichy is 1.61), so 1.65 is normal.
@@ -787,7 +787,7 @@ Added on 17 Nov. New sources: OpenAlex papers of NIT Warangal and NIT Calicut, a
 - **Do the rich get richer?** (part `kernel`): people with 9+ faculty co-authors gain 0.47 new ones a year, people with one gain 0.26. New co-authors ∝ (current co-authors)<sup>0.35</sup>: a weak, sub-linear rich-get-richer effect.
 
 ### 12. The six South Indian NITs (`scripts/south_nits.py` → [SOUTH.md](data/analysis/south/SOUTH.md))
-Our two NITs next to NIT Warangal, NIT Calicut, NIT Puducherry (2010) and NIT Andhra Pradesh (2015), all from the same OpenAlex download and each NIT's NIRF 2025 file. Groups 13 and 14 shared their data for Warangal and Calicut; `scripts/check_friends.py` checked it against our download and NIRF ([CHECKS.md](data/analysis/south/CHECKS.md), fixes in `data/reference/friends_corrections/`) and we use it as a cross-check.
+Our two NITs next to NIT Warangal, NIT Calicut, NIT Puducherry (2010) and NIT Andhra Pradesh (2015), all from the same OpenAlex download and each NIT's NIRF 2025 file. Groups 13 and 14 shared their data for Warangal and Calicut; `scripts/check_second_dataset.py` checked it against our download and NIRF ([CHECKS.md](data/analysis/south/CHECKS.md), fixes in `data/reference/second_dataset_corrections/`) and we use it as a cross-check.
 
 - **Recent hiring goes with a lower exponent:** the share of today's faculty hired in 2021–2025 runs exactly opposite to the densification exponent across the six NITs (Spearman ρ = −1.00, exact p = 0.003). With 6 NITs we cannot separate hiring from NIT age or the share of Assistant Professors, and with the cleaned data of Groups 13 and 14 for Warangal and Calicut the correlation weakens to −0.60 (p = 0.24). Pooled 4-year windows give ρ = −0.53, but inside a single NIT the link is not consistent. A pattern across NITs, not a law.
 - **Every NIT densifies** (a = 1.19–1.74 for faculty with a co-author), and at every NIT 85–92% of the citations between its own papers share an author.
@@ -846,8 +846,8 @@ DPCN_assignment2/
 │   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
 │   ├── phase2_papers.py     ← Phase II, ideas from published studies: who cites us (co-authorship distance), citations without self-citations, fair comparison (rank, clustered errors, false discovery), core and edge interventions, productivity, hiring vs leaving, team size, assortativity
 │   ├── fetch_peers.py       ← papers of the six South Indian NITs (ours + Warangal, Calicut, Puducherry, Andhra Pradesh), same filter
-│   ├── phase2_prof.py       ← network growth and other NITs: average degree and 1.65, link prediction (fixed and updated models), NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
-│   ├── check_friends.py     ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
+│   ├── phase2_growth.py     ← network growth and other NITs: average degree and 1.65, link prediction (fixed and updated models), NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
+│   ├── check_second_dataset.py ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
 │   ├── south_nits.py        ← the six South Indian NITs and the founding-years test
 │   ├── dynamics.py          ← network dynamics: SIR spreading and epidemic threshold, Kuramoto synchronisation, team triangles, super-ties, tie renewal and burstiness, newcomers, research groups over time, Burt brokers → data/analysis/dynamics/
 │   ├── threshold_note.py    ← the PDF dashboard/docs/threshold_calculations.pdf: spreading and Kuramoto thresholds worked out (needs Chrome or Edge)
@@ -915,8 +915,8 @@ python fetch_insights.py yearly     # citations per year and open-access status 
 python questions.py                 # data/analysis/questions/
 python phase2_papers.py             # data/analysis/papers/ (uses the files above)
 python fetch_peers.py               # four NITs' papers for the comparison (about 220 requests)
-python phase2_prof.py               # data/analysis/prof/ (the nirf and nitfaculty parts need pymupdf and the NIRF files in data/raw/nirf/)
-python check_friends.py             # needs the other groups' data files unpacked in data/raw/friends/ (not in the repo)
+python phase2_growth.py             # data/analysis/growth/ (the nirf and nitfaculty parts need pymupdf and the NIRF files in data/raw/nirf/)
+python check_second_dataset.py      # needs the other groups' data files unpacked in data/raw/second_dataset/ (not in the repo)
 python south_nits.py                # data/analysis/south/
 python dynamics.py                  # data/analysis/dynamics/
 python threshold_note.py            # dashboard/docs/threshold_calculations.pdf (uses dynamics.py's outputs)

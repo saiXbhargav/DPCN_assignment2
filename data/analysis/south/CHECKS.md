@@ -6,9 +6,9 @@ For the South Indian NIT comparison, two other teams shared their assignment fil
 
 We did not use these files blindly. We checked them the same way we checked our own data after the roster fix.
 
-- **Where they are:** `data/raw/friends/group13/` and `group14/`, git-ignored.
-- **Their files are never edited.** Every fix is one row in `data/reference/friends_corrections/warangal.csv` or `calicut.csv`, with its reason, and `scripts/check_friends.py` applies it.
-- **Outputs:** the cleaned tables are `friends_warangal_*.csv` and `friends_calicut_*.csv` in this folder, and the numbers below are in `k_checks_summary.json`.
+- **Where they are:** `data/raw/second_dataset/group13/` and `group14/`, git-ignored.
+- **Their files are never edited.** Every fix is one row in `data/reference/second_dataset_corrections/warangal.csv` or `calicut.csv`, with its reason, and `scripts/check_second_dataset.py` applies it.
+- **Outputs:** the cleaned tables are `second_dataset_warangal_*.csv` and `second_dataset_calicut_*.csv` in this folder, and the numbers below are in `k_checks_summary.json`.
 
 ## What the files are
 
@@ -61,13 +61,13 @@ We checked the files against two sources of our own:
 3. **Calicut's file would be unfair.** Its missing conference papers would make Calicut look less productive for a data reason, not a real one.
 4. **Same filter for all six.** The same download filter for all six NITs keeps the comparison fair. Our download is about a month newer than theirs (12 Oct and late Oct), and the six NITs were fetched within a day of each other (17–18 Nov).
 
-**The cross-check agrees.** With the cleaned data of Groups 13 and 14, the faculty densification exponent comes out about 0.1 lower: Warangal 1.30 vs 1.44, Calicut 1.31 vs 1.39 (`s_friends_vs_ours.csv`). Both are inside the 1.2–1.75 band of all six NITs, so no conclusion changes. Their journal quartiles give Q1 shares of 38.6% (Warangal) and 44.0% (Calicut). Our own quartile rule gives 36.6% and 44.2%.
+**The cross-check agrees.** With the cleaned data of Groups 13 and 14, the faculty densification exponent comes out about 0.1 lower: Warangal 1.30 vs 1.44, Calicut 1.31 vs 1.39 (`s_second_dataset_vs_ours.csv`). Both are inside the 1.2–1.75 band of all six NITs, so no conclusion changes. Their journal quartiles give Q1 shares of 38.6% (Warangal) and 44.0% (Calicut). Our own quartile rule gives 36.6% and 44.2%.
 
 ## How to rerun
 
 ```bash
 python scripts/fetch_peers.py          # papers of the six NITs (skips finished files)
 python scripts/fetch_peers.py refs     # references between each NIT's own papers
-python scripts/check_friends.py        # these checks (needs pymupdf for the NIRF files)
+python scripts/check_second_dataset.py        # these checks (needs pymupdf for the NIRF files)
 python scripts/south_nits.py           # the six-NIT comparison
 ```

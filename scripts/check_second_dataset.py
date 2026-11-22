@@ -1,17 +1,17 @@
 """Check two other teams' datasets before we use them in the South Indian NIT comparison (18 Nov 2026).
 
-  python check_friends.py      -> data/analysis/south/k_* tables, data/reference/friends_corrections/<nit>.csv,
-                                  cleaned tables data/analysis/south/friends_<nit>_*.csv  (CHECKS.md explains them)
+  python check_second_dataset.py      -> data/analysis/south/k_* tables, data/reference/second_dataset_corrections/<nit>.csv,
+                                  cleaned tables data/analysis/south/second_dataset_<nit>_*.csv  (CHECKS.md explains them)
 
 Group 13 (NIT Warangal, with NIT Rourkela) and Group 14 (NIT Calicut, with NIT Kurukshetra and NIT Durgapur) shared
-their assignment files with us. They sit in data/raw/friends/group13|group14/ (git-ignored) and are never edited.
+their assignment files with us. They sit in data/raw/second_dataset/group13|group14/ (git-ignored) and are never edited.
 Every check compares them with two sources of our own:
   - our OpenAlex download of the same NIT (fetch_peers.py -> data/raw/peers/), joined on DOI, and
-  - the NIT's NIRF 2025 faculty list (each NIT's self-hosted data file, read by phase2_prof.nirf_faculty).
+  - the NIT's NIRF 2025 faculty list (each NIT's self-hosted data file, read by phase2_growth.nirf_faculty).
 The seven checks: 1 split, 2 people vs NIRF, 3 papers vs OpenAlex, 4 names vs OpenAlex author IDs, 5 duplicates and
-ranges, 6 networks, 7 big teams + a manual spot-check list. Every fix is one row in friends_corrections/<nit>.csv
+ranges, 6 networks, 7 big teams + a manual spot-check list. Every fix is one row in second_dataset_corrections/<nit>.csv
 with its reason, and is applied here. DOIs missing from our download are looked up once in OpenAlex (cached in
-data/raw/friends/openalex_lookup.jsonl; needs OPENALEX_API_KEY only for that first lookup).
+data/raw/second_dataset/openalex_lookup.jsonl; needs OPENALEX_API_KEY only for that first lookup).
 """
 import collections
 import json
@@ -23,13 +23,13 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import phase2_prof as P  # noqa: E402
+import phase2_growth as P  # noqa: E402
 from names import ascii_fold, block_keys, name_score  # noqa: E402
 
 DATA, RAW = P.DATA, P.RAW
-FR = os.path.join(RAW, "friends")
+FR = os.path.join(RAW, "second_dataset")
 OUT = os.path.join(DATA, "analysis", "south")
-CORR = os.path.join(DATA, "reference", "friends_corrections")
+CORR = os.path.join(DATA, "reference", "second_dataset_corrections")
 SEED = 42
 FIRST, PARTIAL_YEAR = P.FIRST, P.PARTIAL_YEAR
 
@@ -41,7 +41,7 @@ P.NIRF.setdefault("NIT Andhra Pradesh", (
                               "PRADESH20250214-%20OVERALL.pdf"))
 SOUTH = {"NIT Trichy": "I122964287", "NIT Surathkal": "I11880225", "NIT Warangal": "I121750182",
          "NIT Calicut": "I114845381", "NIT Puducherry": "I4400573194", "NIT Andhra Pradesh": "I4210153924"}
-FRIENDS = {"NIT Warangal": {"group": "group13", "label": "NIT Warangal"},
+SECOND_DATASET = {"NIT Warangal": {"group": "group13", "label": "NIT Warangal"},
            "NIT Calicut": {"group": "group14", "label": "National Institute of Technology Calicut"}}
 CORE = {"A*": "CORE A*", "A": "CORE A", "B": "CORE B", "C": "CORE C"}
 
@@ -91,7 +91,7 @@ def our_works(nit):
 
 
 def nirf_owner(nit, W, people):
-    """The 17 Nov matching (phase2_prof nitfaculty): NIRF names -> OpenAlex author IDs that used this NIT's
+    """The 17 Nov matching (phase2_growth nitfaculty): NIRF names -> OpenAlex author IDs that used this NIT's
     affiliation; an ID that fits two people equally well is dropped. Returns {author_id: row index in people}."""
     iid = SOUTH[nit]
     names_ = {}
@@ -170,7 +170,7 @@ FIELD_DOMAIN.update({f: "Social Sciences" for f in [
 
 # ---------------------------------------------------------------- the checks for one NIT
 def check_nit(nit):
-    cfg = FRIENDS[nit]
+    cfg = SECOND_DATASET[nit]
     iid = SOUTH[nit]
     g = cfg["group"]
     corr = []                                   # one dict per fix
@@ -506,8 +506,8 @@ def check_nit(nit):
     fac_rows = pd.DataFrame({"doi": fr.doi_n, "year": fr.year.astype(int), "author": fr.author_clean,
                              "openalex_author_id": fr.author_id,
                              "nirf_name": fr.author_id.map(owner_name)})
-    save(pc, f"friends_{slug(nit)}_papers.csv")
-    save(fac_rows, f"friends_{slug(nit)}_faculty_rows.csv")
+    save(pc, f"second_dataset_{slug(nit)}_papers.csv")
+    save(fac_rows, f"second_dataset_{slug(nit)}_faculty_rows.csv")
     kept = {"rows_before": len(x), "rows_after": len(clean), "papers_before": len(theirs),
             "papers_after": int(papers_c.doi_n.nunique()),
             "fixes": corr_df.groupby(["action", "check"]).size().reset_index(name="n").to_dict("records")}
@@ -520,7 +520,7 @@ def check_nit(nit):
 
 def main():
     out, spots, twos = [], [], []
-    for nit in FRIENDS:
+    for nit in SECOND_DATASET:
         k, spot, two = check_nit(nit)
         out.append(k)
         spots += spot
@@ -528,7 +528,7 @@ def main():
     save(pd.DataFrame(spots), "k_spot_check.csv")
     save(pd.DataFrame(twos), "k_ids_that_look_like_two_people.csv")
     corr = pd.concat([pd.read_csv(os.path.join(CORR, f"{slug(n)}.csv"), dtype=str, keep_default_na=False)
-                      for n in FRIENDS])
+                      for n in SECOND_DATASET])
     save(corr.groupby(["institution", "check", "action", "reason"]).size().reset_index(name="rows")
          .sort_values(["institution", "check", "rows"], ascending=[True, True, False]), "k_fixes_summary.csv")
     save_json(out, "k_checks_summary.json")

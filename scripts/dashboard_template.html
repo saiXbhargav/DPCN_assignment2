@@ -1805,7 +1805,7 @@ function phase2Tab() {
   try { phase2Prof(); } catch (err) { console.error(err); }
 }
 function phase2Prof() {
-  // network growth, link prediction and other NITs (phase2_prof.py): average degree and the exponent 1.65, link
+  // network growth, link prediction and other NITs (phase2_growth.py): average degree and the exponent 1.65, link
   // prediction, four NITs side by side, and when today's faculty joined (NIRF 2025)
   const F = D.pf || {};
   if (!F.growth) return;
@@ -2537,7 +2537,7 @@ function keyFindings() {
   const nl = I.new_links.rows.filter((r) => !r.partial_year), cols = I.new_links.columns;
   const nlTot = nl.reduce((a, r) => a + cols.reduce((b, c) => b + r[c], 0), 0);
   const closedShare = nl.reduce((a, r) => a + r[cols[0]], 0) / nlTot;
-  // 8. link prediction: the fixed model, trained once on 2016-2022 and given only the 2022 network (phase2_prof.py)
+  // 8. link prediction: the fixed model, trained once on 2016-2022 and given only the 2022 network (phase2_growth.py)
   const LP = (D.pf || {}).pred || [], LPF = "fixed: trained once on 2016-2022, input = 2022 network";
   const lpY = [...new Set(LP.map((r) => r.target_year))].sort(), lpf = (y) => LP.find((r) => r.target_year === y && r.model === LPF) || {};
   // 9. key-person risk

@@ -600,11 +600,11 @@ def depth_tables():
     return t
 
 
-PF = os.path.join(AN, "prof")
+PF = os.path.join(AN, "growth")
 
 
 def prof_tables():
-    """Network growth, link prediction and other NITs (scripts/phase2_prof.py -> data/analysis/prof/), when run."""
+    """Network growth, link prediction and other NITs (scripts/phase2_growth.py -> data/analysis/growth/), when run."""
     t = {}
     if not os.path.isdir(PF):
         return t

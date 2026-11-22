@@ -16,6 +16,6 @@ data/raw/nirf/
 # OpenAlex works of peer NITs (re-downloaded by scripts/fetch_peers.py)
 data/raw/peers/
 # Other teams' datasets, kept locally only for checking
-data/raw/friends/
-# Cleaned copies of other teams' data (made by scripts/check_friends.py), kept locally only
-data/analysis/south/friends_*.csv
+data/raw/second_dataset/
+# Cleaned copies of other teams' data (made by scripts/check_second_dataset.py), kept locally only
+data/analysis/south/second_dataset_*.csv

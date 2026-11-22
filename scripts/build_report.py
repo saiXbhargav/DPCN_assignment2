@@ -334,9 +334,9 @@ def build():
     ax.text(len(nm) - 0.55, 1.70, "real growing networks: 1.08–1.68", ha="right", va="bottom", fontsize=6.5, color="#475569")
     ax.set_ylim(0, 1.98); ax.set_ylabel("densification exponent $a$")
     plt.close(fig)   # (now panel a of fig_six.pdf)
-    gd = rd(AN, "prof", "g_average_degree_by_year.csv")
+    gd = rd(AN, "growth", "g_average_degree_by_year.csv")
     gd = gd[(gd.view == "Both NITs") & ~gd.partial_year].set_index("year")
-    gdn = rd(AN, "prof", "g_densification_by_nit.csv")
+    gdn = rd(AN, "growth", "g_densification_by_nit.csv")
     gdn = gdn[(gdn.years == "2016-2026") & (gdn.nodes_counted == "connected_faculty")].set_index("view").exponent_a
     peak = gr.loc[gr.index < last, "effective_diameter_90pct"].idxmax()
     M.update(aExp=f"{dens['exponent_a']:.2f}", aRsq=f"{dens['r_squared']:.3f}", degA=f"{gd.loc[2016, 'avg_degree_connected_faculty']:.2f}",
@@ -347,10 +347,10 @@ def build():
              aTrOwn=f"{gdn[T]:.2f}", aSuOwn=f"{gdn[S]:.2f}")
 
     # ---------------------------------------------------------------- link prediction
-    lp = rd(AN, "prof", "p_link_prediction.csv")
+    lp = rd(AN, "growth", "p_link_prediction.csv")
     fx = lp[lp.model.str.startswith("fixed")].set_index("target_year")
     up = lp[lp.model.str.startswith("updated")].set_index("target_year")
-    mt = rd(AN, "prof", "p_fixed_correct_matches.csv")
+    mt = rd(AN, "growth", "p_fixed_correct_matches.csv")
     ys = list(fx.index)
     rows = [("Real new faculty pairs (reachable in 2022)", [f"{n(fx.loc[y, 'all_new_pairs'])} ({n(fx.loc[y, 'reachable_new_pairs'])})" for y in ys]),
             ("\\textbf{Fixed model}: AUC", [f"\\textbf{{{fx.loc[y, 'auc']:.2f}}}" for y in ys]),
@@ -538,7 +538,7 @@ def build():
     save_fig(fig, "fig_six.pdf")
 
     # rich get richer (attachment kernel) and team size
-    kk = rd(AN, "prof", "k_kernel.csv")
+    kk = rd(AN, "growth", "k_kernel.csv")
     kk = kk[(kk.view == "Both NITs") & (kk.k_mean > 0)]
     tb_ = rd(AN, "papers", "e_team_size_bands.csv")
     tb_ = tb_[(tb_.scope == "faculty papers") & (tb_.view == "Both") & (tb_.papers >= 20)]
@@ -556,7 +556,7 @@ def build():
         a_.grid(alpha=0.2)
     fig.tight_layout(w_pad=0.6)
     save_fig(fig, "fig_kernel_team.pdf")
-    ksm = {r["view"]: r for r in js(AN, "prof", "k_summary.json")["fits"]}
+    ksm = {r["view"]: r for r in js(AN, "growth", "k_summary.json")["fits"]}
     rich = js(AN, "questions", "richer_summary.json")
     M.update(kerA=f"{ksm['Both NITs']['kernel_exponent']:.2f}", kerT=f"{ksm[T]['kernel_exponent']:.2f}", kerS=f"{ksm[S]['kernel_exponent']:.2f}",
              kerOne=f"{ksm['Both NITs']['mean_new_k1']:.2f}", kerNine=f"{ksm['Both NITs']['mean_new_k9plus']:.2f}", richA=f"{rich['alpha']:.2f}")
