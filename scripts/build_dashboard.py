@@ -75,7 +75,10 @@ def papers():
             "totals": {"papers": len(p), "journal": len(j), "conference": len(c), "citations": int(p.citations.sum()),
                        "mean_fwci": rnd(p.fwci.mean(), 2), "top10": rnd(p.top10pct.astype(float).mean(), 3),
                        "q1_share": rnd((j.quartile == "Q1").sum() / max(1, j.quartile.fillna("").str.startswith("Q").sum()), 3),
-                       "q1": int((j.quartile == "Q1").sum()), "if5": int((j.journal_if_2yr > 5).sum()), "if10": int((j.journal_if_2yr > 10).sum())},
+                       "q1": int((j.quartile == "Q1").sum()), "if5": int((j.journal_if_2yr > 5).sum()), "if10": int((j.journal_if_2yr > 10).sum()),
+                       "q1_if5": int(((j.quartile == "Q1") & (j.journal_if_2yr > 5)).sum()),
+                       "q1_if10": int(((j.quartile == "Q1") & (j.journal_if_2yr > 10)).sum()),
+                       "lt10_authors": int((p.n_authors < 10).sum())},
         }
     return out
 

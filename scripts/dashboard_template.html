@@ -905,7 +905,7 @@ function hero() {
   $("#herostats").querySelectorAll(".v").forEach((el, k) => countUp(el, items[k][0]));
 }
 function scoreMeasures() {
-  // the twelve head-to-head measures, shared by the Overview table and the Head to head scoreboard
+  // the fifteen head-to-head measures, shared by the Overview table and the Head to head scoreboard
   const a = D.analysis, R = Object.fromEntries(a.institutes.map((r) => [r.institution, r]));
   const T = (i) => D.papers[i].totals;
   return [
@@ -917,6 +917,9 @@ function scoreMeasures() {
     ["Q1 share", "of ranked journal papers (SCImago)", (i) => T(i).q1_share, 1, "pct"],
     ["In IF > 5 journals", "share of journal papers", (i) => T(i).if5 / T(i).journal, 1, "pct"],
     ["In IF > 10 journals", "share of journal papers", (i) => T(i).if10 / T(i).journal, 1, "pct"],
+    ["Q1 and IF > 5", "both together; share of journal papers", (i) => T(i).q1_if5 / T(i).journal, 1, "pct"],
+    ["Q1 and IF > 10", "both together; share of journal papers", (i) => T(i).q1_if10 / T(i).journal, 1, "pct"],
+    ["Fewer than 10 authors", "share of papers", (i) => T(i).lt10_authors / T(i).papers, 1, "pct"],
     ["Impact ratio", "citations received ÷ made", (i) => a.impact_ratio[i], 2],
     ["Indian impact ratio", "same, other Indian institutes only", (i) => a.indian_ratio[i], 2],
     ["Papers per faculty member", "productivity", (i) => R[i].papers_per_faculty, 1],
@@ -1058,7 +1061,7 @@ function homeTab() {
     const g = D.coauthor_graph, partners = new Set(D.conn.geo_points.filter((p) => p[4] > 0).map((p) => p[1])).size;
     const EX = [
       ["Start", "keyfindings", "Key findings", "Main findings compared with real networks, and the strongest conclusions with what to do"],
-      ["Start", "overview", "Head to head", "Twelve measures, Trichy against Surathkal"],
+      ["Start", "overview", "Head to head", "Fifteen measures, Trichy against Surathkal"],
       ["Output", "publications", "Publications", `${fmt(tb.papers)} papers; ${pct(tb.q1_share)} of ranked journal papers in Q1`],
       ["Output", "trends", "AI & research trends", `AI papers: ${fmt(aiShare(yrs[0]))}% of all in ${yrs[0]}, ${fmt(aiShare(2025))}% in 2025`],
       ["Output", "faculty", "Faculty", `${fmt(D.faculty.length)} faculty: rankings, search and the top 3 of each NIT`],

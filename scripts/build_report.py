@@ -146,6 +146,36 @@ def build():
     jr = papers[papers.type == "journal"]
     jshare = jr.groupby("institution").size() / per
     if5 = jr.assign(h=jr.journal_if_2yr > 5).groupby("institution").h.mean()
+    # overview measures: Q1 and IF > 5, Q1 and IF > 10 (both conditions together, share of journal papers) and papers with < 10 authors;
+    # bold = significantly higher (chi-square on the two NITs' counts)
+    from scipy.stats import chi2_contingency
+    q1j = jr.quartile == "Q1"
+    flags = {"qif5": (jr, q1j & (jr.journal_if_2yr > 5)), "qif10": (jr, q1j & (jr.journal_if_2yr > 10)), "lt10": (papers, papers.n_authors < 10)}
+    ov = {}
+    for k, (base, f) in flags.items():
+        cnt, tot = f.groupby(base.institution).sum(), base.groupby("institution").size()
+        pv = chi2_contingency([[cnt[T], tot[T] - cnt[T]], [cnt[S], tot[S] - cnt[S]]])[1]
+        sh = cnt / tot
+        cell = {i: pc(sh[i], 1) for i in (T, S)}
+        if pv < 0.05:
+            w = T if sh[T] > sh[S] else S
+            cell[w] = "\\textbf{" + cell[w] + "}"
+        ov[k] = dict(cnt=cnt, sh=sh, p=pv, cell=cell)
+    rows_ov = [("Q1 and IF $>$ 5 (of journal papers)", ov["qif5"]["cell"][T], ov["qif5"]["cell"][S]),
+               ("Q1 and IF $>$ 10 (of journal papers)", ov["qif10"]["cell"][T], ov["qif10"]["cell"][S]),
+               ("Papers with $<$ 10 authors", ov["lt10"]["cell"][T], ov["lt10"]["cell"][S])]
+    uj = uniq[uniq.type == "journal"]
+    if5u, if10u, q1u = uj.journal_if_2yr > 5, uj.journal_if_2yr > 10, uj.quartile == "Q1"
+    ac = rd(AN, "phase2", "author_count_classes.csv")
+    big_cite = ac[(ac.scope == "faculty papers") & (ac.authors == "10 or more authors") & ac.institution.isin([T, S])].share_of_citations_pct.max()
+    M.update(qIfFiveT=pc(ov["qif5"]["sh"][T], 1), qIfFiveS=pc(ov["qif5"]["sh"][S], 1), pQIfFive=f"{ov['qif5']['p']:.3f}",
+             nQIfFiveT=n(ov["qif5"]["cnt"][T]), nQIfFiveS=n(ov["qif5"]["cnt"][S]),
+             qIfTenT=pc(ov["qif10"]["sh"][T], 1), qIfTenS=pc(ov["qif10"]["sh"][S], 1), pQIfTen=f"{ov['qif10']['p']:.2f}",
+             nQIfTenT=n(ov["qif10"]["cnt"][T]), nQIfTenS=n(ov["qif10"]["cnt"][S]),
+             ifTenQOne=f"{n((if10u & q1u).sum())} of {n(if10u.sum())}", ifFiveNotQOne=pc((if5u & ~q1u).sum() / if5u.sum()),
+             lessTenT=pc(ov["lt10"]["sh"][T], 1), lessTenS=pc(ov["lt10"]["sh"][S], 1),
+             nLessTenT=n(ov["lt10"]["cnt"][T]), nLessTenS=n(ov["lt10"]["cnt"][S]), bigCite=f"{int(np.ceil(big_cite))}\\%",
+             mathQOneLow=pc((uj[q1u & (uj.field == "Mathematics")].journal_if_2yr < 5).mean()))
     rows = [("Faculty (regular, S\\&E, incl.\\ former)", n(nfac[T]), n(nfac[S])),
             ("Papers 2016--2026", n(per[T]), n(per[S])),
             ("Share in journals", pc(jshare[T]), pc(jshare[S])),
@@ -154,6 +184,7 @@ def build():
             ("Top 10\\% cited (world)", pc(b0.loc[T, "top10pct_share"], 1), pc(b0.loc[S, "top10pct_share"], 1)),
             ("Q1 share of ranked journal papers", pc(b0.loc[T, "q1_share_of_ranked_journals"], 1), "\\textbf{" + pc(b0.loc[S, "q1_share_of_ranked_journals"], 1) + "}"),
             ("Share in IF $>$ 5 journals", pc(if5[T], 1), pc(if5[S], 1)),
+            *rows_ov,
             ("Median papers per faculty", n(tests.loc["papers", "median_NIT Trichy"]), "\\textbf{" + n(tests.loc["papers", "median_NIT Surathkal"]) + "}"),
             ("Median h-index (2016--2026)", n(tests.loc["h_index_2016_2026", "median_NIT Trichy"]), "\\textbf{" + n(tests.loc["h_index_2016_2026", "median_NIT Surathkal"]) + "}")]
     write_table("tab_h2h.tex", "\\begin{tabular}{@{}lrr@{}}\n\\toprule\n & Trichy & Surathkal \\\\\n\\midrule\n" +

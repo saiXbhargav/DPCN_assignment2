@@ -210,19 +210,25 @@ Table~\ref{tab:h2h} compares them. NIT Trichy papers collect more raw citations 
 field-normalised: in model~(\ref{eq:reg}) Surathkal is \fwciEffect\% ($p=\pRobust$; $p=\pClust$ with errors clustered by faculty), i.e.\
 \textbf{no significant difference in impact}. Surathkal faculty publish more each, but much of this is rank mix: \asstT{} of Trichy's faculty are
 Assistant Professors against \asstS, and the gap falls from \gapRaw{} to \gapRank{} for people of the same rank (Professors publish the same,
-$p=\pProf$).
+$p=\pProf$). Almost all papers come from small teams: \nLessTenT{} (\lessTenT) at Trichy and \nLessTenS{} (\lessTenS) at Surathkal have fewer
+than 10 authors. The few larger papers are cited more each but hold under \bigCite{} of the citations, so they do not distort any total.
 
 \begin{table}[!tbp]
 \centering\small
-\caption{Head-to-head. Bold = significantly higher (Mann--Whitney or $\chi^2$, $p<0.05$).}
+\caption{Overview, head to head. Bold = significantly higher (Mann--Whitney or $\chi^2$, $p<0.05$).}
 \label{tab:h2h}
 \input{tables/tab_h2h}
 \end{table}
 
 \subsection{Journal quality and top journals}
 More than a third of the ranked journal papers are Q1: \qOneT{} at Trichy and \qOneS{} at Surathkal ($\chi^2$, $p<0.001$; Fig.~\ref{fig:quart}). The
-share in journals with IF $>5$ is level (\ifFiveT{} vs \ifFiveS; IF is OpenAlex's 2-year mean citedness). Both NITs publish most in the same venues
-(Table~\ref{tab:journals}).
+share in journals with IF~$>5$ is level (\ifFiveT{} vs \ifFiveS; IF is OpenAlex's 2-year mean citedness). With both conditions together,
+\nQIfFiveT{} (\qIfFiveT) of Trichy's journal papers and \nQIfFiveS{} (\qIfFiveS) of Surathkal's are Q1 \emph{and} IF~$>5$ (Surathkal higher,
+$p=\pQIfFive$), and \nQIfTenT{} (\qIfTenT) and \nQIfTenS{} (\qIfTenS) are Q1 and IF~$>10$ (level, $p=\pQIfTen$). Almost every IF~$>10$ paper is
+Q1 (\ifTenQOne), but \ifFiveNotQOne{} of IF~$>5$ papers are not (mostly Q2 or not in SCImago). A quartile ranks a journal within its subject
+category, while IF is not field-normalised: a high-IF journal can be Q2 in a crowded category such as engineering or materials science, and
+\mathQOneLow{} of our Q1 mathematics papers are in journals with IF below 5. So the two measures are read together. Both NITs publish most in
+the same venues (Table~\ref{tab:journals}).
 
 \begin{figure}[!tbp]
 \centering
