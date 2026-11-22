@@ -16,7 +16,7 @@ Every number is in the CSV/JSON files in this folder.
 
 **Scope decisions (agreed as a team):**
 - **Publication statistics** now also count papers by **students and other NIT staff**, meaning papers with an NIT author but no faculty author. The science and engineering subject filter is unchanged.
-- These papers are in a separate file, `data/all_papers.csv`. **`group12_data.csv`, the faculty networks, the faculty rankings and the 44 checks stay faculty-only**, as the Phase II note says ("exclude students only from faculty-only networks").
+- These papers are in a separate file, `data/all_papers.csv`. **`group12_data.csv`, the faculty networks, the faculty rankings and the 44 checks stay faculty-only** (students are left out only of the faculty-only networks).
 
 **Built-in checks:**
 - The faculty part of `all_papers.csv` must be identical to `group12_data.csv`: the same papers, quartiles, IF, type and citations. It is.

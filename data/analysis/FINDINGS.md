@@ -207,7 +207,7 @@ Every number about our NITs is computed by `scripts/findings.py` from the analys
 
 ### 27. Every South Indian NIT densifies; recent hiring goes with a lower exponent, but the evidence is thin (Phase II)
 
-- **Numbers:** a = 1.19–1.74 at the six NITs; share hired in 2021–25 against a: ρ = −1.00 (exact p = 0.003, n = 6); with Groups 13's and 14's data for Warangal and Calicut ρ = −0.60 (p = 0.24).
+- **Numbers:** a = 1.19–1.74 at the six NITs; share hired in 2021–25 against a: ρ = −1.00 (exact p = 0.003, n = 6); with a second, independently cleaned dataset for Warangal and Calicut ρ = −0.60 (p = 0.24).
 - **What it means:** Every NIT's faculty network densifies like a real growing network. NITs that hired more recently tend to have lower exponents, but with six NITs this is a pattern, not a law.
 - **Compared with real networks:** All exponents lie near the 1.08–1.68 range of real growing networks (Leskovec et al. 2005).
 - **Read with care:** Recent hiring, a young NIT and many Assistant Professors go together; inside single NITs the link is not consistent.

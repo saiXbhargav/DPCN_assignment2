@@ -1,4 +1,4 @@
-"""Research questions for Phase II (items 15-28 of the team list) -> data/analysis/questions/
+"""Research questions for Phase II (questions 15-28) -> data/analysis/questions/
 
   python questions.py collab    15 which countries we work with and whether it helps; 16 which partner types help
   python questions.py network   17 key-person risk: how the faculty network breaks when hub faculty leave

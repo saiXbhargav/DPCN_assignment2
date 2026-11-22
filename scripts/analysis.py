@@ -241,7 +241,7 @@ def institutes(ds, fac, report):
     report.append("Papers per year:\n\n" + md(trend.reset_index()) + "\n")
 
 
-# ---------------------------------------------------------------- 2b. the measures asked for in class
+# ---------------------------------------------------------------- 2b. the required measures
 def board_metrics(ds, report):
     """Total publications, Q1, IF > 5, IF > 10 (per institute and branch) and the impact ratio per year."""
     def counts(g):
@@ -284,7 +284,7 @@ def board_metrics(ds, report):
     tot["impact_ratio"] = tot.received / tot.made
     tot["indian_impact_ratio"] = tot.indian_received / tot.indian_made
 
-    report.append("## 2b. Measures asked for in class\n")
+    report.append("## 2b. Required measures\n")
     report.append("**IF** here is OpenAlex's *2-year mean citedness* of the journal: citations in a year to the "
                   "journal's papers of the two previous years, divided by the number of those papers. That is the "
                   "impact-factor formula on OpenAlex data, because Clarivate's JCR impact factor is not open. "

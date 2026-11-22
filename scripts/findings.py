@@ -365,7 +365,7 @@ def build():
     rho_alt, p_alt = spearman_exact(list(h[alt.index]), list(alt))
     add(G, "Phase II", "Every South Indian NIT densifies; recent hiring goes with a lower exponent, but the evidence is thin",
         f"a = {six['a_connected_2016-2026'].min():.2f}–{six['a_connected_2016-2026'].max():.2f} at the six NITs; share hired in 2021–25 against a: "
-        f"ρ = {ftest['spearman_rho']:.2f} (exact p = {ftest['p_exact']:.3f}, n = 6); with Groups 13's and 14's data for Warangal and Calicut ρ = {rho_alt:.2f} (p = {p_alt:.2f})",
+        f"ρ = {ftest['spearman_rho']:.2f} (exact p = {ftest['p_exact']:.3f}, n = 6); with a second, independently cleaned dataset for Warangal and Calicut ρ = {rho_alt:.2f} (p = {p_alt:.2f})",
         "Every NIT's faculty network densifies like a real growing network. NITs that hired more recently tend to have lower exponents, "
         "but with six NITs this is a pattern, not a law.",
         f"All exponents lie near the {LIT['dens_low']}–{LIT['dens_high']} range of real growing networks (Leskovec et al. 2005).",

@@ -292,7 +292,7 @@ def connection_tables():
                                       "our_papers_it_cites"])
     t["topic_similarity"] = records(csv(AN, "task3_topic_similarity.csv"),
                                     ["institution", "partner", "partner_cluster", "topic_weighted_jaccard", "shared_papers", "exchange"])
-    # geography (friend's section 5)
+    # geography (insights.py section 5)
     geo = {}
     with open(os.path.join(DATA, "raw", "institutions_geo.jsonl"), encoding="utf-8") as f:
         for line in f:
@@ -319,7 +319,7 @@ def connection_tables():
 
 
 def insight_tables():
-    """The friend's extra insights (scripts/insights.py): AI, recency, growth, triadic closure, link prediction, ranking."""
+    """The extra insights (scripts/insights.py): AI, recency, growth, triadic closure, link prediction, ranking."""
     t = {}
     t["ai_year"] = records(csv(INS, "ai_share_by_year.csv"), ["year", "computing", "papers", "ai_papers", "ai_share_pct",
                                                               "partial_year"], 2)

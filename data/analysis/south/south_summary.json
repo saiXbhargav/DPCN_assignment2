@@ -46,8 +46,8 @@
   "data_sources": {
     "NIT Trichy": "our OpenAlex download + NIRF 2025",
     "NIT Surathkal": "our OpenAlex download + NIRF 2025",
-    "NIT Warangal": "our OpenAlex download + NIRF 2025 (friends' cleaned data used as a cross-check)",
-    "NIT Calicut": "our OpenAlex download + NIRF 2025 (friends' cleaned data used as a cross-check)",
+    "NIT Warangal": "our OpenAlex download + NIRF 2025 (cleaned data of Groups 13 and 14 used as a cross-check)",
+    "NIT Calicut": "our OpenAlex download + NIRF 2025 (cleaned data of Groups 13 and 14 used as a cross-check)",
     "NIT Puducherry": "our OpenAlex download + NIRF 2025",
     "NIT Andhra Pradesh": "our OpenAlex download + NIRF 2025"
   },

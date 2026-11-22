@@ -111,7 +111,7 @@ Papers per year:
 | 2026 | 590 | 598 |
 
 
-## 2b. Measures asked for in class
+## 2b. Required measures
 
 **IF** here is OpenAlex's *2-year mean citedness* of the journal: citations in a year to the journal's papers of the two previous years, divided by the number of those papers. That is the impact-factor formula on OpenAlex data, because Clarivate's JCR impact factor is not open. Conference papers have no IF.
 

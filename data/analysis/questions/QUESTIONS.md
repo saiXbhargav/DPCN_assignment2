@@ -1,6 +1,6 @@
 # Team 12: research questions (Phase II, part 2)
 
-Phase II asks for "meaningful research questions and evidence-based conclusions". This file answers items 15–28 of our list (22 and 23 together). They are produced by [scripts/questions.py](../../../scripts/questions.py):
+This file answers fourteen research questions with evidence-based conclusions (numbered 15–28; 22 and 23 together). They are produced by [scripts/questions.py](../../../scripts/questions.py):
 
 | Command | Questions |
 |---|---|

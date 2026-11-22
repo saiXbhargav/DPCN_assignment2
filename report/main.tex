@@ -1,0 +1,619 @@
+% DPCN Assignment 2 report (Group 12). Compile with XeLaTeX (Overleaf: Menu -> Compiler -> XeLaTeX) or Tectonic.
+% All numbers come from numbers.tex, and the figures and tables from figures/ and tables/; all are written by
+% scripts/build_report.py from the analysis outputs, so re-run that script after changing any analysis.
+\documentclass[10pt,twocolumn,a4paper]{article}
+
+% --- Essential Packages ---
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\usepackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}
+\usepackage[margin=0.62in, top=0.6in, bottom=0.7in, columnsep=16pt]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+
+% --- Hyperref Setup ---
+\hypersetup{colorlinks=true, linkcolor=blue!70!black, citecolor=blue!70!black, urlcolor=blue!70!black}
+
+% --- Custom Formatting & Spacing ---
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.1em}
+\titlespacing*{\section}{0pt}{1.0ex plus 0.3ex minus 0.1ex}{0.4ex plus 0.1ex}
+\titlespacing*{\subsection}{0pt}{0.8ex plus 0.2ex minus 0.1ex}{0.3ex plus 0.1ex}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\captionsetup{font=small, labelfont=bf, skip=3pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\setlist{noitemsep, topsep=1pt, leftmargin=1.1em}
+\renewcommand{\topfraction}{0.9}\renewcommand{\dbltopfraction}{0.9}\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.7}\renewcommand{\dblfloatpagefraction}{0.7}\renewcommand{\bottomfraction}{0.6}
+\setcounter{totalnumber}{6}\setcounter{topnumber}{4}\setcounter{bottomnumber}{3}
+\makeatletter
+\setlength{\@fptop}{0pt}\setlength{\@fpsep}{8pt}\setlength{\@dblfptop}{0pt}\setlength{\@dblfpsep}{10pt}
+\makeatother
+\raggedbottom
+\input{numbers}
+
+% --- Document Title & Metadata ---
+\title{\vspace{-1.6em}\textbf{\Large Dynamics and Processes on Complex Networks (DPCN)}\\\vspace{0.2em}
+\textbf{\large Assignment 2: Research Mapping of NIT Trichy and NIT Surathkal, 2016--2026}\\\vspace{0.2em}
+\normalsize Publication Statistics, Citation and Co-authorship Networks, and Phase II Analyses}
+\author{\textbf{Group 12 (Top NITs cluster)}\\[0.2em]\normalsize
+\begin{tabular}{ccc}
+\textbf{Ampilli Sai Venkata Naga Bhargav} & \textbf{Chaitanya Thogata} & \textbf{Pasumarthy Deepak}\\
+(\textit{2023112014}) & (\textit{2023113018}) & (\textit{2023101109})
+\end{tabular}}
+\date{\vspace{-1.8em}}
+
+\begin{document}
+\maketitle
+
+% ==============================================================================
+\section{Team, Code and Dashboard}
+\label{sec:team}
+Group 12 studied the science and engineering faculty of \textbf{NIT Tiruchirappalli (Trichy)} and \textbf{NIT Karnataka (Surathkal)} for 2016--2026.
+Code, data and all outputs are at \url{https://github.com/saiXbhargav/DPCN_assignment2}, and the interactive dashboard (16 tabs, both network graphs)
+is at \url{https://saixbhargav.github.io/DPCN_assignment2/dashboard/}. Every number, table and figure in this report is generated from the analysis
+outputs by \texttt{scripts/build\_report.py}, so it matches the dashboard and \texttt{data/analysis/FINDINGS.md}.
+
+% ==============================================================================
+\section{Dataset and Pipeline}
+\label{sec:data}
+\textbf{Faculty.} We built the faculty list from yearly Wayback snapshots of both institutes' department pages, keeping every regular faculty
+member who was listed at any time in 2016--2026 (current and former). Junk rows and name duplicates were removed with a documented correction file,
+leaving \textbf{\nFaculty{} faculty} (Trichy \nFacT, Surathkal \nFacS). Each person was matched to an OpenAlex author ID by name, department and
+ORCID, and doubtful matches were checked by hand.
+
+\textbf{Papers.} From OpenAlex we kept articles, reviews and conference papers of 2016--2026 with at least one listed faculty member as an author
+under the NIT's affiliation, and left out business, economics, social science, psychology and arts papers. This gives \textbf{\nPapers{} papers}
+(Trichy \nPapT, Surathkal \nPapS; \nJoint{} written by faculty of both). Quartiles come from SCImago, impact from OpenAlex, and conference ranks
+from CORE. Citations are as of 7 October 2026; 2026 is a partial year.
+
+\textbf{Networks.} In the \emph{co-authorship network} $G=(V,E)$ the nodes are faculty and an edge joins two faculty who wrote a paper together
+(papers with more than 50 authors are left out; there are none in the final data): \nLinks{} links. In the \emph{citation network} the nodes are our
+papers and a directed edge $u\to v$ means paper $u$ cites paper $v$: \nInternal{} citations between our own papers. Co-authored papers never count as
+citation flow between institutes.
+
+\begin{figure}[!tbp]
+\centering
+\begin{tikzpicture}[node distance=0.32cm, box/.style={rectangle, draw=blue!70!black, fill=blue!5, rounded corners=2pt, align=center, font=\scriptsize, minimum height=0.62cm},
+  arrow/.style={-{Stealth[scale=0.8]}, thick, draw=gray!80!black}]
+\node (a) [box, text width=1.55cm] {Faculty pages\\(Wayback, yearly)};
+\node (b) [box, right=of a, text width=1.6cm] {Roster: \nFaculty{}\\S\&E faculty};
+\node (c) [box, right=of b, text width=1.75cm] {OpenAlex IDs\\(name, dept., ORCID)};
+\node (d) [box, below=0.42cm of c, text width=1.75cm] {\nPapers{} papers\\SCImago, FWCI, CORE};
+\node (e) [box, left=of d, text width=1.6cm] {Co-author net.\\\nLinks{} links};
+\node (f) [box, left=of e, text width=1.55cm] {Citation net.\\\nInternal{} edges};
+\node (g) [box, below=0.42cm of e, text width=5.7cm, fill=teal!6, draw=teal!60!black] {Statistics, network science, Phase II analyses\\$\rightarrow$ dashboard, FINDINGS.md, this report};
+\draw [arrow] (a) -- (b); \draw [arrow] (b) -- (c); \draw [arrow] (c) -- (d); \draw [arrow] (d) -- (e); \draw [arrow] (e) -- (f);
+\draw [arrow] (e) -- (g); \draw [arrow] (f) |- (g); \draw [arrow] (d) |- (g);
+\end{tikzpicture}
+\caption{Pipeline from faculty pages to the analyses.}
+\label{fig:pipeline}
+\end{figure}
+
+% ==============================================================================
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Bibliometric measures}
+The \emph{field-weighted citation impact} of paper $p$ compares its citations $c_p$ with the world average for papers of the same field $f$, year $y$
+and type $t$ (1 = world average):
+\begin{equation}\label{eq:fwci}
+\mathrm{FWCI}_p=\frac{c_p}{\bar{c}(f_p,y_p,t_p)}.
+\end{equation}
+A faculty member's h-index is the largest $h$ such that $h$ of their papers have at least $h$ citations each; we compute it from their 2016--2026
+papers. The Q1 share is the number of papers in Q1 journals divided by the number of papers in journals with a SCImago quartile.
+
+\subsection{Statistical tests}
+Faculty-level medians are compared with the Mann--Whitney test and shares with the $\chi^2$ test. To compare the institutes fairly we fit, for every
+paper,
+\begin{equation}\label{eq:reg}
+\log(1+\mathrm{FWCI}_p)=\beta_0+\beta_S\,\mathbb{1}[p\in S]+\boldsymbol{\gamma}^{\top}\mathbf{x}_p+\varepsilon_p ,
+\end{equation}
+where $\mathbf{x}_p$ holds branch, year, collaboration type, venue type and team size; the Surathkal effect is $100(e^{\beta_S}-1)\%$, with errors
+robust and also clustered by faculty member. Branch gaps use bootstrap 95\% intervals (2.5th and 97.5th percentiles of 2{,}000 resamples), and the
+$m$ branch $p$-values are corrected with Benjamini--Hochberg, $p^{adj}_{(i)}=\min_{j\geq i}\, m\,p_{(j)}/j$. Rank correlations use Spearman's
+\begin{equation}\label{eq:spearman}
+\rho=1-\frac{6\sum_i d_i^2}{n(n^2-1)},
+\end{equation}
+with an exact $p$-value from all $n!$ orderings when $n$ is small ($6!=720$ for six NITs).
+
+\subsection{Network measures}
+With adjacency matrix $A$, the degree is $k_i=\sum_j A_{ij}$. Betweenness counts the shortest paths through a node and PageRank (damping $d=0.85$)
+ranks papers by the rank of the papers citing them:
+\begin{equation}\label{eq:btw}
+C_B(i)=\sum_{s\neq i\neq t}\frac{\sigma_{st}(i)}{\sigma_{st}},\qquad PR(v)=\frac{1-d}{N}+d\!\sum_{u\to v}\frac{PR(u)}{k_{out}(u)},
+\end{equation}
+where $\sigma_{st}$ is the number of shortest $s$--$t$ paths and $\sigma_{st}(i)$ those through $i$. The local clustering is
+$C_i=2T_i/[k_i(k_i-1)]$ ($T_i$ triangles through $i$), $C$ its average, and $L$ the mean shortest-path length. Against random graphs with the same
+degrees ($C_r$, $L_r$) the small-world index is
+\begin{equation}\label{eq:sigma}
+\sigma=\frac{C/C_r}{L/L_r},
+\end{equation}
+with $\sigma\gg1$ meaning a small world. Degree assortativity is the Pearson correlation of the degrees at the two ends of an edge~\cite{newman2002},
+\begin{equation}\label{eq:assort}
+r=\frac{\sum_{jk}jk\,(e_{jk}-q_jq_k)}{\sigma_q^{2}},
+\end{equation}
+where $e_{jk}$ is the share of edges joining remaining degrees $j$ and $k$ and $q_k$ its marginal; $r>0$ means hubs link to hubs. Communities
+maximise the Louvain modularity
+\begin{equation}\label{eq:mod}
+Q=\frac{1}{2m}\sum_{ij}\Big(A_{ij}-\frac{k_ik_j}{2m}\Big)\delta(c_i,c_j),
+\end{equation}
+and are compared with departments by the normalised mutual information $\mathrm{NMI}=2I(X;Y)/[H(X)+H(Y)]$. The rich-club coefficient
+$\phi(k)=2E_{>k}/[N_{>k}(N_{>k}-1)]$ is divided by its value in rewired graphs, $\rho(k)=\phi/\phi_{rand}$. Degree distributions are fitted with a
+power law $p(k)\propto k^{-\alpha}$ ($k\geq k_{min}$) and a log-normal, compared by a likelihood-ratio test.
+
+\subsection{Growth and link prediction}
+The densification law~\cite{leskovec2005} relates links $E$ and connected faculty $N$ over the years,
+\begin{equation}\label{eq:dens}
+E(t)\propto N(t)^{a},\qquad \langle k\rangle=\frac{2E}{N}\propto N^{a-1},
+\end{equation}
+so $a>1$ means the average degree grows; the effective diameter is the distance within which 90\% of connected pairs lie. Preferential attachment is
+measured by the kernel $\mathbb{E}[\Delta k_i]\propto k_i^{\,\alpha}$ ($\alpha=1$: linear). For link prediction every unlinked pair $(x,y)$ gets
+the features common neighbours $|\Gamma(x)\cap\Gamma(y)|$, Adamic--Adar $\sum_{z\in\Gamma(x)\cap\Gamma(y)}1/\log k_z$, resource allocation
+$\sum_z 1/k_z$, Jaccard $|\Gamma(x)\cap\Gamma(y)|/|\Gamma(x)\cup\Gamma(y)|$, preferential attachment $k_xk_y$, output, and same department / NIT,
+and a logistic regression gives
+\begin{equation}\label{eq:logit}
+P(x\sim y)=\frac{1}{1+e^{-\mathbf{w}^{\top}\mathbf{f}_{xy}}}.
+\end{equation}
+We report the AUC (the chance that a real new pair is ranked above a non-pair), the number of correct pairs in the top $K$, and the lift
+(precision at $K$ divided by the base rate).
+
+\subsection{Spreading and synchronisation}
+In the SIR model each infected faculty member passes an idea once along each link with probability $\beta$. The take-off threshold can be estimated
+from the degrees (mean field), from the adjacency spectrum, or, correctly for SIR, from the non-backtracking matrix $B$~\cite{karrer2014}:
+\begin{equation}\label{eq:sir}
+\beta_c^{MF}=\frac{\langle k\rangle}{\langle k^2\rangle-\langle k\rangle},\qquad
+\beta_c^{(1)}=\frac{1}{\lambda_1},\qquad \beta_c=\frac{1}{\lambda_{NB}},
+\end{equation}
+with $B_{(i\to j),(k\to l)}=\delta_{jk}(1-\delta_{il})$ and $1/\lambda_1$ a lower bound. In the Kuramoto model each faculty member is an
+oscillator with natural frequency $\omega_i\sim N(0,1)$,
+\begin{equation}\label{eq:kur}
+\frac{d\theta_i}{dt}=\omega_i+K\sum_jA_{ij}\sin(\theta_j-\theta_i),\qquad re^{i\psi}=\frac{1}{N}\sum_je^{i\theta_j},
+\end{equation}
+and partial synchrony ($r$ rising) starts at~\cite{restrepo2005}
+\begin{equation}\label{eq:kc}
+K_c=\frac{K_0}{\lambda_1},\qquad K_0=\frac{2}{\pi g(0)}\approx1.596 .
+\end{equation}
+How easily the whole network locks is measured by the Laplacian eigenratio $\mu_N/\mu_2$ of $L=D-A$ (smaller = easier). For Indian partners
+we fit the gravity model $\log(\text{papers}_{ij})=c+\beta\log(\text{size}_j)-\delta\log(\text{distance}_{ij})$.
+
+% ==============================================================================
+\section{Publication Statistics}
+\label{sec:stats}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_trend.pdf}
+\caption{Faculty papers per year (*2026 = January to mid-October). A joint paper counts for both NITs.}
+\label{fig:trend}
+\end{figure}
+
+\subsection{Trend and head-to-head}
+Output grew \growth$\times$, from \yrA{} papers in 2016 to \yrB{} in 2025, and the two NITs are level every year (Fig.~\ref{fig:trend}).
+Table~\ref{tab:h2h} compares them. NIT Trichy papers collect more raw citations (\citT{} vs \citS{} per paper), but raw counts are not
+field-normalised: in model~(\ref{eq:reg}) Surathkal is \fwciEffect\% ($p=\pRobust$; $p=\pClust$ with errors clustered by faculty), i.e.\
+\textbf{no significant difference in impact}. Surathkal faculty publish more each, but much of this is rank mix: \asstT{} of Trichy's faculty are
+Assistant Professors against \asstS, and the gap falls from \gapRaw{} to \gapRank{} for people of the same rank (Professors publish the same,
+$p=\pProf$).
+
+\begin{table}[!tbp]
+\centering\small
+\caption{Head-to-head. Bold = significantly higher (Mann--Whitney or $\chi^2$, $p<0.05$).}
+\label{tab:h2h}
+\input{tables/tab_h2h}
+\end{table}
+
+\subsection{Journal quality and top journals}
+More than a third of the ranked journal papers are Q1: \qOneT{} at Trichy and \qOneS{} at Surathkal ($\chi^2$, $p<0.001$; Fig.~\ref{fig:quart}). The
+share in journals with IF $>5$ is level (\ifFiveT{} vs \ifFiveS; IF is OpenAlex's 2-year mean citedness). Both NITs publish most in the same venues
+(Table~\ref{tab:journals}).
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_quartiles.pdf}
+\caption{Ranked journal papers by SCImago quartile.}
+\label{fig:quart}
+\end{figure}
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Top 5 journals of each NIT (papers, most common SCImago quartile, median IF).}
+\label{tab:journals}
+\input{tables/tab_journals}
+\end{table}
+
+\subsection{Faculty h-index}
+Fig.~\ref{fig:hindex} shows the h-index of each faculty member computed from their 2016--2026 papers. The median is \hT{} at Trichy and \hS{} at
+Surathkal ($p=\pH$), and the median number of papers is \papMedT{} vs \papMedS{} ($p<0.001$), while mean FWCI per person does not differ
+($p=\pFwciPers$). Trichy's larger 0--4 bar fits with its many recently hired Assistant Professors. At the individual level we rank the \nRanked{} current faculty with at
+least \rankMin{} papers by a composite score (the mean percentile of papers, citations, h-index, mean FWCI, top-10\%-cited papers and Q1 or CORE
+A*/A papers); weighting quality more changes little (Spearman \rankRho). Table~\ref{tab:faculty} gives the top five of each NIT.
+
+\begin{table}[!tbp]
+\centering\scriptsize\setlength{\tabcolsep}{3.5pt}
+\caption{Faculty level: top five of each NIT by the composite research score (overall rank among both NITs; $h$ and FWCI from 2016--2026 papers).}
+\label{tab:faculty}
+\input{tables/tab_faculty}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_hindex.pdf}
+\caption{h-index distribution (faculty with at least one paper).}
+\label{fig:hindex}
+\end{figure}
+
+\subsection{Research areas and AI}
+Engineering is about half of each NIT's papers, followed by computer science and materials science (Table~\ref{tab:fields}). Surathkal has
+relatively more computer science and mathematics, Trichy more materials, energy and chemistry. AI is spreading (Fig.~\ref{fig:ai}): AI papers rose
+from \aiA\% of all papers in 2016 to \aiB\% in 2025 (\aiOA\% $\to$ \aiOB\% outside the computing departments), and \aiDeptB{} of \aiDeptN{} departments
+now have at least 5\% AI papers (\aiDeptA{} in 2016--18). The work we build on is getting more recent: the Price index (share of references at most
+five years old) rose from about \priceA\% in \priceYA{} to \priceB\% in \priceYB{} (Fig.~\ref{fig:recency}; \priceAll\% overall), and papers that
+cite more recent work have slightly higher FWCI (Spearman \priceRho{} within departments).
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_recency.pdf}
+\caption{Price index: share of each year's references that are at most five years old.}
+\label{fig:recency}
+\end{figure}
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Papers by OpenAlex field (a paper counts once per NIT).}
+\label{tab:fields}
+\input{tables/tab_fields}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_ai.pdf}
+\caption{Share of AI papers per year (2026 left out).}
+\label{fig:ai}
+\end{figure}
+
+\subsection{Department level}
+FWCI differs much more between branches than between the two NITs (Fig.~\ref{fig:branches}, Table~\ref{tab:branches}). After the
+Benjamini--Hochberg correction over the \nBranch{} branches, Surathkal is clearly stronger in \brS{} and Trichy in \brT; Mechanical and ECE differ only
+before the correction, and the other branches are level. An institute-level ``winner'' hides this picture.
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_branches.pdf}
+\caption{Mean FWCI gap by branch with 95\% bootstrap intervals; coloured = significant after correction.}
+\label{fig:branches}
+\end{figure}
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Department level: papers and mean FWCI by branch ($p_{adj}$ = Benjamini--Hochberg; bold = significant after correction, $\dagger$ = only before it).}
+\label{tab:branches}
+\input{tables/tab_branches}
+\end{table}
+
+\begin{table*}[!tp]
+\centering\scriptsize
+\caption{The ten most-cited papers (citations as of 7 October 2026; FWCI 1 = world average). T = NIT Trichy, S = NIT Surathkal.}
+\label{tab:cited}
+\input{tables/tab_cited}
+\end{table*}
+
+\subsection{Most-cited papers}
+Table~\ref{tab:cited} lists the ten most-cited papers: \topTrichy{} are from NIT Trichy and \topReview{} have ``review'' in the title.
+
+% ==============================================================================
+\section{Citation Network}
+\label{sec:citation}
+\textbf{PageRank.} Table~\ref{tab:pagerank} gives the top 10 papers by PageRank~(\ref{eq:btw}). They must be read with care: \selfShare{} of the
+citations between our papers share an author, and without them none of these ten stays in the top 10, so the list mainly shows groups building on
+their own earlier work.
+
+\textbf{In-degree.} \zeroIndeg{} of our papers are never cited by another of our papers; $k_{in}$ is heavy-tailed (maximum \maxIndeg,
+Fig.~\ref{fig:degrees}b) and a log-normal fits it better than a power law ($\alpha\approx\alphaIn$).
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Top 10 papers by PageRank in the internal citation network ($k_{in}$ = cited by our papers).}
+\label{tab:pagerank}
+\input{tables/tab_pagerank}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_degrees.pdf}
+\caption{(a) Co-authorship degree, complementary cumulative distribution; (b) citation in-degree distribution (log--log).}
+\label{fig:degrees}
+\end{figure}
+
+\textbf{Flow between institutes.} With other Indian institutes, Trichy received \flowRT{} citations and gave \flowGT{} (ratio \ratioT); Surathkal
+received \flowRS{} and gave \flowGS{} (\ratioS). The totals are below 1 because of the early years, when our papers had little time to be cited;
+since 2023 both NITs receive more than they give every year (ratio \flowLateMin--\flowLateMax, Fig.~\ref{fig:flow}). There is a clear hierarchy:
+IITs give back \cIIT{} citations and CSIR labs \cCSIR{} per citation we give them, while universities and colleges cite us more than we cite them
+(\cUni). Between the two NITs, Trichy papers cite Surathkal papers \citeTS{} times and the reverse \citeST{} times.
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_flow.pdf}
+\caption{Citations received from other Indian institutes per citation given to them, by year.}
+\label{fig:flow}
+\end{figure}
+
+% ==============================================================================
+\section{Authorship Network}
+\label{sec:authorship}
+\nConn{} of the \nNodes{} faculty have a faculty co-author; the largest connected group has \nLCC{} faculty, and only \nCross{} links (\crossPct)
+join the two NITs. \textbf{Degree and betweenness.} The degree is heavy-tailed (maximum \maxDeg, Fig.~\ref{fig:degrees}a), and a log-normal again
+beats a power law. Betweenness~(\ref{eq:btw}) picks out the bridges between departments (Table~\ref{tab:central}); removing the 10 main bridges
+disconnects \bridgeT{} (Trichy) and \bridgeS{} (Surathkal) of connected faculty pairs, against \randT{} and \randS{} for 10 random faculty.
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Faculty with the highest betweenness $C_B$ (normalised); $k$ = faculty co-authors.}
+\label{tab:central}
+\input{tables/tab_central}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_coauthor.pdf}
+\caption{Largest connected group of the faculty co-authorship network (\nLCC{} faculty; spring layout). Fill colour = the ten largest Louvain communities (grey = smaller ones), ring = NIT (blue Trichy, orange Surathkal), size = degree.}
+\label{fig:coauthor}
+\end{figure}
+
+\textbf{Communities.} Louvain~(\ref{eq:mod}) finds \nComm{} communities among the connected faculty ($Q=\modQ$, \commTen{} with 10 or more members;
+Fig.~\ref{fig:coauthor}). They follow departments closely (NMI \nmi{} vs \nmiRand{} for random labels; branch assortativity \assortBranch).
+
+\textbf{Small world and mixing.} The average path length is $L=\apl$ (random graphs with the same degrees: \aplR) and the clustering is $C=\clust$
+vs \clustR, so $\sigma=\swSigma\gg1$ in~(\ref{eq:sigma}): a small world. Hubs work with hubs: $r=\assortDeg$ in~(\ref{eq:assort}) against
+\assortNull{} in rewired copies ($z=\assortZ$), and $k_{nn}(k)$ rises with $k$ (Fig.~\ref{fig:knn}). Rank mixing is weak but above chance
+($r=\assortRank$, $z=\zRank$), and the 10 best-connected faculty co-author with each other \rcRho$\times$ more than chance (rich club; mostly one
+Surathkal Mechanical and MME group).
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=0.62\columnwidth]{figures/fig_knn.pdf}
+\caption{Average neighbour degree $k_{nn}(k)$, real network vs degree-preserving rewired copies.}
+\label{fig:knn}
+\end{figure}
+
+% ==============================================================================
+\section{Indian Connections}
+\label{sec:indian}
+Both NITs co-author widely within India: Trichy has joint papers with \partT{} Indian institutes and Surathkal with \partS{}
+(Table~\ref{tab:partners}); \indCollT{} and \indCollS{} of their papers have an Indian partner and \forCollT{} and \forCollS{} a foreign one.
+Universities and colleges account for \uniShare{} of the joint papers, mostly nearby ones: \geoJoint\% of joint papers but only \geoCite\% of
+citations are within 300\,km (Fig.~\ref{fig:geo}). In the gravity model the distance exponent is $\delta=\gravJ$ for joint papers but only \gravC{} for
+citations: doubling the distance cuts joint papers by \geoElJ\% and citations by \geoElC\%. Working together needs closeness; reading each other's work
+does not.
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Largest Indian co-authorship partners (joint papers 2016--2026; ``cites us'' = their citations to our papers).}
+\label{tab:partners}
+\input{tables/tab_partners}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_geo.pdf}
+\caption{Share of joint papers and of citations exchanged with Indian partners, by distance.}
+\label{fig:geo}
+\end{figure}
+
+% ==============================================================================
+\section{Phase II: Growth, Prediction and Dynamics}
+\label{sec:phase2}
+
+\begin{figure*}[!tp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_growth.pdf}
+\caption{Growth of the faculty co-authorship network, 2016--2025: (a) densification, links against connected faculty on log--log axes with the fitted exponent $a$; (b) average number of faculty co-authors, counting all links so far and only that year's; (c) effective diameter and average path length of the largest group.}
+\label{fig:growth}
+\end{figure*}
+
+\subsection{Densification and shrinking distances}
+The links follow the densification law~(\ref{eq:dens}) with $a=\aExp$ ($R^2=\aRsq$; Fig.~\ref{fig:growth}a). So the average number of faculty
+co-authors rose from \degA{} to \degB{} (2016$\to$2025), although within any one year a faculty member writes with only \yrDegMin--\yrDegMax{}
+colleagues (Fig.~\ref{fig:growth}b): old links stay while new ones are added. Distances shrink (Fig.~\ref{fig:growth}c): the effective diameter fell
+from \diamPeak{} steps in \diamYear, when the giant group formed through thin bridges, to \diamNow, and the average path from \aplPeak{} to \apl.
+Real growing networks give $a$ between 1.08 and 1.68 and also show shrinking diameters~\cite{leskovec2005}, so our values are normal.
+
+\begin{figure*}[!tp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_dynamics.pdf}
+\caption{Theory against simulation. (a, b) SIR: share of faculty reached from 5 random starters or the 5 biggest hubs (mean of 500 runs), with the thresholds $1/\lambda_{NB}$ (solid) and $1/\lambda_1$ (dotted) of~(\ref{eq:sir}). (c) Kuramoto order parameter $r$ for the real networks and rewired copies, with $K_c$ of~(\ref{eq:kc}) (dotted).}
+\label{fig:dyn}
+\end{figure*}
+
+\subsection{Rich get richer, and team size}
+New faculty co-authors grow only weakly with current ones (Fig.~\ref{fig:kernelteam}a): faculty with 9 or more gain \kerNine{} a year against
+\kerOne{} for those with one, a kernel exponent $\alpha=\kerA$ (Trichy \kerT, Surathkal \kerS), well below the linear $\alpha=1$ and below the
+0.75--0.8 measured for co-authorship networks~\cite{barabasi2002}. Citations show a stronger effect ($\alpha=\richA$). Impact rises steadily with team
+size (Fig.~\ref{fig:kernelteam}b), from \teamA{} for single authors to \teamB{} for 10--19 authors; only \teamBig{} faculty paper has 20 or more authors.
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_kernel_team.pdf}
+\caption{(a) New faculty co-authors next year against current ones (log--log, fitted line); (b) mean FWCI by number of authors with 95\% intervals.}
+\label{fig:kernelteam}
+\end{figure}
+
+\subsection{Predicting new collaborations}
+The model~(\ref{eq:logit}) is \textbf{trained once on 2016--2022} (windows $t\to t+1$) and given only the 2022 network. It then predicts the first
+joint papers of 2023, 2024 and 2025 \emph{without seeing any later data}. It ranks the real new pairs well (AUC \lpAUC), but only about \lpBase\% of
+candidate pairs start working together each year, so exact hits are rare (Table~\ref{tab:lp}). Its top 1\% holds \lpTop{} real new pairs,
+\lpLiftMin--\lpLiftMax$\times$ better than a random list (Fig.~\ref{fig:lp}); all \lpMatches{} correct matches are same-department pairs and are listed
+with the DOI of the first joint paper on the dashboard. \lpOut\% of 2025's new pairs involve faculty with no paper by 2022, which a fixed model cannot
+see; a model re-trained every year finds more. Real co-authorship networks show the same low raw precision~\cite{libennowell2007}.
+
+\begin{table}[!tbp]
+\centering\scriptsize
+\caption{Link prediction: fixed model trained on 2016--2022 and an updated model re-trained every year.}
+\label{tab:lp}
+\input{tables/tab_linkpred}
+\end{table}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_linkpred.pdf}
+\caption{Correct new pairs in the top 1\% of predicted pairs, against a random list of the same size.}
+\label{fig:lp}
+\end{figure}
+
+\begin{table*}[!tp]
+\centering\scriptsize
+\caption{The six South Indian NITs, built the same way (NIRF 2025 faculty lists; self-cit.\ = share of citations between a NIT's own papers that share an author; $a$ = densification exponent).}
+\label{tab:six}
+\input{tables/tab_six}
+\end{table*}
+
+\subsection{Six South Indian NITs}
+Table~\ref{tab:six} and Fig.~\ref{fig:six} compare all six South Indian NITs, built the same way (OpenAlex papers and each NIT's NIRF 2025 faculty
+list; with our own faculty lists Trichy's $a$ is \aTrOwn{} and Surathkal's \aSuOwn). Every NIT densifies ($a=\aSixMin$--\aSixMax, close to the
+real-network range), papers per head follow the rank mix, and \selfMin--\selfMax\% of citations between a NIT's own papers share an author everywhere.
+NITs that hired more recently have lower exponents (Spearman~(\ref{eq:spearman}) $\rho=\rhoSix$, exact $p=\pSix$, $n=6$), but this is fragile: with a
+second, independently cleaned dataset for Warangal and Calicut it weakens to $-0.60$ ($p=0.24$), and inside single NITs the link is not consistent.
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_six.pdf}
+\caption{Six South Indian NITs: (a) densification exponent, shaded = range in real growing networks~\cite{leskovec2005}; (b) share hired in 2021--25 against $a$.}
+\label{fig:six}
+\end{figure}
+
+\subsection{Other Phase II questions}
+\begin{itemize}
+\item \textbf{Students' own papers.} Papers with an NIT author but no faculty author add \stuN{} papers (\stuPct, \stuAll{} in all). Their median FWCI
+equals the faculty median at Trichy (\stuMedT{} vs \facMedT) and is lower at Surathkal (\stuMedS{} vs \facMedS). Networks and rankings stay faculty-only.
+\item \textbf{Who cites us.} Private universities cite us about as much as their size predicts (\privPer{} vs \pubPer{} citations per 1{,}000 of their
+papers, $p=\privP$), but more of their citations come from people within three co-authorship steps of the cited authors (\privNear\% vs \pubNear\%),
+i.e.\ former students and co-authors (Fig.~\ref{fig:citers}).
+\item \textbf{Partners and impact.} A foreign co-author goes with \forEff\% FWCI for papers of the same field, year and team size, and foreign
+universities \forUni\% (significant after correction), while IITs give \iitEff\% (not significant). The gain differs by country (Fig.~\ref{fig:countries}). This is an association, not a cause.
+\item \textbf{Citation manipulation.} Only \manipShare{} of the \manipN{} Indian citations come from papers that cite 10 or more of ours, and the top-20
+faculty ranking is unchanged without self-citations (Spearman \manipRho).
+\end{itemize}
+
+\subsection{Research questions on people, venues and data quality}
+\begin{itemize}
+\item \textbf{Inequality.} Citations are concentrated: the top 10\% of faculty hold \topTenC{} of all citations and the bottom half \botHalfC{}
+(Gini \giniC{} for citations, \giniP{} for papers).
+\item \textbf{Former faculty.} Of the \nFormer{} former faculty with papers, \movedIIT{} moved to IITs and \movedNIT{} to other NITs, mostly Assistant
+Professors; as a group they were not weaker than those who stayed.
+\item \textbf{Author roles.} Faculty are mostly last authors (supervisors): \asstLast{} of Assistant Professors' papers and \profLast{} of Professors',
+while Assistant Professors are first author on only \asstFirst.
+\item \textbf{Where to publish.} Against a Q1 journal paper of the same field and year, unranked conference papers have \confEff\% FWCI, Q2 journals
+\qTwoEff\% and Q3--Q4 journals \qThreeEff\%, so a weak journal is not a better outlet than a conference.
+\item \textbf{Open access.} \oaShare{} of papers are open; gold and green open access go with \oaGold\% and \oaGreen\% FWCI, diamond with \oaDiamond\%.
+\item \textbf{Home citations.} \homeShare{} of the citations our papers receive come from our own two NITs; papers with more home references have
+slightly higher FWCI (\homeEff\% per 10 points).
+\item \textbf{Robustness.} Dropping the \nDoubt{} weakest author matches changes the paper count by \doubtPap\% and citations by \doubtCit\%; no
+conclusion changes.
+\end{itemize}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_citers.pdf}
+\caption{How close citers are to the cited authors in the co-authorship network: the same person (self), an earlier or later co-author, or 2, 3 or more steps away.}
+\label{fig:citers}
+\end{figure}
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_countries.pdf}
+\caption{FWCI difference for papers with a co-author from each country (countries with 100+ joint papers; grey = not significant).}
+\label{fig:countries}
+\end{figure}
+
+\begin{table*}[!tp]
+\centering\scriptsize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.12}
+\caption{Main findings, inferences and comparison with real networks or theory.}
+\label{tab:findings}
+\input{tables/tab_findings}
+\end{table*}
+
+\subsection{Collaboration dynamics}
+\textbf{Lasting ties.} \renewThree\% of faculty pairs write together again within three years, but only \stillActive\% of the pairs that started in
+2016--2018 were still active in 2023--2025. Renewal grows with time together, from \renewOne\% after one active year to \renewFive\% after five or
+more (Fig.~\ref{fig:ties}a). \onePaper\% of pairs wrote only one paper, while the \superPct\% of pairs with \superCut{} or more joint papers
+(\emph{super-ties}, \superDept\% in the same department against \otherDept\% of other pairs) are on \superShare\% of all joint papers
+(Fig.~\ref{fig:ties}b). \textbf{Newcomers.} Of \nNew{} faculty who joined after 2016, \newIso\% still had no faculty co-author after three years
+(\newIsoT\% at Trichy, \newIsoS\% at Surathkal); \newDept\% of first partners are in the same department. \textbf{Teams and groups.} Only
+\triPapers\% of joint faculty papers have three or more faculty; of the \nTri{} triangles, \triFilled\% are filled by a three-person paper and
+\triTeam\% of those were born as a team. Tracking Louvain groups in 3-year windows gives \nGroups{} groups: \groupsOne\% live one window,
+\groupsFive{} last five or more and \groupsAll{} all nine. \textbf{Brokers.} Burt's brokers are mostly the hubs (\brokerTop{} of the top 20 are
+also top 20 by degree) and have \brokerOther\% of their co-authors in other departments against \allOther\% for a typical faculty member.
+
+\begin{figure}[!tbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_ties.pdf}
+\caption{(a) Share of faculty pairs that write together again within two years, by years already active together; (b) joint papers per pair.}
+\label{fig:ties}
+\end{figure}
+
+\subsection{Spreading and synchronisation: theory vs simulation}
+\textbf{SIR.} From~(\ref{eq:sir}), the mean-field estimate is $\beta_c^{MF}=\bmfT$ for Trichy ($\langle k\rangle=\kOneT$, $\langle k^2\rangle=\kTwoT$) and
+\bmfS{} for Surathkal ($\langle k\rangle=\kOneS$, $\langle k^2\rangle=\kTwoS$); the spectral bound $1/\lambda_1$ is \bLamT{} and \bLamS{} ($\lambda_1=\lamOneT$, \lamOneS);
+and the non-backtracking threshold is $\beta_c=\bcT$ and \bcS. The simulations take off close to the non-backtracking values (Fig.~\ref{fig:dyn}a,b): with random starters
+the reach at $\beta=0.1/0.2/0.3$ is \reachT\% at Trichy and \reachS\% at Surathkal. Starting from hubs spreads further, and ideas spread more easily
+at Surathkal, whose bigger connected hubs raise $\lambda$.
+
+\textbf{Kuramoto.} Equation~(\ref{eq:kc}) gives $K_c=\KcT$ (Trichy) and \KcS{} (Surathkal), where $r$ starts to rise in the simulations
+(Fig.~\ref{fig:dyn}c). Full synchrony is much harder than in random networks (Laplacian eigenratio \eigR{} vs \eigRw), because groups are joined by
+thin bridges. The full derivations are in \texttt{dashboard/docs/threshold\_calculations.pdf}.
+
+% ==============================================================================
+\section{Main Findings and Comparison with Real Networks}
+\label{sec:findings}
+Table~\ref{tab:findings} lists \nPicked{} of our \nFindings{} findings (all are in \texttt{data/analysis/FINDINGS.md} and on the dashboard's Key
+findings tab) with what they mean and how they compare with published real networks~\cite{newman2001, newman2002, barabasi2002, leskovec2005, libennowell2007}.
+
+
+% ==============================================================================
+\section{Limitations}
+\label{sec:limits}
+\begin{itemize}
+\item OpenAlex coverage and affiliations are not perfect; about 95\% of automatic faculty matches were right in a hand-checked sample, and dropping
+doubtful matches leaves the results unchanged.
+\item Quartiles come from SCImago subject areas and IF is OpenAlex's 2-year mean citedness, not the JCR impact factor.
+\item All comparisons are associations, not causes. The six-NIT results rest on six data points and on faculty lists with only today's staff.
+\item The networks are small and faculty-only, while the published comparisons use networks of thousands of authors.
+\end{itemize}
+
+% ==============================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+The two NITs publish the same amount with the same field-weighted impact; Surathkal's higher output per person comes mostly from its more senior
+faculty, and the real differences are by branch. Both co-authorship networks are small worlds organised by department, held together by a few
+bridges, assortative like other social networks, and densify with shrinking distances like real growing networks ($a=\aExp$, within the range
+of~\cite{leskovec2005}). New collaborations are predictable well above chance from a model trained on 2016--2022 alone, and spreading and
+synchronisation start where network theory predicts.
+
+{\footnotesize
+\begin{thebibliography}{9}\setlength{\itemsep}{0pt}
+\bibitem{leskovec2005} J.~Leskovec, J.~Kleinberg, C.~Faloutsos, ``Graphs over time: densification laws, shrinking diameters and possible explanations,'' \emph{Proc.\ KDD}, 177--187, 2005. doi:10.1145/1081870.1081893
+\bibitem{newman2001} M.~E.~J. Newman, ``The structure of scientific collaboration networks,'' \emph{PNAS} 98(2), 404--409, 2001. doi:10.1073/pnas.98.2.404
+\bibitem{barabasi2002} A.-L. Barab\'asi \emph{et al.}, ``Evolution of the social network of scientific collaborations,'' \emph{Physica A} 311, 590--614, 2002. doi:10.1016/S0378-4371(02)00736-7
+\bibitem{newman2002} M.~E.~J. Newman, ``Assortative mixing in networks,'' \emph{Phys.\ Rev.\ Lett.} 89, 208701, 2002. doi:10.1103/PhysRevLett.89.208701
+\bibitem{libennowell2007} D.~Liben-Nowell, J.~Kleinberg, ``The link-prediction problem for social networks,'' \emph{JASIST} 58(7), 1019--1031, 2007. doi:10.1002/asi.20591
+\bibitem{karrer2014} B.~Karrer, M.~E.~J. Newman, L.~Zdeborov\'a, ``Percolation on sparse networks,'' \emph{Phys.\ Rev.\ Lett.} 113, 208702, 2014.
+\bibitem{restrepo2005} J.~G. Restrepo, E.~Ott, B.~R. Hunt, ``Onset of synchronization in large networks of coupled oscillators,'' \emph{Phys.\ Rev.\ E} 71, 036151, 2005.
+\end{thebibliography}}
+
+\end{document}

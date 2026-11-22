@@ -54,14 +54,14 @@ We checked the files against two sources of our own:
 
 **Neither file is bad.** Group 13's Warangal data is very close to our own download. Group 14's Calicut data has the duplicate DOIs and misses about one in seven faculty papers, mostly conference papers.
 
-**For the six-NIT numbers (`south_nits.py`, SOUTH.md), all six NITs use our own OpenAlex download plus the NIRF 2025 list.** The friends' cleaned data is a second, independent check for Warangal and Calicut. The reasons:
+**For the six-NIT numbers (`south_nits.py`, SOUTH.md), all six NITs use our own OpenAlex download plus the NIRF 2025 list.** The cleaned data of Groups 13 and 14 is a second, independent check for Warangal and Calicut. The reasons:
 
 1. **No new papers.** Both files come from OpenAlex, like ours. Once their extra book chapters and duplicates are taken out, they add only 24 and 11 papers that our download missed.
 2. **We need NIRF anyway.** Their files carry names only (no IDs, ranks or joining years), so faculty can only be found through NIRF either way.
 3. **Calicut's file would be unfair.** Its missing conference papers would make Calicut look less productive for a data reason, not a real one.
 4. **Same filter for all six.** The same download filter for all six NITs keeps the comparison fair. Our download is about a month newer than theirs (12 Oct and late Oct), and the six NITs were fetched within a day of each other (17–18 Nov).
 
-**The cross-check agrees.** With the friends' cleaned data, the faculty densification exponent comes out about 0.1 lower: Warangal 1.30 vs 1.44, Calicut 1.31 vs 1.39 (`s_friends_vs_ours.csv`). Both are inside the 1.2–1.75 band of all six NITs, so no conclusion changes. Their journal quartiles give Q1 shares of 38.6% (Warangal) and 44.0% (Calicut). Our own quartile rule gives 36.6% and 44.2%.
+**The cross-check agrees.** With the cleaned data of Groups 13 and 14, the faculty densification exponent comes out about 0.1 lower: Warangal 1.30 vs 1.44, Calicut 1.31 vs 1.39 (`s_friends_vs_ours.csv`). Both are inside the 1.2–1.75 band of all six NITs, so no conclusion changes. Their journal quartiles give Q1 shares of 38.6% (Warangal) and 44.0% (Calicut). Our own quartile rule gives 36.6% and 44.2%.
 
 ## How to rerun
 

@@ -257,7 +257,7 @@ def main():
     tests["rolling 4-year windows: share of faculty hired in the window vs exponent"] = {
         "spearman_rho": rho, "p": p, "n": len(rr)}
 
-    # ---- friends' data as a second source for Warangal and Calicut
+    # ---- Groups 13 and 14's cleaned data as a second source for Warangal and Calicut
     fvo = []
     for nit in K.FRIENDS:
         iid = SOUTH[nit]
@@ -303,7 +303,7 @@ def main():
     summary = {
         "nits": [{"institution": n, "founded": FOUNDED[n][0], "founded_source": FOUNDED[n][1], "color": COLOR[n],
                   "openalex_id": SOUTH[n]} for n in SOUTH],
-        "data_sources": {n: ("our OpenAlex download + NIRF 2025 (friends' cleaned data used as a cross-check)"
+        "data_sources": {n: ("our OpenAlex download + NIRF 2025 (cleaned data of Groups 13 and 14 used as a cross-check)"
                              if n in K.FRIENDS else "our OpenAlex download + NIRF 2025") for n in SOUTH},
         "table": table.round(4).to_dict("records"),
         "by_year": by_year.round(4).to_dict("records"),
