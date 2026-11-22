@@ -215,7 +215,7 @@ def analysis_tables():
     hubs = pd.read_csv(os.path.join(AN, "task3_hub_authors.csv"))
     t["hubs"] = records(hubs, list(hubs.columns), 4)
     sw = pd.read_csv(os.path.join(AN, "ns_small_world.csv"))
-    t["small_world"] = records(sw, list(sw.columns))
+    t["small_world"] = records(sw, list(sw.columns), 4)
     t["sigma"] = rnd((sw.avg_clustering[0] / sw.avg_clustering[1]) / (sw.avg_path_length[0] / sw.avg_path_length[1]), 1)
     ass = pd.read_csv(os.path.join(AN, "ns_assortativity.csv"))
     t["assortativity"] = records(ass, list(ass.columns))
@@ -609,7 +609,7 @@ def prof_tables():
     if not os.path.isdir(PF):
         return t
     tabs = {"growth": "g_average_degree_by_year.csv", "dens": "g_densification_by_nit.csv",
-            "pred": "p_rolling_link_prediction.csv", "check": "p_predict_and_check_top20.csv",
+            "pred": "p_link_prediction.csv", "check": "p_predict_and_check_top20.csv", "matches": "p_fixed_correct_matches.csv",
             "four": "c_four_nits.csv", "four_year": "c_four_nits_by_year.csv",
             "fac_net": "f_faculty_network_four_nits.csv", "fac_dens": "f_faculty_densification_four_nits.csv",
             "match": "f_nirf_name_matching.csv", "bands": "n_joining_bands.csv", "cohort": "n_cohort_output.csv",
@@ -888,6 +888,8 @@ def main():
             "coauthor_graph": coauthor_graph(), "analysis": analysis_tables(), "net": network_tables(),
             "conn": connection_tables(), "ins": insight_tables(), "fair": fairness_tables(), "methods": methods_facts(),
             "p2": phase2_tables(), "q": questions_tables(), "pp": depth_tables(), "pf": prof_tables(), "x": extra_tables(), "south": south_tables(), "dyn": dynamics_tables(),
+            "findings": (json.load(open(os.path.join(AN, "findings.json"), encoding="utf-8"))
+                         if os.path.exists(os.path.join(AN, "findings.json")) else {}),   # scripts/findings.py
             "meta": {"citations_date": "7 October 2026", "fwci_date": "19 October 2026", "years": "2016–2026",
                      "yearly_date": "11 November 2026"}}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

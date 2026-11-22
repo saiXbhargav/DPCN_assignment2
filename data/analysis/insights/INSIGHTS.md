@@ -20,7 +20,7 @@ Every number below is in the CSV/JSON files in this folder.
 
 # Sections 1–2: the faculty co-authorship network
 **Network:** the **faculty-only** co-authorship network (as agreed by the team):
-- 656 NIT Trichy and NIT Surathkal faculty;
+- 657 NIT Trichy and NIT Surathkal faculty;
 - a link means the two faculty members have written at least one paper together (961 links in total).
 
 **Years:** 2016–2026. **2026 is a partial year** (data collected in October 2026), so it's shaded in the charts and left out of year-on-year comparisons.
@@ -38,11 +38,11 @@ Every number below is in the CSV/JSON files in this folder.
 
 | | 2016 | 2018 | 2020 | 2022 | 2025 | 2026 (partial) |
 |---|---|---|---|---|---|---|
-| Faculty in the network | 308 | 421 | 503 | 561 | 643 | 656 |
+| Faculty in the network | 308 | 422 | 504 | 562 | 644 | 657 |
 | Co-author links | 135 | 313 | 515 | 656 | 923 | 961 |
 | Average faculty co-authors per person | 0.88 | 1.49 | 2.05 | 2.34 | 2.87 | 2.93 |
 | Faculty with at least one faculty co-author | 53% | 67% | 72% | 77% | 82% | 82% |
-| Largest connected group (% of faculty) | 4.5% | **42%** | 57% | 65% | 75% | 75% |
+| Largest connected group (% of faculty) | 4.5% | **41%** | 57% | 64% | 75% | 75% |
 | Effective diameter (90% of pairs within) | 4 | **19** | 10 | 10 | 9 | 9 |
 | Modularity (Louvain) | 0.95 | 0.92 | 0.89 | 0.87 | 0.85 | 0.85 |
 | Links between departments | 24% | 28% | 30% | 30% | 31% | 31% |
@@ -57,7 +57,7 @@ Every number below is in the CSV/JSON files in this folder.
    | Fit | Exponent *a* in E ∝ N^a | R² |
    |---|---|---|
    | All faculty, 2016–2026 | **2.55** | 0.997 |
-   | Faculty with at least one faculty co-author, 2016–2026 | **1.66** | 0.998 |
+   | Faculty with at least one faculty co-author, 2016–2026 | **1.65** | 0.998 |
    | All faculty, 2019–2025 (start-up years dropped) | 2.29 | 0.995 |
    | Connected faculty, 2019–2025 | 1.57 | 0.998 |
 
@@ -68,20 +68,20 @@ Every number below is in the CSV/JSON files in this folder.
    - Counted over connected faculty, the exponent (about 1.6) is in the usual range.
 
 2. **A large connected group suddenly formed in 2018.**
-   - The largest group jumped from **8% to 42%** of faculty in one year.
+   - The largest group jumped from **8% to 41%** of faculty in one year.
    - This happened when the average number of co-authors passed about 1.3–1.5, the kind of sudden transition percolation theory predicts. In a random network, a giant component appears once the average degree passes 1.
    - Part of the jump is also a start-up effect: collaborations from before 2016 can't be seen, so 2016–2017 look more fragmented than they really were.
 
 3. **The diameter shrinks.**
    - When the large group first formed in 2018, it was made of long chains: diameter 28, effective diameter 19 and average path 11.2 steps.
-   - As links filled in, distances shrank: effective diameter 9 and average path 6.2 by 2025.
+   - As links filled in, distances shrank: effective diameter 9 and average path 6.1 by 2025.
    - This is the **"shrinking diameter"** pattern that Leskovec et al. found in growing real-world networks.
 
 4. **The network is slowly becoming less isolated by department, but the two NITs stay apart.**
    - Modularity fell from 0.95 to 0.85, and the share of links between departments rose from 24% to 31%.
    - Links between NIT Trichy and NIT Surathkal grew from 4 to 25, but that is still under 3% of all links.
 
-5. **COVID dip.** 2021 had the fewest new faculty–faculty links of any full year (57, against 77–103 in other years). Joint papers also fell from 459 pair-rows in 2020 to 350 in 2021.
+5. **2021 dip (probably COVID; not tested).** 2021 had the fewest new faculty–faculty links of any full year (57, against 77–103 in other years). Joint papers also fell from 459 pair-rows in 2020 to 350 in 2021.
 
 ---
 
@@ -99,9 +99,9 @@ Every number below is in the CSV/JSON files in this folder.
 |---|---|---|---|---|---|
 | 3+ common co-authors | 233 | 3 | 1.29% | **5.5%** | 32× |
 | 2 common co-authors | 1,393 | 20 | 1.44% | **4.6%** | 36× |
-| 1 common co-author | 12,141 | 94 | 0.77% | **2.7%** | 19× |
-| Distance 3 (friend of a friend of a friend) | 29,226 | 64 | 0.22% | 0.89% | 5.5× |
-| Farther apart / not connected | 1,265,206 | 508 | 0.040% | 0.15% | 1× |
+| 1 common co-author | 12,131 | 94 | 0.77% | **2.7%** | 19× |
+| Distance 3 (friend of a friend of a friend) | 29,206 | 64 | 0.22% | 0.89% | 5.5× |
+| Farther apart / not connected | 1,269,949 | 508 | 0.040% | 0.15% | 1× |
 
 \* The 3-year column only uses years with a complete 3-year window (t ≤ 2022), because 2026 is partial.
 
@@ -118,7 +118,7 @@ Every number below is in the CSV/JSON files in this folder.
    | Same department | 1.41% | 0.42% | 3.4× |
    | **Different departments** | **0.44%** | 0.017% | **26×** |
 
-   A mutual co-author makes a **cross-department** collaboration about **26 times** more likely. That's as likely as two same-department colleagues with no mutual co-author (0.44% vs 0.42%). **Mutual co-authors are how departments get connected.**
+   A mutual co-author makes a **cross-department** collaboration about **26 times** more likely. That's as likely as two same-department colleagues with no mutual co-author (0.44% vs 0.42%). **A mutual co-author makes a cross-department link far more likely, but only about 1 in 7 new cross-department links formed that way.**
 
 3. **But most new links do not close a triangle.**
 
@@ -139,7 +139,7 @@ Every number below is in the CSV/JSON files in this folder.
 - **Joining year.** A person's first paper in 2016–2026 is used as the year they join, which approximates when they joined or became active.
 - **Faculty-only.** Students and outside co-authors are not nodes, so common contacts through them are invisible (see Finding 3 of section 2).
 - **2026 is partial** (until October 2026).
-- **The faculty roster is fixed**, so the network can't grow beyond 656 people. This inflates the densification exponent counted over all faculty.
+- **The faculty roster is fixed**, so the network can't grow beyond 657 people. This inflates the densification exponent counted over all faculty.
 
 ## Files for sections 1–2
 
@@ -156,7 +156,7 @@ Every number below is in the CSV/JSON files in this folder.
 | `triadic_closure.png` | Closure chart and new-link sources |
 
 **Re-run:** `python insights.py network` from `scripts/` takes about a minute. The script checks itself as it runs:
-- the final network equals the 967 faculty links;
+- the final network equals the 961 faculty links;
 - every new link is counted exactly once;
 - no link starts before both people's first paper.
 
@@ -415,7 +415,7 @@ The last two columns are the share of **all** joint papers and of **all** citati
 **Network:** the faculty-only co-authorship network. It runs in about 15 seconds on a CPU.
 
 **Set-up (team decisions):**
-- **Test.** Take the network as it was at the end of **2022**. Rank **every** pair of faculty who were active by 2022 and had not yet written together: 156,424 pairs. Check which of them really wrote their first joint paper in **2023–2026**: 242 pairs, so a random guess is right **0.15%** of the time.
+- **Test.** Take the network as it was at the end of **2022**. Rank **every** pair of faculty who were active by 2022 and had not yet written together: 156,985 pairs. Check which of them really wrote their first joint paper in **2023–2026**: 242 pairs, so a random guess is right **0.15%** of the time.
 - **Methods compared:**
 
   | Method | Score for a pair (A, B) |
@@ -440,8 +440,8 @@ The last two columns are the share of **all** joint papers and of **all** citati
 | Common neighbours | 0.58 | 5.3% | 4.0% | 3.2% | 26× | 17% |
 | Jaccard | 0.58 | 0.1% | 0.8% | 1.7% | 5× | 17% |
 | Preferential attachment | 0.54 | 2.0% | 1.9% | 1.7% | 12× | 57% |
-| **Learned model** | **0.90** | 4.0% | 4.0% | **4.5%** | 26× | 100% |
-| Random | 0.51 | 0% | 0% | 0% | – | 100% |
+| **Learned model** | **0.90** | 4.0% | 4.0% | **4.1%** | 26× | 100% |
+| Random | 0.46 | 0% | 0% | 0% | – | 100% |
 
 ### Findings
 
@@ -455,13 +455,13 @@ The last two columns are the share of **all** joint papers and of **all** citati
 
    | Feature | Coefficient |
    |---|---|
-   | Same institute | **+1.37** |
+   | Same institute | **+1.36** |
    | Same department | **+0.78** |
    | Combined paper count | +0.26 |
    | Smaller of the two paper counts | +0.14 |
    | Network scores (common neighbours, Adamic–Adar, …) | 0.1 or less each, once the above are known |
 
-   In plain words: **who you will collaborate with next is mostly decided by being in the same institute and department and being active**. The network adds detail at the very top of the list.
+   In plain words: **who you will collaborate with next is best predicted by being in the same institute and department and being active**. The network adds detail at the very top of the list.
 4. **Weighting matters.** Adamic–Adar and resource allocation beat plain common neighbours, because a shared co-author who works with everyone is a weaker signal than one with few collaborators. Jaccard does worst, because it rewards pairs of newcomers who share their only co-author.
 
 ### Most likely future collaborations: `link_prediction_top50_future_pairs.csv`

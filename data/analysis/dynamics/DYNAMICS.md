@@ -1,6 +1,6 @@
 # Network dynamics
 
-`scripts/dynamics.py` → this folder. It covers how things move through the **faculty co-authorship network** of both NITs, using faculty-to-faculty links only (`same_nit` and `nit_nit` rows of `data/authorship_network.csv`, where papers with more than 50 authors are already excluded). The network has 657 faculty with at least one faculty co-author and 961 links.
+`scripts/dynamics.py` → this folder. It covers how things move through the **faculty co-authorship network** of both NITs, using faculty-to-faculty links only (`same_nit` and `nit_nit` rows of `data/authorship_network.csv`, where papers with more than 50 authors are already excluded). The network has 657 faculty (540 of them with at least one faculty co-author) and 961 links.
 
 The team agreed on these choices:
 - spreading is studied with SIR simulations plus the epidemic threshold;
@@ -66,8 +66,8 @@ Mean share of faculty reached (%):
 - **Most filled triangles were built pair by pair:** 117 were sealed later and only 65 (36%) were born as a team.
 - **Teams of three or more faculty are rare.** Only 8.8% of joint faculty papers (288 of 3,278) have 3 or more faculty, yet those papers fill most of the triangles.
 - **Cross-department triangles are more often real teams.** 67% of them are filled (85 of 126), against 52% of same-department triangles (97 of 188).
-  - Same-department triangles are mostly pairs who share colleagues.
-  - Cross-department triangles usually come from one joint project.
+  - Same-department triangles are the most often never filled (48% stay pairs who only share colleagues).
+  - Cross-department triangles more often end with a three-person paper (67% vs 52%, p = 0.007), but most were still built pair by pair: only 25% started as a team (18% for same-department, not a significant difference).
 
 ## 3. Super-ties: a few durable pairs
 
@@ -149,14 +149,14 @@ Share of faculty locked to the common rhythm at K = 1, both NITs, by number of f
 | Locked | 46.5% | 64.4% | 79.9% | 87.5% |
 
 **Findings:**
-- **Synchrony starts where theory says.** r begins to rise at K ≈ 0.2–0.3, matching K_c = 0.26 (Trichy) and 0.20 (Surathkal). The onset is set by the hubs through λ₁, like the epidemic threshold in section 1.
+- **Synchrony starts where theory says.** r begins to rise at K ≈ 0.2–0.3, matching K_c = 0.26 (Trichy) and 0.20 (Surathkal). The onset is set by λ₁, which large hubs push up, like the epidemic threshold in section 1.
 - **But the real networks are much harder to bring into one rhythm than random ones.**
   - The eigenratio is 5 times the rewired value (670 vs 130), and λ₂ is 5 times smaller.
   - In the simulations, r reaches 0.5 only at K ≈ 1.2, against 0.7 in rewired copies.
-  - Departments synchronise inside but are joined by thin bridges, so they drift apart from each other. This is the same modular structure as in sections 2 and 8.
+  - λ₂ is small because groups are joined by thin bridges, so the whole network is hard to bring into one rhythm. (Synchrony inside departments was not measured.) This is the same modular structure as in sections 2 and 8.
 - **The two NITs differ in opposite ways.**
-  - NIT Surathkal reaches partial synchrony sooner (r = 0.5 at K ≈ 0.9 vs 1.5) because of its larger hubs.
-  - NIT Trichy has the lower eigenratio (259 vs 565), so full synchrony is easier there. Its groups are less separated, but it has no strong hubs.
+  - NIT Surathkal reaches partial synchrony sooner (r = 0.5 at K ≈ 0.9 vs 1.5); it has more links per person (3.9 vs 3.5) and bigger hubs, and we cannot separate the two.
+  - NIT Trichy has the lower eigenratio (259 vs 565), so full synchrony is easier there. Its groups are less separated, but its hubs are smaller (largest 14 faculty co-authors vs 22 at Surathkal).
 - **The core locks first.** At K = 1, 88% of faculty with 10 or more faculty co-authors run at the common rhythm, against 47% of faculty with one.
 
 ## 7. Do collaborations last?
@@ -194,12 +194,12 @@ Share of faculty locked to the common rhythm at K = 1, both NITs, by number of f
   - 57% of pairs write together again within 3 years, and 40% the very next year.
   - Of the 313 pairs that started in 2016–2018, only 27% still wrote together in 2023–2025.
 - **The longer a pair lasts, the more likely it continues.** A pair after its first year renews within 2 years 51% of the time; after 5 or more active years, 81% of the time. This is how super-ties (section 3) form.
-- **Good first papers make pairs stick.**
+- **Pairs whose first paper did well, and same-department pairs, renew more often.** (Observational: these go together with renewal; we did not test cause.)
   - Same-department pairs have 2.6 times the odds of renewing (p < 0.001).
   - Pairs whose first joint papers beat the world average (FWCI ≥ 1) have 2.4 times the odds (p < 0.001), even with department and team size held fixed.
-  - A pair first met in a bigger team renews less: the odds fall by about a third (×0.58) each time the first team doubles in size (p = 0.008).
+  - A pair first met in a bigger team renews less: the odds fall by about 40% (×0.58) each time the first team doubles in size (p = 0.008).
   - Trichy–Surathkal pairs are too few (16) to test.
-- **Pairs write steadily, not in bursts.**
+- **Pairs are no more bursty than random timing.**
   - 74% of the gaps between a pair's active years are a single year; only 11% are comebacks after 3 or more years.
   - Burstiness is no higher than random timing: B = 0.09 against 0.07, p = 0.47.
   - Within a pair's span, they are active in a median of 83% of the years.
@@ -257,12 +257,12 @@ All 22 groups that lasted 5 or more windows are in `groups_lifetimes.csv`.
 
 | Finding | What to do | Who acts |
 |---|---|---|
-| Hubs spread ideas twice as far when ideas pass weakly | Start new initiatives (a method, a shared facility, a grant call) with the core faculty, not by circulars | Research office |
+| In the model, starting with hubs reaches 1.6–2.2× more faculty than random starters when ideas pass weakly (β = 0.2) | Start new initiatives (a method, a shared facility, a grant call) with well-connected faculty as well as general announcements | Research office |
 | Cross-NIT links barely help spreading | A joint NIT Trichy–NIT Surathkal workshop and seed grants | Deans of research of both NITs |
-| Cross-department triangles come from real team projects | Fund three-person cross-department projects rather than pairs | Research office; heads of department |
+| Cross-department triangles more often end with a three-person paper (67% vs 52%) | Try three-person cross-department projects alongside pairs | Research office; heads of department |
 | 52% of joint output from 11% of pairs | Support durable pairs, and pair each with a newcomer so the knowledge spreads | Heads of department; principal investigators |
 | 46% of newcomers isolated after 3 years (52% at Trichy) | Mentoring with a senior co-author and a start-up grant that requires an internal collaborator | Directors; heads of department |
-| The network synchronises inside departments but not across them (eigenratio 5× random) | Cross-department seminars and shared facilities, so that departments align rather than only their hubs | Deans of research; heads of department |
-| Renewal doubles with a strong first paper and the same department; only 27% of 2016–18 pairs still active | Follow-up seed grants for new pairs whose first joint paper did well, especially across departments | Research office |
+| The network is much harder to bring into one rhythm than random networks (eigenratio 5× random, thin bridges between groups) | Cross-department seminars and shared facilities, so that departments align rather than only their hubs | Deans of research; heads of department |
+| Renewal is higher after a strong first paper (67% vs 47%) and in the same department (63% vs 41%); only 27% of 2016–18 pairs still active | Follow-up seed grants for new pairs whose first joint paper did well, especially across departments | Research office |
 | Lasting large groups keep a stable core; groups rarely merge | Fund groups for 5+ years around a stable core, and plan for it before a core member leaves | Directors; heads of department |
 | Brokers are the hubs; 5 hidden brokers | Recognise bridging work and plan succession for the key people | Directors; promotion committees |

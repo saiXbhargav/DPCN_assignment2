@@ -1,0 +1,43 @@
+target_year,rank,list_size,faculty_a,institute_a,department_a,faculty_b,institute_b,department_b,common_coauthors_2022,model_score,first_joint_paper_doi
+2023,33,1569,I Regupathi,NIT Surathkal,Chemical,Keyur Raval,NIT Surathkal,Chemical,1,0.053,https://doi.org/10.1002/jsf2.169
+2023,40,1569,Vasudeva Madav,NIT Surathkal,Mechanical,Veershetty Gumtapure,NIT Surathkal,Mechanical,2,0.0516,https://doi.org/10.3390/engproc2023059131
+2023,80,1569,A Chandra Bose,NIT Trichy,Physics,M Ashok,NIT Trichy,Physics,2,0.0408,https://doi.org/10.1007/s10854-023-11569-2
+2023,247,1569,Airody Vasudeva Adhikari,NIT Surathkal,Chemistry,Badekai Ramachandra Bhat,NIT Surathkal,Chemistry,1,0.0262,https://doi.org/10.1016/j.dyepig.2023.111560
+2023,270,1569,K M Meera Sheriffa Begum,NIT Trichy,Chemical,N Samsudeen,NIT Trichy,Chemical,1,0.0255,https://doi.org/10.1111/wej.12886
+2023,358,1569,Anish S,NIT Surathkal,Mechanical,Arun M,NIT Surathkal,Mechanical,1,0.0231,https://doi.org/10.1002/ceat.202200494
+2023,429,1569,Mangalpady Aruna,NIT Surathkal,Mining,Bijay Mihir Kunar,NIT Surathkal,Mining,1,0.0214,https://doi.org/10.1016/j.cegh.2023.101438
+2023,501,1569,Mangalpady Aruna,NIT Surathkal,Mining,Sandi Kumar Reddy,NIT Surathkal,Mining,1,0.0196,https://doi.org/10.1061/jhtrbp.hzeng-1248
+2023,528,1569,A S S Balan,NIT Surathkal,Mechanical,Ramesh M R,NIT Surathkal,Mechanical,1,0.0191,https://doi.org/10.1016/j.jmbbm.2023.106243
+2023,680,1569,N Kumaresan,NIT Trichy,EEE,C Nagamani,NIT Trichy,EEE,0,0.0168,https://doi.org/10.1007/s00202-023-01871-x
+2023,710,1569,Arumuga Perumal D,NIT Surathkal,Mechanical,Srikanth Bontha,NIT Surathkal,Mechanical,0,0.0166,https://doi.org/10.1016/j.mtcomm.2023.106977
+2023,729,1569,Krishnamoorthy K,NIT Surathkal,ECE,Pathipati Srihari,NIT Surathkal,ECE,0,0.0165,https://doi.org/10.1109/mapcon58678.2023.10463964
+2023,862,1569,Ajay Kumar Yadav,NIT Surathkal,Mechanical,Ravikiran Kadoli,NIT Surathkal,Mechanical,0,0.0157,https://doi.org/10.1016/j.applthermaleng.2023.120516
+2023,1030,1569,S Saravanan,NIT Trichy,Civil,S T Ramesh,NIT Trichy,Civil,0,0.015,https://doi.org/10.1007/s00477-023-02569-z
+2023,1032,1569,Nagendrappa H,NIT Surathkal,EEE,B Venkatesa Perumal,NIT Surathkal,EEE,0,0.0149,https://doi.org/10.1109/icaect57570.2023.10117621
+2023,1073,1569,Krishnamoorthy K,NIT Surathkal,ECE,Prabu K,NIT Surathkal,ECE,0,0.0148,https://doi.org/10.1109/conit59222.2023.10205774
+2023,1127,1569,G Saravana Ilango,NIT Trichy,EEE,Karthik Thirumala,NIT Trichy,EEE,0,0.0146,https://doi.org/10.1109/pesgre58662.2023.10405071
+2023,1288,1569,Anish S,NIT Surathkal,Mechanical,Ravikiran Kadoli,NIT Surathkal,Mechanical,0,0.014,https://doi.org/10.1016/j.applthermaleng.2023.120516
+2023,1455,1569,Nasar T,NIT Surathkal,Water Resources & Ocean,Ramesh H,NIT Surathkal,Water Resources & Ocean,0,0.0135,https://doi.org/10.1109/ingarss59135.2023.10490433
+2024,11,1569,Ajay Kumar Yadav,NIT Surathkal,Mechanical,N Gnanasekaran,NIT Surathkal,Mechanical,2,0.0733,https://doi.org/10.1016/j.icheatmasstransfer.2024.108345
+2024,24,1569,Jeny Rajan,NIT Surathkal,CSE,Chandrasekaran K,NIT Surathkal,CSE,1,0.0585,https://doi.org/10.1109/lgrs.2024.3389671
+2024,134,1569,Jeyaraj P,NIT Surathkal,Mechanical,Subhaschandra Kattimani,NIT Surathkal,Mechanical,1,0.0321,https://doi.org/10.1080/15397734.2024.2415484
+2024,169,1569,Bibhuti Bhusan Das,NIT Surathkal,Civil,Rajasekaran C,NIT Surathkal,Civil,1,0.0291,https://doi.org/10.1088/2053-1591/ad94d6
+2024,248,1569,G Arthanareeswaran,NIT Trichy,Chemical,N Samsudeen,NIT Trichy,Chemical,1,0.0261,https://doi.org/10.1016/j.electacta.2024.145579
+2024,249,1569,Ramesh M R,NIT Surathkal,Mechanical,Subhaschandra Kattimani,NIT Surathkal,Mechanical,1,0.026,https://doi.org/10.1080/15376494.2024.2343033
+2024,250,1569,Chandhini G,NIT Surathkal,Mathematics,Kedarnath Senapathi,NIT Surathkal,Mathematics,1,0.026,https://doi.org/10.1016/j.amc.2024.129112
+2024,486,1569,S R Balasundaram,NIT Trichy,Computer Applications,Jitendra Kumar,NIT Trichy,Computer Applications,1,0.0197,https://doi.org/10.1007/978-3-031-53085-2_14
+2024,540,1569,A S S Balan,NIT Surathkal,Mechanical,Prasad Krishna,NIT Surathkal,Mechanical,1,0.0187,https://doi.org/10.58368/mtt.23.7-8.2024.14-18
+2024,565,1569,Sandeep Kumar,NIT Surathkal,ECE,Shyam Lal,NIT Surathkal,ECE,1,0.0182,https://doi.org/10.1007/s11042-024-18639-5
+2024,763,1569,C Sathiya Narayanan,NIT Trichy,Production,D Lenin Singaravelu,NIT Trichy,Production,0,0.0162,https://doi.org/10.1007/s12666-024-03413-w
+2024,1441,1569,Dharavath Kishan,NIT Surathkal,EEE,Yellasiri Suresh,NIT Surathkal,EEE,0,0.0135,https://doi.org/10.1109/pedes61459.2024.10960885
+2024,1465,1569,Deepu Vijayasenan,NIT Surathkal,ECE,Raghavendra B S,NIT Surathkal,ECE,0,0.0134,https://doi.org/10.1109/space63117.2024.10668098
+2024,1473,1569,Raviraj H M,NIT Surathkal,Civil,Basavaraju Manu,NIT Surathkal,Civil,0,0.0134,https://doi.org/10.1007/978-981-97-4852-5_64
+2025,130,1568,Dharavath Kishan,NIT Surathkal,EEE,Udaykumar R Yaragatti,NIT Surathkal,EEE,1,0.0323,https://doi.org/10.1109/pesgre65581.2025.11521184
+2025,195,1568,Vasudeva Madav,NIT Surathkal,Mechanical,Kumar G N,NIT Surathkal,Mechanical,1,0.028,https://doi.org/10.1039/d5ra04020e
+2025,288,1568,Krishnamoorthy K,NIT Surathkal,ECE,Neelawar Shekar Vittal Shet,NIT Surathkal,ECE,1,0.0246,https://doi.org/10.1017/s1759078724001351
+2025,522,1568,Chivukula Suryanarayana Murthy,NIT Surathkal,Mining,Sandi Kumar Reddy,NIT Surathkal,Mining,1,0.0189,https://doi.org/10.1007/s43538-025-00589-7
+2025,556,1568,Jeyaraj P,NIT Surathkal,Mechanical,Satyabodh M Kulkarni,NIT Surathkal,Mechanical,0,0.0181,https://doi.org/10.1177/14658011251330391
+2025,565,1568,Suman M,NIT Trichy,EEE,Suryanarayana Gangolu,NIT Trichy,EEE,1,0.0179,https://doi.org/10.1109/icps67276.2025.11364851
+2025,872,1568,R Gandhimathi,NIT Trichy,Civil,S Saravanan,NIT Trichy,Civil,0,0.0155,https://doi.org/10.1016/j.psep.2025.107732
+2025,895,1568,Gangadharan K V,NIT Surathkal,Mechanical,Veershetty Gumtapure,NIT Surathkal,Mechanical,0,0.0155,https://doi.org/10.1007/s42835-025-02405-0
+2025,1262,1568,Ajith Kulangara Madam,NIT Surathkal,Physics,Partha Pratim Das,NIT Surathkal,Physics,0,0.014,https://doi.org/10.1021/acsaelm.4c01615

@@ -8,7 +8,7 @@ Every number uses the same sources for all six, so the comparison is fair:
   - papers: our OpenAlex download (fetch_peers.py, same filter for all six), plus the references that point to
     another paper of the same NIT (fetch_peers.py refs) for the self-citation share;
   - faculty: each NIT's NIRF 2025 list (rank, joining year), matched by name to OpenAlex author IDs as on 17 Nov.
-The faculty network is built exactly like the one behind our 1.66: faculty only, papers with up to 50 authors,
+The faculty network is built exactly like the one behind our 1.65: faculty only, papers with up to 50 authors,
 cumulative from 2016. Average degree uses two N's: connected faculty (at least one faculty co-author) and the plain
 number of faculty in post that year ("pure number": NIRF faculty who had joined by then).
 The founding-years test asks whether hiring waves (a young NIT still hiring its first faculty, or a big recruitment

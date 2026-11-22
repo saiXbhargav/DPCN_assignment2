@@ -6,6 +6,8 @@
 
 **Interactive dashboard (live):** https://saixbhargav.github.io/DPCN_assignment2/dashboard/
 
+**Main findings, what they mean and how they compare with real networks:** [data/analysis/FINDINGS.md](data/analysis/FINDINGS.md) (also at the top of the dashboard's Key findings tab).
+
 This file explains **what we did and exactly how we got the data**, so that every number can be checked and reproduced.
 
 ---
@@ -17,7 +19,7 @@ This file explains **what we did and exactly how we got the data**, so that ever
 | Papers | **18,343**: 9,184 for NIT Trichy and 9,206 for NIT Surathkal. 47 have faculty from both NITs and count for each. |
 | Rows in `group12_data.csv` | **21,933**, one per (paper, NIT faculty member) |
 | Faculty | **743** regular faculty in science / engineering branches (current and former, 2016–2026); 657 of them have papers |
-| Who is left out | PhD students and other non-faculty authors; Management and Humanities faculty; papers on business, economics, social sciences, psychology or arts |
+| Who is left out | PhD students and other non-faculty authors (their own papers are added only in `data/all_papers.csv` for Phase II publication counts); Management and Humanities faculty; papers on business, economics, social sciences, psychology or arts |
 | Citation network | 181,189 edges |
 | Authorship network | 25,693 co-author rows; faculty graph of 657 people |
 
@@ -222,7 +224,7 @@ Other rules:
 - One person can have **several OpenAlex IDs**. OpenAlex often splits people; **381 faculty have 2 or more IDs**, which are merged.
 - One ID belongs to at most one person per institute. Faculty who moved between the two NITs (V. Vignesh Kumar, I. Jeyaraman, Ruben Sudhakar D) keep the same ID at both.
 - Authorships with **no OpenAlex author ID** are assigned by a clear name match within the same department.
-- **Team review.** 59 uncertain links were checked by hand: 21 accepted, 34 rejected.
+- **Team review.** 59 uncertain links were checked by hand: 25 accepted, 34 rejected.
   - The decisions are in `faculty_match_overrides.csv` (`faculty_id, author_id, decision, faculty_name, openalex_name`) and are applied on every run.
   - Two 1-paper IDs that were accepted for two different people with the same name are left out.
 - **Split author IDs.** One OpenAlex ID (A5027559765) covers two different NITK professors with the same two names: Manu Basavaraju (CSE; PhD IISc, graph theory) and Basavaraju Manu (Civil; PhD IIT Bombay, wastewater treatment). `data/reference/author_splits.csv` gives its Computer Science and Mathematics papers to the CSE member and leaves the rest with the Civil member; every paper that names a department in its affiliation agrees with this split.
@@ -382,7 +384,7 @@ Left out: 21,359 authorships by NIT people who are not faculty in our scope, and
 - **Degree centrality:** distinct faculty co-authors ÷ (number of faculty − 1).
 - **Betweenness centrality:** exact (not sampled), using unweighted shortest paths.
 - **Louvain communities:** NetworkX, weighted by number of joint papers, random seed 42 so the result is reproducible.
-  - 162 communities, 19 of them with 10 or more members.
+  - 162 communities, 19 of them with 10 or more members (45 among the 540 faculty with a faculty co-author; the rest are single faculty without one).
   - **Modularity 0.846** (strong group structure, typical of department-based collaboration).
 - The graph has 137 separate pieces; the largest contains 491 faculty.
 - Saved to `data/network_metrics/author_metrics.csv`, including each faculty member's number of partner Indian institutes.
@@ -462,7 +464,7 @@ Every table is saved as CSV, and [ANALYSIS.md](data/analysis/ANALYSIS.md) collec
 ### 1. Papers with more than 50 authors: is there a big bias?
 - **Before** the faculty and subject filters, there were 3 such papers. The ChatGPT opinion paper (73 authors, 4,455 citations) alone held **2.4% of NIT Trichy's citations** and was the most-cited paper of the whole dataset. That is a real bias in the totals and in the most-cited list, and it is a Social Sciences paper.
 - **Now** no paper with more than 50 authors is left.
-  - Faculty rankings, institute totals and the co-authorship network are **identical** with cut-offs of 20, 30, 50, 100 or none (rank correlation 1.000).
+  - Faculty rankings, institute totals and the co-authorship network are **identical** with cut-offs of 30, 50, 100 or none; a cut-off of 20 removes one NIT Surathkal paper and leaves every ranking unchanged (rank correlation 1.000).
   - With fractional counting (each author gets 1/n of a paper) the correlation is 0.98.
 - **Verdict:** no meaningful bias any more. The 50-author rule is kept as standard practice.
 
@@ -484,7 +486,7 @@ Per faculty member (Mann–Whitney test):
 - NIT Surathkal faculty publish more (median 31 vs 19 papers), get more citations and have a higher h-index. All three differences are **significant**.
 - The FWCI difference is **not** significant (p = 0.16).
 
-In short: higher output per person at NIT Surathkal and more citations per paper at NIT Trichy. On field-normalised impact, the two institutes are **statistically the same** once branch, year and collaboration are taken into account (section 7.5).
+In short: higher output per person at NIT Surathkal and more citations per paper at NIT Trichy. On field-normalised impact we find **no significant difference** between the two institutes once branch, year and collaboration are taken into account (section 7.5).
 
 ### 2b. Measures asked for in class
 
@@ -544,7 +546,7 @@ Everything follows the co-authorship rule (Step 11). Tables are `data/analysis/t
 | Citations given (out-flow) | 43,057 | 37,191 |
 | Impact ratio (received / given) | 0.86 | 0.82 |
 
-- **By year**, both NITs gave more than they received until 2022. Since 2023 they receive more than they give (ratio 1.1–1.35). Part of the early gap is timing: new papers need a few years to collect citations.
+- **By year**, NIT Trichy gave more citations than it received up to 2022 and NIT Surathkal up to 2021. Since 2023 both receive more than they give every year (Trichy 1.10–1.35, Surathkal 1.03–1.25). Part of the early gap is timing: new papers need a few years to collect citations.
 - **Top 10 citing institutes:**
   - NIT Trichy: VIT, Saveetha University, SRM, Anna University, Chandigarh University, …, IIT Roorkee and IIT Delhi.
   - NIT Surathkal: VIT, SRM, Manipal, Saveetha, VTU, …, IISc and IIT Roorkee.
@@ -584,7 +586,7 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
 - **Geography:**
   - 37% of joint papers are with institutes within 300 km, but only 16% of citations;
   - doubling the distance cuts joint papers by about 38% but citations by only about 11% (gravity model; distance elasticity −0.70 vs −0.17).
-- **Link prediction** (train to 2022, test 2023–2026, 156,424 candidate pairs, 242 real new links):
+- **Link prediction** (train to 2022, test 2023–2026, 156,985 candidate pairs, 242 real new links):
   - Adamic–Adar and resource allocation reach **7% precision@100**, 45 times better than random;
   - a logistic model using the network scores plus same department and same institute reaches **AUC 0.90**;
   - `link_prediction_top50_future_pairs.csv` lists the 50 most likely future faculty pairs.
@@ -599,9 +601,9 @@ Results, charts and explanations are in [data/analysis/insights/INSIGHTS.md](dat
   - `data/raw/institutions_geo.jsonl`: the coordinates of 2,350 institutes, 24 requests.
 - **Growth, 2016–2026:**
   - the network **densifies** (links ∝ faculty^1.7–2.5, R² ≈ 0.997);
-  - a large connected group **suddenly forms in 2018** (8% → 42% of faculty);
+  - a large connected group **suddenly forms in 2018** (8% → 41% of faculty);
   - the **diameter then shrinks** (effective diameter 19 → 9);
-  - departments slowly mix (modularity 0.95 → 0.85).
+  - cross-department links rose from 24% (2016) to 30% by 2019 and have stayed at 30–32% since; modularity fell (0.95 → 0.85) mainly because separate clusters joined up.
 - **Triadic closure:**
   - a pair with one common co-author is **about 19 times** more likely to start collaborating the next year, and with two or more about **32–36 times**;
   - across departments the effect is about **26 times**;
@@ -623,25 +625,25 @@ citation data, where growth is limited by time and team size.
 
 **7.2 Small world, rich club, assortativity, cores.** These use the faculty network's largest component: 491 faculty and 929 links.
 - **Small world.** Compared with 20 degree-preserving random graphs:
-  - clustering is **0.21 vs 0.010**, about 21× higher;
+  - clustering is **0.21 vs 0.011**, about 20× higher;
   - paths are only 1.35× longer (6.1 vs 4.5);
-  - small-world index **σ = 16.1**.
-- **Rich club.** The best-connected faculty co-author with each other up to **3.4×** more than chance (ρ(k) peaks at k > 11).
+  - small-world index **σ = 14.8**.
+- **Rich club.** The best-connected faculty co-author with each other up to **3.7×** more than chance (ρ = 3.66 for the 10 faculty with more than 11 co-authors), but 8 of those 10 are one group (Surathkal Mechanical and MME); below 9 co-authors the effect is weak (ρ ≤ 1.4).
 - **Assortativity:**
   - **by branch r = 0.66** (z ≈ 73 against random labels), and 69% of faculty–faculty links stay within one branch;
   - by institute r = 0.94;
-  - by rank only r = 0.07: senior and junior faculty mix freely;
+  - by rank only r = 0.07, weak but above chance (z = 4.3): faculty slightly prefer co-authors of the same rank;
   - by degree r = 0.20.
 - **k-cores:** the innermost 4-core has 36 faculty.
 
 **7.3 Communities vs departments.**
-- Louvain communities against departments: **NMI = 0.68**, against 0.24 for random labels; ARI = 0.34.
+- Louvain communities against departments: **NMI = 0.68**, against 0.24 for random labels; ARI = 0.35.
 - So collaboration groups are mostly departments, but 10 of the 20 communities with 8+ members are clearly
   cross-department. These are the interdisciplinary groups worth naming in the report.
 
 **7.4 Institute-level citation-flow network.** Institutes as nodes, weighted arrows for "cites", using the co-authorship rule.
 - Weighted reciprocity is **0.64**.
-- The picture shows a clear **knowledge hierarchy**. Our NITs cite the premier and national-lab clusters about 2.5–3× more than those clusters cite them:
+- The picture shows a clear **knowledge hierarchy**. Our NITs cite the premier and national-lab clusters about 2.5–3.7× more than those clusters cite them (over 2016–2026; early years, when our papers had little time to be cited, pull this down):
   - IITs: they give us 0.40 citations for each one we give them;
   - IISER/IISc: 0.34;
   - CSIR: 0.33;
@@ -651,11 +653,10 @@ citation data, where growth is limited by time and team size.
 - Universities and colleges draw on NIT work more than NITs draw on theirs (1.32).
 
 **7.5 A fair institute comparison.** We regress log(1 + FWCI) of each paper on an institute indicator, adding year, branch, then foreign and Indian collaboration, conference/journal and team size (OLS with robust errors).
-- The NIT Surathkal effect is **+0.6% (p = 0.49) with year only, −0.6% (p = 0.56) with branch, and +1.2% (p = 0.22)
+- The NIT Surathkal effect is **+0.6% (p = 0.49) with year only, −0.5% (p = 0.58) with branch, and +1.2% (p = 0.22)
   with everything**: never significant.
-- The raw gap in mean FWCI (1.31 vs 1.39) comes from a few highly cited papers and from branch mix, not from a
-  real institute-wide difference.
-- Branch by branch, the bootstrap intervals give the table in section 3: three clear wins for each NIT, and four branches with no clear difference.
+- The raw gap in mean FWCI (1.31 vs 1.39) is not significant: the medians are almost equal (0.63 vs 0.65), and on a log scale the gap is under 1% even with only year controlled.
+- Branch by branch, the bootstrap intervals give the table in section 3. After correcting for testing 10 branches (false discovery rate), NIT Surathkal is clearly stronger in CSE and EEE and NIT Trichy in Chemical and Mathematics; Mechanical (Surathkal) and ECE (Trichy) pass at 5% alone but not after the correction.
 
 ### 8. Phase II additions (`scripts/phase2.py` → [PHASE2.md](data/analysis/phase2/PHASE2.md))
 These cover the Phase II tasks. Details, tables and caveats are in PHASE2.md.
@@ -663,7 +664,7 @@ These cover the Phase II tasks. Details, tables and caveats are in PHASE2.md.
 - **Students' papers counted.**
   - `data/all_papers.csv` adds the **2,917 papers with no faculty author** (students and other NIT staff), science / engineering only. That makes **21,260 papers** (Trichy 10,950, Surathkal 10,377).
   - Publication statistics are reported for both scopes. Networks and faculty rankings stay faculty-only.
-  - Student-only papers are not weaker: at NIT Trichy their mean FWCI is 1.84.
+  - Student-only papers: at NIT Trichy they have the same median FWCI as faculty papers (0.63); their higher mean (1.84) comes from a few highly cited papers. At NIT Surathkal their median is lower (0.49 vs 0.65).
 - **Author count:** only **1%** of papers have 10 or more authors (212), holding under 2% of citations.
 - **Q1 and IF together:**
   - Q1 and IF > 5: **1,586 Trichy / 1,481 Surathkal** (faculty papers);
@@ -681,7 +682,7 @@ These cover the Phase II tasks. Details, tables and caveats are in PHASE2.md.
   - for two faculty (Kunwar Singh, Aditya Kumar), career citations summed over all their OpenAlex IDs are inflated by secondary IDs whose profiles mix in same-name researchers; their NIT papers and main-ID h-index are not affected.
 - **Why private institutes cite us so much:**
   - mainly **size and recent growth**: they're as big as the public citers and publish heavily since 2023 (74% of their citations to us); they also tend to be nearer (411 km vs 1,664 km), but that gap is not significant after a false-discovery-rate correction;
-  - their citations are **more personal**: 31% come from people within three co-authorship steps of the cited authors, against 21% for public citers (`data/analysis/papers/`);
+  - a larger share of their citations comes from people close to the cited authors: 31% within three co-authorship steps, against 21% for public citers (`data/analysis/papers/`); comparing the 40 institutes, only the 'earlier co-author' share stays different after the false-discovery correction;
   - **adjusted for size they cite us no more than public institutes** (43 vs 37 per 1,000 papers);
   - somewhat more **personal ties**: former NIT members and earlier co-authors;
   - their citing papers are lower-impact;
@@ -710,16 +711,16 @@ These cover the Phase II tasks. Details, tables and caveats are in PHASE2.md.
   - but 86% of internal citations are self-citations: without them, r is what random rewiring gives (in-in 0.13 vs 0.13), so the pattern comes from authors citing their own work.
 
 ### 9. Research questions (`scripts/questions.py` → [QUESTIONS.md](data/analysis/questions/QUESTIONS.md))
-Thirteen questions (items 15–28 of our list), each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
+Questions 15–28 of our list (22 and 23 answered together), each answered with data we already had. The only extra download was citations per year and open-access status (213 requests). Paper questions use all papers; faculty questions use faculty only.
 
 - **Countries (15):**
   - 17% of papers have a foreign co-author, from 94 countries;
   - a foreign co-author goes with +18% FWCI (adjusted), and two or more countries with +35%;
-  - UK (+40%), Malaysia, Korea and Australia (+20%) help most; Saudi Arabia, Japan and Chile bring no gain;
+  - the largest gains go with Vietnam (+67%, only 107 papers), the UK (+40%), and Malaysia, Korea and Australia (about +20%); Saudi Arabia, Japan and Chile show no gain (associations, not proof of cause);
   - several country links are mostly one faculty member's network.
-- **Partner types (16):** only foreign partners clearly raise impact (+17%); IITs bring no significant gain, and government labs and IISc / IISER go with slightly lower FWCI.
+- **Partner types (16):** only foreign-university partners go with clearly higher impact (+17%, significant after the false-discovery correction); other NITs (+5%) and foreign labs (+8%) are significant alone but not after it; IITs show no significant gain, and government labs (−6%) and IISc / IISER (−10%) go with lower FWCI.
 - **Key-person risk (17):**
-  - losing the top 10 bridge faculty (3%) disconnects 54% (Trichy) and 44% (Surathkal) of faculty pairs, against 8–9% for 10 random departures;
+  - losing the top 10 bridge faculty (3%) disconnects 54% (Trichy) and 44% (Surathkal) of faculty pairs, against 8–10% for 10 random departures;
   - in 19 of 27 departments one person holds more than a quarter of the department's links together.
 - **Former faculty (18):** the brain drain is junior. Of 28 former Assistant Professors, 12 moved to IITs or other NITs, and they were not weaker than those who stayed.
 - **Inequality (19):**
@@ -729,13 +730,13 @@ Thirteen questions (items 15–28 of our list), each answered with data we alrea
   - NIT faculty lead 80% of their papers;
   - Professors are last author 58% of the time and first author 3%;
   - Assistant Professors as first author fell from 29% (2016) to 7% (2025).
-- **Specialists vs generalists (21):** only a weak link (ρ ≈ 0.1) that mostly disappears once the number of papers is taken into account.
+- **Specialists vs generalists (21):** only a weak link (ρ ≈ 0.13) that shrinks to 0.09 and is no longer clearly significant once the number of papers is taken into account (for h-index it disappears).
 - **Where to publish (22–23):**
   - a conference paper is worth less than a Q1/Q2 journal paper (−35% vs Q1) but more than a Q3–Q4 or unranked journal paper;
-  - *Materials Today: Proceedings* (−20%) and *Lecture Notes in Civil Engineering* (−9%), the two most-used venues, lower impact.
+  - papers in *Materials Today: Proceedings* (−20%) and *Lecture Notes in Civil Engineering* (−9%), the two most-used venues, have lower impact than other papers of the same field and year, but not lower than papers in the same kind of venue (an association).
 - **Open access (24):**
   - 22% of papers are open;
-  - gold and green go with +10–13%, diamond and bronze with −12%;
+  - gold and green go with +10–13%, diamond and bronze with −12% and −13%;
   - most of the gap is the journal, not the openness.
 - **Rich get richer (25):**
   - new citations grow as k^0.75 (linear, α = 1, for papers 6+ years old);
@@ -770,23 +771,23 @@ Ideas and methods from ten published papers on the science of science, applied t
 - **Assortativity (F):**
   - assortative on degree (0.20; Surathkal 0.23, Trichy 0.11), h-index (0.26) and department (0.66);
   - rank mixing is weak (0.07);
-  - degree assortativity grew from near random in 2017–18 to 0.20.
+  - degree assortativity dipped to near random in 2017–18 (0.06, 0.01) after 0.20 in the small 2016 network, and has been 0.17–0.20 since 2022.
 
 ### 11. Network growth, link prediction and other NITs (`scripts/phase2_prof.py` → [PROF.md](data/analysis/prof/PROF.md))
 Added on 17 Nov. New sources: OpenAlex papers of NIT Warangal and NIT Calicut, and each NIT's NIRF 2025 data file (faculty lists; only counts are kept in the repo).
 
-- **Why 1.66:** in any one year a faculty member writes with about 1.7 colleagues, flat since 2016; the network-wide average (1.67 → 3.48) rises only because old links stay while new ones are added. The same faculty-only exponent is 1.41–1.74 at all four NITs, so 1.66 is normal.
-- **Predict and check:** giving the real latest year as input keeps the link-prediction model sharp (79% of 2025's new pairs in its top 5%, vs 60% for a model stuck on 2022, which cannot see the 22% of new links involving people who joined later).
+- **Why 1.65:** in any one year a faculty member writes with about 1.7 colleagues, flat since 2016; the network-wide average (1.67 → 3.48) rises only because old links stay while new ones are added. The same faculty-only exponent is 1.39–1.74 at the four NITs (NIRF faculty lists; with our own roster Trichy is 1.61), so 1.65 is normal.
+- **Predict and check (fixed model):** trained once on 2016–2022 and given only the 2022 network, the model ranks the real new faculty pairs of 2023, 2024 and 2025 well (AUC 0.90, 0.87, 0.90). Its top 1% of pairs (about 1,570) contains 19, 14 and 9 of them: low precision, but 15–22× better than random. All 42 correct matches are listed with the DOI of the first joint paper. A separate updated model, re-trained every year with the newest network, finds 19, 15 and 16, because new faculty (27% of 2025's new pairs) are invisible to a 2022 model.
 - **Four NITs:** papers per faculty member (Surathkal 4.7, Warangal 4.5, Trichy 3.4, Calicut 2.5 in 2024) run exactly opposite to the share of Assistant Professors; Warangal passed Trichy in yearly output in 2024; impact is about the same at Trichy, Surathkal and Warangal.
 - **Hiring:** no 2002/2003 wave among today's faculty at any of the four NITs; the waves were 2006–2009 and from 2018. Our roster matches NIRF (342 vs 348, 269 vs 279).
 - **Google Scholar:** a Scholar link for every faculty member on the dashboard, and a checklist for the most-cited faculty (Scholar blocks automated checks).
-- **N = all faculty, the "pure number"** (part `puren`): with N = every faculty member on the yearly pages (with or without a co-author), the average number of co-authors goes 0.63 → 2.61 (2016 → 2025). The headcount grew only 1.6× while links grew 6.8×, so with this N a power law fits poorly (a ≈ 3.1, R² 0.89): the faculty body is almost fixed and fills in with links.
+- **N = all faculty, the "pure number"** (part `puren`): with N = every faculty member on the yearly pages (with or without a co-author), the average number of co-authors goes 0.63 → 2.61 (2016 → 2025). The headcount grew only 1.6× while links grew 6.8×, so with this N a power law fits poorly (a ≈ 3.1, R² 0.89): links grow much faster than people.
 - **Do the rich get richer?** (part `kernel`): people with 9+ faculty co-authors gain 0.47 new ones a year, people with one gain 0.26. New co-authors ∝ (current co-authors)<sup>0.35</sup>: a weak, sub-linear rich-get-richer effect.
 
 ### 12. The six South Indian NITs (`scripts/south_nits.py` → [SOUTH.md](data/analysis/south/SOUTH.md))
 Our two NITs next to NIT Warangal, NIT Calicut, NIT Puducherry (2010) and NIT Andhra Pradesh (2015), all from the same OpenAlex download and each NIT's NIRF 2025 file. Groups 13 and 14 shared their data for Warangal and Calicut; `scripts/check_friends.py` checked it against our download and NIRF ([CHECKS.md](data/analysis/south/CHECKS.md), fixes in `data/reference/friends_corrections/`) and we use it as a cross-check.
 
-- **Recent hiring goes with a lower exponent:** the share of today's faculty hired in 2021–2025 runs exactly opposite to the densification exponent across the six NITs (Spearman ρ = −1.00, exact p = 0.003). New hires arrive with few links, so a NIT that is still hiring adds people faster than links. Inside each NIT, 4-year windows with more hiring also have lower exponents (ρ = −0.53).
+- **Recent hiring goes with a lower exponent:** the share of today's faculty hired in 2021–2025 runs exactly opposite to the densification exponent across the six NITs (Spearman ρ = −1.00, exact p = 0.003). With 6 NITs we cannot separate hiring from NIT age or the share of Assistant Professors, and with Groups 13's and 14's cleaned data for Warangal and Calicut the correlation weakens to −0.60 (p = 0.24). Pooled 4-year windows give ρ = −0.53, but inside a single NIT the link is not consistent. A pattern across NITs, not a law.
 - **Every NIT densifies** (a = 1.19–1.74 for faculty with a co-author), and at every NIT 85–92% of the citations between its own papers share an author.
 
 ### 13. Dashboard layout (18 Nov)
@@ -806,8 +807,8 @@ How things move through the faculty co-authorship network (faculty-to-faculty li
 - **Super-ties:** 11% of faculty pairs (9+ joint papers) write 52% of all joint faculty papers; 89% are within one department; their papers have a slightly higher median FWCI (0.80 vs 0.70, p = 0.003).
 - **Newcomers:** 46% of newcomers with 3 full years still have no faculty co-author in their NIT (52% at Trichy, 30% at Surathkal); first partners come from the same department (76%) and are often newcomers themselves (37%), not hubs.
 - **Brokers (Burt):** brokers are mostly the hubs (constraint vs degree ρ = −0.97), bridge departments (43% vs 14% of co-authors in other departments), plus 5 hidden brokers with few but bridging links.
-- **Kuramoto synchronisation** (ω ~ N(0,1), unweighted, largest connected group): synchrony starts at the theoretical K_c ≈ 0.2–0.26, but the real networks are much harder to bring into one rhythm than rewired ones (Laplacian eigenratio 670 vs 130; r = 0.5 at K ≈ 1.2 vs 0.7): departments synchronise inside and drift apart from each other. The best-connected faculty lock first (88% vs 47% at K = 1).
-- **Do collaborations last?** 57% of faculty pairs write together again within 3 years, but only 27% of the pairs that started in 2016–2018 were still active in 2023–2025. Renewal rises with time together (51% after one year, 81% after 5+), is more likely for same-department pairs (odds ×2.6) and pairs whose first papers had FWCI ≥ 1 (×2.4), and pairs write steadily rather than in bursts (yearly data).
+- **Kuramoto synchronisation** (ω ~ N(0,1), unweighted, largest connected group): synchrony starts at the theoretical K_c ≈ 0.2–0.26, but the real networks are much harder to bring into one rhythm than rewired ones (Laplacian eigenratio 670 vs 130; r = 0.5 at K ≈ 1.2 vs 0.7): groups are joined by thin bridges (synchrony inside departments was not measured). The best-connected faculty lock first (88% vs 47% at K = 1).
+- **Do collaborations last?** 57% of faculty pairs write together again within 3 years, but only 27% of the pairs that started in 2016–2018 were still active in 2023–2025. Renewal rises with time together (51% after one year, 81% after 5+), is more likely for same-department pairs (odds ×2.6) and pairs whose first papers had FWCI ≥ 1 (×2.4), and pairs are no more bursty than random timing (yearly data).
 - **Research groups over time** (Louvain in 3-year sliding windows, matched by Jaccard ≥ 0.3): 112 groups, 36% living one window, 22 lasting 5+ windows and 4 all nine; 9 of the long-lived ones changed their main department. Groups did not become more mixed (about 74% from the main department throughout). Large groups that keep a stable core live longer (ρ = 0.45, p = 0.006), unlike Palla et al. (2007).
 - **Key findings:** every card on the dashboard's Key findings tab now ends with a recommendation and who should act on it.
 - **How the thresholds are calculated:** [dashboard/docs/threshold_calculations.pdf](dashboard/docs/threshold_calculations.pdf) (built by `scripts/threshold_note.py`, linked from the Network dynamics tab) works through the SIR thresholds (mean-field, 1/λ₁ and the non-backtracking 1/λ_NB, which is the right one for SIR: 0.211 Trichy, 0.156 Surathkal) and the Kuramoto onset K_c = K₀/λ₁ with K₀ = 2/(πg(0)) = 1.596, and checks each against the simulations.
@@ -843,11 +844,12 @@ DPCN_assignment2/
 │   ├── questions.py         ← Phase II research questions: countries, partner types, key-person risk, former faculty, inequality, author roles, breadth, venues, open access, rich get richer, name-matching check, own-institute citations, citation-manipulation check → data/analysis/questions/
 │   ├── phase2_papers.py     ← Phase II, ideas from published studies: who cites us (co-authorship distance), citations without self-citations, fair comparison (rank, clustered errors, false discovery), core and edge interventions, productivity, hiring vs leaving, team size, assortativity
 │   ├── fetch_peers.py       ← papers of the six South Indian NITs (ours + Warangal, Calicut, Puducherry, Andhra Pradesh), same filter
-│   ├── phase2_prof.py       ← network growth and other NITs: average degree and 1.66, rolling link prediction, NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
+│   ├── phase2_prof.py       ← network growth and other NITs: average degree and 1.65, link prediction (fixed and updated models), NIRF faculty and joining years, four NITs, Google Scholar checklist, pure-N average degree, rich get richer
 │   ├── check_friends.py     ← checks Groups 13 and 14's data (Warangal, Calicut) against our download and NIRF
 │   ├── south_nits.py        ← the six South Indian NITs and the founding-years test
 │   ├── dynamics.py          ← network dynamics: SIR spreading and epidemic threshold, Kuramoto synchronisation, team triangles, super-ties, tie renewal and burstiness, newcomers, research groups over time, Burt brokers → data/analysis/dynamics/
 │   ├── threshold_note.py    ← the PDF dashboard/docs/threshold_calculations.pdf: spreading and Kuramoto thresholds worked out (needs Chrome or Edge)
+│   ├── findings.py          ← the main findings, inferences and real-network comparisons → data/analysis/FINDINGS.md + findings.json (dashboard Key findings tab)
 │   ├── build_dashboard.py   ← Task 5: packs the results into dashboard/index.html
 │   └── dashboard_template.html ← the dashboard's layout and code
 └── data/
@@ -915,6 +917,7 @@ python check_friends.py             # needs the friends' zips unpacked in data/r
 python south_nits.py                # data/analysis/south/
 python dynamics.py                  # data/analysis/dynamics/
 python threshold_note.py            # dashboard/docs/threshold_calculations.pdf (uses dynamics.py's outputs)
+python findings.py                  # data/analysis/FINDINGS.md + findings.json (run after all the analyses above)
 python build_dashboard.py           # dashboard/index.html
 ```
 
@@ -939,3 +942,16 @@ python build_dashboard.py           # dashboard/index.html
 5. **CORE covers mainly computing conferences.** Most engineering conferences at our NITs are unranked, so this column is mostly blank for conferences.
 6. **OpenAlex coverage.** A few papers may be missing or have wrong affiliations; 595 of our papers have no venue name and 68 no DOI.
 7. **Snapshot dates.** Citation counts are as of **7 October 2026**; FWCI and journal impact are as of **19 October 2026**.
+
+---
+
+## References for the real-world comparisons
+
+Used in [FINDINGS.md](data/analysis/FINDINGS.md) and on the dashboard to compare our networks with published real networks.
+
+- Leskovec, J., Kleinberg, J. & Faloutsos, C. (2005). Graphs over time: densification laws, shrinking diameters and possible explanations. *KDD '05*, 177–187. https://doi.org/10.1145/1081870.1081893 (author copy: https://cs.stanford.edu/people/jure/pubs/powergrowth-kdd05.pdf)
+- Newman, M. E. J. (2001). The structure of scientific collaboration networks. *PNAS* 98(2), 404–409. https://doi.org/10.1073/pnas.98.2.404
+- Barabási, A.-L., Jeong, H., Néda, Z., Ravasz, E., Schubert, A. & Vicsek, T. (2002). Evolution of the social network of scientific collaborations. *Physica A* 311, 590–614. https://doi.org/10.1016/S0378-4371(02)00736-7
+- Newman, M. E. J. (2002). Assortative mixing in networks. *Physical Review Letters* 89, 208701. https://doi.org/10.1103/PhysRevLett.89.208701
+- Liben-Nowell, D. & Kleinberg, J. (2007). The link-prediction problem for social networks. *Journal of the American Society for Information Science and Technology* 58(7), 1019–1031. https://doi.org/10.1002/asi.20591
+- The spreading and synchronisation thresholds (Newman 2002, Karrer, Newman & Zdeborová 2014, Restrepo, Ott & Hunt 2005 and others) are listed in [dashboard/docs/threshold_calculations.pdf](dashboard/docs/threshold_calculations.pdf).

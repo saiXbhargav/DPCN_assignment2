@@ -167,6 +167,12 @@ input[type="search"] { width: min(260px, 100%); }
 .rules b { color: var(--ink); }
 .fact sup { font-size: .55em; }
 .kf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+table.kfm td { vertical-align: top; font-size: 13px; line-height: 1.45; }
+table.kfm td:first-child { min-width: 200px; }
+table.kfm tr.kfm-g td { background: var(--chip); font: 600 12px/1.3 var(--body); letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+table.kfm .kfm-t { font-weight: 600; color: var(--ink); cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; background: none; border: 0; padding: 0; text-align: left; font-size: 13px; }
+table.kfm .kfm-c { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+table.kfm .kfm-p { display: inline-block; margin-top: 4px; padding: 1px 7px; border-radius: 999px; background: var(--chip); color: var(--muted); font-size: 11px; }
 .kf { display: flex; flex-direction: column; gap: 7px; }
 .kf .kf-n { font: 600 11px/1 var(--body); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
 .kf h3 { margin: 0; }
@@ -388,7 +394,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
   <h2>Overview</h2>
   <p class="lede">The two NITs side by side, the strongest things we found (each card opens the panel with the evidence), and a map of the rest of the dashboard. Pick a section on the left; the institute switch above it changes most charts.</p>
   <div class="grid">
-    <div class="panel s12"><h3>NIT Trichy and NIT Surathkal side by side</h3><p class="note">Faculty papers, 2016–2026. The better value in each row is in bold. "Level" means the gap is under 3%.</p>
+    <div class="panel s12"><h3>NIT Trichy and NIT Surathkal side by side</h3><p class="note">Faculty papers, 2016–2026. The higher value in each row is in bold; this is not a significance test. "Level" means the gap is under 3%. The Mean FWCI and top-10% gaps are not statistically significant (see Who's better?).</p>
       <div class="tablewrap" data-keep><table class="cmp" id="t-home-cmp"></table></div></div>
     <div class="s12"><h2 class="sec-h">What we found<small>open a card for the evidence</small></h2></div>
     <div class="s12"><div class="ins-grid" id="home-cards"></div></div>
@@ -399,7 +405,12 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
 <section id="keyfindings" role="tabpanel" aria-labelledby="tab-keyfindings" hidden>
   <h2>Key findings</h2>
-  <p class="lede">The twelve strongest evidence-based conclusions from all our analyses, each with its headline number and the test behind it. They cover both NITs together, so the institute switch does not change this tab. Every number is read from the same data as the rest of the dashboard; follow a card's link for the full evidence.</p>
+  <p class="lede">First, the main findings of the whole project (Phase I and Phase II) with what they mean and how they compare with real networks. Below them, the twelve strongest evidence-based conclusions, each with its headline number, the test behind it and what to do. They cover both NITs together, so the institute switch does not change this tab. Every number is read from the same data as the rest of the dashboard; follow a card's link for the full evidence.</p>
+  <div class="panel" id="kf-main" style="margin-bottom:18px"><h3>Main findings, what they mean, and how they compare with real networks</h3>
+    <p class="note">Phase I and Phase II together. Every number is read from our analysis outputs (scripts/findings.py, the same text as data/analysis/FINDINGS.md); the comparisons quote published studies of real networks, linked in each row. Click a finding to open its full evidence.</p>
+    <div class="facts" id="kf-main-facts" style="margin-bottom:12px"></div>
+    <div class="tablewrap" data-keep><table id="t-kf-main" class="kfm"></table></div></div>
+  <h3 style="margin:6px 0 10px">The strongest conclusions, each with what to do</h3>
   <div class="kf-grid" id="kf-cards"></div>
 </section>
 
@@ -435,7 +446,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
 <section id="trends" role="tabpanel" aria-labelledby="tab-trends" hidden>
   <h2>AI &amp; research trends</h2>
-  <p class="lede">Is AI spreading into every department, and how recent is the work each department builds on? (Team insight analyses, scripts/insights.py.) These charts cover both NITs together.</p>
+  <p class="lede">Is AI spreading into every department, and how recent is the work each department builds on? (Team insight analyses, scripts/insights.py.) These charts cover both NITs together, except the Price index by year, which follows the institute switch.</p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="tr-facts"></div></div>
     <div class="panel s7"><h3>AI papers as a share of all papers</h3><p class="note">A paper counts as AI if its OpenAlex subfield is an AI field or its title names an AI method. Computing = CSE, IT, Computer Applications.</p><div class="chart"><canvas id="ch-ai-year" aria-label="AI share by year"></canvas></div></div>
@@ -451,7 +462,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
 <section id="faculty" role="tabpanel" aria-labelledby="tab-faculty" hidden>
   <h2>Faculty</h2>
-  <p class="lede">Regular faculty (all ranks) from the institutes' own faculty pages, 2016–2026, including faculty who have since left.
+  <p class="lede">Regular science and engineering faculty (all ranks) from the institutes' own faculty pages, 2016–2026, including faculty who have since left.
   h-index (2016–26) is computed from these papers; career h-index is OpenAlex's.</p>
   <div class="grid">
     <div class="panel s12"><h3>Top-ranked faculty</h3><p class="note">The top 3 of each NIT in the composite ranking further down this tab (seven measures; current faculty with 10+ papers).</p><div id="podium"></div></div>
@@ -485,7 +496,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
   <p class="lede">Papers are nodes and an arrow means "cites". Drag to pan, scroll to zoom, click a paper for details. PageRank and in-degree are computed on citations between our own papers.</p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="cit-facts"></div></div>
-    <div class="panel s12"><h3>The most influential papers and who cites them</h3><p class="note" id="cg-note"></p>
+    <div class="panel s12"><h3>The most-cited papers inside our own citation network</h3><p class="note" id="cg-note"></p>
       <div class="tools"><label class="chk">Top <input type="range" id="cg-n" min="10" max="100" step="10" value="30" aria-label="Number of top papers"><b id="cg-nl">30</b> papers by PageRank, with their links</label>
         <label class="chk"><input type="checkbox" id="cg-self"> hide self-citations</label>
         <select id="cg-col" aria-label="Colour by"><option value="inst">Colour by institute</option><option value="field">Colour by field</option><option value="year">Colour by year</option></select>
@@ -497,7 +508,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
     <div class="panel s6" id="cit-selfyear"><h3>Self-citations stay high every year</h3><p class="note">Share of citations between our own papers where the citing and cited papers share an author, by year of the citing paper.</p><div class="chart tall"><canvas id="ch-selfyear" aria-label="Self-citation share by year"></canvas></div></div>
     <div class="panel s6"><h3>In-degree distribution</h3><p class="note">How many of our papers cite each paper (log–log). Most are never cited from inside; a few are cited dozens of times.</p><div class="chart tall"><canvas id="ch-indeg" aria-label="In-degree distribution"></canvas></div>
       <h3 style="margin-top:14px">Heavy tails: power law or log-normal?</h3><p class="note">Maximum-likelihood fits (powerlaw package). R &lt; 0 means log-normal fits better.</p><div class="tablewrap"><table id="t-fits"></table></div></div>
-    <div class="panel s12"><h3>Top 10 papers by PageRank</h3><p class="note">Within citations between our own papers.</p><div class="tablewrap"><table id="t-pr"></table></div></div>
+    <div class="panel s12"><h3>Top 10 papers by PageRank</h3><p class="note" id="pr-note">Within citations between our own papers.</p><div class="tablewrap"><table id="t-pr"></table></div></div>
   </div>
 </section>
 
@@ -545,13 +556,13 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
     <div class="panel s7" id="gr-degree"><h3>Average co-authors per faculty member, year by year</h3><p class="note" id="gd-note"></p>
       <div class="tools"><div class="seg" role="group" aria-label="Count faculty as"><button type="button" data-gd="connected" aria-pressed="true">Faculty with a co-author</button><button type="button" data-gd="pure" aria-pressed="false">All faculty (pure number)</button></div></div>
       <div class="facts" id="gd-facts" style="margin-bottom:10px"></div><div class="chart"><canvas id="ch-gd" aria-label="Average co-authors by year"></canvas></div></div>
-    <div class="panel s5" id="gr-kernel"><h3>Do the rich get richer?</h3><p class="note">New faculty co-authors gained the next year, by how many a person already has (2016&ndash;2025, pooled). Rising bars: well-connected faculty attract more new collaborators.</p>
+    <div class="panel s5" id="gr-kernel"><h3>Do the rich get richer?</h3><p class="note">New faculty co-authors gained the next year, by how many a person already has (2016&ndash;2025, pooled). The bars rise only gently: a weak, sub-linear rich-get-richer effect (almost flat at NIT Trichy). Busier people may also simply write more papers.</p>
       <div class="facts" id="gk-facts" style="margin-bottom:10px"></div><div class="chart"><canvas id="ch-gk" aria-label="New co-authors by current co-authors"></canvas></div></div>
     <div class="panel s6"><h3>Faculty and links</h3><p class="note">Connected faculty (at least one faculty co-author) and links, cumulative.</p><div class="chart"><canvas id="ch-gr-size" aria-label="Network size by year"></canvas></div></div>
-    <div class="panel s6"><h3>Densification</h3><p class="note">Links against faculty, log–log, one point per year. A slope above 1 means links grow faster than people.</p><div class="chart"><canvas id="ch-dens" aria-label="Densification"></canvas></div></div>
+    <div class="panel s6"><h3>Densification</h3><p class="note">Links against faculty, log–log, one point per year. A slope above 1 means links grow faster than people. Real growing networks densify the same way, with exponents from 1.08 to 1.68: citation graphs 1.56–1.68, patents 1.66, internet routers 1.18, author–paper graphs 1.08–1.15 (<a href="https://doi.org/10.1145/1081870.1081893" target="_blank" rel="noopener">Leskovec, Kleinberg &amp; Faloutsos 2005</a>).</p><div class="chart"><canvas id="ch-dens" aria-label="Densification"></canvas></div></div>
     <div class="panel s4"><h3>A giant component forms</h3><p class="note">Share of faculty in the largest connected group.</p><div class="chart short"><canvas id="ch-gr-giant" aria-label="Largest component share"></canvas></div></div>
-    <div class="panel s4"><h3>The network shrinks in distance</h3><p class="note">Effective diameter (90% of pairs within this many steps).</p><div class="chart short"><canvas id="ch-gr-diam" aria-label="Effective diameter"></canvas></div></div>
-    <div class="panel s4"><h3>Departments slowly mix</h3><p class="note">Louvain modularity and the share of cross-department links.</p><div class="chart short"><canvas id="ch-gr-mix" aria-label="Modularity and cross-department share"></canvas></div></div>
+    <div class="panel s4"><h3>The network shrinks in distance</h3><p class="note">Effective diameter (90% of pairs within this many steps). Real growing networks do the same: distances are largest when the giant component first appears, then shrink as links are added (<a href="https://doi.org/10.1145/1081870.1081893" target="_blank" rel="noopener">Leskovec et al. 2005</a>; the separation also falls in the co-authorship networks of <a href="https://doi.org/10.1016/S0378-4371(02)00736-7" target="_blank" rel="noopener">Barabási et al. 2002</a>).</p><div class="chart short"><canvas id="ch-gr-diam" aria-label="Effective diameter"></canvas></div></div>
+    <div class="panel s4"><h3>Departments mixed a little, then held steady</h3><p class="note">Louvain modularity and the share of cross-department links. Cross-department links rose from 24% (2016) to 30% by 2019 and have stayed at 30&ndash;32% since; modularity fell mainly because separate clusters joined up.</p><div class="chart short"><canvas id="ch-gr-mix" aria-label="Modularity and cross-department share"></canvas></div></div>
     <div class="panel s6"><h3>Do friends of friends become co-authors?</h3><p class="note">How much more likely a pair is to start working together next year than a far-apart pair (triadic closure).</p><div class="chart"><canvas id="ch-closure" aria-label="Triadic closure"></canvas></div></div>
     <div class="panel s6"><h3>Where new links come from</h3><p class="note">New faculty–faculty links each year, by how they formed.</p><div class="chart"><canvas id="ch-newlinks" aria-label="New link sources"></canvas></div></div>
     <div class="panel s6"><h3>Closure inside and across groups</h3><p class="note">Chance (%) that a pair starts collaborating the next year.</p><div class="tablewrap"><table id="t-closure"></table></div></div>
@@ -566,7 +577,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
   <h2>Network dynamics</h2>
   <p class="lede">How things move through the faculty co-authorship network: how far an idea can spread, whether the network can fall into one rhythm, whether groups form as teams or pair by pair, which partnerships last and renew, how newcomers join, how research groups are born, merge and die, and who bridges separate groups. Both NITs; faculty-to-faculty links only. (scripts/dynamics.py)</p>
   <div class="grid">
-    <div class="panel s12"><h3>How far can an idea spread?</h3><p class="note">SIR spreading: an idea starts with 5 faculty and each co-author passes it on with probability β (one chance per link). The epidemic threshold 1/λ₁ is the β above which spreading can take off; IPR measures how concentrated the network's leading eigenvector is (high = spreading depends on a small core). Real networks are compared with degree-preserving rewired copies; simulations are the mean of 500 runs.</p>
+    <div class="panel s12"><h3>How far can an idea spread?</h3><p class="note">SIR spreading: an idea starts with 5 faculty and each co-author passes it on with probability β (one chance per link). 1/λ₁ is the classic (SIS) epidemic threshold and a lower bound; for this SIR model the threshold is 1/λ_NB from the non-backtracking matrix (0.211 Trichy, 0.156 Surathkal; see the PDF below), and either way it is lower at Surathkal; IPR measures how concentrated the network's leading eigenvector is (high = spreading depends on a small core). Real networks are compared with degree-preserving rewired copies; simulations are the mean of 500 runs.</p>
       <p class="note doclink"><a href="docs/threshold_calculations.pdf" target="_blank" rel="noopener">How the thresholds are calculated (PDF, with the formulas worked out step by step)</a></p>
       <div class="facts" id="dy-spread-facts"></div></div>
     <div class="panel s6"><h3>NIT Trichy: faculty reached</h3><p class="note">Seeding with the 5 best-connected (hubs), the 5 best bridges (betweenness), or 5 random faculty.</p><div class="chart"><canvas id="ch-dy-spread-t" aria-label="Spreading reach, NIT Trichy"></canvas></div></div>
@@ -651,14 +662,14 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
   <p class="lede" id="so-lede"></p>
   <div class="grid">
     <div class="panel s12"><div class="facts" id="so-facts"></div></div>
-    <div class="panel s12" id="so-table-p"><h3>The six NITs side by side</h3><p class="note">Papers: OpenAlex, any author from the NIT (students' papers included), the same filter for all six. Faculty: each NIT's NIRF 2025 data file. Network: NIRF faculty matched by name to OpenAlex authors. All six are built this way, so compare them only with each other: the other tabs use our own faculty lists for each year (which also keep people who left) and hand-checked author IDs, which is why Trichy's a is 1.41 here but 1.61 there (Surathkal 1.74 here, 1.70 there).</p><div class="tablewrap" data-keep><table id="t-south"></table></div></div>
+    <div class="panel s12" id="so-table-p"><h3>The six NITs side by side</h3><p class="note">Papers: OpenAlex, any author from the NIT (students' papers included), the same filter for all six. Faculty: each NIT's NIRF 2025 data file. Network: NIRF faculty matched by name to OpenAlex authors. All six are built this way, so compare them only with each other: the other tabs use our own faculty lists for each year (which also keep people who left) and hand-checked author IDs, so Trichy's a is 1.41 here but 1.61 there (Surathkal 1.74 here, 1.70 there). The two use different faculty lists (NIRF 2025 current staff vs our yearly lists that keep leavers) and different author matching; we have not tested which difference matters more.</p><div class="tablewrap" data-keep><table id="t-south"></table></div></div>
     <div class="panel s6" id="so-found"><h3>The more a NIT hired recently, the slower its faculty network densifies</h3><p class="note" id="so-found-note"></p><div class="chart tall"><canvas id="ch-so-found" aria-label="Recent hiring against the densification exponent"></canvas></div></div>
-    <div class="panel s6" id="so-exp"><h3>Densification exponent a at each NIT</h3><p class="note">Faculty-only network, links &prop; (connected faculty)<sup>a</sup>. Above 1 = links grow faster than people.</p><div class="chart tall"><canvas id="ch-so-exp" aria-label="Densification exponent by NIT"></canvas></div></div>
+    <div class="panel s6" id="so-exp"><h3>Densification exponent a at each NIT</h3><p class="note">Faculty-only network, links &prop; (connected faculty)<sup>a</sup>. Above 1 = links grow faster than people. The shaded band is the range found in real growing networks, 1.08–1.68 (<a href="https://doi.org/10.1145/1081870.1081893" target="_blank" rel="noopener">Leskovec, Kleinberg &amp; Faloutsos 2005</a>): five NITs fall inside it and Surathkal (1.74) is just above it.</p><div class="chart tall"><canvas id="ch-so-exp" aria-label="Densification exponent by NIT"></canvas></div></div>
     <div class="panel s6"><h3>Papers per year</h3><p class="note">All papers with an author from the NIT. 2026 is left out (partial year).</p><div class="chart"><canvas id="ch-so-papers" aria-label="Papers per year at six NITs"></canvas></div></div>
     <div class="panel s6" id="so-deg"><h3>Average co-authors per faculty member</h3><p class="note">Faculty-only network, up to each year.</p>
       <div class="tools"><div class="seg" role="group" aria-label="Count faculty as"><button type="button" data-sod="connected" aria-pressed="true">Faculty with a co-author</button><button type="button" data-sod="pure" aria-pressed="false">All faculty (pure number)</button></div></div><div class="chart"><canvas id="ch-so-deg" aria-label="Average co-authors at six NITs"></canvas></div></div>
     <div class="panel s7"><h3>When today's faculty were hired</h3><p class="note">People on each NIT's NIRF 2025 list, by joining year, 2016&ndash;2025.</p><div class="chart"><canvas id="ch-so-hires" aria-label="Hires per year at six NITs"></canvas></div></div>
-    <div class="panel s5"><h3>Hiring waves lower the exponent inside each NIT too</h3><p class="note" id="so-roll-note"></p><div class="chart"><canvas id="ch-so-roll" aria-label="Hiring against the exponent in 4-year windows"></canvas></div></div>
+    <div class="panel s5"><h3>Hiring and the exponent in 4-year windows</h3><p class="note" id="so-roll-note"></p><div class="chart"><canvas id="ch-so-roll" aria-label="Hiring against the exponent in 4-year windows"></canvas></div></div>
   </div>
 </section>
 
@@ -727,12 +738,16 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
       <div class="facts" id="p2-link-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><h3 style="font-size:14px">Same NIT, same department</h3><div class="tablewrap"><table id="t-p2-links-in"></table></div></div><div class="s6"><h3 style="font-size:14px">Across the two NITs, same department</h3><div class="tablewrap"><table id="t-p2-links-x"></table></div></div></div></div>
     <div class="s12 grp-h" data-chip="Growth and other NITs"><h2>Network growth, link prediction and other NITs</h2></div>
-    <div class="panel s12" id="p2-grow-degree"><h3>Average co-authors over the years, and what 1.66 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
+    <div class="panel s12" id="p2-grow-degree"><h3>Average co-authors over the years, and what 1.65 means</h3><p class="note">Faculty co-authorship network. <b>Up to each year</b>: every link formed so far. <b>Within one year</b>: only that year's joint papers, among faculty who published that year. The exponent a comes from links ∝ (connected faculty)<sup>a</sup>, so the average number of co-authors grows as (connected faculty)<sup>a − 1</sup>. 2026 is left out (partial year).</p>
       <div class="facts" id="pf-degree-facts" style="margin-bottom:12px"></div>
       <div class="grid"><div class="s6"><div class="chart"><canvas id="ch-pf-degree" aria-label="Average co-authors per year"></canvas></div></div><div class="s6"><div class="chart"><canvas id="ch-pf-degree4" aria-label="Average co-authors at four NITs"></canvas></div></div></div></div>
-    <div class="panel s12" id="p2-grow-predict"><h3>Predict and check: which faculty pairs will write their first paper together?</h3><p class="note">The model learns from 2016–2022 and predicts 2023. For 2024, the real 2023 network is given as input (rolling); the same for 2025. It is compared with a model that only ever sees the 2022 network (fixed). Each year about 1 in 2,000 possible pairs starts working together, so the useful check is how high the real new pairs rank: a random guess puts 5% of them in its top 5% of pairs.</p>
+    <div class="panel s12" id="p2-grow-predict"><h3>Predict and check: a model trained once on 2016–2022 predicts 2023, 2024 and 2025</h3><p class="note"><b>Fixed model.</b> A logistic regression learns from 2016–2022 (one-year windows 2016→2017 … 2021→2022), is given only the 2022 faculty co-authorship network, and predicts which faculty pairs write their first paper together in 2023, in 2024 and in 2025. It never sees any data after 2022. Its prediction list is its top 1% of candidate pairs (about 1,570 a year). Each year only about 1 candidate pair in 2,000 really starts working together, so exact hits are rare and precision is low; the fair comparison is a random list of the same size.</p>
       <div class="facts" id="pf-pred-facts" style="margin-bottom:12px"></div>
-      <div class="tablewrap"><table id="t-pf-pred"></table></div>
+      <div class="tablewrap" data-keep><table id="t-pf-pred"></table></div>
+      <details class="tbl" id="pf-match-box"><summary id="pf-match-sum">Correct matches</summary><p class="note" style="margin:8px 0">Every real new pair that is in the fixed model's top 1% for that year. Rank = its place in the list of about 1,570; the DOI is the pair's first joint paper.</p><div class="tablewrap" data-keep><table id="t-pf-match"></table></div></details></div>
+    <div class="panel s12" id="p2-grow-updated"><h3>For comparison: an updated model, re-trained every year with the newest network</h3><p class="note"><b>Updated model</b> (a separate method, not the one above). The same features, but re-trained every year and given the real network of the year before: 2022 for 2023, 2023 for 2024, 2024 for 2025. It shows how much the fixed model loses by not seeing faculty who joined or started publishing after 2022.</p>
+      <div class="facts" id="pf-upd-facts" style="margin-bottom:12px"></div>
+      <div class="tablewrap" data-keep><table id="t-pf-upd"></table></div>
       <h3 style="font-size:14px;margin-top:14px" id="pf-check-title"></h3><div class="tablewrap"><table id="t-pf-check"></table></div></div>
     <div class="panel s12" id="p2-grow-four"><h3>Four NITs side by side</h3><p class="note">NIT Trichy and NIT Surathkal next to NIT Warangal and NIT Calicut. Papers: OpenAlex, the same filter and download day (17 Nov 2026) for all four, 2016–2025, any author from that NIT (students' papers included). Faculty numbers: each NIT's NIRF 2025 data file. Faculty-only network: NIRF faculty matched by name to OpenAlex authors.</p>
       <div class="facts" id="pf-four-facts" style="margin-bottom:12px"></div>
@@ -745,7 +760,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
 <section id="questions" role="tabpanel" aria-labelledby="tab-questions" hidden>
   <h2>Research questions</h2>
-  <p class="lede">Thirteen questions answered with our data (scripts/questions.py, details in data/analysis/questions/QUESTIONS.md). "Adjusted" = compared with papers of the same field and year, venue type, team size and NIT (regression on log(1 + FWCI), robust errors). Bars show 95% confidence intervals; gray = not significant.</p>
+  <p class="lede">Questions Q15–Q28 answered with our data (22 and 23 together) (scripts/questions.py, details in data/analysis/questions/QUESTIONS.md). "Adjusted" = compared with papers of the same field and year, venue type, team size and NIT (regression on log(1 + FWCI), robust errors). Bars show 95% confidence intervals; gray = not significant.</p>
   <div class="grid">
     <div class="panel s12"><h3>The answers in one line each</h3><ol id="q-answers" start="1" style="margin:6px 0 0;padding-left:22px;line-height:1.7"></ol></div>
 
@@ -780,11 +795,11 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
     <div class="s12" data-chip="20 Who leads"><h2 style="margin-top:8px">20 · Who leads the research: senior or junior faculty?</h2></div>
     <div class="panel s6"><h3>Position in the author list, by rank</h3><p class="note" id="q20-note"></p><div class="chart"><canvas id="ch-q20" aria-label="Author position by rank"></canvas></div></div>
-    <div class="panel s6"><h3>Junior faculty are becoming supervisors</h3><p class="note">Share of each rank's papers where the faculty member is first author. 2026 is partial.</p><div class="chart"><canvas id="ch-q20-year" aria-label="First-author share by year"></canvas></div></div>
+    <div class="panel s6"><h3>As faculty settle in, they move from first author to supervisor</h3><p class="note">Share of each rank's papers where the faculty member is first author. Rank is each person's latest rank, so a line follows the same people as they gain seniority (a career-stage pattern, not a comparison of cohorts). 2026 is partial.</p><div class="chart"><canvas id="ch-q20-year" aria-label="First-author share by year"></canvas></div></div>
 
     <div class="s12" data-chip="21 Specialists"><h2 style="margin-top:8px">21 · Do specialists or generalists have more impact?</h2></div>
     <div class="panel s6"><h3>Impact by research breadth</h3><p class="note">Faculty with 10+ papers in four equal groups by the variety of their subfields (10 random papers each).</p><div class="chart"><canvas id="ch-q21" aria-label="FWCI by breadth group"></canvas></div></div>
-    <div class="panel s6"><h3>Correlation with breadth (Spearman)</h3><p class="note">Weak overall, and mostly gone once the number of papers is accounted for.</p><div class="tablewrap"><table id="t-q21"></table></div></div>
+    <div class="panel s6"><h3>Correlation with breadth (Spearman)</h3><p class="note">Weak overall; it shrinks and is no longer clearly significant once the number of papers is accounted for (for h-index it disappears).</p><div class="tablewrap"><table id="t-q21"></table></div></div>
 
     <div class="s12" data-chip="22–23 Where to publish"><h2 style="margin-top:8px">22–23 · Where to publish?</h2></div>
     <div class="panel s6"><h3>Impact by venue type</h3><p class="note">Adjusted FWCI difference vs a paper in a Q1 journal.</p><div class="chart"><canvas id="ch-q22" aria-label="FWCI by venue type"></canvas></div></div>
@@ -809,7 +824,7 @@ input[type="range"] { accent-color: var(--both); width: min(220px, 40vw); }
 
     <div class="s12" data-chip="27 Name matching"><h2 style="margin-top:8px">27 · How sensitive are the results to name matching?</h2></div>
     <div class="panel s12"><h3>Main results without the doubtful faculty links</h3><p class="note" id="q27-note"></p>
-      <div class="tools"><div class="seg" role="group" aria-label="Which links"><button type="button" data-q27="drop single" aria-pressed="true">463 single-paper name matches</button><button type="button" data-q27="drop only" aria-pressed="false">96 strict doubtful</button></div></div>
+      <div class="tools"><div class="seg" role="group" aria-label="Which links"><button type="button" data-q27="drop single" aria-pressed="true">463 single-paper name matches</button><button type="button" data-q27="drop only" aria-pressed="false">104 strict doubtful links</button></div></div>
       <div class="tablewrap"><table id="t-q27"></table></div></div>
 
     <div class="s12" data-chip="28 Citation checks"><h2 style="margin-top:8px">28 · Citation manipulation check</h2></div>
@@ -899,9 +914,9 @@ function scoreMeasures() {
     ["Citations per paper", "mean", (i) => R[i].cites_per_paper, 1],
     ["Mean FWCI", "field-weighted; 1 = world average", (i) => T(i).mean_fwci, 2],
     ["In the world's top 10% cited", "share of papers", (i) => T(i).top10, 1, "pct"],
-    ["Q1 papers", "SCImago quartile", (i) => T(i).q1, 0],
-    ["Papers in IF > 5 journals", "2-year mean citedness", (i) => T(i).if5, 0],
-    ["Papers in IF > 10 journals", "2-year mean citedness", (i) => T(i).if10, 0],
+    ["Q1 share", "of ranked journal papers (SCImago)", (i) => T(i).q1_share, 1, "pct"],
+    ["In IF > 5 journals", "share of journal papers", (i) => T(i).if5 / T(i).journal, 1, "pct"],
+    ["In IF > 10 journals", "share of journal papers", (i) => T(i).if10 / T(i).journal, 1, "pct"],
     ["Impact ratio", "citations received ÷ made", (i) => a.impact_ratio[i], 2],
     ["Indian impact ratio", "same, other Indian institutes only", (i) => a.indian_ratio[i], 2],
     ["Papers per faculty member", "productivity", (i) => R[i].papers_per_faculty, 1],
@@ -948,7 +963,7 @@ function homeTab() {
     const at = PP.a && PP.a.table, cm = Object.fromEntries(((D.p2 || {}).citers_cmp || []).map((r) => [r.measure, r]));
     if (at && cm.citations_per_1000_of_their_papers) {
       const pv = at.find((r) => r.group === "from top private citers"), pu = at.find((r) => r.group === "from top public citers"), k = cm.citations_per_1000_of_their_papers;
-      add("Who cites us", `${fmt(pv.within_3_steps_pct)}% <small>vs</small> ${fmt(pu.within_3_steps_pct)}%`, "Private universities cite us through personal ties, not size",
+      add("Who cites us", `${fmt(pv.within_3_steps_pct)}% <small>vs</small> ${fmt(pu.within_3_steps_pct)}%`, "Private universities' citations come more often from people close to our authors",
         `For their size they cite us about as often as public institutes (${fmt(k.private_median)} vs ${fmt(k.public_median)} per 1,000 of their papers). But more of their citations come from people within three co-author steps of the cited author.`,
         "phase2/p2-citers", "Who cites us",
         (id) => miniChart(id, "bar", ["private citers", "public citers"], [{ label: "within 3 co-author steps", data: [pv.within_3_steps_pct, pu.within_3_steps_pct], backgroundColor: [css("--c4"), css("--c8")], borderRadius: 3 }],
@@ -965,8 +980,8 @@ function homeTab() {
     }
     const fs = PP.r && PP.r.fwci_sensitivity;
     if (fs) {
-      add("Impact", `${sp(fs[0].surathkal_effect_pct, 1)} <small>p = ${fmt(fs[0].p_clustered, 2)}</small>`, "Impact per paper is the same at both NITs",
-        `Surathkal papers against Trichy papers of the same field, year and venue type (FWCI), with errors grouped by faculty member. A foreign co-author goes with +${fmt(fs[0].foreign_effect_pct)}% (p < 0.001).`,
+      add("Impact", `${sp(fs[0].surathkal_effect_pct, 1)} <small>p = ${fmt(fs[0].p_clustered, 2)}</small>`, "No significant difference in impact per paper",
+        `Surathkal papers against Trichy papers of the same field, year and venue type (FWCI), with errors grouped by faculty member (p = ${fmt(fs[0].p_robust, 2)} with ordinary robust errors). A foreign co-author goes with +${fmt(fs[0].foreign_effect_pct)}% (p < 0.001).`,
         "analysis", "Who's better?",
         (id) => miniChart(id, "bar", ["Surathkal vs Trichy", "foreign co-author"], [{ label: "FWCI difference", data: [+fs[0].surathkal_effect_pct.toFixed(1), +fs[0].foreign_effect_pct.toFixed(1)], backgroundColor: [css("--c8"), css("--c3")], borderRadius: 3 }],
           { horizontal: true, min: 0, tooltip: { callbacks: { label: (c) => `${sp(c.raw, 1)} FWCI` } } }));
@@ -984,20 +999,19 @@ function homeTab() {
     }
     const P = F.pred || [];
     if (P.length) {
-      const ROLL = "rolling: input = network up to the year before", FIX = "fixed: input = 2022 network only";
-      const yrs = [...new Set(P.map((r) => r.target_year))].sort(), last = yrs[yrs.length - 1], pr = (y, m) => P.find((r) => r.target_year === y && r.method === m) || {};
-      add("Link prediction", `${fmt(pr(last, ROLL).all_real_links_in_top_5pct)}% <small>vs</small> ${fmt(pr(last, FIX).all_real_links_in_top_5pct)}%`, "Updating the network every year predicts new collaborations better",
-        `Real new faculty pairs of ${last} found in the model's top 5% of pairs: fed the latest network every year vs trained once on 2022. ${fmt(pr(last, FIX).new_links_out_of_reach_pct)}% of ${last}'s new links involve people the 2022 model never saw.`,
+      const FIX = "fixed: trained once on 2016-2022, input = 2022 network";
+      const yrs = [...new Set(P.map((r) => r.target_year))].sort(), pr = (y) => P.find((r) => r.target_year === y && r.model === FIX) || {};
+      add("Link prediction", yrs.map((y) => fmt(pr(y).correct_in_top_1pct)).join(" · "), "Trained once on 2016–2022, the model still finds new pairs in 2023–25",
+        `Real new faculty pairs of ${yrs.join(", ")} in the model's top 1% of pairs (about ${fmt(pr(yrs[0]).top_1pct_size)}), with no data after 2022: ${yrs.map((y) => fmt(pr(y).lift_top_1pct, 0) + "×").join(", ")} better than random, AUC ${yrs.map((y) => fmt(pr(y).auc, 2)).join(", ")}. Every correct match is listed.`,
         "phase2/p2-grow-predict", "Predict and check",
-        (id) => miniChart(id, "bar", yrs, [{ label: "rolling", data: yrs.map((y) => pr(y, ROLL).all_real_links_in_top_5pct), backgroundColor: css("--c3"), borderRadius: 3 },
-          { label: "fixed 2022", data: yrs.map((y) => pr(y, FIX).all_real_links_in_top_5pct), backgroundColor: css("--c8"), borderRadius: 3 }],
-          { legend: true, min: 0, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${fmt(c.raw)}% in the top 5%` } } }));
+        (id) => miniChart(id, "bar", yrs, [{ label: "correct in top 1%", data: yrs.map((y) => pr(y).correct_in_top_1pct), backgroundColor: css("--c8"), borderRadius: 3 }],
+          { min: 0, tooltip: { callbacks: { label: (c) => `${fmt(c.raw)} correct matches in the top 1%` } } }));
     }
     const dec = PP.d && PP.d.decomposition, hc = PP.d_headcount || [];
     if (dec && hc.length) {
       const dt = dec.find((r) => r.institution === T), ds = dec.find((r) => r.institution === S), j23 = ((F.nirf || {}).joined_2002_or_2003) || {};
       const hy = [...new Set(hc.map((r) => r.year))].filter((y) => y < 2026).sort();
-      add("Hiring", `${fmt(dt.faculty_2016)} <small>→</small> ${fmt(dt.faculty_2026)}`, "Trichy grew by hiring; there was no 2002–03 wave",
+      add("Hiring", `${fmt(dt.faculty_2016)} <small>→</small> ${fmt(dt.faculty_2026)}`, "Trichy grew by hiring; no 2002–03 wave among today's faculty",
         `NIT Trichy's faculty list grew from ${fmt(dt.faculty_2016)} to ${fmt(dt.faculty_2026)} (Surathkal ${fmt(ds.faculty_2016)} → ${fmt(ds.faculty_2026)}), mostly new Assistant Professors. Of today's faculty at four NITs, ${Object.values(j23).reduce((s, x) => s + x, 0)} joined in 2002–03.`,
         "phase2/p2-depth-hire", "Hiring vs leaving",
         (id) => miniChart(id, "line", hy, [T, S].map((i) => ({ label: shortInst(i), data: hy.map((y) => (hc.find((r) => r.institution === i && r.year === y) || {}).faculty_listed ?? null),
@@ -1025,7 +1039,7 @@ function homeTab() {
     if (SO && SO.table) {
       const ft = SO.founding_test["hired_2021_2025_pct vs a_connected_2016-2026"] || {}, rows = [...SO.table].sort((a, b) => a.hired_2021_2025_pct - b.hired_2021_2025_pct);
       add("Six South Indian NITs", `ρ = ${fmt(ft.spearman_rho, 2)}`, "The more a NIT hired recently, the slower its network densifies",
-        `Across Trichy, Surathkal, Warangal, Calicut, Puducherry and Andhra Pradesh, the share of faculty hired in 2021–25 runs exactly opposite to the densification exponent (exact p = ${fmt(ft.p_exact != null ? ft.p_exact : ft.p, 3)}).`,
+        `Across Trichy, Surathkal, Warangal, Calicut, Puducherry and Andhra Pradesh, the share of faculty hired in 2021–25 runs exactly opposite to the densification exponent (exact p = ${fmt(ft.p_exact != null ? ft.p_exact : ft.p, 3)}). With only 6 NITs, recent hiring, a young NIT and many Assistant Professors go together, so we cannot say which matters.`,
         "south/so-found", "South Indian NITs",
         (id) => miniChart(id, "bar", rows.map((r) => r.institution.replace("NIT ", "").replace("Andhra Pradesh", "AP")), [{ label: "exponent a", data: rows.map((r) => r["a_connected_2016-2026"]),
           backgroundColor: rows.map((r) => nitColor(r.institution)), borderRadius: 3 }], { min: 0, tooltip: { callbacks: { label: (c) => `a = ${fa(c.raw)} (hired ${fmt(rows[c.dataIndex].hired_2021_2025_pct)}% in 2021–25)` } } }));
@@ -1043,7 +1057,7 @@ function homeTab() {
     const aiShare = (y) => { const r = ai.filter((x) => x.year === y); return 100 * r.reduce((s, x) => s + x.ai_papers, 0) / r.reduce((s, x) => s + x.papers, 0); };
     const g = D.coauthor_graph, partners = new Set(D.conn.geo_points.filter((p) => p[4] > 0).map((p) => p[1])).size;
     const EX = [
-      ["Start", "keyfindings", "Key findings", "Twelve conclusions, the test behind each, and who should act on it"],
+      ["Start", "keyfindings", "Key findings", "Main findings compared with real networks, and the strongest conclusions with what to do"],
       ["Start", "overview", "Head to head", "Twelve measures, Trichy against Surathkal"],
       ["Output", "publications", "Publications", `${fmt(tb.papers)} papers; ${pct(tb.q1_share)} of ranked journal papers in Q1`],
       ["Output", "trends", "AI & research trends", `AI papers: ${fmt(aiShare(yrs[0]))}% of all in ${yrs[0]}, ${fmt(aiShare(2025))}% in 2025`],
@@ -1056,7 +1070,7 @@ function homeTab() {
       ["Comparisons", "analysis", "Who's better?", "Branch by branch, with statistical tests"],
       ["Comparisons", "south", "South Indian NITs", "Six NITs: output, hiring and how their faculty networks densify"],
       ["Deep dives", "phase2", "Phase II", "More analyses: who cites us, fair comparisons, network growth"],
-      ["Deep dives", "questions", "Research questions", "Thirteen questions, Q15–Q28"],
+      ["Deep dives", "questions", "Research questions", "Questions Q15–Q28"],
       ["About", "methods", "How we built it", "From the faculty pages to the networks"],
     ];
     $("#home-explore").innerHTML = EX.map(([gp, t, title, line]) => `<button type="button" class="ex" data-go="${t}"><span class="g">${gp}</span><b>${esc(title)}</b><span>${line}</span></button>`).join("");
@@ -1069,7 +1083,7 @@ function overview() {
   const a = D.analysis, R = Object.fromEntries(a.institutes.map((r) => [r.institution, r]));
   const T = (i) => D.papers[i].totals;
   $("#ov-lede").innerHTML = `Both NITs publish about the same number of papers. NIT Trichy gets more citations per paper; NIT Surathkal
-    faculty publish more each. After adjusting for branch, year and collaboration, their field-weighted impact is <b>statistically the same</b>,
+    faculty publish more each. After adjusting for branch, year and collaboration, we find <b>no significant difference</b> in their field-weighted impact,
     and the real differences show up branch by branch.`;
   const M = scoreMeasures();
   const wins = { "NIT Trichy": 0, "NIT Surathkal": 0, level: 0 };
@@ -1097,15 +1111,15 @@ function overview() {
     card("", `${fmt(T("NIT Trichy").papers)} <small>vs</small> ${fmt(T("NIT Surathkal").papers)}`, "Neck and neck on papers.",
       `Almost the same output over ten years, and together ${fmt(growth, 1)}× as many papers in 2025 as in 2016.`, "publications", "Publications"),
     card("t", `${fmt(R["NIT Trichy"].cites_per_paper, 1)} <small>vs</small> ${fmt(R["NIT Surathkal"].cites_per_paper, 1)}`, "Trichy is cited more.",
-      "NIT Trichy papers collect more citations on average, and Trichy has more papers in high-IF journals.", "publications", "Most-cited papers"),
+      "NIT Trichy papers collect more raw citations on average (not adjusted for field). The share of papers in IF > 5 journals is about the same at both NITs.", "publications", "Most-cited papers"),
     card("s", `${fmt(R["NIT Surathkal"].papers_per_faculty, 1)} <small>vs</small> ${fmt(R["NIT Trichy"].papers_per_faculty, 1)}`, "Surathkal faculty publish more each.",
-      "Papers per faculty member: a smaller faculty at NIT Surathkal produces the same total.", "faculty", "Faculty"),
+      "Papers per faculty member: a smaller faculty at NIT Surathkal produces the same total. Part of the gap is rank mix (Trichy has more Assistant Professors); comparing people of the same rank shrinks it.", "faculty", "Faculty"),
     card("", `p = ${fmt(reg.p_value, 2)}`, "Overall quality is level.",
       "Once branch, year, collaboration, venue and team size are controlled, the institute makes no significant difference to field-weighted impact.", "analysis", "Who's better?"),
     card("", `${swn.length} <small>vs</small> ${tw.length}`, "Branch wins are split.",
       `NIT Surathkal is stronger in ${swn.join(", ")}; NIT Trichy in ${tw.join(", ")}.`, "analysis", "Branch comparison"),
     card("", `σ = ${fmt(a.sigma, 1)}`, "A small world.",
-      `Faculty are only a few steps apart yet tightly clustered, and their communities mostly follow departments (NMI ${fmt(a.nmi[0].NMI, 2)}).`, "coauthor", "Co-authorship"),
+      `In the largest connected group, faculty are about 6 steps apart (4.5 in random networks with the same degrees) but about 20× more clustered. Communities are strongly shaped by department (NMI ${fmt(a.nmi[0].NMI, 2)}), though several large ones mix departments.`, "coauthor", "Co-authorship"),
   ].join("");
   $("#findings").querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => selectTab(b.dataset.go, true)));
 }
@@ -1265,7 +1279,7 @@ function netFacts() {
     f(fmt(c.edges_total), "citation edges in the submitted file (internal, to and from other Indian institutes)"),
     f(fmt(c.internal_graph_edges), `citations between our own ${fmt(c.internal_graph_nodes)} papers (PageRank graph)`),
     f(fmt(a.nit_graph_nodes), `faculty in the co-authorship graph, ${fmt(a.nit_graph_edges)} weighted links`),
-    f(fmt(a.modularity, 2), `Louvain modularity, ${a.louvain_communities} communities (${a.communities_size_ge_10} with 10+ faculty)`),
+    f(fmt(a.modularity, 2), `Louvain modularity: ${a.louvain_communities - (a.nit_graph_nodes - D.ins.growth[D.ins.growth.length - 1].connected_faculty)} communities among the ${fmt(D.ins.growth[D.ins.growth.length - 1].connected_faculty)} faculty with a faculty co-author (${a.communities_size_ge_10} with 10+ faculty)`),
     f(fmt(sw[0].avg_clustering, 2) + " vs " + fmt(sw[1].avg_clustering, 3), "clustering: our network vs random graphs with the same degrees"),
     f(fmt(sw[0].avg_path_length, 1) + " vs " + fmt(sw[1].avg_path_length, 1), "average path length: a small world"),
   ].join("");
@@ -1338,7 +1352,7 @@ function analysis() {
   $("#ns-facts").innerHTML = [
     f("σ = " + fmt(a.sigma, 1), "small-world index against degree-preserving random graphs (above 1 = small world)"),
     f(fmt(ass.branch.assortativity, 2), "assortativity by branch: faculty mostly co-author within their own branch"),
-    f(fmt(ass.designation.assortativity, 2), "assortativity by rank: junior and senior faculty mix freely"),
+    f(fmt(ass.designation.assortativity, 2), "assortativity by rank: weak but above chance (z = " + fmt(ass.designation.z_score, 1) + "): faculty slightly prefer co-authors of the same rank"),
     f("NMI " + fmt(nmi.NMI, 2), `Louvain communities vs departments (random: ${fmt(nmi.NMI_if_random, 2)})`),
     f("log-normal", `beats a power law for all ${fits.length} degree and citation distributions (heavy tails, α ≈ ${fmt(Math.min(...fits.map((x) => x.alpha)), 1)}–${fmt(Math.max(...fits.map((x) => x.alpha)), 1)})`),
     f("1.00", "rank correlation of faculty rankings with and without papers of 50+ authors: no large-paper bias left"),
@@ -1482,6 +1496,7 @@ function citationExtras() {
       scales: logScales("in-degree (citations from our own papers)", "number of papers") }) });
   $("#t-fits").innerHTML = T2([["Distribution"], ["α", 1], ["x min", 1], ["R", 1], ["p", 1]],
     N.degree_fits.map((r) => [esc(r.distribution), fmt(r.alpha, 2), fmt(r.xmin), fmt(r.R_vs_lognormal, 2), fmt(r.p_vs_lognormal, 3)]));
+  if ((D.pp || {}).s) { const s = D.pp.s; $("#pr-note").innerHTML = `Within citations between our own papers. ${pct(s.self_citation_share_shared_author)} of these citations share an author; without them, ${s.top10_overlap ? s.top10_overlap + " of these ten stay" : "none of these ten stays"} in the top 10 (Phase II, without self-citations). Read this as "most built on by the same groups", not "most influential".`; }
   $("#t-pr").innerHTML = T2([["#", 1], ["Title"], ["NIT"], ["Year", 1], ["PageRank", 1], ["Cited by our papers", 1], ["All citations", 1], ["DOI"]],
     N.top_pagerank.map((r, k) => [k + 1, esc(r.title), chip(r.institution.includes(";") ? "Both" : r.institution), r.year, (r.pagerank * 1000).toFixed(2) + "‰", fmt(r.in_degree_internal), fmt(r.citations_total), doiLink(r.doi)]));
 }
@@ -1558,7 +1573,7 @@ function growthTab() {
     [...I.closure_dept.map((r) => [yn(r.friend_of_friend), "department: " + yn(r.same_department), fmt(r.pairs), fmt(r.p_next_year_pct, 2) + "%", fmt(r.p_within_3_years_pct, 2) + "%"]),
      ...I.closure_inst.map((r) => [yn(r.friend_of_friend), "institute: " + yn(r.same_institute), fmt(r.pairs), fmt(r.p_next_year_pct, 2) + "%", fmt(r.p_within_3_years_pct, 2) + "%"])]);
   const ev = I.lp_eval;
-  $("#lp-note").textContent = `Trained on links up to 2022 and tested on 2023–2026: ${fmt(ev[0].candidates)} candidate faculty pairs, of which ${fmt(ev[0].true_new_links)} really started collaborating.`;
+  $("#lp-note").innerHTML = `Trained on links up to 2022 and tested on 2023–2026 together: ${fmt(ev[0].candidates)} candidate faculty pairs, of which ${fmt(ev[0].true_new_links)} really started collaborating. The year-by-year version (a model trained once on 2016–2022, scored on 2023, 2024 and 2025 separately, with every correct match) is in <a href="#phase2/p2-grow-predict">Phase II → Predict and check</a>.`;
   const nm = (m) => m.replace(/_/g, " ").replace("learned model (scores + department + institute)", "learned model (scores + dept. + institute)");
   $("#t-lp").innerHTML = T2([["Method"], ["AUC", 1], ["Precision @100", 1], ["× random", 1]],
     ev.map((r) => [r.method.startsWith("learned") ? `<b>${esc(nm(r.method))}</b>` : esc(nm(r.method)), fmt(r.auc, 2), fmt(r.precision_at_100_pct, 1) + "%", r.lift_at_100 ? fmt(r.lift_at_100, 0) + "×" : "–"]));
@@ -1630,13 +1645,13 @@ function analysisExtras() {
       return [c === "none" ? "no cap" : `≤ ${c} authors`, fmt(pl.reduce((a, r) => a + r.papers_removed, 0)), s ? fmt(s.spearman_vs_all_papers, 3) : "1.000",
               fmt(nw.communities), `${nw.top20_betweenness_overlap} / 20`]; }));
   const fr = rk.find((r) => r.max_authors === "fractional");
-  $("#large-verdict").textContent = `No bias left: the three papers with more than 50 authors were outside science/engineering and are gone, so every cap gives the same results.` +
+  $("#large-verdict").textContent = `No bias left: none of the three papers with more than 50 authors is in the final faculty science and engineering data. Caps of 30–100 authors change nothing; a cap of 20 removes one paper and every ranking stays the same.` +
     (fr ? ` Even fractional counting (1/n of a paper per author) keeps the ranking (Spearman ${fmt(fr.spearman_vs_all_papers, 2)}).` : "");
   const h = F.head_to_head;
   const pair = (t, s, d, p) => { const T = p ? pct(t, 0) : fmt(t, d), S = p ? pct(s, 0) : fmt(s, d);
     return [t > s ? `<b style="color:#1b5aa6">${T}</b>` : T, s > t ? `<b style="color:#a8441a">${S}</b>` : S]; };
   $("#t-h2h").innerHTML = T2([["Branch"], ["Papers T", 1], ["Papers S", 1], ["Per faculty T", 1], ["Per faculty S", 1], ["Cites/paper T", 1], ["Cites/paper S", 1],
-      ["FWCI T", 1], ["FWCI S", 1], ["Top 10% T", 1], ["Top 10% S", 1], ["Q1 T", 1], ["Q1 S", 1], ["Stronger on FWCI"]],
+      ["FWCI T", 1], ["FWCI S", 1], ["Top 10% T", 1], ["Top 10% S", 1], ["Q1 T", 1], ["Q1 S", 1], ["Higher mean FWCI"]],
     h.map((r) => [`<b>${esc(r.branch)}</b>`, ...pair(r["papers T"], r["papers S"], 0), ...pair(r["papers_per_faculty T"], r["papers_per_faculty S"], 1),
       ...pair(r["cites_per_paper T"], r["cites_per_paper S"], 1), ...pair(r["mean_fwci T"], r["mean_fwci S"], 2), ...pair(r["top10pct_share T"], r["top10pct_share S"], 0, 1),
       ...pair(r["q1_share_of_ranked_journals T"], r["q1_share_of_ranked_journals S"], 0, 1), chip(r.stronger_on_fwci)]));
@@ -1659,7 +1674,7 @@ function methodsTab() {
   ];
   $("#flow").innerHTML = steps.map(([v, l, d], k) => `<div class="step"><span class="num">${k + 1}</span><b>${v}</b><span class="lbl">${l}</span><p>${d}</p></div>`).join("");
   $("#rules").innerHTML = [
-    "<b>Faculty only.</b> A paper counts for an NIT only if a regular faculty member of that NIT is an author with that NIT's affiliation on the paper. PhD students are not counted.",
+    "<b>Faculty only.</b> A paper counts for an NIT only if a regular faculty member of that NIT is an author with that NIT's affiliation on the paper. Students' own papers are left out of the main data; they are added only in data/all_papers.csv for the Phase II publication counts, and the networks and rankings stay faculty-only.",
     "<b>Science and engineering only.</b> Papers in Business, Economics, Social Sciences, Psychology or Arts &amp; Humanities are dropped (1,156 papers).",
     "<b>Co-authorship is not citation flow.</b> If NIT Trichy cites its own paper written with IIT Madras, that is not a link between NIT Trichy and IIT Madras.",
     "<b>Large papers.</b> Papers with more than 50 authors are left out of the co-authorship network (none remain after the filters).",
@@ -1754,7 +1769,7 @@ function phase2Tab() {
   const cm = Object.fromEntries(P.citers_cmp.map((r) => [r.measure, r]));
   $("#p2-citer-facts").innerHTML = [
     fact(`${fmt(cm.citations_per_1000_of_their_papers.private_median)} vs ${fmt(cm.citations_per_1000_of_their_papers.public_median)}`, "citations to us per 1,000 of their papers, private vs public: no real difference (size explains it)"),
-    fact(`${fmt(cm.distance_km.private_median)} vs ${fmt(cm.distance_km.public_median)} km`, "median distance to the NIT they cite: private citers are nearby"),
+    fact(`${fmt(cm.distance_km.private_median)} vs ${fmt(cm.distance_km.public_median)} km`, "median distance to the NIT they cite: private citers tend to be nearer, but the gap is not significant after the false-discovery correction"),
     fact(`${fmt(cm.pct_citations_2023_2026.private_median)}%`, "of private citers' citations came in 2023–2026 (public: " + fmt(cm.pct_citations_2023_2026.public_median) + "%)"),
     fact(`${fmt(cm.citing_papers_in_proceedings_pct.private_median, 1)}% vs ${fmt(cm.citing_papers_in_proceedings_pct.public_median, 1)}%`, "citing papers in conference proceedings: lower-impact use"),
   ].join("");
@@ -1790,7 +1805,7 @@ function phase2Tab() {
   try { phase2Prof(); } catch (err) { console.error(err); }
 }
 function phase2Prof() {
-  // network growth, link prediction and other NITs (phase2_prof.py): average degree and the exponent 1.66, rolling link
+  // network growth, link prediction and other NITs (phase2_prof.py): average degree and the exponent 1.65, link
   // prediction, four NITs side by side, and when today's faculty joined (NIRF 2025)
   const F = D.pf || {};
   if (!F.growth) return;
@@ -1817,7 +1832,7 @@ function phase2Prof() {
     fact(`${fmt(gb(2016).avg_degree_connected_faculty, 2)} → ${fmt(gb(2025).avg_degree_connected_faculty, 2)}`, "average co-authors per connected faculty member, network up to each year (2016 → 2025)"),
     fact(`${fmt(Math.min(...single), 2)}–${fmt(Math.max(...single), 2)}`, "co-authors within a single year (faculty who wrote with a colleague that year), flat from 2016 to 2025: people don't work with more colleagues each year; the total rises because old links stay and new ones are added"),
     fact(`${fa(ex("NIT Trichy"))} / ${fa(ex("NIT Surathkal"))}`, "the exponent inside NIT Trichy / inside NIT Surathkal (our roster)"),
-    ...(fd.length ? [fact(`${fa(Math.min(...FOUR.map(fex)))}–${fa(Math.max(...FOUR.map(fex)))}`, `the same faculty-only exponent at four NITs (NIRF faculty lists): ${FOUR.map((i) => `${shortInst(i)} ${fa(fex(i))}`).join(", ")}. Every NIT densifies; 1.66 is normal`)] : [])].join("");
+    ...(fd.length ? [fact(`${fa(Math.min(...FOUR.map(fex)))}–${fa(Math.max(...FOUR.map(fex)))}`, `the same faculty-only exponent at four NITs (NIRF faculty lists): ${FOUR.map((i) => `${shortInst(i)} ${fa(fex(i))}`).join(", ")}. Every NIT densifies; 1.65 is normal, inside the 1.08–1.68 range of real growing networks (Leskovec et al. 2005)`)] : [])].join("");
   const gv = inst === "Both" ? ["Both NITs", ...INSTS] : [inst];
   draw("ch-pf-degree", { type: "line", data: { labels: yrs, datasets: gv.flatMap((v) => {
       const rows = G.filter((r) => r.view === v), c = v === "Both NITs" ? css("--both") : instColor(v), val = (k) => yrs.map((y) => (rows.find((r) => r.year === y) || {})[k] ?? null);
@@ -1829,19 +1844,36 @@ function phase2Prof() {
       borderColor: col(i), backgroundColor: col(i), borderWidth: 2.5, pointRadius: 3, tension: 0.2 })) },
     options: opt("co-authors per connected faculty member", "Four NITs, faculty only (NIRF lists): up to each year") });
 
-  // 2. predict and check
-  const P = F.pred || [], ROLL = "rolling: input = network up to the year before", FIX = "fixed: input = 2022 network only";
-  const pr = (y, m) => P.find((r) => r.target_year === y && r.method === m) || {};
-  const last = Math.max(...P.map((r) => r.target_year));
+  // 2. predict and check: A. fixed model (trained once on 2016-2022), B. updated model (re-trained every year), kept apart
+  const P = F.pred || [], FIX = "fixed: trained once on 2016-2022, input = 2022 network",
+    UPD = "updated: re-trained every year, input = network up to the year before", AA = "Adamic-Adar only (no learning), input = 2022 network";
+  const pr = (y, m) => P.find((r) => r.target_year === y && r.model === m) || {};
+  const PY = [...new Set(P.map((r) => r.target_year))].sort(), last = PY[PY.length - 1];
+  const MM = F.matches || [], fx = (y) => pr(y, FIX);
+  const range = (f, d) => `${fmt(Math.min(...PY.map(f)), d)}–${fmt(Math.max(...PY.map(f)), d)}`;
   $("#pf-pred-facts").innerHTML = [
-    fact(`${fmt(pr(last, ROLL).all_real_links_in_top_5pct)}% vs ${fmt(pr(last, FIX).all_real_links_in_top_5pct)}%`, `of the real new links of ${last} in the model's top 5% of pairs: rolling vs fixed 2022 input`),
-    fact(`${fmt(pr(last, FIX).new_links_out_of_reach_pct)}%`, `of ${last}'s new links involve faculty who had no paper yet in 2022, so the fixed model cannot predict them at all`),
-    fact(`AUC ${fmt(Math.min(...[2023, 2024, 2025].map((y) => pr(y, ROLL).auc)), 2)}–${fmt(Math.max(...[2023, 2024, 2025].map((y) => pr(y, ROLL).auc)), 2)}`, "rolling model, every year (0.5 = random); network scores alone (Adamic–Adar) reach only about 0.6")].join("");
-  $("#t-pf-pred").innerHTML = T2([["Year"], ["Method"], ["Real new links", 1], ["AUC", 1], ["In top 1%", 1], ["In top 5%", 1], ["In top 10%", 1], ["Out of reach", 1]],
-    P.map((r) => [r.target_year, esc(r.method.replace(": input = ", ": ")), fmt(r.method === FIX ? pr(r.target_year, ROLL).true_new_links : r.true_new_links), fmt(r.auc, 3), fmt(r.all_real_links_in_top_1pct) + "%",
-      `<b>${fmt(r.all_real_links_in_top_5pct)}%</b>`, fmt(r.all_real_links_in_top_10pct) + "%", r.new_links_out_of_reach_pct == null ? "–" : fmt(r.new_links_out_of_reach_pct) + "%"]));
+    fact(PY.map((y) => fmt(fx(y).auc, 2)).join(" · "), `AUC for ${PY.join(", ")} (0.5 = random, 1 = perfect): the 2022 model still ranks real new pairs high without any new data`),
+    fact(PY.map((y) => fmt(fx(y).correct_in_top_1pct)).join(" · "), `correct matches in its top 1% (about ${fmt(fx(PY[0]).top_1pct_size)} pairs a year), out of ${PY.map((y) => fmt(fx(y).reachable_new_pairs)).join(", ")} real new pairs it could reach`),
+    fact(`${range((y) => fx(y).lift_top_1pct, 0)}×`, `better than a random list of the same size (precision ${range((y) => fx(y).precision_top_1pct, 1)}% vs ${range((y) => fx(y).base_rate_pct, 2)}% by chance)`),
+    fact(PY.map((y) => fmt(fx(y).correct_in_top_100)).join(" · "), "correct in its top 100 only: exact hits at the very top are rare"),
+    fact(`${fmt(fx(last).out_of_reach_pct)}%`, `of ${last}'s real new pairs involve faculty with no paper by 2022, so a 2022 model cannot see them at all (${fmt(fx(PY[0]).out_of_reach_pct)}% in ${PY[0]})`)].join("");
+  const rowsFor = (m) => PY.map((y) => { const r = pr(y, m); return [y, fmt(r.all_new_pairs), fmt(r.reachable_new_pairs), `<b>${fmt(r.auc, 3)}</b>`, fmt(r.correct_in_top_100),
+    `<b>${fmt(r.correct_in_top_1pct)}</b> <span style="color:var(--muted)">of ${fmt(r.top_1pct_size)}</span>`, fmt(r.lift_top_1pct, 0) + "×", fmt(r.correct_in_top_5pct), fmt(r.found_top_5pct) + "%"]; });
+  const HEAD = [["Year"], ["Real new pairs", 1], ["…reachable", 1], ["AUC", 1], ["Correct in top 100", 1], ["Correct in top 1%", 1], ["vs random", 1], ["Correct in top 5%", 1], ["Reachable found in top 5%", 1]];
+  $("#t-pf-pred").innerHTML = T2(HEAD, [...rowsFor(FIX), ...PY.map((y) => { const r = pr(y, AA); return [`${y} <span style="color:var(--muted)">(Adamic–Adar alone)</span>`, fmt(r.all_new_pairs), fmt(r.reachable_new_pairs), fmt(r.auc, 3), fmt(r.correct_in_top_100), fmt(r.correct_in_top_1pct), fmt(r.lift_top_1pct, 0) + "×", fmt(r.correct_in_top_5pct, 0), fmt(r.found_top_5pct) + "%"]; })]);
+  $("#pf-match-sum").textContent = `Correct matches: ${fmt(MM.length)} real new pairs in the fixed model's top 1% (${PY.map((y) => `${y}: ${fmt(MM.filter((r) => r.target_year === y).length)}`).join(", ")})`;
+  const fac = (n, i, d) => `${esc(n)} ${chip(i)} <span style="color:var(--muted)">${esc(d)}</span>`;
+  $("#t-pf-match").innerHTML = T2([["Year"], ["Rank", 1], ["Faculty member"], ["Faculty member"], ["Common co-authors in 2022", 1], ["First joint paper"]],
+    MM.map((r) => [r.target_year, `${fmt(r.rank)} <span style="color:var(--muted)">/ ${fmt(r.list_size)}</span>`, fac(r.faculty_a, r.institute_a, r.department_a), fac(r.faculty_b, r.institute_b, r.department_b),
+      fmt(r.common_coauthors_2022), r.first_joint_paper_doi ? `<a href="${esc(r.first_joint_paper_doi)}" target="_blank" rel="noopener">${esc(r.first_joint_paper_doi.replace("https://doi.org/", ""))}</a>` : "–"]));
+  // B. updated model
+  $("#pf-upd-facts").innerHTML = [
+    fact(PY.map((y) => fmt(pr(y, UPD).auc, 2)).join(" · "), `AUC for ${PY.join(", ")}, re-trained every year with the newest network`),
+    fact(PY.map((y) => fmt(pr(y, UPD).correct_in_top_1pct)).join(" · "), `correct matches in its top 1%, against ${PY.map((y) => fmt(fx(y).correct_in_top_1pct)).join(", ")} for the fixed model`),
+    fact(`${fmt(pr(last, UPD).out_of_reach_pct)}%`, `of ${last}'s new pairs are out of its reach (people with no paper by ${last - 1}), against ${fmt(fx(last).out_of_reach_pct)}% for the fixed model`)].join("");
+  $("#t-pf-upd").innerHTML = T2(HEAD, rowsFor(UPD));
   const ck = (F.check || []).filter((r) => r.target_year === last).slice(0, 10);
-  $("#pf-check-title").textContent = `The rolling model's 10 most likely new pairs for ${last}, and what really happened`;
+  $("#pf-check-title").textContent = `The updated model's 10 most likely new pairs for ${last}, and what really happened`;
   $("#t-pf-check").innerHTML = T2([["#", 1], ["Faculty member"], ["Faculty member"], ["Common co-authors", 1], ["Wrote together?"]],
     ck.map((r) => [r.rank, `${esc(r.faculty_a)} ${chip(r.institute_a)} <span style="color:var(--muted)">${esc(r.department_a)}</span>`, `${esc(r.faculty_b)} ${chip(r.institute_b)} <span style="color:var(--muted)">${esc(r.department_b)}</span>`,
       fmt(r.common_coauthors), r.wrote_together_in_target_year ? '<span class="chip good">yes, in ' + last + "</span>" : r.first_joint_paper_year ? `later (${r.first_joint_paper_year})` : "not yet"]));
@@ -1850,7 +1882,7 @@ function phase2Prof() {
   const S4 = F.four || [], s4 = (i) => S4.find((r) => r.institution === i) || {};
   if (S4.length) {
     const M = [["Papers 2016–2025", (r) => fmt(r.papers_2016_2025)], ["Papers in 2024", (r) => fmt(r.papers_2024)],
-      ["Faculty (NIRF 2025, regular)", (r) => fmt(r.faculty_nirf_2025_regular)], ["<b>Papers in 2024 per faculty member</b>", (r) => `<b>${fmt(r.papers_2024_per_regular_faculty, 2)}</b>`],
+      ["Faculty (NIRF 2025, regular)", (r) => fmt(r.faculty_nirf_2025_regular)], ["<b>Papers in 2024 per regular faculty member</b>", (r) => `<b>${fmt(r.papers_2024_per_regular_faculty, 2)}</b>`],
       ["Assistant Professors", (r) => fmt(r.assistant_professor_share_pct) + "%"], ["Citations per paper", (r) => fmt(r.citations_per_paper, 1)],
       ["FWCI: median / mean", (r) => `${fmt(r.median_fwci, 2)} / ${fmt(r.mean_fwci, 2)}`], ["With a foreign co-author", (r) => fmt(r.foreign_coauthor_share_pct, 1) + "%"],
       ["With an industry co-author", (r) => fmt(r.industry_coauthor_share_pct, 1) + "%"], ["Partner institutions", (r) => fmt(r.partner_institutions)],
@@ -1859,7 +1891,7 @@ function phase2Prof() {
     $("#t-pf-four").innerHTML = T2([[""], ...FOUR.map((i) => [shortInst(i), 1])], M.map(([l, f]) => [l, ...FOUR.map((i) => f(s4(i)))]));
     const ppf = FOUR.map((i) => [i, s4(i).papers_2024_per_regular_faculty, s4(i).assistant_professor_share_pct]).sort((a, b) => b[1] - a[1]);
     $("#pf-four-facts").innerHTML = [
-      fact(ppf.map(([i, v]) => fmt(v, 1)).join(" · "), `papers in 2024 per faculty member (${ppf.map(([i]) => shortInst(i)).join(", ")})${ppf.every((x, k) => !k || x[2] > ppf[k - 1][2]) ? "; the more Assistant Professors, the fewer papers per head" : ""} (Assistant Professors: ${ppf.map(([, , a]) => fmt(a) + "%").join(", ")})`),
+      fact(ppf.map(([i, v]) => fmt(v, 1)).join(" · "), `papers in 2024 per regular faculty member (${ppf.map(([i]) => shortInst(i)).join(", ")})${ppf.every((x, k) => !k || x[2] > ppf[k - 1][2]) ? "; the more Assistant Professors, the fewer papers per head" : ""} (Assistant Professors: ${ppf.map(([, , a]) => fmt(a) + "%").join(", ")})`),
       fact(`${fmt(s4("NIT Warangal").papers_2024)} vs ${fmt(s4("NIT Trichy").papers_2024)}`, "papers in 2024, NIT Warangal vs NIT Trichy: Warangal tripled its output since 2016 and passed Trichy; Trichy has been flat since 2020"),
       fact(FOUR.map((i) => fmt(s4(i).median_fwci, 2)).join(" · "), "median FWCI (Trichy, Surathkal, Warangal, Calicut): impact is about the same at the first three")].join("");
     const Y4 = F.four_year || [];
@@ -2052,19 +2084,19 @@ function questionsTab() {
   const assistantFormer = Q.former_where.filter((r) => r.designation === "Assistant Professor").length;
   const g = Q.breadth_groups;
   $("#q-answers").innerHTML = [
-    `<b>Countries (15):</b> a foreign co-author goes with ${sp(fe.adjusted_effect_pct)} FWCI; two or more countries ${sp(nc.two_plus_countries.effect_pct)}. The UK, Malaysia, Korea and Australia help most.`,
-    `<b>Partner types (16):</b> only foreign partners clearly raise impact (${sp(pt["Foreign university"].effect_pct)}); IITs ${sp(pt.IIT.effect_pct)} (not significant), government labs ${sp(pt["Government R&D lab"].effect_pct)}.`,
+    `<b>Countries (15):</b> a foreign co-author goes with ${sp(fe.adjusted_effect_pct)} FWCI; two or more countries ${sp(nc.two_plus_countries.effect_pct)}. The largest gains go with Vietnam (+67%, only 107 papers), the UK (+40%), and Malaysia, Korea and Australia (about +20%). These are associations, not proof of cause.`,
+    `<b>Partner types (16):</b> only foreign-university partners go with clearly higher impact (${sp(pt["Foreign university"].effect_pct)}, significant after the false-discovery correction); other NITs (${sp(pt["Other NIT"].effect_pct)}) and foreign labs (${sp(pt["Foreign other"].effect_pct)}) are significant alone but not after it; IITs ${sp(pt.IIT.effect_pct)} (not significant); government labs ${sp(pt["Government R&D lab"].effect_pct)}.`,
     `<b>Key-person risk (17):</b> losing the 10 main bridges cuts ${pct(curT.pairs_lost_top10_bridges)} (Trichy) and ${pct(curS.pairs_lost_top10_bridges)} (Surathkal) of faculty connections; 10 random departures cut ${pct(curT.pairs_lost_10_random)}–${pct(curS.pairs_lost_10_random)}.`,
-    `<b>Former faculty (18):</b> the brain drain is junior: ${assistantMoved} of ${assistantFormer} former Assistant Professors moved to IITs or other NITs, and they were not weaker than those who stayed.`,
+    `<b>Former faculty (18):</b> the brain drain is junior: ${assistantMoved} of ${assistantFormer} former Assistant Professors moved to IITs or other NITs, and former Assistant Professors as a group were not weaker than current ones.`,
     `<b>Inequality (19):</b> the top 10% of faculty hold ${pct(ineqB.top10pct_share)} of citations, the bottom half ${pct(ineqB.bottom50pct_share)}. Lotka's law holds for all NIT authors.`,
     `<b>Who leads (20):</b> Professors are last author on ${pct(rl.Professor.last_author)} of their papers and first author on ${pct(rl.Professor.first_author)}; Assistant Professors as first author fell from ${pct(ry.find((r) => r.year === 2016).first_author)} (2016) to ${pct(ry.find((r) => r.year === 2025).first_author)} (2025).`,
-    `<b>Specialists vs generalists (21):</b> only a weak link (ρ ≈ ${fmt(Q.breadth_corr[0].spearman_breadth, 2)}) that mostly disappears once the number of papers is accounted for.`,
+    `<b>Specialists vs generalists (21):</b> only a weak link (ρ ≈ ${fmt(Q.breadth_corr[0].spearman_breadth, 2)}) that shrinks and is no longer clearly significant once the number of papers is accounted for (for h-index it disappears).`,
     `<b>Where to publish (22–23):</b> conference papers ${sp(vc["Conference, not ranked"].effect_vs_q1_journal_pct)} vs a Q1 journal paper, but better than Q3–Q4 (${sp(vc["Journal Q3-Q4"].effect_vs_q1_journal_pct)}) or unranked journals; <i>${esc(mtp.venue)}</i>, the most-used venue, ${sp(mtp.effect_vs_all_other_papers_pct)}.`,
     `<b>Open access (24):</b> ${pct(VS.q24.open_share)} of papers are open; gold and green go with higher FWCI, diamond and bronze with lower; all open papers together ${sp(VS.q24.any_open_effect_pct)} (not significant).`,
     `<b>Rich get richer (25):</b> new citations grow as k<sup>${fmt(RS.alpha, 2)}</sup> (sub-linear preferential attachment); ${pct(Math.min(...RS.stay_on_top.map((r) => r.top10_after_2y_still_top10_after_5y)))}–${pct(Math.max(...RS.stay_on_top.map((r) => r.top10_after_2y_still_top10_after_5y)))} of early top-10% papers stay on top.`,
     `<b>Citing your own institute (26):</b> ${pct(Q.inward_summary.home_citation_share_both)} of citations come from home, almost all self-citations (${pct(Q.inward_summary.self_citation_share_both)}); colleagues at the same NIT rarely cite each other.`,
     `<b>Name matching (27):</b> dropping 463 doubtful single-paper matches moves totals by under 2% and leaves the top-20 ranking at ${fmt(sv("top-20 ranking overlap (of 20)").without_doubtful_links)} of 20.`,
-    `<b>Citation manipulation (28):</b> only ${pct(Q.heavy_dist.find((r) => r.cites_at_least === 10).share_of_links, 1)} of Indian citations come from papers citing 10+ of ours; the faculty ranking's top 20 is unchanged without self-citations or those papers. One local pattern (an alumni network around one Surathkal Mechanical group, 2023–24) is shown below.`,
+    `<b>Citation manipulation (28):</b> only ${pct(Q.heavy_dist.find((r) => r.cites_at_least === 10).share_of_links, 1)} of Indian citations come from papers citing 10+ of ours; the faculty ranking's top 20 is unchanged without self-citations or those papers. One local pattern is shown below: heavy citing papers in 2023–24 around one Surathkal Mechanical group, mostly with former NIT members on them, which looks like an alumni network.`,
   ].map((x) => `<li>${x}</li>`).join("");
 
   // 15
@@ -2235,7 +2267,7 @@ function q27Table() {
   const want = inst === "Both" ? "Both" : inst;
   const rows = D.q.sensitivity.filter((r) => r.variant.startsWith(qstate.q27) && (lab[r.measure] ? r.institution === want : true));
   const f = (m, v) => v == null ? "–" : m === "q1_share" ? pct(v, 1) : m.includes("p-value") ? fmt(v, 3) : Number.isInteger(v) ? fmt(v) : fmt(v, 2);
-  $("#q27-note").textContent = qstate.q27 === "drop single" ? "Dropped: 463 links found by name only that rest on a single NIT paper (439 faculty-paper rows)." : "Dropped: only the 96 of those links that also have a department mismatch or a student with a similar name.";
+  $("#q27-note").textContent = qstate.q27 === "drop single" ? "Dropped: 463 links found by name only that rest on a single NIT paper (439 faculty-paper rows)." : "Dropped: only the 104 of those links (96 faculty-paper rows) that also have a department mismatch or a student with a similar name.";
   $("#t-q27").innerHTML = T2([["Measure"], ["NIT"], ["All links", 1], ["Without doubtful links", 1], ["Change", 1]],
     rows.map((r) => [esc(lab[r.measure] || r.measure), r.institution === "Both" ? "Both" : chip(r.institution), f(r.measure, r.with_all_links), f(r.measure, r.without_doubtful_links), r.change_pct == null ? "–" : sp(r.change_pct, 1)]));
 }
@@ -2302,7 +2334,7 @@ function dynamicsTab() {
     fact(`${fmt(nc.newcomers_with_internal_link_by_2026)} of ${fmt(nc.newcomers)}`, "newcomers (since 2017) have a co-author inside their NIT by 2026"),
     fact(`${f1(nc.isolated_after_3_years_pct)}%`, `still have no internal faculty co-author 3 years after joining (${fmt(nc.newcomers_with_3_full_years)} with 3 full years)`),
     fact(`${f1(nc.first_partner_same_department_pct)}%`, `of first partners are from the newcomer's own department; ${f1(nc.first_partner_is_newcomer_pct)}% are newcomers themselves`),
-    fact(`${fmt(nc.first_partner_degree_mean, 1)} vs ${fmt(nc.colleagues_degree_mean, 1)}`, "faculty co-authors of the first partner vs the average colleague: newcomers do not attach to hubs"),
+    fact(`${fmt(nc.first_partner_degree_mean, 1)} vs ${fmt(nc.colleagues_degree_mean, 1)}`, "faculty co-authors of the first partner vs the average colleague: newcomers join ordinary colleagues in their own department, not the hubs"),
   ].join("");
   $("#t-dy-nc").innerHTML = T2([["NIT"], ["Newcomers", 1], ["Linked by 2026", 1], ["Isolated after 3 years", 1], ["Median years to first link", 1]],
     Y.newcomers_inst.map((r) => [chip(r.institution), fmt(r.newcomers), f1(r.with_internal_link_by_2026_pct) + "%", f1(r.isolated_after_3_years_pct) + "%", f1(r.median_years_to_first_link)]));
@@ -2327,9 +2359,9 @@ function dynamicsTab() {
     const kh = (x) => (x == null || Number.isNaN(x) ? "> 2" : fmt(x, 1));
     const easier = (r) => r.eigenratio < r.rewired_eigenratio;
     $("#dy-sync-facts").innerHTML = [
-      fact(`${fmt(sT.eigenratio, 0)} vs ${fmt(sS.eigenratio, 0)}`, `Laplacian eigenratio λ_N/λ₂, Trichy vs Surathkal (lower = full synchrony is easier): ${sT.eigenratio < sS.eigenratio ? "NIT Trichy" : "NIT Surathkal"} has fewer thin bridges, yet ${sT.K_half_real > sS.K_half_real ? "NIT Surathkal" : "NIT Trichy"} reaches partial synchrony (r = 0.5) at lower coupling (K ≈ ${kh(Math.min(sT.K_half_real, sS.K_half_real))} vs ${kh(Math.max(sT.K_half_real, sS.K_half_real))}) because of its hubs`),
+      fact(`${fmt(sT.eigenratio, 0)} vs ${fmt(sS.eigenratio, 0)}`, `Laplacian eigenratio λ_N/λ₂, Trichy vs Surathkal (lower = full synchrony is easier): ${sT.eigenratio < sS.eigenratio ? "NIT Trichy" : "NIT Surathkal"} has fewer thin bridges, yet ${sT.K_half_real > sS.K_half_real ? "NIT Surathkal" : "NIT Trichy"} reaches partial synchrony (r = 0.5) at lower coupling (K ≈ ${kh(Math.min(sT.K_half_real, sS.K_half_real))} vs ${kh(Math.max(sT.K_half_real, sS.K_half_real))}) ; it has more links per person and bigger hubs`),
       fact(`${fmt(sB.eigenratio, 0)} vs ${fmt(sB.rewired_eigenratio, 0)}`, `eigenratio of both NITs together vs rewired copies with the same degrees: the real network is ${easier(sB) ? "easier" : "harder"} to synchronise than a random one (λ₂ ${fmt(sB.lambda_2, 4)} vs ${fmt(sB.rewired_lambda_2, 4)}: ${sB.lambda_2 < sB.rewired_lambda_2 ? "departments are joined by thin bridges" : "well knit"})`),
-      fact(`K_c ≈ ${fmt(sT.Kc_theory, 2)} / ${fmt(sS.Kc_theory, 2)}`, `theoretical onset of synchrony (Trichy / Surathkal), set by the hubs through λ₁; in the simulations r reaches 0.5 only at K ≈ ${kh(sT.K_half_real)} / ${kh(sS.K_half_real)}, against ${kh(sT.K_half_rewired)} / ${kh(sS.K_half_rewired)} in rewired copies: departments synchronise inside but drift apart from each other`),
+      fact(`K_c ≈ ${fmt(sT.Kc_theory, 2)} / ${fmt(sS.Kc_theory, 2)}`, `theoretical onset of synchrony (Trichy / Surathkal), set by the hubs through λ₁; in the simulations r reaches 0.5 only at K ≈ ${kh(sT.K_half_real)} / ${kh(sS.K_half_real)}, against ${kh(sT.K_half_rewired)} / ${kh(sS.K_half_rewired)} in rewired copies: groups are joined by thin bridges (we did not measure synchrony inside departments)`),
       fact(`${f1(Y.sync_locked.find((r) => r.network === "Both NITs" && r.K === 1 && r.degree_class === "10+").locked_pct)}% vs ${f1(Y.sync_locked.find((r) => r.network === "Both NITs" && r.K === 1 && r.degree_class === "1").locked_pct)}%`, `of faculty with 10+ vs 1 faculty co-author are locked to the common rhythm at K = 1 (r = ${fmt(sB.r_at_K1_real, 2)}, against ${fmt(sB.r_at_K1_rewired, 2)} when rewired): the core locks first and the edge follows`),
     ].join("");
     const scol = { "NIT Trichy": css("--trichy"), "NIT Surathkal": css("--surathkal"), "Both NITs": css("--both") };
@@ -2358,7 +2390,7 @@ function dynamicsTab() {
       fact(`${f1(ti.renewed_within_3_pct)}%`, `of faculty pairs write together again within 3 years (${fmt(ti.pairs_with_3_years_followup)} pairs that started by 2022); ${f1(ti.renewed_within_1_pct)}% do so the very next year`),
       fact(`${f1(ti.of_those_active_2023_2025_pct)}%`, `of the ${fmt(ti.pairs_started_2016_2018)} pairs that started in 2016–2018 still wrote together in 2023–2025`),
       fact(`×${fmt(lg.same_department.odds_ratio, 1)} and ×${fmt(lg.first_papers_fwci_ge_1.odds_ratio, 1)}`, `odds of renewing for same-department pairs (${pv(lg.same_department.p)}) and for pairs whose first joint papers beat the world average, FWCI ≥ 1 (${pv(lg.first_papers_fwci_ge_1.p)}); bigger first teams renew less (×${fmt(Math.pow(lg.log_team_size.odds_ratio, Math.LN2), 2)} per doubling of the first team's size, ${pv(lg.log_team_size.p)}). Logistic regression with start-year controls`),
-      fact(`${f1(ti.consecutive_year_gaps_pct)}%`, `of gaps between a pair's active years are a single year. Pairs write steadily, not in bursts: burstiness ${fmt(ti.burstiness_median, 2)} vs ${fmt(ti.burstiness_null_median, 2)} for random timing (${pv(ti.burstiness_wilcoxon_p)}, ${fmt(ti.pairs_5plus_papers)} pairs with 5+ papers)`),
+      fact(`${f1(ti.consecutive_year_gaps_pct)}%`, `of gaps between a pair's active years are a single year. Pairs are no more bursty than random timing: burstiness ${fmt(ti.burstiness_median, 2)} vs ${fmt(ti.burstiness_null_median, 2)} (${pv(ti.burstiness_wilcoxon_p)}, ${fmt(ti.pairs_5plus_papers)} pairs with 5+ papers)`),
     ].join("");
     draw("ch-dy-ti", { type: "bar", data: { labels: Y.ties_experience.map((r) => r.years_together), datasets: [{ label: "write again within 2 years",
       data: Y.ties_experience.map((r) => r.renewed_within_2_pct), backgroundColor: css("--both") }] },
@@ -2429,18 +2461,42 @@ const KF_REC = {
   "Neither NIT is better overall; each leads in different branches": ["Compare departments, not institutes: pair each NIT's stronger branches with the other's weaker ones (Surathkal CSE, EEE, Mechanical with Trichy Mathematics, Chemical, ECE) through joint seminars and co-supervised PhDs.", "Deans of research of both NITs; heads of the paired departments"],
   "Foreign co-authors go with higher impact": ["Fund short research visits abroad and joint PhD supervision with foreign partners, starting with departments that have few foreign co-authors.", "International relations offices; department heads; faculty applying to international-collaboration schemes"],
   "Where you publish matters": ["Move proceedings and unranked-journal output toward Q1/Q2 journals, and report Q1 share and FWCI rather than paper counts in reviews.", "Faculty and PhD supervisors; promotion and annual-review committees"],
-  "A strong small world with a rich club": ["Use the well-connected core to carry institute-wide initiatives, and add newcomers to core members' projects instead of forming hub-only consortia.", "Research office; principal investigators"],
+  "A strong small world with a rich club": ["Use each NIT's own hub groups in their own areas (there is no single institute-wide core), and add newcomers to their projects instead of forming hub-only consortia.", "Research office; principal investigators"],
   "Collaboration stays inside the branch and the NIT": ["Create cross-department and NIT Trichy–NIT Surathkal seed grants and a joint annual workshop: only a few dozen links connect the two NITs.", "Deans of research (both NITs); the NIT Council for an NIT-to-NIT scheme"],
   "The faculty network fused in 2018 and keeps densifying": ["Track the network every year (largest connected group, share of isolated faculty) as a research-health indicator.", "IQAC / research office"],
-  "Friends of friends become co-authors": ["Introductions work: when a faculty member works with two colleagues separately, invite all three to a joint proposal.", "Department heads; research office (seed-grant calls)"],
+  "Friends of friends become co-authors": ["Pairs who share a co-author are far more likely to start working together, so seed-grant calls could invite such pairs to apply jointly (an idea to test, not a measured effect).", "Department heads; research office (seed-grant calls)"],
   "Future collaborations are predictable": ["Use the model's top pairs as a match-making shortlist for seed grants and workshops, not as a forecast about individuals.", "Research office"],
   "A few people hold the faculty network together": ["Recognise bridging roles in workload and promotion, and plan succession (co-supervision, a second faculty member per sub-area) for the top bridges.", "Directors; promotion committees; department heads"],
   "AI more than doubled, as a tool across engineering": ["Offer cross-department AI-methods training and joint CSE–domain projects, extending to Chemistry, Physics and MME where AI is still rare.", "CSE / IT departments with domain departments; training cell"],
   "People collaborate locally; knowledge travels far": ["Use nearby partners for joint labs and students, and build distant partnerships (IITs, IISc) deliberately through visiting positions, because distance will not build them by itself.", "Research office; department heads"],
-  "Private universities' citations are more personal, not bigger": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from nearby private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
-  "Private universities cite us because they are big, near and growing": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from nearby private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
+  "Private universities' citations come more often from people close to our authors": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
+  "Private universities cite us because they are big, near and growing": ["Report citation counts with and without self- and co-author citations, and treat high citation volume from private universities as reach, not as a quality signal.", "IQAC / rankings cell; anyone using citations in evaluations"],
 };
 
+/* main findings of the whole project, with inferences and real-network comparisons (scripts/findings.py) */
+function mainFindings() {
+  const box = $("#t-kf-main");
+  if (box.dataset.done) return;
+  const FD = (D.findings || {}).findings || [];
+  if (!FD.length) { $("#kf-main").hidden = true; return; }
+  const link = (s) => `<a href="${esc(s.url.startsWith("dashboard/") ? s.url.slice(10) : s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`;
+  const groups = [...new Set(FD.map((x) => x.group))];
+  const withReal = FD.filter((x) => x.real_world !== "–").length;
+  $("#kf-main-facts").innerHTML = [
+    `<div class="fact"><b>${FD.length}</b>findings across ${groups.length} themes</div>`,
+    `<div class="fact"><b>${withReal}</b>compared with published studies of real networks or theory (${[...new Set(FD.flatMap((x) => x.sources.map((s) => s.label)))].filter((l) => !/PDF/.test(l)).length} studies)</div>`,
+    `<div class="fact"><b>${FD.filter((x) => /Phase II/.test(x.phase)).length}</b>from Phase II (the rest from the original tasks)</div>`].join("");
+  let n = 0;
+  const rows = groups.map((g) => `<tr class="kfm-g"><td colspan="4">${esc(g)}</td></tr>` + FD.filter((x) => x.group === g).map((x) => {
+    n += 1;
+    const real = x.real_world === "–" ? '<span style="color:var(--muted)">–</span>' : esc(x.real_world) + (x.sources.length ? ` <span class="kfm-c">${x.sources.map(link).join(" · ")}</span>` : "");
+    return `<tr><td><button type="button" class="kfm-t" data-go="${esc(x.tab)}">${n}. ${esc(x.title)}</button><br><span class="kfm-p">${esc(x.phase)}</span></td>
+      <td>${esc(x.numbers)}</td><td>${esc(x.meaning)}${x.caveat !== "–" ? `<span class="kfm-c">Read with care: ${esc(x.caveat)}</span>` : ""}</td><td>${real}</td></tr>`;
+  }).join("")).join("");
+  box.innerHTML = `<thead><tr><th>Finding</th><th>Our numbers</th><th>What it means</th><th>Compared with real networks or theory</th></tr></thead><tbody>${rows}</tbody>`;
+  box.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => selectTab(b.dataset.go, true)));
+  box.dataset.done = "1";
+}
 function keyFindings() {
   if ($("#kf-cards").dataset.done) return;   // the same for every institute view, so drawn once
   const A = D.analysis, I = D.ins, Q = D.q, P = D.p2, C = D.conn;
@@ -2481,8 +2537,9 @@ function keyFindings() {
   const nl = I.new_links.rows.filter((r) => !r.partial_year), cols = I.new_links.columns;
   const nlTot = nl.reduce((a, r) => a + cols.reduce((b, c) => b + r[c], 0), 0);
   const closedShare = nl.reduce((a, r) => a + r[cols[0]], 0) / nlTot;
-  // 8. link prediction
-  const lpL = I.lp_eval.find((r) => r.method.startsWith("learned")), lpA = by(I.lp_eval, "method", "adamic_adar");
+  // 8. link prediction: the fixed model, trained once on 2016-2022 and given only the 2022 network (phase2_prof.py)
+  const LP = (D.pf || {}).pred || [], LPF = "fixed: trained once on 2016-2022, input = 2022 network";
+  const lpY = [...new Set(LP.map((r) => r.target_year))].sort(), lpf = (y) => LP.find((r) => r.target_year === y && r.model === LPF) || {};
   // 9. key-person risk
   const ksT = Q.network_summary["NIT Trichy"], ksS = Q.network_summary["NIT Surathkal"];
   // 10. AI
@@ -2510,7 +2567,7 @@ function keyFindings() {
       ev: `Regression on ${fmt(Q.venues_summary.q22.regression_papers)} papers (students' papers included); 95% CI for Q3–Q4: ${f1(q34.ci_low_pct)} to ${f1(q34.ci_high_pct)}%.` },
     { tab: "coauthor", area: "Co-authorship network", title: "A strong small world with a rich club",
       big: `σ = ${f1(A.sigma)} <small>small-world index (above 1 = small world)</small>`,
-      text: `Faculty co-authors are ${fmt(swG.avg_clustering / swR.avg_clustering, 0)}× more clustered than in random networks with the same degrees, yet any two are only ${f1(swG.avg_path_length)} steps apart (${f1(swR.avg_path_length)} at random). The ${fmt(rc.nodes_with_degree_gt_k)} best-connected faculty co-author with each other ${f1(rc.rho)}× more than chance.`,
+      text: `Faculty co-authors are ${fmt(swG.avg_clustering / swR.avg_clustering, 0)}× more clustered than in random networks with the same degrees, yet two faculty in the large connected group are on average only ${f1(swG.avg_path_length)} steps apart (${f1(swR.avg_path_length)} at random). The ${fmt(rc.nodes_with_degree_gt_k)} best-connected faculty co-author with each other ${f1(rc.rho)}× more than chance, but they are mostly one group (Surathkal Mechanical and MME).`,
       ev: `Largest component (${fmt(swG.nodes)} faculty); 20 degree-preserving rewirings as the null model; normalised rich-club coefficient peaks at k = ${rc.k}.` },
     { tab: "coauthor", area: "Co-authorship network", title: "Collaboration stays inside the branch and the NIT",
       big: `${fmt(gLast.cross_nit_links)} <small>of ${fmt(A.network_summary.authorship_network.nit_graph_edges)} faculty links join the two NITs</small>`,
@@ -2524,10 +2581,10 @@ function keyFindings() {
       big: `${fmt(c1.times_more_likely_than_far_pairs, 0)}× <small>more likely to start collaborating with one shared co-author</small>`,
       text: `Two faculty with one shared co-author start collaborating the next year ${f2(c1.p_next_year_pct)}% of the time, against ${f2(far.p_next_year_pct)}% for distant pairs. Across departments the effect is ${fmt(crossFof.p_next_year_pct / crossFar.p_next_year_pct, 0)}×, but only ${pct(closedShare)} of new links close a triangle.`,
       ev: `${fmt(I.closure_common.reduce((a, r) => a + r.pairs, 0))} pair-years of not-yet-linked faculty, 2016–2025; outcome = first joint paper the next year.` },
-    { tab: "growth", area: "Network over time", title: "Future collaborations are predictable",
-      big: `AUC ${f2(lpL.auc)} <small>learned model, ranking all faculty pairs</small>`,
-      text: `Trained on data up to 2022, the model ranks a pair that really collaborated in 2023–2026 above one that did not ${pct(lpL.auc)} of the time. The best short list (Adamic–Adar) gets ${fmt(lpA.precision_at_100_pct, 0)}% of its top 100 right, ${fmt(lpA.lift_at_100, 0)}× better than random. Same institute and same department matter most.`,
-      ev: `${fmt(lpL.candidates)} candidate pairs, ${fmt(lpL.true_new_links)} real new links; the model was fitted on 2019 → 2020–22, so it never saw the test years.` },
+    { tab: "phase2/p2-grow-predict", area: "Network over time", title: "Future collaborations are predictable",
+      big: `AUC ${lpY.map((y) => f2(lpf(y).auc)).join(" · ")} <small>trained once on 2016–2022, predicting ${lpY.join(", ")}</small>`,
+      text: `Given only the 2022 network, the model puts ${lpY.map((y) => fmt(lpf(y).correct_in_top_1pct)).join(", ")} of the real new faculty pairs of ${lpY.join(", ")} in its top 1% of about ${fmt(lpf(lpY[0]).top_1pct_size)} pairs: ${lpY.map((y) => fmt(lpf(y).lift_top_1pct, 0) + "×").join(", ")} better than random. Exact hits at the very top are rare (${lpY.map((y) => fmt(lpf(y).correct_in_top_100)).join(", ")} in its top 100), because only about 1 candidate pair in 2,000 starts working together each year. All the correct matches are same-department pairs.`,
+      ev: `${fmt(lpf(lpY[0]).candidate_pairs)} candidate pairs; ${lpY.map((y) => fmt(lpf(y).all_new_pairs)).join(", ")} real new pairs; the model is never re-trained after 2022.` },
     { tab: "questions", area: "Network risk", title: "A few people hold the faculty network together",
       big: `${pct(ksT.pairs_lost_top10_bridges)} <small>of connected faculty pairs lost at NIT Trichy without its 10 key bridges</small>`,
       text: `Removing the 10 faculty who bridge the most groups disconnects ${pct(ksT.pairs_lost_top10_bridges)} of connected faculty pairs at NIT Trichy and ${pct(ksS.pairs_lost_top10_bridges)} at NIT Surathkal, against ${pct(ksT.pairs_lost_10_random)} and ${pct(ksS.pairs_lost_10_random)} for 10 random faculty.`,
@@ -2546,7 +2603,7 @@ function keyFindings() {
       const pr = at("from top private citers"), pu = at("from top public citers");
       const dq = fdr.find((r) => r.family === "private vs public citers" && r.test === "distance_km");
       const nq = fdr.filter((r) => r.family === "private vs public citers").length;
-      return { tab: "phase2", area: "Who cites us", title: "Private universities' citations are more personal, not bigger",
+      return { tab: "phase2", area: "Who cites us", title: "Private universities' citations come more often from people close to our authors",
         big: `${fmt(pr.within_3_steps_pct, 0)}% vs ${fmt(pu.within_3_steps_pct, 0)}% <small>of citations from people at most 3 co-authorship steps from the cited authors, private vs public citers</small>`,
         text: `Adjusted for size, the top private citers cite us no more than public institutes do (${fmt(cSize.private_median, 0)} vs ${fmt(cSize.public_median, 0)} per 1,000 of their papers, ${pv(cSize.mann_whitney_p)}). But more of their citations come from the same people (${f1(pr.self)}% vs ${f1(pu.self)}%) and from earlier co-authors (${f1(pr["co-author (before)"])}% vs ${f1(pu["co-author (before)"])}%), and they are recent (${fmt(cNew.private_median, 0)}% since 2023 vs ${fmt(cNew.public_median, 0)}%). They are also nearer (${fmt(cDist.private_median, 0)} vs ${fmt(cDist.public_median, 0)} km), but that gap is ${dq && !dq.significant_after_fdr ? `not significant once we correct for testing ${nq} measures (adjusted p = ${fmt(dq.p_adjusted_bh, 2)})` : pv(cDist.mann_whitney_p)}.`,
         ev: `${fmt(PP.a.indian_citations)} Indian citations, each classified by the co-authorship distance between the citing and cited authors (as in Singh et al., Scientometrics 2020); private vs public χ² ${pv(PP.a.private_vs_public_p)}. Top 40 citing institutes (18 private, 22 public), Mann–Whitney tests with false-discovery-rate control.` };
@@ -2555,7 +2612,7 @@ function keyFindings() {
       text: `Adjusted for size, the top private citers cite us no more than public institutes do. They are much closer (median ${fmt(cDist.private_median, 0)} km vs ${fmt(cDist.public_median, 0)} km, ${pv(cDist.mann_whitney_p)}) and their citations are recent (${fmt(cNew.private_median, 0)}% since 2023 vs ${fmt(cNew.public_median, 0)}%). No general sign of citation packing.`,
       ev: `Top 40 citing institutes (18 private, 22 public), Mann–Whitney tests; recount checked against indian_connections.csv.` },
   ];
-  const tabName = (t) => ($("#tab-" + t) || {}).textContent || t;
+  const tabName = (t) => ($("#tab-" + t.split("/")[0]) || {}).textContent || t;
   $("#kf-cards").innerHTML = cards.map((c, i) => `<article class="panel kf">
       <span class="kf-n">${i + 1} · ${esc(c.area)}</span>
       <h3>${esc(c.title)}</h3>
@@ -2913,7 +2970,7 @@ function cnCards() {
     return `<div class="cn-card" style="--c:${instColor(i)}"><h4>${i}</h4><div class="cn-row">` +
       `<div><b>${fmt((X.partner_count || {})[i])}</b><span>Indian partner institutes (joint papers)</span></div><div><b>${fmt(ir, 2)}</b><span>impact ratio: citations in ÷ out</span></div>` +
       `<div><b>${fmt(tot(i, "received"))}</b><span>citations received from Indian institutes</span></div><div><b>${fmt(tot(i, "given"))}</b><span>citations given to them</span></div></div>` +
-      `<p>${ir >= 1 ? "Cited by other Indian institutes more than it cites them." : "Cites other Indian institutes more than it is cited by them."}</p></div>`; }).join("");
+      `<p>${ir >= 1 ? "Cited by other Indian institutes more than it cites them." : "Over 2016–2026 it cites other Indian institutes more than they cite it, mostly because of the early years, when our papers had little time to be cited; since 2023 it receives more than it gives every year."}</p></div>`; }).join("");
 }
 function partnerBars(id, k, label) {
   const pts = D.conn.geo_points.filter((p) => views().includes(p[0]) && !INSTS.includes(p[1])), tot = {};
@@ -3081,6 +3138,14 @@ function renderProfile() {
 
 /* ---------- South Indian NITs ---------- */
 let sodMode = "connected";
+/* a shaded horizontal band on the y axis (e.g. the range of an exponent in real networks), drawn under the bars */
+const bandPlugin = (lo, hi, text) => ({ id: "band" + lo + hi, beforeDatasetsDraw(ch) {
+  const y = ch.scales.y, a = ch.chartArea, ctx = ch.ctx, top = y.getPixelForValue(hi), bot = y.getPixelForValue(lo);
+  ctx.save(); ctx.fillStyle = css("--ink") + "14"; ctx.fillRect(a.left, top, a.right - a.left, bot - top);
+  ctx.strokeStyle = css("--ink") + "45"; ctx.setLineDash([4, 3]); ctx.lineWidth = 1;
+  [top, bot].forEach((v) => { ctx.beginPath(); ctx.moveTo(a.left, v); ctx.lineTo(a.right, v); ctx.stroke(); });
+  ctx.setLineDash([]); ctx.font = `500 11px ${css("--body")}`; ctx.fillStyle = css("--muted"); ctx.textAlign = "right";
+  ctx.fillText(text, a.right - 4, top - 4); ctx.restore(); } });
 const labelPlugin = (key) => ({ id: "ptLabels" + key, afterDatasetsDraw(ch) {
   const ctx = ch.ctx; ctx.save(); ctx.font = `600 11px ${css("--body")}`; ctx.fillStyle = css("--ink-2"); ctx.textAlign = "left";
   ch.data.datasets.forEach((ds, di) => { const meta = ch.getDatasetMeta(di); if (meta.hidden) return;
@@ -3098,8 +3163,8 @@ function southTab() {
   const pv = (r) => r.p_exact != null ? r.p_exact : r.p;
   $("#so-facts").innerHTML = [
     fact(`ρ = ${fmt(f1.spearman_rho, 2)}`, `recent hiring (2021–25) against the exponent a, six NITs (exact p = ${fmt(pv(f1), 3)}): the more a NIT hired recently, the lower its a`),
-    fact(`ρ = ${fmt(f2.spearman_rho, 2)}`, `founding year against a (p = ${fmt(pv(f2), 3)}): younger NITs densify more slowly`),
-    fact(`${fa(Math.min(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}–${fa(Math.max(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}`, "exponent a at the six NITs (faculty with a co-author): every NIT densifies"),
+    fact(`ρ = ${fmt(f2.spearman_rho, 2)}`, `founding year against a (p = ${fmt(pv(f2), 3)}): younger NITs have lower exponents (with 6 NITs we cannot separate age, hiring and rank mix)`),
+    fact(`${fa(Math.min(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}–${fa(Math.max(...NITS.map((i) => T[i]["a_connected_2016-2026"])))}`, "exponent a at the six NITs (faculty with a co-author): every NIT densifies, like real growing networks (1.08–1.68, Leskovec et al. 2005)"),
     fact(`${fmt(Math.min(...NITS.map((i) => T[i].self_citation_share_pct)))}–${fmt(Math.max(...NITS.map((i) => T[i].self_citation_share_pct)))}%`, "of citations between a NIT's own papers share an author, at every NIT"),
   ].join("");
   const M = [["Founded", (r) => r.founded], ["Faculty on the NIRF 2025 list (regular)", (r) => `${fmt(r.nirf_faculty_current)} (${fmt(r.nirf_regular)})`], ["Assistant Professors", (r) => fmt(r.assistant_pct) + "%"],
@@ -3111,7 +3176,7 @@ function southTab() {
     ["Co-authors within 2025 alone", (r) => fmt(r.single_year_coauthors_2025, 2)], ["Self-citations between own papers", (r) => fmt(r.self_citation_share_pct) + "%"],
     ["Faculty matched to OpenAlex", (r) => fmt(r.faculty_matched_pct) + "%"]];
   $("#t-south").innerHTML = T2([[""], ...NITS.map((i) => [`<span class="dot" style="background:${nitColor(i)}"></span>${esc(short(i))}`, 1])], M.map(([l, f]) => [l, ...NITS.map((i) => f(T[i]))]));
-  $("#so-found-note").innerHTML = `Each dot is a NIT: the share of today's faculty hired in 2021–2025 against the exponent a (2016–2026). Spearman ρ = ${fmt(f1.spearman_rho, 2)}, exact p = ${fmt(pv(f1), 3)} (n = 6). New hires arrive with few links, so a NIT that is still hiring adds people faster than links.`;
+  $("#so-found-note").innerHTML = `Each dot is a NIT: the share of today's faculty hired in 2021–2025 against the exponent a (2016–2026). Spearman ρ = ${fmt(f1.spearman_rho, 2)}, exact p = ${fmt(pv(f1), 3)} (n = 6). A likely reason (not tested): newly connected faculty bring only one or two links each. With only 6 NITs, recent hiring, a young NIT and many Assistant Professors go together, and with Groups 13's and 14's cleaned data for Warangal and Calicut the correlation weakens to −0.60 (p = 0.24), so treat this as a pattern, not a law.`;
   draw("ch-so-found", { type: "scatter", data: { datasets: NITS.map((i) => ({ label: short(i), data: [{ x: T[i].hired_2021_2025_pct, y: T[i]["a_connected_2016-2026"], lab: short(i) }], backgroundColor: nitColor(i), pointRadius: 7, pointHoverRadius: 9 })) },
     plugins: [labelPlugin("lab")],
     options: baseOptions({ interaction: { mode: "nearest", intersect: true }, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${c.dataset.label}: hired ${fmt(c.raw.x)}% in 2021–25, a = ${fa(c.raw.y)}` } } },
@@ -3120,6 +3185,7 @@ function southTab() {
   draw("ch-so-exp", { type: "bar", data: { labels: NITS.map(short), datasets: [
       { label: "2016–2026", data: NITS.map((i) => T[i]["a_connected_2016-2026"]), backgroundColor: NITS.map(nitColor), borderRadius: 4 },
       { label: "2019–2025", data: NITS.map((i) => T[i]["a_connected_2019-2025"]), backgroundColor: NITS.map((i) => nitColor(i) + "70"), borderRadius: 4 }] },
+    plugins: [bandPlugin(1.08, 1.68, "real growing networks: 1.08–1.68")],
     options: baseOptions({ plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label}: a = ${fa(c.raw)}` } } },
       scales: { x: { grid: { display: false } }, y: { min: 0, title: { display: true, text: "exponent a", color: css("--muted") }, grid: { color: (c) => c.tick.value === 1 ? css("--ink-2") : css("--grid") } } } }) });
   const yrs = YEARS.filter((y) => y < 2026), by = (i, y) => S.by_year.find((r) => r.institution === i && r.year === y) || {};
@@ -3131,7 +3197,7 @@ function southTab() {
   draw("ch-so-hires", { type: "bar", data: { labels: yrs, datasets: NITS.map((i) => ({ label: short(i), data: (H[i] || []), backgroundColor: nitColor(i), borderRadius: 2 })) },
     options: baseOptions({ scales: { x: { grid: { display: false } }, y: { beginAtZero: true, title: { display: true, text: "faculty hired (still there in 2025)", color: css("--muted") } } } }) });
   const RE = S.rolling_exponent || [];
-  $("#so-roll-note").innerHTML = `Each dot is one NIT in one 4-year window: the share of faculty hired in the window against the exponent in that window. Spearman ρ = ${fmt(fr.spearman_rho, 2)} (n = ${fr.n}, overlapping windows, so the p-value is optimistic).`;
+  $("#so-roll-note").innerHTML = `Each dot is one NIT in one 4-year window: the share of faculty hired in the window against the exponent in that window. Pooled over all six NITs, Spearman ρ = ${fmt(fr.spearman_rho, 2)} (n = ${fr.n}, overlapping windows, so the p-value is optimistic). This comes from differences between NITs: inside a single NIT the link is not consistent (negative at Warangal and Puducherry, positive at Trichy and Calicut), so we do not claim that hiring waves lower the exponent within a NIT.`;
   draw("ch-so-roll", { type: "scatter", data: { datasets: NITS.map((i) => ({ label: short(i), backgroundColor: nitColor(i) + "cc", pointRadius: 5,
       data: RE.filter((r) => r.institution === i && r.exponent_a != null).map((r) => ({ x: r.hired_in_window_pct, y: r.exponent_a, w: r.window })) })) },
     options: baseOptions({ interaction: { mode: "nearest", intersect: true }, plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label} ${c.raw.w}: hired ${fmt(c.raw.x)}%, a = ${fa(c.raw.y)}` } } },
@@ -3218,7 +3284,7 @@ const closeNav = () => { $("#side").classList.remove("open"); $("#scrim").classL
 function renderTab(name) {
   if (rendered[name] === inst) return;
   if (name === "home") homeTab();
-  if (name === "keyfindings") keyFindings();
+  if (name === "keyfindings") { safe(mainFindings); keyFindings(); }
   if (name === "overview") overview();
   if (name === "publications") { publications(); pubTypes(); safe(pubBubbles); safe(pubConf); }
   if (name === "trends") trends();

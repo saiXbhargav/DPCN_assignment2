@@ -1,6 +1,6 @@
 # Team 12: research questions (Phase II, part 2)
 
-Phase II asks for "meaningful research questions and evidence-based conclusions". This file answers 13 of them (items 15–28 of our list). They are produced by [scripts/questions.py](../../../scripts/questions.py):
+Phase II asks for "meaningful research questions and evidence-based conclusions". This file answers items 15–28 of our list (22 and 23 together). They are produced by [scripts/questions.py](../../../scripts/questions.py):
 
 | Command | Questions |
 |---|---|
@@ -56,7 +56,7 @@ Running `python questions.py` with no argument runs all eight parts. Every numbe
 
 **Findings:**
 - **A foreign co-author goes with higher impact.**
-  - Adjusted: **+18%** FWCI (all papers) and **+14%** (faculty papers, the same as the team's earlier result).
+  - Adjusted: **+18%** FWCI (all papers) and **+14%** (faculty papers; the team's earlier model gives +15%).
   - In raw terms: mean FWCI 2.07 vs 1.25, and 23% vs 13% of papers in the world's top 10%.
 - **More countries, more impact.** One foreign country is +13%; two or more countries is **+35%**.
 - **The partner country matters.**
@@ -91,10 +91,10 @@ Each paper's outside partners were sorted into types, using the team's cluster r
 | No outside partner | 11,356 (53%) | 1.24 | (comparison) |
 
 **Findings:**
-- **Only foreign partners clearly raise impact.** IIT partners, the "strong" Indian partners, bring no significant gain once field, year and team size are taken into account.
+- **Only foreign-university partners go with clearly higher impact** (+17%, significant after the false-discovery correction). Other NITs (+5%) and foreign labs (+8%) are significant on their own but not after the correction. IIT partners, the "strong" Indian partners, bring no significant gain once field, year and team size are taken into account.
 - **Government labs and IISc / IISER partners go with slightly lower FWCI.** A "strong" partner name is not a sign of higher impact by itself.
 - **Indian university partners became much more common.** They were on 19% of papers in 2016 and 27% in 2025. Papers with no outside partner fell from 56% to 52%.
-- **Advice for each NIT:** to raise impact, partner abroad (especially the UK, Korea, Malaysia and Australia). Indian partnerships add papers, not impact per paper.
+- **What this suggests:** papers with foreign partners (especially from the UK, Korea, Malaysia and Australia) have higher impact than similar papers. This is an association, not proof that partnering abroad raises impact.
 
 Files: `q16_partner_types.csv`, `q16_partner_types_by_year.csv`, `q16_partner_types.png`.
 
@@ -121,7 +121,7 @@ After each removal we count how many **pairs of faculty can still reach each oth
 | Pairs lost if **10 random** faculty leave | 8% | 9% |
 
 **Findings:**
-- **The network is robust to random departures but fragile to losing its bridges.** That is the classic pattern of a network with hubs. Losing the 10 main bridges disconnects about half of all faculty pairs at each NIT, against 8–9% for 10 random departures.
+- **The network is robust to random departures but fragile to losing its bridges.** That is the classic pattern of a network with hubs. Losing the 10 main bridges disconnects about half of all faculty pairs at each NIT, against 8% (Trichy) and 10% (Surathkal) for 10 random departures.
 - **The first bridges to go:**
   - NIT Trichy: N Sivakumaran, S Suresh, P Palanisamy, S Saravanan, Aneesh Mathew;
   - NIT Surathkal: Gangadharan K V, Pruthviraj U, Mohammad Rizwanur Rahman, A Venkata Narasimhadhan, Amba Shetty.
@@ -136,7 +136,7 @@ After each removal we count how many **pairs of faculty can still reach each oth
   | Trichy, Mechanical | S Suresh | 47% |
   | Trichy, Civil | S T Ramesh (HAG) | 46% |
 
-- **Who are the key people?** 15 of the 20 most critical people overall are Professors or Professors (HAG), the most senior ranks. Each department should plan for these links to be taken over when they retire or move.
+- **Who are the key people?** 14 of the 20 most critical people overall are Professors or Professors (HAG), the most senior ranks. Each department should plan for these links to be taken over when they retire or move.
 
 Files: `q17_robustness_curves.csv`, `q17_key_people_overall.csv`, `q17_key_people_by_department.csv`, `q17_robustness.png`.
 
@@ -144,7 +144,7 @@ Files: `q17_robustness_curves.csv`, `q17_key_people_overall.csv`, `q17_key_peopl
 
 ## 18. Do people who left the NITs differ from those who stayed?
 
-There are 99 former faculty with papers and 557 current ones. Medians are compared with Mann–Whitney tests.
+There are 99 former faculty with papers and 558 current ones. Medians are compared with Mann–Whitney tests.
 
 | Measure (median) | Current | Former | p |
 |---|---|---|---|
@@ -156,7 +156,7 @@ There are 99 former faculty with papers and 557 current ones. Medians are compar
 
 **Within each rank the picture changes.**
 - **Former Assistant Professors are not weaker.** They are as productive as current ones (2.3 vs 2.0 papers a year) and are cited *more* per paper (7.1 vs 4.5, p = 0.003).
-- **Former Professors are less productive** (2.3 vs 4.1 papers a year, p = 0.008). Most of them retired.
+- **Former Professors are less productive** (2.3 vs 4.0 papers a year, p = 0.009). Most of them retired.
 
 **Where did they go?** We used the last institution on their OpenAlex profile:
 
@@ -174,7 +174,7 @@ There are 99 former faculty with papers and 557 current ones. Medians are compar
 - IIT Tirupati, IIT Jammu, IIT Goa, IIT Palakkad, IIT BHU and IIT Dhanbad;
 - NIT Calicut, NIT Raipur, NIT Rourkela and NIT Kurukshetra.
 
-The NITs lose promising young faculty, not weak ones, mostly to IITs and newer NITs.
+The NITs lose young faculty who are not weaker than those who stay, mostly to newer IITs and to older NITs (two of the six moves to NITs were from Surathkal to Trichy, inside our own pair).
 
 **Caveat:** "former" includes retirements. The roster comes from yearly archived web pages, so years are approximate.
 
@@ -193,7 +193,7 @@ Files: `q18_former_vs_current.csv`, `q18_where_former_faculty_went.csv`.
 | Both (656) | 0.49 | 0.64 | **45%** | 7% |
 
 **Findings:**
-- **The top 10% of faculty hold 45% of all citations; the bottom half hold 7%.** If the 111 faculty with no papers are counted, the top 10% hold 49%.
+- **The top 10% of faculty hold 45% of all citations; the bottom half hold 7%.** If the 86 faculty with no papers are counted, the top 10% hold 48%.
 - **NIT Trichy is more unequal than NIT Surathkal** (Gini 0.68 vs 0.59 for citations). Trichy's output depends more on a few stars, which links to question 17.
 - **Most unequal departments:**
   - Trichy Chemistry (Gini 0.72; S Anandan alone has 39% of its citations);
@@ -228,7 +228,7 @@ The difference between ranks is highly significant (chi-square 469, p < 10⁻⁹
 - **Seniority shows in author order.**
   - Professors are almost never first author (3%); they are the last-author supervisors.
   - Assistant Professors are first author 4× as often.
-- **Junior faculty are becoming supervisors faster.** The share of Assistant Professor papers with them as first author fell from **29% in 2016 to 7% in 2025**. Young faculty now publish mainly with their own students, as last author.
+- **As faculty settle in, they move from first author to supervisor.** Today's Assistant Professors were first author on **29% of their (few) 2016 papers and 7% in 2025**; they now publish mainly with their own students, as last author. Rank is each person's latest rank, so this is a career-stage pattern, not a comparison of cohorts.
 - **Leading a paper doesn't change its impact.** Adjusted FWCI is −1% (p = 0.33) when an NIT faculty member leads.
 
 Files: `q20_author_role_by_rank.csv`, `q20_author_role_by_rank_and_year.csv`, `q20_author_roles.png`.
@@ -256,7 +256,7 @@ Files: `q20_author_role_by_rank.csv`, `q20_author_role_by_rank_and_year.csv`, `q
 
 **Finding: broad research is rewarded only a little.**
 - The broadest quarter has a higher mean FWCI (1.44 vs 1.20) and h-index.
-- But the link is weak (ρ ≈ 0.1) and mostly disappears once the number of papers is taken into account.
+- But the link is weak (ρ = 0.13 for mean FWCI) and shrinks to 0.09, no longer clearly significant (p = 0.05), once the number of papers is taken into account. For h-index it disappears (0.15 → 0.03).
 - Median FWCI shows no link at all. The higher mean comes from a few broad people with very highly cited papers.
 - In short, neither specialists nor generalists are clearly better; productive people tend to be a little broader.
 
@@ -280,7 +280,7 @@ Files: `q21_research_breadth_by_faculty.csv`, `q21_breadth_vs_impact.csv`, `q21_
 **Findings:**
 - **A conference paper is worth less than a Q1/Q2 journal paper, but more than a Q3–Q4 or unranked journal paper.**
   - It reaches the top 10% about as often as a Q2 paper (13% vs 12%).
-  - Moving a typical conference paper to a Q3–Q4 journal would not raise its impact.
+  - Unranked conference papers have slightly higher adjusted impact than Q3–Q4 journal papers (−35% vs −44% against Q1 journals), so on average a Q3–Q4 journal is not a better outlet (an association; we did not test moving papers).
 - **The conference share is steady:** 30% in 2016, 29% in 2025. NIT Surathkal publishes more at conferences (26–38% a year) than Trichy (15–27%).
 - **By department**, the conference share is highest in Surathkal IT (68%) and CSE (63%). There, conference papers have about half the FWCI of the same department's journal papers (0.44–0.54×). In EEE and ECE they are close to journal papers (0.76–1.05×).
 - **The most-used venues** are the 13 with 100 or more papers, holding 14% of all papers. Each is compared with all other papers of the same field and year:
@@ -295,7 +295,7 @@ Files: `q21_research_breadth_by_faculty.csv`, `q21_breadth_vs_impact.csv`, `q21_
   | *IEEE Access* (Q1) | 136 | 2.34 | **+37%** |
   | *Journal of Alloys and Compounds* (Q1) | 120 | 1.98 | **+33%** |
 
-  **The two most-used venues at both NITs (*Materials Today: Proceedings* and *Lecture Notes in Civil Engineering*) both lower impact.** Moving that work to ranked journals in the same areas, such as *Journal of Alloys and Compounds* or *IEEE Access*, would raise it.
+  **The two most-used venues at both NITs (*Materials Today: Proceedings* and *Lecture Notes in Civil Engineering*) have lower impact than other papers of the same field and year** (−20% and −9%), but not lower than papers in the same kind of venue (Materials Today: Proceedings is +19% against other unranked journals). Ranked journals used in the same areas, such as *Journal of Alloys and Compounds* or *IEEE Access*, are at the average (+1%). This is an association, not proof that moving a paper would raise its impact.
 
 Files: `q22_venue_classes.csv`, `q22_conference_share_by_year.csv`, `q22_conference_by_department.csv`, `q23_high_volume_venues.csv`, `q22_venues.png`.
 
@@ -341,7 +341,7 @@ This is preferential attachment, the mechanism behind scale-free networks from c
   - α grows with age: 0.78 (age 1–2 years), 0.92 (3–5) and **1.00** (6 or more, linear).
 - **Early winners stay winners.** Of the papers in the top 10% after 2 years, **72–83% are still in the top 10% after 5 years** (cohorts 2016–2020). The 2-year and 5-year citation ranks correlate at ρ = 0.90–0.94.
 - **The concentration is stable.** The top 10% of each cohort hold about 45% of its citations, both after 2 years and after 5.
-- **What this means:** the first two years decide most of a paper's citation future. Making a paper visible early (preprint or green open access, talks, a good venue) matters more than anything done later.
+- **What this means:** early citations predict later ones well (ρ = 0.90–0.94 between 2-year and 5-year ranks). Early visibility (preprint or green open access, talks, a good venue) may help, but we did not test it.
 
 Files: `q25_attachment_kernel.csv`, `q25_alpha_by_age.csv`, `q25_top_papers_stay_on_top.csv`, `q25_rich_get_richer.png`.
 
@@ -395,7 +395,7 @@ Files: `q26_inward_overall.csv`, `q26_inward_by_department.csv`, `q26_inward_by_
 
 ## 27. How sensitive are the results to name matching?
 
-**What counts as doubtful.** Faculty were matched to OpenAlex author IDs by name, department and ORCID (`match_faculty.py`). The weakest links are **463 name-only matches of an ID that has a single NIT paper**. A stricter set of 96 also has a department mismatch or a student with a similar name. We dropped them and re-ran the main results.
+**What counts as doubtful.** Faculty were matched to OpenAlex author IDs by name, department and ORCID (`match_faculty.py`). The weakest links are **463 name-only matches of an ID that has a single NIT paper**. A stricter set of 104 links (96 faculty-paper rows) also has a department mismatch or a student with a similar name. We dropped them and re-ran the main results.
 
 | Measure | All links | Without the 463 doubtful links |
 |---|---|---|

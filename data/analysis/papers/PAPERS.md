@@ -56,7 +56,7 @@ python scripts/phase2_papers.py citers     # or one part: citers, selfcite, adju
 - Together with the size result in PHASE2.md task 2, the answer to the private-citer question is:
   - private citers cite us no more *per paper* than public ones;
   - their citations come more often from people who already work with our authors, such as former students, former faculty and co-authors.
-- **Co-author citations follow the first joint paper:** 40% come within 2 years of it, then they fade (`a_coauthor_citation_lag.csv`). The same rise-then-fade pattern is in Singh et al.
+- **Co-author citations follow the first joint paper:** 40% come within 2 years of it, and longer lags are rarer, partly because our 2016–2026 window cuts them off (`a_coauthor_citation_lag.csv`). Singh et al. report a similar pattern.
 - **Internal citations are almost all self-citations** (86%). That is why we redo the citation network without them in part S.
 
 **Caveats:**
@@ -332,7 +332,7 @@ python scripts/phase2_papers.py citers     # or one part: citers, selfcite, adju
 - **Rank mixing is weak but not random** (r = 0.07). Only 35% of links join people of the same rank, so mentoring crosses ranks. Assistant–Assistant links are 1.6× what chance would give (`f_rank_mixing.csv`), so young faculty also team up with each other.
 - **Departments are strong walls** (r = 0.66). The most outward-looking departments are Energy & Environment (30% of links inside the department) and Chemistry (34%) (`f_department_homophily.csv`).
 - **Over time:**
-  - in the early years, degree assortativity was near random (2017–2018: r = 0.06 and 0.01, z ≈ 1);
+  - degree assortativity dipped to near random in 2017–2018 (r = 0.06 and 0.01, z ≈ 1) after 0.20 in the small 2016 network, and has been 0.17–0.20 since 2022;
   - it has risen to about 0.20 since 2022 (z ≈ 5–7; `f_assortativity_by_year.csv`);
   - as the network grew, well-connected people connected with each other more.
 - **Partner institutes of the same type link with each other** on our papers (r = 0.15 against −0.01): IITs with IITs, private with private.

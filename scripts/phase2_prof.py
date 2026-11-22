@@ -1,10 +1,10 @@
 """Network growth, link prediction and other NITs (17 Nov 2026) -> data/analysis/prof/
 
   python phase2_prof.py growth    Average degree of the faculty co-authorship network year by year (cumulative and
-                                    single-year), per NIT, and what the densification exponent 1.66 means
-  python phase2_prof.py predict   Rolling link prediction: train on 2016-2022 and predict 2023; then add the real
-                                    2023 and predict 2024; then 2025. Compared with predicting all three years from
-                                    2022 alone, and checked against the links that really appeared
+                                    single-year), per NIT, and what the densification exponent 1.65 means
+  python phase2_prof.py predict   Link prediction, two models kept apart. Fixed: trained once on 2016-2022 and given
+                                    only the 2022 network, it predicts 2023, 2024 and 2025 (correct matches in its top
+                                    1% are saved). Updated: re-trained every year with the network of the year before
   python phase2_prof.py joining   When did today's faculty join? First year each person published with the NIT
                                     (OpenAlex affiliation history), checked against NITK's own "Date of Joining"
   python phase2_prof.py nits      Our two NITs next to NIT Warangal and NIT Calicut: papers, citations, impact,
@@ -75,7 +75,7 @@ def densification(nodes, links):
     return r.slope, r.rvalue ** 2
 
 
-# ================================================================ 1. average degree and the exponent 1.66
+# ================================================================ 1. average degree and the exponent 1.65
 def growth_part():
     pairs, first_pub, info, _ = load()
     au = pd.read_csv(os.path.join(DATA, "authorship_network.csv"), low_memory=False)
@@ -106,9 +106,9 @@ def growth_part():
                          "year_avg_degree_connected": 2 * len(ye) / yconn if yconn else np.nan})
     g = pd.DataFrame(rows)
     both = g[g.view == "Both NITs"]
-    # the same check as INSIGHTS.md: the team's 1.66 must come out again
+    # the same check as INSIGHTS.md: the team's 1.65 (exact 1.6545) must come out again
     a_conn, r2_conn = densification(both.connected_faculty, both.links)
-    assert abs(a_conn - 1.66) < 0.01, a_conn
+    assert abs(a_conn - 1.65) < 0.01, a_conn
     fits = []
     for view in ["Both NITs"] + NITS:
         d = g[g.view == view]
@@ -160,12 +160,22 @@ def growth_part():
     print(g[g.view == "Both NITs"].round(2).to_string(index=False))
 
 
-# ================================================================ 2. rolling link prediction
+# ================================================================ 2. link prediction: fixed model and updated model
 TARGETS = [2023, 2024, 2025]
-TRAIN_FROM = 2018          # first feature year used for training windows (t -> links in t+1)
+TRAIN_FROM = 2016          # first feature year: training windows 2016 -> 2017, ..., 2021 -> 2022
+TOP_PCT = 1                # the fixed model's predictions for the correct-matches list: its top 1% of pairs
+FIXED = "fixed: trained once on 2016-2022, input = 2022 network"
+UPDATED = "updated: re-trained every year, input = network up to the year before"
+BASE = "Adamic-Adar only (no learning), input = 2022 network"
 
 
 def predict_part():
+    """Which faculty pairs will write their first paper together? Two models, kept apart:
+    A. fixed: trained once on 2016-2022 (windows t -> t+1) and given only the 2022 network; it predicts the new
+       pairs of 2023, 2024 and 2025 without ever seeing later data. Its top 1% of pairs is its prediction list, and
+       every real new pair in that list is saved as a correct match.
+    B. updated: re-trained every year and given the real network of the year before (2022 for 2023, 2023 for 2024...).
+    Both are scored on the same real new pairs: AUC, average precision, correct pairs in the top 100 / 1% / 5% / 10%."""
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import average_precision_score, roc_auc_score
     from sklearn.pipeline import make_pipeline
@@ -176,6 +186,16 @@ def predict_part():
     name = info.author.to_dict()
     feats = {t: link_features(t, pairs, first_pub, info, rows) for t in range(TRAIN_FROM, max(TARGETS))}
     first_year = {tuple(sorted(k)): y for k, y in zip(zip(pairs.author_a_id, pairs.author_b_id), pairs.first_year)}
+    all_new = {Y: sum(v == Y for v in first_year.values()) for Y in TARGETS}
+    # a joint paper of each pair from its first year, so every correct match can be checked by its DOI
+    au = pd.read_csv(os.path.join(DATA, "authorship_network.csv"),
+                     usecols=["author_a_id", "author_b_id", "year", "edge_category", "paper_doi"], low_memory=False)
+    au = au[au.edge_category.isin(["same_nit", "nit_nit"])].sort_values(["year", "paper_doi"])
+    first_doi = {}
+    for a, b, y, doi in zip(au.author_a_id, au.author_b_id, au.year, au.paper_doi):
+        k = tuple(sorted((a, b)))
+        if first_year.get(k) == y and k not in first_doi:
+            first_doi[k] = doi
 
     def model_until(last_label_year):
         """Logistic regression on every one-year window t -> t+1 whose label year is <= last_label_year."""
@@ -183,84 +203,91 @@ def predict_part():
         y = np.concatenate([label(feats[t], pairs, t + 1, t + 1) for t in range(TRAIN_FROM, last_label_year)])
         return make_pipeline(StandardScaler(), LogisticRegression(max_iter=3000)).fit(X, y), int(y.sum()), len(y)
 
-    def evaluate(scores, y):
-        P = int(y.sum())
-        out = {"candidate_pairs": len(y), "true_new_links": P, "auc": roc_auc_score(y, scores),
-               "average_precision": average_precision_score(y, scores)}
-        for k in (50, 100):
-            out[f"precision_at_{k}_pct"] = 100 * expected_precision_at_k(scores, y, k)
-            out[f"found_in_top_{k}"] = out[f"precision_at_{k}_pct"] * k / 100
-        out["base_rate_pct"] = 100 * P / len(y)
-        # share of the real new links that the model puts in its top 1% / 5% / 10% of candidate pairs
-        rank = stats.rankdata(-scores, method="average")
+    def evaluate(scores, y, Y):
+        P, n = int(y.sum()), len(y)
+        out = {"candidate_pairs": n, "all_new_pairs": all_new[Y], "reachable_new_pairs": P,
+               "out_of_reach_pct": 100 * (1 - P / all_new[Y]),
+               "auc": roc_auc_score(y, scores), "average_precision": average_precision_score(y, scores),
+               "base_rate_pct": 100 * P / n, "correct_in_top_100": 100 * expected_precision_at_k(scores, y, 100)}
         for q in (1, 5, 10):
-            out[f"real_links_in_top_{q}pct_of_pairs"] = 100 * np.mean(rank[y == 1] <= q / 100 * len(y))
+            k = int(q / 100 * n)
+            hits = expected_precision_at_k(scores, y, k) * k
+            out.update({f"top_{q}pct_size": k, f"correct_in_top_{q}pct": hits, f"precision_top_{q}pct": 100 * hits / k,
+                        f"lift_top_{q}pct": (hits / k) / (P / n), f"found_top_{q}pct": 100 * hits / P,
+                        f"found_of_all_new_top_{q}pct": 100 * hits / all_new[Y]})
         return out
 
-    res, checks = [], []
-    fixed_model, _, _ = model_until(2022)            # data up to 2022 only
+    def pair_info(a, b):
+        return {"faculty_a": name.get(a, a), "institute_a": info.institution.get(a), "department_a": info.department.get(a),
+                "faculty_b": name.get(b, b), "institute_b": info.institution.get(b), "department_b": info.department.get(b)}
+
+    res, checks, matches = [], [], []
+    fixed_model, fixed_pos, _ = model_until(2022)            # data up to 2022 only, never refitted
+    d22 = feats[2022]
+    s22 = fixed_model.predict_proba(model_features(d22))[:, 1]
+    fy22 = np.array([first_year.get(tuple(sorted(k)), 9999) for k in zip(d22.a, d22.b)])
     for Y in TARGETS:
-        # (a) rolling: the real network up to Y-1 is the input, the model is refitted with every window up to Y-1
-        roll_model, pos, n = model_until(Y - 1)
+        # A. fixed model: pairs that wrote together between 2023 and Y-1 are dropped, the rest keep their 2022 scores
+        keep = fy22 >= Y
+        d, s, y = d22[keep].reset_index(drop=True), s22[keep], (fy22[keep] == Y).astype(int)
+        res.append({"target_year": Y, "model": FIXED, "input_network_year": 2022,
+                    "training_windows": f"{TRAIN_FROM}->{TRAIN_FROM + 1} ... 2021->2022", "training_positives": fixed_pos,
+                    **evaluate(s, y, Y)})
+        res.append({"target_year": Y, "model": BASE, "input_network_year": 2022, "training_windows": "-",
+                    "training_positives": 0, **evaluate(d.adamic_adar.values.astype(float), y, Y)})
+        k = int(TOP_PCT / 100 * len(y))
+        for rank, i in enumerate(np.argsort(-s, kind="stable")[:k], 1):
+            if y[i]:
+                a, b = d.a.iloc[i], d.b.iloc[i]
+                matches.append({"target_year": Y, "rank": rank, "list_size": k, **pair_info(a, b),
+                                "common_coauthors_2022": int(d.common_neighbours.iloc[i]), "model_score": s[i],
+                                "first_joint_paper_doi": first_doi.get(tuple(sorted((a, b))))})
+        assert sum(m["target_year"] == Y for m in matches) == round(res[-2]["correct_in_top_1pct"]), "ties at the cut-off"
+        # B. updated model: the real network up to Y-1 is the input, the model is refitted with every window up to Y-1
+        upd_model, pos, _ = model_until(Y - 1)
         df = feats[Y - 1]
-        y = label(df, pairs, Y, Y)
-        s_roll = roll_model.predict_proba(model_features(df))[:, 1]
-        res.append({"target_year": Y, "method": "rolling: input = network up to the year before",
-                    "input_network_year": Y - 1, "training_windows": f"{TRAIN_FROM}->{TRAIN_FROM + 1} ... {Y - 2}->{Y - 1}",
-                    "training_positives": pos, **evaluate(s_roll, y)})
-        res.append({"target_year": Y, "method": "Adamic-Adar only (no learning), same input",
-                    "input_network_year": Y - 1, "training_windows": "-", "training_positives": 0,
-                    **evaluate(df.adamic_adar.values.astype(float), y)})
-        # (b) fixed: the 2022 network and the 2022 model predict every later year; pairs that already linked
-        #     in between are dropped, so both methods are scored on links that are new in year Y
-        d22 = feats[2022]
-        done = np.array([first_year.get(tuple(sorted(k)), 9999) < Y for k in zip(d22.a, d22.b)])
-        d22 = d22[~done]
-        y22 = label(d22, pairs, Y, Y)
-        s_fix = fixed_model.predict_proba(model_features(d22))[:, 1]
-        res.append({"target_year": Y, "method": "fixed: input = 2022 network only", "input_network_year": 2022,
-                    "training_windows": f"{TRAIN_FROM}->{TRAIN_FROM + 1} ... 2021->2022", "training_positives": np.nan,
-                    **evaluate(s_fix, y22),
-                    "new_links_out_of_reach_pct": 100 * (1 - y22.sum() / max(y.sum(), 1))})
-        for r in res[-3:]:      # counted over ALL real new links of year Y (links out of reach count as misses)
-            share = r["true_new_links"] / y.sum()
-            for q in (1, 5, 10):
-                r[f"all_real_links_in_top_{q}pct"] = r[f"real_links_in_top_{q}pct_of_pairs"] * share
-        # predict and check: the rolling model's 20 most likely pairs, and what really happened
-        top = df.assign(score=s_roll).nlargest(20, "score")
+        yu = label(df, pairs, Y, Y)
+        su = upd_model.predict_proba(model_features(df))[:, 1]
+        res.append({"target_year": Y, "model": UPDATED, "input_network_year": Y - 1,
+                    "training_windows": f"{TRAIN_FROM}->{TRAIN_FROM + 1} ... {Y - 2}->{Y - 1}", "training_positives": pos,
+                    **evaluate(su, yu, Y)})
+        # the updated model's 20 most likely pairs, and what really happened
+        top = df.assign(score=su).nlargest(20, "score")
         for rank, (a, b, sc, cn) in enumerate(zip(top.a, top.b, top.score, top.common_neighbours), 1):
             fy = first_year.get(tuple(sorted((a, b))))
-            checks.append({"target_year": Y, "rank": rank, "faculty_a": name.get(a, a), "institute_a": info.institution.get(a),
-                           "department_a": info.department.get(a), "faculty_b": name.get(b, b),
-                           "institute_b": info.institution.get(b), "department_b": info.department.get(b),
-                           "common_coauthors": int(cn), "model_score": sc,
-                           "wrote_together_in_target_year": fy == Y,
-                           "first_joint_paper_year": fy if fy is not None else None})
-    res = pd.DataFrame(res)
-    checks = pd.DataFrame(checks)
-    save(res.round(4), "p_rolling_link_prediction.csv")
+            checks.append({"target_year": Y, "rank": rank, **pair_info(a, b), "common_coauthors": int(cn), "model_score": sc,
+                           "wrote_together_in_target_year": fy == Y, "first_joint_paper_year": fy})
+    res, checks, matches = pd.DataFrame(res), pd.DataFrame(checks), pd.DataFrame(matches)
+    old = os.path.join(OUT, "p_rolling_link_prediction.csv")          # replaced by p_link_prediction.csv
+    for f in (old, old.replace(".csv", ".png")):
+        if os.path.exists(f):
+            os.remove(f)
+    save(res.round(4), "p_link_prediction.csv")
     save(checks.round(4), "p_predict_and_check_top20.csv")
-    summary = {"targets": TARGETS, "train_from": TRAIN_FROM,
+    save(matches.round(4), "p_fixed_correct_matches.csv")
+    fx = res[res.model == FIXED].set_index("target_year")
+    summary = {"targets": TARGETS, "train_from": TRAIN_FROM, "top_pct": TOP_PCT, "models": [FIXED, UPDATED, BASE],
                "table": res.round(4).to_dict("records"),
-               "top20_hits": checks.groupby("target_year").wrote_together_in_target_year.sum().to_dict(),
-               "top20_hits_by_2026": checks.assign(later=checks.first_joint_paper_year.notna())
-                                           .groupby("target_year").later.sum().to_dict()}
+               "fixed_correct_matches": {int(k): int(v) for k, v in
+                                         matches.groupby("target_year").size().reindex(TARGETS, fill_value=0).items()},
+               "fixed_auc": {int(k): float(v) for k, v in fx.auc.round(3).items()},
+               "updated_top20_hits": {int(k): int(v) for k, v in
+                                      checks.groupby("target_year").wrote_together_in_target_year.sum().items()}}
     save_json(summary, "p_summary.json")
 
     fig, ax = plt.subplots(1, 2, figsize=(12, 4.4))
-    for m, col in (("rolling: input = network up to the year before", "#2f6fdf"),
-                   ("fixed: input = 2022 network only", "#e8743b"),
-                   ("Adamic-Adar only (no learning), same input", "#888888")):
-        d = res[res.method == m]
+    for m, col in ((FIXED, "#e8743b"), (UPDATED, "#2f6fdf"), (BASE, "#888888")):
+        d = res[res.model == m]
         ax[0].plot(d.target_year, d.auc, "-o", color=col, label=m)
-        ax[1].plot(d.target_year, d.precision_at_100_pct, "-o", color=col, label=m)
-    ax[0].set_title("AUC (0.5 = random)"); ax[1].set_title("Precision of the top 100 predicted pairs (%)")
+        ax[1].plot(d.target_year, d.correct_in_top_1pct, "-o", color=col, label=m)
+    ax[0].set_title("AUC (0.5 = random)"); ax[1].set_title("Real new pairs in the top 1% of predicted pairs")
     for a_ in ax:
         a_.set_xticks(TARGETS); a_.grid(alpha=0.3); a_.legend(fontsize=7)
-    savefig(fig, "p_rolling_link_prediction.png")
+    savefig(fig, "p_link_prediction.png")
     pd.set_option("display.width", 250)
-    print(res.round(3).to_string(index=False))
-    print(checks.head(20).round(3).to_string(index=False))
+    print(res[["target_year", "model", "all_new_pairs", "reachable_new_pairs", "auc", "correct_in_top_100",
+               "correct_in_top_1pct", "lift_top_1pct", "correct_in_top_5pct"]].round(3).to_string(index=False))
+    print(matches.head(10).round(3).to_string(index=False))
 
 
 # ================================================================ 3. NIRF 2025: faculty numbers and joining years
@@ -498,7 +525,7 @@ def nits_part():
 
 
 def nitfaculty_part():
-    """The faculty-only co-authorship network (as behind the 1.66) for all four NITs. Faculty = the people in each
+    """The faculty-only co-authorship network (as behind the 1.65) for all four NITs. Faculty = the people in each
     NIT's NIRF 2025 list, matched by name to OpenAlex authors who used that NIT's affiliation (an author ID that
     fits two people equally well is dropped). Needs pymupdf (reads the NIRF files)."""
     import collections

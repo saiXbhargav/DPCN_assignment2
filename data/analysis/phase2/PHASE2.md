@@ -32,7 +32,7 @@ Every number is in the CSV/JSON files in this folder.
 |---|---|
 | With a faculty author | 18,343 (the current dataset) |
 | **Students / other NIT staff only (new)** | **2,917** |
-| Left out: business, economics, social sciences, psychology, arts | 1,158 |
+| Left out: business, economics, social sciences, psychology, arts ((NIT, paper) pairs; 1,156 distinct papers) | 1,158 |
 
 Extra columns:
 - `has_faculty_author`;
@@ -236,7 +236,7 @@ Across all individual citations, private citers have a personal tie **20.8%** of
    - The biggest private citers are **mid-table** on this measure: VIT 62, SRM 54, Saveetha 43.
    - Their citations are **recent**: 74% since 2023 (83% for Saveetha), which follows the fast growth of private-university publishing.
 2. **They tend to be nearby.** Private citers are a median of **411 km** away (Tamil Nadu and Karnataka), against 1,664 km for public ones, which matches what we found for co-authorship: research links are local.
-   - **But this gap is not significant** once we correct for testing all 15 measures in the table at once (Benjamini–Hochberg false-discovery rate: adjusted p = 0.12; `data/analysis/papers/f_false_discovery.csv`). Treat it as a tendency, not a finding.
+   - **But this gap is not significant** once we correct for testing all 15 measures in the table at once (Benjamini–Hochberg false-discovery rate: adjusted p = 0.12; `data/analysis/papers/r_false_discovery.csv`). Treat it as a tendency, not a finding.
 3. **More personal ties: the clearest difference.**
    - Private citers more often include an **earlier co-author** of the cited faculty (significant) or a **former NIT member** (borderline).
    - **Checked over the whole co-authorship network** (all 67,114 Indian citations, following Singh, Vasques Filho, Jolad & O'Neale, *Scientometrics* 2020; `data/analysis/papers/a_citation_distance.csv`): **31%** of the top private citers' citations come from people at most 3 co-authorship steps from the cited authors, against **21%** for the top public citers and 17% for all other Indian citers (χ² p < 10⁻¹⁰⁰). Self-citations are 12.9% vs 10.2%, and earlier co-authors 6.8% vs 4.0%.
@@ -459,7 +459,7 @@ File: `faculty_research_and_collaboration.csv`, with both scores, both ranks, al
 **Findings:**
 - **Research and collaboration go together, but not perfectly** (Spearman ρ = 0.70).
   - Number of partner institutes is tied to papers and citations (ρ ≈ 0.64).
-  - It is barely tied to impact per paper: FWCI against faculty co-authors gives ρ = 0.19. **Collaborating more brings more papers, not necessarily better ones.**
+  - It is barely tied to impact per paper: FWCI against faculty co-authors gives ρ = 0.19. **Faculty with more collaborators have more papers, but not much higher impact per paper.**
 - **Four profiles** (split at the median of each score):
 
   | Profile | Trichy | Surathkal |

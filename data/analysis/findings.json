@@ -1,0 +1,441 @@
+{
+ "findings": [
+  {
+   "group": "Output and impact",
+   "phase": "Phase I",
+   "title": "The two NITs publish the same amount, and output grew fast",
+   "numbers": "9,184 vs 9,206 faculty papers 2016–2026 (47 written together); 1,071 papers in 2016 → 1,924 in 2025 (1.8×)",
+   "meaning": "Neither NIT is ahead on volume; both grew strongly over the decade.",
+   "real_world": "–",
+   "caveat": "Faculty papers only (science and engineering); students' own papers are counted separately (see below).",
+   "tab": "publications",
+   "evidence": "data/group12_data.csv",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase I + II",
+   "title": "No significant difference in impact per paper",
+   "numbers": "Surathkal vs Trichy, same field, year and venue type: +1.2% FWCI (p = 0.22; p = 0.63 with errors grouped by faculty member); median FWCI 0.63 vs 0.65",
+   "meaning": "Once field and year are taken into account, the two NITs' papers have the same impact. Raw citations per paper are higher at Trichy (15.2 vs 13.6) only because raw counts ignore field.",
+   "real_world": "–",
+   "caveat": "Not significant is not the same as proven equal: the clustered 95% interval allows a few per cent either way.",
+   "tab": "analysis",
+   "evidence": "data/analysis/papers/r_fwci_model_sensitivity.csv",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase II",
+   "title": "Surathkal faculty publish more each, mostly because of rank mix",
+   "numbers": "median 31 vs 19 papers per faculty member (p = 0.0004); the gap falls from +33% to +24% for people of the same rank; 48% of Trichy's faculty are Assistant Professors vs 31%",
+   "meaning": "Trichy has hired many young faculty, who publish less at first. Among Professors the two NITs publish the same (p = 0.71); the gap is only among Assistant and Associate Professors.",
+   "real_world": "–",
+   "caveat": "Rank is today's rank; papers per year use each person's years on the faculty list.",
+   "tab": "phase2/p2-depth-rank",
+   "evidence": "data/analysis/papers/r_papers_per_year_models.csv, r_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase I + II",
+   "title": "The real differences are branch by branch",
+   "numbers": "after correcting for testing 10 branches, Surathkal is stronger in CSE and EEE, Trichy in Chemical and Mathematics; Q1 share of ranked journal papers 38.3% (Surathkal) vs 35.2%",
+   "meaning": "Each NIT has its own strong departments; an institute-level 'winner' hides this.",
+   "real_world": "–",
+   "caveat": "Mechanical (Surathkal) and ECE (Trichy) differ at 5% alone but not after the correction.",
+   "tab": "analysis",
+   "evidence": "data/analysis/ns_branch_fwci_bootstrap.csv, papers/r_false_discovery.csv",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase II",
+   "title": "Foreign collaboration goes with higher impact",
+   "numbers": "a foreign co-author goes with +18% FWCI (all papers, same field, year and team size); +15% in the faculty model with clustered errors (p = 0.0001); foreign universities +17% (significant after correction), IITs +3% (not significant)",
+   "meaning": "International partnerships are where the impact gain is; Indian partners such as IITs and other NITs show no clear gain in impact per paper.",
+   "real_world": "–",
+   "caveat": "An association: stronger groups may be the ones that find foreign partners.",
+   "tab": "questions",
+   "evidence": "data/analysis/questions/q15_foreign_effect.csv, q16_partner_types.csv",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase II",
+   "title": "Bigger teams, higher impact, but no 'big science'",
+   "numbers": "mean FWCI 0.72 (single author) → 1.27 (2–3) → 1.67 (6–9) → 2.09 (10–19 authors); only 1 faculty paper has 20+ authors",
+   "meaning": "Impact rises steadily with team size, so large-team papers needed no special correction here.",
+   "real_world": "–",
+   "caveat": "Mean FWCI is pulled up by a few highly cited papers.",
+   "tab": "phase2",
+   "evidence": "data/analysis/papers/e_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase I",
+   "title": "AI is spreading to every department, mostly as a method",
+   "numbers": "AI papers 9.1% of all in 2016 → 20.3% in 2025; departments with 5%+ AI papers: 10 → 15 of 18",
+   "meaning": "AI is becoming a common tool in engineering research at both NITs, not only in computing.",
+   "real_world": "–",
+   "caveat": "AI is found from OpenAlex topics and title words, so some papers are missed or wrongly included.",
+   "tab": "trends",
+   "evidence": "data/analysis/insights/ai_share_by_year.csv, ai_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Output and impact",
+   "phase": "Phase II",
+   "title": "Students' own papers add a sixth more output",
+   "numbers": "2,917 papers with no faculty author (21,260 in all, +16%); median FWCI at Trichy 0.63 (students) vs 0.63 (faculty), at Surathkal 0.48 vs 0.65",
+   "meaning": "Students publish a lot on their own, at about the faculty level at Trichy and a little lower at Surathkal.",
+   "real_world": "–",
+   "caveat": "Counted only in the publication statistics; networks and rankings stay faculty-only.",
+   "tab": "phase2",
+   "evidence": "data/all_papers.csv",
+   "sources": []
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase I",
+   "title": "A small world: short paths and strong clustering",
+   "numbers": "average path 6.1 steps (random networks with the same degrees 4.5); average clustering 0.21 vs 0.011 (20× higher); transitivity 0.21",
+   "meaning": "Faculty sit in tight groups, yet a few links between groups keep everyone within a few steps.",
+   "real_world": "Typical of co-authorship networks: in seven large ones the average distance is 4.0–9.7 and the clustering (transitivity) 0.072–0.726 (Newman 2001). Ours (6.1 and 0.21) falls inside both ranges.",
+   "caveat": "Measured in the largest connected group (491 faculty); our network is small and faculty-only, Newman's had thousands of authors.",
+   "tab": "coauthor",
+   "evidence": "data/analysis/ns_small_world.csv",
+   "sources": [
+    {
+     "label": "Newman 2001 (PNAS)",
+     "url": "https://doi.org/10.1073/pnas.98.2.404"
+    }
+   ]
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase I",
+   "title": "A giant connected group holds three quarters of the faculty",
+   "numbers": "75% of the 657 faculty are in one connected group (540 have at least one faculty co-author)",
+   "meaning": "Most faculty are linked, directly or through colleagues, across departments and the two NITs.",
+   "real_world": "Real co-authorship networks have giant components of 57–89% (Newman 2001).",
+   "caveat": "Faculty with no faculty co-author still have outside co-authors.",
+   "tab": "growth",
+   "evidence": "data/analysis/insights/growth_by_year.csv",
+   "sources": [
+    {
+     "label": "Newman 2001 (PNAS)",
+     "url": "https://doi.org/10.1073/pnas.98.2.404"
+    }
+   ]
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase I",
+   "title": "No clean power law in the degree distributions",
+   "numbers": "a log-normal fits better than a power law for 4 of 4 degree and citation distributions (heavy tails, α ≈ 2.5–2.9)",
+   "meaning": "A few people have many co-authors, but the network is not 'scale-free'.",
+   "real_world": "Newman (2001) also found that collaboration networks are not pure power laws: their degree distributions have a cut-off.",
+   "caveat": "Fits use the powerlaw package (Clauset, Shalizi & Newman method).",
+   "tab": "analysis",
+   "evidence": "data/analysis/ns_degree_fits.csv",
+   "sources": [
+    {
+     "label": "Newman 2001 (PNAS)",
+     "url": "https://doi.org/10.1073/pnas.98.2.404"
+    }
+   ]
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase I + II",
+   "title": "Well-connected faculty work with each other (assortative)",
+   "numbers": "degree assortativity r = 0.20 vs −0.02 in rewired networks (z = 6.9); by branch r = 0.66, by NIT r = 0.94, by rank only 0.07",
+   "meaning": "Hubs link to hubs, people stay in their branch and NIT, and rank matters little.",
+   "real_world": "This is the usual pattern of social networks: co-authorship networks have r = 0.12–0.36, while technological and biological networks are disassortative (Newman 2002).",
+   "caveat": "Rank assortativity is weak but above chance (z ≈ 4).",
+   "tab": "phase2",
+   "evidence": "data/analysis/phase2/assortativity_degree.csv, ns_assortativity.csv",
+   "sources": [
+    {
+     "label": "Newman 2002 (PRL)",
+     "url": "https://doi.org/10.1103/PhysRevLett.89.208701"
+    }
+   ]
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase I",
+   "title": "The two NITs barely collaborate",
+   "numbers": "28 of 961 faculty links (2.9%) join Trichy and Surathkal; 47 joint papers in ten years",
+   "meaning": "Two similar NITs work almost entirely apart; there is room for joint projects.",
+   "real_world": "–",
+   "caveat": "–",
+   "tab": "coauthor",
+   "evidence": "data/analysis/insights/growth_by_year.csv",
+   "sources": []
+  },
+  {
+   "group": "The faculty collaboration network",
+   "phase": "Phase II",
+   "title": "A few people hold the network together",
+   "numbers": "removing the 10 main bridge faculty disconnects 54% (Trichy) and 44% (Surathkal) of connected faculty pairs, against 8% and 10% for 10 random departures",
+   "meaning": "Robust to random loss, fragile to losing its bridges: when key people retire or move, groups can split.",
+   "real_world": "–",
+   "caveat": "A what-if on the 2016–2026 network; real people are replaced over time.",
+   "tab": "coauthor",
+   "evidence": "data/analysis/questions/network_summary.json",
+   "sources": []
+  },
+  {
+   "group": "How the network grows, and predicting it",
+   "phase": "Phase I + II",
+   "title": "The network densifies: links grow faster than people",
+   "numbers": "links ∝ (connected faculty)^a with a = 1.65 (R² = 0.998); the same exponent at the six South Indian NITs is 1.19–1.74",
+   "meaning": "Each faculty member gains co-authors over time, so the average number of co-authors keeps rising.",
+   "real_world": "Real growing networks densify the same way, with a = 1.08–1.68 (citation graphs 1.56 and 1.68, US patents 1.66, internet routers 1.18, author–paper graphs 1.08–1.15; Leskovec et al. 2005). Ours and five of the six NITs are inside this range; Surathkal is just above it.",
+   "caveat": "With every author counted (students too) a falls to about 1.2, so strong densification is a property of the closed faculty group.",
+   "tab": "growth",
+   "evidence": "data/analysis/insights/insights_summary.json, south/s_six_nits.csv",
+   "sources": [
+    {
+     "label": "Leskovec, Kleinberg & Faloutsos 2005",
+     "url": "https://doi.org/10.1145/1081870.1081893"
+    }
+   ]
+  },
+  {
+   "group": "How the network grows, and predicting it",
+   "phase": "Phase I + II",
+   "title": "Distances shrink as the network grows",
+   "numbers": "effective diameter 19 steps in 2018 → 9; average path in the largest group 11.2 → 6.1; co-authors per connected faculty member 1.67 → 3.48, but within any one year only 1.7–2.0",
+   "meaning": "The giant group formed in 2018 through thin bridges (long paths); new links then acted as shortcuts. People do not write with more colleagues each year; the totals rise because old links stay.",
+   "real_world": "Leskovec et al. (2005) found shrinking diameters in real growing networks, largest when the giant component first appears; Barabási et al. (2002) found that in co-authorship networks the separation falls and the average degree rises over time.",
+   "caveat": "Counts are cumulative from 2016, so early years are short of history.",
+   "tab": "growth",
+   "evidence": "data/analysis/insights/growth_by_year.csv, prof/g_average_degree_by_year.csv",
+   "sources": [
+    {
+     "label": "Leskovec, Kleinberg & Faloutsos 2005",
+     "url": "https://doi.org/10.1145/1081870.1081893"
+    },
+    {
+     "label": "Barabási et al. 2002",
+     "url": "https://doi.org/10.1016/S0378-4371(02)00736-7"
+    }
+   ]
+  },
+  {
+   "group": "How the network grows, and predicting it",
+   "phase": "Phase II",
+   "title": "Rich get richer: weak for collaborators, stronger for citations",
+   "numbers": "new faculty co-authors ∝ (current co-authors)^0.35 (Trichy 0.26, Surathkal 0.32); new citations ∝ (current citations)^0.75",
+   "meaning": "Well-connected faculty gain new collaborators only a little faster than others; highly cited papers gain citations much faster.",
+   "real_world": "Barabási et al. (2002) measured a stronger attachment for co-authorship, k^0.8 (mathematics) and k^0.75 (neuroscience). Our collaborator effect is weaker; our citation effect is close to theirs.",
+   "caveat": "Busier people may simply write more papers; the fits are pooled over years.",
+   "tab": "growth",
+   "evidence": "data/analysis/prof/k_summary.json, questions/richer_summary.json",
+   "sources": [
+    {
+     "label": "Barabási et al. 2002",
+     "url": "https://doi.org/10.1016/S0378-4371(02)00736-7"
+    }
+   ]
+  },
+  {
+   "group": "How the network grows, and predicting it",
+   "phase": "Phase I",
+   "title": "Friends of friends become co-authors, but most new links are new contacts",
+   "numbers": "pairs with one common co-author start working together 19× more often than distant pairs; yet only 104 of 788 new links (13%) closed a triangle (2017–2025)",
+   "meaning": "Common colleagues matter, but most new collaborations start between people with no shared co-author, usually in the same department.",
+   "real_world": "–",
+   "caveat": "Observational: we did not test introductions.",
+   "tab": "growth",
+   "evidence": "data/analysis/insights/triadic_closure_by_common_coauthors.csv",
+   "sources": []
+  },
+  {
+   "group": "How the network grows, and predicting it",
+   "phase": "Phase II",
+   "title": "New collaborations can be predicted, but exact hits are rare",
+   "numbers": "a model trained once on 2016–2022 and given only the 2022 network: AUC 0.90 / 0.87 / 0.90 for 2023, 2024, 2025; its top 1% of pairs (about 1,569) holds 19 / 14 / 9 of the real new pairs, 15–22× better than random (42 correct matches listed)",
+   "meaning": "Who will work together next is fairly predictable (same department, active people, common colleagues), but only about 1 candidate pair in 2,000 starts each year, so most predicted pairs do not happen yet.",
+   "real_world": "Real co-authorship networks behave the same: a random prediction is right 0.15–0.48% of the time and the best methods do up to about 55× better than random, with low raw precision (Liben-Nowell & Kleinberg 2007).",
+   "caveat": "Their task used only well-connected authors; ours scores all faculty pairs. New faculty (27% of 2025's new pairs) are invisible to a 2022 model.",
+   "tab": "phase2/p2-grow-predict",
+   "evidence": "data/analysis/prof/p_link_prediction.csv, p_fixed_correct_matches.csv",
+   "sources": [
+    {
+     "label": "Liben-Nowell & Kleinberg 2007",
+     "url": "https://doi.org/10.1002/asi.20591"
+    }
+   ]
+  },
+  {
+   "group": "How things move through the network: theory vs simulation",
+   "phase": "Phase II",
+   "title": "Ideas spread more easily at Surathkal, as the theory predicts",
+   "numbers": "SIR epidemic threshold β_c = 1/λ_NB = 0.211 (Trichy) and 0.156 (Surathkal); simulated reach from 5 random starters at β = 0.1 / 0.2 / 0.3: Trichy 1.9 / 3.9 / 10.1%, Surathkal 2.8 / 8.4 / 24.8%",
+   "meaning": "Spreading takes off between β = 0.2 and 0.3 at Trichy and around 0.15–0.2 at Surathkal, where the theory puts the thresholds; Surathkal's bigger, connected hubs raise λ and so lower its threshold.",
+   "real_world": "The threshold formula for SIR on real networks is the non-backtracking one (Karrer, Newman & Zdeborová 2014); worked out step by step in our PDF.",
+   "caveat": "In a small network the take-off is gradual, not a sharp jump.",
+   "tab": "dynamics",
+   "evidence": "data/analysis/dynamics/spread_simulations.csv, dashboard/docs/threshold_calculations.pdf",
+   "sources": [
+    {
+     "label": "Karrer, Newman & Zdeborová 2014",
+     "url": "https://doi.org/10.1103/PhysRevLett.113.208702"
+    },
+    {
+     "label": "our threshold calculations (PDF)",
+     "url": "dashboard/docs/threshold_calculations.pdf"
+    }
+   ]
+  },
+  {
+   "group": "How things move through the network: theory vs simulation",
+   "phase": "Phase II",
+   "title": "Synchrony starts where theory says, but full synchrony is hard",
+   "numbers": "onset K_c = K₀/λ₁ = 0.264 (Trichy) and 0.203 (Surathkal); simulated order parameter r at K = 0.2 / 0.3 / 0.4: Trichy 0.08 / 0.11 / 0.16, Surathkal 0.11 / 0.15 / 0.24 (noise level about 0.06); Laplacian eigenratio 670 vs 130 in rewired networks",
+   "meaning": "Partial synchrony begins as predicted, but groups are joined by thin bridges, so the whole network is about 5× harder to bring into one rhythm than a random one.",
+   "real_world": "The onset formula is Restrepo, Ott & Hunt (2005); details in our PDF.",
+   "caveat": "Unweighted network, normal frequencies; synchrony inside departments was not measured.",
+   "tab": "dynamics",
+   "evidence": "data/analysis/dynamics/sync_summary.csv, dashboard/docs/threshold_calculations.pdf",
+   "sources": [
+    {
+     "label": "Restrepo, Ott & Hunt 2005",
+     "url": "https://doi.org/10.1103/PhysRevE.71.036151"
+    },
+    {
+     "label": "our threshold calculations (PDF)",
+     "url": "dashboard/docs/threshold_calculations.pdf"
+    }
+   ]
+  },
+  {
+   "group": "How things move through the network: theory vs simulation",
+   "phase": "Phase II",
+   "title": "Many collaborations renew, but few last the whole decade",
+   "numbers": "57% of faculty pairs write together again within 3 years; only 27% of the pairs that started in 2016–2018 were still active in 2023–2025",
+   "meaning": "Partnerships are durable in the short run but turn over across a decade; same-department pairs and pairs with a strong first paper renew more.",
+   "real_world": "–",
+   "caveat": "Observational.",
+   "tab": "dynamics",
+   "evidence": "data/analysis/dynamics/ties_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Citations",
+   "phase": "Phase II",
+   "title": "Most citations between our own papers are self-citations, at every NIT",
+   "numbers": "86% of the 23,822 citations between our papers share an author; without them none of the old top-10 PageRank papers stays in the top 10; the share is 85–92% at all six South Indian NITs",
+   "meaning": "The internal citation network mainly shows groups building on their own work, so PageRank inside it is not a measure of influence.",
+   "real_world": "–",
+   "caveat": "Compared across our six NITs only (no published benchmark). Citing your own earlier work is normal when it is relevant.",
+   "tab": "phase2/p2-depth-self",
+   "evidence": "data/analysis/papers/s_summary.json, south/s_six_nits.csv",
+   "sources": []
+  },
+  {
+   "group": "Citations",
+   "phase": "Phase II",
+   "title": "Private universities cite us as much as their size predicts, more often through people close to us",
+   "numbers": "43 vs 37 citations per 1,000 of their papers (p = 0.28); 31% vs 21% of their citations come from people within 3 co-authorship steps",
+   "meaning": "High citation counts from private universities mainly reflect their size; a somewhat larger share comes from people close to the cited authors (former students and co-authors).",
+   "real_world": "–",
+   "caveat": "At the level of the 40 institutes only the 'earlier co-author' share stays different after correction.",
+   "tab": "phase2",
+   "evidence": "data/analysis/phase2/citers_private_vs_public.csv, papers/a_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Citations",
+   "phase": "Phase II",
+   "title": "No sign that citation manipulation changes the ranking",
+   "numbers": "5.0% of 117,909 Indian citations come from papers citing 10+ of ours; the top-20 faculty ranking is unchanged without self-citations (Spearman 0.999)",
+   "meaning": "One local cluster (around one Surathkal Mechanical group, 2023–24, mostly former NIT members) exists, but it does not move the ranking.",
+   "real_world": "–",
+   "caveat": "A statistical signal for follow-up, not a judgement about anyone.",
+   "tab": "questions",
+   "evidence": "data/analysis/questions/manipulation_summary.json",
+   "sources": []
+  },
+  {
+   "group": "Citations",
+   "phase": "Phase I",
+   "title": "People collaborate locally, but knowledge travels far",
+   "numbers": "37% of joint papers but 16% of citations are within 300 km; doubling the distance cuts joint papers by 38% and citations by 11% (partner size held fixed)",
+   "meaning": "Working together needs closeness; reading each other's work does not.",
+   "real_world": "–",
+   "caveat": "Indian partners only; distances between cities.",
+   "tab": "connections",
+   "evidence": "data/analysis/insights/geo_summary.json",
+   "sources": []
+  },
+  {
+   "group": "The six South Indian NITs",
+   "phase": "Phase II",
+   "title": "Every South Indian NIT densifies; recent hiring goes with a lower exponent, but the evidence is thin",
+   "numbers": "a = 1.19–1.74 at the six NITs; share hired in 2021–25 against a: ρ = −1.00 (exact p = 0.003, n = 6); with Groups 13's and 14's data for Warangal and Calicut ρ = −0.60 (p = 0.24)",
+   "meaning": "Every NIT's faculty network densifies like a real growing network. NITs that hired more recently tend to have lower exponents, but with six NITs this is a pattern, not a law.",
+   "real_world": "All exponents lie near the 1.08–1.68 range of real growing networks (Leskovec et al. 2005).",
+   "caveat": "Recent hiring, a young NIT and many Assistant Professors go together; inside single NITs the link is not consistent.",
+   "tab": "south",
+   "evidence": "data/analysis/south/south_summary.json, s_six_nits.csv, s_friends_vs_ours.csv",
+   "sources": [
+    {
+     "label": "Leskovec, Kleinberg & Faloutsos 2005",
+     "url": "https://doi.org/10.1145/1081870.1081893"
+    }
+   ]
+  },
+  {
+   "group": "The six South Indian NITs",
+   "phase": "Phase II",
+   "title": "Papers per head follow the rank mix at every NIT",
+   "numbers": "papers in 2024 per faculty member (all current staff): Trichy 3.4, Surathkal 4.7, Warangal 4.2, Calicut 2.4, Puducherry 4.4, Andhra Pradesh 2.0; share of Assistant Professors: 47%, 30%, 35%, 65%, 70%, 98%",
+   "meaning": "Senior-heavy NITs publish more per head; young NITs and NITs that hired recently publish less per head.",
+   "real_world": "–",
+   "caveat": "Andhra Pradesh has many ad hoc and contract staff; per regular faculty member it is the highest.",
+   "tab": "south",
+   "evidence": "data/analysis/south/s_six_nits.csv",
+   "sources": []
+  }
+ ],
+ "sources": {
+  "leskovec": {
+   "label": "Leskovec, Kleinberg & Faloutsos 2005",
+   "url": "https://doi.org/10.1145/1081870.1081893"
+  },
+  "newman01": {
+   "label": "Newman 2001 (PNAS)",
+   "url": "https://doi.org/10.1073/pnas.98.2.404"
+  },
+  "barabasi02": {
+   "label": "Barabási et al. 2002",
+   "url": "https://doi.org/10.1016/S0378-4371(02)00736-7"
+  },
+  "newman02": {
+   "label": "Newman 2002 (PRL)",
+   "url": "https://doi.org/10.1103/PhysRevLett.89.208701"
+  },
+  "liben07": {
+   "label": "Liben-Nowell & Kleinberg 2007",
+   "url": "https://doi.org/10.1002/asi.20591"
+  },
+  "karrer14": {
+   "label": "Karrer, Newman & Zdeborová 2014",
+   "url": "https://doi.org/10.1103/PhysRevLett.113.208702"
+  },
+  "restrepo05": {
+   "label": "Restrepo, Ott & Hunt 2005",
+   "url": "https://doi.org/10.1103/PhysRevE.71.036151"
+  },
+  "thresholds": {
+   "label": "our threshold calculations (PDF)",
+   "url": "dashboard/docs/threshold_calculations.pdf"
+  }
+ }
+}
