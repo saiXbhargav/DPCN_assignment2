@@ -156,7 +156,7 @@ Share of faculty locked to the common rhythm at K = 1, both NITs, by number of f
   - λ₂ is small because groups are joined by thin bridges, so the whole network is hard to bring into one rhythm. (Synchrony inside departments was not measured.) This is the same modular structure as in sections 2 and 8.
 - **The two NITs differ in opposite ways.**
   - NIT Surathkal reaches partial synchrony sooner (r = 0.5 at K ≈ 0.9 vs 1.5); it has more links per person (3.9 vs 3.5) and bigger hubs, and we cannot separate the two.
-  - NIT Trichy has the lower eigenratio (259 vs 565), so full synchrony is easier there. Its groups are less separated, but its hubs are smaller (largest 14 faculty co-authors vs 22 at Surathkal).
+  - NIT Trichy has the lower eigenratio (259 vs 565), so full synchrony is easier there. Its groups are less separated, but its hubs are smaller (largest 14 faculty co-authors vs 19 at Surathkal, within each NIT).
 - **The core locks first.** At K = 1, 88% of faculty with 10 or more faculty co-authors run at the common rhythm, against 47% of faculty with one.
 
 ## 7. Do collaborations last?
